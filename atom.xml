@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://asurada.zone/"/>
-  <updated>2020-11-27T10:56:48.163Z</updated>
+  <updated>2020-11-27T14:47:40.478Z</updated>
   <id>https://asurada.zone/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CODING Pages 静态网站升级腾讯云新版踩坑小记</title>
+    <link href="https://asurada.zone/post/CODING-Pages-Upgrade-To-TencentCloud/"/>
+    <id>https://asurada.zone/post/CODING-Pages-Upgrade-To-TencentCloud/</id>
+    <published>2020-11-02T14:55:47.000Z</published>
+    <updated>2020-11-27T14:47:40.478Z</updated>
+    
+    <content type="html"><![CDATA[<p>自己的踩坑记录证明域名未备案的同学就不要升级了，新版需要付费，但升级后强制的境外 CDN 加速导致访问速度反而不如旧版快。</p><a id="more"></a><h2 id="升级背景"><a href="#升级背景" class="headerlink" title="升级背景"></a>升级背景</h2><p>之前把博客双部署到了 CODING 静态网站和 GitHub Pages，国内的访问速度快了不少。前几天登录 CODING 后台，突然发现多了一个新版升级提醒。</p><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-%E5%90%8E%E5%8F%B0%E5%8D%87%E7%BA%A7%E6%8F%90%E9%86%92.png" alt="升级提醒"></p><p>新版最大的变化就是同腾讯云进行了打通，直接把网站放到了腾讯云的对象存储 COS 上，其他 CDN 加速、SSL 证书管理也是腾讯云的功能。</p><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%8F%98%E5%8C%96.png" alt="新版的变化及优势"></p><h2 id="新版开始收费了"><a href="#新版开始收费了" class="headerlink" title="新版开始收费了"></a>新版开始收费了</h2><blockquote><p>CODING Pages 依托腾讯云资源提供相关静态托管能力，CODING 平台本身不收取任何费用。该产品使用了腾讯云对象存储 COS、内容分发网络 CDN、SSL 证书产品，其中 COS 和 CDN 采用用量计费模式，SSL 证书免费，所使用到的其他相关腾讯云产品本身亦会有一定的免费额度。</p></blockquote><p>新版因为使用了腾讯云的相关资料，所以要<strong>开始收费</strong>了。对于收费，我是能够接受的，前提是能够提供比免费更好的服务。我的图床就是使用的腾讯云的对象存储，加载速度很快，一个月几毛钱的费用低得基本可以忽略。</p><h2 id="升级流程"><a href="#升级流程" class="headerlink" title="升级流程"></a>升级流程</h2><p>新版升级界面如下：</p><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8D%87%E7%BA%A7%E8%AE%BE%E7%BD%AE%E7%95%8C%E9%9D%A2.png" alt="新版升级设置界面"></p><p>因为新版是基于腾讯云的，所以升级需要先在腾讯云进行实名认证并授予相关权限。我因为之前图床就是用的腾讯云对象存储，所以已经实名过了。</p><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%8E%88%E6%9D%83.png" alt="腾讯云服务授权"></p><p>之前 CODING Pages 旧版是部署在腾讯云新加坡节点，现在新版部署节点可选香港、北京、上海、广州四个，但未备案域名只能选香港。</p><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%8A%82%E7%82%B9%E9%80%89%E6%8B%A9.png" alt="节点选择提醒"></p><p>添加自定义域名前，需要前往腾讯云开启 CDN 功能，这一步就是我觉得<strong>新版最大的坑</strong>。</p><p>下一步去域名托管商更改解析记录，解析记录值都是指向了 <code>cdn.dnsv1.com</code>，这也是为什么需要开启 CDN 功能的原因。</p><p>部署的时候，「网站类型」我最开始选的是「Hexo」，结果部署失败，部署日志也不知道抽啥风，一直显示不出来，原因也不好排查。我尝试将网站类型改为「静态网站」，重新部署就成功了。</p><h2 id="这-CDN-不能要"><a href="#这-CDN-不能要" class="headerlink" title="这 CDN 不能要"></a>这 CDN 不能要</h2><p>新版升级完成后，立马测了一波速，然后被结果给吓到了，从之前的一片绿油油变成了一片惨淡的黄色，访问速度下降了不止一点半点。这就很费解了，同样都是腾讯云，之前部署在新加坡节点，现在搬到香港节点了，速度不升反降是什么情况。</p><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%BC%80%E5%90%AFCDN%E6%B5%8B%E9%80%9F%E7%BB%93%E6%9E%9C.png" alt="新版开启 CDN 测速结果"></p><p>检查解析 IP，发现域名全都被解析到了德国、爱尔兰、美国，和想象中的香港地址完全不是一回事。</p><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%BC%80%E5%90%AFCDN%E8%A7%A3%E6%9E%90IP%E7%BB%93%E6%9E%9C.png" alt="新版开启 CDN 域名解析结果"></p><p>这种情况我估摸着肯定是 CDN 的锅，去腾讯云后台一检查，发现已经开启的 CDN 设置的服务区域是「中国境外」。我想当然地以为「中国境外」的含义是指只有从国外访问网站的时候才会通过 CDN 访问，国内则是直接访问香港源站，这样虽然国内享受不到 CDN 加速，国外我设置是解析到 GitHub Pages，也用不上，但想着无非就是个鸡肋而已。</p><p>但一查文档，发现自己还是太单纯了：</p><blockquote><p>「中国境外」:全球用户访问均会调度至中国境外的加速节点进行服务。</p></blockquote><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8A%A0%E9%80%9F%E5%8C%BA%E5%9F%9F%E6%96%87%E6%A1%A3%E8%A7%A3%E9%87%8A.png" alt="「中国境外」"></p><p>也就是说，不管是从国内还是国外访问，都会被调度到国外的 CDN 加速节点进行接入，想不经过 CDN 直接访问香港源站都不行。而比较符合我想要的效果的「全球」则需要域名进行备案之后才能开启，未备案域名开启 CDN 的话就<strong>只能选「中国境外」</strong>。</p><p>本来是用来加快访问速度的 CDN，对于使用<strong>未备案域名</strong>的博客来说，已经不仅仅是鸡肋了，反而是拖累。本来直接访问香港就能解决的事情，现在非得绕道德国、爱尔兰、美国才行，这访问速度能快起来才是怪事。</p><h2 id="尝试直连香港源站"><a href="#尝试直连香港源站" class="headerlink" title="尝试直连香港源站"></a>尝试直连香港源站</h2><p>既然这是 CDN 导致的，那我把 CDN 直接给关了，直连香港源站不就行了？</p><h3 id="关闭-CDN"><a href="#关闭-CDN" class="headerlink" title="关闭 CDN"></a>关闭 CDN</h3><p>进入腾讯云后台–&gt;「内容分发网络」–&gt;「域名管理」，关闭 CDN 加速。</p><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91%E5%90%8E%E5%8F%B0%E5%85%B3%E9%97%ADCDN.png" alt="关闭 CDN"></p><h3 id="更改域名解析记录"><a href="#更改域名解析记录" class="headerlink" title="更改域名解析记录"></a>更改域名解析记录</h3><p>在 DNSPod 里将国内访问解析到 CODING 提供的默认访问地址，此时再检查 DNS 解析结果发现就全部都指向了香港的 IP，达到了自己想要的效果。</p><h2 id="致命的证书问题"><a href="#致命的证书问题" class="headerlink" title="致命的证书问题"></a>致命的证书问题</h2><p>设置成直接访问香港源站后，速度果不其然就上来了，比访问新加坡节点速度还要快上一点。但很快就出现了一个更加严重的问题——证书错误。</p><p>新版申请的 SSL 证书是和 CDN 绑定在一起的，在腾讯云的证书管理里面只能部署到 CDN，而我把 CDN 关闭了，现在直接访问的是香港源站。源站的证书是颁给 <code>*.cdn.my.qcloud</code> 的，和我的域名不一致，这就会导致浏览器直接报警说网站不安全，这是不可接受的。我尝试解决这个问题，但无奈水平有限，最后也没能找到解决的办法。如果有知道如何解决证书问题的同学，麻烦指导我一下，不甚感激。</p><p>现在情况就是如果想要实现自定义域名 HTTPS 访问，就需要打开 CDN，打开 CDN 就意味着牺牲访问速度，这还是在 CDN 和 COS 需要付费的情况下。矛盾无法调和，所以最后我只能又<strong>回退到旧版</strong>了，幸好 CODING 目前还没有关闭旧版的入口，给了我一个反悔的机会。</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>花了差不多一天的时间，最后还是老老实实回到了旧版，相当于一天白折腾了。域名没有进行备案的话，在国内使用不方便的地方真的太多了。CODING 新版静态网站我觉得对于使用已备案域名的同学来说还是不错的，配置简单，CDN 加速、SSL 证书一步到位。但同样的对于这些同学来说可供选择的方案太多了，免费的也有不少，CODING 的新版并没有太大的吸引力。</p><p>而对于未备案域名的同学新版则非常不友好，完全是<strong>负优化</strong>，完全没有升级的必要，谁会花钱找罪受呢。CODING 工程师说旧版后续会下线，到时候如果自定义域名的问题没有得到改善的话，可能就需要考虑迁移平台了。现在旧版还能用就先用着。</p><p>我向 CODING 反馈了自定义域名的问题，希望能同旧版一样使用 Let’s Encrypt 的证书，不要强行同腾讯云的 CDN 加速绑定在一起，后续如果有进一步的反馈结果的话我会同步到博客中。</p><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://help.coding.net/docs/pages/operating/migrate.html">官方静态网站服务升级指南</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;自己的踩坑记录证明域名未备案的同学就不要升级了，新版需要付费，但升级后强制的境外 CDN 加速导致访问速度反而不如旧版快。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="个人博客" scheme="https://asurada.zone/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="腾讯云" scheme="https://asurada.zone/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo Next 主题 V7 升级 V8 记录</title>

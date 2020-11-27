@@ -28,24 +28,31 @@
     var CONFIG = {"hostname":"asurada.zone","root":"/","scheme":"Muse","version":"8.0.2","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}};
   </script>
 
-  <meta name="description" content="Hexo 和 Next 最近都发布了大版本更新，此文记录了升级过程。">
+  <meta name="description" content="自己的踩坑记录证明域名未备案的同学就不要升级了，新版需要付费，但升级后强制的境外 CDN 加速导致访问速度反而不如旧版快。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo Next 主题 V7 升级 V8 记录">
-<meta property="og:url" content="https://asurada.zone/post/Update-Next-From-V7-To-V8/index.html">
+<meta property="og:title" content="CODING Pages 静态网站升级腾讯云新版踩坑小记">
+<meta property="og:url" content="https://asurada.zone/post/CODING-Pages-Upgrade-To-TencentCloud/index.html">
 <meta property="og:site_name" content="Asurada&#39;s Zone">
-<meta property="og:description" content="Hexo 和 Next 最近都发布了大版本更新，此文记录了升级过程。">
+<meta property="og:description" content="自己的踩坑记录证明域名未备案的同学就不要升级了，新版需要付费，但升级后强制的境外 CDN 加速导致访问速度反而不如旧版快。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9F%A5%E7%9C%8BNext%E7%89%88%E6%9C%AC%E5%8F%B7.png">
-<meta property="article:published_time" content="2020-09-02T15:52:41.000Z">
-<meta property="article:modified_time" content="2020-11-27T10:56:48.163Z">
+<meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-%E5%90%8E%E5%8F%B0%E5%8D%87%E7%BA%A7%E6%8F%90%E9%86%92.png">
+<meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%8F%98%E5%8C%96.png">
+<meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8D%87%E7%BA%A7%E8%AE%BE%E7%BD%AE%E7%95%8C%E9%9D%A2.png">
+<meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%8E%88%E6%9D%83.png">
+<meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%8A%82%E7%82%B9%E9%80%89%E6%8B%A9.png">
+<meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%BC%80%E5%90%AFCDN%E6%B5%8B%E9%80%9F%E7%BB%93%E6%9E%9C.png">
+<meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%BC%80%E5%90%AFCDN%E8%A7%A3%E6%9E%90IP%E7%BB%93%E6%9E%9C.png">
+<meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8A%A0%E9%80%9F%E5%8C%BA%E5%9F%9F%E6%96%87%E6%A1%A3%E8%A7%A3%E9%87%8A.png">
+<meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91%E5%90%8E%E5%8F%B0%E5%85%B3%E9%97%ADCDN.png">
+<meta property="article:published_time" content="2020-11-02T14:55:47.000Z">
+<meta property="article:modified_time" content="2020-11-27T14:47:40.478Z">
 <meta property="article:author" content="Asurada">
-<meta property="article:tag" content="Hexo">
-<meta property="article:tag" content="Next">
+<meta property="article:tag" content="腾讯云">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9F%A5%E7%9C%8BNext%E7%89%88%E6%9C%AC%E5%8F%B7.png">
+<meta name="twitter:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-%E5%90%8E%E5%8F%B0%E5%8D%87%E7%BA%A7%E6%8F%90%E9%86%92.png">
 
 
-<link rel="canonical" href="https://asurada.zone/post/Update-Next-From-V7-To-V8/">
+<link rel="canonical" href="https://asurada.zone/post/CODING-Pages-Upgrade-To-TencentCloud/">
 
 
 <script class="page-configurations">
@@ -60,7 +67,7 @@
   <meta name="360-site-verification" content="68099c4ac6f6f63bfe250dd357c1d4e1"/>
 
 
-  <title>Hexo Next 主题 V7 升级 V8 记录 | Asurada's Zone</title>
+  <title>CODING Pages 静态网站升级腾讯云新版踩坑小记 | Asurada's Zone</title>
   
 
 
@@ -232,7 +239,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <section class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%87%E7%BA%A7-Hexo-%E7%89%88%E6%9C%AC"><span class="nav-number">1.</span> <span class="nav-text">升级 Hexo 版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%87%E7%BA%A7-Next-V8-0-0-%E7%89%88%E6%9C%AC"><span class="nav-number">2.</span> <span class="nav-text">升级 Next V8.0.0 版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%81%E7%A7%BB%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">3.</span> <span class="nav-text">迁移配置文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E5%B9%B6%E9%85%8D%E7%BD%AE-config-next-yml-%E6%96%87%E4%BB%B6"><span class="nav-number">3.1.</span> <span class="nav-text">创建并配置 _config.next.yml 文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%81%E7%A7%BB-Favicon-%E4%BD%8D%E7%BD%AE"><span class="nav-number">3.2.</span> <span class="nav-text">迁移 Favicon 位置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BF%AE%E6%94%B9%E8%BF%81%E7%A7%BB"><span class="nav-number">4.</span> <span class="nav-text">自定义修改迁移</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="nav-number">6.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%87%E7%BA%A7%E8%83%8C%E6%99%AF"><span class="nav-number">1.</span> <span class="nav-text">升级背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B0%E7%89%88%E5%BC%80%E5%A7%8B%E6%94%B6%E8%B4%B9%E4%BA%86"><span class="nav-number">2.</span> <span class="nav-text">新版开始收费了</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%87%E7%BA%A7%E6%B5%81%E7%A8%8B"><span class="nav-number">3.</span> <span class="nav-text">升级流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%99-CDN-%E4%B8%8D%E8%83%BD%E8%A6%81"><span class="nav-number">4.</span> <span class="nav-text">这 CDN 不能要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%9D%E8%AF%95%E7%9B%B4%E8%BF%9E%E9%A6%99%E6%B8%AF%E6%BA%90%E7%AB%99"><span class="nav-number">5.</span> <span class="nav-text">尝试直连香港源站</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E9%97%AD-CDN"><span class="nav-number">5.1.</span> <span class="nav-text">关闭 CDN</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95"><span class="nav-number">5.2.</span> <span class="nav-text">更改域名解析记录</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%B4%E5%91%BD%E7%9A%84%E8%AF%81%E4%B9%A6%E9%97%AE%E9%A2%98"><span class="nav-number">6.</span> <span class="nav-text">致命的证书问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">7.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="nav-number">8.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
         </section>
         <!--/noindex-->
 
@@ -315,7 +322,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://asurada.zone/post/Update-Next-From-V7-To-V8/">
+    <link itemprop="mainEntityOfPage" href="https://asurada.zone/post/CODING-Pages-Upgrade-To-TencentCloud/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/43401755?s=460&v=4">
@@ -328,7 +335,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hexo Next 主题 V7 升级 V8 记录
+          CODING Pages 静态网站升级腾讯云新版踩坑小记
         </h1>
 
         <div class="post-meta-container">
@@ -339,14 +346,14 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2020-09-02 23:52:41" itemprop="dateCreated datePublished" datetime="2020-09-02T23:52:41+08:00">2020-09-02</time>
+      <time title="创建时间：2020-11-02 22:55:47" itemprop="dateCreated datePublished" datetime="2020-11-02T22:55:47+08:00">2020-11-02</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-11-27 18:56:48" itemprop="dateModified" datetime="2020-11-27T18:56:48+08:00">2020-11-27</time>
+        <time title="修改时间：2020-11-27 22:47:40" itemprop="dateModified" datetime="2020-11-27T22:47:40+08:00">2020-11-27</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -359,7 +366,7 @@
     </span>
 
   
-    <span id="/post/Update-Next-From-V7-To-V8/" class="post-meta-item leancloud_visitors" data-flag-title="Hexo Next 主题 V7 升级 V8 记录" title="阅读次数">
+    <span id="/post/CODING-Pages-Upgrade-To-TencentCloud/" class="post-meta-item leancloud_visitors" data-flag-title="CODING Pages 静态网站升级腾讯云新版踩坑小记" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -374,8 +381,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/post/Update-Next-From-V7-To-V8/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/post/Update-Next-From-V7-To-V8/" itemprop="commentCount"></span>
+    <a title="valine" href="/post/CODING-Pages-Upgrade-To-TencentCloud/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/post/CODING-Pages-Upgrade-To-TencentCloud/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -387,14 +394,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>2.8k</span>
+      <span>2.3k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>3 分钟</span>
+      <span>2 分钟</span>
     </span>
 </div>
 
@@ -405,47 +412,49 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>Hexo 和 Next 最近都发布了大版本更新，此文记录了升级过程。</p>
+        <p>自己的踩坑记录证明域名未备案的同学就不要升级了，新版需要付费，但升级后强制的境外 CDN 加速导致访问速度反而不如旧版快。</p>
 <a id="more"></a>
 
-<h2 id="升级-Hexo-版本"><a href="#升级-Hexo-版本" class="headerlink" title="升级 Hexo 版本"></a>升级 Hexo 版本</h2><p>Hexo 核心团队成员 Sukka 写的 <a target="_blank" rel="noopener" href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a>详细介绍了 Hexo 5.0 的新特性，以及从 Hexo 4.x 升级到 Hexo 5.x 需要注意的地方。</p>
-<p>Hexo 5.0 版本带来了不小的性能上的提升，升级 5.0 直接修改 <code>hexo-site/package.json</code> 文件：</p>
-<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;dependencies&quot;: &#123;</span><br><span class="line"><span class="deletion">-  &quot;hexo&quot;: &quot;^4.2.1&quot;,</span></span><br><span class="line"><span class="addition">+  &quot;hexo&quot;: &quot;^5.1.1&quot;,</span></span><br></pre></td></tr></table></figure>
-
-<p>然后再执行 <code>npm upadte</code> 命令即可。</p>
-<p>升级完 Hexo ，<code>_config.yml</code> 并不会更新，而 Hexo 5.0 是有新增和改动一些其中的配置项的，所以需要我们自己去 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-starter/blob/master/_config.yml">GitHub</a> 上查看站点配置文件的变动情况，并手动同步这些修改到自己的站点配置文件里。</p>
-<p>主要的变动就是新增了 <code>prismjs</code> 相关配置项以及更新了 <code>updated_option</code> 配置项。</p>
-<h2 id="升级-Next-V8-0-0-版本"><a href="#升级-Next-V8-0-0-版本" class="headerlink" title="升级 Next V8.0.0 版本"></a>升级 Next V8.0.0 版本</h2><p>使用 Hexo 5.0 及以上版本，升级 Next 主题最简单的方法就是通过 <code>npm</code> 安装，进入博客根目录，执行以下命令即可安装最新版本的 Next 主题：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-theme-<span class="keyword">next</span></span><br></pre></td></tr></table></figure>
-<p>通过 <code>npm</code> 安装的 Next 主题默认文件夹路径为 <code>hexo-site/node_modules/hexo-theme-next</code> 。因为有一些自定义修改可能会需要我们改动主题的源文件，而因为整个 <code>node_modules/</code> 被<code>gitignore</code> 文件所忽略，将会导致我们无法用 Git 记录我们对主题源文件的修改。</p>
-<p>所以我将之前版本的 Next 主题文件夹进行改名，将 <code>hexo-site/theme/next</code> 改成了 <code>hexo-site/theme/next-V7</code>。然后将 <code>hexo-theme-next</code>  文件夹的内容复制到 <code>hexo-site/theme/next</code> 。这样就能将主题文件夹加入 Git 的管理之中了。</p>
-<p>这里切记不要直接将旧版本的 Next 主题文件夹直接删除，因为后面可能有配置以及文件需要进行迁移。</p>
-<p>更名完成后，使用 <code>hexo version</code> 查看版本号，可以看到一个硕大的 <code>Next</code> Logo 以及下方显示 <code>NexT version 8.0.0</code>，说明现在已经成功启用 Next V8 版本。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9F%A5%E7%9C%8BNext%E7%89%88%E6%9C%AC%E5%8F%B7.png" alt="查看 Next 版本号"></p>
-<h2 id="迁移配置文件"><a href="#迁移配置文件" class="headerlink" title="迁移配置文件"></a>迁移配置文件</h2><p>在之前使用 Next V7 版本的时候，我是利用 Hexo 的 Data Files 功能将主题配置放置在站点的 <code>source/_data/next.yml</code> 文件中。但这种做法在 V8 版本被官方告知已经过时，并<strong>将在一段时间后停止支持</strong>，现在推荐的做法是<a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/getting-started/configuration.html">使用 Alternate Theme Config 存储配置</a>，需要 Hexo 版本在 5.0 及以上。</p>
-<p>这里可以选择一步到位直接将主题配置整合到站点配置文件 <code>_config.yml</code> 中去，也可以选择依然使用独立的主题配置文件，我选择的是第二种。具体流程如下：</p>
-<h3 id="创建并配置-config-next-yml-文件"><a href="#创建并配置-config-next-yml-文件" class="headerlink" title="创建并配置 _config.next.yml 文件"></a>创建并配置 <code>_config.next.yml</code> 文件</h3><p>在博客根目录下新建 <code>_config.next.yml</code> 文件。</p>
-<p>因为 Next V8 有不少配置项发生了变更，所以我索性选择了重新配置。先将 <code>hexo-site/node_modules/hexo-theme-next/_config.yml</code> 中的内容复制到 <code>_config.next.yml</code> 中。然后用 Beyond Compare 软件对新主题配置文件 <code>_config.next.yml</code> 和旧主题配置文件 <code>source/_data/next.yml</code> 两者进行文本比较，根据自己的需求迁移整合相关配置项。</p>
-<p>修改完成后，将旧主题配置文件 <code>source/_data/next.yml</code> 改名，我是改成了 <code>next-old.yml</code>，名字随意，只要能同原来的 <code>next.yml</code> 区别开来即可。</p>
-<p>从 V7 升级到 V8 主要有下面几个变化：</p>
-<ul>
-<li>Hexo 5.0 版本移除了对于 swig 模版的支持，使用 Nunjucks 代替 swig 作为模版引擎，主题配置文件内 <code>custom_file_path</code> 支持文件的后缀也从 <code>.swig</code> 变成了 <code>.njk</code>。所以如果此前根据 swig 的语法写过自定义内容，请在更新前确认它们是与 Nunjucks 兼容的，否则会报错，且生成的页面为空白。例如， Nunjucks 只支持 <code>and</code> 运算符，需要替换掉 swig 中的 <code>&amp;&amp;</code>。</li>
-<li>Next V8 将自带的 Font Awesome 图标库由 4.7.0 版本升级为了 5.13.0 版本。此次升级并不向下兼容，所以需要修改配置文件中与 Font Awesome 相关的内容，否则图标可能无法正常显示。</li>
-<li>NexT V8 已支持一键切换 CDN 服务商，而不需要为每个插件单独设置 CDN 地址。但需要注意，如果是使用最新版的 Next，那么一定要保持 <code>internal: local</code> 的默认设置不变。</li>
-<li>如果此前配置过 Valine，需要注意将主题配置文件中的 <code>appid</code> 和 <code>appkey</code> 改为 <code>appId</code> 和 <code>appKey</code> 。否则会出现 Valine 无法正常加载的现象。</li>
-<li>由于 Velocity.js 缺乏维护，NexT V8 使用 Animate.css 代替之。两者的动画效果几乎完全一致，除了动画名称略有不同。如果在配置文件中设置了旧的名称（例如 slideDownIn），请将其移除或根据此网页选择新的动画效果：<a target="_blank" rel="noopener" href="http://theme-next.js.org/animate/">http://theme-next.js.org/animate/</a></li>
-</ul>
-<p>更多详细信息，可以自行查询 Next <a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/issues/4">相关官方说明</a>以及<a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/">官方文档</a>。</p>
-<h3 id="迁移-Favicon-位置"><a href="#迁移-Favicon-位置" class="headerlink" title="迁移 Favicon 位置"></a>迁移 Favicon 位置</h3><p>之前我博客的 Favicon 图片啥的都是放在 <code>hexo-site/themes/next/source/images</code> 目录下面，正好趁着这次升级的机会，将图片全部移到了 <code>hexo-site/source/images</code> 下（没有这个文件夹就自己新建）。</p>
-<p>不要忘记去 <code>_config.next.yml</code> 检查下 Favicon 相关配置的文件名是否正确，默认的都带有 <code>-next</code>  后缀。</p>
-<h2 id="自定义修改迁移"><a href="#自定义修改迁移" class="headerlink" title="自定义修改迁移"></a>自定义修改迁移</h2><p>这一部分是最麻烦的，因为跨版本升级，很多源文件的位置以及名称都发生了变化，比如每篇文章结尾处的版权声明的样式文件就从 <code>post-copyright.styl</code> 变成了 <code>post-footer.styl</code>。而且模版引擎也从swig 变更成了 Nunjucks，虽然大部分内容是可以互相兼容的，但万一碰到不兼容的，排查起来就比较麻烦了。</p>
-<p>所幸我的自定义修改并不多，而且都是 Nunjucks 兼容的，所以迁移起来相对较快。在进行迁移的时候，利用类似 Beyond Compare 之类的文件比较软件可以有效提高迁移速度，推荐大家尝试。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>折腾了一天，成功从 Next V7 升级到了 V8，升级所带来肉眼可见的变化并不多，只有一些诸如赞赏按钮样式之类的小变动，其他更多都是内部的一些变动。</p>
-<p>我是喜欢自己折腾，而且及时使用新版，可以帮助发现并反馈问题，可以帮助 Next 主题更好地进行迭代。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next">hexo-theme-next README.md</a></p>
-<p><a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/">Next 官方文档</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-theme-next/issues/4">Next【必读】更新说明及常见问题 </a></p>
-<p><a target="_blank" rel="noopener" href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a></p>
+<h2 id="升级背景"><a href="#升级背景" class="headerlink" title="升级背景"></a>升级背景</h2><p>之前把博客双部署到了 CODING 静态网站和 GitHub Pages，国内的访问速度快了不少。前几天登录 CODING 后台，突然发现多了一个新版升级提醒。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-%E5%90%8E%E5%8F%B0%E5%8D%87%E7%BA%A7%E6%8F%90%E9%86%92.png" alt="升级提醒"></p>
+<p>新版最大的变化就是同腾讯云进行了打通，直接把网站放到了腾讯云的对象存储 COS 上，其他 CDN 加速、SSL 证书管理也是腾讯云的功能。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%8F%98%E5%8C%96.png" alt="新版的变化及优势"></p>
+<h2 id="新版开始收费了"><a href="#新版开始收费了" class="headerlink" title="新版开始收费了"></a>新版开始收费了</h2><blockquote>
+<p>CODING Pages 依托腾讯云资源提供相关静态托管能力，CODING 平台本身不收取任何费用。该产品使用了腾讯云对象存储 COS、内容分发网络 CDN、SSL 证书产品，其中 COS 和 CDN 采用用量计费模式，SSL 证书免费，所使用到的其他相关腾讯云产品本身亦会有一定的免费额度。</p>
+</blockquote>
+<p>新版因为使用了腾讯云的相关资料，所以要<strong>开始收费</strong>了。对于收费，我是能够接受的，前提是能够提供比免费更好的服务。我的图床就是使用的腾讯云的对象存储，加载速度很快，一个月几毛钱的费用低得基本可以忽略。</p>
+<h2 id="升级流程"><a href="#升级流程" class="headerlink" title="升级流程"></a>升级流程</h2><p>新版升级界面如下：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8D%87%E7%BA%A7%E8%AE%BE%E7%BD%AE%E7%95%8C%E9%9D%A2.png" alt="新版升级设置界面"></p>
+<p>因为新版是基于腾讯云的，所以升级需要先在腾讯云进行实名认证并授予相关权限。我因为之前图床就是用的腾讯云对象存储，所以已经实名过了。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%8E%88%E6%9D%83.png" alt="腾讯云服务授权"></p>
+<p>之前 CODING Pages 旧版是部署在腾讯云新加坡节点，现在新版部署节点可选香港、北京、上海、广州四个，但未备案域名只能选香港。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%8A%82%E7%82%B9%E9%80%89%E6%8B%A9.png" alt="节点选择提醒"></p>
+<p>添加自定义域名前，需要前往腾讯云开启 CDN 功能，这一步就是我觉得<strong>新版最大的坑</strong>。</p>
+<p>下一步去域名托管商更改解析记录，解析记录值都是指向了 <code>cdn.dnsv1.com</code>，这也是为什么需要开启 CDN 功能的原因。</p>
+<p>部署的时候，「网站类型」我最开始选的是「Hexo」，结果部署失败，部署日志也不知道抽啥风，一直显示不出来，原因也不好排查。我尝试将网站类型改为「静态网站」，重新部署就成功了。</p>
+<h2 id="这-CDN-不能要"><a href="#这-CDN-不能要" class="headerlink" title="这 CDN 不能要"></a>这 CDN 不能要</h2><p>新版升级完成后，立马测了一波速，然后被结果给吓到了，从之前的一片绿油油变成了一片惨淡的黄色，访问速度下降了不止一点半点。这就很费解了，同样都是腾讯云，之前部署在新加坡节点，现在搬到香港节点了，速度不升反降是什么情况。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%BC%80%E5%90%AFCDN%E6%B5%8B%E9%80%9F%E7%BB%93%E6%9E%9C.png" alt="新版开启 CDN 测速结果"></p>
+<p>检查解析 IP，发现域名全都被解析到了德国、爱尔兰、美国，和想象中的香港地址完全不是一回事。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%BC%80%E5%90%AFCDN%E8%A7%A3%E6%9E%90IP%E7%BB%93%E6%9E%9C.png" alt="新版开启 CDN 域名解析结果"></p>
+<p>这种情况我估摸着肯定是 CDN 的锅，去腾讯云后台一检查，发现已经开启的 CDN 设置的服务区域是「中国境外」。我想当然地以为「中国境外」的含义是指只有从国外访问网站的时候才会通过 CDN 访问，国内则是直接访问香港源站，这样虽然国内享受不到 CDN 加速，国外我设置是解析到 GitHub Pages，也用不上，但想着无非就是个鸡肋而已。</p>
+<p>但一查文档，发现自己还是太单纯了：</p>
+<blockquote>
+<p>「中国境外」:全球用户访问均会调度至中国境外的加速节点进行服务。</p>
+</blockquote>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8A%A0%E9%80%9F%E5%8C%BA%E5%9F%9F%E6%96%87%E6%A1%A3%E8%A7%A3%E9%87%8A.png" alt="「中国境外」"></p>
+<p>也就是说，不管是从国内还是国外访问，都会被调度到国外的 CDN 加速节点进行接入，想不经过 CDN 直接访问香港源站都不行。而比较符合我想要的效果的「全球」则需要域名进行备案之后才能开启，未备案域名开启 CDN 的话就<strong>只能选「中国境外」</strong>。</p>
+<p>本来是用来加快访问速度的 CDN，对于使用<strong>未备案域名</strong>的博客来说，已经不仅仅是鸡肋了，反而是拖累。本来直接访问香港就能解决的事情，现在非得绕道德国、爱尔兰、美国才行，这访问速度能快起来才是怪事。</p>
+<h2 id="尝试直连香港源站"><a href="#尝试直连香港源站" class="headerlink" title="尝试直连香港源站"></a>尝试直连香港源站</h2><p>既然这是 CDN 导致的，那我把 CDN 直接给关了，直连香港源站不就行了？</p>
+<h3 id="关闭-CDN"><a href="#关闭-CDN" class="headerlink" title="关闭 CDN"></a>关闭 CDN</h3><p>进入腾讯云后台–&gt;「内容分发网络」–&gt;「域名管理」，关闭 CDN 加速。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91%E5%90%8E%E5%8F%B0%E5%85%B3%E9%97%ADCDN.png" alt="关闭 CDN"></p>
+<h3 id="更改域名解析记录"><a href="#更改域名解析记录" class="headerlink" title="更改域名解析记录"></a>更改域名解析记录</h3><p>在 DNSPod 里将国内访问解析到 CODING 提供的默认访问地址，此时再检查 DNS 解析结果发现就全部都指向了香港的 IP，达到了自己想要的效果。</p>
+<h2 id="致命的证书问题"><a href="#致命的证书问题" class="headerlink" title="致命的证书问题"></a>致命的证书问题</h2><p>设置成直接访问香港源站后，速度果不其然就上来了，比访问新加坡节点速度还要快上一点。但很快就出现了一个更加严重的问题——证书错误。</p>
+<p>新版申请的 SSL 证书是和 CDN 绑定在一起的，在腾讯云的证书管理里面只能部署到 CDN，而我把 CDN 关闭了，现在直接访问的是香港源站。源站的证书是颁给 <code>*.cdn.my.qcloud</code> 的，和我的域名不一致，这就会导致浏览器直接报警说网站不安全，这是不可接受的。我尝试解决这个问题，但无奈水平有限，最后也没能找到解决的办法。如果有知道如何解决证书问题的同学，麻烦指导我一下，不甚感激。</p>
+<p>现在情况就是如果想要实现自定义域名 HTTPS 访问，就需要打开 CDN，打开 CDN 就意味着牺牲访问速度，这还是在 CDN 和 COS 需要付费的情况下。矛盾无法调和，所以最后我只能又<strong>回退到旧版</strong>了，幸好 CODING 目前还没有关闭旧版的入口，给了我一个反悔的机会。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>花了差不多一天的时间，最后还是老老实实回到了旧版，相当于一天白折腾了。域名没有进行备案的话，在国内使用不方便的地方真的太多了。CODING 新版静态网站我觉得对于使用已备案域名的同学来说还是不错的，配置简单，CDN 加速、SSL 证书一步到位。但同样的对于这些同学来说可供选择的方案太多了，免费的也有不少，CODING 的新版并没有太大的吸引力。</p>
+<p>而对于未备案域名的同学新版则非常不友好，完全是<strong>负优化</strong>，完全没有升级的必要，谁会花钱找罪受呢。CODING 工程师说旧版后续会下线，到时候如果自定义域名的问题没有得到改善的话，可能就需要考虑迁移平台了。现在旧版还能用就先用着。</p>
+<p>我向 CODING 反馈了自定义域名的问题，希望能同旧版一样使用 Let’s Encrypt 的证书，不要强行同腾讯云的 CDN 加速绑定在一起，后续如果有进一步的反馈结果的话我会同步到博客中。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a target="_blank" rel="noopener" href="https://help.coding.net/docs/pages/operating/migrate.html">官方静态网站服务升级指南</a></p>
 
     </div>
 
@@ -490,19 +499,19 @@
 <ul>
   <li class="post-copyright-title">
     <strong>本文标题： </strong>
-    Hexo Next 主题 V7 升级 V8 记录
+    CODING Pages 静态网站升级腾讯云新版踩坑小记
   </li>
   <li class="post-copyright-author">
       <strong>本文作者： </strong>Asurada
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://asurada.zone/post/Update-Next-From-V7-To-V8/" title="Hexo Next 主题 V7 升级 V8 记录">https://asurada.zone/post/Update-Next-From-V7-To-V8/</a>
+      <a href="https://asurada.zone/post/CODING-Pages-Upgrade-To-TencentCloud/" title="CODING Pages 静态网站升级腾讯云新版踩坑小记">https://asurada.zone/post/CODING-Pages-Upgrade-To-TencentCloud/</a>
     <span class="copy-path" title="������� Markdown ��������"
       ><i
         style="cursor: pointer"
         class="fas fa-copy"
-        data-clipboard-text="[Asurada's Blog | Hexo Next 主题 V7 升级 V8 记录](https://asurada.zone/post/Update-Next-From-V7-To-V8/)"
+        data-clipboard-text="[Asurada's Blog | CODING Pages 静态网站升级腾讯云新版踩坑小记](https://asurada.zone/post/CODING-Pages-Upgrade-To-TencentCloud/)"
         aria-label="复制成功"
       ></i
     ></span>
@@ -559,21 +568,17 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
-              <a href="/tags/Next/" rel="tag"><i class="fa fa-tag"></i> Next</a>
+              <a href="/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/" rel="tag"><i class="fa fa-tag"></i> 腾讯云</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/post/CODING-Pages-Upgrade-To-TencentCloud/" rel="prev" title="CODING Pages 静态网站升级腾讯云新版踩坑小记">
-                  <i class="fa fa-chevron-left"></i> CODING Pages 静态网站升级腾讯云新版踩坑小记
-                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/post/Why-Shouldnot-Block-JS-And-CSS-Files-In-Robotstxt-Anymore/" rel="next" title="为什么 robots.txt 不应该再屏蔽 JS 和 CSS 了">
-                  为什么 robots.txt 不应该再屏蔽 JS 和 CSS 了 <i class="fa fa-chevron-right"></i>
+                <a href="/post/Update-Next-From-V7-To-V8/" rel="next" title="Hexo Next 主题 V7 升级 V8 记录">
+                  Hexo Next 主题 V7 升级 V8 记录 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -713,7 +718,7 @@ NexT.utils.loadComments('#valine-comments', () => {
   NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
     new Valine(Object.assign({"enable":true,"appId":"TlFdGGuVUkr19SfVEbAY9d4u-MdYXbMMI","appKey":"j82rXBFVJaXsMA5gc4RMvSeU","serverURLs":null,"placeholder":"Just go go","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-cn","visitor":true,"comment_count":false,"recordIP":false,"enableQQ":false,"requiredFields":[],"notify":true,"verify":false}, {
       el: '#valine-comments',
-      path: "/post/Update-Next-From-V7-To-V8/",
+      path: "/post/CODING-Pages-Upgrade-To-TencentCloud/",
       serverURLs: "https://tlfdgguv.api.lncldglobal.com"
     }));
   }, window.Valine);
