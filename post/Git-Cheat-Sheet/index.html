@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
+  <link rel="manifest" href="/images/manifest.json">
+  <meta name="yandex-verification" content="4aca0e5ccd3fbc2f">
+  <meta name="baidu-site-verification" content="3br91mSiy1">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"asurada.zone","root":"/","scheme":"Muse","version":"8.0.2","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}};
+  </script>
+
+  <meta name="description" content="一些不太常用的 Git 命令往往隔一段时间不用就忘记了，特写此篇备忘。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git 常用命令备忘录">
+<meta property="og:url" content="https://asurada.zone/post/Git-Cheat-Sheet/index.html">
+<meta property="og:site_name" content="Asurada&#39;s Zone">
+<meta property="og:description" content="一些不太常用的 Git 命令往往隔一段时间不用就忘记了，特写此篇备忘。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-08-30T08:57:45.000Z">
+<meta property="article:modified_time" content="2020-11-27T10:56:48.163Z">
+<meta property="article:author" content="Asurada">
+<meta property="article:tag" content="Git">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://asurada.zone/post/Git-Cheat-Sheet/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+  <meta name="360-site-verification" content="68099c4ac6f6f63bfe250dd357c1d4e1"/>
+
+
+  <title>Git 常用命令备忘录 | Asurada's Zone</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?97f25bcee33620831e37db79e40bc9c4";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Asurada's Zone" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Asurada's Zone</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">风物长宜放眼量</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-User-%E4%BF%A1%E6%81%AF"><span class="nav-number">1.</span> <span class="nav-text">配置 User 信息</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0-User-%E4%BF%A1%E6%81%AF"><span class="nav-number">1.1.</span> <span class="nav-text">添加 User 信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B-User-%E4%BF%A1%E6%81%AF"><span class="nav-number">1.2.</span> <span class="nav-text">查看 User 信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#global-%E4%B8%8E-local-%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%89%80%E5%9C%A8%E4%BD%8D%E7%BD%AE"><span class="nav-number">1.3.</span> <span class="nav-text">global 与 local 优先级以及配置文件所在位置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8B%AC%E8%87%AA%E4%BD%BF%E7%94%A8-Git-%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="nav-number">2.</span> <span class="nav-text">独自使用 Git 常见使用场景</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-log-%E5%B8%B8%E7%94%A8%E5%8F%82%E6%95%B0"><span class="nav-number">2.1.</span> <span class="nav-text">git log 常用参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E4%B8%8D%E9%9C%80%E8%A6%81%E7%9A%84%E5%88%86%E6%94%AF"><span class="nav-number">2.2.</span> <span class="nav-text">删除不需要的分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E6%9C%80%E8%BF%91%E4%B8%80%E6%AC%A1%E7%9A%84-commit-%E5%86%85%E5%AE%B9"><span class="nav-number">2.3.</span> <span class="nav-text">修改最近一次的 commit 内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E6%9C%80%E8%BF%91%E4%B8%80%E6%AC%A1-commit-%E7%9A%84%E4%BD%9C%E8%80%85"><span class="nav-number">2.4.</span> <span class="nav-text">修改最近一次 commit 的作者</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E8%80%81%E6%97%A7-commit-%E7%9A%84-message"><span class="nav-number">2.5.</span> <span class="nav-text">修改老旧 commit 的 message</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8A%8A%E8%BF%9E%E7%BB%AD%E7%9A%84%E5%A4%9A%E4%B8%AA-commit-%E6%95%B4%E7%90%86%E6%88%90%E4%B8%80%E4%B8%AA"><span class="nav-number">2.6.</span> <span class="nav-text">把连续的多个 commit 整理成一个</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8A%8A%E9%97%B4%E9%9A%94%E7%9A%84%E5%A4%9A%E4%B8%AA-commit-%E6%95%B4%E7%90%86%E6%88%90%E4%B8%80%E4%B8%AA"><span class="nav-number">2.7.</span> <span class="nav-text">把间隔的多个 commit 整理成一个</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AF%94%E8%BE%83%E6%9A%82%E5%AD%98%E5%8C%BA%E5%92%8C-HEAD-%E6%89%80%E5%90%AB%E6%96%87%E4%BB%B6%E7%9A%84%E5%B7%AE%E5%BC%82"><span class="nav-number">2.8.</span> <span class="nav-text">比较暂存区和 HEAD 所含文件的差异</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AF%94%E8%BE%83%E5%B7%A5%E4%BD%9C%E5%8C%BA%E5%92%8C%E6%9A%82%E5%AD%98%E5%8C%BA%E6%89%80%E5%90%AB%E6%96%87%E4%BB%B6%E7%9A%84%E5%B7%AE%E5%BC%82"><span class="nav-number">2.9.</span> <span class="nav-text">比较工作区和暂存区所含文件的差异</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AF%94%E8%BE%83%E5%B7%A5%E4%BD%9C%E5%8C%BA%E5%92%8C-HEAD-%E6%89%80%E5%90%AB%E6%96%87%E4%BB%B6%E7%9A%84%E5%B7%AE%E5%BC%82"><span class="nav-number">2.10.</span> <span class="nav-text">比较工作区和 HEAD 所含文件的差异</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A9%E6%9A%82%E5%AD%98%E5%8C%BA%E6%81%A2%E5%A4%8D%E6%88%90%E5%92%8C-HEAD-%E4%B8%80%E6%A0%B7"><span class="nav-number">2.11.</span> <span class="nav-text">让暂存区恢复成和 HEAD 一样</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A9%E5%B7%A5%E4%BD%9C%E5%8C%BA%E7%9A%84%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D%E4%B8%BA%E5%92%8C%E6%9A%82%E5%AD%98%E5%8C%BA%E4%B8%80%E6%A0%B7"><span class="nav-number">2.12.</span> <span class="nav-text">让工作区的文件恢复为和暂存区一样</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%96%E6%B6%88%E6%9A%82%E5%AD%98%E5%8C%BA%E9%83%A8%E5%88%86%E6%96%87%E4%BB%B6%E7%9A%84%E6%9B%B4%E6%94%B9"><span class="nav-number">2.13.</span> <span class="nav-text">取消暂存区部分文件的更改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B6%88%E9%99%A4%E6%9C%80%E8%BF%91%E7%9A%84%E5%87%A0%E6%AC%A1%E6%8F%90%E4%BA%A4"><span class="nav-number">2.14.</span> <span class="nav-text">消除最近的几次提交</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9C%8B%E4%B8%8D%E5%90%8C%E6%8F%90%E4%BA%A4%E7%9A%84%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E7%9A%84%E5%B7%AE%E5%BC%82"><span class="nav-number">2.15.</span> <span class="nav-text">看不同提交的指定文件的差异</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A3%E7%A1%AE%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95"><span class="nav-number">2.16.</span> <span class="nav-text">正确删除文件的方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E4%BA%A4%E4%BA%92"><span class="nav-number">3.</span> <span class="nav-text">本地与远程仓库的交互</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A9-Fork-%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8C%E6%BA%90%E4%BB%93%E5%BA%93%E4%BF%9D%E6%8C%81%E6%9B%B4%E6%96%B0"><span class="nav-number">3.1.</span> <span class="nav-text">让 Fork 的仓库同源仓库保持更新</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E6%BA%90%E4%BB%93%E5%BA%93"><span class="nav-number">3.1.1.</span> <span class="nav-text">添加源仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%90%8C%E6%AD%A5%E6%9B%B4%E6%96%B0"><span class="nav-number">3.1.2.</span> <span class="nav-text">同步更新</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E9%98%B6%E7%89%88"><span class="nav-number">3.1.3.</span> <span class="nav-text">进阶版</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A8%E9%80%81%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84%E5%88%86%E6%94%AF%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="nav-number">3.2.</span> <span class="nav-text">推送一个新的分支到远程仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B8%85%E7%90%86%E6%9C%AC%E5%9C%B0%E6%97%A0%E6%95%88%E7%9A%84%E8%BF%9C%E7%A8%8B%E8%BF%BD%E8%B8%AA%E5%88%86%E6%94%AF"><span class="nav-number">3.3.</span> <span class="nav-text">清理本地无效的远程追踪分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9C%E7%A8%8B%E5%88%A0%E9%99%A4%E4%BA%86%E5%88%86%E6%94%AF%E6%9C%AC%E5%9C%B0%E4%B9%9F%E6%83%B3%E5%88%A0%E9%99%A4"><span class="nav-number">3.4.</span> <span class="nav-text">远程删除了分支本地也想删除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF"><span class="nav-number">3.5.</span> <span class="nav-text">删除远程分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8E%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E4%B8%AD%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%88%87%E6%8D%A2%E5%88%B0%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF"><span class="nav-number">3.6.</span> <span class="nav-text">从远程分支中创建并切换到本地分支</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="nav-number">4.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
+        </section>
+        <!--/noindex-->
+
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Asurada"
+      src="https://avatars2.githubusercontent.com/u/43401755?s=460&v=4">
+  <p class="site-author-name" itemprop="name">Asurada</p>
+  <div class="site-description" itemprop="description">一个嵌入式工程师的简单分享</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/ousugo" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;ousugo" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://asurada.zone/atom.xml" title="RSS → https:&#x2F;&#x2F;asurada.zone&#x2F;atom.xml"><i class="fas fa-rss fa-fw"></i>RSS</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </section>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/ousugo" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+      
+
+      
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://asurada.zone/post/Git-Cheat-Sheet/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/43401755?s=460&v=4">
+      <meta itemprop="name" content="Asurada">
+      <meta itemprop="description" content="一个嵌入式工程师的简单分享">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Asurada's Zone">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Git 常用命令备忘录
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-08-30 16:57:45" itemprop="dateCreated datePublished" datetime="2020-08-30T16:57:45+08:00">2020-08-30</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-11-27 18:56:48" itemprop="dateModified" datetime="2020-11-27T18:56:48+08:00">2020-11-27</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" itemprop="url" rel="index"><span itemprop="name">开发环境</span></a>
+        </span>
+    </span>
+
+  
+    <span id="/post/Git-Cheat-Sheet/" class="post-meta-item leancloud_visitors" data-flag-title="Git 常用命令备忘录" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/post/Git-Cheat-Sheet/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/post/Git-Cheat-Sheet/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>3.1k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>3 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>一些不太常用的 Git 命令往往隔一段时间不用就忘记了，特写此篇备忘。</p>
+<a id="more"></a>
+
+<h2 id="配置-User-信息"><a href="#配置-User-信息" class="headerlink" title="配置 User 信息"></a>配置 User 信息</h2><h3 id="添加-User-信息"><a href="#添加-User-信息" class="headerlink" title="添加 User 信息"></a>添加 User 信息</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config [--global | --local] user.name &#x27;your_name&#x27;</span><br><span class="line">git config [--global | --local] user.email &#x27;your_email&#x27;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>默认为 local，所以只有需要设置全局时需要带 –global 参数，–local 参数可以直接省略。</li>
+<li>单引号不是必须的，可以省略。一般只在输入的内容之中含有空格的时候需要使用单引号。</li>
+</ul>
+<h3 id="查看-User-信息"><a href="#查看-User-信息" class="headerlink" title="查看 User 信息"></a>查看 User 信息</h3><p>使用以下命令查看所有全局/局部配置信息：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --list [--local | --global | --system]</span><br></pre></td></tr></table></figure>
+
+<p>或者使用以下命令直接查看具体设置：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config [--global | --local] user.name</span><br><span class="line">git config [--global | --local] user.email</span><br></pre></td></tr></table></figure>
+
+<h3 id="global-与-local-优先级以及配置文件所在位置"><a href="#global-与-local-优先级以及配置文件所在位置" class="headerlink" title="global 与 local 优先级以及配置文件所在位置"></a>global 与 local 优先级以及配置文件所在位置</h3><p>local &gt; global</p>
+<p>local 配置位于当前仓库的 .git 文件夹下的 config 文件中。</p>
+<p>global 配置位于当前用户 home 目录下的 .gitconfig 文件中。</p>
+<h2 id="独自使用-Git-常见使用场景"><a href="#独自使用-Git-常见使用场景" class="headerlink" title="独自使用 Git 常见使用场景"></a>独自使用 Git 常见使用场景</h2><h3 id="git-log-常用参数"><a href="#git-log-常用参数" class="headerlink" title="git log 常用参数"></a>git log 常用参数</h3><ul>
+<li>git log –all 查看所有分支的历史</li>
+<li>git log –graph 图形化查看 log 历史</li>
+<li>git log –oneline 查看单行的简洁历史</li>
+<li>git log -n 查看最近 n 条历史</li>
+</ul>
+<h3 id="删除不需要的分支"><a href="#删除不需要的分支" class="headerlink" title="删除不需要的分支"></a>删除不需要的分支</h3><p>普通删除(如果当前分支没有被合并，不能直接删除)：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -d 分支名</span><br></pre></td></tr></table></figure>
+
+<p>强制删除：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -D 分支名</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改最近一次的-commit-内容"><a href="#修改最近一次的-commit-内容" class="headerlink" title="修改最近一次的 commit 内容"></a>修改最近一次的 commit 内容</h3><p>命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit --amend</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改最近一次-commit-的作者"><a href="#修改最近一次-commit-的作者" class="headerlink" title="修改最近一次 commit 的作者"></a>修改最近一次 commit 的作者</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit --amend --author=&quot;AuthorName &lt;email@address.com&gt;&quot; --no-edit</span><br></pre></td></tr></table></figure>
+
+<p>其中 <code>no-edit</code> 的作用是表明此次修改仅修改作者，而不需要对 <code>commit message</code> 进行改动，所以不需要启动编辑器。</p>
+<h3 id="修改老旧-commit-的-message"><a href="#修改老旧-commit-的-message" class="headerlink" title="修改老旧 commit 的 message"></a>修改老旧 commit 的 message</h3><ol>
+<li><p>进入交互式变基策略修改：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase -i 想要修改的提交节点的父节点的 HASH 值</span><br></pre></td></tr></table></figure>
+
+<p>如果想要修改第一次提交，也就是最早的那次提交，没有父节点的提交，使用命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase -i --root</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改策略：</p>
+<p>在 vi 模式下将想要修改的 commit 前面的选项由 pick 变更为 r 或者 reword，这一选项的含义为此 commit 的内容不变，只修改其 commit message。</p>
+</li>
+<li><p>修改 commit message</p>
+</li>
+</ol>
+<p>注意事项：某个 commit 修改后，它本身以及它后面所有 commit 的 hash 值都会发生变化，这是因为message 也是 commit 的属性，是确定 commit 的 hash 值的一个因子。其次，second_commit 有个 parent 的属性，parent 的内容发生了变化，因此，second_commit 的 hash 也变了。</p>
+<p>如果最早的提交也即 root commit 发生了变化，那么会产生一个新的 root commit，即出现了两个祖宗 commit。</p>
+<h3 id="把连续的多个-commit-整理成一个"><a href="#把连续的多个-commit-整理成一个" class="headerlink" title="把连续的多个 commit 整理成一个"></a>把连续的多个 commit 整理成一个</h3><ol>
+<li><p>进入交互式变基策略修改：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase -i 想要修改的提交节点的父节点的 HASH 值</span><br></pre></td></tr></table></figure>
+
+<p>如果想要修改第一次提交，也就是最早的那次提交，没有父节点的提交，使用命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase -i --root</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改策略：</p>
+<p>将准备被合并的 commit 前面的选项由 pick 改为 s 或者 squash，这一选项的含义为继续使用这一 commit，但是将其合并到前面(比它老)的那一个 commit 里面去，想要合并哪几个就将这几个前面的选项都改成 s。</p>
+</li>
+<li><p>修改 commit message</p>
+</li>
+</ol>
+<h3 id="把间隔的多个-commit-整理成一个"><a href="#把间隔的多个-commit-整理成一个" class="headerlink" title="把间隔的多个 commit 整理成一个"></a>把间隔的多个 commit 整理成一个</h3><p>原理和方法同“把连续的多个 commit 整理成一个”是一样的，只是 rebase 策略的不一样：</p>
+<ul>
+<li>将想要整理的 commit 通过剪切，按照自己想要的顺序移动到一起，排在上面的是越老的</li>
+<li>将想要整理的 commit 前面的选项变更为 s</li>
+<li>最后这些 commit 会同上方最近的一个选项为 pick 的 commit 合并</li>
+</ul>
+<p>会用到的 vim 快捷键：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dd	<span class="regexp">//</span>剪切一行，也可以用来删除一行</span><br><span class="line">dw	<span class="regexp">//</span>删除一个单词</span><br><span class="line">u	<span class="regexp">//</span>撤销</span><br><span class="line">p	<span class="regexp">//</span>粘贴</span><br></pre></td></tr></table></figure>
+
+<h3 id="比较暂存区和-HEAD-所含文件的差异"><a href="#比较暂存区和-HEAD-所含文件的差异" class="headerlink" title="比较暂存区和 HEAD 所含文件的差异"></a>比较暂存区和 HEAD 所含文件的差异</h3><p>HEAD 所含文件就是最新一个 commit 内的文件内容</p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff <span class="comment">--cached</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="比较工作区和暂存区所含文件的差异"><a href="#比较工作区和暂存区所含文件的差异" class="headerlink" title="比较工作区和暂存区所含文件的差异"></a>比较工作区和暂存区所含文件的差异</h3> <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git diff</span></span><br></pre></td></tr></table></figure>
+
+<p>后面可以接“– 单个或多个文件名”来查看特定文件的差异</p>
+<h3 id="比较工作区和-HEAD-所含文件的差异"><a href="#比较工作区和-HEAD-所含文件的差异" class="headerlink" title="比较工作区和 HEAD 所含文件的差异"></a>比较工作区和 HEAD 所含文件的差异</h3><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git diff HEAD</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="让暂存区恢复成和-HEAD-一样"><a href="#让暂存区恢复成和-HEAD-一样" class="headerlink" title="让暂存区恢复成和 HEAD 一样"></a>让暂存区恢复成和 HEAD 一样</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">reset</span> <span class="keyword">HEAD</span></span><br></pre></td></tr></table></figure>
+
+<p>git reset 默认的参数为 –mixed</p>
+<h3 id="让工作区的文件恢复为和暂存区一样"><a href="#让工作区的文件恢复为和暂存区一样" class="headerlink" title="让工作区的文件恢复为和暂存区一样"></a>让工作区的文件恢复为和暂存区一样</h3><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout <span class="comment">-- 文件名</span></span><br></pre></td></tr></table></figure>
+
+<p>Git 2.23 版本以后使用 <code>git restore</code>命令来代替<code>git checkout</code>功能</p>
+<h3 id="取消暂存区部分文件的更改"><a href="#取消暂存区部分文件的更改" class="headerlink" title="取消暂存区部分文件的更改"></a>取消暂存区部分文件的更改</h3><p>将暂存区部分文件取消暂存的意思是所做的改动继续保留在工作目录，暂存区部分的内容同 HEAD 保持一致。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">reset</span> <span class="keyword">HEAD</span> <span class="comment">--文件名</span></span><br></pre></td></tr></table></figure>
+
+<p>Git 新版本使用：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">restore</span> <span class="comment">--staged &lt;file&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>两条命令作用是一样的。</p>
+<h3 id="消除最近的几次提交"><a href="#消除最近的几次提交" class="headerlink" title="消除最近的几次提交"></a>消除最近的几次提交</h3><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">reset</span> <span class="comment">--hard &lt;hash&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>将工作区和暂存区的内容都恢复到 hash 值所对应的那个 commit 的状态。</p>
+<h3 id="看不同提交的指定文件的差异"><a href="#看不同提交的指定文件的差异" class="headerlink" title="看不同提交的指定文件的差异"></a>看不同提交的指定文件的差异</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">git</span> <span class="selector-tag">diff</span> <span class="selector-attr">[from_commit]</span> <span class="selector-attr">[to_commit]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="正确删除文件的方法"><a href="#正确删除文件的方法" class="headerlink" title="正确删除文件的方法"></a>正确删除文件的方法</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm <span class="tag">&lt;<span class="name">filename</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="本地与远程仓库的交互"><a href="#本地与远程仓库的交互" class="headerlink" title="本地与远程仓库的交互"></a>本地与远程仓库的交互</h2><h3 id="让-Fork-的仓库同源仓库保持更新"><a href="#让-Fork-的仓库同源仓库保持更新" class="headerlink" title="让 Fork 的仓库同源仓库保持更新"></a>让 Fork 的仓库同源仓库保持更新</h3><h4 id="添加源仓库"><a href="#添加源仓库" class="headerlink" title="添加源仓库"></a>添加源仓库</h4><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote <span class="keyword">add</span><span class="bash"> upstream 源仓库链接</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="同步更新"><a href="#同步更新" class="headerlink" title="同步更新"></a>同步更新</h4><ol>
+<li>如果在另一个分支上，就切换到 master 分支</li>
+</ol>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout <span class="literal">master</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>从源仓库抓取最新更改后，合并到本地 master 分支</li>
+</ol>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git pull upstream</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>将本地 master 分支推送到自己 Fork 的远程仓库  origin</li>
+</ol>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="进阶版"><a href="#进阶版" class="headerlink" title="进阶版"></a>进阶版</h4><ol>
+<li>将 master 分支的上游仓库设置为源仓库</li>
+</ol>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch --<span class="attr">set-upstream-to=</span>upstream/<span class="keyword">master</span> <span class="title">master</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>将 push 命令推送的默认仓库设置为自己 Forked 的仓库 origin</li>
+</ol>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git<span class="built_in"> config </span>--local remote.pushDefault origin</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>搞定之后，工作流程为更加简单：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git pull	//默认从源仓库拉取最新的更新</span><br><span class="line">git push	//将拉取的更新推送到 Forked 的仓库</span><br></pre></td></tr></table></figure>
+
+<h3 id="推送一个新的分支到远程仓库"><a href="#推送一个新的分支到远程仓库" class="headerlink" title="推送一个新的分支到远程仓库"></a>推送一个新的分支到远程仓库</h3><p>-u 是 –set-upstream 的简写，该标记会为之后轻松地推送与拉取配置分支</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u remote_name new_branch_name</span><br></pre></td></tr></table></figure>
+
+<h3 id="清理本地无效的远程追踪分支"><a href="#清理本地无效的远程追踪分支" class="headerlink" title="清理本地无效的远程追踪分支"></a>清理本地无效的远程追踪分支</h3><p>利用选项 –prune</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git remote update -p</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="远程删除了分支本地也想删除"><a href="#远程删除了分支本地也想删除" class="headerlink" title="远程删除了分支本地也想删除"></a>远程删除了分支本地也想删除</h3><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git remote prune origin</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h3><figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span> --<span class="built_in">delete</span> &lt;remote-branchname&gt;</span><br></pre></td></tr></table></figure>
+
+<p>或者</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin <span class="symbol">:&lt;remote-branchname&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="从远程分支中创建并切换到本地分支"><a href="#从远程分支中创建并切换到本地分支" class="headerlink" title="从远程分支中创建并切换到本地分支"></a>从远程分支中创建并切换到本地分支</h3><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b &lt;branch-<span class="built_in">name</span>&gt; &lt;remote-<span class="built_in">name</span>&gt;/&lt;branch-<span class="built_in">name</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a target="_blank" rel="noopener" href="https://github.com/521xueweihan/git-tips">Git的奇技淫巧</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer"><div>
+    <div style="text-align:center;color:#bfbfbf;font-size:16px;"> 
+	  <span>-------- 本文结束 </span>
+      <i class="fa fa-paw"></i>
+      <span> 感谢阅读 --------</span>
+    </div>
+</div>
+          <div class="reward-container">
+  <div></div>
+  <button onclick="document.querySelector('.post-reward').classList.toggle('active');">
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.png" alt="Asurada 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="/images/alipay.png" alt="Asurada 支付宝">
+        <span>支付宝</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<!-- JS�� clipboard �����������ݵ�ճ����-->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+
+<!-- JS�� sweetalert ������ʾ��ʾ��Ϣ-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-title">
+    <strong>本文标题： </strong>
+    Git 常用命令备忘录
+  </li>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Asurada
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://asurada.zone/post/Git-Cheat-Sheet/" title="Git 常用命令备忘录">https://asurada.zone/post/Git-Cheat-Sheet/</a>
+    <span class="copy-path" title="������� Markdown ��������"
+      ><i
+        style="cursor: pointer"
+        class="fas fa-copy"
+        data-clipboard-text="[Asurada's Blog | Git 常用命令备忘录](https://asurada.zone/post/Git-Cheat-Sheet/)"
+        aria-label="复制成功"
+      ></i
+    ></span>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+ <script>
+   var clipboard = new ClipboardJS(".fa-copy");
+  clipboard.on("success", function(target) {
+    var message = document.createElement("div");
+    message.innerHTML =
+      '<i class="far fa-check-circle message-icon"></i><span class="message-content">' +
+      target.trigger.getAttribute("aria-label") +
+      "</span>";
+    swal({
+      content: message,
+      className: "copy-success-message",
+      timer: 1000,
+      button: false
+    });
+  });
+ </script>
+
+</div>
+
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/images/wechat_channel.png">
+          <span class="icon">
+            <i class="fab fa-weixin"></i>
+          </span>
+
+          <span class="label">WeChat</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+
+          <span class="label">RSS</span>
+        </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Git/" rel="tag"><i class="fa fa-tag"></i> Git</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/Why-Shouldnot-Block-JS-And-CSS-Files-In-Robotstxt-Anymore/" rel="prev" title="为什么 robots.txt 不应该再屏蔽 JS 和 CSS 了">
+                  <i class="fa fa-chevron-left"></i> 为什么 robots.txt 不应该再屏蔽 JS 和 CSS 了
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/post/Blog-Search-Engine-Index/" rel="next" title="Hexo 博客主流搜索引擎收录详细指南">
+                  Hexo 博客主流搜索引擎收录详细指南 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+      
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      
+
+      
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Asurada</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">42k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">38 分钟</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+NexT.utils.loadComments('#valine-comments', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
+    new Valine(Object.assign({"enable":true,"appId":"TlFdGGuVUkr19SfVEbAY9d4u-MdYXbMMI","appKey":"j82rXBFVJaXsMA5gc4RMvSeU","serverURLs":null,"placeholder":"Just go go","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-cn","visitor":true,"comment_count":false,"recordIP":false,"enableQQ":false,"requiredFields":[],"notify":true,"verify":false}, {
+      el: '#valine-comments',
+      path: "/post/Git-Cheat-Sheet/",
+      serverURLs: "https://tlfdgguv.api.lncldglobal.com"
+    }));
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
