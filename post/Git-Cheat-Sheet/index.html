@@ -677,6 +677,13 @@
 
 
       
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -882,6 +889,23 @@
   
 
   
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css">
+
+<script>
+NexT.utils.loadComments('#disqus_thread', () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqus.js', () => {
+    window.dsqjs = new DisqusJS({
+      api       : '' || 'https://disqus.com/api/',
+      apikey    : 'DbeRjZ9TqROzDs1OJ4lf28EXNb9CM0dbyrq1jtrK8AznU5hQdEVAyTXPr5kh4XcH',
+      shortname : 'asuradazone',
+      url       : "https://asurada.zone/post/Git-Cheat-Sheet/",
+      identifier: "post/Git-Cheat-Sheet/",
+      title     : "Git 常用命令备忘录",
+    });
+  }, window.DisqusJS);
+});
+</script>
 
 </body>
 </html>
