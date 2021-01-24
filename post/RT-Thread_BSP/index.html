@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.2.0">
+<meta name="generator" content="Hexo 5.3.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
@@ -25,10 +25,9 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"asurada.zone","root":"/","scheme":"Muse","version":"8.0.2","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"asurada.zone","root":"/","images":"/images","scheme":"Muse","version":"8.2.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}};
   </script>
-
-  <meta name="description" content="前言最近在准备六月份的 RT-Thread 的 RECA（RT-Thread开发者能力认证），官方组织了一个学习营，第一周的任务是：  基于 rt-thread4.0.2，能根据BSP制作教程及群里分享的视频《2.RTThread移植》，让自己的板子在RT-Thread上运行起来，了解BSP的制作。  本文并没有将 BSP 移植背后的原理全部弄清楚，只是想着先迈出第一步，不求甚解，先把整个流程给跑">
+<meta name="description" content="前言最近在准备六月份的 RT-Thread 的 RECA（RT-Thread开发者能力认证），官方组织了一个学习营，第一周的任务是：  基于 rt-thread4.0.2，能根据BSP制作教程及群里分享的视频《2.RTThread移植》，让自己的板子在RT-Thread上运行起来，了解BSP的制作。  本文并没有将 BSP 移植背后的原理全部弄清楚，只是想着先迈出第一步，不求甚解，先把整个流程给跑">
 <meta property="og:type" content="article">
 <meta property="og:title" content="RT-Thread RECA学习营（一）——正点原子战舰 V3  RT-Thread BSP 移植">
 <meta property="og:url" content="https://asurada.zone/post/RT-Thread_BSP/index.html">
@@ -84,20 +83,8 @@
 </script>
   <meta name="360-site-verification" content="68099c4ac6f6f63bfe250dd357c1d4e1"/>
 
-
-  <title>RT-Thread RECA学习营（一）——正点原子战舰 V3  RT-Thread BSP 移植 | Asurada's Zone</title>
+<title>RT-Thread RECA学习营（一）——正点原子战舰 V3  RT-Thread BSP 移植 | Asurada's Zone</title>
   
-
-
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?97f25bcee33620831e37db79e40bc9c4";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
 
 
 
@@ -147,7 +134,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
+    <div class="toggle" aria-label="切换导航栏" role="button">
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
@@ -175,31 +162,11 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -210,8 +177,7 @@
 
 
   <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
+    <div class="popup search-popup"><div class="search-header">
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
@@ -220,7 +186,7 @@
            placeholder="搜索..." spellcheck="false"
            type="search" class="search-input">
   </div>
-  <span class="popup-btn-close">
+  <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
@@ -236,7 +202,7 @@
 </div>
         
   
-  <div class="toggle sidebar-toggle">
+  <div class="toggle sidebar-toggle" role="button">
     <span class="toggle-line"></span>
     <span class="toggle-line"></span>
     <span class="toggle-line"></span>
@@ -256,12 +222,12 @@
 
       <div class="sidebar-panel-container">
         <!--noindex-->
-        <section class="post-toc-wrap sidebar-panel">
+        <div class="post-toc-wrap sidebar-panel">
             <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD-RT-Thread-%E6%BA%90%E7%A0%81"><span class="nav-number">2.</span> <span class="nav-text">下载 RT-Thread 源码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%8D%E5%88%B6%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF"><span class="nav-number">3.</span> <span class="nav-text">复制通用模板</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-CubeMX"><span class="nav-number">4.</span> <span class="nav-text">安装 CubeMX</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD-CubeMX"><span class="nav-number">4.1.</span> <span class="nav-text">下载 CubeMX</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-CubeMX-1"><span class="nav-number">4.2.</span> <span class="nav-text">安装 CubeMX</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-CubeMX-%E9%85%8D%E7%BD%AE%E5%B7%A5%E7%A8%8B"><span class="nav-number">5.</span> <span class="nav-text">使用 CubeMX 配置工程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E8%8A%AF%E7%89%87"><span class="nav-number">5.1.</span> <span class="nav-text">配置芯片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%AF%E7%94%A8%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%92%9F"><span class="nav-number">5.2.</span> <span class="nav-text">启用系统时钟</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%89%93%E5%BC%80%E4%B8%B2%E5%8F%A3%E5%A4%96%E8%AE%BE"><span class="nav-number">5.3.</span> <span class="nav-text">打开串口外设</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E8%B0%83%E8%AF%95%E6%96%B9%E5%BC%8F"><span class="nav-number">5.4.</span> <span class="nav-text">设置调试方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%B6%E9%92%9F%E9%85%8D%E7%BD%AE"><span class="nav-number">5.5.</span> <span class="nav-text">时钟配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E6%88%90-CubeMX-%E9%A1%B9%E7%9B%AE"><span class="nav-number">5.6.</span> <span class="nav-text">生成 CubeMX 项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8B%B7%E8%B4%9D%E6%97%B6%E9%92%9F%E5%88%9D%E5%A7%8B%E5%8C%96%E5%87%BD%E6%95%B0"><span class="nav-number">5.7.</span> <span class="nav-text">拷贝时钟初始化函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9-board-h"><span class="nav-number">5.8.</span> <span class="nav-text">修改 board.h</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9-Kconfig-%E9%80%89%E9%A1%B9"><span class="nav-number">6.</span> <span class="nav-text">修改 Kconfig 选项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E5%B7%A5%E7%A8%8B%E6%9E%84%E5%BB%BA%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6"><span class="nav-number">7.</span> <span class="nav-text">修改工程构建相关文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E9%93%BE%E6%8E%A5%E8%84%9A%E6%9C%AC"><span class="nav-number">7.1.</span> <span class="nav-text">修改链接脚本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9-SConscript-%E6%9E%84%E5%BB%BA%E8%84%9A%E6%9C%AC"><span class="nav-number">7.2.</span> <span class="nav-text">修改 SConscript  构建脚本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9-MDK-%E5%B7%A5%E7%A8%8B%E6%A8%A1%E6%9D%BF"><span class="nav-number">7.3.</span> <span class="nav-text">修改 MDK 工程模板</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-ENV-%E5%B7%A5%E5%85%B7"><span class="nav-number">8.</span> <span class="nav-text">安装 ENV 工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Env-%E5%B7%A5%E5%85%B7%E7%AE%80%E4%BB%8B"><span class="nav-number">8.1.</span> <span class="nav-text">Env 工具简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85-Env-%E5%B7%A5%E5%85%B7"><span class="nav-number">8.2.</span> <span class="nav-text">下载安装 Env 工具</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%87%8D%E6%96%B0%E7%94%9F%E6%88%90-MDK-%E5%B7%A5%E7%A8%8B"><span class="nav-number">9.</span> <span class="nav-text">重新生成 MDK 工程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8D%E6%96%B0%E7%94%9F%E6%88%90-rtconfig-h-%E6%96%87%E4%BB%B6"><span class="nav-number">9.1.</span> <span class="nav-text">重新生成 rtconfig.h 文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#menuconfig-%E5%BF%AB%E6%8D%B7%E9%94%AE%E4%BB%8B%E7%BB%8D"><span class="nav-number">9.1.1.</span> <span class="nav-text">menuconfig 快捷键介绍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE"><span class="nav-number">9.1.2.</span> <span class="nav-text">修改配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BF%9D%E5%AD%98%E9%85%8D%E7%BD%AE"><span class="nav-number">9.1.3.</span> <span class="nav-text">保存配置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8D%E6%96%B0%E7%94%9F%E6%88%90-MDK5-%E5%B7%A5%E7%A8%8B"><span class="nav-number">9.2.</span> <span class="nav-text">重新生成 MDK5 工程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%AA%8C%E8%AF%81-MDK5-%E5%B7%A5%E7%A8%8B"><span class="nav-number">9.3.</span> <span class="nav-text">验证 MDK5 工程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8E%E8%AE%B0"><span class="nav-number">10.</span> <span class="nav-text">后记</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="nav-number">11.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
-        </section>
+        </div>
         <!--/noindex-->
 
-        <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview-wrap sidebar-panel">
           <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="Asurada"
       src="https://avatars2.githubusercontent.com/u/43401755?s=460&v=4">
@@ -305,7 +271,7 @@
 
 
 
-        </section>
+        </div>
       </div>
     </div>
   </aside>
@@ -315,7 +281,7 @@
     </header>
 
     
-  <div class="back-to-top">
+  <div class="back-to-top" role="button">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -328,9 +294,7 @@
 
 
     <div class="main-inner post posts-expand">
-      
 
-      
 
   
 
@@ -766,12 +730,9 @@
 
 
 
-      
     
-  <div class="comments">
-    <div id="disqus_thread">
-      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-    </div>
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
   </div>
   
 
@@ -796,19 +757,15 @@
     });
   }
 </script>
-
-    </div>
+</div>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      
 
-      
 
 <div class="copyright">
-  
-  &copy; 2020 – 
+  &copy; 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
@@ -860,20 +817,7 @@
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
   
-
-
-
-
-  <script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
-
+<script src="/js/local-search.js"></script>
 
 
 
@@ -882,10 +826,6 @@
 
   
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-
 
 
 <script>
@@ -976,9 +916,6 @@
 </script>
 
 
-  
-
-  
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css">
 

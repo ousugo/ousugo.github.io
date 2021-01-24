@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.2.0">
+<meta name="generator" content="Hexo 5.3.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
@@ -25,10 +25,9 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"asurada.zone","root":"/","scheme":"Muse","version":"8.0.2","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"asurada.zone","root":"/","images":"/images","scheme":"Muse","version":"8.2.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}};
   </script>
-
-  <meta name="description" content="一些不太常用的 Git 命令往往隔一段时间不用就忘记了，特写此篇备忘。">
+<meta name="description" content="一些不太常用的 Git 命令往往隔一段时间不用就忘记了，特写此篇备忘。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git 常用命令备忘录">
 <meta property="og:url" content="https://asurada.zone/post/Git-Cheat-Sheet/index.html">
@@ -56,20 +55,8 @@
 </script>
   <meta name="360-site-verification" content="68099c4ac6f6f63bfe250dd357c1d4e1"/>
 
-
-  <title>Git 常用命令备忘录 | Asurada's Zone</title>
+<title>Git 常用命令备忘录 | Asurada's Zone</title>
   
-
-
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?97f25bcee33620831e37db79e40bc9c4";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
 
 
 
@@ -119,7 +106,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
+    <div class="toggle" aria-label="切换导航栏" role="button">
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
@@ -147,31 +134,11 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -182,8 +149,7 @@
 
 
   <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
+    <div class="popup search-popup"><div class="search-header">
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
@@ -192,7 +158,7 @@
            placeholder="搜索..." spellcheck="false"
            type="search" class="search-input">
   </div>
-  <span class="popup-btn-close">
+  <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
@@ -208,7 +174,7 @@
 </div>
         
   
-  <div class="toggle sidebar-toggle">
+  <div class="toggle sidebar-toggle" role="button">
     <span class="toggle-line"></span>
     <span class="toggle-line"></span>
     <span class="toggle-line"></span>
@@ -228,12 +194,12 @@
 
       <div class="sidebar-panel-container">
         <!--noindex-->
-        <section class="post-toc-wrap sidebar-panel">
+        <div class="post-toc-wrap sidebar-panel">
             <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-User-%E4%BF%A1%E6%81%AF"><span class="nav-number">1.</span> <span class="nav-text">配置 User 信息</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0-User-%E4%BF%A1%E6%81%AF"><span class="nav-number">1.1.</span> <span class="nav-text">添加 User 信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B-User-%E4%BF%A1%E6%81%AF"><span class="nav-number">1.2.</span> <span class="nav-text">查看 User 信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#global-%E4%B8%8E-local-%E4%BC%98%E5%85%88%E7%BA%A7%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%89%80%E5%9C%A8%E4%BD%8D%E7%BD%AE"><span class="nav-number">1.3.</span> <span class="nav-text">global 与 local 优先级以及配置文件所在位置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8B%AC%E8%87%AA%E4%BD%BF%E7%94%A8-Git-%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="nav-number">2.</span> <span class="nav-text">独自使用 Git 常见使用场景</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git-log-%E5%B8%B8%E7%94%A8%E5%8F%82%E6%95%B0"><span class="nav-number">2.1.</span> <span class="nav-text">git log 常用参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E4%B8%8D%E9%9C%80%E8%A6%81%E7%9A%84%E5%88%86%E6%94%AF"><span class="nav-number">2.2.</span> <span class="nav-text">删除不需要的分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E6%9C%80%E8%BF%91%E4%B8%80%E6%AC%A1%E7%9A%84-commit-%E5%86%85%E5%AE%B9"><span class="nav-number">2.3.</span> <span class="nav-text">修改最近一次的 commit 内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E6%9C%80%E8%BF%91%E4%B8%80%E6%AC%A1-commit-%E7%9A%84%E4%BD%9C%E8%80%85"><span class="nav-number">2.4.</span> <span class="nav-text">修改最近一次 commit 的作者</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E8%80%81%E6%97%A7-commit-%E7%9A%84-message"><span class="nav-number">2.5.</span> <span class="nav-text">修改老旧 commit 的 message</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8A%8A%E8%BF%9E%E7%BB%AD%E7%9A%84%E5%A4%9A%E4%B8%AA-commit-%E6%95%B4%E7%90%86%E6%88%90%E4%B8%80%E4%B8%AA"><span class="nav-number">2.6.</span> <span class="nav-text">把连续的多个 commit 整理成一个</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8A%8A%E9%97%B4%E9%9A%94%E7%9A%84%E5%A4%9A%E4%B8%AA-commit-%E6%95%B4%E7%90%86%E6%88%90%E4%B8%80%E4%B8%AA"><span class="nav-number">2.7.</span> <span class="nav-text">把间隔的多个 commit 整理成一个</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AF%94%E8%BE%83%E6%9A%82%E5%AD%98%E5%8C%BA%E5%92%8C-HEAD-%E6%89%80%E5%90%AB%E6%96%87%E4%BB%B6%E7%9A%84%E5%B7%AE%E5%BC%82"><span class="nav-number">2.8.</span> <span class="nav-text">比较暂存区和 HEAD 所含文件的差异</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AF%94%E8%BE%83%E5%B7%A5%E4%BD%9C%E5%8C%BA%E5%92%8C%E6%9A%82%E5%AD%98%E5%8C%BA%E6%89%80%E5%90%AB%E6%96%87%E4%BB%B6%E7%9A%84%E5%B7%AE%E5%BC%82"><span class="nav-number">2.9.</span> <span class="nav-text">比较工作区和暂存区所含文件的差异</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AF%94%E8%BE%83%E5%B7%A5%E4%BD%9C%E5%8C%BA%E5%92%8C-HEAD-%E6%89%80%E5%90%AB%E6%96%87%E4%BB%B6%E7%9A%84%E5%B7%AE%E5%BC%82"><span class="nav-number">2.10.</span> <span class="nav-text">比较工作区和 HEAD 所含文件的差异</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A9%E6%9A%82%E5%AD%98%E5%8C%BA%E6%81%A2%E5%A4%8D%E6%88%90%E5%92%8C-HEAD-%E4%B8%80%E6%A0%B7"><span class="nav-number">2.11.</span> <span class="nav-text">让暂存区恢复成和 HEAD 一样</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A9%E5%B7%A5%E4%BD%9C%E5%8C%BA%E7%9A%84%E6%96%87%E4%BB%B6%E6%81%A2%E5%A4%8D%E4%B8%BA%E5%92%8C%E6%9A%82%E5%AD%98%E5%8C%BA%E4%B8%80%E6%A0%B7"><span class="nav-number">2.12.</span> <span class="nav-text">让工作区的文件恢复为和暂存区一样</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%96%E6%B6%88%E6%9A%82%E5%AD%98%E5%8C%BA%E9%83%A8%E5%88%86%E6%96%87%E4%BB%B6%E7%9A%84%E6%9B%B4%E6%94%B9"><span class="nav-number">2.13.</span> <span class="nav-text">取消暂存区部分文件的更改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B6%88%E9%99%A4%E6%9C%80%E8%BF%91%E7%9A%84%E5%87%A0%E6%AC%A1%E6%8F%90%E4%BA%A4"><span class="nav-number">2.14.</span> <span class="nav-text">消除最近的几次提交</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9C%8B%E4%B8%8D%E5%90%8C%E6%8F%90%E4%BA%A4%E7%9A%84%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6%E7%9A%84%E5%B7%AE%E5%BC%82"><span class="nav-number">2.15.</span> <span class="nav-text">看不同提交的指定文件的差异</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A3%E7%A1%AE%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95"><span class="nav-number">2.16.</span> <span class="nav-text">正确删除文件的方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E4%B8%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E7%9A%84%E4%BA%A4%E4%BA%92"><span class="nav-number">3.</span> <span class="nav-text">本地与远程仓库的交互</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A9-Fork-%E7%9A%84%E4%BB%93%E5%BA%93%E5%90%8C%E6%BA%90%E4%BB%93%E5%BA%93%E4%BF%9D%E6%8C%81%E6%9B%B4%E6%96%B0"><span class="nav-number">3.1.</span> <span class="nav-text">让 Fork 的仓库同源仓库保持更新</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E6%BA%90%E4%BB%93%E5%BA%93"><span class="nav-number">3.1.1.</span> <span class="nav-text">添加源仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%90%8C%E6%AD%A5%E6%9B%B4%E6%96%B0"><span class="nav-number">3.1.2.</span> <span class="nav-text">同步更新</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%9B%E9%98%B6%E7%89%88"><span class="nav-number">3.1.3.</span> <span class="nav-text">进阶版</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A8%E9%80%81%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84%E5%88%86%E6%94%AF%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="nav-number">3.2.</span> <span class="nav-text">推送一个新的分支到远程仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B8%85%E7%90%86%E6%9C%AC%E5%9C%B0%E6%97%A0%E6%95%88%E7%9A%84%E8%BF%9C%E7%A8%8B%E8%BF%BD%E8%B8%AA%E5%88%86%E6%94%AF"><span class="nav-number">3.3.</span> <span class="nav-text">清理本地无效的远程追踪分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9C%E7%A8%8B%E5%88%A0%E9%99%A4%E4%BA%86%E5%88%86%E6%94%AF%E6%9C%AC%E5%9C%B0%E4%B9%9F%E6%83%B3%E5%88%A0%E9%99%A4"><span class="nav-number">3.4.</span> <span class="nav-text">远程删除了分支本地也想删除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%A0%E9%99%A4%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF"><span class="nav-number">3.5.</span> <span class="nav-text">删除远程分支</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8E%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E4%B8%AD%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%88%87%E6%8D%A2%E5%88%B0%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF"><span class="nav-number">3.6.</span> <span class="nav-text">从远程分支中创建并切换到本地分支</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="nav-number">4.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
-        </section>
+        </div>
         <!--/noindex-->
 
-        <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview-wrap sidebar-panel">
           <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="Asurada"
       src="https://avatars2.githubusercontent.com/u/43401755?s=460&v=4">
@@ -277,7 +243,7 @@
 
 
 
-        </section>
+        </div>
       </div>
     </div>
   </aside>
@@ -287,7 +253,7 @@
     </header>
 
     
-  <div class="back-to-top">
+  <div class="back-to-top" role="button">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -300,9 +266,7 @@
 
 
     <div class="main-inner post posts-expand">
-      
 
-      
 
   
 
@@ -676,12 +640,9 @@
 
 
 
-      
     
-  <div class="comments">
-    <div id="disqus_thread">
-      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-    </div>
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
   </div>
   
 
@@ -706,19 +667,15 @@
     });
   }
 </script>
-
-    </div>
+</div>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      
 
-      
 
 <div class="copyright">
-  
-  &copy; 2020 – 
+  &copy; 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
@@ -770,20 +727,7 @@
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
   
-
-
-
-
-  <script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
-
+<script src="/js/local-search.js"></script>
 
 
 
@@ -792,10 +736,6 @@
 
   
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-
 
 
 <script>
@@ -886,9 +826,6 @@
 </script>
 
 
-  
-
-  
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css">
 
