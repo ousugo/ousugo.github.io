@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://asurada.zone/post/What-Is-Full-Featured-Type-C/</loc>
+    
+    <lastmod>2021-01-24</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://asurada.zone/post/Buy-WindowsPro-License/</loc>
     
     <lastmod>2020-11-29</lastmod>
@@ -227,6 +234,34 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://asurada.zone/tags/%E7%A1%AC%E4%BB%B6/</loc>
+    <lastmod>2021-01-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://asurada.zone/tags/%E6%98%BE%E7%A4%BA%E5%99%A8/</loc>
+    <lastmod>2021-01-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://asurada.zone/tags/USB/</loc>
+    <lastmod>2021-01-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://asurada.zone/tags/Type-C/</loc>
+    <lastmod>2021-01-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -259,6 +294,13 @@
   
   <url>
     <loc>https://asurada.zone/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/</loc>
+    <lastmod>2021-01-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://asurada.zone/categories/%E7%A1%AC%E4%BB%B6/</loc>
     <lastmod>2021-01-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
