@@ -17,7 +17,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
@@ -403,7 +403,6 @@
 </blockquote>
 <p>安装  <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-generator-sitemap">hexo-generator-sitemap</a> 插件：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
-
 <p>安装插件以后，执行 <code>hexo  g</code> 命令，即可在 <code>public</code> 文件夹下找到新生成的 <code>sitemap.xml</code> 文件。</p>
 <h2 id="让百度收录站点"><a href="#让百度收录站点" class="headerlink" title="让百度收录站点"></a>让百度收录站点</h2><h3 id="百度验证域名"><a href="#百度验证域名" class="headerlink" title="百度验证域名"></a>百度验证域名</h3><p>刚建站的时候，百度是没有收录我们的网站的，这时在搜索框输入 <code>site:&lt;域名&gt;</code>  ，结果应该是下面这样的，点击「提交网址」来提交我们的站点。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-%E7%99%BE%E5%BA%A6%E6%9C%AA%E6%94%B6%E5%BD%95.png" alt="百度未收录"></p>
@@ -420,7 +419,6 @@
 </blockquote>
 <p>打开主题配置数据文件 <code>next.yml</code> ，搜索 <code>baidu_site_verification</code>，将上述字符串填至后方。</p>
 <figure class="highlight yaml"><figcaption><span>.\source\_data\next.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Baidu Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: https://ziyuan.baidu.com/site</span></span><br><span class="line"><span class="attr">baidu_site_verification:</span> <span class="string">hpYpGBuDQF</span></span><br></pre></td></tr></table></figure>
-
 <p>执行 <code>hexo g -d</code> 重新生成并部署站点，部署完成后，检查网站源码，能看到在<code>&lt;head&gt;</code> 里面已经自动包含了用于验证身份的 meta 标签：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/11-%E7%99%BE%E5%BA%A6%E9%AA%8C%E8%AF%81meta%E6%A0%87%E7%AD%BE.png" alt="百度验证 meta 标签"></p>
 <p>回到百度站长管理平台点击「完成验证」按钮，完成验证。</p>
@@ -430,18 +428,15 @@
 <h3 id="百度提交链接"><a href="#百度提交链接" class="headerlink" title="百度提交链接"></a>百度提交链接</h3><p>百度提交链接有下面三种方式。</p>
 <h4 id="主动提交"><a href="#主动提交" class="headerlink" title="主动提交"></a>主动提交</h4><p>安装  <a target="_blank" rel="noopener" href="https://github.com/huiwang/hexo-baidu-url-submit">hexo-baidu-url-submit</a> 插件：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-baidu-url-submit --save</span><br></pre></td></tr></table></figure>
-
 <p>获取百度主动推送<code>准入密钥</code>并复制：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/14-%E7%99%BE%E5%BA%A6%E4%B8%BB%E5%8A%A8%E6%8E%A8%E9%80%81%E5%87%86%E5%85%A5%E5%AF%86%E9%92%A5.png" alt="百度主动推送准入密钥"></p>
 <p>在站点配置文件 <code>_config.yml</code> 中<strong>新增</strong>以下代码：</p>
 <figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="addition">+ # 百度主动推送</span></span><br><span class="line"><span class="addition">+ baidu_url_submit:</span></span><br><span class="line"><span class="addition">+ 	count: 5 # 提交最新的五个链接</span></span><br><span class="line"><span class="addition">+ 	host: https://asurada.zone # 在百度站长平台中注册的域名</span></span><br><span class="line"><span class="addition">+  	token: xxxxx  # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span></span><br><span class="line"><span class="addition">+  	path: baidu_urls.txt  # 文本文档的地址， 新链接会保存在此文本文档里</span></span><br></pre></td></tr></table></figure>
-
 <p>然后在站点配置文件 <code>_config.yml</code> 中修改部署策略：</p>
 <figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">  # Deployment</span><br><span class="line">  ## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line"><span class="deletion">- deploy:</span></span><br><span class="line"><span class="deletion">- 	type: git</span></span><br><span class="line"><span class="deletion">-   repo: git@github.com:ousugo/ousugo.github.io.git</span></span><br><span class="line"><span class="deletion">-	branch: master</span></span><br><span class="line"><span class="addition">+ deploy:</span></span><br><span class="line"><span class="addition">+ - type: git</span></span><br><span class="line"><span class="addition">+   repo: git@github.com:ousugo/ousugo.github.io.git</span></span><br><span class="line"><span class="addition">+	branch: master</span></span><br><span class="line"><span class="addition">+ - type: baidu_url_submitter # 百度</span></span><br></pre></td></tr></table></figure>
 <p>此后每次执行 <code>hexo d</code> 部署博客的时候将会自动在 <code>./public</code> 目录下生成 <code>baidu_urls.txt</code> 文件，里面的内容就是自己设置的最新的 n 条文章链接。然后自动推送文件内容到百度，加快链接被百度收录的速度。</p>
 <p>在这里的时候我踩了一个坑，在部署的时候一直提示错误：<code>&#123;&quot;error&quot;:401,&quot;message&quot;:&quot;site sid is empty&quot;&#125;</code> ，后面经过排查发现是在配置主动推送时，<code>host</code> 后面的网址没有加协议头，加上之后就不报错了。</p>
 <figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">  count: 5 # 提交最新的五个链接</span><br><span class="line"><span class="deletion">- host: asurada.zone # 在百度站长平台中注册的域名</span></span><br><span class="line"><span class="addition">+ host: https://asurada.zone # 在百度站长平台中注册的域名	</span></span><br><span class="line">  token: xxxxx  # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span><br><span class="line">  path: baidu_urls.txt  # 文本文档的地址， 新链接会保存在此文本文档里</span><br></pre></td></tr></table></figure>
-
 <h4 id="自动推送（弃用）"><a href="#自动推送（弃用）" class="headerlink" title="自动推送（弃用）"></a><del>自动推送</del>（弃用）</h4><div class="note info"><p>百度站长平台现在已经取消了「自动推送」的功能入口，所以不建议再开启此功能，详见<a target="_blank" rel="noopener" href="https://51.ruyo.net/16280.html">百度 JS代码推送功能已停止使用，删除推送代码吧</a>。</p>
 </div>
 
@@ -450,7 +445,6 @@
 </blockquote>
 <p>Next 主题中已经内置了一键开启百度自动推送的选项：</p>
 <figure class="highlight yaml"><figcaption><span>.\source\_data\next.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO</span></span><br><span class="line"><span class="attr">baidu_push:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
 <p>开启后将会自动在页面中添加如下脚本用于百度推送：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/18-%E7%99%BE%E5%BA%A6JS%E6%8E%A8%E9%80%81%E8%84%9A%E6%9C%AC%E4%BB%A3%E7%A0%81.png" alt="推送脚本代码"></p>
 <p>之后每次访问站点页面都会通过以上脚本将当前页面的 URL 推送到百度。 </p>
@@ -459,7 +453,6 @@
 
 <p>安装 <a target="_blank" rel="noopener" href="https://github.com/coneycode/hexo-generator-baidu-sitemap">hexo-generator-baidu-sitemap</a> 插件：</p>
 <figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install </span>hexo-generator-<span class="keyword">baidu-sitemap </span>--save</span><br></pre></td></tr></table></figure>
-
 <p>插件安装成功后，执行 <code>hexo g -d</code> 部署网站，然后访问 <code>网站自定义域名/baidusitemap.xml</code> 检查百度网站地图是否正常。比如我的是 <code>asurada.zone/baidusitemap.xml</code> 。</p>
 <p>然后来到百度站长平台的 <a target="_blank" rel="noopener" href="https://ziyuan.baidu.com/linksubmit/">sitemap 提交页面</a>，提交 sitemap 地址即可，注意需要自己添加 <code>https://</code> 协议头，不然默认是 <code>http://</code>，会导致抓取失败。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/20-%E7%99%BE%E5%BA%A6%E6%8F%90%E4%BA%A4sitemap.png" alt="百度提交 sitemap"></p>
@@ -482,13 +475,11 @@
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/23-360%E7%BD%91%E7%AB%99%E4%BB%A3%E7%A0%81%E9%AA%8C%E8%AF%81.png" alt="代码验证"></p>
 <h3 id="360-验证域名"><a href="#360-验证域名" class="headerlink" title="360 验证域名"></a>360 验证域名</h3><p>修改站点配置文件 <code>_config.yml</code> ：</p>
 <figure class="highlight diff"><figcaption><span>.\_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Define custom file paths.</span><br><span class="line"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span><br><span class="line">custom_file_path:</span><br><span class="line"><span class="deletion">- #head: source/_data/head.swig</span></span><br><span class="line"><span class="addition">+ head: source/_data/head.swig</span></span><br><span class="line">  #header: source/_data/header.swig</span><br></pre></td></tr></table></figure>
-
 <p>然后在 <code>博客根目录\source\_data</code> 下新建 <code>head.swig</code> 文件，然后打开并新增以下内容：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if theme.so_site_verification %&#125;</span><br><span class="line">  &lt;meta name&#x3D;&quot;360-site-verification&quot; content&#x3D;&quot;&#123;&#123; theme.so_site_verification &#125;&#125;&quot;&#x2F;&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 <p>上面代码是利用了 Next 主题的 <a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/advanced-settings.html#Injects">Inject 功能</a>，以上代码的含义为如果在 <code>_config.yml</code> 中存在 <code>so_site_verification</code>  这一设置项，则会将 <code>&lt;meta name=&quot;360-site-verification&quot; content=&quot;so_site_verification 设置项的 value&quot;/&gt;</code>插入到网站首页 HTML 代码的 <code>&lt;head&gt;&lt;/head&gt;</code> 标签中。</p>
 <p>再次修改站点配置文件 <code>_config.yml</code>，在 <code>SEO Settings</code>区域新增以下内容 ：</p>
 <figure class="highlight ldif"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 360 Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: zhanzhang.so.com/sitetool</span></span><br><span class="line"><span class="attribute">so_site_verification</span>: 此处填写之前复制的验证字符串</span><br></pre></td></tr></table></figure>
-
 <p>修改完成后，执行 <code>hexo g -d</code> 命令重新生成并部署网站，部署生效后，回到 360 站长平台，「点击验证」即可。如果网站已经开启了 HTTPS 访问，不要忘记「设置 https」。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/24-360%E7%AB%99%E9%95%BF%E5%B9%B3%E5%8F%B0%E9%AA%8C%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="360 站长平台验证成功"></p>
 <h3 id="提交-sitemap"><a href="#提交-sitemap" class="headerlink" title="提交 sitemap"></a>提交 sitemap</h3><p>360 站长平台体验很一般，连 HTTPS 都没上，然后在进行 sitemap 提交的时候，第一天页面就一直报「连接超时」，完全无法提交。第二天终于不报错了，可以正常提交了，页面也显示成功提交，但添加完以后 sitemap 列表却一直是空的，让人很困惑，不知道这到底是添加成功了但还没爬取呢还是压根就没添加上。终于第三天一切顺利，成功添加并显示了。</p>
@@ -717,7 +708,7 @@
 
 
 <div class="copyright">
-  &copy; 
+  &copy; 2020 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>

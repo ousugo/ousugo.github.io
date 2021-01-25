@@ -17,7 +17,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
@@ -362,12 +362,11 @@
 <h2 id="升级-Hexo-版本"><a href="#升级-Hexo-版本" class="headerlink" title="升级 Hexo 版本"></a>升级 Hexo 版本</h2><p>Hexo 核心团队成员 Sukka 写的 <a target="_blank" rel="noopener" href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a>详细介绍了 Hexo 5.0 的新特性，以及从 Hexo 4.x 升级到 Hexo 5.x 需要注意的地方。</p>
 <p>Hexo 5.0 版本带来了不小的性能上的提升，升级 5.0 直接修改 <code>hexo-site/package.json</code> 文件：</p>
 <figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;dependencies&quot;: &#123;</span><br><span class="line"><span class="deletion">-  &quot;hexo&quot;: &quot;^4.2.1&quot;,</span></span><br><span class="line"><span class="addition">+  &quot;hexo&quot;: &quot;^5.1.1&quot;,</span></span><br></pre></td></tr></table></figure>
-
 <p>然后再执行 <code>npm upadte</code> 命令即可。</p>
 <p>升级完 Hexo ，<code>_config.yml</code> 并不会更新，而 Hexo 5.0 是有新增和改动一些其中的配置项的，所以需要我们自己去 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-starter/blob/master/_config.yml">GitHub</a> 上查看站点配置文件的变动情况，并手动同步这些修改到自己的站点配置文件里。</p>
 <p>主要的变动就是新增了 <code>prismjs</code> 相关配置项以及更新了 <code>updated_option</code> 配置项。</p>
 <h2 id="升级-Next-V8-0-0-版本"><a href="#升级-Next-V8-0-0-版本" class="headerlink" title="升级 Next V8.0.0 版本"></a>升级 Next V8.0.0 版本</h2><p>使用 Hexo 5.0 及以上版本，升级 Next 主题最简单的方法就是通过 <code>npm</code> 安装，进入博客根目录，执行以下命令即可安装最新版本的 Next 主题：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-theme-<span class="keyword">next</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-theme-<span class="keyword">next</span></span><br></pre></td></tr></table></figure>
 <p>通过 <code>npm</code> 安装的 Next 主题默认文件夹路径为 <code>hexo-site/node_modules/hexo-theme-next</code> 。因为有一些自定义修改可能会需要我们改动主题的源文件，而因为整个 <code>node_modules/</code> 被<code>gitignore</code> 文件所忽略，将会导致我们无法用 Git 记录我们对主题源文件的修改。</p>
 <p>所以我将之前版本的 Next 主题文件夹进行改名，将 <code>hexo-site/theme/next</code> 改成了 <code>hexo-site/theme/next-V7</code>。然后将 <code>hexo-theme-next</code>  文件夹的内容复制到 <code>hexo-site/theme/next</code> 。这样就能将主题文件夹加入 Git 的管理之中了。</p>
 <p>这里切记不要直接将旧版本的 Next 主题文件夹直接删除，因为后面可能有配置以及文件需要进行迁移。</p>
@@ -572,7 +571,7 @@
 
 
 <div class="copyright">
-  &copy; 
+  &copy; 2020 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>

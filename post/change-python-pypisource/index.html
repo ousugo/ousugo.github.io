@@ -17,7 +17,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
@@ -357,13 +357,10 @@
 <p><code>pqi</code> 是国内开发者 <a target="_blank" rel="noopener" href="https://github.com/yhangf">yhf</a> 开发的 <a target="_blank" rel="noopener" href="https://github.com/yhangf/PyQuickInstall">PyQuickInstall</a> 工具的简称，这款工具可以非常方便地帮助我们切换 pip 软件源，如果觉得好用的话，大家可以动动鼠标，在 Github 上面 Star 一下。</p>
 <p>临时使用清华大学开源软件镜像源安装 pqi ：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pqi -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
-
 <p>安装完成后，直接在命令行即可使用 pqi ：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">//列举所有支持的PyPi源</span><br><span class="line">pqi ls</span><br><span class="line">//改变 PyPi源</span><br><span class="line">pqi use &lt;name&gt;</span><br><span class="line">//显示当前PyPi源</span><br><span class="line">pqi show</span><br><span class="line">//移除pip源</span><br><span class="line">pqi remove &lt;name&gt;</span><br><span class="line">//添加新的pip源</span><br><span class="line">pqi add &lt;name&gt; &lt;url&gt;</span><br><span class="line">//升级到最新版 pqi</span><br><span class="line">pip install --upgrade pqi</span><br></pre></td></tr></table></figure>
-
 <p>如果决定使用上面提到过的清华大学镜像源，使用如下命令即可：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pqi use tuna</span><br></pre></td></tr></table></figure>
-
 <p>然后就可以享受飞一般的 pip下载速度了。</p>
 
     </div>
@@ -539,7 +536,7 @@
 
 
 <div class="copyright">
-  &copy; 
+  &copy; 2020 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>

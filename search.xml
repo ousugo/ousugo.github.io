@@ -113,7 +113,6 @@
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E9%A1%B9%E7%9B%AESSH%E9%93%BE%E6%8E%A5.png" alt="CODING 项目 SSH 链接"></p>
 <p>打开博客根目录下的站点配置文件 <code>_config.yml</code> ，修改其中的 <code>deploy</code> 区域，将刚复制的 SSH 链接新增进去：</p>
 <figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  - type: git</span><br><span class="line">    repo: git@github.com:ousugo/ousugo.github.io.git</span><br><span class="line">    branch: master</span><br><span class="line"><span class="addition">+ - type: git</span></span><br><span class="line"><span class="addition">+   repo: git@e.coding.net:asuradazone/asurada/asurada.git</span></span><br><span class="line"><span class="addition">+   branch: master    </span></span><br></pre></td></tr></table></figure>
-
 <h3 id="部署代码到-CODING"><a href="#部署代码到-CODING" class="headerlink" title="部署代码到 CODING"></a>部署代码到 CODING</h3><p><code>_config.yml</code> 文件修改完成后，执行 <code>hexo d</code> 命令进行部署，此时 Hexo 就会根据设置同时将博客部署到 GitHub 和 CODING 上面。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%88%90%E5%8A%9F%E9%83%A8%E7%BD%B2%E5%88%B0CODING.png" alt="成功部署到 CODING"></p>
 <p>此时再进入 CODING 上的项目，能看到刚才还是空的仓库现在已经有源代码了，说明部署是成功的。</p>
@@ -206,17 +205,14 @@
 <a id="more"></a>
 
 <h2 id="配置-User-信息"><a href="#配置-User-信息" class="headerlink" title="配置 User 信息"></a>配置 User 信息</h2><h3 id="添加-User-信息"><a href="#添加-User-信息" class="headerlink" title="添加 User 信息"></a>添加 User 信息</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config [--global | --local] user.name &#x27;your_name&#x27;</span><br><span class="line">git config [--global | --local] user.email &#x27;your_email&#x27;</span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>默认为 local，所以只有需要设置全局时需要带 –global 参数，–local 参数可以直接省略。</li>
 <li>单引号不是必须的，可以省略。一般只在输入的内容之中含有空格的时候需要使用单引号。</li>
 </ul>
 <h3 id="查看-User-信息"><a href="#查看-User-信息" class="headerlink" title="查看 User 信息"></a>查看 User 信息</h3><p>使用以下命令查看所有全局/局部配置信息：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list [--local | --global | --system]</span><br></pre></td></tr></table></figure>
-
 <p>或者使用以下命令直接查看具体设置：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config [--global | --local] user.name</span><br><span class="line">git config [--global | --local] user.email</span><br></pre></td></tr></table></figure>
-
 <h3 id="global-与-local-优先级以及配置文件所在位置"><a href="#global-与-local-优先级以及配置文件所在位置" class="headerlink" title="global 与 local 优先级以及配置文件所在位置"></a>global 与 local 优先级以及配置文件所在位置</h3><p>local &gt; global</p>
 <p>local 配置位于当前仓库的 .git 文件夹下的 config 文件中。</p>
 <p>global 配置位于当前用户 home 目录下的 .gitconfig 文件中。</p>
@@ -228,23 +224,17 @@
 </ul>
 <h3 id="删除不需要的分支"><a href="#删除不需要的分支" class="headerlink" title="删除不需要的分支"></a>删除不需要的分支</h3><p>普通删除(如果当前分支没有被合并，不能直接删除)：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git branch -d 分支名</span><br></pre></td></tr></table></figure>
-
 <p>强制删除：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git branch -D 分支名</span><br></pre></td></tr></table></figure>
-
 <h3 id="修改最近一次的-commit-内容"><a href="#修改最近一次的-commit-内容" class="headerlink" title="修改最近一次的 commit 内容"></a>修改最近一次的 commit 内容</h3><p>命令：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git commit --amend</span><br></pre></td></tr></table></figure>
-
 <h3 id="修改最近一次-commit-的作者"><a href="#修改最近一次-commit-的作者" class="headerlink" title="修改最近一次 commit 的作者"></a>修改最近一次 commit 的作者</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git commit --amend --author=&quot;AuthorName &lt;email@address.com&gt;&quot; --no-edit</span><br></pre></td></tr></table></figure>
-
 <p>其中 <code>no-edit</code> 的作用是表明此次修改仅修改作者，而不需要对 <code>commit message</code> 进行改动，所以不需要启动编辑器。</p>
 <h3 id="修改老旧-commit-的-message"><a href="#修改老旧-commit-的-message" class="headerlink" title="修改老旧 commit 的 message"></a>修改老旧 commit 的 message</h3><ol>
 <li><p>进入交互式变基策略修改：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i 想要修改的提交节点的父节点的 HASH 值</span><br></pre></td></tr></table></figure>
-
 <p>如果想要修改第一次提交，也就是最早的那次提交，没有父节点的提交，使用命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i --root</span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i --root</span><br></pre></td></tr></table></figure></li>
 <li><p>修改策略：</p>
 <p>在 vi 模式下将想要修改的 commit 前面的选项由 pick 变更为 r 或者 reword，这一选项的含义为此 commit 的内容不变，只修改其 commit message。</p>
 </li>
@@ -256,10 +246,8 @@
 <h3 id="把连续的多个-commit-整理成一个"><a href="#把连续的多个-commit-整理成一个" class="headerlink" title="把连续的多个 commit 整理成一个"></a>把连续的多个 commit 整理成一个</h3><ol>
 <li><p>进入交互式变基策略修改：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i 想要修改的提交节点的父节点的 HASH 值</span><br></pre></td></tr></table></figure>
-
 <p>如果想要修改第一次提交，也就是最早的那次提交，没有父节点的提交，使用命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i --root</span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i --root</span><br></pre></td></tr></table></figure></li>
 <li><p>修改策略：</p>
 <p>将准备被合并的 commit 前面的选项由 pick 改为 s 或者 squash，这一选项的含义为继续使用这一 commit，但是将其合并到前面(比它老)的那一个 commit 里面去，想要合并哪几个就将这几个前面的选项都改成 s。</p>
 </li>
@@ -274,82 +262,58 @@
 </ul>
 <p>会用到的 vim 快捷键：</p>
 <figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">dd	<span class="regexp">//</span>剪切一行，也可以用来删除一行</span><br><span class="line">dw	<span class="regexp">//</span>删除一个单词</span><br><span class="line">u	<span class="regexp">//</span>撤销</span><br><span class="line">p	<span class="regexp">//</span>粘贴</span><br></pre></td></tr></table></figure>
-
 <h3 id="比较暂存区和-HEAD-所含文件的差异"><a href="#比较暂存区和-HEAD-所含文件的差异" class="headerlink" title="比较暂存区和 HEAD 所含文件的差异"></a>比较暂存区和 HEAD 所含文件的差异</h3><p>HEAD 所含文件就是最新一个 commit 内的文件内容</p>
 <figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">git diff <span class="comment">--cached</span></span><br></pre></td></tr></table></figure>
-
 <h3 id="比较工作区和暂存区所含文件的差异"><a href="#比较工作区和暂存区所含文件的差异" class="headerlink" title="比较工作区和暂存区所含文件的差异"></a>比较工作区和暂存区所含文件的差异</h3> <figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git diff</span></span><br></pre></td></tr></table></figure>
-
 <p>后面可以接“– 单个或多个文件名”来查看特定文件的差异</p>
 <h3 id="比较工作区和-HEAD-所含文件的差异"><a href="#比较工作区和-HEAD-所含文件的差异" class="headerlink" title="比较工作区和 HEAD 所含文件的差异"></a>比较工作区和 HEAD 所含文件的差异</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git diff HEAD</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="让暂存区恢复成和-HEAD-一样"><a href="#让暂存区恢复成和-HEAD-一样" class="headerlink" title="让暂存区恢复成和 HEAD 一样"></a>让暂存区恢复成和 HEAD 一样</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">reset</span> <span class="keyword">HEAD</span></span><br></pre></td></tr></table></figure>
-
+<h3 id="让暂存区恢复成和-HEAD-一样"><a href="#让暂存区恢复成和-HEAD-一样" class="headerlink" title="让暂存区恢复成和 HEAD 一样"></a>让暂存区恢复成和 HEAD 一样</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git reset HEAD</span></span><br></pre></td></tr></table></figure>
 <p>git reset 默认的参数为 –mixed</p>
 <h3 id="让工作区的文件恢复为和暂存区一样"><a href="#让工作区的文件恢复为和暂存区一样" class="headerlink" title="让工作区的文件恢复为和暂存区一样"></a>让工作区的文件恢复为和暂存区一样</h3><figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">git checkout <span class="comment">-- 文件名</span></span><br></pre></td></tr></table></figure>
-
 <p>Git 2.23 版本以后使用 <code>git restore</code>命令来代替<code>git checkout</code>功能</p>
 <h3 id="取消暂存区部分文件的更改"><a href="#取消暂存区部分文件的更改" class="headerlink" title="取消暂存区部分文件的更改"></a>取消暂存区部分文件的更改</h3><p>将暂存区部分文件取消暂存的意思是所做的改动继续保留在工作目录，暂存区部分的内容同 HEAD 保持一致。</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">reset</span> <span class="keyword">HEAD</span> <span class="comment">--文件名</span></span><br></pre></td></tr></table></figure>
-
+<figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">reset</span> HEAD <span class="comment">--文件名</span></span><br></pre></td></tr></table></figure>
 <p>Git 新版本使用：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">restore</span> <span class="comment">--staged &lt;file&gt;</span></span><br></pre></td></tr></table></figure>
-
+<figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">restore</span> --staged &lt;<span class="keyword">file</span>&gt;</span><br></pre></td></tr></table></figure>
 <p>两条命令作用是一样的。</p>
 <h3 id="消除最近的几次提交"><a href="#消除最近的几次提交" class="headerlink" title="消除最近的几次提交"></a>消除最近的几次提交</h3><figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">reset</span> <span class="comment">--hard &lt;hash&gt;</span></span><br></pre></td></tr></table></figure>
-
 <p>将工作区和暂存区的内容都恢复到 hash 值所对应的那个 commit 的状态。</p>
 <h3 id="看不同提交的指定文件的差异"><a href="#看不同提交的指定文件的差异" class="headerlink" title="看不同提交的指定文件的差异"></a>看不同提交的指定文件的差异</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">git</span> <span class="selector-tag">diff</span> <span class="selector-attr">[from_commit]</span> <span class="selector-attr">[to_commit]</span></span><br></pre></td></tr></table></figure>
-
 <h3 id="正确删除文件的方法"><a href="#正确删除文件的方法" class="headerlink" title="正确删除文件的方法"></a>正确删除文件的方法</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">git rm <span class="tag">&lt;<span class="name">filename</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
 <h2 id="本地与远程仓库的交互"><a href="#本地与远程仓库的交互" class="headerlink" title="本地与远程仓库的交互"></a>本地与远程仓库的交互</h2><h3 id="让-Fork-的仓库同源仓库保持更新"><a href="#让-Fork-的仓库同源仓库保持更新" class="headerlink" title="让 Fork 的仓库同源仓库保持更新"></a>让 Fork 的仓库同源仓库保持更新</h3><h4 id="添加源仓库"><a href="#添加源仓库" class="headerlink" title="添加源仓库"></a>添加源仓库</h4><figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line">git remote <span class="keyword">add</span><span class="bash"> upstream 源仓库链接</span></span><br></pre></td></tr></table></figure>
-
 <h4 id="同步更新"><a href="#同步更新" class="headerlink" title="同步更新"></a>同步更新</h4><ol>
 <li>如果在另一个分支上，就切换到 master 分支</li>
 </ol>
 <figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">git checkout <span class="literal">master</span></span><br></pre></td></tr></table></figure>
-
 <ol start="2">
 <li>从源仓库抓取最新更改后，合并到本地 master 分支</li>
 </ol>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git pull upstream</span></span><br></pre></td></tr></table></figure>
-
 <ol start="3">
 <li>将本地 master 分支推送到自己 Fork 的远程仓库  origin</li>
 </ol>
 <figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span></span><br></pre></td></tr></table></figure>
-
 <h4 id="进阶版"><a href="#进阶版" class="headerlink" title="进阶版"></a>进阶版</h4><ol>
 <li>将 master 分支的上游仓库设置为源仓库</li>
 </ol>
 <figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">git branch --<span class="attr">set-upstream-to=</span>upstream/<span class="keyword">master</span> <span class="title">master</span></span><br></pre></td></tr></table></figure>
-
 <ol start="2">
 <li>将 push 命令推送的默认仓库设置为自己 Forked 的仓库 origin</li>
 </ol>
-<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">git<span class="built_in"> config </span>--local remote.pushDefault origin</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">config</span> <span class="comment">--local remote.pushDefault origin</span></span><br></pre></td></tr></table></figure>
 <ol start="3">
 <li>搞定之后，工作流程为更加简单：</li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git pull	//默认从源仓库拉取最新的更新</span><br><span class="line">git push	//将拉取的更新推送到 Forked 的仓库</span><br></pre></td></tr></table></figure>
-
 <h3 id="推送一个新的分支到远程仓库"><a href="#推送一个新的分支到远程仓库" class="headerlink" title="推送一个新的分支到远程仓库"></a>推送一个新的分支到远程仓库</h3><p>-u 是 –set-upstream 的简写，该标记会为之后轻松地推送与拉取配置分支</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git push -u remote_name new_branch_name</span><br></pre></td></tr></table></figure>
-
 <h3 id="清理本地无效的远程追踪分支"><a href="#清理本地无效的远程追踪分支" class="headerlink" title="清理本地无效的远程追踪分支"></a>清理本地无效的远程追踪分支</h3><p>利用选项 –prune</p>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git remote update -p</span></span><br></pre></td></tr></table></figure>
-
 <h3 id="远程删除了分支本地也想删除"><a href="#远程删除了分支本地也想删除" class="headerlink" title="远程删除了分支本地也想删除"></a>远程删除了分支本地也想删除</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git remote prune origin</span></span><br></pre></td></tr></table></figure>
-
 <h3 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h3><figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span> --<span class="built_in">delete</span> &lt;remote-branchname&gt;</span><br></pre></td></tr></table></figure>
-
 <p>或者</p>
 <figure class="highlight elixir"><table><tr><td class="code"><pre><span class="line">git push origin <span class="symbol">:&lt;remote-branchname&gt;</span></span><br></pre></td></tr></table></figure>
-
 <h3 id="从远程分支中创建并切换到本地分支"><a href="#从远程分支中创建并切换到本地分支" class="headerlink" title="从远程分支中创建并切换到本地分支"></a>从远程分支中创建并切换到本地分支</h3><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">git checkout -b &lt;branch-<span class="built_in">name</span>&gt; &lt;remote-<span class="built_in">name</span>&gt;/&lt;branch-<span class="built_in">name</span>&gt;</span><br></pre></td></tr></table></figure>
-
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://github.com/521xueweihan/git-tips">Git的奇技淫巧</a></p>
 ]]></content>
       <categories>
@@ -357,59 +321,6 @@
       </categories>
       <tags>
         <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo Next 主题 V7 升级 V8 记录</title>
-    <url>/post/Update-Next-From-V7-To-V8/</url>
-    <content><![CDATA[<p>Hexo 和 Next 最近都发布了大版本更新，此文记录了升级过程。</p>
-<a id="more"></a>
-
-<h2 id="升级-Hexo-版本"><a href="#升级-Hexo-版本" class="headerlink" title="升级 Hexo 版本"></a>升级 Hexo 版本</h2><p>Hexo 核心团队成员 Sukka 写的 <a href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a>详细介绍了 Hexo 5.0 的新特性，以及从 Hexo 4.x 升级到 Hexo 5.x 需要注意的地方。</p>
-<p>Hexo 5.0 版本带来了不小的性能上的提升，升级 5.0 直接修改 <code>hexo-site/package.json</code> 文件：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&quot;dependencies&quot;: &#123;</span><br><span class="line"><span class="deletion">-  &quot;hexo&quot;: &quot;^4.2.1&quot;,</span></span><br><span class="line"><span class="addition">+  &quot;hexo&quot;: &quot;^5.1.1&quot;,</span></span><br></pre></td></tr></table></figure>
-
-<p>然后再执行 <code>npm upadte</code> 命令即可。</p>
-<p>升级完 Hexo ，<code>_config.yml</code> 并不会更新，而 Hexo 5.0 是有新增和改动一些其中的配置项的，所以需要我们自己去 <a href="https://github.com/hexojs/hexo-starter/blob/master/_config.yml">GitHub</a> 上查看站点配置文件的变动情况，并手动同步这些修改到自己的站点配置文件里。</p>
-<p>主要的变动就是新增了 <code>prismjs</code> 相关配置项以及更新了 <code>updated_option</code> 配置项。</p>
-<h2 id="升级-Next-V8-0-0-版本"><a href="#升级-Next-V8-0-0-版本" class="headerlink" title="升级 Next V8.0.0 版本"></a>升级 Next V8.0.0 版本</h2><p>使用 Hexo 5.0 及以上版本，升级 Next 主题最简单的方法就是通过 <code>npm</code> 安装，进入博客根目录，执行以下命令即可安装最新版本的 Next 主题：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">npm <span class="keyword">install</span> hexo-theme-<span class="keyword">next</span></span><br></pre></td></tr></table></figure>
-<p>通过 <code>npm</code> 安装的 Next 主题默认文件夹路径为 <code>hexo-site/node_modules/hexo-theme-next</code> 。因为有一些自定义修改可能会需要我们改动主题的源文件，而因为整个 <code>node_modules/</code> 被<code>gitignore</code> 文件所忽略，将会导致我们无法用 Git 记录我们对主题源文件的修改。</p>
-<p>所以我将之前版本的 Next 主题文件夹进行改名，将 <code>hexo-site/theme/next</code> 改成了 <code>hexo-site/theme/next-V7</code>。然后将 <code>hexo-theme-next</code>  文件夹的内容复制到 <code>hexo-site/theme/next</code> 。这样就能将主题文件夹加入 Git 的管理之中了。</p>
-<p>这里切记不要直接将旧版本的 Next 主题文件夹直接删除，因为后面可能有配置以及文件需要进行迁移。</p>
-<p>更名完成后，使用 <code>hexo version</code> 查看版本号，可以看到一个硕大的 <code>Next</code> Logo 以及下方显示 <code>NexT version 8.0.0</code>，说明现在已经成功启用 Next V8 版本。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9F%A5%E7%9C%8BNext%E7%89%88%E6%9C%AC%E5%8F%B7.png" alt="查看 Next 版本号"></p>
-<h2 id="迁移配置文件"><a href="#迁移配置文件" class="headerlink" title="迁移配置文件"></a>迁移配置文件</h2><p>在之前使用 Next V7 版本的时候，我是利用 Hexo 的 Data Files 功能将主题配置放置在站点的 <code>source/_data/next.yml</code> 文件中。但这种做法在 V8 版本被官方告知已经过时，并<strong>将在一段时间后停止支持</strong>，现在推荐的做法是<a href="https://theme-next.js.org/docs/getting-started/configuration.html">使用 Alternate Theme Config 存储配置</a>，需要 Hexo 版本在 5.0 及以上。</p>
-<p>这里可以选择一步到位直接将主题配置整合到站点配置文件 <code>_config.yml</code> 中去，也可以选择依然使用独立的主题配置文件，我选择的是第二种。具体流程如下：</p>
-<h3 id="创建并配置-config-next-yml-文件"><a href="#创建并配置-config-next-yml-文件" class="headerlink" title="创建并配置 _config.next.yml 文件"></a>创建并配置 <code>_config.next.yml</code> 文件</h3><p>在博客根目录下新建 <code>_config.next.yml</code> 文件。</p>
-<p>因为 Next V8 有不少配置项发生了变更，所以我索性选择了重新配置。先将 <code>hexo-site/node_modules/hexo-theme-next/_config.yml</code> 中的内容复制到 <code>_config.next.yml</code> 中。然后用 Beyond Compare 软件对新主题配置文件 <code>_config.next.yml</code> 和旧主题配置文件 <code>source/_data/next.yml</code> 两者进行文本比较，根据自己的需求迁移整合相关配置项。</p>
-<p>修改完成后，将旧主题配置文件 <code>source/_data/next.yml</code> 改名，我是改成了 <code>next-old.yml</code>，名字随意，只要能同原来的 <code>next.yml</code> 区别开来即可。</p>
-<p>从 V7 升级到 V8 主要有下面几个变化：</p>
-<ul>
-<li>Hexo 5.0 版本移除了对于 swig 模版的支持，使用 Nunjucks 代替 swig 作为模版引擎，主题配置文件内 <code>custom_file_path</code> 支持文件的后缀也从 <code>.swig</code> 变成了 <code>.njk</code>。所以如果此前根据 swig 的语法写过自定义内容，请在更新前确认它们是与 Nunjucks 兼容的，否则会报错，且生成的页面为空白。例如， Nunjucks 只支持 <code>and</code> 运算符，需要替换掉 swig 中的 <code>&amp;&amp;</code>。</li>
-<li>Next V8 将自带的 Font Awesome 图标库由 4.7.0 版本升级为了 5.13.0 版本。此次升级并不向下兼容，所以需要修改配置文件中与 Font Awesome 相关的内容，否则图标可能无法正常显示。</li>
-<li>NexT V8 已支持一键切换 CDN 服务商，而不需要为每个插件单独设置 CDN 地址。但需要注意，如果是使用最新版的 Next，那么一定要保持 <code>internal: local</code> 的默认设置不变。</li>
-<li>如果此前配置过 Valine，需要注意将主题配置文件中的 <code>appid</code> 和 <code>appkey</code> 改为 <code>appId</code> 和 <code>appKey</code> 。否则会出现 Valine 无法正常加载的现象。</li>
-<li>由于 Velocity.js 缺乏维护，NexT V8 使用 Animate.css 代替之。两者的动画效果几乎完全一致，除了动画名称略有不同。如果在配置文件中设置了旧的名称（例如 slideDownIn），请将其移除或根据此网页选择新的动画效果：<a href="http://theme-next.js.org/animate/">http://theme-next.js.org/animate/</a></li>
-</ul>
-<p>更多详细信息，可以自行查询 Next <a href="https://github.com/next-theme/hexo-theme-next/issues/4">相关官方说明</a>以及<a href="https://theme-next.js.org/docs/">官方文档</a>。</p>
-<h3 id="迁移-Favicon-位置"><a href="#迁移-Favicon-位置" class="headerlink" title="迁移 Favicon 位置"></a>迁移 Favicon 位置</h3><p>之前我博客的 Favicon 图片啥的都是放在 <code>hexo-site/themes/next/source/images</code> 目录下面，正好趁着这次升级的机会，将图片全部移到了 <code>hexo-site/source/images</code> 下（没有这个文件夹就自己新建）。</p>
-<p>不要忘记去 <code>_config.next.yml</code> 检查下 Favicon 相关配置的文件名是否正确，默认的都带有 <code>-next</code>  后缀。</p>
-<h2 id="自定义修改迁移"><a href="#自定义修改迁移" class="headerlink" title="自定义修改迁移"></a>自定义修改迁移</h2><p>这一部分是最麻烦的，因为跨版本升级，很多源文件的位置以及名称都发生了变化，比如每篇文章结尾处的版权声明的样式文件就从 <code>post-copyright.styl</code> 变成了 <code>post-footer.styl</code>。而且模版引擎也从swig 变更成了 Nunjucks，虽然大部分内容是可以互相兼容的，但万一碰到不兼容的，排查起来就比较麻烦了。</p>
-<p>所幸我的自定义修改并不多，而且都是 Nunjucks 兼容的，所以迁移起来相对较快。在进行迁移的时候，利用类似 Beyond Compare 之类的文件比较软件可以有效提高迁移速度，推荐大家尝试。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>折腾了一天，成功从 Next V7 升级到了 V8，升级所带来肉眼可见的变化并不多，只有一些诸如赞赏按钮样式之类的小变动，其他更多都是内部的一些变动。</p>
-<p>我是喜欢自己折腾，而且及时使用新版，可以帮助发现并反馈问题，可以帮助 Next 主题更好地进行迭代。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://github.com/next-theme/hexo-theme-next">hexo-theme-next README.md</a></p>
-<p><a href="https://theme-next.js.org/docs/">Next 官方文档</a></p>
-<p><a href="https://github.com/next-theme/hexo-theme-next/issues/4">Next【必读】更新说明及常见问题 </a></p>
-<p><a href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a></p>
-]]></content>
-      <categories>
-        <category>个人博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Next</tag>
       </tags>
   </entry>
   <entry>
@@ -451,6 +362,109 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo Next 主题 V7 升级 V8 记录</title>
+    <url>/post/Update-Next-From-V7-To-V8/</url>
+    <content><![CDATA[<p>Hexo 和 Next 最近都发布了大版本更新，此文记录了升级过程。</p>
+<a id="more"></a>
+
+<h2 id="升级-Hexo-版本"><a href="#升级-Hexo-版本" class="headerlink" title="升级 Hexo 版本"></a>升级 Hexo 版本</h2><p>Hexo 核心团队成员 Sukka 写的 <a href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a>详细介绍了 Hexo 5.0 的新特性，以及从 Hexo 4.x 升级到 Hexo 5.x 需要注意的地方。</p>
+<p>Hexo 5.0 版本带来了不小的性能上的提升，升级 5.0 直接修改 <code>hexo-site/package.json</code> 文件：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&quot;dependencies&quot;: &#123;</span><br><span class="line"><span class="deletion">-  &quot;hexo&quot;: &quot;^4.2.1&quot;,</span></span><br><span class="line"><span class="addition">+  &quot;hexo&quot;: &quot;^5.1.1&quot;,</span></span><br></pre></td></tr></table></figure>
+<p>然后再执行 <code>npm upadte</code> 命令即可。</p>
+<p>升级完 Hexo ，<code>_config.yml</code> 并不会更新，而 Hexo 5.0 是有新增和改动一些其中的配置项的，所以需要我们自己去 <a href="https://github.com/hexojs/hexo-starter/blob/master/_config.yml">GitHub</a> 上查看站点配置文件的变动情况，并手动同步这些修改到自己的站点配置文件里。</p>
+<p>主要的变动就是新增了 <code>prismjs</code> 相关配置项以及更新了 <code>updated_option</code> 配置项。</p>
+<h2 id="升级-Next-V8-0-0-版本"><a href="#升级-Next-V8-0-0-版本" class="headerlink" title="升级 Next V8.0.0 版本"></a>升级 Next V8.0.0 版本</h2><p>使用 Hexo 5.0 及以上版本，升级 Next 主题最简单的方法就是通过 <code>npm</code> 安装，进入博客根目录，执行以下命令即可安装最新版本的 Next 主题：</p>
+<figure class="highlight autoit"><table><tr><td class="code"><pre><span class="line">npm install hexo-theme-<span class="keyword">next</span></span><br></pre></td></tr></table></figure>
+<p>通过 <code>npm</code> 安装的 Next 主题默认文件夹路径为 <code>hexo-site/node_modules/hexo-theme-next</code> 。因为有一些自定义修改可能会需要我们改动主题的源文件，而因为整个 <code>node_modules/</code> 被<code>gitignore</code> 文件所忽略，将会导致我们无法用 Git 记录我们对主题源文件的修改。</p>
+<p>所以我将之前版本的 Next 主题文件夹进行改名，将 <code>hexo-site/theme/next</code> 改成了 <code>hexo-site/theme/next-V7</code>。然后将 <code>hexo-theme-next</code>  文件夹的内容复制到 <code>hexo-site/theme/next</code> 。这样就能将主题文件夹加入 Git 的管理之中了。</p>
+<p>这里切记不要直接将旧版本的 Next 主题文件夹直接删除，因为后面可能有配置以及文件需要进行迁移。</p>
+<p>更名完成后，使用 <code>hexo version</code> 查看版本号，可以看到一个硕大的 <code>Next</code> Logo 以及下方显示 <code>NexT version 8.0.0</code>，说明现在已经成功启用 Next V8 版本。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9F%A5%E7%9C%8BNext%E7%89%88%E6%9C%AC%E5%8F%B7.png" alt="查看 Next 版本号"></p>
+<h2 id="迁移配置文件"><a href="#迁移配置文件" class="headerlink" title="迁移配置文件"></a>迁移配置文件</h2><p>在之前使用 Next V7 版本的时候，我是利用 Hexo 的 Data Files 功能将主题配置放置在站点的 <code>source/_data/next.yml</code> 文件中。但这种做法在 V8 版本被官方告知已经过时，并<strong>将在一段时间后停止支持</strong>，现在推荐的做法是<a href="https://theme-next.js.org/docs/getting-started/configuration.html">使用 Alternate Theme Config 存储配置</a>，需要 Hexo 版本在 5.0 及以上。</p>
+<p>这里可以选择一步到位直接将主题配置整合到站点配置文件 <code>_config.yml</code> 中去，也可以选择依然使用独立的主题配置文件，我选择的是第二种。具体流程如下：</p>
+<h3 id="创建并配置-config-next-yml-文件"><a href="#创建并配置-config-next-yml-文件" class="headerlink" title="创建并配置 _config.next.yml 文件"></a>创建并配置 <code>_config.next.yml</code> 文件</h3><p>在博客根目录下新建 <code>_config.next.yml</code> 文件。</p>
+<p>因为 Next V8 有不少配置项发生了变更，所以我索性选择了重新配置。先将 <code>hexo-site/node_modules/hexo-theme-next/_config.yml</code> 中的内容复制到 <code>_config.next.yml</code> 中。然后用 Beyond Compare 软件对新主题配置文件 <code>_config.next.yml</code> 和旧主题配置文件 <code>source/_data/next.yml</code> 两者进行文本比较，根据自己的需求迁移整合相关配置项。</p>
+<p>修改完成后，将旧主题配置文件 <code>source/_data/next.yml</code> 改名，我是改成了 <code>next-old.yml</code>，名字随意，只要能同原来的 <code>next.yml</code> 区别开来即可。</p>
+<p>从 V7 升级到 V8 主要有下面几个变化：</p>
+<ul>
+<li>Hexo 5.0 版本移除了对于 swig 模版的支持，使用 Nunjucks 代替 swig 作为模版引擎，主题配置文件内 <code>custom_file_path</code> 支持文件的后缀也从 <code>.swig</code> 变成了 <code>.njk</code>。所以如果此前根据 swig 的语法写过自定义内容，请在更新前确认它们是与 Nunjucks 兼容的，否则会报错，且生成的页面为空白。例如， Nunjucks 只支持 <code>and</code> 运算符，需要替换掉 swig 中的 <code>&amp;&amp;</code>。</li>
+<li>Next V8 将自带的 Font Awesome 图标库由 4.7.0 版本升级为了 5.13.0 版本。此次升级并不向下兼容，所以需要修改配置文件中与 Font Awesome 相关的内容，否则图标可能无法正常显示。</li>
+<li>NexT V8 已支持一键切换 CDN 服务商，而不需要为每个插件单独设置 CDN 地址。但需要注意，如果是使用最新版的 Next，那么一定要保持 <code>internal: local</code> 的默认设置不变。</li>
+<li>如果此前配置过 Valine，需要注意将主题配置文件中的 <code>appid</code> 和 <code>appkey</code> 改为 <code>appId</code> 和 <code>appKey</code> 。否则会出现 Valine 无法正常加载的现象。</li>
+<li>由于 Velocity.js 缺乏维护，NexT V8 使用 Animate.css 代替之。两者的动画效果几乎完全一致，除了动画名称略有不同。如果在配置文件中设置了旧的名称（例如 slideDownIn），请将其移除或根据此网页选择新的动画效果：<a href="http://theme-next.js.org/animate/">http://theme-next.js.org/animate/</a></li>
+</ul>
+<p>更多详细信息，可以自行查询 Next <a href="https://github.com/next-theme/hexo-theme-next/issues/4">相关官方说明</a>以及<a href="https://theme-next.js.org/docs/">官方文档</a>。</p>
+<h3 id="迁移-Favicon-位置"><a href="#迁移-Favicon-位置" class="headerlink" title="迁移 Favicon 位置"></a>迁移 Favicon 位置</h3><p>之前我博客的 Favicon 图片啥的都是放在 <code>hexo-site/themes/next/source/images</code> 目录下面，正好趁着这次升级的机会，将图片全部移到了 <code>hexo-site/source/images</code> 下（没有这个文件夹就自己新建）。</p>
+<p>不要忘记去 <code>_config.next.yml</code> 检查下 Favicon 相关配置的文件名是否正确，默认的都带有 <code>-next</code>  后缀。</p>
+<h2 id="自定义修改迁移"><a href="#自定义修改迁移" class="headerlink" title="自定义修改迁移"></a>自定义修改迁移</h2><p>这一部分是最麻烦的，因为跨版本升级，很多源文件的位置以及名称都发生了变化，比如每篇文章结尾处的版权声明的样式文件就从 <code>post-copyright.styl</code> 变成了 <code>post-footer.styl</code>。而且模版引擎也从swig 变更成了 Nunjucks，虽然大部分内容是可以互相兼容的，但万一碰到不兼容的，排查起来就比较麻烦了。</p>
+<p>所幸我的自定义修改并不多，而且都是 Nunjucks 兼容的，所以迁移起来相对较快。在进行迁移的时候，利用类似 Beyond Compare 之类的文件比较软件可以有效提高迁移速度，推荐大家尝试。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>折腾了一天，成功从 Next V7 升级到了 V8，升级所带来肉眼可见的变化并不多，只有一些诸如赞赏按钮样式之类的小变动，其他更多都是内部的一些变动。</p>
+<p>我是喜欢自己折腾，而且及时使用新版，可以帮助发现并反馈问题，可以帮助 Next 主题更好地进行迭代。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://github.com/next-theme/hexo-theme-next">hexo-theme-next README.md</a></p>
+<p><a href="https://theme-next.js.org/docs/">Next 官方文档</a></p>
+<p><a href="https://github.com/next-theme/hexo-theme-next/issues/4">Next【必读】更新说明及常见问题 </a></p>
+<p><a href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a></p>
+]]></content>
+      <categories>
+        <category>个人博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>什么是全功能 Type-C 及显示器所需带宽如何计算</title>
+    <url>/post/What-Is-Full-Featured-Type-C/</url>
+    <content><![CDATA[<p>本文主要介绍了如何计算特定分辨率和刷新率显示器所需带宽以及对全功能 Type-C 的一些简单科普。</p>
+<a id="more"></a>
+
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>最近动了换新笔记本和显示器的念头，自己想换一台 4K 显示器，在了解相关知识的时候，经常看到要注意视频输出接口带宽的提醒。其中各种概念多且杂，初接触很容易懵圈，所以我整理汇总了一些网上的资料，以作此文。</p>
+<p>文中如有不对或不妥的地方，欢迎评论留言指出错误，不甚感激。</p>
+<h2 id="4K-60Hz-显示需要多少带宽"><a href="#4K-60Hz-显示需要多少带宽" class="headerlink" title="4K@60Hz 显示需要多少带宽"></a>4K@60Hz 显示需要多少带宽</h2><p>我们这里以一块 4K、8 bit、60 Hz 的屏幕举例，这块显示屏有 3840 * 2160 个像素点，每个像素点又由红绿蓝三个子像素构成 ，每个子像素需要 8 bit 的数据，刷新率为 60 Hz，也就是每秒需要刷新 60 次，那么每秒需要传输的数据量就是 3840 * 2160 * 3 * 8 * 60 =  11.94 Gbit，需要的带宽就是 11.94 Gbps。</p>
+<p>上述这些数据只是我们能够在显示屏上看到的内容，实际上在传输相关画面数据的时候，还需要考虑到防止画面撕裂，以及画面对齐等等需求，需要传输比实际显示画面更多的数据，所以实际传输的数据会比上面计算的更多。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/7-%E6%98%BE%E7%A4%BA%E5%99%A8%E5%AE%9E%E9%99%85%E4%BC%A0%E8%BE%93%E6%95%B0%E6%8D%AE.png" alt="显示器实际传输数据"></p>
+<p>下面这张来自 B 站 Up 主<a href="https://space.bilibili.com/14871346#/">硬件茶谈</a>的表格详细列出了市面上常见分辨率及刷新率的组合分别所需要的带宽，其中还有各种显示器接口的相容性：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/8-%E6%98%BE%E7%A4%BA%E6%8E%A5%E5%8F%A3%E7%9B%B8%E5%AE%B9%E8%A1%A8.png" alt="显示接口相容表"></p>
+<p>显示器带宽具体的计算原理可以查看 Up 主的<a href="https://b23.tv/rbYOKW">视频-【硬件科普】4K144Hz需要传输多少数据，教你如何正确的计算显示器的带宽需求？</a>，原理及计算方法都讲得非常清楚，动画特效也是一流。</p>
+<p>在此也强烈安利下 Up 主，最早是在知乎关注他的，在知乎笔记本话题下相当活跃，后期转型成 B 站 Up 主，视频质量极高，讲解概念深入浅出，动画精致流畅，看他的视频可谓一种享受。我从 Up 主的视频里学到了很多硬件相关基础知识。而且 Up 主现在还只是一名在校大学生，让人不服不行，在此就祝愿 Up 主早日发大财吧。</p>
+<h2 id="什么是全功能-Type-C"><a href="#什么是全功能-Type-C" class="headerlink" title="什么是全功能 Type-C"></a>什么是全功能 Type-C</h2><p>同时具有<strong>数据传输、充电、显示</strong>三项功能的 Type-C 就称之为全功能 Type-C。而之所有会有「全功能」和「非全功能」的区分，是因为 Type-C 只是个<strong>接口形状</strong>。Type-C 接口是能够支持 100W PD 供电、DP 显示输出、USB 数据传输等功能没错，但 <strong>Type-C 接口的功能都是可以被增减的</strong>，所以并不是所有 Type-C 接口都同时具备数据传输、充电、显示三项功能。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C/雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/2-Type-C%E4%B8%8D%E5%90%8C%E5%8A%9F%E8%83%BD.png" alt="Type-C 不同功能说明"></p>
+<p>每台电脑上面所配备的 Type-C 接口所具备的功能是不尽相同的，厂商基于成本或是其他方面的考虑，配备的 Type-C 可能只支持 USB 数据传输功能 ，不能充电、显示，也可能配备只支持 DP 显示和数据传输的 Type-C 口，不能充电。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C/雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-TypeC%E5%8A%9F%E8%83%BD%E4%B8%8D%E9%BD%90.png" alt="Type-C 现状"></p>
+<h2 id="Type-C-的「数据传输」带宽"><a href="#Type-C-的「数据传输」带宽" class="headerlink" title="Type-C 的「数据传输」带宽"></a>Type-C 的「数据传输」带宽</h2><p>Type-C 接口还有一个重要的参数就是 USB 版本，USB 版本越高，带宽也就越高，理论上带宽越高，传输速度越快。不过 USB 版本的命名经过了几次大的修改，命名规范变来变去，对普通消费者识别起来极不友好。下面两张图分别引用自<a href="https://basic-tutorials.com/usb-type-c-at-a-glance-what-the-port-can-do-what-it-cant-do-and-why-it-has-nothing-to-do-with-usb-3-0/">USB type C at a glance: What the port can do, what it can’t do and why it has nothing to do with USB 3.0</a>及<a href="https://zh.wikipedia.org/wiki/USB">维基百科-USB</a>。其中 USB3.2 Gen 2x2 的 Logo 以维基百科的为准。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/3-USB%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E.png" alt="USB 版本说明"></p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/4-USB%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91.png" alt="USB 版本及速率(维基百科)"></p>
+<p>通过这两张图，我们能够比较清楚地知道各个 USB 版本对应的传输速率及兼容接口。目前笔记本上 Type-C 接口的主流速率还是 USB3.2 Gen 1 也就是 5Gbps，理论速度约合 500 MB/s。</p>
+<p><strong>但需要注意的是，多数情况下，「USB 几点几」这样的称呼，仅仅只是用于描述接口的「数据传输」速度，不代表这个接口其他任何能力，如能否PD充电、能否显示。</strong></p>
+<h2 id="5Gbps-的-Type-C-无法满足-4K-60Hz-输出？"><a href="#5Gbps-的-Type-C-无法满足-4K-60Hz-输出？" class="headerlink" title="5Gbps 的 Type-C 无法满足 4K@60Hz 输出？"></a>5Gbps 的 Type-C 无法满足 4K@60Hz 输出？</h2><p>这个问题也是我在没了解相关知识之前相当困惑的一个地方——当我看到心仪的笔记本只有 USB 3.2 Gen1 接口和 HDMI1.4b 的接口，而两者的带宽都远小于 4K@60Hz 所需的 12.54 Gbps 时，我当时同样以为外接 4K@60Hz 显示器是不可能实现的了。</p>
+<p>这里面的问题就在于我们<strong>混淆了 Type-C 接口的「数据带宽」和「显示带宽」</strong>，我们日常习惯说一个 Type-C 的带宽是 3.1 Gen1 或者 Gen2、5Gbps 或者10Gbps，这时候说的其实都是这个接口的 USB 数据带宽，只能代表这个接口接 U盘/移动硬盘之类的存储进行数据传输时所能达到的最大速度。</p>
+<p>Type-C能够整合显示输出功能，主要是借助了DP Alt Mode（替代模式）功能，借助Type-C正反面诸多针脚中的几个定义为显示接口。通俗点说可以理解为单独做了个 DP 显示总线放在 Type-C 口上，所以数据带宽是 5Gbps 还是10Gbps 并<strong>不代表显示带宽也只有这么多</strong>。以目前 Type-C 的规范来看，当我们说一个 Type-C 支持显示输出时，那么这个接口<strong>至少可以支持 DP1.2 标准</strong>，也就是说拥有独立的约 21Gbps 的显示带宽，因为 DP1.2 中有 20% 的编码是用于校验的，所以真正能用来传输视频信号的带宽只有 21.60 * 0.8 = 17.28 Gbps，但这也已经<strong>完全可以满足 4K@60Hz 的传输要求了</strong>。下图引用自<a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a>：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/5-USBC%E7%8B%AC%E7%AB%8B%E6%98%BE%E7%A4%BA%E5%B8%A6%E5%AE%BD.png" alt="Type-C 显示拥有独立的显示带宽"></p>
+<p>我们现在关于 5Gbps 的 Type-C 能否满足 4K@60Hz 画面传输的问题有了明确的答案，只要是<strong>支持显示输出的 Type-C 口，就可以支持输出 4K@60Hz</strong>。</p>
+<h2 id="5Gbps-的-Type-C-的不足之处"><a href="#5Gbps-的-Type-C-的不足之处" class="headerlink" title="5Gbps 的 Type-C 的不足之处"></a>5Gbps 的 Type-C 的不足之处</h2><p>Type-C 显示输出虽然是 DP/HDMI 显示，但实际上还是借用了数据传输的一部分引脚。当一个支持 DP 显示输出的 Type-C ，而它的数据带宽是 USB3.1 Gen1 5Gbps 时，那么此时是无法<strong>通过一根线</strong>同时实现理应互不干扰的 4K@60Hz 和 USB3.0 传输的，下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C/雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/6-4K%E6%98%BE%E7%A4%BA%E8%BE%93%E5%87%BA%E7%9A%84%E5%87%A0%E7%A7%8D%E5%9C%BA%E6%99%AF.png" alt="4K 显示输出的几种场景"></p>
+<p>因此在一些显示器的详情界面会注明——当显示器上的 USB 设置为 3.2Gen1 时，只能输出 4K@30Hz 的画面，如果想要输出 4K@60Hz 需要将 USB 设置为 2.0 或关闭。所以如果我们使用的显示器有拓展 USB 口，而我们是使用 Type-C 直连显示器，为了保证使用体验，我们需要手动将显示器上的 USB 设置为 USB2.0，此时显示器上的 USB 更适合用来接键鼠，文件传输之类的还是直连笔记本会比较快。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/9-%E6%98%BE%E7%A4%BA%E5%99%A8%E8%AF%A6%E6%83%85%E7%95%8C%E9%9D%A2%E7%9A%84%E6%8F%90%E7%A4%BA.png" alt="显示器详情界面的提示"></p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C/雷电3接口的两万字科普（上篇） - 知乎</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/101486153">【从入门到放弃】关于Type-C/雷电3接口的两万字科普（下篇） - 知乎</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a></p>
+<p><a href="https://basic-tutorials.com/usb-type-c-at-a-glance-what-the-port-can-do-what-it-cant-do-and-why-it-has-nothing-to-do-with-usb-3-0/">USB type C at a glance: What the port can do, what it can’t do and why it has nothing to do with USB 3.0</a></p>
+<p><a href="https://zh.wikipedia.org/wiki/USB">维基百科-USB</a></p>
+<p><a href="https://b23.tv/rbYOKW">视频-【硬件科普】4K144Hz需要传输多少数据，教你如何正确的计算显示器的带宽需求？</a></p>
+<p><a href="https://diy.pconline.com.cn/1374/13748807.html">DP vs HDMI 谁才是游戏玩家最佳选择</a></p>
+]]></content>
+      <categories>
+        <category>硬件</category>
+      </categories>
+      <tags>
+        <tag>硬件</tag>
+        <tag>显示器</tag>
+        <tag>USB</tag>
+        <tag>Type-C</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>为什么 robots.txt 不应该再屏蔽 JS 和 CSS 了</title>
     <url>/post/Why-Shouldnot-Block-JS-And-CSS-Files-In-Robotstxt-Anymore/</url>
     <content><![CDATA[<p>根据谷歌官方的建议，robots.txt 已经不需要再屏蔽 JavaScript、CSS 文件了。</p>
@@ -470,7 +484,6 @@
 <p>上面这些都是谷歌在 2015 年就开始提倡的做法，所以现在已经 2020 年了，我们完全可以放心地让搜索引擎抓取我们的 JavaScript、CSS 文件，这样做对 SEO 有百利而无一害。</p>
 <h2 id="我的-robots-txt"><a href="#我的-robots-txt" class="headerlink" title="我的 robots.txt"></a>我的 robots.txt</h2><p>在博客根目录下的 <code>public</code> 文件夹内新建 <code>robots.txt</code> 文件，然后 <code>hexo d</code> 部署网站即可。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 允许任何搜索引擎抓取任何页面</span><br><span class="line">User-agent: *</span><br><span class="line">Allow: &#x2F;</span><br><span class="line"># 站点地图地址</span><br><span class="line">Sitemap: https:&#x2F;&#x2F;asurada.zone&#x2F;sitemap.xml</span><br><span class="line">Sitemap: https:&#x2F;&#x2F;asurada.zone&#x2F;baidusitemap.xml</span><br></pre></td></tr></table></figure>
-
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://support.google.com/webmasters/answer/7451184">谷歌官方搜索引擎优化 (SEO) 新手指南</a></p>
 <p><a href="https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html">Understanding web pages better</a> </p>
 <p><a href="https://yoast.com/dont-block-css-and-js-files/">Don’t block CSS and JS files</a></p>
@@ -480,30 +493,6 @@
       </categories>
       <tags>
         <tag>SEO</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>利用 Pqi 实现 Python 快速换源</title>
-    <url>/post/change-python-pypisource/</url>
-    <content><![CDATA[<p>pip 默认的软件源是国外的，下载起来速度很慢，我们可以将软件源换成国内的镜像源，大幅提高下载速度。本文介绍利用 <code>pqi</code> 这一小工具来实现简单快速地更换 pip 软件源。</p>
-<a id="more"></a>
-<p><code>pqi</code> 是国内开发者 <a href="https://github.com/yhangf">yhf</a> 开发的 <a href="https://github.com/yhangf/PyQuickInstall">PyQuickInstall</a> 工具的简称，这款工具可以非常方便地帮助我们切换 pip 软件源，如果觉得好用的话，大家可以动动鼠标，在 Github 上面 Star 一下。</p>
-<p>临时使用清华大学开源软件镜像源安装 pqi ：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install pqi -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
-
-<p>安装完成后，直接在命令行即可使用 pqi ：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//列举所有支持的PyPi源</span><br><span class="line">pqi ls</span><br><span class="line">//改变 PyPi源</span><br><span class="line">pqi use &lt;name&gt;</span><br><span class="line">//显示当前PyPi源</span><br><span class="line">pqi show</span><br><span class="line">//移除pip源</span><br><span class="line">pqi remove &lt;name&gt;</span><br><span class="line">//添加新的pip源</span><br><span class="line">pqi add &lt;name&gt; &lt;url&gt;</span><br><span class="line">//升级到最新版 pqi</span><br><span class="line">pip install --upgrade pqi</span><br></pre></td></tr></table></figure>
-
-<p>如果决定使用上面提到过的清华大学镜像源，使用如下命令即可：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pqi use tuna</span><br></pre></td></tr></table></figure>
-
-<p>然后就可以享受飞一般的 pip下载速度了。</p>
-]]></content>
-      <categories>
-        <category>开发环境</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -521,13 +510,10 @@
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/37-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2%E6%95%88%E6%9E%9C%E5%9B%BE.png" alt="站内搜索"></p>
 <p>在根目录下执行以下命令安装插件：</p>
 <figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">$ npm <span class="keyword">install</span> hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
-
 <p>在<strong>主题配置</strong>文件中修改相关字段：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true</span><br><span class="line">  trigger: auto # 每次输入改变都重新搜索</span><br><span class="line">  top_n_per_article: 3 # 每篇文章显示的搜索结果数量</span><br><span class="line">  unescape: false</span><br></pre></td></tr></table></figure>
-
 <p>在<strong>站点配置</strong>文件中<strong>添加</strong>以下字段：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml # 后缀可选 .xml 和 .json</span><br><span class="line">  field: post # 指定搜索范围，可选 post | page | all</span><br><span class="line">  content: true # 是否牵引文章的全部内容，false 则只牵引文章标题</span><br><span class="line">  format: html # 指定页面内容形式，可选 html | raw (Markdown) | striptags </span><br></pre></td></tr></table></figure>
-
 <p>配置完成后，执行 <code>hexo g</code> 命令会在 <code>public</code> 文件夹下自动生成 <code>search.xml</code> 文件。</p>
 <h2 id="文末版权声明修改"><a href="#文末版权声明修改" class="headerlink" title="文末版权声明修改"></a>文末版权声明修改</h2><h3 id="版权声明添加标题"><a href="#版权声明添加标题" class="headerlink" title="版权声明添加标题"></a>版权声明添加标题</h3><blockquote>
 <p>此项配置基于 Hexo 4.2，Next 7.8.0</p>
@@ -538,7 +524,6 @@
 
 <p>首先修改 <code>.\themes\next\layout\_partials\post\post-copyright.swig</code> 文件，在 <code>&lt;ul&gt; &lt;/ul&gt;</code> 标签内根据自己的需求在相应位置<strong>新增</strong>以下代码：</p>
 <figure class="highlight html"><figcaption><span>.\themes\next\layout\_partials\post\post-copyright.swig</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;post-copyright-title&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">strong</span>&gt;</span>&#123;&#123; __(&#x27;post.copyright.title&#x27;) + __(&#x27;symbol.colon&#x27;) &#125;&#125; <span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line">    &#123;&#123; post.title &#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
 <p>由于 <code>post.copyright.title</code> 是我们自己新增的，这一字段 Next 默认是没有对应的中文翻译的，所以我们需要通过修改 <code>.\themes\next\languages\zh-CN.yml</code> 文件来添加翻译，打开文件，搜索 <code>copyright</code> ，在下面新增 <code>title: 本文标题</code> 。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/5-zhCN%E5%A2%9E%E5%8A%A0%E7%BF%BB%E8%AF%91.png" alt="zh-CN.yml 增加对应翻译"></p>
 <p>执行 <code>hexo g</code> 重新生成博客，<code>hexo s</code> 本地调试查看效果：</p>
@@ -558,10 +543,8 @@
 
 <p>在版权样式文件 <code>.themes\next\source\css\_common\components\post\post-copyright.styl</code> 中<strong>新增</strong>如下样式：</p>
 <figure class="highlight css"><figcaption><span>.themes\next\source\css\_common\components\post\post-copyright.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.swal-overlay</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: transparent;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.copy-success-message</span> &#123;</span><br><span class="line">  <span class="attribute">box-shadow</span>: <span class="number">0px</span> <span class="number">4px</span> <span class="number">12px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.15</span>);</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">4px</span>;</span><br><span class="line">  <span class="attribute">width</span>: auto;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">16</span>x <span class="number">0px</span>;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.copy-success-message</span> <span class="selector-class">.swal-content</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="meta">!important</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span> <span class="number">16px</span>;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">1em</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.copy-success-message</span> <span class="selector-class">.message-icon</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#52c41a</span>;</span><br><span class="line">  <span class="attribute">margin-right</span>: <span class="number">8px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.copy-success-message</span> <span class="selector-class">.message-content</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>然后补全版权信息文案字段：</p>
 <figure class="highlight diff"><figcaption><span>.\themes\next\languages\zh-CN.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">post:</span><br><span class="line">  copyright:</span><br><span class="line"><span class="addition">+   copy_success: 复制成功</span></span><br></pre></td></tr></table></figure>
-
 <p>之后点击「本文链接」后的图标便可以快捷复制 Markdown 格式的引用链接，并将弹出复制成功的提示语。</p>
 <blockquote>
 <p>该功能主要借助 <a href="https://clipboardjs.com/">clipboard</a> 和 <a href="https://sweetalert.js.org/">sweetalert</a> 两个 js 库来实现，并参考 <a href="https://ant.design/components/message/">antDesign | message 组件</a> 重写了弹框样式。</p>
@@ -572,7 +555,6 @@
 </blockquote>
 <p>Hexo 默认的文章 URL 地址为 <code>https://yoursite.com/:year/:month/:day/:title/</code>，层级较多，我自己看着碍眼，据说对 SEO 也不利。打开站点配置文件 <code>_config.yml</code> ，找到  <code>permalink</code>，将其改成自己想要的格式，我的很简单，全部的文章都是 <code>post</code>。</p>
 <figure class="highlight yml"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## If your site is put in a subdirectory, set url as &#x27;http://yoursite.com/child&#x27; and root as &#x27;/child/&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://asurada.zone</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br><span class="line"><span class="string">-permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="string">+permalink:</span> <span class="string">post/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br></pre></td></tr></table></figure>
-
 <h2 id="生成-RSS-并在侧边栏添加-RSS-按钮"><a href="#生成-RSS-并在侧边栏添加-RSS-按钮" class="headerlink" title="生成 RSS 并在侧边栏添加 RSS 按钮"></a>生成 RSS 并在侧边栏添加 RSS 按钮</h2><blockquote>
 <p>此项配置基于 Hexo 5.0，Next 7.8.0</p>
 </blockquote>
@@ -600,13 +582,11 @@
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/15-%E6%96%87%E6%9C%AB%E7%BB%93%E6%9D%9F%E6%A0%87%E8%AE%B0.png" alt="文末结束标记"></p>
 <p>修改主题配置文件 <code>.\source\_data\next.yml</code>，取消 <code>postBodyEnd</code> 前的注释，启用 <code>post-metabody-end.swig</code> 这一自定义文件：</p>
 <figure class="highlight yaml"><figcaption><span>.\source\_data\next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.swig</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.swig</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.swig</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.swig</span></span><br><span class="line"><span class="bullet">-</span> <span class="comment">#postBodyEnd: source/_data/post-metabody-end.swig</span></span><br><span class="line"><span class="string">+</span> <span class="attr">postBodyEnd:</span> <span class="string">source/_data/post-metabody-end.swig</span></span><br></pre></td></tr></table></figure>
-
 <p>我们可以打开 <code>.\themes\next\layout\_macro\post.swig</code> 文件，搜索 <code>next_inject</code>，定位到 <code>next_inject(&#39;postBodyEnd&#39;)</code>：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/16-post_swig%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE.png" alt="post.swig 插入位置"></p>
 <p>这一段代码的含义就是当上面的 <code>postBodyEnd</code> 被取消注释时，<code>post-metabody-end.swig</code> 文件就会被插入到这里（望文生义，如理解有误请指出）。</p>
 <p>在 <code>.\source\_data</code> 文件下新建 <code>post-metabody-end.swig</code> 文件，添加如下代码：</p>
 <figure class="highlight html"><figcaption><span>.\source\_data\post-metabody-end.swig</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center;color:#bfbfbf;font-size:16px;&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">span</span>&gt;</span>-------- 本文结束 <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa fa-paw&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>		<span class="comment">&lt;!-- 这里的图标可以自己去 fontawesome.com 找，然后自定义 --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">span</span>&gt;</span> 感谢阅读 --------<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
 <p><code>hexo s -g</code> 预览效果没问题，就可以 <code>hexo d</code> 部署到博客了。</p>
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="http://yearito.cn/posts/hexo-deploy-to-VPS.html">yearito’s Blog | Hexo搭建个人博客系列：部署上线篇</a></p>
 <p><a href="https://tding.top/archives/4ea54752.html">小丁的个人博客 | Hexo-NexT 博客提交搜索引擎收录</a></p>
@@ -618,6 +598,27 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>利用 Pqi 实现 Python 快速换源</title>
+    <url>/post/change-python-pypisource/</url>
+    <content><![CDATA[<p>pip 默认的软件源是国外的，下载起来速度很慢，我们可以将软件源换成国内的镜像源，大幅提高下载速度。本文介绍利用 <code>pqi</code> 这一小工具来实现简单快速地更换 pip 软件源。</p>
+<a id="more"></a>
+<p><code>pqi</code> 是国内开发者 <a href="https://github.com/yhangf">yhf</a> 开发的 <a href="https://github.com/yhangf/PyQuickInstall">PyQuickInstall</a> 工具的简称，这款工具可以非常方便地帮助我们切换 pip 软件源，如果觉得好用的话，大家可以动动鼠标，在 Github 上面 Star 一下。</p>
+<p>临时使用清华大学开源软件镜像源安装 pqi ：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install pqi -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+<p>安装完成后，直接在命令行即可使用 pqi ：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//列举所有支持的PyPi源</span><br><span class="line">pqi ls</span><br><span class="line">//改变 PyPi源</span><br><span class="line">pqi use &lt;name&gt;</span><br><span class="line">//显示当前PyPi源</span><br><span class="line">pqi show</span><br><span class="line">//移除pip源</span><br><span class="line">pqi remove &lt;name&gt;</span><br><span class="line">//添加新的pip源</span><br><span class="line">pqi add &lt;name&gt; &lt;url&gt;</span><br><span class="line">//升级到最新版 pqi</span><br><span class="line">pip install --upgrade pqi</span><br></pre></td></tr></table></figure>
+<p>如果决定使用上面提到过的清华大学镜像源，使用如下命令即可：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pqi use tuna</span><br></pre></td></tr></table></figure>
+<p>然后就可以享受飞一般的 pip下载速度了。</p>
+]]></content>
+      <categories>
+        <category>开发环境</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -633,7 +634,6 @@
 </blockquote>
 <p>安装  <a href="https://github.com/hexojs/hexo-generator-sitemap">hexo-generator-sitemap</a> 插件：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
-
 <p>安装插件以后，执行 <code>hexo  g</code> 命令，即可在 <code>public</code> 文件夹下找到新生成的 <code>sitemap.xml</code> 文件。</p>
 <h2 id="让百度收录站点"><a href="#让百度收录站点" class="headerlink" title="让百度收录站点"></a>让百度收录站点</h2><h3 id="百度验证域名"><a href="#百度验证域名" class="headerlink" title="百度验证域名"></a>百度验证域名</h3><p>刚建站的时候，百度是没有收录我们的网站的，这时在搜索框输入 <code>site:&lt;域名&gt;</code>  ，结果应该是下面这样的，点击「提交网址」来提交我们的站点。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-%E7%99%BE%E5%BA%A6%E6%9C%AA%E6%94%B6%E5%BD%95.png" alt="百度未收录"></p>
@@ -650,7 +650,6 @@
 </blockquote>
 <p>打开主题配置数据文件 <code>next.yml</code> ，搜索 <code>baidu_site_verification</code>，将上述字符串填至后方。</p>
 <figure class="highlight yaml"><figcaption><span>.\source\_data\next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Baidu Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: https://ziyuan.baidu.com/site</span></span><br><span class="line"><span class="attr">baidu_site_verification:</span> <span class="string">hpYpGBuDQF</span></span><br></pre></td></tr></table></figure>
-
 <p>执行 <code>hexo g -d</code> 重新生成并部署站点，部署完成后，检查网站源码，能看到在<code>&lt;head&gt;</code> 里面已经自动包含了用于验证身份的 meta 标签：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/11-%E7%99%BE%E5%BA%A6%E9%AA%8C%E8%AF%81meta%E6%A0%87%E7%AD%BE.png" alt="百度验证 meta 标签"></p>
 <p>回到百度站长管理平台点击「完成验证」按钮，完成验证。</p>
@@ -660,18 +659,15 @@
 <h3 id="百度提交链接"><a href="#百度提交链接" class="headerlink" title="百度提交链接"></a>百度提交链接</h3><p>百度提交链接有下面三种方式。</p>
 <h4 id="主动提交"><a href="#主动提交" class="headerlink" title="主动提交"></a>主动提交</h4><p>安装  <a href="https://github.com/huiwang/hexo-baidu-url-submit">hexo-baidu-url-submit</a> 插件：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-baidu-url-submit --save</span><br></pre></td></tr></table></figure>
-
 <p>获取百度主动推送<code>准入密钥</code>并复制：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/14-%E7%99%BE%E5%BA%A6%E4%B8%BB%E5%8A%A8%E6%8E%A8%E9%80%81%E5%87%86%E5%85%A5%E5%AF%86%E9%92%A5.png" alt="百度主动推送准入密钥"></p>
 <p>在站点配置文件 <code>_config.yml</code> 中<strong>新增</strong>以下代码：</p>
 <figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="addition">+ # 百度主动推送</span></span><br><span class="line"><span class="addition">+ baidu_url_submit:</span></span><br><span class="line"><span class="addition">+ 	count: 5 # 提交最新的五个链接</span></span><br><span class="line"><span class="addition">+ 	host: https://asurada.zone # 在百度站长平台中注册的域名</span></span><br><span class="line"><span class="addition">+  	token: xxxxx  # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span></span><br><span class="line"><span class="addition">+  	path: baidu_urls.txt  # 文本文档的地址， 新链接会保存在此文本文档里</span></span><br></pre></td></tr></table></figure>
-
 <p>然后在站点配置文件 <code>_config.yml</code> 中修改部署策略：</p>
 <figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">  # Deployment</span><br><span class="line">  ## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line"><span class="deletion">- deploy:</span></span><br><span class="line"><span class="deletion">- 	type: git</span></span><br><span class="line"><span class="deletion">-   repo: git@github.com:ousugo/ousugo.github.io.git</span></span><br><span class="line"><span class="deletion">-	branch: master</span></span><br><span class="line"><span class="addition">+ deploy:</span></span><br><span class="line"><span class="addition">+ - type: git</span></span><br><span class="line"><span class="addition">+   repo: git@github.com:ousugo/ousugo.github.io.git</span></span><br><span class="line"><span class="addition">+	branch: master</span></span><br><span class="line"><span class="addition">+ - type: baidu_url_submitter # 百度</span></span><br></pre></td></tr></table></figure>
 <p>此后每次执行 <code>hexo d</code> 部署博客的时候将会自动在 <code>./public</code> 目录下生成 <code>baidu_urls.txt</code> 文件，里面的内容就是自己设置的最新的 n 条文章链接。然后自动推送文件内容到百度，加快链接被百度收录的速度。</p>
 <p>在这里的时候我踩了一个坑，在部署的时候一直提示错误：<code>&#123;&quot;error&quot;:401,&quot;message&quot;:&quot;site sid is empty&quot;&#125;</code> ，后面经过排查发现是在配置主动推送时，<code>host</code> 后面的网址没有加协议头，加上之后就不报错了。</p>
 <figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">  count: 5 # 提交最新的五个链接</span><br><span class="line"><span class="deletion">- host: asurada.zone # 在百度站长平台中注册的域名</span></span><br><span class="line"><span class="addition">+ host: https://asurada.zone # 在百度站长平台中注册的域名	</span></span><br><span class="line">  token: xxxxx  # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span><br><span class="line">  path: baidu_urls.txt  # 文本文档的地址， 新链接会保存在此文本文档里</span><br></pre></td></tr></table></figure>
-
 <h4 id="自动推送（弃用）"><a href="#自动推送（弃用）" class="headerlink" title="自动推送（弃用）"></a><del>自动推送</del>（弃用）</h4><div class="note info"><p>百度站长平台现在已经取消了「自动推送」的功能入口，所以不建议再开启此功能，详见<a href="https://51.ruyo.net/16280.html">百度 JS代码推送功能已停止使用，删除推送代码吧</a>。</p>
 </div>
 
@@ -680,7 +676,6 @@
 </blockquote>
 <p>Next 主题中已经内置了一键开启百度自动推送的选项：</p>
 <figure class="highlight yaml"><figcaption><span>.\source\_data\next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO</span></span><br><span class="line"><span class="attr">baidu_push:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
 <p>开启后将会自动在页面中添加如下脚本用于百度推送：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/18-%E7%99%BE%E5%BA%A6JS%E6%8E%A8%E9%80%81%E8%84%9A%E6%9C%AC%E4%BB%A3%E7%A0%81.png" alt="推送脚本代码"></p>
 <p>之后每次访问站点页面都会通过以上脚本将当前页面的 URL 推送到百度。 </p>
@@ -689,7 +684,6 @@
 
 <p>安装 <a href="https://github.com/coneycode/hexo-generator-baidu-sitemap">hexo-generator-baidu-sitemap</a> 插件：</p>
 <figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line">npm <span class="keyword">install </span>hexo-generator-<span class="keyword">baidu-sitemap </span>--save</span><br></pre></td></tr></table></figure>
-
 <p>插件安装成功后，执行 <code>hexo g -d</code> 部署网站，然后访问 <code>网站自定义域名/baidusitemap.xml</code> 检查百度网站地图是否正常。比如我的是 <code>asurada.zone/baidusitemap.xml</code> 。</p>
 <p>然后来到百度站长平台的 <a href="https://ziyuan.baidu.com/linksubmit/">sitemap 提交页面</a>，提交 sitemap 地址即可，注意需要自己添加 <code>https://</code> 协议头，不然默认是 <code>http://</code>，会导致抓取失败。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/20-%E7%99%BE%E5%BA%A6%E6%8F%90%E4%BA%A4sitemap.png" alt="百度提交 sitemap"></p>
@@ -712,13 +706,11 @@
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/23-360%E7%BD%91%E7%AB%99%E4%BB%A3%E7%A0%81%E9%AA%8C%E8%AF%81.png" alt="代码验证"></p>
 <h3 id="360-验证域名"><a href="#360-验证域名" class="headerlink" title="360 验证域名"></a>360 验证域名</h3><p>修改站点配置文件 <code>_config.yml</code> ：</p>
 <figure class="highlight diff"><figcaption><span>.\_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"># Define custom file paths.</span><br><span class="line"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span><br><span class="line">custom_file_path:</span><br><span class="line"><span class="deletion">- #head: source/_data/head.swig</span></span><br><span class="line"><span class="addition">+ head: source/_data/head.swig</span></span><br><span class="line">  #header: source/_data/header.swig</span><br></pre></td></tr></table></figure>
-
 <p>然后在 <code>博客根目录\source\_data</code> 下新建 <code>head.swig</code> 文件，然后打开并新增以下内容：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% if theme.so_site_verification %&#125;</span><br><span class="line">  &lt;meta name&#x3D;&quot;360-site-verification&quot; content&#x3D;&quot;&#123;&#123; theme.so_site_verification &#125;&#125;&quot;&#x2F;&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 <p>上面代码是利用了 Next 主题的 <a href="https://theme-next.js.org/docs/advanced-settings.html#Injects">Inject 功能</a>，以上代码的含义为如果在 <code>_config.yml</code> 中存在 <code>so_site_verification</code>  这一设置项，则会将 <code>&lt;meta name=&quot;360-site-verification&quot; content=&quot;so_site_verification 设置项的 value&quot;/&gt;</code>插入到网站首页 HTML 代码的 <code>&lt;head&gt;&lt;/head&gt;</code> 标签中。</p>
 <p>再次修改站点配置文件 <code>_config.yml</code>，在 <code>SEO Settings</code>区域新增以下内容 ：</p>
 <figure class="highlight ldif"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 360 Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: zhanzhang.so.com/sitetool</span></span><br><span class="line"><span class="attribute">so_site_verification</span>: 此处填写之前复制的验证字符串</span><br></pre></td></tr></table></figure>
-
 <p>修改完成后，执行 <code>hexo g -d</code> 命令重新生成并部署网站，部署生效后，回到 360 站长平台，「点击验证」即可。如果网站已经开启了 HTTPS 访问，不要忘记「设置 https」。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/24-360%E7%AB%99%E9%95%BF%E5%B9%B3%E5%8F%B0%E9%AA%8C%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="360 站长平台验证成功"></p>
 <h3 id="提交-sitemap"><a href="#提交-sitemap" class="headerlink" title="提交 sitemap"></a>提交 sitemap</h3><p>360 站长平台体验很一般，连 HTTPS 都没上，然后在进行 sitemap 提交的时候，第一天页面就一直报「连接超时」，完全无法提交。第二天终于不报错了，可以正常提交了，页面也显示成功提交，但添加完以后 sitemap 列表却一直是空的，让人很困惑，不知道这到底是添加成功了但还没爬取呢还是压根就没添加上。终于第三天一切顺利，成功添加并显示了。</p>
@@ -1153,13 +1145,11 @@
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/16-CubeMX%E9%85%8D%E7%BD%AE%E6%97%B6%E9%92%9F.png" alt="CubeMX配置时钟"></p>
 <p>最后总结一下配置过后关键时钟频率值：</p>
 <figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">SYSCLK</span>(系统时钟) 			   =<span class="number">72</span>MHz</span><br><span class="line"><span class="attribute">PLL</span> 主时钟 					=<span class="number">72</span>MHz</span><br><span class="line"><span class="attribute">AHB</span> 总线时钟（HCLK=SYSCLK/<span class="number">1</span>）   =<span class="number">72</span>MHz</span><br><span class="line"><span class="attribute">APB1</span> 总线时钟（PCLK<span class="number">1</span>=HCLK/<span class="number">2</span>）   =<span class="number">36</span>MHz</span><br><span class="line"><span class="attribute">APB2</span> 总线时钟（PCLK<span class="number">2</span>=HCLK/<span class="number">1</span>）   =<span class="number">72</span>MHz</span><br></pre></td></tr></table></figure>
-
 <h3 id="生成-CubeMX-项目"><a href="#生成-CubeMX-项目" class="headerlink" title="生成 CubeMX 项目"></a>生成 CubeMX 项目</h3><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/17-CubeMX%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81.png" alt="CubeMX生成代码"></p>
 <p>最后生成的时候，因为我们复制过来的模板工程里面本来就有 CubeMX 项目，选择直接覆盖即可。</p>
 <h3 id="拷贝时钟初始化函数"><a href="#拷贝时钟初始化函数" class="headerlink" title="拷贝时钟初始化函数"></a>拷贝时钟初始化函数</h3><p>在 <code>board/board.c</code> 文件中存放了函数 <code>SystemClock_Config()</code>，该函数负责初始化系统时钟。当使用 CubeMX 工具对系统时钟重新配置的时候，需要更新这个函数。</p>
 <p>该函数由 CubeMX 工具生成，默认存放在<code>board/CubeMX_Config/Src/main.c</code> 文件中。但是该文件并没有被包含到我们的工程中，因此需要将这个函数从 main.c 中拷贝到 <code>board/board.c</code> 文件中。该函数内容如下：</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief System Clock Configuration</span></span><br><span class="line"><span class="comment">  * @retval None</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SystemClock_Config</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  RCC_OscInitTypeDef RCC_OscInitStruct = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">  RCC_ClkInitTypeDef RCC_ClkInitStruct = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/** Initializes the CPU, AHB and APB busses clocks </span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;	<span class="comment">//时钟源为 HSE</span></span><br><span class="line">  RCC_OscInitStruct.HSEState = RCC_HSE_ON;						<span class="comment">//打开 HSE</span></span><br><span class="line">  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;		<span class="comment">//HSE 预分频</span></span><br><span class="line">  RCC_OscInitStruct.HSIState = RCC_HSI_ON;						<span class="comment">//打开 HSI</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;					<span class="comment">//打开 PLL</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;			<span class="comment">//PLL 时钟源选择 HSE</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;					<span class="comment">//设置 PLL 倍频系数</span></span><br><span class="line">  <span class="keyword">if</span> (HAL_RCC_OscConfig(&amp;RCC_OscInitStruct) != HAL_OK)</span><br><span class="line">  &#123;</span><br><span class="line">    Error_Handler();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/** Initializes the CPU, AHB and APB busses clocks </span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK</span><br><span class="line">                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;</span><br><span class="line">  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;		<span class="comment">//设置系统时钟时钟源为 PLL</span></span><br><span class="line">  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;	<span class="comment">//AHB 分频系数为1</span></span><br><span class="line">  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;		<span class="comment">//APB1 分频系数为2</span></span><br><span class="line">  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;		<span class="comment">//APB2 分频系数为1</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (HAL_RCC_ClockConfig(&amp;RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)</span><br><span class="line">  &#123;</span><br><span class="line">    Error_Handler();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <h3 id="修改-board-h"><a href="#修改-board-h" class="headerlink" title="修改 board.h"></a>修改 board.h</h3><p>在 board.h 文件中配置了 FLASH 和 RAM 的相关参数，这个文件中需要修改的是 STM32_FLASH_SIZE 和 STM32_SRAM_SIZE 这两个宏控制的参数。</p>
 <p>战舰 V3 所使用的 STM32F103ZET6 芯片的 FLASH 大小为 512K，RAM 的大小为 64K，因此对该文件作出如下的修改：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/18-%E4%BF%AE%E6%94%B9board%E5%A4%B4%E6%96%87%E4%BB%B6.png" alt="修改board头文件"></p>
@@ -1256,57 +1246,6 @@
       <tags>
         <tag>RT-Thread</tag>
         <tag>STM32</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>什么是全功能 Type-C 及显示器所需带宽如何计算</title>
-    <url>/post/What-Is-Full-Featured-Type-C/</url>
-    <content><![CDATA[<p>本文主要介绍了如何计算特定分辨率和刷新率显示器所需带宽以及对全功能 Type-C 的一些简单科普。</p>
-<a id="more"></a>
-
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>最近动了换新笔记本和显示器的念头，自己想换一台 4K 显示器，在了解相关知识的时候，经常看到要注意视频输出接口带宽的提醒。其中各种概念多且杂，初接触很容易懵圈，所以我整理汇总了一些网上的资料，以作此文。</p>
-<p>文中如有不对或不妥的地方，欢迎评论留言指出错误，不甚感激。</p>
-<h2 id="4K-60Hz-显示需要多少带宽"><a href="#4K-60Hz-显示需要多少带宽" class="headerlink" title="4K@60Hz 显示需要多少带宽"></a>4K@60Hz 显示需要多少带宽</h2><p>我们这里以一块 4K、8 bit、60 Hz 的屏幕举例，这块显示屏有 3840 * 2160 个像素点，每个像素点又由红绿蓝三个子像素构成 ，每个子像素需要 8 bit 的数据，刷新率为 60 Hz，也就是每秒需要刷新 60 次，那么每秒需要传输的数据量就是 3840 * 2160 * 3 * 8 * 60 =  11.94 Gbit，需要的带宽就是 11.94 Gbps。</p>
-<p>上述这些数据只是我们能够在显示屏上看到的内容，实际上在传输相关画面数据的时候，还需要考虑到防止画面撕裂，以及画面对齐等等需求，需要传输比实际显示画面更多的数据，所以实际传输的数据会比上面计算的更多。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/7-%E6%98%BE%E7%A4%BA%E5%99%A8%E5%AE%9E%E9%99%85%E4%BC%A0%E8%BE%93%E6%95%B0%E6%8D%AE.png" alt="显示器实际传输数据"></p>
-<p>下面这张来自 B 站 Up 主<a href="https://space.bilibili.com/14871346#/">硬件茶谈</a>的表格详细列出了市面上常见分辨率及刷新率的组合分别所需要的带宽，其中还有各种显示器接口的相容性：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/8-%E6%98%BE%E7%A4%BA%E6%8E%A5%E5%8F%A3%E7%9B%B8%E5%AE%B9%E8%A1%A8.png" alt="显示接口相容表"></p>
-<p>显示器带宽具体的计算原理可以查看 Up 主的<a href="https://b23.tv/rbYOKW">视频-【硬件科普】4K144Hz需要传输多少数据，教你如何正确的计算显示器的带宽需求？</a>，原理及计算方法都讲得非常清楚，动画特效也是一流。</p>
-<p>在此也强烈安利下 Up 主，最早是在知乎关注他的，在知乎笔记本话题下相当活跃，后期转型成 B 站 Up 主，视频质量极高，讲解概念深入浅出，动画精致流畅，看他的视频可谓一种享受。我从 Up 主的视频里学到了很多硬件相关基础知识。而且 Up 主现在还只是一名在校大学生，让人不服不行，在此就祝愿 Up 主早日发大财吧。</p>
-<h2 id="什么是全功能-Type-C"><a href="#什么是全功能-Type-C" class="headerlink" title="什么是全功能 Type-C"></a>什么是全功能 Type-C</h2><p>同时具有<strong>数据传输、充电、显示</strong>三项功能的 Type-C 就称之为全功能 Type-C。而之所有会有「全功能」和「非全功能」的区分，是因为 Type-C 只是个<strong>接口形状</strong>。Type-C 接口是能够支持 100W PD 供电、DP 显示输出、USB 数据传输等功能没错，但 <strong>Type-C 接口的功能都是可以被增减的</strong>，所以并不是所有 Type-C 接口都同时具备数据传输、充电、显示三项功能。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C/雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/2-Type-C%E4%B8%8D%E5%90%8C%E5%8A%9F%E8%83%BD.png" alt="Type-C 不同功能说明"></p>
-<p>每台电脑上面所配备的 Type-C 接口所具备的功能是不尽相同的，厂商基于成本或是其他方面的考虑，配备的 Type-C 可能只支持 USB 数据传输功能 ，不能充电、显示，也可能配备只支持 DP 显示和数据传输的 Type-C 口，不能充电。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C/雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-TypeC%E5%8A%9F%E8%83%BD%E4%B8%8D%E9%BD%90.png" alt="Type-C 现状"></p>
-<h2 id="Type-C-的「数据传输」带宽"><a href="#Type-C-的「数据传输」带宽" class="headerlink" title="Type-C 的「数据传输」带宽"></a>Type-C 的「数据传输」带宽</h2><p>Type-C 接口还有一个重要的参数就是 USB 版本，USB 版本越高，带宽也就越高，理论上带宽越高，传输速度越快。不过 USB 版本的命名经过了几次大的修改，命名规范变来变去，对普通消费者识别起来极不友好。下面两张图分别引用自<a href="https://basic-tutorials.com/usb-type-c-at-a-glance-what-the-port-can-do-what-it-cant-do-and-why-it-has-nothing-to-do-with-usb-3-0/">USB type C at a glance: What the port can do, what it can’t do and why it has nothing to do with USB 3.0</a>及<a href="https://zh.wikipedia.org/wiki/USB">维基百科-USB</a>。其中 USB3.2 Gen 2x2 的 Logo 以维基百科的为准。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/3-USB%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E.png" alt="USB 版本说明"></p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/4-USB%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91.png" alt="USB 版本及速率(维基百科)"></p>
-<p>通过这两张图，我们能够比较清楚地知道各个 USB 版本对应的传输速率及兼容接口。目前笔记本上 Type-C 接口的主流速率还是 USB3.2 Gen 1 也就是 5Gbps，理论速度约合 500 MB/s。</p>
-<p><strong>但需要注意的是，多数情况下，「USB 几点几」这样的称呼，仅仅只是用于描述接口的「数据传输」速度，不代表这个接口其他任何能力，如能否PD充电、能否显示。</strong></p>
-<h2 id="5Gbps-的-Type-C-无法满足-4K-60Hz-输出？"><a href="#5Gbps-的-Type-C-无法满足-4K-60Hz-输出？" class="headerlink" title="5Gbps 的 Type-C 无法满足 4K@60Hz 输出？"></a>5Gbps 的 Type-C 无法满足 4K@60Hz 输出？</h2><p>这个问题也是我在没了解相关知识之前相当困惑的一个地方——当我看到心仪的笔记本只有 USB 3.2 Gen1 接口和 HDMI1.4b 的接口，而两者的带宽都远小于 4K@60Hz 所需的 12.54 Gbps 时，我当时同样以为外接 4K@60Hz 显示器是不可能实现的了。</p>
-<p>这里面的问题就在于我们<strong>混淆了 Type-C 接口的「数据带宽」和「显示带宽」</strong>，我们日常习惯说一个 Type-C 的带宽是 3.1 Gen1 或者 Gen2、5Gbps 或者10Gbps，这时候说的其实都是这个接口的 USB 数据带宽，只能代表这个接口接 U盘/移动硬盘之类的存储进行数据传输时所能达到的最大速度。</p>
-<p>Type-C能够整合显示输出功能，主要是借助了DP Alt Mode（替代模式）功能，借助Type-C正反面诸多针脚中的几个定义为显示接口。通俗点说可以理解为单独做了个 DP 显示总线放在 Type-C 口上，所以数据带宽是 5Gbps 还是10Gbps 并<strong>不代表显示带宽也只有这么多</strong>。以目前 Type-C 的规范来看，当我们说一个 Type-C 支持显示输出时，那么这个接口<strong>至少可以支持 DP1.2 标准</strong>，也就是说拥有独立的约 21Gbps 的显示带宽，因为 DP1.2 中有 20% 的编码是用于校验的，所以真正能用来传输视频信号的带宽只有 21.60 * 0.8 = 17.28 Gbps，但这也已经<strong>完全可以满足 4K@60Hz 的传输要求了</strong>。下图引用自<a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a>：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/5-USBC%E7%8B%AC%E7%AB%8B%E6%98%BE%E7%A4%BA%E5%B8%A6%E5%AE%BD.png" alt="Type-C 显示拥有独立的显示带宽"></p>
-<p>我们现在关于 5Gbps 的 Type-C 能否满足 4K@60Hz 画面传输的问题有了明确的答案，只要是<strong>支持显示输出的 Type-C 口，就可以支持输出 4K@60Hz</strong>。</p>
-<h2 id="5Gbps-的-Type-C-的不足之处"><a href="#5Gbps-的-Type-C-的不足之处" class="headerlink" title="5Gbps 的 Type-C 的不足之处"></a>5Gbps 的 Type-C 的不足之处</h2><p>Type-C 显示输出虽然是 DP/HDMI 显示，但实际上还是借用了数据传输的一部分引脚。当一个支持 DP 显示输出的 Type-C ，而它的数据带宽是 USB3.1 Gen1 5Gbps 时，那么此时是无法<strong>通过一根线</strong>同时实现理应互不干扰的 4K@60Hz 和 USB3.0 传输的，下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C/雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/6-4K%E6%98%BE%E7%A4%BA%E8%BE%93%E5%87%BA%E7%9A%84%E5%87%A0%E7%A7%8D%E5%9C%BA%E6%99%AF.png" alt="4K 显示输出的几种场景"></p>
-<p>因此在一些显示器的详情界面会注明——当显示器上的 USB 设置为 3.2Gen1 时，只能输出 4K@30Hz 的画面，如果想要输出 4K@60Hz 需要将 USB 设置为 2.0 或关闭。所以如果我们使用的显示器有拓展 USB 口，而我们是使用 Type-C 直连显示器，为了保证使用体验，我们需要手动将显示器上的 USB 设置为 USB2.0，此时显示器上的 USB 更适合用来接键鼠，文件传输之类的还是直连笔记本会比较快。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/9-%E6%98%BE%E7%A4%BA%E5%99%A8%E8%AF%A6%E6%83%85%E7%95%8C%E9%9D%A2%E7%9A%84%E6%8F%90%E7%A4%BA.png" alt="显示器详情界面的提示"></p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C/雷电3接口的两万字科普（上篇） - 知乎</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/101486153">【从入门到放弃】关于Type-C/雷电3接口的两万字科普（下篇） - 知乎</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a></p>
-<p><a href="https://basic-tutorials.com/usb-type-c-at-a-glance-what-the-port-can-do-what-it-cant-do-and-why-it-has-nothing-to-do-with-usb-3-0/">USB type C at a glance: What the port can do, what it can’t do and why it has nothing to do with USB 3.0</a></p>
-<p><a href="https://zh.wikipedia.org/wiki/USB">维基百科-USB</a></p>
-<p><a href="https://b23.tv/rbYOKW">视频-【硬件科普】4K144Hz需要传输多少数据，教你如何正确的计算显示器的带宽需求？</a></p>
-<p><a href="https://diy.pconline.com.cn/1374/13748807.html">DP vs HDMI 谁才是游戏玩家最佳选择</a></p>
-]]></content>
-      <categories>
-        <category>硬件</category>
-      </categories>
-      <tags>
-        <tag>硬件</tag>
-        <tag>显示器</tag>
-        <tag>USB</tag>
-        <tag>Type-C</tag>
       </tags>
   </entry>
 </search>

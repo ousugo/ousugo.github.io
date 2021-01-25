@@ -17,7 +17,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
@@ -409,7 +409,6 @@
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E9%A1%B9%E7%9B%AESSH%E9%93%BE%E6%8E%A5.png" alt="CODING 项目 SSH 链接"></p>
 <p>打开博客根目录下的站点配置文件 <code>_config.yml</code> ，修改其中的 <code>deploy</code> 区域，将刚复制的 SSH 链接新增进去：</p>
 <figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  - type: git</span><br><span class="line">    repo: git@github.com:ousugo/ousugo.github.io.git</span><br><span class="line">    branch: master</span><br><span class="line"><span class="addition">+ - type: git</span></span><br><span class="line"><span class="addition">+   repo: git@e.coding.net:asuradazone/asurada/asurada.git</span></span><br><span class="line"><span class="addition">+   branch: master    </span></span><br></pre></td></tr></table></figure>
-
 <h3 id="部署代码到-CODING"><a href="#部署代码到-CODING" class="headerlink" title="部署代码到 CODING"></a>部署代码到 CODING</h3><p><code>_config.yml</code> 文件修改完成后，执行 <code>hexo d</code> 命令进行部署，此时 Hexo 就会根据设置同时将博客部署到 GitHub 和 CODING 上面。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%88%90%E5%8A%9F%E9%83%A8%E7%BD%B2%E5%88%B0CODING.png" alt="成功部署到 CODING"></p>
 <p>此时再进入 CODING 上的项目，能看到刚才还是空的仓库现在已经有源代码了，说明部署是成功的。</p>
@@ -661,7 +660,7 @@
 
 
 <div class="copyright">
-  &copy; 
+  &copy; 2020 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
