@@ -496,6 +496,27 @@
       </tags>
   </entry>
   <entry>
+    <title>利用 Pqi 实现 Python 快速换源</title>
+    <url>/post/change-python-pypisource/</url>
+    <content><![CDATA[<p>pip 默认的软件源是国外的，下载起来速度很慢，我们可以将软件源换成国内的镜像源，大幅提高下载速度。本文介绍利用 <code>pqi</code> 这一小工具来实现简单快速地更换 pip 软件源。</p>
+<a id="more"></a>
+<p><code>pqi</code> 是国内开发者 <a href="https://github.com/yhangf">yhf</a> 开发的 <a href="https://github.com/yhangf/PyQuickInstall">PyQuickInstall</a> 工具的简称，这款工具可以非常方便地帮助我们切换 pip 软件源，如果觉得好用的话，大家可以动动鼠标，在 Github 上面 Star 一下。</p>
+<p>临时使用清华大学开源软件镜像源安装 pqi ：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install pqi -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+<p>安装完成后，直接在命令行即可使用 pqi ：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//列举所有支持的PyPi源</span><br><span class="line">pqi ls</span><br><span class="line">//改变 PyPi源</span><br><span class="line">pqi use &lt;name&gt;</span><br><span class="line">//显示当前PyPi源</span><br><span class="line">pqi show</span><br><span class="line">//移除pip源</span><br><span class="line">pqi remove &lt;name&gt;</span><br><span class="line">//添加新的pip源</span><br><span class="line">pqi add &lt;name&gt; &lt;url&gt;</span><br><span class="line">//升级到最新版 pqi</span><br><span class="line">pip install --upgrade pqi</span><br></pre></td></tr></table></figure>
+<p>如果决定使用上面提到过的清华大学镜像源，使用如下命令即可：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pqi use tuna</span><br></pre></td></tr></table></figure>
+<p>然后就可以享受飞一般的 pip下载速度了。</p>
+]]></content>
+      <categories>
+        <category>开发环境</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo 博客修改记录</title>
     <url>/post/hexo-blog-settings/</url>
     <content><![CDATA[<p>记录自己博客所做的修改，供他人参考以及自己备忘。</p>
@@ -598,27 +619,6 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>利用 Pqi 实现 Python 快速换源</title>
-    <url>/post/change-python-pypisource/</url>
-    <content><![CDATA[<p>pip 默认的软件源是国外的，下载起来速度很慢，我们可以将软件源换成国内的镜像源，大幅提高下载速度。本文介绍利用 <code>pqi</code> 这一小工具来实现简单快速地更换 pip 软件源。</p>
-<a id="more"></a>
-<p><code>pqi</code> 是国内开发者 <a href="https://github.com/yhangf">yhf</a> 开发的 <a href="https://github.com/yhangf/PyQuickInstall">PyQuickInstall</a> 工具的简称，这款工具可以非常方便地帮助我们切换 pip 软件源，如果觉得好用的话，大家可以动动鼠标，在 Github 上面 Star 一下。</p>
-<p>临时使用清华大学开源软件镜像源安装 pqi ：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install pqi -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
-<p>安装完成后，直接在命令行即可使用 pqi ：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//列举所有支持的PyPi源</span><br><span class="line">pqi ls</span><br><span class="line">//改变 PyPi源</span><br><span class="line">pqi use &lt;name&gt;</span><br><span class="line">//显示当前PyPi源</span><br><span class="line">pqi show</span><br><span class="line">//移除pip源</span><br><span class="line">pqi remove &lt;name&gt;</span><br><span class="line">//添加新的pip源</span><br><span class="line">pqi add &lt;name&gt; &lt;url&gt;</span><br><span class="line">//升级到最新版 pqi</span><br><span class="line">pip install --upgrade pqi</span><br></pre></td></tr></table></figure>
-<p>如果决定使用上面提到过的清华大学镜像源，使用如下命令即可：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pqi use tuna</span><br></pre></td></tr></table></figure>
-<p>然后就可以享受飞一般的 pip下载速度了。</p>
-]]></content>
-      <categories>
-        <category>开发环境</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
       </tags>
   </entry>
   <entry>

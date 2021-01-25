@@ -214,7 +214,7 @@ body {
   background: var(--body-bg-color);
   color: var(--text-color);
   font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 2;
   min-height: 100%;
   position: relative;
@@ -3092,7 +3092,7 @@ mark.search-keyword {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #a234f2;
+  background: #fb717a;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -3111,6 +3111,21 @@ mark.search-keyword {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.posts-expand .post-title {
+  font-size: 20px;
+}
+.posts-expand .post-meta {
+  font-size: 12px;
+}
+.post-body {
+  font-size: 16px;
+}
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 18px;
 }
 .posts-expand .home .post-title,
 .posts-expand .home .post-meta {
