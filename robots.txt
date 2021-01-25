@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://asurada.zone/sitemap.xml
+Sitemap: https://asurada.zone/baidusitemap.xml
