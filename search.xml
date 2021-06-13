@@ -4,7 +4,7 @@
     <title>通过 Microsoft Store 购买 Win10 专业版小记</title>
     <url>/post/Buy-WindowsPro-License/</url>
     <content><![CDATA[<p>通过 Windows 10 自带的 Microsoft Store 购买非常方便。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>双十一的时候自己组装了一台主机，在安装操作系统的时候直接安装的 Windows 10 专业版。之前自己的笔记本是从 Windows 8.1 升级成 Windows 10，自动就激活并绑定了数字许可证，但自己组装的主机就需要考虑操作系统购买的问题了。</p>
 <p>在不激活的情况下用了一段时间，除了不能换壁纸等个性化操作以及右下角时不时显示一个未激活水印，好像也没有多大的限制。</p>
@@ -35,7 +35,7 @@
     <title>CODING Pages 静态网站升级腾讯云新版踩坑小记</title>
     <url>/post/CODING-Pages-Upgrade-To-TencentCloud/</url>
     <content><![CDATA[<p>自己的踩坑记录证明域名未备案的同学就不要升级了，新版需要付费，但升级后强制的境外 CDN 加速导致访问速度反而不如旧版快。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <h2 id="升级背景"><a href="#升级背景" class="headerlink" title="升级背景"></a>升级背景</h2><p>之前把博客双部署到了 CODING 静态网站和 GitHub Pages，国内的访问速度快了不少。前几天登录 CODING 后台，突然发现多了一个新版升级提醒。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-%E5%90%8E%E5%8F%B0%E5%8D%87%E7%BA%A7%E6%8F%90%E9%86%92.png" alt="升级提醒"></p>
@@ -91,7 +91,7 @@
     <content><![CDATA[<h2 id="为什么想要双部署"><a href="#为什么想要双部署" class="headerlink" title="为什么想要双部署"></a>为什么想要双部署</h2><p>中文博客的受众肯定是以国内为主，但部署在 Github Pages 上，服务器在国外，国内访问的速度太不稳定，如果一个页面需要将近十秒才能完全打开的话，用户体验差，页面被提前关闭的概率也会呈指数级上升。所以改善国内访问体验迫在眉睫。</p>
 <p>之前也想过直接使用 CDN 直接加速 GitHub Pages 的方式，但国内的 CDN 全部要求域名进行备案，嫌麻烦就放弃了。最后选择通过将博客同时部署到 GitHub 和 CODING 的方式来提升国内访问体验。</p>
 <p>CODING 在 19 年年底进行了一次比较大的改版，双部署的整个流程也有了不小的变化，而网络上很多教程大部分都还是基于旧版流程的。本文详细记载了将博客同时部署到 GitHub Pages 和 CODING 静态网站服务的全流程。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <h2 id="CODING-配置"><a href="#CODING-配置" class="headerlink" title="CODING 配置"></a>CODING 配置</h2><h3 id="注册-CODING-账号"><a href="#注册-CODING-账号" class="headerlink" title="注册 CODING 账号"></a>注册 CODING 账号</h3><p>2019 年 12 月 28 日以后，CODING 统一了入口，不再区分个人版与否，具体的升级详情可以查看<a href="https://coding.net/products/upgrade">官方通知</a>。升级后的 CODING 会增加「团队/组织」的管理概念，注册的时候必须先创建一个团队，这个和平常的注册稍有些不同，需要注意一下。<a href="https://coding.net/">点击跳转 CODING 官网</a>。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Coding%E6%B3%A8%E5%86%8C%E7%95%8C%E9%9D%A2.png" alt="CODING 注册界面"></p>
@@ -113,6 +113,7 @@
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E9%A1%B9%E7%9B%AESSH%E9%93%BE%E6%8E%A5.png" alt="CODING 项目 SSH 链接"></p>
 <p>打开博客根目录下的站点配置文件 <code>_config.yml</code> ，修改其中的 <code>deploy</code> 区域，将刚复制的 SSH 链接新增进去：</p>
 <figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  - type: git</span><br><span class="line">    repo: git@github.com:ousugo/ousugo.github.io.git</span><br><span class="line">    branch: master</span><br><span class="line"><span class="addition">+ - type: git</span></span><br><span class="line"><span class="addition">+   repo: git@e.coding.net:asuradazone/asurada/asurada.git</span></span><br><span class="line"><span class="addition">+   branch: master    </span></span><br></pre></td></tr></table></figure>
+
 <h3 id="部署代码到-CODING"><a href="#部署代码到-CODING" class="headerlink" title="部署代码到 CODING"></a>部署代码到 CODING</h3><p><code>_config.yml</code> 文件修改完成后，执行 <code>hexo d</code> 命令进行部署，此时 Hexo 就会根据设置同时将博客部署到 GitHub 和 CODING 上面。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%88%90%E5%8A%9F%E9%83%A8%E7%BD%B2%E5%88%B0CODING.png" alt="成功部署到 CODING"></p>
 <p>此时再进入 CODING 上的项目，能看到刚才还是空的仓库现在已经有源代码了，说明部署是成功的。</p>
@@ -143,8 +144,8 @@
 <p>登录到 <a href="https://www.namesilo.com/account_home.php">NameSilo 后台</a>，在「Account Options」中选择「<a href="https://www.namesilo.com/account_domains.php">domain manager</a>」，选中想要进行修改的域名，点击上方「Change Nameservers」图标。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/NameSilo%E4%BF%AE%E6%94%B9%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%9C%8D%E5%8A%A1.png" alt="NameSilo 修改域名解析服务"></p>
 <p>将默认的 DNS 服务器地址修改为下面的 DNSPod 提供的 DNS 服务器地址，然后提交修改。 </p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">f1g1ns1</span><span class="selector-class">.dnspod</span><span class="selector-class">.net</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">f1g1ns2</span><span class="selector-class">.dnspod</span><span class="selector-class">.net</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">f1g1ns1.dnspod.<span class="built_in">net</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">f1g1ns2.dnspod.<span class="built_in">net</span></span><br></pre></td></tr></table></figure>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E4%BF%AE%E6%94%B9%E5%9F%9F%E5%90%8D%E6%9C%8D%E5%8A%A1%E5%95%86%E4%B8%BADNSPod.png" alt="修改域名服务商为 DNSPod"></p>
 <p>DNS 域名解析服务的修改后需要等待全球递归 DNS 服务器的刷新，所以需要耐心等待一会儿，大概十分钟左右。修改生效后再手动刷新 DNSPod 的状态，<strong>注意不是刷新页面</strong>，而是点击「DNS 错误」旁边的感叹号获取新状态，此时应该状态会变为「正常」。状态正常后，点击域名，进入「记录管理」。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E7%8A%B6%E6%80%81%E6%AD%A3%E5%B8%B8.png" alt="DNSPod 显示状态正常"></p>
@@ -202,17 +203,20 @@
     <title>Git 常用命令备忘录</title>
     <url>/post/Git-Cheat-Sheet/</url>
     <content><![CDATA[<p>一些不太常用的 Git 命令往往隔一段时间不用就忘记了，特写此篇备忘。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <h2 id="配置-User-信息"><a href="#配置-User-信息" class="headerlink" title="配置 User 信息"></a>配置 User 信息</h2><h3 id="添加-User-信息"><a href="#添加-User-信息" class="headerlink" title="添加 User 信息"></a>添加 User 信息</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config [--global | --local] user.name &#x27;your_name&#x27;</span><br><span class="line">git config [--global | --local] user.email &#x27;your_email&#x27;</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>默认为 local，所以只有需要设置全局时需要带 –global 参数，–local 参数可以直接省略。</li>
 <li>单引号不是必须的，可以省略。一般只在输入的内容之中含有空格的时候需要使用单引号。</li>
 </ul>
 <h3 id="查看-User-信息"><a href="#查看-User-信息" class="headerlink" title="查看 User 信息"></a>查看 User 信息</h3><p>使用以下命令查看所有全局/局部配置信息：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list [--local | --global | --system]</span><br></pre></td></tr></table></figure>
+
 <p>或者使用以下命令直接查看具体设置：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config [--global | --local] user.name</span><br><span class="line">git config [--global | --local] user.email</span><br></pre></td></tr></table></figure>
+
 <h3 id="global-与-local-优先级以及配置文件所在位置"><a href="#global-与-local-优先级以及配置文件所在位置" class="headerlink" title="global 与 local 优先级以及配置文件所在位置"></a>global 与 local 优先级以及配置文件所在位置</h3><p>local &gt; global</p>
 <p>local 配置位于当前仓库的 .git 文件夹下的 config 文件中。</p>
 <p>global 配置位于当前用户 home 目录下的 .gitconfig 文件中。</p>
@@ -224,17 +228,23 @@
 </ul>
 <h3 id="删除不需要的分支"><a href="#删除不需要的分支" class="headerlink" title="删除不需要的分支"></a>删除不需要的分支</h3><p>普通删除(如果当前分支没有被合并，不能直接删除)：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git branch -d 分支名</span><br></pre></td></tr></table></figure>
+
 <p>强制删除：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git branch -D 分支名</span><br></pre></td></tr></table></figure>
+
 <h3 id="修改最近一次的-commit-内容"><a href="#修改最近一次的-commit-内容" class="headerlink" title="修改最近一次的 commit 内容"></a>修改最近一次的 commit 内容</h3><p>命令：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git commit --amend</span><br></pre></td></tr></table></figure>
+
 <h3 id="修改最近一次-commit-的作者"><a href="#修改最近一次-commit-的作者" class="headerlink" title="修改最近一次 commit 的作者"></a>修改最近一次 commit 的作者</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git commit --amend --author=&quot;AuthorName &lt;email@address.com&gt;&quot; --no-edit</span><br></pre></td></tr></table></figure>
+
 <p>其中 <code>no-edit</code> 的作用是表明此次修改仅修改作者，而不需要对 <code>commit message</code> 进行改动，所以不需要启动编辑器。</p>
 <h3 id="修改老旧-commit-的-message"><a href="#修改老旧-commit-的-message" class="headerlink" title="修改老旧 commit 的 message"></a>修改老旧 commit 的 message</h3><ol>
 <li><p>进入交互式变基策略修改：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i 想要修改的提交节点的父节点的 HASH 值</span><br></pre></td></tr></table></figure>
+
 <p>如果想要修改第一次提交，也就是最早的那次提交，没有父节点的提交，使用命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i --root</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i --root</span><br></pre></td></tr></table></figure>
+</li>
 <li><p>修改策略：</p>
 <p>在 vi 模式下将想要修改的 commit 前面的选项由 pick 变更为 r 或者 reword，这一选项的含义为此 commit 的内容不变，只修改其 commit message。</p>
 </li>
@@ -246,8 +256,10 @@
 <h3 id="把连续的多个-commit-整理成一个"><a href="#把连续的多个-commit-整理成一个" class="headerlink" title="把连续的多个 commit 整理成一个"></a>把连续的多个 commit 整理成一个</h3><ol>
 <li><p>进入交互式变基策略修改：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i 想要修改的提交节点的父节点的 HASH 值</span><br></pre></td></tr></table></figure>
+
 <p>如果想要修改第一次提交，也就是最早的那次提交，没有父节点的提交，使用命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i --root</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i --root</span><br></pre></td></tr></table></figure>
+</li>
 <li><p>修改策略：</p>
 <p>将准备被合并的 commit 前面的选项由 pick 改为 s 或者 squash，这一选项的含义为继续使用这一 commit，但是将其合并到前面(比它老)的那一个 commit 里面去，想要合并哪几个就将这几个前面的选项都改成 s。</p>
 </li>
@@ -262,58 +274,82 @@
 </ul>
 <p>会用到的 vim 快捷键：</p>
 <figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">dd	<span class="regexp">//</span>剪切一行，也可以用来删除一行</span><br><span class="line">dw	<span class="regexp">//</span>删除一个单词</span><br><span class="line">u	<span class="regexp">//</span>撤销</span><br><span class="line">p	<span class="regexp">//</span>粘贴</span><br></pre></td></tr></table></figure>
+
 <h3 id="比较暂存区和-HEAD-所含文件的差异"><a href="#比较暂存区和-HEAD-所含文件的差异" class="headerlink" title="比较暂存区和 HEAD 所含文件的差异"></a>比较暂存区和 HEAD 所含文件的差异</h3><p>HEAD 所含文件就是最新一个 commit 内的文件内容</p>
 <figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">git diff <span class="comment">--cached</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="比较工作区和暂存区所含文件的差异"><a href="#比较工作区和暂存区所含文件的差异" class="headerlink" title="比较工作区和暂存区所含文件的差异"></a>比较工作区和暂存区所含文件的差异</h3> <figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git diff</span></span><br></pre></td></tr></table></figure>
+
 <p>后面可以接“– 单个或多个文件名”来查看特定文件的差异</p>
 <h3 id="比较工作区和-HEAD-所含文件的差异"><a href="#比较工作区和-HEAD-所含文件的差异" class="headerlink" title="比较工作区和 HEAD 所含文件的差异"></a>比较工作区和 HEAD 所含文件的差异</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git diff HEAD</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="让暂存区恢复成和-HEAD-一样"><a href="#让暂存区恢复成和-HEAD-一样" class="headerlink" title="让暂存区恢复成和 HEAD 一样"></a>让暂存区恢复成和 HEAD 一样</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git reset HEAD</span></span><br></pre></td></tr></table></figure>
+
 <p>git reset 默认的参数为 –mixed</p>
 <h3 id="让工作区的文件恢复为和暂存区一样"><a href="#让工作区的文件恢复为和暂存区一样" class="headerlink" title="让工作区的文件恢复为和暂存区一样"></a>让工作区的文件恢复为和暂存区一样</h3><figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">git checkout <span class="comment">-- 文件名</span></span><br></pre></td></tr></table></figure>
+
 <p>Git 2.23 版本以后使用 <code>git restore</code>命令来代替<code>git checkout</code>功能</p>
 <h3 id="取消暂存区部分文件的更改"><a href="#取消暂存区部分文件的更改" class="headerlink" title="取消暂存区部分文件的更改"></a>取消暂存区部分文件的更改</h3><p>将暂存区部分文件取消暂存的意思是所做的改动继续保留在工作目录，暂存区部分的内容同 HEAD 保持一致。</p>
 <figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">reset</span> HEAD <span class="comment">--文件名</span></span><br></pre></td></tr></table></figure>
+
 <p>Git 新版本使用：</p>
 <figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">restore</span> --staged &lt;<span class="keyword">file</span>&gt;</span><br></pre></td></tr></table></figure>
+
 <p>两条命令作用是一样的。</p>
 <h3 id="消除最近的几次提交"><a href="#消除最近的几次提交" class="headerlink" title="消除最近的几次提交"></a>消除最近的几次提交</h3><figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">reset</span> <span class="comment">--hard &lt;hash&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>将工作区和暂存区的内容都恢复到 hash 值所对应的那个 commit 的状态。</p>
-<h3 id="看不同提交的指定文件的差异"><a href="#看不同提交的指定文件的差异" class="headerlink" title="看不同提交的指定文件的差异"></a>看不同提交的指定文件的差异</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">git</span> <span class="selector-tag">diff</span> <span class="selector-attr">[from_commit]</span> <span class="selector-attr">[to_commit]</span></span><br></pre></td></tr></table></figure>
+<h3 id="看不同提交的指定文件的差异"><a href="#看不同提交的指定文件的差异" class="headerlink" title="看不同提交的指定文件的差异"></a>看不同提交的指定文件的差异</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">git diff <span class="selector-attr">[from_commit]</span> <span class="selector-attr">[to_commit]</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="正确删除文件的方法"><a href="#正确删除文件的方法" class="headerlink" title="正确删除文件的方法"></a>正确删除文件的方法</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">git rm <span class="tag">&lt;<span class="name">filename</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="本地与远程仓库的交互"><a href="#本地与远程仓库的交互" class="headerlink" title="本地与远程仓库的交互"></a>本地与远程仓库的交互</h2><h3 id="让-Fork-的仓库同源仓库保持更新"><a href="#让-Fork-的仓库同源仓库保持更新" class="headerlink" title="让 Fork 的仓库同源仓库保持更新"></a>让 Fork 的仓库同源仓库保持更新</h3><h4 id="添加源仓库"><a href="#添加源仓库" class="headerlink" title="添加源仓库"></a>添加源仓库</h4><figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line">git remote <span class="keyword">add</span><span class="bash"> upstream 源仓库链接</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="本地与远程仓库的交互"><a href="#本地与远程仓库的交互" class="headerlink" title="本地与远程仓库的交互"></a>本地与远程仓库的交互</h2><h3 id="让-Fork-的仓库同源仓库保持更新"><a href="#让-Fork-的仓库同源仓库保持更新" class="headerlink" title="让 Fork 的仓库同源仓库保持更新"></a>让 Fork 的仓库同源仓库保持更新</h3><h4 id="添加源仓库"><a href="#添加源仓库" class="headerlink" title="添加源仓库"></a>添加源仓库</h4><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">git remote <span class="builtin-name">add</span> upstream 源仓库链接</span><br></pre></td></tr></table></figure>
+
 <h4 id="同步更新"><a href="#同步更新" class="headerlink" title="同步更新"></a>同步更新</h4><ol>
 <li>如果在另一个分支上，就切换到 master 分支</li>
 </ol>
 <figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">git checkout <span class="literal">master</span></span><br></pre></td></tr></table></figure>
+
 <ol start="2">
 <li>从源仓库抓取最新更改后，合并到本地 master 分支</li>
 </ol>
 <figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git pull upstream</span></span><br></pre></td></tr></table></figure>
+
 <ol start="3">
 <li>将本地 master 分支推送到自己 Fork 的远程仓库  origin</li>
 </ol>
 <figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span></span><br></pre></td></tr></table></figure>
+
 <h4 id="进阶版"><a href="#进阶版" class="headerlink" title="进阶版"></a>进阶版</h4><ol>
 <li>将 master 分支的上游仓库设置为源仓库</li>
 </ol>
 <figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">git branch --<span class="attr">set-upstream-to=</span>upstream/<span class="keyword">master</span> <span class="title">master</span></span><br></pre></td></tr></table></figure>
+
 <ol start="2">
 <li>将 push 命令推送的默认仓库设置为自己 Forked 的仓库 origin</li>
 </ol>
 <figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">config</span> <span class="comment">--local remote.pushDefault origin</span></span><br></pre></td></tr></table></figure>
+
 <ol start="3">
 <li>搞定之后，工作流程为更加简单：</li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git pull	//默认从源仓库拉取最新的更新</span><br><span class="line">git push	//将拉取的更新推送到 Forked 的仓库</span><br></pre></td></tr></table></figure>
+
 <h3 id="推送一个新的分支到远程仓库"><a href="#推送一个新的分支到远程仓库" class="headerlink" title="推送一个新的分支到远程仓库"></a>推送一个新的分支到远程仓库</h3><p>-u 是 –set-upstream 的简写，该标记会为之后轻松地推送与拉取配置分支</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git push -u remote_name new_branch_name</span><br></pre></td></tr></table></figure>
+
 <h3 id="清理本地无效的远程追踪分支"><a href="#清理本地无效的远程追踪分支" class="headerlink" title="清理本地无效的远程追踪分支"></a>清理本地无效的远程追踪分支</h3><p>利用选项 –prune</p>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git remote update -p</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">git remote update -<span class="selector-tag">p</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="远程删除了分支本地也想删除"><a href="#远程删除了分支本地也想删除" class="headerlink" title="远程删除了分支本地也想删除"></a>远程删除了分支本地也想删除</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git remote prune origin</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h3><figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span> --<span class="built_in">delete</span> &lt;remote-branchname&gt;</span><br></pre></td></tr></table></figure>
+
 <p>或者</p>
 <figure class="highlight elixir"><table><tr><td class="code"><pre><span class="line">git push origin <span class="symbol">:&lt;remote-branchname&gt;</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="从远程分支中创建并切换到本地分支"><a href="#从远程分支中创建并切换到本地分支" class="headerlink" title="从远程分支中创建并切换到本地分支"></a>从远程分支中创建并切换到本地分支</h3><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">git checkout -b &lt;branch-<span class="built_in">name</span>&gt; &lt;remote-<span class="built_in">name</span>&gt;/&lt;branch-<span class="built_in">name</span>&gt;</span><br></pre></td></tr></table></figure>
+
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://github.com/521xueweihan/git-tips">Git的奇技淫巧</a></p>
 ]]></content>
       <categories>
@@ -327,7 +363,7 @@
     <title>雷蛇炼狱蝰蛇2013 更换中键微动</title>
     <url>/post/RepairTheDeathadder2013/</url>
     <content><![CDATA[<p>第一次自己动手修鼠标，挺好玩的。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <h2 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h2><p>这款炼狱蝰蛇 2013 是自己四年前买的，之前一直用得好好的，但最近滚轮的按键功能突然失效了，表现为能够正常按压，但无法正常触发按键功能。在日常浏览网页时，我习惯用中键来关闭标签页以及在新窗口打开链接，现在中键突然失灵了，对我的日常使用造成了很大的不便。</p>
 <p>之前有在网上看过不少帖子都是自己修鼠标，感觉也不是很难，所以这次我也尝试一下来自己修鼠标。</p>
@@ -365,11 +401,12 @@
     <title>Hexo Next 主题 V7 升级 V8 记录</title>
     <url>/post/Update-Next-From-V7-To-V8/</url>
     <content><![CDATA[<p>Hexo 和 Next 最近都发布了大版本更新，此文记录了升级过程。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <h2 id="升级-Hexo-版本"><a href="#升级-Hexo-版本" class="headerlink" title="升级 Hexo 版本"></a>升级 Hexo 版本</h2><p>Hexo 核心团队成员 Sukka 写的 <a href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a>详细介绍了 Hexo 5.0 的新特性，以及从 Hexo 4.x 升级到 Hexo 5.x 需要注意的地方。</p>
 <p>Hexo 5.0 版本带来了不小的性能上的提升，升级 5.0 直接修改 <code>hexo-site/package.json</code> 文件：</p>
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&quot;dependencies&quot;: &#123;</span><br><span class="line"><span class="deletion">-  &quot;hexo&quot;: &quot;^4.2.1&quot;,</span></span><br><span class="line"><span class="addition">+  &quot;hexo&quot;: &quot;^5.1.1&quot;,</span></span><br></pre></td></tr></table></figure>
+
 <p>然后再执行 <code>npm upadte</code> 命令即可。</p>
 <p>升级完 Hexo ，<code>_config.yml</code> 并不会更新，而 Hexo 5.0 是有新增和改动一些其中的配置项的，所以需要我们自己去 <a href="https://github.com/hexojs/hexo-starter/blob/master/_config.yml">GitHub</a> 上查看站点配置文件的变动情况，并手动同步这些修改到自己的站点配置文件里。</p>
 <p>主要的变动就是新增了 <code>prismjs</code> 相关配置项以及更新了 <code>updated_option</code> 配置项。</p>
@@ -417,7 +454,7 @@
     <title>什么是全功能 Type-C 及显示器所需带宽如何计算</title>
     <url>/post/What-Is-Full-Featured-Type-C/</url>
     <content><![CDATA[<p>本文主要介绍了如何计算特定分辨率和刷新率显示器所需带宽以及对全功能 Type-C 的一些简单科普。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>最近动了换新笔记本和显示器的念头，自己想换一台 4K 显示器，在了解相关知识的时候，经常看到要注意视频输出接口带宽的提醒。其中各种概念多且杂，初接触很容易懵圈，所以我整理汇总了一些网上的资料，以作此文。</p>
 <p>文中如有不对或不妥的地方，欢迎评论留言指出错误，不甚感激。</p>
@@ -468,7 +505,7 @@
     <title>为什么 robots.txt 不应该再屏蔽 JS 和 CSS 了</title>
     <url>/post/Why-Shouldnot-Block-JS-And-CSS-Files-In-Robotstxt-Anymore/</url>
     <content><![CDATA[<p>根据谷歌官方的建议，robots.txt 已经不需要再屏蔽 JavaScript、CSS 文件了。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <h2 id="屏蔽是过时的做法"><a href="#屏蔽是过时的做法" class="headerlink" title="屏蔽是过时的做法"></a>屏蔽是过时的做法</h2><p>在前期查找相关资料的时候，我注意到不少博客都建议在 <code>robots.txt</code> 中禁止搜索引擎抓取网站的 JavaScript、CSS 文件，但其中大多数文章并没有给出为什么要这样做的具体理由。</p>
 <p>但我觉得现在已经有理由相信这种做法是<strong>过时且不必要</strong> 的。谷歌在其官方的<a href="https://support.google.com/webmasters/answer/7451184">搜索引擎优化 (SEO) 新手指南</a>中的「让 Google 以用户视角查看网页」章节中明确提到：</p>
@@ -483,7 +520,8 @@
 </ol>
 <p>上面这些都是谷歌在 2015 年就开始提倡的做法，所以现在已经 2020 年了，我们完全可以放心地让搜索引擎抓取我们的 JavaScript、CSS 文件，这样做对 SEO 有百利而无一害。</p>
 <h2 id="我的-robots-txt"><a href="#我的-robots-txt" class="headerlink" title="我的 robots.txt"></a>我的 robots.txt</h2><p>在博客根目录下的 <code>public</code> 文件夹内新建 <code>robots.txt</code> 文件，然后 <code>hexo d</code> 部署网站即可。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 允许任何搜索引擎抓取任何页面</span><br><span class="line">User-agent: *</span><br><span class="line">Allow: &#x2F;</span><br><span class="line"># 站点地图地址</span><br><span class="line">Sitemap: https:&#x2F;&#x2F;asurada.zone&#x2F;sitemap.xml</span><br><span class="line">Sitemap: https:&#x2F;&#x2F;asurada.zone&#x2F;baidusitemap.xml</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 允许任何搜索引擎抓取任何页面</span><br><span class="line">User-agent: *</span><br><span class="line">Allow: /</span><br><span class="line"># 站点地图地址</span><br><span class="line">Sitemap: https://asurada.zone/sitemap.xml</span><br><span class="line">Sitemap: https://asurada.zone/baidusitemap.xml</span><br></pre></td></tr></table></figure>
+
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://support.google.com/webmasters/answer/7451184">谷歌官方搜索引擎优化 (SEO) 新手指南</a></p>
 <p><a href="https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html">Understanding web pages better</a> </p>
 <p><a href="https://yoast.com/dont-block-css-and-js-files/">Don’t block CSS and JS files</a></p>
@@ -499,14 +537,17 @@
     <title>利用 Pqi 实现 Python 快速换源</title>
     <url>/post/change-python-pypisource/</url>
     <content><![CDATA[<p>pip 默认的软件源是国外的，下载起来速度很慢，我们可以将软件源换成国内的镜像源，大幅提高下载速度。本文介绍利用 <code>pqi</code> 这一小工具来实现简单快速地更换 pip 软件源。</p>
-<a id="more"></a>
+<span id="more"></span>
 <p><code>pqi</code> 是国内开发者 <a href="https://github.com/yhangf">yhf</a> 开发的 <a href="https://github.com/yhangf/PyQuickInstall">PyQuickInstall</a> 工具的简称，这款工具可以非常方便地帮助我们切换 pip 软件源，如果觉得好用的话，大家可以动动鼠标，在 Github 上面 Star 一下。</p>
 <p>临时使用清华大学开源软件镜像源安装 pqi ：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install pqi -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+
 <p>安装完成后，直接在命令行即可使用 pqi ：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//列举所有支持的PyPi源</span><br><span class="line">pqi ls</span><br><span class="line">//改变 PyPi源</span><br><span class="line">pqi use &lt;name&gt;</span><br><span class="line">//显示当前PyPi源</span><br><span class="line">pqi show</span><br><span class="line">//移除pip源</span><br><span class="line">pqi remove &lt;name&gt;</span><br><span class="line">//添加新的pip源</span><br><span class="line">pqi add &lt;name&gt; &lt;url&gt;</span><br><span class="line">//升级到最新版 pqi</span><br><span class="line">pip install --upgrade pqi</span><br></pre></td></tr></table></figure>
+
 <p>如果决定使用上面提到过的清华大学镜像源，使用如下命令即可：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pqi use tuna</span><br></pre></td></tr></table></figure>
+
 <p>然后就可以享受飞一般的 pip下载速度了。</p>
 ]]></content>
       <categories>
@@ -520,7 +561,7 @@
     <title>Hexo 博客修改记录</title>
     <url>/post/hexo-blog-settings/</url>
     <content><![CDATA[<p>记录自己博客所做的修改，供他人参考以及自己备忘。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <h2 id="提交搜索引擎收录"><a href="#提交搜索引擎收录" class="headerlink" title="提交搜索引擎收录"></a>提交搜索引擎收录</h2><p>博客搭建好了，如果希望自己博客的内容被更多人看到，搜索引擎所带来的流量是不容忽视的。为了让搜索引擎更快地收录我们的网站，我们可以主动到搜索引擎的站长平台提交我们的网站。</p>
 <p>因为搜索引擎收录的内容比较多，所以专门单独写了一篇文章，具体内容请跳转 <a href="https://asurada.zone/post/Blog-Search-Engine-Index/">Hexo 博客主流搜索引擎收录详细指南</a>查看。</p>
@@ -531,10 +572,13 @@
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/37-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2%E6%95%88%E6%9E%9C%E5%9B%BE.png" alt="站内搜索"></p>
 <p>在根目录下执行以下命令安装插件：</p>
 <figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">$ npm <span class="keyword">install</span> hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
+
 <p>在<strong>主题配置</strong>文件中修改相关字段：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true</span><br><span class="line">  trigger: auto # 每次输入改变都重新搜索</span><br><span class="line">  top_n_per_article: 3 # 每篇文章显示的搜索结果数量</span><br><span class="line">  unescape: false</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true</span><br><span class="line">  trigger: auto # 每次输入改变都重新搜索</span><br><span class="line">  top_n_per_article: 3 # 每篇文章显示的搜索结果数量</span><br><span class="line">  unescape: false</span><br></pre></td></tr></table></figure>
+
 <p>在<strong>站点配置</strong>文件中<strong>添加</strong>以下字段：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml # 后缀可选 .xml 和 .json</span><br><span class="line">  field: post # 指定搜索范围，可选 post | page | all</span><br><span class="line">  content: true # 是否牵引文章的全部内容，false 则只牵引文章标题</span><br><span class="line">  format: html # 指定页面内容形式，可选 html | raw (Markdown) | striptags </span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml # 后缀可选 .xml 和 .json</span><br><span class="line">  field: post # 指定搜索范围，可选 post | page | all</span><br><span class="line">  content: true # 是否牵引文章的全部内容，false 则只牵引文章标题</span><br><span class="line">  format: html # 指定页面内容形式，可选 html | raw (Markdown) | striptags </span><br></pre></td></tr></table></figure>
+
 <p>配置完成后，执行 <code>hexo g</code> 命令会在 <code>public</code> 文件夹下自动生成 <code>search.xml</code> 文件。</p>
 <h2 id="文末版权声明修改"><a href="#文末版权声明修改" class="headerlink" title="文末版权声明修改"></a>文末版权声明修改</h2><h3 id="版权声明添加标题"><a href="#版权声明添加标题" class="headerlink" title="版权声明添加标题"></a>版权声明添加标题</h3><blockquote>
 <p>此项配置基于 Hexo 4.2，Next 7.8.0</p>
@@ -545,6 +589,7 @@
 
 <p>首先修改 <code>.\themes\next\layout\_partials\post\post-copyright.swig</code> 文件，在 <code>&lt;ul&gt; &lt;/ul&gt;</code> 标签内根据自己的需求在相应位置<strong>新增</strong>以下代码：</p>
 <figure class="highlight html"><figcaption><span>.\themes\next\layout\_partials\post\post-copyright.swig</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;post-copyright-title&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">strong</span>&gt;</span>&#123;&#123; __(&#x27;post.copyright.title&#x27;) + __(&#x27;symbol.colon&#x27;) &#125;&#125; <span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line">    &#123;&#123; post.title &#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>由于 <code>post.copyright.title</code> 是我们自己新增的，这一字段 Next 默认是没有对应的中文翻译的，所以我们需要通过修改 <code>.\themes\next\languages\zh-CN.yml</code> 文件来添加翻译，打开文件，搜索 <code>copyright</code> ，在下面新增 <code>title: 本文标题</code> 。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/5-zhCN%E5%A2%9E%E5%8A%A0%E7%BF%BB%E8%AF%91.png" alt="zh-CN.yml 增加对应翻译"></p>
 <p>执行 <code>hexo g</code> 重新生成博客，<code>hexo s</code> 本地调试查看效果：</p>
@@ -564,8 +609,10 @@
 
 <p>在版权样式文件 <code>.themes\next\source\css\_common\components\post\post-copyright.styl</code> 中<strong>新增</strong>如下样式：</p>
 <figure class="highlight css"><figcaption><span>.themes\next\source\css\_common\components\post\post-copyright.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.swal-overlay</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: transparent;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.copy-success-message</span> &#123;</span><br><span class="line">  <span class="attribute">box-shadow</span>: <span class="number">0px</span> <span class="number">4px</span> <span class="number">12px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.15</span>);</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">4px</span>;</span><br><span class="line">  <span class="attribute">width</span>: auto;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">16</span>x <span class="number">0px</span>;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.copy-success-message</span> <span class="selector-class">.swal-content</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="meta">!important</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span> <span class="number">16px</span>;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">1em</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.copy-success-message</span> <span class="selector-class">.message-icon</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#52c41a</span>;</span><br><span class="line">  <span class="attribute">margin-right</span>: <span class="number">8px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.copy-success-message</span> <span class="selector-class">.message-content</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>然后补全版权信息文案字段：</p>
 <figure class="highlight diff"><figcaption><span>.\themes\next\languages\zh-CN.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">post:</span><br><span class="line">  copyright:</span><br><span class="line"><span class="addition">+   copy_success: 复制成功</span></span><br></pre></td></tr></table></figure>
+
 <p>之后点击「本文链接」后的图标便可以快捷复制 Markdown 格式的引用链接，并将弹出复制成功的提示语。</p>
 <blockquote>
 <p>该功能主要借助 <a href="https://clipboardjs.com/">clipboard</a> 和 <a href="https://sweetalert.js.org/">sweetalert</a> 两个 js 库来实现，并参考 <a href="https://ant.design/components/message/">antDesign | message 组件</a> 重写了弹框样式。</p>
@@ -576,6 +623,7 @@
 </blockquote>
 <p>Hexo 默认的文章 URL 地址为 <code>https://yoursite.com/:year/:month/:day/:title/</code>，层级较多，我自己看着碍眼，据说对 SEO 也不利。打开站点配置文件 <code>_config.yml</code> ，找到  <code>permalink</code>，将其改成自己想要的格式，我的很简单，全部的文章都是 <code>post</code>。</p>
 <figure class="highlight yml"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## If your site is put in a subdirectory, set url as &#x27;http://yoursite.com/child&#x27; and root as &#x27;/child/&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://asurada.zone</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br><span class="line"><span class="string">-permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="string">+permalink:</span> <span class="string">post/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br></pre></td></tr></table></figure>
+
 <h2 id="生成-RSS-并在侧边栏添加-RSS-按钮"><a href="#生成-RSS-并在侧边栏添加-RSS-按钮" class="headerlink" title="生成 RSS 并在侧边栏添加 RSS 按钮"></a>生成 RSS 并在侧边栏添加 RSS 按钮</h2><blockquote>
 <p>此项配置基于 Hexo 5.0，Next 7.8.0</p>
 </blockquote>
@@ -603,11 +651,13 @@
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/15-%E6%96%87%E6%9C%AB%E7%BB%93%E6%9D%9F%E6%A0%87%E8%AE%B0.png" alt="文末结束标记"></p>
 <p>修改主题配置文件 <code>.\source\_data\next.yml</code>，取消 <code>postBodyEnd</code> 前的注释，启用 <code>post-metabody-end.swig</code> 这一自定义文件：</p>
 <figure class="highlight yaml"><figcaption><span>.\source\_data\next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.swig</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.swig</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.swig</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.swig</span></span><br><span class="line"><span class="bullet">-</span> <span class="comment">#postBodyEnd: source/_data/post-metabody-end.swig</span></span><br><span class="line"><span class="string">+</span> <span class="attr">postBodyEnd:</span> <span class="string">source/_data/post-metabody-end.swig</span></span><br></pre></td></tr></table></figure>
+
 <p>我们可以打开 <code>.\themes\next\layout\_macro\post.swig</code> 文件，搜索 <code>next_inject</code>，定位到 <code>next_inject(&#39;postBodyEnd&#39;)</code>：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/16-post_swig%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE.png" alt="post.swig 插入位置"></p>
 <p>这一段代码的含义就是当上面的 <code>postBodyEnd</code> 被取消注释时，<code>post-metabody-end.swig</code> 文件就会被插入到这里（望文生义，如理解有误请指出）。</p>
 <p>在 <code>.\source\_data</code> 文件下新建 <code>post-metabody-end.swig</code> 文件，添加如下代码：</p>
 <figure class="highlight html"><figcaption><span>.\source\_data\post-metabody-end.swig</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center;color:#bfbfbf;font-size:16px;&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">span</span>&gt;</span>-------- 本文结束 <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa fa-paw&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>		<span class="comment">&lt;!-- 这里的图标可以自己去 fontawesome.com 找，然后自定义 --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">span</span>&gt;</span> 感谢阅读 --------<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p><code>hexo s -g</code> 预览效果没问题，就可以 <code>hexo d</code> 部署到博客了。</p>
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="http://yearito.cn/posts/hexo-deploy-to-VPS.html">yearito’s Blog | Hexo搭建个人博客系列：部署上线篇</a></p>
 <p><a href="https://tding.top/archives/4ea54752.html">小丁的个人博客 | Hexo-NexT 博客提交搜索引擎收录</a></p>
@@ -625,7 +675,7 @@
     <title>Hexo 博客主流搜索引擎收录详细指南</title>
     <url>/post/Blog-Search-Engine-Index/</url>
     <content><![CDATA[<p>如果希望自己博客的内容被更多人看到，搜索引擎所带来的流量是不容忽视的。本文详细介绍了如何向各大主流搜索引擎主动提交自己的博客，期望达到加快收录速度的目的。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <h2 id="生成站点地图"><a href="#生成站点地图" class="headerlink" title="生成站点地图"></a>生成站点地图</h2><blockquote>
 <p>什么是站点地图？</p>
@@ -634,6 +684,7 @@
 </blockquote>
 <p>安装  <a href="https://github.com/hexojs/hexo-generator-sitemap">hexo-generator-sitemap</a> 插件：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+
 <p>安装插件以后，执行 <code>hexo  g</code> 命令，即可在 <code>public</code> 文件夹下找到新生成的 <code>sitemap.xml</code> 文件。</p>
 <h2 id="让百度收录站点"><a href="#让百度收录站点" class="headerlink" title="让百度收录站点"></a>让百度收录站点</h2><h3 id="百度验证域名"><a href="#百度验证域名" class="headerlink" title="百度验证域名"></a>百度验证域名</h3><p>刚建站的时候，百度是没有收录我们的网站的，这时在搜索框输入 <code>site:&lt;域名&gt;</code>  ，结果应该是下面这样的，点击「提交网址」来提交我们的站点。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-%E7%99%BE%E5%BA%A6%E6%9C%AA%E6%94%B6%E5%BD%95.png" alt="百度未收录"></p>
@@ -650,6 +701,7 @@
 </blockquote>
 <p>打开主题配置数据文件 <code>next.yml</code> ，搜索 <code>baidu_site_verification</code>，将上述字符串填至后方。</p>
 <figure class="highlight yaml"><figcaption><span>.\source\_data\next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Baidu Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: https://ziyuan.baidu.com/site</span></span><br><span class="line"><span class="attr">baidu_site_verification:</span> <span class="string">hpYpGBuDQF</span></span><br></pre></td></tr></table></figure>
+
 <p>执行 <code>hexo g -d</code> 重新生成并部署站点，部署完成后，检查网站源码，能看到在<code>&lt;head&gt;</code> 里面已经自动包含了用于验证身份的 meta 标签：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/11-%E7%99%BE%E5%BA%A6%E9%AA%8C%E8%AF%81meta%E6%A0%87%E7%AD%BE.png" alt="百度验证 meta 标签"></p>
 <p>回到百度站长管理平台点击「完成验证」按钮，完成验证。</p>
@@ -659,15 +711,18 @@
 <h3 id="百度提交链接"><a href="#百度提交链接" class="headerlink" title="百度提交链接"></a>百度提交链接</h3><p>百度提交链接有下面三种方式。</p>
 <h4 id="主动提交"><a href="#主动提交" class="headerlink" title="主动提交"></a>主动提交</h4><p>安装  <a href="https://github.com/huiwang/hexo-baidu-url-submit">hexo-baidu-url-submit</a> 插件：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-baidu-url-submit --save</span><br></pre></td></tr></table></figure>
+
 <p>获取百度主动推送<code>准入密钥</code>并复制：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/14-%E7%99%BE%E5%BA%A6%E4%B8%BB%E5%8A%A8%E6%8E%A8%E9%80%81%E5%87%86%E5%85%A5%E5%AF%86%E9%92%A5.png" alt="百度主动推送准入密钥"></p>
 <p>在站点配置文件 <code>_config.yml</code> 中<strong>新增</strong>以下代码：</p>
 <figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="addition">+ # 百度主动推送</span></span><br><span class="line"><span class="addition">+ baidu_url_submit:</span></span><br><span class="line"><span class="addition">+ 	count: 5 # 提交最新的五个链接</span></span><br><span class="line"><span class="addition">+ 	host: https://asurada.zone # 在百度站长平台中注册的域名</span></span><br><span class="line"><span class="addition">+  	token: xxxxx  # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span></span><br><span class="line"><span class="addition">+  	path: baidu_urls.txt  # 文本文档的地址， 新链接会保存在此文本文档里</span></span><br></pre></td></tr></table></figure>
+
 <p>然后在站点配置文件 <code>_config.yml</code> 中修改部署策略：</p>
 <figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">  # Deployment</span><br><span class="line">  ## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line"><span class="deletion">- deploy:</span></span><br><span class="line"><span class="deletion">- 	type: git</span></span><br><span class="line"><span class="deletion">-   repo: git@github.com:ousugo/ousugo.github.io.git</span></span><br><span class="line"><span class="deletion">-	branch: master</span></span><br><span class="line"><span class="addition">+ deploy:</span></span><br><span class="line"><span class="addition">+ - type: git</span></span><br><span class="line"><span class="addition">+   repo: git@github.com:ousugo/ousugo.github.io.git</span></span><br><span class="line"><span class="addition">+	branch: master</span></span><br><span class="line"><span class="addition">+ - type: baidu_url_submitter # 百度</span></span><br></pre></td></tr></table></figure>
 <p>此后每次执行 <code>hexo d</code> 部署博客的时候将会自动在 <code>./public</code> 目录下生成 <code>baidu_urls.txt</code> 文件，里面的内容就是自己设置的最新的 n 条文章链接。然后自动推送文件内容到百度，加快链接被百度收录的速度。</p>
 <p>在这里的时候我踩了一个坑，在部署的时候一直提示错误：<code>&#123;&quot;error&quot;:401,&quot;message&quot;:&quot;site sid is empty&quot;&#125;</code> ，后面经过排查发现是在配置主动推送时，<code>host</code> 后面的网址没有加协议头，加上之后就不报错了。</p>
 <figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">  count: 5 # 提交最新的五个链接</span><br><span class="line"><span class="deletion">- host: asurada.zone # 在百度站长平台中注册的域名</span></span><br><span class="line"><span class="addition">+ host: https://asurada.zone # 在百度站长平台中注册的域名	</span></span><br><span class="line">  token: xxxxx  # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span><br><span class="line">  path: baidu_urls.txt  # 文本文档的地址， 新链接会保存在此文本文档里</span><br></pre></td></tr></table></figure>
+
 <h4 id="自动推送（弃用）"><a href="#自动推送（弃用）" class="headerlink" title="自动推送（弃用）"></a><del>自动推送</del>（弃用）</h4><div class="note info"><p>百度站长平台现在已经取消了「自动推送」的功能入口，所以不建议再开启此功能，详见<a href="https://51.ruyo.net/16280.html">百度 JS代码推送功能已停止使用，删除推送代码吧</a>。</p>
 </div>
 
@@ -676,6 +731,7 @@
 </blockquote>
 <p>Next 主题中已经内置了一键开启百度自动推送的选项：</p>
 <figure class="highlight yaml"><figcaption><span>.\source\_data\next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO</span></span><br><span class="line"><span class="attr">baidu_push:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
 <p>开启后将会自动在页面中添加如下脚本用于百度推送：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/18-%E7%99%BE%E5%BA%A6JS%E6%8E%A8%E9%80%81%E8%84%9A%E6%9C%AC%E4%BB%A3%E7%A0%81.png" alt="推送脚本代码"></p>
 <p>之后每次访问站点页面都会通过以上脚本将当前页面的 URL 推送到百度。 </p>
@@ -684,6 +740,7 @@
 
 <p>安装 <a href="https://github.com/coneycode/hexo-generator-baidu-sitemap">hexo-generator-baidu-sitemap</a> 插件：</p>
 <figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line">npm <span class="keyword">install </span>hexo-generator-<span class="keyword">baidu-sitemap </span>--save</span><br></pre></td></tr></table></figure>
+
 <p>插件安装成功后，执行 <code>hexo g -d</code> 部署网站，然后访问 <code>网站自定义域名/baidusitemap.xml</code> 检查百度网站地图是否正常。比如我的是 <code>asurada.zone/baidusitemap.xml</code> 。</p>
 <p>然后来到百度站长平台的 <a href="https://ziyuan.baidu.com/linksubmit/">sitemap 提交页面</a>，提交 sitemap 地址即可，注意需要自己添加 <code>https://</code> 协议头，不然默认是 <code>http://</code>，会导致抓取失败。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/20-%E7%99%BE%E5%BA%A6%E6%8F%90%E4%BA%A4sitemap.png" alt="百度提交 sitemap"></p>
@@ -706,11 +763,13 @@
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/23-360%E7%BD%91%E7%AB%99%E4%BB%A3%E7%A0%81%E9%AA%8C%E8%AF%81.png" alt="代码验证"></p>
 <h3 id="360-验证域名"><a href="#360-验证域名" class="headerlink" title="360 验证域名"></a>360 验证域名</h3><p>修改站点配置文件 <code>_config.yml</code> ：</p>
 <figure class="highlight diff"><figcaption><span>.\_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"># Define custom file paths.</span><br><span class="line"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span><br><span class="line">custom_file_path:</span><br><span class="line"><span class="deletion">- #head: source/_data/head.swig</span></span><br><span class="line"><span class="addition">+ head: source/_data/head.swig</span></span><br><span class="line">  #header: source/_data/header.swig</span><br></pre></td></tr></table></figure>
+
 <p>然后在 <code>博客根目录\source\_data</code> 下新建 <code>head.swig</code> 文件，然后打开并新增以下内容：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% if theme.so_site_verification %&#125;</span><br><span class="line">  &lt;meta name&#x3D;&quot;360-site-verification&quot; content&#x3D;&quot;&#123;&#123; theme.so_site_verification &#125;&#125;&quot;&#x2F;&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% if theme.so_site_verification %&#125;</span><br><span class="line">  &lt;meta name=&quot;360-site-verification&quot; content=&quot;&#123;&#123; theme.so_site_verification &#125;&#125;&quot;/&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 <p>上面代码是利用了 Next 主题的 <a href="https://theme-next.js.org/docs/advanced-settings.html#Injects">Inject 功能</a>，以上代码的含义为如果在 <code>_config.yml</code> 中存在 <code>so_site_verification</code>  这一设置项，则会将 <code>&lt;meta name=&quot;360-site-verification&quot; content=&quot;so_site_verification 设置项的 value&quot;/&gt;</code>插入到网站首页 HTML 代码的 <code>&lt;head&gt;&lt;/head&gt;</code> 标签中。</p>
 <p>再次修改站点配置文件 <code>_config.yml</code>，在 <code>SEO Settings</code>区域新增以下内容 ：</p>
 <figure class="highlight ldif"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 360 Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: zhanzhang.so.com/sitetool</span></span><br><span class="line"><span class="attribute">so_site_verification</span>: 此处填写之前复制的验证字符串</span><br></pre></td></tr></table></figure>
+
 <p>修改完成后，执行 <code>hexo g -d</code> 命令重新生成并部署网站，部署生效后，回到 360 站长平台，「点击验证」即可。如果网站已经开启了 HTTPS 访问，不要忘记「设置 https」。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/24-360%E7%AB%99%E9%95%BF%E5%B9%B3%E5%8F%B0%E9%AA%8C%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="360 站长平台验证成功"></p>
 <h3 id="提交-sitemap"><a href="#提交-sitemap" class="headerlink" title="提交 sitemap"></a>提交 sitemap</h3><p>360 站长平台体验很一般，连 HTTPS 都没上，然后在进行 sitemap 提交的时候，第一天页面就一直报「连接超时」，完全无法提交。第二天终于不报错了，可以正常提交了，页面也显示成功提交，但添加完以后 sitemap 列表却一直是空的，让人很困惑，不知道这到底是添加成功了但还没爬取呢还是压根就没添加上。终于第三天一切顺利，成功添加并显示了。</p>
@@ -778,7 +837,7 @@
     <url>/post/Creat-CMBCHK-Account/</url>
     <content><![CDATA[<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><p>文章内容信息的时效性只能保证到我自己办理结束的 19 年 12 月份，最新的要求以及相关消息还是以招商银行官网、官方客服、官方公众号的通知为准。</p>
 <p>本文只是分享一点个人的经验，希望能够帮到有需要办理招行香港银行卡的朋友。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <h2 id="为什么选择招行香港银行卡"><a href="#为什么选择招行香港银行卡" class="headerlink" title="为什么选择招行香港银行卡"></a>为什么选择招行香港银行卡</h2><p>亲赴香港开户的话，有很多银行可供我们选择，我本人之所以选择招行香港主要有以下几个原因，列出来仅供参考，大家可以根据自己的需求选择最适合自己的银行办理开户。</p>
 <h3 id="支持银证转账券商较多"><a href="#支持银证转账券商较多" class="headerlink" title="支持银证转账券商较多"></a>支持银证转账券商较多</h3><p>逛券商官网的时候，发现支持银证转账的银行里面出现次数最多的就是民生香港和招行香港，而银证转账对于资金的快速调度还是很重要的，同时也是我个人比较看重的一点。民生香港和招行香港都同时支持富途、华盛通、有鱼三家券商的银证转账，招行香港仅比支持券商数量最多的民生香港少支持了一家我并不用的玖富。</p>
@@ -1033,7 +1092,7 @@
 <p>基于 rt-thread4.0.2，能根据BSP制作教程及群里分享的视频《2.RTThread移植》，让自己的板子在RT-Thread上运行起来，了解BSP的制作。</p>
 </blockquote>
 <p>本文并没有将 BSP 移植背后的原理全部弄清楚，只是想着先迈出第一步，不求甚解，先把整个流程给跑通。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <p>我手上的开发板是正点原子的战舰 V3，所以我将基于 RT-Thread 官方的 STM32F1 系列 BSP 通用模板构建战舰 V3 的 BSP。</p>
 <h2 id="下载-RT-Thread-源码"><a href="#下载-RT-Thread-源码" class="headerlink" title="下载 RT-Thread 源码"></a>下载 RT-Thread 源码</h2><p>从<a href="https://www.rt-thread.org/page/download.html">官网</a>下载 RT-Thread 源码，我下载的版本是 V4.0.2。源码目录结构如下：</p>
@@ -1145,11 +1204,13 @@
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/16-CubeMX%E9%85%8D%E7%BD%AE%E6%97%B6%E9%92%9F.png" alt="CubeMX配置时钟"></p>
 <p>最后总结一下配置过后关键时钟频率值：</p>
 <figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">SYSCLK</span>(系统时钟) 			   =<span class="number">72</span>MHz</span><br><span class="line"><span class="attribute">PLL</span> 主时钟 					=<span class="number">72</span>MHz</span><br><span class="line"><span class="attribute">AHB</span> 总线时钟（HCLK=SYSCLK/<span class="number">1</span>）   =<span class="number">72</span>MHz</span><br><span class="line"><span class="attribute">APB1</span> 总线时钟（PCLK<span class="number">1</span>=HCLK/<span class="number">2</span>）   =<span class="number">36</span>MHz</span><br><span class="line"><span class="attribute">APB2</span> 总线时钟（PCLK<span class="number">2</span>=HCLK/<span class="number">1</span>）   =<span class="number">72</span>MHz</span><br></pre></td></tr></table></figure>
+
 <h3 id="生成-CubeMX-项目"><a href="#生成-CubeMX-项目" class="headerlink" title="生成 CubeMX 项目"></a>生成 CubeMX 项目</h3><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/17-CubeMX%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81.png" alt="CubeMX生成代码"></p>
 <p>最后生成的时候，因为我们复制过来的模板工程里面本来就有 CubeMX 项目，选择直接覆盖即可。</p>
 <h3 id="拷贝时钟初始化函数"><a href="#拷贝时钟初始化函数" class="headerlink" title="拷贝时钟初始化函数"></a>拷贝时钟初始化函数</h3><p>在 <code>board/board.c</code> 文件中存放了函数 <code>SystemClock_Config()</code>，该函数负责初始化系统时钟。当使用 CubeMX 工具对系统时钟重新配置的时候，需要更新这个函数。</p>
 <p>该函数由 CubeMX 工具生成，默认存放在<code>board/CubeMX_Config/Src/main.c</code> 文件中。但是该文件并没有被包含到我们的工程中，因此需要将这个函数从 main.c 中拷贝到 <code>board/board.c</code> 文件中。该函数内容如下：</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief System Clock Configuration</span></span><br><span class="line"><span class="comment">  * @retval None</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SystemClock_Config</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  RCC_OscInitTypeDef RCC_OscInitStruct = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">  RCC_ClkInitTypeDef RCC_ClkInitStruct = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/** Initializes the CPU, AHB and APB busses clocks </span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;	<span class="comment">//时钟源为 HSE</span></span><br><span class="line">  RCC_OscInitStruct.HSEState = RCC_HSE_ON;						<span class="comment">//打开 HSE</span></span><br><span class="line">  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;		<span class="comment">//HSE 预分频</span></span><br><span class="line">  RCC_OscInitStruct.HSIState = RCC_HSI_ON;						<span class="comment">//打开 HSI</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;					<span class="comment">//打开 PLL</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;			<span class="comment">//PLL 时钟源选择 HSE</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;					<span class="comment">//设置 PLL 倍频系数</span></span><br><span class="line">  <span class="keyword">if</span> (HAL_RCC_OscConfig(&amp;RCC_OscInitStruct) != HAL_OK)</span><br><span class="line">  &#123;</span><br><span class="line">    Error_Handler();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/** Initializes the CPU, AHB and APB busses clocks </span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK</span><br><span class="line">                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;</span><br><span class="line">  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;		<span class="comment">//设置系统时钟时钟源为 PLL</span></span><br><span class="line">  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;	<span class="comment">//AHB 分频系数为1</span></span><br><span class="line">  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;		<span class="comment">//APB1 分频系数为2</span></span><br><span class="line">  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;		<span class="comment">//APB2 分频系数为1</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (HAL_RCC_ClockConfig(&amp;RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)</span><br><span class="line">  &#123;</span><br><span class="line">    Error_Handler();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h3 id="修改-board-h"><a href="#修改-board-h" class="headerlink" title="修改 board.h"></a>修改 board.h</h3><p>在 board.h 文件中配置了 FLASH 和 RAM 的相关参数，这个文件中需要修改的是 STM32_FLASH_SIZE 和 STM32_SRAM_SIZE 这两个宏控制的参数。</p>
 <p>战舰 V3 所使用的 STM32F103ZET6 芯片的 FLASH 大小为 512K，RAM 的大小为 64K，因此对该文件作出如下的修改：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/18-%E4%BF%AE%E6%94%B9board%E5%A4%B4%E6%96%87%E4%BB%B6.png" alt="修改board头文件"></p>

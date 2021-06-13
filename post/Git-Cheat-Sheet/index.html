@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.3.0">
+<meta name="generator" content="Hexo 5.4.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
@@ -19,14 +19,11 @@
 
 
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
-<script class="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"asurada.zone","root":"/","images":"/images","scheme":"Muse","version":"8.2.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}};
-  </script>
+<script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;asurada.zone&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Muse&quot;,&quot;version&quot;:&quot;8.5.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;right&quot;,&quot;display&quot;:&quot;hide&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:true,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:true,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;},&quot;path&quot;:&quot;&#x2F;search.xml&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:3,&quot;unescape&quot;:false,&quot;preload&quot;:false}}</script><script src="/js/config.js"></script>
 <meta name="description" content="一些不太常用的 Git 命令往往隔一段时间不用就忘记了，特写此篇备忘。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git 常用命令备忘录">
@@ -44,17 +41,10 @@
 <link rel="canonical" href="https://asurada.zone/post/Git-Cheat-Sheet/">
 
 
-<script class="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-CN'
-  };
-</script>
-  <meta name="360-site-verification" content="68099c4ac6f6f63bfe250dd357c1d4e1"/>
 
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;asurada.zone&#x2F;post&#x2F;Git-Cheat-Sheet&#x2F;&quot;,&quot;path&quot;:&quot;post&#x2F;Git-Cheat-Sheet&#x2F;&quot;,&quot;title&quot;:&quot;Git 常用命令备忘录&quot;}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
 <title>Git 常用命令备忘录 | Asurada's Zone</title>
   
 
@@ -62,41 +52,11 @@
 
   <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "79b221dbf13b4720a61e24cae7d37a7f"}'></script>
 
+  <meta name="360-site-verification" content="68099c4ac6f6f63bfe250dd357c1d4e1"/>
+
   <noscript>
-  <style>
-  body { margin-top: 2rem; }
-
-  .use-motion .menu-item,
-  .use-motion .sidebar,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header {
-    visibility: visible;
-  }
-
-  .use-motion .header,
-  .use-motion .site-brand-container .toggle,
-  .use-motion .footer { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle,
-  .use-motion .custom-logo-image {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line {
-    transform: scaleX(1);
-  }
-
-  .search-pop-overlay, .sidebar-nav { display: none; }
-  .sidebar-panel { display: block; }
-  </style>
-</noscript>
-
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
 <link rel="alternate" href="/atom.xml" title="Asurada's Zone" type="application/atom+xml">
 </head>
 
@@ -239,7 +199,7 @@
       </span>
   </div>
   <div class="cc-license site-overview-item animated" itemprop="license">
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
   </div>
 
 
@@ -254,7 +214,7 @@
     </header>
 
     
-  <div class="back-to-top" role="button">
+  <div class="back-to-top" role="button" aria-label="返回顶部">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -354,17 +314,20 @@
     
     <div class="post-body" itemprop="articleBody">
         <p>一些不太常用的 Git 命令往往隔一段时间不用就忘记了，特写此篇备忘。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <h2 id="配置-User-信息"><a href="#配置-User-信息" class="headerlink" title="配置 User 信息"></a>配置 User 信息</h2><h3 id="添加-User-信息"><a href="#添加-User-信息" class="headerlink" title="添加 User 信息"></a>添加 User 信息</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config [--global | --local] user.name &#x27;your_name&#x27;</span><br><span class="line">git config [--global | --local] user.email &#x27;your_email&#x27;</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>默认为 local，所以只有需要设置全局时需要带 –global 参数，–local 参数可以直接省略。</li>
 <li>单引号不是必须的，可以省略。一般只在输入的内容之中含有空格的时候需要使用单引号。</li>
 </ul>
 <h3 id="查看-User-信息"><a href="#查看-User-信息" class="headerlink" title="查看 User 信息"></a>查看 User 信息</h3><p>使用以下命令查看所有全局/局部配置信息：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --list [--local | --global | --system]</span><br></pre></td></tr></table></figure>
+
 <p>或者使用以下命令直接查看具体设置：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config [--global | --local] user.name</span><br><span class="line">git config [--global | --local] user.email</span><br></pre></td></tr></table></figure>
+
 <h3 id="global-与-local-优先级以及配置文件所在位置"><a href="#global-与-local-优先级以及配置文件所在位置" class="headerlink" title="global 与 local 优先级以及配置文件所在位置"></a>global 与 local 优先级以及配置文件所在位置</h3><p>local &gt; global</p>
 <p>local 配置位于当前仓库的 .git 文件夹下的 config 文件中。</p>
 <p>global 配置位于当前用户 home 目录下的 .gitconfig 文件中。</p>
@@ -376,17 +339,23 @@
 </ul>
 <h3 id="删除不需要的分支"><a href="#删除不需要的分支" class="headerlink" title="删除不需要的分支"></a>删除不需要的分支</h3><p>普通删除(如果当前分支没有被合并，不能直接删除)：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -d 分支名</span><br></pre></td></tr></table></figure>
+
 <p>强制删除：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -D 分支名</span><br></pre></td></tr></table></figure>
+
 <h3 id="修改最近一次的-commit-内容"><a href="#修改最近一次的-commit-内容" class="headerlink" title="修改最近一次的 commit 内容"></a>修改最近一次的 commit 内容</h3><p>命令：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit --amend</span><br></pre></td></tr></table></figure>
+
 <h3 id="修改最近一次-commit-的作者"><a href="#修改最近一次-commit-的作者" class="headerlink" title="修改最近一次 commit 的作者"></a>修改最近一次 commit 的作者</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit --amend --author=&quot;AuthorName &lt;email@address.com&gt;&quot; --no-edit</span><br></pre></td></tr></table></figure>
+
 <p>其中 <code>no-edit</code> 的作用是表明此次修改仅修改作者，而不需要对 <code>commit message</code> 进行改动，所以不需要启动编辑器。</p>
 <h3 id="修改老旧-commit-的-message"><a href="#修改老旧-commit-的-message" class="headerlink" title="修改老旧 commit 的 message"></a>修改老旧 commit 的 message</h3><ol>
 <li><p>进入交互式变基策略修改：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase -i 想要修改的提交节点的父节点的 HASH 值</span><br></pre></td></tr></table></figure>
+
 <p>如果想要修改第一次提交，也就是最早的那次提交，没有父节点的提交，使用命令：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase -i --root</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase -i --root</span><br></pre></td></tr></table></figure>
+</li>
 <li><p>修改策略：</p>
 <p>在 vi 模式下将想要修改的 commit 前面的选项由 pick 变更为 r 或者 reword，这一选项的含义为此 commit 的内容不变，只修改其 commit message。</p>
 </li>
@@ -398,8 +367,10 @@
 <h3 id="把连续的多个-commit-整理成一个"><a href="#把连续的多个-commit-整理成一个" class="headerlink" title="把连续的多个 commit 整理成一个"></a>把连续的多个 commit 整理成一个</h3><ol>
 <li><p>进入交互式变基策略修改：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase -i 想要修改的提交节点的父节点的 HASH 值</span><br></pre></td></tr></table></figure>
+
 <p>如果想要修改第一次提交，也就是最早的那次提交，没有父节点的提交，使用命令：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase -i --root</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase -i --root</span><br></pre></td></tr></table></figure>
+</li>
 <li><p>修改策略：</p>
 <p>将准备被合并的 commit 前面的选项由 pick 改为 s 或者 squash，这一选项的含义为继续使用这一 commit，但是将其合并到前面(比它老)的那一个 commit 里面去，想要合并哪几个就将这几个前面的选项都改成 s。</p>
 </li>
@@ -414,58 +385,82 @@
 </ul>
 <p>会用到的 vim 快捷键：</p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dd	<span class="regexp">//</span>剪切一行，也可以用来删除一行</span><br><span class="line">dw	<span class="regexp">//</span>删除一个单词</span><br><span class="line">u	<span class="regexp">//</span>撤销</span><br><span class="line">p	<span class="regexp">//</span>粘贴</span><br></pre></td></tr></table></figure>
+
 <h3 id="比较暂存区和-HEAD-所含文件的差异"><a href="#比较暂存区和-HEAD-所含文件的差异" class="headerlink" title="比较暂存区和 HEAD 所含文件的差异"></a>比较暂存区和 HEAD 所含文件的差异</h3><p>HEAD 所含文件就是最新一个 commit 内的文件内容</p>
 <figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff <span class="comment">--cached</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="比较工作区和暂存区所含文件的差异"><a href="#比较工作区和暂存区所含文件的差异" class="headerlink" title="比较工作区和暂存区所含文件的差异"></a>比较工作区和暂存区所含文件的差异</h3> <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git diff</span></span><br></pre></td></tr></table></figure>
+
 <p>后面可以接“– 单个或多个文件名”来查看特定文件的差异</p>
 <h3 id="比较工作区和-HEAD-所含文件的差异"><a href="#比较工作区和-HEAD-所含文件的差异" class="headerlink" title="比较工作区和 HEAD 所含文件的差异"></a>比较工作区和 HEAD 所含文件的差异</h3><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git diff HEAD</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="让暂存区恢复成和-HEAD-一样"><a href="#让暂存区恢复成和-HEAD-一样" class="headerlink" title="让暂存区恢复成和 HEAD 一样"></a>让暂存区恢复成和 HEAD 一样</h3><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git reset HEAD</span></span><br></pre></td></tr></table></figure>
+
 <p>git reset 默认的参数为 –mixed</p>
 <h3 id="让工作区的文件恢复为和暂存区一样"><a href="#让工作区的文件恢复为和暂存区一样" class="headerlink" title="让工作区的文件恢复为和暂存区一样"></a>让工作区的文件恢复为和暂存区一样</h3><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout <span class="comment">-- 文件名</span></span><br></pre></td></tr></table></figure>
+
 <p>Git 2.23 版本以后使用 <code>git restore</code>命令来代替<code>git checkout</code>功能</p>
 <h3 id="取消暂存区部分文件的更改"><a href="#取消暂存区部分文件的更改" class="headerlink" title="取消暂存区部分文件的更改"></a>取消暂存区部分文件的更改</h3><p>将暂存区部分文件取消暂存的意思是所做的改动继续保留在工作目录，暂存区部分的内容同 HEAD 保持一致。</p>
 <figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">reset</span> HEAD <span class="comment">--文件名</span></span><br></pre></td></tr></table></figure>
+
 <p>Git 新版本使用：</p>
 <figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">restore</span> --staged &lt;<span class="keyword">file</span>&gt;</span><br></pre></td></tr></table></figure>
+
 <p>两条命令作用是一样的。</p>
 <h3 id="消除最近的几次提交"><a href="#消除最近的几次提交" class="headerlink" title="消除最近的几次提交"></a>消除最近的几次提交</h3><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">reset</span> <span class="comment">--hard &lt;hash&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>将工作区和暂存区的内容都恢复到 hash 值所对应的那个 commit 的状态。</p>
-<h3 id="看不同提交的指定文件的差异"><a href="#看不同提交的指定文件的差异" class="headerlink" title="看不同提交的指定文件的差异"></a>看不同提交的指定文件的差异</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">git</span> <span class="selector-tag">diff</span> <span class="selector-attr">[from_commit]</span> <span class="selector-attr">[to_commit]</span></span><br></pre></td></tr></table></figure>
+<h3 id="看不同提交的指定文件的差异"><a href="#看不同提交的指定文件的差异" class="headerlink" title="看不同提交的指定文件的差异"></a>看不同提交的指定文件的差异</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff <span class="selector-attr">[from_commit]</span> <span class="selector-attr">[to_commit]</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="正确删除文件的方法"><a href="#正确删除文件的方法" class="headerlink" title="正确删除文件的方法"></a>正确删除文件的方法</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm <span class="tag">&lt;<span class="name">filename</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="本地与远程仓库的交互"><a href="#本地与远程仓库的交互" class="headerlink" title="本地与远程仓库的交互"></a>本地与远程仓库的交互</h2><h3 id="让-Fork-的仓库同源仓库保持更新"><a href="#让-Fork-的仓库同源仓库保持更新" class="headerlink" title="让 Fork 的仓库同源仓库保持更新"></a>让 Fork 的仓库同源仓库保持更新</h3><h4 id="添加源仓库"><a href="#添加源仓库" class="headerlink" title="添加源仓库"></a>添加源仓库</h4><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote <span class="keyword">add</span><span class="bash"> upstream 源仓库链接</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="本地与远程仓库的交互"><a href="#本地与远程仓库的交互" class="headerlink" title="本地与远程仓库的交互"></a>本地与远程仓库的交互</h2><h3 id="让-Fork-的仓库同源仓库保持更新"><a href="#让-Fork-的仓库同源仓库保持更新" class="headerlink" title="让 Fork 的仓库同源仓库保持更新"></a>让 Fork 的仓库同源仓库保持更新</h3><h4 id="添加源仓库"><a href="#添加源仓库" class="headerlink" title="添加源仓库"></a>添加源仓库</h4><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote <span class="builtin-name">add</span> upstream 源仓库链接</span><br></pre></td></tr></table></figure>
+
 <h4 id="同步更新"><a href="#同步更新" class="headerlink" title="同步更新"></a>同步更新</h4><ol>
 <li>如果在另一个分支上，就切换到 master 分支</li>
 </ol>
 <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout <span class="literal">master</span></span><br></pre></td></tr></table></figure>
+
 <ol start="2">
 <li>从源仓库抓取最新更改后，合并到本地 master 分支</li>
 </ol>
 <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git pull upstream</span></span><br></pre></td></tr></table></figure>
+
 <ol start="3">
 <li>将本地 master 分支推送到自己 Fork 的远程仓库  origin</li>
 </ol>
 <figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span></span><br></pre></td></tr></table></figure>
+
 <h4 id="进阶版"><a href="#进阶版" class="headerlink" title="进阶版"></a>进阶版</h4><ol>
 <li>将 master 分支的上游仓库设置为源仓库</li>
 </ol>
 <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch --<span class="attr">set-upstream-to=</span>upstream/<span class="keyword">master</span> <span class="title">master</span></span><br></pre></td></tr></table></figure>
+
 <ol start="2">
 <li>将 push 命令推送的默认仓库设置为自己 Forked 的仓库 origin</li>
 </ol>
 <figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">config</span> <span class="comment">--local remote.pushDefault origin</span></span><br></pre></td></tr></table></figure>
+
 <ol start="3">
 <li>搞定之后，工作流程为更加简单：</li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git pull	//默认从源仓库拉取最新的更新</span><br><span class="line">git push	//将拉取的更新推送到 Forked 的仓库</span><br></pre></td></tr></table></figure>
+
 <h3 id="推送一个新的分支到远程仓库"><a href="#推送一个新的分支到远程仓库" class="headerlink" title="推送一个新的分支到远程仓库"></a>推送一个新的分支到远程仓库</h3><p>-u 是 –set-upstream 的简写，该标记会为之后轻松地推送与拉取配置分支</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u remote_name new_branch_name</span><br></pre></td></tr></table></figure>
+
 <h3 id="清理本地无效的远程追踪分支"><a href="#清理本地无效的远程追踪分支" class="headerlink" title="清理本地无效的远程追踪分支"></a>清理本地无效的远程追踪分支</h3><p>利用选项 –prune</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git remote update -p</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote update -<span class="selector-tag">p</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="远程删除了分支本地也想删除"><a href="#远程删除了分支本地也想删除" class="headerlink" title="远程删除了分支本地也想删除"></a>远程删除了分支本地也想删除</h3><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git remote prune origin</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h3><figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span> --<span class="built_in">delete</span> &lt;remote-branchname&gt;</span><br></pre></td></tr></table></figure>
+
 <p>或者</p>
 <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin <span class="symbol">:&lt;remote-branchname&gt;</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="从远程分支中创建并切换到本地分支"><a href="#从远程分支中创建并切换到本地分支" class="headerlink" title="从远程分支中创建并切换到本地分支"></a>从远程分支中创建并切换到本地分支</h3><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b &lt;branch-<span class="built_in">name</span>&gt; &lt;remote-<span class="built_in">name</span>&gt;/&lt;branch-<span class="built_in">name</span>&gt;</span><br></pre></td></tr></table></figure>
+
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a target="_blank" rel="noopener" href="https://github.com/521xueweihan/git-tips">Git的奇技淫巧</a></p>
 
     </div>
@@ -501,10 +496,10 @@
 
           
 
-<!-- JS�� clipboard �����������ݵ�ճ����-->
+<!-- JS库 clipboard 用来拷贝内容到粘贴板-->
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
 
-<!-- JS�� sweetalert ������ʾ��ʾ��Ϣ-->
+<!-- JS库 sweetalert 用来显示提示信息-->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
 
 <div class="post-copyright">
@@ -519,7 +514,7 @@
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
       <a href="https://asurada.zone/post/Git-Cheat-Sheet/" title="Git 常用命令备忘录">https://asurada.zone/post/Git-Cheat-Sheet/</a>
-    <span class="copy-path" title="������� Markdown ��������"
+    <span class="copy-path" title="点击复制 Markdown 引用链接"
       ><i
         style="cursor: pointer"
         class="fas fa-copy"
@@ -611,28 +606,6 @@
     <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
   </div>
   
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      const commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
 </div>
   </main>
 
@@ -663,7 +636,7 @@
   </span>
 </div>
 <div class="busuanzi-count">
-    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
       </span>
@@ -671,7 +644,7 @@
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
       </span>
@@ -680,20 +653,20 @@
       </span>
     </span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
     </div>
   </footer>
 
   
-  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
   
-<script src="/js/local-search.js"></script>
+<script src="/js/third-party/search/local-search.js"></script>
 
 
 
@@ -704,111 +677,14 @@
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
-<script>
-  (function() {
-    function leancloudSelector(url) {
-      url = encodeURI(url);
-      return document.getElementById(url).querySelector('.leancloud-visitors-count');
-    }
-
-    function addCount(Counter) {
-      const visitors = document.querySelector('.leancloud_visitors');
-      const url = decodeURI(visitors.id);
-      const title = visitors.dataset.flagTitle;
-
-      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
-        .then(response => response.json())
-        .then(({ results }) => {
-          if (results.length > 0) {
-            const counter = results[0];
-            leancloudSelector(url).innerText = counter.time + 1;
-            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
-              .catch(error => {
-                console.error('Failed to save visitor count', error);
-              });
-          } else {
-              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
-              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
-            
-          }
-        })
-        .catch(error => {
-          console.error('LeanCloud Counter Error', error);
-        });
-    }
-
-    function showTime(Counter) {
-      const visitors = document.querySelectorAll('.leancloud_visitors');
-      const entries = [...visitors].map(element => {
-        return decodeURI(element.id);
-      });
-
-      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
-        .then(response => response.json())
-        .then(({ results }) => {
-          for (let url of entries) {
-            const target = results.find(item => item.url === url);
-            leancloudSelector(url).innerText = target ? target.time : 0;
-          }
-        })
-        .catch(error => {
-          console.error('LeanCloud Counter Error', error);
-        });
-    }
-
-    const { app_id, app_key, server_url } = {"enable":true,"app_id":"4vfEy99japeGiK3jxqcgHcu8-gzGzoHsz","app_key":"yYFGTuwlmpBBiYpFGCtpz15K","server_url":"https://4vfey99j.lc-cn-n1-shared.com","security":true};
-    function fetchData(api_server) {
-      const Counter = (method, url, data) => {
-        return fetch(`${api_server}/1.1${url}`, {
-          method,
-          headers: {
-            'X-LC-Id'     : app_id,
-            'X-LC-Key'    : app_key,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        });
-      };
-      if (CONFIG.page.isPost) {
-        if (CONFIG.hostname !== location.hostname) return;
-        addCount(Counter);
-      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
-        showTime(Counter);
-      }
-    }
-
-    const api_server = app_id.slice(-9) === '-MdYXbMMI' ? `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com` : server_url;
-
-    if (api_server) {
-      fetchData(api_server);
-    } else {
-      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
-        .then(response => response.json())
-        .then(({ api_server }) => {
-          fetchData('https://' + api_server);
-        });
-    }
-  })();
-</script>
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{&quot;enable&quot;:true,&quot;app_id&quot;:&quot;4vfEy99japeGiK3jxqcgHcu8-gzGzoHsz&quot;,&quot;app_key&quot;:&quot;yYFGTuwlmpBBiYpFGCtpz15K&quot;,&quot;server_url&quot;:&quot;https:&#x2F;&#x2F;4vfey99j.lc-cn-n1-shared.com&quot;,&quot;security&quot;:true}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js"></script>
 
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css" integrity="sha256-GxdCIOyfxQ1OBfS99qAIJDoGK1ADuBsxhMTqXG82fAY=" crossorigin="anonymous">
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css">
-
-<script>
-NexT.utils.loadComments('#disqus_thread', () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqus.js', () => {
-    window.dsqjs = new DisqusJS({
-      api       : 'https://disqus.skk.moe/disqus/' || 'https://disqus.com/api/',
-      apikey    : 'DbeRjZ9TqROzDs1OJ4lf28EXNb9CM0dbyrq1jtrK8AznU5hQdEVAyTXPr5kh4XcH',
-      shortname : 'asuradazone',
-      url       : "https://asurada.zone/post/Git-Cheat-Sheet/",
-      identifier: "post/Git-Cheat-Sheet/",
-      title     : "Git 常用命令备忘录",
-    });
-  }, window.DisqusJS);
-});
-</script>
+<script class="next-config" data-name="disqusjs" type="application/json">{&quot;enable&quot;:true,&quot;api&quot;:&quot;https:&#x2F;&#x2F;disqus.skk.moe&#x2F;disqus&#x2F;&quot;,&quot;apikey&quot;:&quot;DbeRjZ9TqROzDs1OJ4lf28EXNb9CM0dbyrq1jtrK8AznU5hQdEVAyTXPr5kh4XcH&quot;,&quot;shortname&quot;:&quot;asuradazone&quot;,&quot;js&quot;:{&quot;url&quot;:&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;disqusjs@1.3.0&#x2F;dist&#x2F;disqus.js&quot;,&quot;integrity&quot;:&quot;sha256-LVaMHPQ2zLqOc5rXSAfr4d1PIkEGNLyyUTDNPZmTtUw&#x3D;&quot;}}</script>
+<script src="/js/third-party/comments/disqusjs.js"></script>
 
 </body>
 </html>

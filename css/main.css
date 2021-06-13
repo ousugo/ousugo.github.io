@@ -218,7 +218,7 @@ body {
   line-height: 2;
   min-height: 100%;
   position: relative;
-  transition: all 0.2s ease-in-out;
+  transition: padding 0.2s ease-in-out;
 }
 h1,
 h2,
@@ -255,6 +255,7 @@ p {
 a {
   border-bottom: 1px solid #999;
   color: var(--link-color);
+  cursor: pointer;
   outline: 0;
   text-decoration: none;
   overflow-wrap: break-word;
@@ -812,9 +813,6 @@ pre code {
   transform: translate(0.2rem, 0.2rem);
 }
 .post-body .link-grid .link-grid-container .link-grid-image {
-  background-clip: content-box;
-  background-origin: content-box;
-  background-size: cover;
   border: 1px solid #ddd;
   border-radius: 50%;
   box-sizing: border-box;
@@ -1464,11 +1462,17 @@ pre code {
 }
 @media (max-width: 767px) {
   .site-nav {
-    display: none;
+    --scroll-height: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s ease-in-out;
   }
-}
-.site-nav-on .site-nav {
-  display: block;
+  body:not(.site-nav-on) .site-nav .animated {
+    animation: none;
+  }
+  body.site-nav-on .site-nav {
+    height: var(--scroll-height);
+  }
 }
 .menu {
   margin: 0;
@@ -1911,6 +1915,12 @@ pre code {
   display: inline-block;
   margin: 0 5px;
   animation: icon-animate 1.33s ease-in-out infinite;
+}
+.busuanzi-count #busuanzi_container_site_uv {
+  display: none;
+}
+.busuanzi-count #busuanzi_container_site_pv {
+  display: none;
 }
 @-moz-keyframes icon-animate {
   0%, 100% {
@@ -3054,7 +3064,7 @@ mark.search-keyword {
 }
 @media (min-width: 992px) {
   .sidebar-active {
-    margin-right: 320px;
+    padding-right: 320px;
   }
 }
 .sidebar {
@@ -3092,7 +3102,7 @@ mark.search-keyword {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #fb717a;
+  background: #ff2b9e;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -3126,6 +3136,9 @@ h2 {
 }
 h3 {
   font-size: 18px;
+}
+h4 {
+  font-size: 16px;
 }
 .posts-expand .home .post-title,
 .posts-expand .home .post-meta {

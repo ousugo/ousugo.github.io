@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.3.0">
+<meta name="generator" content="Hexo 5.4.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
@@ -19,14 +19,11 @@
 
 
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
-<script class="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"asurada.zone","root":"/","images":"/images","scheme":"Muse","version":"8.2.0","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}};
-  </script>
+<script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;asurada.zone&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Muse&quot;,&quot;version&quot;:&quot;8.5.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;right&quot;,&quot;display&quot;:&quot;hide&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:true,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:true,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;},&quot;path&quot;:&quot;&#x2F;search.xml&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:3,&quot;unescape&quot;:false,&quot;preload&quot;:false}}</script><script src="/js/config.js"></script>
 <meta name="description" content="为什么想要双部署中文博客的受众肯定是以国内为主，但部署在 Github Pages 上，服务器在国外，国内访问的速度太不稳定，如果一个页面需要将近十秒才能完全打开的话，用户体验差，页面被提前关闭的概率也会呈指数级上升。所以改善国内访问体验迫在眉睫。 之前也想过直接使用 CDN 直接加速 GitHub Pages 的方式，但国内的 CDN 全部要求域名进行备案，嫌麻烦就放弃了。最后选择通过将博客同时">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo 博客 GitHub Pages + CODING 静态网站双部署">
@@ -75,17 +72,10 @@
 <link rel="canonical" href="https://asurada.zone/post/Deploy-Hexoblog-To-Codingnet-And-GitHub/">
 
 
-<script class="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-CN'
-  };
-</script>
-  <meta name="360-site-verification" content="68099c4ac6f6f63bfe250dd357c1d4e1"/>
 
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;asurada.zone&#x2F;post&#x2F;Deploy-Hexoblog-To-Codingnet-And-GitHub&#x2F;&quot;,&quot;path&quot;:&quot;post&#x2F;Deploy-Hexoblog-To-Codingnet-And-GitHub&#x2F;&quot;,&quot;title&quot;:&quot;Hexo 博客 GitHub Pages + CODING 静态网站双部署&quot;}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
 <title>Hexo 博客 GitHub Pages + CODING 静态网站双部署 | Asurada's Zone</title>
   
 
@@ -93,41 +83,11 @@
 
   <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "79b221dbf13b4720a61e24cae7d37a7f"}'></script>
 
+  <meta name="360-site-verification" content="68099c4ac6f6f63bfe250dd357c1d4e1"/>
+
   <noscript>
-  <style>
-  body { margin-top: 2rem; }
-
-  .use-motion .menu-item,
-  .use-motion .sidebar,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header {
-    visibility: visible;
-  }
-
-  .use-motion .header,
-  .use-motion .site-brand-container .toggle,
-  .use-motion .footer { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle,
-  .use-motion .custom-logo-image {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line {
-    transform: scaleX(1);
-  }
-
-  .search-pop-overlay, .sidebar-nav { display: none; }
-  .sidebar-panel { display: block; }
-  </style>
-</noscript>
-
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
 <link rel="alternate" href="/atom.xml" title="Asurada's Zone" type="application/atom+xml">
 </head>
 
@@ -270,7 +230,7 @@
       </span>
   </div>
   <div class="cc-license site-overview-item animated" itemprop="license">
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
   </div>
 
 
@@ -285,7 +245,7 @@
     </header>
 
     
-  <div class="back-to-top" role="button">
+  <div class="back-to-top" role="button" aria-label="返回顶部">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -387,7 +347,7 @@
         <h2 id="为什么想要双部署"><a href="#为什么想要双部署" class="headerlink" title="为什么想要双部署"></a>为什么想要双部署</h2><p>中文博客的受众肯定是以国内为主，但部署在 Github Pages 上，服务器在国外，国内访问的速度太不稳定，如果一个页面需要将近十秒才能完全打开的话，用户体验差，页面被提前关闭的概率也会呈指数级上升。所以改善国内访问体验迫在眉睫。</p>
 <p>之前也想过直接使用 CDN 直接加速 GitHub Pages 的方式，但国内的 CDN 全部要求域名进行备案，嫌麻烦就放弃了。最后选择通过将博客同时部署到 GitHub 和 CODING 的方式来提升国内访问体验。</p>
 <p>CODING 在 19 年年底进行了一次比较大的改版，双部署的整个流程也有了不小的变化，而网络上很多教程大部分都还是基于旧版流程的。本文详细记载了将博客同时部署到 GitHub Pages 和 CODING 静态网站服务的全流程。</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <h2 id="CODING-配置"><a href="#CODING-配置" class="headerlink" title="CODING 配置"></a>CODING 配置</h2><h3 id="注册-CODING-账号"><a href="#注册-CODING-账号" class="headerlink" title="注册 CODING 账号"></a>注册 CODING 账号</h3><p>2019 年 12 月 28 日以后，CODING 统一了入口，不再区分个人版与否，具体的升级详情可以查看<a target="_blank" rel="noopener" href="https://coding.net/products/upgrade">官方通知</a>。升级后的 CODING 会增加「团队/组织」的管理概念，注册的时候必须先创建一个团队，这个和平常的注册稍有些不同，需要注意一下。<a target="_blank" rel="noopener" href="https://coding.net/">点击跳转 CODING 官网</a>。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Coding%E6%B3%A8%E5%86%8C%E7%95%8C%E9%9D%A2.png" alt="CODING 注册界面"></p>
@@ -409,6 +369,7 @@
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E9%A1%B9%E7%9B%AESSH%E9%93%BE%E6%8E%A5.png" alt="CODING 项目 SSH 链接"></p>
 <p>打开博客根目录下的站点配置文件 <code>_config.yml</code> ，修改其中的 <code>deploy</code> 区域，将刚复制的 SSH 链接新增进去：</p>
 <figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  - type: git</span><br><span class="line">    repo: git@github.com:ousugo/ousugo.github.io.git</span><br><span class="line">    branch: master</span><br><span class="line"><span class="addition">+ - type: git</span></span><br><span class="line"><span class="addition">+   repo: git@e.coding.net:asuradazone/asurada/asurada.git</span></span><br><span class="line"><span class="addition">+   branch: master    </span></span><br></pre></td></tr></table></figure>
+
 <h3 id="部署代码到-CODING"><a href="#部署代码到-CODING" class="headerlink" title="部署代码到 CODING"></a>部署代码到 CODING</h3><p><code>_config.yml</code> 文件修改完成后，执行 <code>hexo d</code> 命令进行部署，此时 Hexo 就会根据设置同时将博客部署到 GitHub 和 CODING 上面。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%88%90%E5%8A%9F%E9%83%A8%E7%BD%B2%E5%88%B0CODING.png" alt="成功部署到 CODING"></p>
 <p>此时再进入 CODING 上的项目，能看到刚才还是空的仓库现在已经有源代码了，说明部署是成功的。</p>
@@ -439,8 +400,8 @@
 <p>登录到 <a target="_blank" rel="noopener" href="https://www.namesilo.com/account_home.php">NameSilo 后台</a>，在「Account Options」中选择「<a target="_blank" rel="noopener" href="https://www.namesilo.com/account_domains.php">domain manager</a>」，选中想要进行修改的域名，点击上方「Change Nameservers」图标。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/NameSilo%E4%BF%AE%E6%94%B9%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%9C%8D%E5%8A%A1.png" alt="NameSilo 修改域名解析服务"></p>
 <p>将默认的 DNS 服务器地址修改为下面的 DNSPod 提供的 DNS 服务器地址，然后提交修改。 </p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">f1g1ns1</span><span class="selector-class">.dnspod</span><span class="selector-class">.net</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">f1g1ns2</span><span class="selector-class">.dnspod</span><span class="selector-class">.net</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">f1g1ns1.dnspod.<span class="built_in">net</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">f1g1ns2.dnspod.<span class="built_in">net</span></span><br></pre></td></tr></table></figure>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E4%BF%AE%E6%94%B9%E5%9F%9F%E5%90%8D%E6%9C%8D%E5%8A%A1%E5%95%86%E4%B8%BADNSPod.png" alt="修改域名服务商为 DNSPod"></p>
 <p>DNS 域名解析服务的修改后需要等待全球递归 DNS 服务器的刷新，所以需要耐心等待一会儿，大概十分钟左右。修改生效后再手动刷新 DNSPod 的状态，<strong>注意不是刷新页面</strong>，而是点击「DNS 错误」旁边的感叹号获取新状态，此时应该状态会变为「正常」。状态正常后，点击域名，进入「记录管理」。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E7%8A%B6%E6%80%81%E6%AD%A3%E5%B8%B8.png" alt="DNSPod 显示状态正常"></p>
@@ -518,10 +479,10 @@
 
           
 
-<!-- JS�� clipboard �����������ݵ�ճ����-->
+<!-- JS库 clipboard 用来拷贝内容到粘贴板-->
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
 
-<!-- JS�� sweetalert ������ʾ��ʾ��Ϣ-->
+<!-- JS库 sweetalert 用来显示提示信息-->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
 
 <div class="post-copyright">
@@ -536,7 +497,7 @@
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
       <a href="https://asurada.zone/post/Deploy-Hexoblog-To-Codingnet-And-GitHub/" title="Hexo 博客 GitHub Pages + CODING 静态网站双部署">https://asurada.zone/post/Deploy-Hexoblog-To-Codingnet-And-GitHub/</a>
-    <span class="copy-path" title="������� Markdown ��������"
+    <span class="copy-path" title="点击复制 Markdown 引用链接"
       ><i
         style="cursor: pointer"
         class="fas fa-copy"
@@ -630,28 +591,6 @@
     <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
   </div>
   
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      const commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
 </div>
   </main>
 
@@ -682,7 +621,7 @@
   </span>
 </div>
 <div class="busuanzi-count">
-    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
       </span>
@@ -690,7 +629,7 @@
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
       </span>
@@ -699,20 +638,20 @@
       </span>
     </span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
     </div>
   </footer>
 
   
-  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
   
-<script src="/js/local-search.js"></script>
+<script src="/js/third-party/search/local-search.js"></script>
 
 
 
@@ -723,111 +662,14 @@
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
-<script>
-  (function() {
-    function leancloudSelector(url) {
-      url = encodeURI(url);
-      return document.getElementById(url).querySelector('.leancloud-visitors-count');
-    }
-
-    function addCount(Counter) {
-      const visitors = document.querySelector('.leancloud_visitors');
-      const url = decodeURI(visitors.id);
-      const title = visitors.dataset.flagTitle;
-
-      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
-        .then(response => response.json())
-        .then(({ results }) => {
-          if (results.length > 0) {
-            const counter = results[0];
-            leancloudSelector(url).innerText = counter.time + 1;
-            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
-              .catch(error => {
-                console.error('Failed to save visitor count', error);
-              });
-          } else {
-              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
-              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
-            
-          }
-        })
-        .catch(error => {
-          console.error('LeanCloud Counter Error', error);
-        });
-    }
-
-    function showTime(Counter) {
-      const visitors = document.querySelectorAll('.leancloud_visitors');
-      const entries = [...visitors].map(element => {
-        return decodeURI(element.id);
-      });
-
-      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
-        .then(response => response.json())
-        .then(({ results }) => {
-          for (let url of entries) {
-            const target = results.find(item => item.url === url);
-            leancloudSelector(url).innerText = target ? target.time : 0;
-          }
-        })
-        .catch(error => {
-          console.error('LeanCloud Counter Error', error);
-        });
-    }
-
-    const { app_id, app_key, server_url } = {"enable":true,"app_id":"4vfEy99japeGiK3jxqcgHcu8-gzGzoHsz","app_key":"yYFGTuwlmpBBiYpFGCtpz15K","server_url":"https://4vfey99j.lc-cn-n1-shared.com","security":true};
-    function fetchData(api_server) {
-      const Counter = (method, url, data) => {
-        return fetch(`${api_server}/1.1${url}`, {
-          method,
-          headers: {
-            'X-LC-Id'     : app_id,
-            'X-LC-Key'    : app_key,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        });
-      };
-      if (CONFIG.page.isPost) {
-        if (CONFIG.hostname !== location.hostname) return;
-        addCount(Counter);
-      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
-        showTime(Counter);
-      }
-    }
-
-    const api_server = app_id.slice(-9) === '-MdYXbMMI' ? `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com` : server_url;
-
-    if (api_server) {
-      fetchData(api_server);
-    } else {
-      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
-        .then(response => response.json())
-        .then(({ api_server }) => {
-          fetchData('https://' + api_server);
-        });
-    }
-  })();
-</script>
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{&quot;enable&quot;:true,&quot;app_id&quot;:&quot;4vfEy99japeGiK3jxqcgHcu8-gzGzoHsz&quot;,&quot;app_key&quot;:&quot;yYFGTuwlmpBBiYpFGCtpz15K&quot;,&quot;server_url&quot;:&quot;https:&#x2F;&#x2F;4vfey99j.lc-cn-n1-shared.com&quot;,&quot;security&quot;:true}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js"></script>
 
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css" integrity="sha256-GxdCIOyfxQ1OBfS99qAIJDoGK1ADuBsxhMTqXG82fAY=" crossorigin="anonymous">
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css">
-
-<script>
-NexT.utils.loadComments('#disqus_thread', () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqus.js', () => {
-    window.dsqjs = new DisqusJS({
-      api       : 'https://disqus.skk.moe/disqus/' || 'https://disqus.com/api/',
-      apikey    : 'DbeRjZ9TqROzDs1OJ4lf28EXNb9CM0dbyrq1jtrK8AznU5hQdEVAyTXPr5kh4XcH',
-      shortname : 'asuradazone',
-      url       : "https://asurada.zone/post/Deploy-Hexoblog-To-Codingnet-And-GitHub/",
-      identifier: "post/Deploy-Hexoblog-To-Codingnet-And-GitHub/",
-      title     : "Hexo 博客 GitHub Pages + CODING 静态网站双部署",
-    });
-  }, window.DisqusJS);
-});
-</script>
+<script class="next-config" data-name="disqusjs" type="application/json">{&quot;enable&quot;:true,&quot;api&quot;:&quot;https:&#x2F;&#x2F;disqus.skk.moe&#x2F;disqus&#x2F;&quot;,&quot;apikey&quot;:&quot;DbeRjZ9TqROzDs1OJ4lf28EXNb9CM0dbyrq1jtrK8AznU5hQdEVAyTXPr5kh4XcH&quot;,&quot;shortname&quot;:&quot;asuradazone&quot;,&quot;js&quot;:{&quot;url&quot;:&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;disqusjs@1.3.0&#x2F;dist&#x2F;disqus.js&quot;,&quot;integrity&quot;:&quot;sha256-LVaMHPQ2zLqOc5rXSAfr4d1PIkEGNLyyUTDNPZmTtUw&#x3D;&quot;}}</script>
+<script src="/js/third-party/comments/disqusjs.js"></script>
 
 </body>
 </html>
