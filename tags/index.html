@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 5.4.0">
 
@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;asurada.zone&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Muse&quot;,&quot;version&quot;:&quot;8.5.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;right&quot;,&quot;display&quot;:&quot;hide&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:true,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:true,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;},&quot;path&quot;:&quot;&#x2F;search.xml&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:3,&quot;unescape&quot;:false,&quot;preload&quot;:false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"asurada.zone","root":"/","images":"/images","scheme":"Muse","version":"8.6.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 <meta name="description" content="一个嵌入式工程师的简单分享">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Asurada&#39;s Zone">
@@ -42,9 +42,9 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:false,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:&quot;&quot;,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;asurada.zone&#x2F;tags&#x2F;index.html&quot;,&quot;path&quot;:&quot;tags&#x2F;index.html&quot;,&quot;title&quot;:&quot;&quot;}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"https://asurada.zone/tags/index.html","path":"tags/index.html","title":""}</script>
 
-<script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
+<script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>标签 | Asurada's Zone
 </title>
   
@@ -161,7 +161,8 @@
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-overview">
+            <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="Asurada"
       src="https://avatars2.githubusercontent.com/u/43401755?s=460&v=4">
   <p class="site-author-name" itemprop="name">Asurada</p>
@@ -204,6 +205,7 @@
 
 
 
+          </div>
         </div>
       </div>
     </div>
@@ -330,19 +332,17 @@
 
 
 
-
-
   
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
-  <script class="next-config" data-name="leancloud_visitors" type="application/json">{&quot;enable&quot;:true,&quot;app_id&quot;:&quot;4vfEy99japeGiK3jxqcgHcu8-gzGzoHsz&quot;,&quot;app_key&quot;:&quot;yYFGTuwlmpBBiYpFGCtpz15K&quot;,&quot;server_url&quot;:&quot;https:&#x2F;&#x2F;4vfey99j.lc-cn-n1-shared.com&quot;,&quot;security&quot;:true}</script>
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"4vfEy99japeGiK3jxqcgHcu8-gzGzoHsz","app_key":"yYFGTuwlmpBBiYpFGCtpz15K","server_url":"https://4vfey99j.lc-cn-n1-shared.com","security":true}</script>
   <script src="/js/third-party/statistics/lean-analytics.js"></script>
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css" integrity="sha256-GxdCIOyfxQ1OBfS99qAIJDoGK1ADuBsxhMTqXG82fAY=" crossorigin="anonymous">
 
-<script class="next-config" data-name="disqusjs" type="application/json">{&quot;enable&quot;:true,&quot;api&quot;:&quot;https:&#x2F;&#x2F;disqus.skk.moe&#x2F;disqus&#x2F;&quot;,&quot;apikey&quot;:&quot;DbeRjZ9TqROzDs1OJ4lf28EXNb9CM0dbyrq1jtrK8AznU5hQdEVAyTXPr5kh4XcH&quot;,&quot;shortname&quot;:&quot;asuradazone&quot;,&quot;js&quot;:{&quot;url&quot;:&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;disqusjs@1.3.0&#x2F;dist&#x2F;disqus.js&quot;,&quot;integrity&quot;:&quot;sha256-LVaMHPQ2zLqOc5rXSAfr4d1PIkEGNLyyUTDNPZmTtUw&#x3D;&quot;}}</script>
+<script class="next-config" data-name="disqusjs" type="application/json">{"enable":true,"api":"https://disqus.skk.moe/disqus/","apikey":"DbeRjZ9TqROzDs1OJ4lf28EXNb9CM0dbyrq1jtrK8AznU5hQdEVAyTXPr5kh4XcH","shortname":"asuradazone","js":{"url":"https://cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqus.js","integrity":"sha256-LVaMHPQ2zLqOc5rXSAfr4d1PIkEGNLyyUTDNPZmTtUw="}}</script>
 <script src="/js/third-party/comments/disqusjs.js"></script>
 
 </body>
