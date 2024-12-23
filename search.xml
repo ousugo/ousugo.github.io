@@ -1,6 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>通过 Microsoft Store 购买 Win10 专业版小记</title>
+    <url>/post/Buy-WindowsPro-License/</url>
+    <content><![CDATA[<p>通过 Windows 10 自带的 Microsoft Store 购买非常方便。</p>
+<span id="more"></span>
+
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>双十一的时候自己组装了一台主机，在安装操作系统的时候直接安装的 Windows 10 专业版。之前自己的笔记本是从 Windows 8.1 升级成 Windows 10，自动就激活并绑定了数字许可证，但自己组装的主机就需要考虑操作系统购买的问题了。</p>
+<p>在不激活的情况下用了一段时间，除了不能换壁纸等个性化操作以及右下角时不时显示一个未激活水印，好像也没有多大的限制。</p>
+<p>之前我从网上简单了解到的以及微软官网上显示的，都是专业版只限企业购买，还需要电话联系销售，我看着好像还挺麻烦的样子。但实际操作下来，发现还是自己信息太闭塞，购买起来其实非常简单，直接通过自带的 Microsoft Store 应用购买即可。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%AE%98%E7%BD%91%E8%B4%AD%E4%B9%B0%E5%8F%AA%E9%99%90%E4%BC%81%E4%B8%9A.png" alt="官网显示只限企业购买"></p>
+<h2 id="购买流程"><a href="#购买流程" class="headerlink" title="购买流程"></a>购买流程</h2><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9C%AA%E6%BF%80%E6%B4%BB.png" alt="未激活界面"></p>
+<p>在 Windows10 设置的「激活」页面直接有转到 Microsoft Store 购买的选项，点击会直接打开自带的 Microsoft Store 并跳转到专业版的详情界面，价格是 1458 元。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/MicrosoftStore%E8%AF%A6%E6%83%85%E7%95%8C%E9%9D%A2.png" alt="MicrosoftStore详情界面"></p>
+<p>点击「购买」，会先通过微软账户密码确认你的身份，我开启了 Windows Hello 摄像头，直接看一眼摄像头就确认了。</p>
+<p>之前买软件的时候已经在 Microsoft Store 中绑定过支付宝的免密支付，所以我的默认支付方式就直接是支付宝。Windows 10 专业版销售商我这里显示的是「杭州网易增盈科技有限公司」，不知道怎么和网易扯上了关系。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%B4%AD%E4%B9%B0%E7%A1%AE%E8%AE%A4%E7%95%8C%E9%9D%A2.png" alt="购买确认界面"></p>
+<p>最后再点击一次「购买」，支付宝自动完成扣款，加载片刻，Windows 自动激活，显示「Windows 已使用与 Microsoft 账户关联的数字许可证激活」，至此就激活完成了。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%B7%B2%E6%BF%80%E6%B4%BB.png" alt="已激活"></p>
+<h2 id="更换硬件后如何激活"><a href="#更换硬件后如何激活" class="headerlink" title="更换硬件后如何激活"></a>更换硬件后如何激活</h2><p>根据微软官网的信息，在 Windows 10（1607版本或更高版本）中，必须将 Microsoft 帐户与设备上的Windows 10 数字许可证联系起来。通过将 Microsoft 帐户与数字许可证链接起来，以后在进行重大硬件更改，比如换主板的时候，就使用激活疑难解答程序重新激活 Windows。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%93%BE%E6%8E%A5%E5%88%B0Microsoft%E8%B4%A6%E6%88%B7.png" alt="将 Windows 10 数字许可证链接到 Microsoft 帐户"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>整个过程非常简单，购买体验挺好。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://support.microsoft.com/zh-cn/windows/%E5%9C%A8%E6%9B%B4%E6%8D%A2%E7%A1%AC%E4%BB%B6%E5%90%8E%E9%87%8D%E6%96%B0%E6%BF%80%E6%B4%BB-windows-10-2c0e962a-f04c-145b-6ead-fb3fc72b6665">在更换硬件后重新激活 Windows 10</a></p>
+]]></content>
+      <categories>
+        <category>小事</category>
+      </categories>
+      <tags>
+        <tag>正版</tag>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo 博客 GitHub Pages + CODING 静态网站双部署</title>
+    <url>/post/Deploy-Hexoblog-To-Codingnet-And-GitHub/</url>
+    <content><![CDATA[<h2 id="为什么想要双部署"><a href="#为什么想要双部署" class="headerlink" title="为什么想要双部署"></a>为什么想要双部署</h2><p>中文博客的受众肯定是以国内为主，但部署在 Github Pages 上，服务器在国外，国内访问的速度太不稳定，如果一个页面需要将近十秒才能完全打开的话，用户体验差，页面被提前关闭的概率也会呈指数级上升。所以改善国内访问体验迫在眉睫。</p>
+<p>之前也想过直接使用 CDN 直接加速 GitHub Pages 的方式，但国内的 CDN 全部要求域名进行备案，嫌麻烦就放弃了。最后选择通过将博客同时部署到 GitHub 和 CODING 的方式来提升国内访问体验。</p>
+<p>CODING 在 19 年年底进行了一次比较大的改版，双部署的整个流程也有了不小的变化，而网络上很多教程大部分都还是基于旧版流程的。本文详细记载了将博客同时部署到 GitHub Pages 和 CODING 静态网站服务的全流程。</p>
+<span id="more"></span>
+
+<h2 id="CODING-配置"><a href="#CODING-配置" class="headerlink" title="CODING 配置"></a>CODING 配置</h2><h3 id="注册-CODING-账号"><a href="#注册-CODING-账号" class="headerlink" title="注册 CODING 账号"></a>注册 CODING 账号</h3><p>2019 年 12 月 28 日以后，CODING 统一了入口，不再区分个人版与否，具体的升级详情可以查看<a href="https://coding.net/products/upgrade">官方通知</a>。升级后的 CODING 会增加「团队&#x2F;组织」的管理概念，注册的时候必须先创建一个团队，这个和平常的注册稍有些不同，需要注意一下。<a href="https://coding.net/">点击跳转 CODING 官网</a>。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Coding%E6%B3%A8%E5%86%8C%E7%95%8C%E9%9D%A2.png" alt="CODING 注册界面"></p>
+<h3 id="创建-CODING-项目"><a href="#创建-CODING-项目" class="headerlink" title="创建 CODING 项目"></a>创建 CODING 项目</h3><p>注册成功以后，进入「项目」–&gt; 「创建项目」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.png" alt="CODING 创建项目"></p>
+<p>选择「代码托管项目」，只需填写项目名称，其他都保持空白和默认即可。注意<strong>不要勾选</strong>「公开源代码」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%88%9B%E5%BB%BA%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1%E9%A1%B9%E7%9B%AE.png" alt="创建代码托管项目"></p>
+<h3 id="CODING-配置-SSH-公钥"><a href="#CODING-配置-SSH-公钥" class="headerlink" title="CODING 配置 SSH 公钥"></a>CODING 配置 SSH 公钥</h3><p>SSH 密钥设置的路径为 「右上角个人头像」–&gt;「个人账户设置」–&gt; 「SSH 公钥」–&gt; 「新增公钥」。</p>
+<div class="note info"><p>SSH 公钥默认存放在 <code>C:\Users\用户名\.ssh</code> 目录下的 <code>id_rsa.pub</code> 文件里，用记事本打开并复制其内容即可。</p>
+</div>
+
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Coding%E6%96%B0%E5%A2%9ESSH%E5%AF%86%E9%92%A5.png" alt="CODING 新增SSH密钥"></p>
+<p>新增密钥是敏感操作，所以在新增密钥的时候，CODING 会要求验证密码才能添加，需要注意的是这里要求验证的是<strong>服务密码</strong>，而不是登录密码。如果没有事先设置服务密码的话，需要先在「个人设置」–&gt; 「服务密码」进行设置。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E6%9C%8D%E5%8A%A1%E5%AF%86%E7%A0%81.png" alt="CODING 设置服务密码"></p>
+<p>添加公钥后，打开 <code>Git Bash</code>，使用以下命令验证是否配置成功：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh -T git@e.coding.net</span><br></pre></td></tr></table></figure>
+<p>因为是第一次进行连接，所以需要输入 <code>yes</code> 来确认进行连接。配置成功，会出现如下图所示的提示：<br><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CodingSSH%E9%AA%8C%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="CODING SSH 验证成功提示"></p>
+<h2 id="部署-CODING「静态网站」"><a href="#部署-CODING「静态网站」" class="headerlink" title="部署 CODING「静态网站」"></a>部署 CODING「静态网站」</h2><h3 id="配置站点配置文件-config-yml"><a href="#配置站点配置文件-config-yml" class="headerlink" title="配置站点配置文件 _config.yml"></a>配置站点配置文件 _config.yml</h3><p>进入到 CODING 上刚才新建的项目里面，选择「代码仓库」，可以看到此时代码仓库还是空的，选择「SSH」链接方式并复制链接。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E9%A1%B9%E7%9B%AESSH%E9%93%BE%E6%8E%A5.png" alt="CODING 项目 SSH 链接"></p>
+<p>打开博客根目录下的站点配置文件 <code> _config.yml</code> ，修改其中的 <code>deploy</code> 区域，将刚复制的 SSH 链接新增进去：</p>
+<figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  - type: git</span><br><span class="line">    repo: git@github.com:ousugo/ousugo.github.io.git</span><br><span class="line">    branch: master</span><br><span class="line"><span class="addition">+ - type: git</span></span><br><span class="line"><span class="addition">+   repo: git@e.coding.net:asuradazone/asurada/asurada.git</span></span><br><span class="line"><span class="addition">+   branch: master    </span></span><br></pre></td></tr></table></figure>
+
+<h3 id="部署代码到-CODING"><a href="#部署代码到-CODING" class="headerlink" title="部署代码到 CODING"></a>部署代码到 CODING</h3><p><code> _config.yml</code> 文件修改完成后，执行 <code>hexo d</code> 命令进行部署，此时 Hexo 就会根据设置同时将博客部署到 GitHub 和 CODING 上面。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%88%90%E5%8A%9F%E9%83%A8%E7%BD%B2%E5%88%B0CODING.png" alt="成功部署到 CODING"></p>
+<p>此时再进入 CODING 上的项目，能看到刚才还是空的仓库现在已经有源代码了，说明部署是成功的。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81.png" alt="CODING 项目源码"></p>
+<h3 id="项目启用「持续部署」功能"><a href="#项目启用「持续部署」功能" class="headerlink" title="项目启用「持续部署」功能"></a>项目启用「持续部署」功能</h3><p>CODING 改版后，开启 Pages 服务的方法有了较大的变化，连名字都改了，现在已经不叫「Pages 服务」，而是改叫「静态网站」了。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Pages%E6%94%B9%E5%90%8D.png" alt="Pages 服务改名"></p>
+<p>「静态网站」是「持续部署」下面的一个子功能，而「持续部署」功能默认是没有开启的，需要我们自行启用。启用路径为项目左下角「项目设置」–&gt;「项目与成员」–&gt;「功能开关」–&gt;「持续部署」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%90%AF%E7%94%A8%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2%E5%8A%9F%E8%83%BD.png" alt="启用持续部署功能"></p>
+<p>「持续部署」功能开启后，就可以在它下面找到「静态网站」了。为了后续方便操作，还可以点击「静态网站」字样右边的按钮将其固定到项目选项顶部。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%85%A5%E5%8F%A3.png" alt="静态网站入口"></p>
+<h3 id="实名认证"><a href="#实名认证" class="headerlink" title="实名认证"></a>实名认证</h3><p>CODING 现在要求是必须先进行实名认证以后才能使用「静态网站」的服务，实名认证的入口在「右上角头像」–&gt;「团队管理」–&gt;「团队设置」–&gt;「高级设置」里面，藏得有点深。</p>
+<p>如果<strong>没有绑定手机号</strong>的话，需要先绑定手机号才能进行实名认证，反正现在基本想要使用国内的服务，实名认证基本是跑不掉的。输入姓名和身份证号码即可完成认证。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%AE%9E%E5%90%8D%E8%AE%A4%E8%AF%81.png" alt="实名认证"></p>
+<h3 id="发布静态网站"><a href="#发布静态网站" class="headerlink" title="发布静态网站"></a>发布静态网站</h3><p>实名认证完成后，点击「立即发布静态网站」，填写「网站名称」，「触发机制」默认为「自动触发」，此后每次同步代码到 <code>master</code> 分支时，网站即会自动部署。所有设置保持默认即可，然后点击「保存」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE.png" alt="静态网站设置"></p>
+<p>设置保存后，刷新页面，会看到 CODING 已经自动生成了网站的访问链接，不过现在网站还没有正式部署，还需要我们点击「立即部署」来部署网站。部署完成后就可以点击链接查看网站部署效果了，应该同部署到 GitHub Pages 是同样的效果。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99.png" alt="部署静态网站"></p>
+<h2 id="绑定自定义域名"><a href="#绑定自定义域名" class="headerlink" title="绑定自定义域名"></a>绑定自定义域名</h2><p>我的自定义域名是在 <a href="https://www.namesilo.com/">NmaeSilo</a> 买的，主要优点有：</p>
+<ol>
+<li>支持支付宝付款</li>
+<li>赠送 WHOIS 域名隐私保护</li>
+<li>第一年价格相对实惠</li>
+</ol>
+<p>如果有同学也考虑在 <a href="https://www.namesilo.com/">NmaeSilo</a> 购买域名，欢迎使用我的优惠码 <code>Asurada </code>，可以优惠一美元。</p>
+<h3 id="修改域名解析服务到-DNSPod"><a href="#修改域名解析服务到-DNSPod" class="headerlink" title="修改域名解析服务到 DNSPod"></a>修改域名解析服务到 DNSPod</h3><p>之前博客只部署在 GitHub Pages 上时，因为不需要考虑国内外解析分流，所以我直接使用的是 NameSilo 默认的域名解析服务。现在博客分别部署在 GitHub 和 CODING 上了，我希望将国外的流量解析到 GitHub，国内的流量则解析到 CODING，但 NameSilo 默认的域名解析服务并不能实现国内外流量的区分，所以需要更换域名解析服务商。</p>
+<p>我日常使用腾讯云比较多，所以选择了腾讯旗下的 <a href="dnspod.cn">DNSPod</a>，账号和腾讯云是通用的，直接微信扫码即可登录。登录到 <a href="console.dnspod.cn">DNSPod 控制台</a>，在「DNS 解析」–&gt;「我的域名」里添加想要解析的域名。因为还没有修改域名注册商那边的设置，所以现在显示的状态还是「DNS 错误」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D.png" alt="DNSPod 添加域名"></p>
+<p>登录到 <a href="https://www.namesilo.com/account_home.php">NameSilo 后台</a>，在「Account Options」中选择「<a href="https://www.namesilo.com/account_domains.php">domain manager</a>」，选中想要进行修改的域名，点击上方「Change Nameservers」图标。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/NameSilo%E4%BF%AE%E6%94%B9%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%9C%8D%E5%8A%A1.png" alt="NameSilo 修改域名解析服务"></p>
+<p>将默认的 DNS 服务器地址修改为下面的 DNSPod 提供的 DNS 服务器地址，然后提交修改。 </p>
+<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">f1g1ns1.dnspod.<span class="built_in">net</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">f1g1ns2.dnspod.<span class="built_in">net</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E4%BF%AE%E6%94%B9%E5%9F%9F%E5%90%8D%E6%9C%8D%E5%8A%A1%E5%95%86%E4%B8%BADNSPod.png" alt="修改域名服务商为 DNSPod"></p>
+<p>DNS 域名解析服务的修改后需要等待全球递归 DNS 服务器的刷新，所以需要耐心等待一会儿，大概十分钟左右。修改生效后再手动刷新 DNSPod 的状态，<strong>注意不是刷新页面</strong>，而是点击「DNS 错误」旁边的感叹号获取新状态，此时应该状态会变为「正常」。状态正常后，点击域名，进入「记录管理」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E7%8A%B6%E6%80%81%E6%AD%A3%E5%B8%B8.png" alt="DNSPod 显示状态正常"></p>
+<h3 id="DNSPod-解析记录设置"><a href="#DNSPod-解析记录设置" class="headerlink" title="DNSPod 解析记录设置"></a>DNSPod 解析记录设置</h3><p>先简单介绍一下 <code>A 记录</code> 和 <code>CNAME 记录</code> 的作用：</p>
+<blockquote>
+<p>如果需要将域名指向一个 IP 地址，就需要添加A记录；</p>
+<p>如果需要将域名指向另一个域名，再由另一个域名提供 IP 地址，就需要添加 CNAME 记录。</p>
+</blockquote>
+<p>我们一共添加五条解析记录，其中三条境外，两条境内，具体记录如下：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95.png" alt="DNSPod解析记录"></p>
+<p>第一条记录类型为 <code>A</code>，主机记录为 <code>@</code>，解析线路选择<code>默认</code>，记录值为 CODING 静态网站的 IP 地址，可以使用 <code>ping</code> 命令查询得到。比如 CODING 替我自动生成的网站访问地址为 <code>http://quj3xn.coding-pages.com/</code>，打开 <code>cmd</code>，输入 <code>ping quj3xn.coding-pages.com</code>，就可以得到 CODING 静态网站的 IP 地址，我的是<code>124.156.205.241</code>， <code>TTL</code> 的话，免费版最小只能填 600。这条解析记录的意思是将从境内访问 <code>asurada.zone</code> 的流量解析到 <code>124.156.205.241</code>。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%8E%B7%E5%8F%96IP%E5%9C%B0%E5%9D%80.png" alt="获取 IP 地址"></p>
+<p>第二条记录类型为 <code>CNAME</code>，主机记录为 <code>www</code>，解析线路选择<code>默认</code>，记录值为 CODING 自动生成的访问地址，比如我的是 <code>quj3xn.coding-pages.com</code>。这条解析记录的意思是将从境内访问 <code>www.asurada.zone</code> 的流量解析到 <code>quj3xn.coding-pages.com</code>。</p>
+<p>接下来的三条境外解析记录就很好理解了，第三和第五条记录是分别将从境外访问 <code>asurada.zone</code> 的流量解析到 <code>185.199.108.153</code> 和 <code>185.199.109.153</code>，这两个 IP 都是 GitHub Pages 的服务器 IP 地址。第四条记录则是将从境外访问 <code>ww.asurada.zone</code> 的流量解析到 <code>ousugo.github.io</code>。</p>
+<div class="note info"><p>在这一步的时候，为了方便下面开启 CODING 静态网站绑定自定义域名和开启全局 HTTPS，可以先将<strong>境外的三条解析先暂停</strong>，等完成 CODING 自定义域名的绑定并开启 HTTPS 以后再恢复解析。</p>
+</div>
+
+<h3 id="DNSPod「搜索引擎优化」"><a href="#DNSPod「搜索引擎优化」" class="headerlink" title="DNSPod「搜索引擎优化」"></a>DNSPod「搜索引擎优化」</h3><p>在「域名设置」–&gt; 「功能设置」里有一个「搜索引擎优化」功能，默认是关闭的，说是和各大搜索引擎有深度合作，开启后可以优化站点收录，具体原理咱也不知道。但这是一个免费功能，所以不开白不开。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96.png" alt="DNSPod 搜索引擎优化"></p>
+<p>根据官方文档，主流的搜索引擎都在优化范围之内，看上去还是很不错的：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96%E5%90%8D%E5%8D%95.png" alt="DNSPod 搜索引擎优化名单"></p>
+<h3 id="CODING-绑定自定义域名并开启-HTTPS"><a href="#CODING-绑定自定义域名并开启-HTTPS" class="headerlink" title="CODING 绑定自定义域名并开启 HTTPS"></a>CODING 绑定自定义域名并开启 HTTPS</h3><p>进入 CODING 项目的静态网站设置页面，向下滚动找到「自定义域名」的设置项，绑定自定义域名。如果在绑定域名时出现证书申请错误：</p>
+<blockquote>
+<p>申请错误原因是：在验证域名所有权时会定位到 GitHub Pages 的主机上导致 SSL 证书申请失败</p>
+<p>正确的做法是：先去域名 DNS 把 GitHub 的解析暂停掉，然后再重新申请 SSL 证书，大约十秒左右就能申请成功，然后开启强制 HTTPS 访问</p>
+<p>— <a href="https://www.itrhx.com/2019/09/16/A47-hexo-deployed-to-github-and-coding/#5-%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E5%B9%B6%E5%BC%80%E5%90%AF-HPPTS">绑定域名并开启 HPPTS</a></p>
+</blockquote>
+<p>建议同时绑定有 <code>www </code> 前缀和没有 <code>www</code>  前缀的域名，并根据自己的需求将其中一个设为首选域名，另一个<strong>勾选「跳转至首选」选项</strong>，这样可以避免一些第三方服务数据统计不到一起。</p>
+<p>如果两个域名的证书都没有问题的话，点击「强制 HTTPS」按钮即可启用强制 HTTPS 访问。设置完成后，不要忘记去 DNSPod 将之前暂停的 GitHub 解析重新开启。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E7%BB%91%E5%AE%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D.png" alt="CODING 绑定自定义域名"></p>
+<h2 id="成果检验"><a href="#成果检验" class="headerlink" title="成果检验"></a>成果检验</h2><p>至此，我们完成了博客在 GitHub Pages 和 CODING 静态网站服务上的双线部署。</p>
+<p>首先进行 DNS 的查询，可以看见结果正如我们所期望的，从国内访问的时候走的是 CODING 的静态网站服务，而从境外访问的时候走的则是 GitHub Pages。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNS%E8%A7%A3%E6%9E%90%E7%BB%93%E6%9E%9C.png" alt="DNS 解析结果"></p>
+<p>最后自然是喜闻乐见的速度对比，这里使用的是<a href="https://tool.chinaz.com/speedtest.aspx">站长之家的国内网站测速工具</a>。这里我们测试的域名分别是 CODING 和 GitHub <strong>自动生成的网站域名</strong>，多次测试下来，结果稍稍有些出乎我的意料，CODING 并没有如我想象的那样取得全面的、压倒性的速度优势，在部分地区反倒是 GitHub Pages 的访问速度更快。不过在多次测试中，CODING 的<strong>平均响应时间</strong>都比 GitHub 要快上三百到五百毫秒不等。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%80%9F%E5%BA%A6%E5%AF%B9%E6%AF%94.png" alt="速度对比"></p>
+<p>但如果是直接测试自定义域名 <code>asurada.zone</code> 的<strong>国内访问速度</strong>的话，分别设置域名<strong>仅解析</strong>到 CODING 和 GitHub，这时候可以看到解析到 CODING 时的<strong>国内访问速度</strong>明显比解析到 GitHub 时要快上不少。</p>
+<p>我猜测出现这种情况可能是 DNSPod 解析的功劳——当直接使用 <code>quj3xn.coding-pages.com</code> 域名进行测速时，DNS 解析的速度比较慢，进而拖累了整体的访问速度，而当使用自定义域名 <code>asurada.zone</code> 进行测速时，此时由 DNSPod 负责进行域名解析，解析速度比较快，进而加快了整体的访问速度。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E8%A7%A3%E6%9E%90%E5%88%B0CODING.png" alt="解析到 CODING 时的网站访问速度"></p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E8%A7%A3%E6%9E%90%E5%88%B0GITHUB.png" alt="解析到 GitHub 时的网站访问速度"></p>
+<p>我们更在意的自然是使用自定义域名访问时的速度，可以看到双线部署对于自定义域名的国内访问速度的提升效果是非常明显的，这次折腾也算是圆满成功，完结撒花✿✿ヽ(ﾟ▽ﾟ)ノ✿。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://help.coding.net/docs/devops/cd/static-website.html">CODING 静态网站服务官方文档</a></p>
+<p><a href="https://tding.top/archives/e09249d2.html">Hexo 博客部署到 Coding</a></p>
+<p><a href="https://www.itrhx.com/2019/09/16/A47-hexo-deployed-to-github-and-coding/">Hexo 双线部署到 Coding Pages 和 GitHub Pages 并实现全站 HTTPS</a></p>
+]]></content>
+      <categories>
+        <category>个人博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>GitHub</tag>
+        <tag>DNS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CODING Pages 静态网站升级腾讯云新版踩坑小记</title>
+    <url>/post/CODING-Pages-Upgrade-To-TencentCloud/</url>
+    <content><![CDATA[<p>自己的踩坑记录证明域名未备案的同学就不要升级了，新版需要付费，但升级后强制的境外 CDN 加速导致访问速度反而不如旧版快。</p>
+<span id="more"></span>
+
+<h2 id="升级背景"><a href="#升级背景" class="headerlink" title="升级背景"></a>升级背景</h2><p>之前把博客双部署到了 CODING 静态网站和 GitHub Pages，国内的访问速度快了不少。前几天登录 CODING 后台，突然发现多了一个新版升级提醒。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-%E5%90%8E%E5%8F%B0%E5%8D%87%E7%BA%A7%E6%8F%90%E9%86%92.png" alt="升级提醒"></p>
+<p>新版最大的变化就是同腾讯云进行了打通，直接把网站放到了腾讯云的对象存储 COS 上，其他 CDN 加速、SSL 证书管理也是腾讯云的功能。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%8F%98%E5%8C%96.png" alt="新版的变化及优势"></p>
+<h2 id="新版开始收费了"><a href="#新版开始收费了" class="headerlink" title="新版开始收费了"></a>新版开始收费了</h2><blockquote>
+<p>CODING Pages 依托腾讯云资源提供相关静态托管能力，CODING 平台本身不收取任何费用。该产品使用了腾讯云对象存储 COS、内容分发网络 CDN、SSL 证书产品，其中 COS 和 CDN 采用用量计费模式，SSL 证书免费，所使用到的其他相关腾讯云产品本身亦会有一定的免费额度。</p>
+</blockquote>
+<p>新版因为使用了腾讯云的相关资料，所以要<strong>开始收费</strong>了。对于收费，我是能够接受的，前提是能够提供比免费更好的服务。我的图床就是使用的腾讯云的对象存储，加载速度很快，一个月几毛钱的费用低得基本可以忽略。</p>
+<h2 id="升级流程"><a href="#升级流程" class="headerlink" title="升级流程"></a>升级流程</h2><p>新版升级界面如下：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8D%87%E7%BA%A7%E8%AE%BE%E7%BD%AE%E7%95%8C%E9%9D%A2.png" alt="新版升级设置界面"></p>
+<p>因为新版是基于腾讯云的，所以升级需要先在腾讯云进行实名认证并授予相关权限。我因为之前图床就是用的腾讯云对象存储，所以已经实名过了。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%8E%88%E6%9D%83.png" alt="腾讯云服务授权"></p>
+<p>之前 CODING Pages 旧版是部署在腾讯云新加坡节点，现在新版部署节点可选香港、北京、上海、广州四个，但未备案域名只能选香港。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%8A%82%E7%82%B9%E9%80%89%E6%8B%A9.png" alt="节点选择提醒"></p>
+<p>添加自定义域名前，需要前往腾讯云开启 CDN 功能，这一步就是我觉得<strong>新版最大的坑</strong>。</p>
+<p>下一步去域名托管商更改解析记录，解析记录值都是指向了 <code>cdn.dnsv1.com</code>，这也是为什么需要开启 CDN 功能的原因。</p>
+<p>部署的时候，「网站类型」我最开始选的是「Hexo」，结果部署失败，部署日志也不知道抽啥风，一直显示不出来，原因也不好排查。我尝试将网站类型改为「静态网站」，重新部署就成功了。</p>
+<h2 id="这-CDN-不能要"><a href="#这-CDN-不能要" class="headerlink" title="这 CDN 不能要"></a>这 CDN 不能要</h2><p>新版升级完成后，立马测了一波速，然后被结果给吓到了，从之前的一片绿油油变成了一片惨淡的黄色，访问速度下降了不止一点半点。这就很费解了，同样都是腾讯云，之前部署在新加坡节点，现在搬到香港节点了，速度不升反降是什么情况。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%BC%80%E5%90%AFCDN%E6%B5%8B%E9%80%9F%E7%BB%93%E6%9E%9C.png" alt="新版开启 CDN 测速结果"></p>
+<p>检查解析 IP，发现域名全都被解析到了德国、爱尔兰、美国，和想象中的香港地址完全不是一回事。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%BC%80%E5%90%AFCDN%E8%A7%A3%E6%9E%90IP%E7%BB%93%E6%9E%9C.png" alt="新版开启 CDN 域名解析结果"></p>
+<p>这种情况我估摸着肯定是 CDN 的锅，去腾讯云后台一检查，发现已经开启的 CDN 设置的服务区域是「中国境外」。我想当然地以为「中国境外」的含义是指只有从国外访问网站的时候才会通过 CDN 访问，国内则是直接访问香港源站，这样虽然国内享受不到 CDN 加速，国外我设置是解析到 GitHub Pages，也用不上，但想着无非就是个鸡肋而已。</p>
+<p>但一查文档，发现自己还是太单纯了：</p>
+<blockquote>
+<p>「中国境外」:全球用户访问均会调度至中国境外的加速节点进行服务。</p>
+</blockquote>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8A%A0%E9%80%9F%E5%8C%BA%E5%9F%9F%E6%96%87%E6%A1%A3%E8%A7%A3%E9%87%8A.png" alt="「中国境外」"></p>
+<p>也就是说，不管是从国内还是国外访问，都会被调度到国外的 CDN 加速节点进行接入，想不经过 CDN 直接访问香港源站都不行。而比较符合我想要的效果的「全球」则需要域名进行备案之后才能开启，未备案域名开启 CDN 的话就<strong>只能选「中国境外」</strong>。</p>
+<p>本来是用来加快访问速度的 CDN，对于使用<strong>未备案域名</strong>的博客来说，已经不仅仅是鸡肋了，反而是拖累。本来直接访问香港就能解决的事情，现在非得绕道德国、爱尔兰、美国才行，这访问速度能快起来才是怪事。</p>
+<h2 id="尝试直连香港源站"><a href="#尝试直连香港源站" class="headerlink" title="尝试直连香港源站"></a>尝试直连香港源站</h2><p>既然这是 CDN 导致的，那我把 CDN 直接给关了，直连香港源站不就行了？</p>
+<h3 id="关闭-CDN"><a href="#关闭-CDN" class="headerlink" title="关闭 CDN"></a>关闭 CDN</h3><p>进入腾讯云后台–&gt;「内容分发网络」–&gt;「域名管理」，关闭 CDN 加速。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91%E5%90%8E%E5%8F%B0%E5%85%B3%E9%97%ADCDN.png" alt="关闭 CDN"></p>
+<h3 id="更改域名解析记录"><a href="#更改域名解析记录" class="headerlink" title="更改域名解析记录"></a>更改域名解析记录</h3><p>在 DNSPod 里将国内访问解析到 CODING 提供的默认访问地址，此时再检查 DNS 解析结果发现就全部都指向了香港的 IP，达到了自己想要的效果。</p>
+<h2 id="致命的证书问题"><a href="#致命的证书问题" class="headerlink" title="致命的证书问题"></a>致命的证书问题</h2><p>设置成直接访问香港源站后，速度果不其然就上来了，比访问新加坡节点速度还要快上一点。但很快就出现了一个更加严重的问题——证书错误。</p>
+<p>新版申请的 SSL 证书是和 CDN 绑定在一起的，在腾讯云的证书管理里面只能部署到 CDN，而我把 CDN 关闭了，现在直接访问的是香港源站。源站的证书是颁给 <code>*.cdn.my.qcloud</code> 的，和我的域名不一致，这就会导致浏览器直接报警说网站不安全，这是不可接受的。我尝试解决这个问题，但无奈水平有限，最后也没能找到解决的办法。如果有知道如何解决证书问题的同学，麻烦指导我一下，不甚感激。</p>
+<p>现在情况就是如果想要实现自定义域名 HTTPS 访问，就需要打开 CDN，打开 CDN 就意味着牺牲访问速度，这还是在 CDN 和 COS 需要付费的情况下。矛盾无法调和，所以最后我只能又<strong>回退到旧版</strong>了，幸好 CODING 目前还没有关闭旧版的入口，给了我一个反悔的机会。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>花了差不多一天的时间，最后还是老老实实回到了旧版，相当于一天白折腾了。域名没有进行备案的话，在国内使用不方便的地方真的太多了。CODING 新版静态网站我觉得对于使用已备案域名的同学来说还是不错的，配置简单，CDN 加速、SSL 证书一步到位。但同样的对于这些同学来说可供选择的方案太多了，免费的也有不少，CODING 的新版并没有太大的吸引力。</p>
+<p>而对于未备案域名的同学新版则非常不友好，完全是<strong>负优化</strong>，完全没有升级的必要，谁会花钱找罪受呢。CODING 工程师说旧版后续会下线，到时候如果自定义域名的问题没有得到改善的话，可能就需要考虑迁移平台了。现在旧版还能用就先用着。</p>
+<p>我向 CODING 反馈了自定义域名的问题，希望能同旧版一样使用 Let’s Encrypt 的证书，不要强行同腾讯云的 CDN 加速绑定在一起，后续如果有进一步的反馈结果的话我会同步到博客中。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://help.coding.net/docs/pages/operating/migrate.html">官方静态网站服务升级指南</a></p>
+]]></content>
+      <categories>
+        <category>个人博客</category>
+      </categories>
+      <tags>
+        <tag>腾讯云</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo 博客主流搜索引擎收录详细指南</title>
     <url>/post/Blog-Search-Engine-Index/</url>
     <content><![CDATA[<p>如果希望自己博客的内容被更多人看到，搜索引擎所带来的流量是不容忽视的。本文详细介绍了如何向各大主流搜索引擎主动提交自己的博客，期望达到加快收录速度的目的。</p>
@@ -162,34 +361,266 @@
       </tags>
   </entry>
   <entry>
-    <title>通过 Microsoft Store 购买 Win10 专业版小记</title>
-    <url>/post/Buy-WindowsPro-License/</url>
-    <content><![CDATA[<p>通过 Windows 10 自带的 Microsoft Store 购买非常方便。</p>
+    <title>RT-Thread RECA学习营（一）——正点原子战舰 V3  RT-Thread BSP 移植</title>
+    <url>/post/RT-Thread_BSP/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近在准备六月份的 RT-Thread 的 <a href="https://www.rt-thread.org/page/rac.html">RECA</a>（RT-Thread开发者能力认证），官方组织了一个学习营，第一周的任务是：</p>
+<blockquote>
+<p>基于 rt-thread4.0.2，能根据BSP制作教程及群里分享的视频《2.RTThread移植》，让自己的板子在RT-Thread上运行起来，了解BSP的制作。</p>
+</blockquote>
+<p>本文并没有将 BSP 移植背后的原理全部弄清楚，只是想着先迈出第一步，不求甚解，先把整个流程给跑通。</p>
 <span id="more"></span>
 
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>双十一的时候自己组装了一台主机，在安装操作系统的时候直接安装的 Windows 10 专业版。之前自己的笔记本是从 Windows 8.1 升级成 Windows 10，自动就激活并绑定了数字许可证，但自己组装的主机就需要考虑操作系统购买的问题了。</p>
-<p>在不激活的情况下用了一段时间，除了不能换壁纸等个性化操作以及右下角时不时显示一个未激活水印，好像也没有多大的限制。</p>
-<p>之前我从网上简单了解到的以及微软官网上显示的，都是专业版只限企业购买，还需要电话联系销售，我看着好像还挺麻烦的样子。但实际操作下来，发现还是自己信息太闭塞，购买起来其实非常简单，直接通过自带的 Microsoft Store 应用购买即可。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%AE%98%E7%BD%91%E8%B4%AD%E4%B9%B0%E5%8F%AA%E9%99%90%E4%BC%81%E4%B8%9A.png" alt="官网显示只限企业购买"></p>
-<h2 id="购买流程"><a href="#购买流程" class="headerlink" title="购买流程"></a>购买流程</h2><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9C%AA%E6%BF%80%E6%B4%BB.png" alt="未激活界面"></p>
-<p>在 Windows10 设置的「激活」页面直接有转到 Microsoft Store 购买的选项，点击会直接打开自带的 Microsoft Store 并跳转到专业版的详情界面，价格是 1458 元。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/MicrosoftStore%E8%AF%A6%E6%83%85%E7%95%8C%E9%9D%A2.png" alt="MicrosoftStore详情界面"></p>
-<p>点击「购买」，会先通过微软账户密码确认你的身份，我开启了 Windows Hello 摄像头，直接看一眼摄像头就确认了。</p>
-<p>之前买软件的时候已经在 Microsoft Store 中绑定过支付宝的免密支付，所以我的默认支付方式就直接是支付宝。Windows 10 专业版销售商我这里显示的是「杭州网易增盈科技有限公司」，不知道怎么和网易扯上了关系。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%B4%AD%E4%B9%B0%E7%A1%AE%E8%AE%A4%E7%95%8C%E9%9D%A2.png" alt="购买确认界面"></p>
-<p>最后再点击一次「购买」，支付宝自动完成扣款，加载片刻，Windows 自动激活，显示「Windows 已使用与 Microsoft 账户关联的数字许可证激活」，至此就激活完成了。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%B7%B2%E6%BF%80%E6%B4%BB.png" alt="已激活"></p>
-<h2 id="更换硬件后如何激活"><a href="#更换硬件后如何激活" class="headerlink" title="更换硬件后如何激活"></a>更换硬件后如何激活</h2><p>根据微软官网的信息，在 Windows 10（1607版本或更高版本）中，必须将 Microsoft 帐户与设备上的Windows 10 数字许可证联系起来。通过将 Microsoft 帐户与数字许可证链接起来，以后在进行重大硬件更改，比如换主板的时候，就使用激活疑难解答程序重新激活 Windows。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%93%BE%E6%8E%A5%E5%88%B0Microsoft%E8%B4%A6%E6%88%B7.png" alt="将 Windows 10 数字许可证链接到 Microsoft 帐户"></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>整个过程非常简单，购买体验挺好。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://support.microsoft.com/zh-cn/windows/%E5%9C%A8%E6%9B%B4%E6%8D%A2%E7%A1%AC%E4%BB%B6%E5%90%8E%E9%87%8D%E6%96%B0%E6%BF%80%E6%B4%BB-windows-10-2c0e962a-f04c-145b-6ead-fb3fc72b6665">在更换硬件后重新激活 Windows 10</a></p>
+<p>我手上的开发板是正点原子的战舰 V3，所以我将基于 RT-Thread 官方的 STM32F1 系列 BSP 通用模板构建战舰 V3 的 BSP。</p>
+<h2 id="下载-RT-Thread-源码"><a href="#下载-RT-Thread-源码" class="headerlink" title="下载 RT-Thread 源码"></a>下载 RT-Thread 源码</h2><p>从<a href="https://www.rt-thread.org/page/download.html">官网</a>下载 RT-Thread 源码，我下载的版本是 V4.0.2。源码目录结构如下：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-RTThread%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95.png" alt="RTThread文件目录"></p>
+<table>
+<thead>
+<tr>
+<th>目录名</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>rt-thread</td>
+<td>RT-Thread 的源文件。</td>
+</tr>
+<tr>
+<td>- bsp</td>
+<td>RT-Thread 官方已经支持的 BSP。</td>
+</tr>
+<tr>
+<td>- components</td>
+<td>RT-Thread 的各个组件目录。</td>
+</tr>
+<tr>
+<td>- documentation</td>
+<td>RT-Thread 相关文档。</td>
+</tr>
+<tr>
+<td>- examples</td>
+<td>RT-Thread 相关例程。</td>
+</tr>
+<tr>
+<td>- include</td>
+<td>RT-Thread 内核的头文件。</td>
+</tr>
+<tr>
+<td>- libcpu</td>
+<td>各类芯片的移植代码，此处包含了 STM32 的移植文件。</td>
+</tr>
+<tr>
+<td>- src</td>
+<td>RT-Thread 内核的源文件。</td>
+</tr>
+<tr>
+<td>- tools</td>
+<td>RT-Thread 命令构建工具的脚本文件。</td>
+</tr>
+</tbody></table>
+<h2 id="复制通用模板"><a href="#复制通用模板" class="headerlink" title="复制通用模板"></a>复制通用模板</h2><p>制作新 BSP 的第一步是复制一份同系列的 BSP 模板作为基础，通过对 BSP 模板的修改来获得新 BSP。战舰 V3 采用的芯片是 STM32F103ZET6，所以我们需要使用 STM32F1 系列的模板。模板位于<code>rt-thread\bsp\stm32\libraries\templates\stm32f10x</code>，BSP 模板文件夹结构如下所示：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/5-BSP%E6%A8%A1%E6%9D%BF%E7%9B%AE%E5%BD%95.png" alt="BSP模板目录"></p>
+<p>拷贝模板文件夹下的 <code>stm32f10x</code> 文件夹到<code>rt-thread\bsp\stm32</code>下，并将该文件夹的名称改为 <code>stm32f1-my-diy</code>，之后我们就在这个文件夹的基础上进行移植。</p>
+<p>在接下来的 BSP 的制作过程中，将会修改 board 文件夹内的配置文件，将 F1 系列的 BSP 模板变成一个适用于正点原子战舰 V3 开发板的 BSP ，下表总结了 board 文件夹中需要修改的内容：</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>需要修改的内容说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CubeMX_Config （文件夹）</td>
+<td>CubeMX 工程</td>
+</tr>
+<tr>
+<td>linker_scripts （文件夹）</td>
+<td>BSP 特定的链接脚本</td>
+</tr>
+<tr>
+<td>board.c&#x2F;h</td>
+<td>系统时钟、GPIO 初始化函数、芯片存储器大小</td>
+</tr>
+<tr>
+<td>Kconfig</td>
+<td>芯片型号、系列、外设资源</td>
+</tr>
+<tr>
+<td>SConscript</td>
+<td>芯片启动文件、目标芯片型号</td>
+</tr>
+</tbody></table>
+<h2 id="安装-CubeMX"><a href="#安装-CubeMX" class="headerlink" title="安装 CubeMX"></a>安装 CubeMX</h2><h3 id="下载-CubeMX"><a href="#下载-CubeMX" class="headerlink" title="下载 CubeMX"></a>下载 CubeMX</h3><p>CubeMX 是基于 eclipse 的一个插件，用来对STM32产品的配置及初始化代码的生成。下载可以去 <a href="https://stmcu.com.cn/">ST 中国站</a> –&gt; 设计资源 –&gt; 固件和软件 –&gt; PC 端软件 –&gt; <a href="https://stmcu.com.cn/Designresource/design_resource_detail?file_name=STM32CubeMX_STM32%E5%88%9D%E5%A7%8B%E5%8C%96%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8&lang=EN&ver=5.6.1">STM32CubeMX</a></p>
+<p>我下载的版本是 2020.04.21 更新的 V5.6.1。</p>
+<p>在官网上下载要求先登陆账号，所以没有账号的同学需要先自行注册一个账号，中国站可以直接通过微信注册。</p>
+<img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/10-CubeMX下载路径图.png" alt="CubeMX下载路径图"  />
+
+<h3 id="安装-CubeMX-1"><a href="#安装-CubeMX-1" class="headerlink" title="安装 CubeMX"></a>安装 CubeMX</h3><p>前面已经说了 CubeMX 是基于 eclipse 的，所以它的运行需要依赖 Java 运行环境，后续具体的步骤可以参考<a href="https://www.strongerhuang.com/STM32Cube/STM32CubeMX/STM32CubeMX%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B02_STM32CubeMX%E5%B7%A5%E5%85%B7%E3%80%81HAL%E5%BA%93%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E.html">STM32CubeMX系列教程02_STM32CubeMX工具、HAL库下载、安装说明</a>，写得非常详细。</p>
+<h2 id="使用-CubeMX-配置工程"><a href="#使用-CubeMX-配置工程" class="headerlink" title="使用 CubeMX 配置工程"></a>使用 CubeMX 配置工程</h2><p>模板文件内已经有 CubeMX 工程了，位于<code>stm32f1-my-diy\board\CubeMX_Config</code>下，双击打开 <code>CubeMX_Config.ioc </code>工程。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/6-%E5%8F%8C%E5%87%BB%E6%89%93%E5%BC%80CubeMX%E5%B7%A5%E7%A8%8B.png" alt="双击打开CubeMX工程"></p>
+<h3 id="配置芯片"><a href="#配置芯片" class="headerlink" title="配置芯片"></a>配置芯片</h3><p>我使用的是正点原子战舰 V3 的开发板，使用的 CPU 是 STM32F103ZET6，CubeMX 模板工程使用的并不是这个芯片，所以我需要重新配置芯片为「STM32F103ZETx」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/11-CubeMX%E9%80%89%E6%8B%A9%E8%8A%AF%E7%89%87.png" alt="CubeMX选择芯片"></p>
+<h3 id="启用系统时钟"><a href="#启用系统时钟" class="headerlink" title="启用系统时钟"></a>启用系统时钟</h3><p>紧接着配置系统时钟，启用高速外部时钟(HSE)和低速外部时钟(LSE)：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/12-CubeMX%E5%90%AF%E7%94%A8%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%92%9F.png" alt="CubeMX启用系统时钟"></p>
+<h3 id="打开串口外设"><a href="#打开串口外设" class="headerlink" title="打开串口外设"></a>打开串口外设</h3><p>Connectivity –&gt; USART1 –&gt; Mode:Asynchronous，将 USART1 配置为异步模式。</p>
+<p>注意这里只需要选择串口外设引脚即可，无需配置其他参数。这里配置串口是为了后续使用 RT-Thread 的 FinSH 组件。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/14-CubeMXUSART1%E5%BC%95%E8%84%9A%E5%9B%BE.png" alt="CubeMX配置USART1"></p>
+<p>配置完成后，我们可以把右边的芯片图放大，然后就能看到芯片右侧的 PA10、PA9 引脚变成了绿色，后面还跟了当前引脚的功能，其中 PA10 引脚是 UASRT1 的接收引脚，PA9 是 UASRT1 的发送引脚。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/13-CubeMX%E9%85%8D%E7%BD%AEUSART1.png" alt="CubeMXUSART1引脚图"></p>
+<h3 id="设置调试方式"><a href="#设置调试方式" class="headerlink" title="设置调试方式"></a>设置调试方式</h3><p>System Core –&gt; SYS –&gt; Debug:Serial Wire，将调试配置 SWD 模式，这种模式一个最大的优点就是占用的 IO 口较少，我们从右侧的芯片图可以看到 SWD 模式只使用了两个 IO 口 PA13 和 PA14。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/15-CubeMX%E9%85%8D%E7%BD%AE%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F.png" alt="CubeMX配置调试模式"></p>
+<h3 id="时钟配置"><a href="#时钟配置" class="headerlink" title="时钟配置"></a>时钟配置</h3><p>HSE 是高速外部时钟，可接石英&#x2F;陶瓷谐振器，或者接外部时钟源，频率范围为 4MHz~16MHz。战舰 V3 开发板接的是 8M 的晶振。</p>
+<p>LSE 是低速外部时钟，接频率为 32.768kHz 的石英晶体。 这个主要是 RTC 的时钟源。</p>
+<p>根据正点原子《STMF1  开发指南》，这一步进行的时钟配置为：</p>
+<ul>
+<li>启用 HSE 作为 PLL 时钟源</li>
+<li>设置 PLL 9 倍倍频</li>
+<li>选择系统时钟源为 PLL</li>
+<li>设置 APB1 分频系数为 2</li>
+</ul>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/16-CubeMX%E9%85%8D%E7%BD%AE%E6%97%B6%E9%92%9F.png" alt="CubeMX配置时钟"></p>
+<p>最后总结一下配置过后关键时钟频率值：</p>
+<figure class="highlight abnf"><table><tr><td class="code"><pre><span class="line">SYSCLK(系统时钟) 			   <span class="operator">=</span><span class="number">72</span>MHz</span><br><span class="line">PLL 主时钟 					<span class="operator">=</span><span class="number">72</span>MHz</span><br><span class="line">AHB 总线时钟（HCLK<span class="operator">=</span>SYSCLK/<span class="number">1</span>）   <span class="operator">=</span><span class="number">72</span>MHz</span><br><span class="line">APB1 总线时钟（PCLK1<span class="operator">=</span>HCLK/<span class="number">2</span>）   <span class="operator">=</span><span class="number">36</span>MHz</span><br><span class="line">APB2 总线时钟（PCLK2<span class="operator">=</span>HCLK/<span class="number">1</span>）   <span class="operator">=</span><span class="number">72</span>MHz</span><br></pre></td></tr></table></figure>
+
+<h3 id="生成-CubeMX-项目"><a href="#生成-CubeMX-项目" class="headerlink" title="生成 CubeMX 项目"></a>生成 CubeMX 项目</h3><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/17-CubeMX%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81.png" alt="CubeMX生成代码"></p>
+<p>最后生成的时候，因为我们复制过来的模板工程里面本来就有 CubeMX 项目，选择直接覆盖即可。</p>
+<h3 id="拷贝时钟初始化函数"><a href="#拷贝时钟初始化函数" class="headerlink" title="拷贝时钟初始化函数"></a>拷贝时钟初始化函数</h3><p>在 <code>board/board.c</code> 文件中存放了函数 <code>SystemClock_Config() </code>，该函数负责初始化系统时钟。当使用 CubeMX 工具对系统时钟重新配置的时候，需要更新这个函数。</p>
+<p>该函数由 CubeMX 工具生成，默认存放在<code>board/CubeMX_Config/Src/main.c</code> 文件中。但是该文件并没有被包含到我们的工程中，因此需要将这个函数从 main.c 中拷贝到 <code>board/board.c</code> 文件中。该函数内容如下：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief System Clock Configuration</span></span><br><span class="line"><span class="comment">  * @retval None</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">SystemClock_Config</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">  RCC_OscInitTypeDef RCC_OscInitStruct = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">  RCC_ClkInitTypeDef RCC_ClkInitStruct = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/** Initializes the CPU, AHB and APB busses clocks </span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;	<span class="comment">//时钟源为 HSE</span></span><br><span class="line">  RCC_OscInitStruct.HSEState = RCC_HSE_ON;						<span class="comment">//打开 HSE</span></span><br><span class="line">  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;		<span class="comment">//HSE 预分频</span></span><br><span class="line">  RCC_OscInitStruct.HSIState = RCC_HSI_ON;						<span class="comment">//打开 HSI</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;					<span class="comment">//打开 PLL</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;			<span class="comment">//PLL 时钟源选择 HSE</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;					<span class="comment">//设置 PLL 倍频系数</span></span><br><span class="line">  <span class="keyword">if</span> (HAL_RCC_OscConfig(&amp;RCC_OscInitStruct) != HAL_OK)</span><br><span class="line">  &#123;</span><br><span class="line">    Error_Handler();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/** Initializes the CPU, AHB and APB busses clocks </span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK</span><br><span class="line">                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;</span><br><span class="line">  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;		<span class="comment">//设置系统时钟时钟源为 PLL</span></span><br><span class="line">  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;	<span class="comment">//AHB 分频系数为1</span></span><br><span class="line">  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;		<span class="comment">//APB1 分频系数为2</span></span><br><span class="line">  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;		<span class="comment">//APB2 分频系数为1</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (HAL_RCC_ClockConfig(&amp;RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)</span><br><span class="line">  &#123;</span><br><span class="line">    Error_Handler();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改-board-h"><a href="#修改-board-h" class="headerlink" title="修改 board.h"></a>修改 board.h</h3><p>在 board.h 文件中配置了 FLASH 和 RAM 的相关参数，这个文件中需要修改的是 STM32_FLASH_SIZE 和 STM32_SRAM_SIZE 这两个宏控制的参数。</p>
+<p>战舰 V3 所使用的 STM32F103ZET6 芯片的 FLASH 大小为 512K，RAM 的大小为 64K，因此对该文件作出如下的修改：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/18-%E4%BF%AE%E6%94%B9board%E5%A4%B4%E6%96%87%E4%BB%B6.png" alt="修改board头文件"></p>
+<h2 id="修改-Kconfig-选项"><a href="#修改-Kconfig-选项" class="headerlink" title="修改 Kconfig 选项"></a>修改 Kconfig 选项</h2><p>在本小节中修改 <code>board/Kconfig</code> 文件的内容有如下两点：</p>
+<ul>
+<li>芯片型号和系列</li>
+<li>BSP 上的外设支持选项</li>
+</ul>
+<p>芯片型号和系列的修改如下表所示：</p>
+<table>
+<thead>
+<tr>
+<th>宏定义</th>
+<th>意义</th>
+<th>格式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SOC_STM32F103ZE</td>
+<td>芯片型号</td>
+<td>SOC_STM32xxx</td>
+</tr>
+<tr>
+<td>SOC_SERIES_STM32F1</td>
+<td>芯片系列</td>
+<td>SOC_SERIES_STM32xx</td>
+</tr>
+</tbody></table>
+<p>关于 BSP 上的外设支持选项，一个初次提交的 BSP 仅仅需要支持 GPIO 驱动和串口驱动即可，因此在配置选项中只需保留这两个驱动配置项，如下图所示：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/2-Kconfig%E9%80%89%E9%A1%B9.png" alt="Kconfig选项"></p>
+<h2 id="修改工程构建相关文件"><a href="#修改工程构建相关文件" class="headerlink" title="修改工程构建相关文件"></a>修改工程构建相关文件</h2><p>接下来需要修改用于构建工程相关的文件。</p>
+<h3 id="修改链接脚本"><a href="#修改链接脚本" class="headerlink" title="修改链接脚本"></a>修改链接脚本</h3><p>linker_scripts 链接文件如下图所示：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/19-%E9%93%BE%E6%8E%A5%E8%84%9A%E6%9C%AC%E7%9B%AE%E5%BD%95.png" alt="链接脚本目录"></p>
+<p>其中 MDK 使用的链接脚本是 link.sct ，其他两个链接脚本的文件分别为 IAR 使用的 link.icf 和 GCC 编译器使用的 link.lds。我使用的是 MDK，所以修改 link.sct 文件。</p>
+<p>战舰 V3 使用的芯片为 STM32F103ZE，FLASH 为 512K，因此修改 LR_IROM1 和 ER_IROM1 的参数为 0x00080000（512 * 1024）。RAM 的大小为 64K， 因此修改 RW_IRAM1 的参数为 0x00010000（64 * 1024）。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/20-%E4%BF%AE%E6%94%B9%E9%93%BE%E6%8E%A5%E8%84%9A%E6%9C%AC.png" alt="修改链接脚本"></p>
+<h3 id="修改-SConscript-构建脚本"><a href="#修改-SConscript-构建脚本" class="headerlink" title="修改 SConscript  构建脚本"></a>修改 SConscript  构建脚本</h3><p>SConscript 脚本决定 MDK&#x2F;IAR 工程的生成以及编译过程中要添加文件。</p>
+<p>在这一步中需要修改芯片型号以及芯片启动文件的地址，战舰 V3 使用的芯片是 STM32F103ZET6，所以使用的启动文件是 <code>startup_stm32f103xe.s</code>，对应的芯片型号是 STM32F103xE。最后修改内容如下图所示：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/21-%E4%BF%AE%E6%94%B9SConscript%E6%9E%84%E5%BB%BA%E8%84%9A%E6%9C%AC.png" alt="修改SConscript构建脚本"></p>
+<h3 id="修改-MDK-工程模板"><a href="#修改-MDK-工程模板" class="headerlink" title="修改 MDK 工程模板"></a>修改 MDK 工程模板</h3><p>template 文件是生成 MDK&#x2F;IAR 工程的模板文件，通过修改该文件可以设置工程中使用的芯片型号以及下载方式。MDK4&#x2F;MDK5&#x2F;IAR 的工程模板文件，如下图所示：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/22-%E5%B7%A5%E7%A8%8B%E6%A8%A1%E6%9D%BF%E7%9B%AE%E5%BD%95.png" alt="工程模板目录"></p>
+<p>我使用的 MDK5，所以我修改的模板是 <code>template.uvprojx</code> 文件。</p>
+<ul>
+<li>战舰 V3 所使用的的芯片型号为 <code>STM32F103ZET6</code>，所以修改芯片型号如下：</li>
+</ul>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/23-MDK5%E6%A8%A1%E6%9D%BF%E5%B7%A5%E7%A8%8B%E4%BF%AE%E6%94%B9%E8%8A%AF%E7%89%87%E5%9E%8B%E5%8F%B7.png" alt="MDK5模板工程修改芯片型号"></p>
+<ul>
+<li>修改程序下载方式：</li>
+</ul>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/24-MDK5%E6%A8%A1%E6%9D%BF%E5%B7%A5%E7%A8%8B%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E4%B8%8B%E8%BD%BD%E6%96%B9%E5%BC%8F.png" alt="MDK5模板工程修改默认下载方式"></p>
+<p>修改完成后<strong>记得 <code>Ctrl+S</code>保存</strong>。</p>
+<h2 id="安装-ENV-工具"><a href="#安装-ENV-工具" class="headerlink" title="安装 ENV 工具"></a>安装 ENV 工具</h2><h3 id="Env-工具简介"><a href="#Env-工具简介" class="headerlink" title="Env 工具简介"></a>Env 工具简介</h3><p>Env 是 RT-Thread 推出的开发辅助工具，针对基于 RT-Thread 操作系统的项目工程，提供编译构建环境、图形化系统配置及软件包管理功能。</p>
+<p>其内置的 menuconfig 提供了简单易用的配置剪裁工具，可对内核、组件和软件包进行自由裁剪，使系统以搭积木的方式进行构建。</p>
+<p>Env 工具包含了 RT-Thread 源代码开发编译环境和软件包管理系统。</p>
+<h3 id="下载安装-Env-工具"><a href="#下载安装-Env-工具" class="headerlink" title="下载安装 Env 工具"></a>下载安装 Env 工具</h3><ul>
+<li><p>从 RT-Thread 官网下载 <a href="https://www.rt-thread.org/page/download.html">Env 工具</a>，将其<strong>解压到任一纯英文路径下</strong>即可使用，在 Env 目录下有一张 <code>Add_Env_To_Right-click_Menu.png</code>(添加 Env 至右键菜单.png) 的图片，按照图片指引一步步操作，就可以在任意文件夹下通过右键菜单来启动 Env 控制台，效果如下：<img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/26-menuconfig%E7%95%8C%E9%9D%A2.png" alt="任意路径右键打开Env"></p>
+</li>
+<li><p>在电脑上装好 git，软件包管理功能需要 git 的支持。git 的下载地址为<a href="https://git-scm.com/downloads%EF%BC%8C%E6%A0%B9%E6%8D%AE%E5%90%91%E5%AF%BC%E6%AD%A3%E7%A1%AE%E5%AE%89%E8%A3%85">https://git-scm.com/downloads，根据向导正确安装</a> git，并将 git 添加到系统环境变量。</p>
+</li>
+<li><p>注意在工作环境中，所有的路径都不可以有中文字符或者空格。</p>
+</li>
+</ul>
+<h2 id="重新生成-MDK-工程"><a href="#重新生成-MDK-工程" class="headerlink" title="重新生成 MDK 工程"></a>重新生成 MDK 工程</h2><h3 id="重新生成-rtconfig-h-文件"><a href="#重新生成-rtconfig-h-文件" class="headerlink" title="重新生成 rtconfig.h 文件"></a>重新生成 rtconfig.h 文件</h3><p>在 env 界面输入命令 <code>menuconfig</code> 对工程进行配置。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/25-%E4%BB%BB%E6%84%8F%E8%B7%AF%E5%BE%84%E5%8F%B3%E9%94%AE%E6%89%93%E5%BC%80Env.png" alt="menuconfig界面"></p>
+<h4 id="menuconfig-快捷键介绍"><a href="#menuconfig-快捷键介绍" class="headerlink" title="menuconfig 快捷键介绍"></a>menuconfig 快捷键介绍</h4><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/27-menuconfig%E5%BF%AB%E6%8D%B7%E9%94%AE%E4%BB%8B%E7%BB%8D.png" alt="menuconfig快捷键介绍"></p>
+<h4 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h4><p>menuconfig 有多种类型的配置项，修改方法也有所不同，常见类型如下：</p>
+<ul>
+<li>开&#x2F;关 型：使用空格键来选中或者关闭</li>
+<li>数值、字符串型：按下回车键后会出现对话框，在对话框中对配置项进行修改</li>
+</ul>
+<p>我们目前的目的仅仅是移植 BSP，所以先不进行复杂的配置，只使能 GPIO 和 UART：</p>
+<ul>
+<li>Hardware Drivers Config –&gt; On-chip Peripheral Drivers –&gt; 使能「Enable GPIO」和「Enable UART」</li>
+<li>「Enable UART」 –&gt; 「Enable UART1 RX DMA」</li>
+</ul>
+<h4 id="保存配置"><a href="#保存配置" class="headerlink" title="保存配置"></a>保存配置</h4><p>选择好配置项之后按 ESC 键退出，选择保存修改即可自动更新 rtconfig.h 文件。此时再次使用 scons 命令就会根据新的 rtconfig.h 文件重新编译工程了。</p>
+<h3 id="重新生成-MDK5-工程"><a href="#重新生成-MDK5-工程" class="headerlink" title="重新生成 MDK5 工程"></a>重新生成 MDK5 工程</h3><p>使用 env 工具输入命令 <code>scons --target=mdk5</code> 重新生成工程，如下图所示：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/28-%E9%87%8D%E6%96%B0%E7%94%9F%E6%88%90MDK5%E5%B7%A5%E7%A8%8B.png" alt="重新生成MDK5工程"></p>
+<p>重新生成工程成功：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/29-%E9%87%8D%E6%96%B0%E7%94%9F%E6%88%90MDK5%E5%B7%A5%E7%A8%8B%E6%88%90%E5%8A%9F.png" alt="重新生成MDK5工程成功"></p>
+<p> 生成新的 MDK5 工程以后，我们可以看到 <code>project.uvprojx</code> 的修改日期已经变成刚刚进行生成操作时的日期了。</p>
+<h3 id="验证-MDK5-工程"><a href="#验证-MDK5-工程" class="headerlink" title="验证 MDK5 工程"></a>验证 MDK5 工程</h3><p>双击打开 <code>project.uvprojx</code>，检查后发现在我们没有进行设置的情况下，此工程芯片型号、默认下载设置都和我们之前对模板工程的修改保持一致，说明我们之前的修改是生效了的。</p>
+<p>我们通过左边的项目框架里可以看到，相比模板工程的空空如也，新工程已经是五脏俱全了。打开 <code>Applications --&gt; main.c</code>，内容很简单，在 main 主函数内只有一个让 LED0 闪烁的程序，直接编译，没有任何错误和警告。为了方便调试和及时查看运行结果，设置程序下载结束后自动重启并运行：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/30-MDK5%E4%BF%AE%E6%94%B9%E4%B8%8B%E8%BD%BD%E5%90%8E%E9%87%8D%E5%90%AF.png" alt="MDK5修改下载后重启"></p>
+<p>连上战舰 V3 开发板，直接烧录程序，会发现 LED 并没有亮起来，检查代码后会发现，程序默认定义的 LED0 是引脚 PB.1，通过而查看战舰开发板的原理图，发现战舰开发板的 LED0 连接的是 PB.5 引脚，将引脚进行更改后编译，再烧入程序，LED0 正常闪烁。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/31-%E9%AA%8C%E8%AF%81MDK5%E5%B7%A5%E7%A8%8B.png" alt="验证MDK5工程"></p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>至此，我们的 BSP 移植就算成功了。但回顾整个移植过程，发现自己不明白的地方还太多了，特别是如何由模板工程直接构建出一个能够直接运行的工程，在没有了解其中原理之前，这个过程对我这个菜鸟而言无异于「魔法」；我开始移植的基础是 RT-Thread 内置的 STM32F1 系列通用模板，这个模板我是拿过来就用的，但这个模板是如何一步步构建起来的，我也完全没有弄清楚；CubeMX 图形化的操作方式固然对新手非常友好，但无疑也让我对底层代码的理解隔了一层「黑盒」。</p>
+<p>第一步已经迈出去了，希望通过后面的学习能够解答我上面诸多疑惑，学习不就正是这样一个发现问题，解决问题的过程。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://github.com/RT-Thread/rt-thread/blob/master/bsp/stm32/docs/STM32%E7%B3%BB%E5%88%97BSP%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B.md">RT-Thread 官方 STM32 系列 BSP 制作教程</a></p>
+]]></content>
+      <categories>
+        <category>嵌入式</category>
+      </categories>
+      <tags>
+        <tag>RT-Thread</tag>
+        <tag>STM32</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>雷蛇炼狱蝰蛇2013 更换中键微动</title>
+    <url>/post/RepairTheDeathadder2013/</url>
+    <content><![CDATA[<p>第一次自己动手修鼠标，挺好玩的。</p>
+<span id="more"></span>
+
+<h2 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h2><p>这款炼狱蝰蛇 2013 是自己四年前买的，之前一直用得好好的，但最近滚轮的按键功能突然失效了，表现为能够正常按压，但无法正常触发按键功能。在日常浏览网页时，我习惯用中键来关闭标签页以及在新窗口打开链接，现在中键突然失灵了，对我的日常使用造成了很大的不便。</p>
+<p>之前有在网上看过不少帖子都是自己修鼠标，感觉也不是很难，所以这次我也尝试一下来自己修鼠标。</p>
+<h2 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h2><p>1.电烙铁<br>2.镊子<br>3.十字螺丝刀<br>4.新中键微动<br>5.焊锡丝<br>6.小刀</p>
+<h2 id="拆解鼠标"><a href="#拆解鼠标" class="headerlink" title="拆解鼠标"></a>拆解鼠标</h2><p>通过搜索在什么值得买上面找到了这篇<a href="https://post.smzdm.com/p/568792/">维修教程</a>，虽然文中问题是鼠标出现了双击的现象，和我的问题并不相同，但同样都是通过更换微动来解决问题，而且各个步骤都比较详细，给我提供了很大的帮助。</p>
+<p>首先用刀片分别将鼠标背面左右上角的两个脚垫撬下来，两个脚垫是通过胶粘上去的，撬下来以后保存好，后面还原的时候还可以再粘回去。去掉两个脚垫后就可以看到里面的两颗螺丝了。这两颗螺丝可以直接拧下。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8E%BB%E9%99%A4%E8%84%9A%E5%9E%AB.jpg" alt="去除脚垫"></p>
+<p>需要注意的是第三颗螺丝的位置，是隐藏在贴纸的下方，位置如下图所示，直接用螺丝刀捅破贴纸即可看到。这颗螺丝拧出一定距离即可，不必全部拧出。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%9A%90%E8%97%8F%E7%9A%84%E7%AC%AC%E4%B8%89%E9%A2%97%E8%9E%BA%E4%B8%9D.jpg" alt="隐藏的第三颗螺丝"></p>
+<p>三颗螺丝处理完毕后，从下图所示处往下掰，即可打开鼠标上盖，打开时小心不要用力过猛，因为上盖上有一根灯光线和主板相连，不小心的话可能会扯断。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%8E%B0%E5%BC%80%E5%A4%96%E5%A3%B3.jpg" alt="掰开外壳"></p>
+<p>断开上盖与主板的连线后，即可移走上盖，看到鼠标主板。接下来如下图所示依次卸下主板上的三颗固定螺丝、左侧按键微动上的两颗螺丝以及滚轮旁边的小黑色螺丝后，最后再断开两根排线，即可取下主板。注意保管好螺丝，特别那颗较小的黑色螺丝。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%8B%86%E5%8D%B8%E4%B8%BB%E6%9D%BF.png" alt="拆卸主板"></p>
+<h2 id="更换微动"><a href="#更换微动" class="headerlink" title="更换微动"></a>更换微动</h2><p>观察主板可以看到滚轮横杆右侧的下方有一颗正方形微动，判断应该就是这个地方的微动损坏导致中键失灵。于是在万能的淘宝上花八毛钱+七块钱运费买了一个新的微动。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E8%80%81%E5%BE%AE%E5%8A%A8.jpg" alt="新老微动"></p>
+<p>因为没有吸锡器，可以直接用电烙铁加热主板背面的焊点，然后边加热边拔也是可以把微动给卸下来的。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8D%B8%E4%B8%8B%E5%BE%AE%E5%8A%A8.jpg" alt="卸下微动"></p>
+<p>微动只是一个开关，不区分方向，将新微动针脚插入到主板对应孔位上，然后用电烙铁和焊锡对准针脚化开焊锡即可完成更换。如果卸旧微动的时候焊孔内还残留有焊锡也不用担心，直接加热焊孔，将焊锡加热到流动状，这时新微动针脚可以轻松穿过焊孔。</p>
+<h2 id="重装鼠标"><a href="#重装鼠标" class="headerlink" title="重装鼠标"></a>重装鼠标</h2><p>按照刚刚的拆解步骤一步一步还原即可，排线全都有防呆设计，也不需要担心会接反。<br><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%87%8D%E8%A3%85%E9%BC%A0%E6%A0%87.jpg" alt="重装鼠标"></p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%BB%A1%E8%A1%80%E5%A4%8D%E6%B4%BB.jpg" alt="满血复活"></p>
+<p>最后自然是连接电脑进行测试，功能一切正常，又可以愉快地使用中键了。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在有帖子可以参考的情况下，整个更换过程还是比较简单的，最大的困难可能是大部分同学没有电烙铁，专门为此添置一个可能显得有些本末倒置，毕竟电烙铁也不便宜。</p>
+<p>自己动手，丰衣足食。人生第一次自己动手更换鼠标，成就感还是不小的。看到鼠标在自己手里满血复活，开心。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://post.smzdm.com/p/568792/">“拿什么拯救你，我的双击蛇”— 手把手教你更换Razer炼狱蝰蛇鼠标微动</a></p>
 ]]></content>
       <categories>
         <category>小事</category>
       </categories>
       <tags>
-        <tag>正版</tag>
-        <tag>Windows</tag>
+        <tag>DIY</tag>
+        <tag>外设</tag>
       </tags>
   </entry>
   <entry>
@@ -445,399 +876,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CODING Pages 静态网站升级腾讯云新版踩坑小记</title>
-    <url>/post/CODING-Pages-Upgrade-To-TencentCloud/</url>
-    <content><![CDATA[<p>自己的踩坑记录证明域名未备案的同学就不要升级了，新版需要付费，但升级后强制的境外 CDN 加速导致访问速度反而不如旧版快。</p>
-<span id="more"></span>
-
-<h2 id="升级背景"><a href="#升级背景" class="headerlink" title="升级背景"></a>升级背景</h2><p>之前把博客双部署到了 CODING 静态网站和 GitHub Pages，国内的访问速度快了不少。前几天登录 CODING 后台，突然发现多了一个新版升级提醒。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-%E5%90%8E%E5%8F%B0%E5%8D%87%E7%BA%A7%E6%8F%90%E9%86%92.png" alt="升级提醒"></p>
-<p>新版最大的变化就是同腾讯云进行了打通，直接把网站放到了腾讯云的对象存储 COS 上，其他 CDN 加速、SSL 证书管理也是腾讯云的功能。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%8F%98%E5%8C%96.png" alt="新版的变化及优势"></p>
-<h2 id="新版开始收费了"><a href="#新版开始收费了" class="headerlink" title="新版开始收费了"></a>新版开始收费了</h2><blockquote>
-<p>CODING Pages 依托腾讯云资源提供相关静态托管能力，CODING 平台本身不收取任何费用。该产品使用了腾讯云对象存储 COS、内容分发网络 CDN、SSL 证书产品，其中 COS 和 CDN 采用用量计费模式，SSL 证书免费，所使用到的其他相关腾讯云产品本身亦会有一定的免费额度。</p>
-</blockquote>
-<p>新版因为使用了腾讯云的相关资料，所以要<strong>开始收费</strong>了。对于收费，我是能够接受的，前提是能够提供比免费更好的服务。我的图床就是使用的腾讯云的对象存储，加载速度很快，一个月几毛钱的费用低得基本可以忽略。</p>
-<h2 id="升级流程"><a href="#升级流程" class="headerlink" title="升级流程"></a>升级流程</h2><p>新版升级界面如下：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8D%87%E7%BA%A7%E8%AE%BE%E7%BD%AE%E7%95%8C%E9%9D%A2.png" alt="新版升级设置界面"></p>
-<p>因为新版是基于腾讯云的，所以升级需要先在腾讯云进行实名认证并授予相关权限。我因为之前图床就是用的腾讯云对象存储，所以已经实名过了。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%8E%88%E6%9D%83.png" alt="腾讯云服务授权"></p>
-<p>之前 CODING Pages 旧版是部署在腾讯云新加坡节点，现在新版部署节点可选香港、北京、上海、广州四个，但未备案域名只能选香港。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%8A%82%E7%82%B9%E9%80%89%E6%8B%A9.png" alt="节点选择提醒"></p>
-<p>添加自定义域名前，需要前往腾讯云开启 CDN 功能，这一步就是我觉得<strong>新版最大的坑</strong>。</p>
-<p>下一步去域名托管商更改解析记录，解析记录值都是指向了 <code>cdn.dnsv1.com</code>，这也是为什么需要开启 CDN 功能的原因。</p>
-<p>部署的时候，「网站类型」我最开始选的是「Hexo」，结果部署失败，部署日志也不知道抽啥风，一直显示不出来，原因也不好排查。我尝试将网站类型改为「静态网站」，重新部署就成功了。</p>
-<h2 id="这-CDN-不能要"><a href="#这-CDN-不能要" class="headerlink" title="这 CDN 不能要"></a>这 CDN 不能要</h2><p>新版升级完成后，立马测了一波速，然后被结果给吓到了，从之前的一片绿油油变成了一片惨淡的黄色，访问速度下降了不止一点半点。这就很费解了，同样都是腾讯云，之前部署在新加坡节点，现在搬到香港节点了，速度不升反降是什么情况。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%BC%80%E5%90%AFCDN%E6%B5%8B%E9%80%9F%E7%BB%93%E6%9E%9C.png" alt="新版开启 CDN 测速结果"></p>
-<p>检查解析 IP，发现域名全都被解析到了德国、爱尔兰、美国，和想象中的香港地址完全不是一回事。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%BC%80%E5%90%AFCDN%E8%A7%A3%E6%9E%90IP%E7%BB%93%E6%9E%9C.png" alt="新版开启 CDN 域名解析结果"></p>
-<p>这种情况我估摸着肯定是 CDN 的锅，去腾讯云后台一检查，发现已经开启的 CDN 设置的服务区域是「中国境外」。我想当然地以为「中国境外」的含义是指只有从国外访问网站的时候才会通过 CDN 访问，国内则是直接访问香港源站，这样虽然国内享受不到 CDN 加速，国外我设置是解析到 GitHub Pages，也用不上，但想着无非就是个鸡肋而已。</p>
-<p>但一查文档，发现自己还是太单纯了：</p>
-<blockquote>
-<p>「中国境外」:全球用户访问均会调度至中国境外的加速节点进行服务。</p>
-</blockquote>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8A%A0%E9%80%9F%E5%8C%BA%E5%9F%9F%E6%96%87%E6%A1%A3%E8%A7%A3%E9%87%8A.png" alt="「中国境外」"></p>
-<p>也就是说，不管是从国内还是国外访问，都会被调度到国外的 CDN 加速节点进行接入，想不经过 CDN 直接访问香港源站都不行。而比较符合我想要的效果的「全球」则需要域名进行备案之后才能开启，未备案域名开启 CDN 的话就<strong>只能选「中国境外」</strong>。</p>
-<p>本来是用来加快访问速度的 CDN，对于使用<strong>未备案域名</strong>的博客来说，已经不仅仅是鸡肋了，反而是拖累。本来直接访问香港就能解决的事情，现在非得绕道德国、爱尔兰、美国才行，这访问速度能快起来才是怪事。</p>
-<h2 id="尝试直连香港源站"><a href="#尝试直连香港源站" class="headerlink" title="尝试直连香港源站"></a>尝试直连香港源站</h2><p>既然这是 CDN 导致的，那我把 CDN 直接给关了，直连香港源站不就行了？</p>
-<h3 id="关闭-CDN"><a href="#关闭-CDN" class="headerlink" title="关闭 CDN"></a>关闭 CDN</h3><p>进入腾讯云后台–&gt;「内容分发网络」–&gt;「域名管理」，关闭 CDN 加速。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91%E5%90%8E%E5%8F%B0%E5%85%B3%E9%97%ADCDN.png" alt="关闭 CDN"></p>
-<h3 id="更改域名解析记录"><a href="#更改域名解析记录" class="headerlink" title="更改域名解析记录"></a>更改域名解析记录</h3><p>在 DNSPod 里将国内访问解析到 CODING 提供的默认访问地址，此时再检查 DNS 解析结果发现就全部都指向了香港的 IP，达到了自己想要的效果。</p>
-<h2 id="致命的证书问题"><a href="#致命的证书问题" class="headerlink" title="致命的证书问题"></a>致命的证书问题</h2><p>设置成直接访问香港源站后，速度果不其然就上来了，比访问新加坡节点速度还要快上一点。但很快就出现了一个更加严重的问题——证书错误。</p>
-<p>新版申请的 SSL 证书是和 CDN 绑定在一起的，在腾讯云的证书管理里面只能部署到 CDN，而我把 CDN 关闭了，现在直接访问的是香港源站。源站的证书是颁给 <code>*.cdn.my.qcloud</code> 的，和我的域名不一致，这就会导致浏览器直接报警说网站不安全，这是不可接受的。我尝试解决这个问题，但无奈水平有限，最后也没能找到解决的办法。如果有知道如何解决证书问题的同学，麻烦指导我一下，不甚感激。</p>
-<p>现在情况就是如果想要实现自定义域名 HTTPS 访问，就需要打开 CDN，打开 CDN 就意味着牺牲访问速度，这还是在 CDN 和 COS 需要付费的情况下。矛盾无法调和，所以最后我只能又<strong>回退到旧版</strong>了，幸好 CODING 目前还没有关闭旧版的入口，给了我一个反悔的机会。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>花了差不多一天的时间，最后还是老老实实回到了旧版，相当于一天白折腾了。域名没有进行备案的话，在国内使用不方便的地方真的太多了。CODING 新版静态网站我觉得对于使用已备案域名的同学来说还是不错的，配置简单，CDN 加速、SSL 证书一步到位。但同样的对于这些同学来说可供选择的方案太多了，免费的也有不少，CODING 的新版并没有太大的吸引力。</p>
-<p>而对于未备案域名的同学新版则非常不友好，完全是<strong>负优化</strong>，完全没有升级的必要，谁会花钱找罪受呢。CODING 工程师说旧版后续会下线，到时候如果自定义域名的问题没有得到改善的话，可能就需要考虑迁移平台了。现在旧版还能用就先用着。</p>
-<p>我向 CODING 反馈了自定义域名的问题，希望能同旧版一样使用 Let’s Encrypt 的证书，不要强行同腾讯云的 CDN 加速绑定在一起，后续如果有进一步的反馈结果的话我会同步到博客中。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://help.coding.net/docs/pages/operating/migrate.html">官方静态网站服务升级指南</a></p>
-]]></content>
-      <categories>
-        <category>个人博客</category>
-      </categories>
-      <tags>
-        <tag>腾讯云</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo 博客 GitHub Pages + CODING 静态网站双部署</title>
-    <url>/post/Deploy-Hexoblog-To-Codingnet-And-GitHub/</url>
-    <content><![CDATA[<h2 id="为什么想要双部署"><a href="#为什么想要双部署" class="headerlink" title="为什么想要双部署"></a>为什么想要双部署</h2><p>中文博客的受众肯定是以国内为主，但部署在 Github Pages 上，服务器在国外，国内访问的速度太不稳定，如果一个页面需要将近十秒才能完全打开的话，用户体验差，页面被提前关闭的概率也会呈指数级上升。所以改善国内访问体验迫在眉睫。</p>
-<p>之前也想过直接使用 CDN 直接加速 GitHub Pages 的方式，但国内的 CDN 全部要求域名进行备案，嫌麻烦就放弃了。最后选择通过将博客同时部署到 GitHub 和 CODING 的方式来提升国内访问体验。</p>
-<p>CODING 在 19 年年底进行了一次比较大的改版，双部署的整个流程也有了不小的变化，而网络上很多教程大部分都还是基于旧版流程的。本文详细记载了将博客同时部署到 GitHub Pages 和 CODING 静态网站服务的全流程。</p>
-<span id="more"></span>
-
-<h2 id="CODING-配置"><a href="#CODING-配置" class="headerlink" title="CODING 配置"></a>CODING 配置</h2><h3 id="注册-CODING-账号"><a href="#注册-CODING-账号" class="headerlink" title="注册 CODING 账号"></a>注册 CODING 账号</h3><p>2019 年 12 月 28 日以后，CODING 统一了入口，不再区分个人版与否，具体的升级详情可以查看<a href="https://coding.net/products/upgrade">官方通知</a>。升级后的 CODING 会增加「团队&#x2F;组织」的管理概念，注册的时候必须先创建一个团队，这个和平常的注册稍有些不同，需要注意一下。<a href="https://coding.net/">点击跳转 CODING 官网</a>。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Coding%E6%B3%A8%E5%86%8C%E7%95%8C%E9%9D%A2.png" alt="CODING 注册界面"></p>
-<h3 id="创建-CODING-项目"><a href="#创建-CODING-项目" class="headerlink" title="创建 CODING 项目"></a>创建 CODING 项目</h3><p>注册成功以后，进入「项目」–&gt; 「创建项目」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.png" alt="CODING 创建项目"></p>
-<p>选择「代码托管项目」，只需填写项目名称，其他都保持空白和默认即可。注意<strong>不要勾选</strong>「公开源代码」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%88%9B%E5%BB%BA%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1%E9%A1%B9%E7%9B%AE.png" alt="创建代码托管项目"></p>
-<h3 id="CODING-配置-SSH-公钥"><a href="#CODING-配置-SSH-公钥" class="headerlink" title="CODING 配置 SSH 公钥"></a>CODING 配置 SSH 公钥</h3><p>SSH 密钥设置的路径为 「右上角个人头像」–&gt;「个人账户设置」–&gt; 「SSH 公钥」–&gt; 「新增公钥」。</p>
-<div class="note info"><p>SSH 公钥默认存放在 <code>C:\Users\用户名\.ssh</code> 目录下的 <code>id_rsa.pub</code> 文件里，用记事本打开并复制其内容即可。</p>
-</div>
-
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Coding%E6%96%B0%E5%A2%9ESSH%E5%AF%86%E9%92%A5.png" alt="CODING 新增SSH密钥"></p>
-<p>新增密钥是敏感操作，所以在新增密钥的时候，CODING 会要求验证密码才能添加，需要注意的是这里要求验证的是<strong>服务密码</strong>，而不是登录密码。如果没有事先设置服务密码的话，需要先在「个人设置」–&gt; 「服务密码」进行设置。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E6%9C%8D%E5%8A%A1%E5%AF%86%E7%A0%81.png" alt="CODING 设置服务密码"></p>
-<p>添加公钥后，打开 <code>Git Bash</code>，使用以下命令验证是否配置成功：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh -T git@e.coding.net</span><br></pre></td></tr></table></figure>
-<p>因为是第一次进行连接，所以需要输入 <code>yes</code> 来确认进行连接。配置成功，会出现如下图所示的提示：<br><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CodingSSH%E9%AA%8C%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="CODING SSH 验证成功提示"></p>
-<h2 id="部署-CODING「静态网站」"><a href="#部署-CODING「静态网站」" class="headerlink" title="部署 CODING「静态网站」"></a>部署 CODING「静态网站」</h2><h3 id="配置站点配置文件-config-yml"><a href="#配置站点配置文件-config-yml" class="headerlink" title="配置站点配置文件 _config.yml"></a>配置站点配置文件 _config.yml</h3><p>进入到 CODING 上刚才新建的项目里面，选择「代码仓库」，可以看到此时代码仓库还是空的，选择「SSH」链接方式并复制链接。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E9%A1%B9%E7%9B%AESSH%E9%93%BE%E6%8E%A5.png" alt="CODING 项目 SSH 链接"></p>
-<p>打开博客根目录下的站点配置文件 <code> _config.yml</code> ，修改其中的 <code>deploy</code> 区域，将刚复制的 SSH 链接新增进去：</p>
-<figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  - type: git</span><br><span class="line">    repo: git@github.com:ousugo/ousugo.github.io.git</span><br><span class="line">    branch: master</span><br><span class="line"><span class="addition">+ - type: git</span></span><br><span class="line"><span class="addition">+   repo: git@e.coding.net:asuradazone/asurada/asurada.git</span></span><br><span class="line"><span class="addition">+   branch: master    </span></span><br></pre></td></tr></table></figure>
-
-<h3 id="部署代码到-CODING"><a href="#部署代码到-CODING" class="headerlink" title="部署代码到 CODING"></a>部署代码到 CODING</h3><p><code> _config.yml</code> 文件修改完成后，执行 <code>hexo d</code> 命令进行部署，此时 Hexo 就会根据设置同时将博客部署到 GitHub 和 CODING 上面。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%88%90%E5%8A%9F%E9%83%A8%E7%BD%B2%E5%88%B0CODING.png" alt="成功部署到 CODING"></p>
-<p>此时再进入 CODING 上的项目，能看到刚才还是空的仓库现在已经有源代码了，说明部署是成功的。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81.png" alt="CODING 项目源码"></p>
-<h3 id="项目启用「持续部署」功能"><a href="#项目启用「持续部署」功能" class="headerlink" title="项目启用「持续部署」功能"></a>项目启用「持续部署」功能</h3><p>CODING 改版后，开启 Pages 服务的方法有了较大的变化，连名字都改了，现在已经不叫「Pages 服务」，而是改叫「静态网站」了。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Pages%E6%94%B9%E5%90%8D.png" alt="Pages 服务改名"></p>
-<p>「静态网站」是「持续部署」下面的一个子功能，而「持续部署」功能默认是没有开启的，需要我们自行启用。启用路径为项目左下角「项目设置」–&gt;「项目与成员」–&gt;「功能开关」–&gt;「持续部署」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%90%AF%E7%94%A8%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2%E5%8A%9F%E8%83%BD.png" alt="启用持续部署功能"></p>
-<p>「持续部署」功能开启后，就可以在它下面找到「静态网站」了。为了后续方便操作，还可以点击「静态网站」字样右边的按钮将其固定到项目选项顶部。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%85%A5%E5%8F%A3.png" alt="静态网站入口"></p>
-<h3 id="实名认证"><a href="#实名认证" class="headerlink" title="实名认证"></a>实名认证</h3><p>CODING 现在要求是必须先进行实名认证以后才能使用「静态网站」的服务，实名认证的入口在「右上角头像」–&gt;「团队管理」–&gt;「团队设置」–&gt;「高级设置」里面，藏得有点深。</p>
-<p>如果<strong>没有绑定手机号</strong>的话，需要先绑定手机号才能进行实名认证，反正现在基本想要使用国内的服务，实名认证基本是跑不掉的。输入姓名和身份证号码即可完成认证。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%AE%9E%E5%90%8D%E8%AE%A4%E8%AF%81.png" alt="实名认证"></p>
-<h3 id="发布静态网站"><a href="#发布静态网站" class="headerlink" title="发布静态网站"></a>发布静态网站</h3><p>实名认证完成后，点击「立即发布静态网站」，填写「网站名称」，「触发机制」默认为「自动触发」，此后每次同步代码到 <code>master</code> 分支时，网站即会自动部署。所有设置保持默认即可，然后点击「保存」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE.png" alt="静态网站设置"></p>
-<p>设置保存后，刷新页面，会看到 CODING 已经自动生成了网站的访问链接，不过现在网站还没有正式部署，还需要我们点击「立即部署」来部署网站。部署完成后就可以点击链接查看网站部署效果了，应该同部署到 GitHub Pages 是同样的效果。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99.png" alt="部署静态网站"></p>
-<h2 id="绑定自定义域名"><a href="#绑定自定义域名" class="headerlink" title="绑定自定义域名"></a>绑定自定义域名</h2><p>我的自定义域名是在 <a href="https://www.namesilo.com/">NmaeSilo</a> 买的，主要优点有：</p>
-<ol>
-<li>支持支付宝付款</li>
-<li>赠送 WHOIS 域名隐私保护</li>
-<li>第一年价格相对实惠</li>
-</ol>
-<p>如果有同学也考虑在 <a href="https://www.namesilo.com/">NmaeSilo</a> 购买域名，欢迎使用我的优惠码 <code>Asurada </code>，可以优惠一美元。</p>
-<h3 id="修改域名解析服务到-DNSPod"><a href="#修改域名解析服务到-DNSPod" class="headerlink" title="修改域名解析服务到 DNSPod"></a>修改域名解析服务到 DNSPod</h3><p>之前博客只部署在 GitHub Pages 上时，因为不需要考虑国内外解析分流，所以我直接使用的是 NameSilo 默认的域名解析服务。现在博客分别部署在 GitHub 和 CODING 上了，我希望将国外的流量解析到 GitHub，国内的流量则解析到 CODING，但 NameSilo 默认的域名解析服务并不能实现国内外流量的区分，所以需要更换域名解析服务商。</p>
-<p>我日常使用腾讯云比较多，所以选择了腾讯旗下的 <a href="dnspod.cn">DNSPod</a>，账号和腾讯云是通用的，直接微信扫码即可登录。登录到 <a href="console.dnspod.cn">DNSPod 控制台</a>，在「DNS 解析」–&gt;「我的域名」里添加想要解析的域名。因为还没有修改域名注册商那边的设置，所以现在显示的状态还是「DNS 错误」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D.png" alt="DNSPod 添加域名"></p>
-<p>登录到 <a href="https://www.namesilo.com/account_home.php">NameSilo 后台</a>，在「Account Options」中选择「<a href="https://www.namesilo.com/account_domains.php">domain manager</a>」，选中想要进行修改的域名，点击上方「Change Nameservers」图标。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/NameSilo%E4%BF%AE%E6%94%B9%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%9C%8D%E5%8A%A1.png" alt="NameSilo 修改域名解析服务"></p>
-<p>将默认的 DNS 服务器地址修改为下面的 DNSPod 提供的 DNS 服务器地址，然后提交修改。 </p>
-<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">f1g1ns1.dnspod.<span class="built_in">net</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">f1g1ns2.dnspod.<span class="built_in">net</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E4%BF%AE%E6%94%B9%E5%9F%9F%E5%90%8D%E6%9C%8D%E5%8A%A1%E5%95%86%E4%B8%BADNSPod.png" alt="修改域名服务商为 DNSPod"></p>
-<p>DNS 域名解析服务的修改后需要等待全球递归 DNS 服务器的刷新，所以需要耐心等待一会儿，大概十分钟左右。修改生效后再手动刷新 DNSPod 的状态，<strong>注意不是刷新页面</strong>，而是点击「DNS 错误」旁边的感叹号获取新状态，此时应该状态会变为「正常」。状态正常后，点击域名，进入「记录管理」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E7%8A%B6%E6%80%81%E6%AD%A3%E5%B8%B8.png" alt="DNSPod 显示状态正常"></p>
-<h3 id="DNSPod-解析记录设置"><a href="#DNSPod-解析记录设置" class="headerlink" title="DNSPod 解析记录设置"></a>DNSPod 解析记录设置</h3><p>先简单介绍一下 <code>A 记录</code> 和 <code>CNAME 记录</code> 的作用：</p>
-<blockquote>
-<p>如果需要将域名指向一个 IP 地址，就需要添加A记录；</p>
-<p>如果需要将域名指向另一个域名，再由另一个域名提供 IP 地址，就需要添加 CNAME 记录。</p>
-</blockquote>
-<p>我们一共添加五条解析记录，其中三条境外，两条境内，具体记录如下：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95.png" alt="DNSPod解析记录"></p>
-<p>第一条记录类型为 <code>A</code>，主机记录为 <code>@</code>，解析线路选择<code>默认</code>，记录值为 CODING 静态网站的 IP 地址，可以使用 <code>ping</code> 命令查询得到。比如 CODING 替我自动生成的网站访问地址为 <code>http://quj3xn.coding-pages.com/</code>，打开 <code>cmd</code>，输入 <code>ping quj3xn.coding-pages.com</code>，就可以得到 CODING 静态网站的 IP 地址，我的是<code>124.156.205.241</code>， <code>TTL</code> 的话，免费版最小只能填 600。这条解析记录的意思是将从境内访问 <code>asurada.zone</code> 的流量解析到 <code>124.156.205.241</code>。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%8E%B7%E5%8F%96IP%E5%9C%B0%E5%9D%80.png" alt="获取 IP 地址"></p>
-<p>第二条记录类型为 <code>CNAME</code>，主机记录为 <code>www</code>，解析线路选择<code>默认</code>，记录值为 CODING 自动生成的访问地址，比如我的是 <code>quj3xn.coding-pages.com</code>。这条解析记录的意思是将从境内访问 <code>www.asurada.zone</code> 的流量解析到 <code>quj3xn.coding-pages.com</code>。</p>
-<p>接下来的三条境外解析记录就很好理解了，第三和第五条记录是分别将从境外访问 <code>asurada.zone</code> 的流量解析到 <code>185.199.108.153</code> 和 <code>185.199.109.153</code>，这两个 IP 都是 GitHub Pages 的服务器 IP 地址。第四条记录则是将从境外访问 <code>ww.asurada.zone</code> 的流量解析到 <code>ousugo.github.io</code>。</p>
-<div class="note info"><p>在这一步的时候，为了方便下面开启 CODING 静态网站绑定自定义域名和开启全局 HTTPS，可以先将<strong>境外的三条解析先暂停</strong>，等完成 CODING 自定义域名的绑定并开启 HTTPS 以后再恢复解析。</p>
-</div>
-
-<h3 id="DNSPod「搜索引擎优化」"><a href="#DNSPod「搜索引擎优化」" class="headerlink" title="DNSPod「搜索引擎优化」"></a>DNSPod「搜索引擎优化」</h3><p>在「域名设置」–&gt; 「功能设置」里有一个「搜索引擎优化」功能，默认是关闭的，说是和各大搜索引擎有深度合作，开启后可以优化站点收录，具体原理咱也不知道。但这是一个免费功能，所以不开白不开。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96.png" alt="DNSPod 搜索引擎优化"></p>
-<p>根据官方文档，主流的搜索引擎都在优化范围之内，看上去还是很不错的：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96%E5%90%8D%E5%8D%95.png" alt="DNSPod 搜索引擎优化名单"></p>
-<h3 id="CODING-绑定自定义域名并开启-HTTPS"><a href="#CODING-绑定自定义域名并开启-HTTPS" class="headerlink" title="CODING 绑定自定义域名并开启 HTTPS"></a>CODING 绑定自定义域名并开启 HTTPS</h3><p>进入 CODING 项目的静态网站设置页面，向下滚动找到「自定义域名」的设置项，绑定自定义域名。如果在绑定域名时出现证书申请错误：</p>
-<blockquote>
-<p>申请错误原因是：在验证域名所有权时会定位到 GitHub Pages 的主机上导致 SSL 证书申请失败</p>
-<p>正确的做法是：先去域名 DNS 把 GitHub 的解析暂停掉，然后再重新申请 SSL 证书，大约十秒左右就能申请成功，然后开启强制 HTTPS 访问</p>
-<p>— <a href="https://www.itrhx.com/2019/09/16/A47-hexo-deployed-to-github-and-coding/#5-%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E5%B9%B6%E5%BC%80%E5%90%AF-HPPTS">绑定域名并开启 HPPTS</a></p>
-</blockquote>
-<p>建议同时绑定有 <code>www </code> 前缀和没有 <code>www</code>  前缀的域名，并根据自己的需求将其中一个设为首选域名，另一个<strong>勾选「跳转至首选」选项</strong>，这样可以避免一些第三方服务数据统计不到一起。</p>
-<p>如果两个域名的证书都没有问题的话，点击「强制 HTTPS」按钮即可启用强制 HTTPS 访问。设置完成后，不要忘记去 DNSPod 将之前暂停的 GitHub 解析重新开启。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E7%BB%91%E5%AE%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D.png" alt="CODING 绑定自定义域名"></p>
-<h2 id="成果检验"><a href="#成果检验" class="headerlink" title="成果检验"></a>成果检验</h2><p>至此，我们完成了博客在 GitHub Pages 和 CODING 静态网站服务上的双线部署。</p>
-<p>首先进行 DNS 的查询，可以看见结果正如我们所期望的，从国内访问的时候走的是 CODING 的静态网站服务，而从境外访问的时候走的则是 GitHub Pages。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNS%E8%A7%A3%E6%9E%90%E7%BB%93%E6%9E%9C.png" alt="DNS 解析结果"></p>
-<p>最后自然是喜闻乐见的速度对比，这里使用的是<a href="https://tool.chinaz.com/speedtest.aspx">站长之家的国内网站测速工具</a>。这里我们测试的域名分别是 CODING 和 GitHub <strong>自动生成的网站域名</strong>，多次测试下来，结果稍稍有些出乎我的意料，CODING 并没有如我想象的那样取得全面的、压倒性的速度优势，在部分地区反倒是 GitHub Pages 的访问速度更快。不过在多次测试中，CODING 的<strong>平均响应时间</strong>都比 GitHub 要快上三百到五百毫秒不等。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%80%9F%E5%BA%A6%E5%AF%B9%E6%AF%94.png" alt="速度对比"></p>
-<p>但如果是直接测试自定义域名 <code>asurada.zone</code> 的<strong>国内访问速度</strong>的话，分别设置域名<strong>仅解析</strong>到 CODING 和 GitHub，这时候可以看到解析到 CODING 时的<strong>国内访问速度</strong>明显比解析到 GitHub 时要快上不少。</p>
-<p>我猜测出现这种情况可能是 DNSPod 解析的功劳——当直接使用 <code>quj3xn.coding-pages.com</code> 域名进行测速时，DNS 解析的速度比较慢，进而拖累了整体的访问速度，而当使用自定义域名 <code>asurada.zone</code> 进行测速时，此时由 DNSPod 负责进行域名解析，解析速度比较快，进而加快了整体的访问速度。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E8%A7%A3%E6%9E%90%E5%88%B0CODING.png" alt="解析到 CODING 时的网站访问速度"></p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E8%A7%A3%E6%9E%90%E5%88%B0GITHUB.png" alt="解析到 GitHub 时的网站访问速度"></p>
-<p>我们更在意的自然是使用自定义域名访问时的速度，可以看到双线部署对于自定义域名的国内访问速度的提升效果是非常明显的，这次折腾也算是圆满成功，完结撒花✿✿ヽ(ﾟ▽ﾟ)ノ✿。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://help.coding.net/docs/devops/cd/static-website.html">CODING 静态网站服务官方文档</a></p>
-<p><a href="https://tding.top/archives/e09249d2.html">Hexo 博客部署到 Coding</a></p>
-<p><a href="https://www.itrhx.com/2019/09/16/A47-hexo-deployed-to-github-and-coding/">Hexo 双线部署到 Coding Pages 和 GitHub Pages 并实现全站 HTTPS</a></p>
-]]></content>
-      <categories>
-        <category>个人博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>GitHub</tag>
-        <tag>DNS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>RT-Thread RECA学习营（一）——正点原子战舰 V3  RT-Thread BSP 移植</title>
-    <url>/post/RT-Thread_BSP/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近在准备六月份的 RT-Thread 的 <a href="https://www.rt-thread.org/page/rac.html">RECA</a>（RT-Thread开发者能力认证），官方组织了一个学习营，第一周的任务是：</p>
-<blockquote>
-<p>基于 rt-thread4.0.2，能根据BSP制作教程及群里分享的视频《2.RTThread移植》，让自己的板子在RT-Thread上运行起来，了解BSP的制作。</p>
-</blockquote>
-<p>本文并没有将 BSP 移植背后的原理全部弄清楚，只是想着先迈出第一步，不求甚解，先把整个流程给跑通。</p>
-<span id="more"></span>
-
-<p>我手上的开发板是正点原子的战舰 V3，所以我将基于 RT-Thread 官方的 STM32F1 系列 BSP 通用模板构建战舰 V3 的 BSP。</p>
-<h2 id="下载-RT-Thread-源码"><a href="#下载-RT-Thread-源码" class="headerlink" title="下载 RT-Thread 源码"></a>下载 RT-Thread 源码</h2><p>从<a href="https://www.rt-thread.org/page/download.html">官网</a>下载 RT-Thread 源码，我下载的版本是 V4.0.2。源码目录结构如下：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-RTThread%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95.png" alt="RTThread文件目录"></p>
-<table>
-<thead>
-<tr>
-<th>目录名</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>rt-thread</td>
-<td>RT-Thread 的源文件。</td>
-</tr>
-<tr>
-<td>- bsp</td>
-<td>RT-Thread 官方已经支持的 BSP。</td>
-</tr>
-<tr>
-<td>- components</td>
-<td>RT-Thread 的各个组件目录。</td>
-</tr>
-<tr>
-<td>- documentation</td>
-<td>RT-Thread 相关文档。</td>
-</tr>
-<tr>
-<td>- examples</td>
-<td>RT-Thread 相关例程。</td>
-</tr>
-<tr>
-<td>- include</td>
-<td>RT-Thread 内核的头文件。</td>
-</tr>
-<tr>
-<td>- libcpu</td>
-<td>各类芯片的移植代码，此处包含了 STM32 的移植文件。</td>
-</tr>
-<tr>
-<td>- src</td>
-<td>RT-Thread 内核的源文件。</td>
-</tr>
-<tr>
-<td>- tools</td>
-<td>RT-Thread 命令构建工具的脚本文件。</td>
-</tr>
-</tbody></table>
-<h2 id="复制通用模板"><a href="#复制通用模板" class="headerlink" title="复制通用模板"></a>复制通用模板</h2><p>制作新 BSP 的第一步是复制一份同系列的 BSP 模板作为基础，通过对 BSP 模板的修改来获得新 BSP。战舰 V3 采用的芯片是 STM32F103ZET6，所以我们需要使用 STM32F1 系列的模板。模板位于<code>rt-thread\bsp\stm32\libraries\templates\stm32f10x</code>，BSP 模板文件夹结构如下所示：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/5-BSP%E6%A8%A1%E6%9D%BF%E7%9B%AE%E5%BD%95.png" alt="BSP模板目录"></p>
-<p>拷贝模板文件夹下的 <code>stm32f10x</code> 文件夹到<code>rt-thread\bsp\stm32</code>下，并将该文件夹的名称改为 <code>stm32f1-my-diy</code>，之后我们就在这个文件夹的基础上进行移植。</p>
-<p>在接下来的 BSP 的制作过程中，将会修改 board 文件夹内的配置文件，将 F1 系列的 BSP 模板变成一个适用于正点原子战舰 V3 开发板的 BSP ，下表总结了 board 文件夹中需要修改的内容：</p>
-<table>
-<thead>
-<tr>
-<th>项目</th>
-<th>需要修改的内容说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>CubeMX_Config （文件夹）</td>
-<td>CubeMX 工程</td>
-</tr>
-<tr>
-<td>linker_scripts （文件夹）</td>
-<td>BSP 特定的链接脚本</td>
-</tr>
-<tr>
-<td>board.c&#x2F;h</td>
-<td>系统时钟、GPIO 初始化函数、芯片存储器大小</td>
-</tr>
-<tr>
-<td>Kconfig</td>
-<td>芯片型号、系列、外设资源</td>
-</tr>
-<tr>
-<td>SConscript</td>
-<td>芯片启动文件、目标芯片型号</td>
-</tr>
-</tbody></table>
-<h2 id="安装-CubeMX"><a href="#安装-CubeMX" class="headerlink" title="安装 CubeMX"></a>安装 CubeMX</h2><h3 id="下载-CubeMX"><a href="#下载-CubeMX" class="headerlink" title="下载 CubeMX"></a>下载 CubeMX</h3><p>CubeMX 是基于 eclipse 的一个插件，用来对STM32产品的配置及初始化代码的生成。下载可以去 <a href="https://stmcu.com.cn/">ST 中国站</a> –&gt; 设计资源 –&gt; 固件和软件 –&gt; PC 端软件 –&gt; <a href="https://stmcu.com.cn/Designresource/design_resource_detail?file_name=STM32CubeMX_STM32%E5%88%9D%E5%A7%8B%E5%8C%96%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8&lang=EN&ver=5.6.1">STM32CubeMX</a></p>
-<p>我下载的版本是 2020.04.21 更新的 V5.6.1。</p>
-<p>在官网上下载要求先登陆账号，所以没有账号的同学需要先自行注册一个账号，中国站可以直接通过微信注册。</p>
-<img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/10-CubeMX下载路径图.png" alt="CubeMX下载路径图"  />
-
-<h3 id="安装-CubeMX-1"><a href="#安装-CubeMX-1" class="headerlink" title="安装 CubeMX"></a>安装 CubeMX</h3><p>前面已经说了 CubeMX 是基于 eclipse 的，所以它的运行需要依赖 Java 运行环境，后续具体的步骤可以参考<a href="https://www.strongerhuang.com/STM32Cube/STM32CubeMX/STM32CubeMX%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B02_STM32CubeMX%E5%B7%A5%E5%85%B7%E3%80%81HAL%E5%BA%93%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E.html">STM32CubeMX系列教程02_STM32CubeMX工具、HAL库下载、安装说明</a>，写得非常详细。</p>
-<h2 id="使用-CubeMX-配置工程"><a href="#使用-CubeMX-配置工程" class="headerlink" title="使用 CubeMX 配置工程"></a>使用 CubeMX 配置工程</h2><p>模板文件内已经有 CubeMX 工程了，位于<code>stm32f1-my-diy\board\CubeMX_Config</code>下，双击打开 <code>CubeMX_Config.ioc </code>工程。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/6-%E5%8F%8C%E5%87%BB%E6%89%93%E5%BC%80CubeMX%E5%B7%A5%E7%A8%8B.png" alt="双击打开CubeMX工程"></p>
-<h3 id="配置芯片"><a href="#配置芯片" class="headerlink" title="配置芯片"></a>配置芯片</h3><p>我使用的是正点原子战舰 V3 的开发板，使用的 CPU 是 STM32F103ZET6，CubeMX 模板工程使用的并不是这个芯片，所以我需要重新配置芯片为「STM32F103ZETx」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/11-CubeMX%E9%80%89%E6%8B%A9%E8%8A%AF%E7%89%87.png" alt="CubeMX选择芯片"></p>
-<h3 id="启用系统时钟"><a href="#启用系统时钟" class="headerlink" title="启用系统时钟"></a>启用系统时钟</h3><p>紧接着配置系统时钟，启用高速外部时钟(HSE)和低速外部时钟(LSE)：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/12-CubeMX%E5%90%AF%E7%94%A8%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%92%9F.png" alt="CubeMX启用系统时钟"></p>
-<h3 id="打开串口外设"><a href="#打开串口外设" class="headerlink" title="打开串口外设"></a>打开串口外设</h3><p>Connectivity –&gt; USART1 –&gt; Mode:Asynchronous，将 USART1 配置为异步模式。</p>
-<p>注意这里只需要选择串口外设引脚即可，无需配置其他参数。这里配置串口是为了后续使用 RT-Thread 的 FinSH 组件。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/14-CubeMXUSART1%E5%BC%95%E8%84%9A%E5%9B%BE.png" alt="CubeMX配置USART1"></p>
-<p>配置完成后，我们可以把右边的芯片图放大，然后就能看到芯片右侧的 PA10、PA9 引脚变成了绿色，后面还跟了当前引脚的功能，其中 PA10 引脚是 UASRT1 的接收引脚，PA9 是 UASRT1 的发送引脚。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/13-CubeMX%E9%85%8D%E7%BD%AEUSART1.png" alt="CubeMXUSART1引脚图"></p>
-<h3 id="设置调试方式"><a href="#设置调试方式" class="headerlink" title="设置调试方式"></a>设置调试方式</h3><p>System Core –&gt; SYS –&gt; Debug:Serial Wire，将调试配置 SWD 模式，这种模式一个最大的优点就是占用的 IO 口较少，我们从右侧的芯片图可以看到 SWD 模式只使用了两个 IO 口 PA13 和 PA14。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/15-CubeMX%E9%85%8D%E7%BD%AE%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F.png" alt="CubeMX配置调试模式"></p>
-<h3 id="时钟配置"><a href="#时钟配置" class="headerlink" title="时钟配置"></a>时钟配置</h3><p>HSE 是高速外部时钟，可接石英&#x2F;陶瓷谐振器，或者接外部时钟源，频率范围为 4MHz~16MHz。战舰 V3 开发板接的是 8M 的晶振。</p>
-<p>LSE 是低速外部时钟，接频率为 32.768kHz 的石英晶体。 这个主要是 RTC 的时钟源。</p>
-<p>根据正点原子《STMF1  开发指南》，这一步进行的时钟配置为：</p>
-<ul>
-<li>启用 HSE 作为 PLL 时钟源</li>
-<li>设置 PLL 9 倍倍频</li>
-<li>选择系统时钟源为 PLL</li>
-<li>设置 APB1 分频系数为 2</li>
-</ul>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/16-CubeMX%E9%85%8D%E7%BD%AE%E6%97%B6%E9%92%9F.png" alt="CubeMX配置时钟"></p>
-<p>最后总结一下配置过后关键时钟频率值：</p>
-<figure class="highlight abnf"><table><tr><td class="code"><pre><span class="line">SYSCLK(系统时钟) 			   <span class="operator">=</span><span class="number">72</span>MHz</span><br><span class="line">PLL 主时钟 					<span class="operator">=</span><span class="number">72</span>MHz</span><br><span class="line">AHB 总线时钟（HCLK<span class="operator">=</span>SYSCLK/<span class="number">1</span>）   <span class="operator">=</span><span class="number">72</span>MHz</span><br><span class="line">APB1 总线时钟（PCLK1<span class="operator">=</span>HCLK/<span class="number">2</span>）   <span class="operator">=</span><span class="number">36</span>MHz</span><br><span class="line">APB2 总线时钟（PCLK2<span class="operator">=</span>HCLK/<span class="number">1</span>）   <span class="operator">=</span><span class="number">72</span>MHz</span><br></pre></td></tr></table></figure>
-
-<h3 id="生成-CubeMX-项目"><a href="#生成-CubeMX-项目" class="headerlink" title="生成 CubeMX 项目"></a>生成 CubeMX 项目</h3><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/17-CubeMX%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81.png" alt="CubeMX生成代码"></p>
-<p>最后生成的时候，因为我们复制过来的模板工程里面本来就有 CubeMX 项目，选择直接覆盖即可。</p>
-<h3 id="拷贝时钟初始化函数"><a href="#拷贝时钟初始化函数" class="headerlink" title="拷贝时钟初始化函数"></a>拷贝时钟初始化函数</h3><p>在 <code>board/board.c</code> 文件中存放了函数 <code>SystemClock_Config() </code>，该函数负责初始化系统时钟。当使用 CubeMX 工具对系统时钟重新配置的时候，需要更新这个函数。</p>
-<p>该函数由 CubeMX 工具生成，默认存放在<code>board/CubeMX_Config/Src/main.c</code> 文件中。但是该文件并没有被包含到我们的工程中，因此需要将这个函数从 main.c 中拷贝到 <code>board/board.c</code> 文件中。该函数内容如下：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief System Clock Configuration</span></span><br><span class="line"><span class="comment">  * @retval None</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">SystemClock_Config</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">  RCC_OscInitTypeDef RCC_OscInitStruct = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">  RCC_ClkInitTypeDef RCC_ClkInitStruct = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/** Initializes the CPU, AHB and APB busses clocks </span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;	<span class="comment">//时钟源为 HSE</span></span><br><span class="line">  RCC_OscInitStruct.HSEState = RCC_HSE_ON;						<span class="comment">//打开 HSE</span></span><br><span class="line">  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;		<span class="comment">//HSE 预分频</span></span><br><span class="line">  RCC_OscInitStruct.HSIState = RCC_HSI_ON;						<span class="comment">//打开 HSI</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;					<span class="comment">//打开 PLL</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;			<span class="comment">//PLL 时钟源选择 HSE</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;					<span class="comment">//设置 PLL 倍频系数</span></span><br><span class="line">  <span class="keyword">if</span> (HAL_RCC_OscConfig(&amp;RCC_OscInitStruct) != HAL_OK)</span><br><span class="line">  &#123;</span><br><span class="line">    Error_Handler();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/** Initializes the CPU, AHB and APB busses clocks </span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK</span><br><span class="line">                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;</span><br><span class="line">  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;		<span class="comment">//设置系统时钟时钟源为 PLL</span></span><br><span class="line">  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;	<span class="comment">//AHB 分频系数为1</span></span><br><span class="line">  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;		<span class="comment">//APB1 分频系数为2</span></span><br><span class="line">  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;		<span class="comment">//APB2 分频系数为1</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (HAL_RCC_ClockConfig(&amp;RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)</span><br><span class="line">  &#123;</span><br><span class="line">    Error_Handler();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="修改-board-h"><a href="#修改-board-h" class="headerlink" title="修改 board.h"></a>修改 board.h</h3><p>在 board.h 文件中配置了 FLASH 和 RAM 的相关参数，这个文件中需要修改的是 STM32_FLASH_SIZE 和 STM32_SRAM_SIZE 这两个宏控制的参数。</p>
-<p>战舰 V3 所使用的 STM32F103ZET6 芯片的 FLASH 大小为 512K，RAM 的大小为 64K，因此对该文件作出如下的修改：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/18-%E4%BF%AE%E6%94%B9board%E5%A4%B4%E6%96%87%E4%BB%B6.png" alt="修改board头文件"></p>
-<h2 id="修改-Kconfig-选项"><a href="#修改-Kconfig-选项" class="headerlink" title="修改 Kconfig 选项"></a>修改 Kconfig 选项</h2><p>在本小节中修改 <code>board/Kconfig</code> 文件的内容有如下两点：</p>
-<ul>
-<li>芯片型号和系列</li>
-<li>BSP 上的外设支持选项</li>
-</ul>
-<p>芯片型号和系列的修改如下表所示：</p>
-<table>
-<thead>
-<tr>
-<th>宏定义</th>
-<th>意义</th>
-<th>格式</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>SOC_STM32F103ZE</td>
-<td>芯片型号</td>
-<td>SOC_STM32xxx</td>
-</tr>
-<tr>
-<td>SOC_SERIES_STM32F1</td>
-<td>芯片系列</td>
-<td>SOC_SERIES_STM32xx</td>
-</tr>
-</tbody></table>
-<p>关于 BSP 上的外设支持选项，一个初次提交的 BSP 仅仅需要支持 GPIO 驱动和串口驱动即可，因此在配置选项中只需保留这两个驱动配置项，如下图所示：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/2-Kconfig%E9%80%89%E9%A1%B9.png" alt="Kconfig选项"></p>
-<h2 id="修改工程构建相关文件"><a href="#修改工程构建相关文件" class="headerlink" title="修改工程构建相关文件"></a>修改工程构建相关文件</h2><p>接下来需要修改用于构建工程相关的文件。</p>
-<h3 id="修改链接脚本"><a href="#修改链接脚本" class="headerlink" title="修改链接脚本"></a>修改链接脚本</h3><p>linker_scripts 链接文件如下图所示：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/19-%E9%93%BE%E6%8E%A5%E8%84%9A%E6%9C%AC%E7%9B%AE%E5%BD%95.png" alt="链接脚本目录"></p>
-<p>其中 MDK 使用的链接脚本是 link.sct ，其他两个链接脚本的文件分别为 IAR 使用的 link.icf 和 GCC 编译器使用的 link.lds。我使用的是 MDK，所以修改 link.sct 文件。</p>
-<p>战舰 V3 使用的芯片为 STM32F103ZE，FLASH 为 512K，因此修改 LR_IROM1 和 ER_IROM1 的参数为 0x00080000（512 * 1024）。RAM 的大小为 64K， 因此修改 RW_IRAM1 的参数为 0x00010000（64 * 1024）。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/20-%E4%BF%AE%E6%94%B9%E9%93%BE%E6%8E%A5%E8%84%9A%E6%9C%AC.png" alt="修改链接脚本"></p>
-<h3 id="修改-SConscript-构建脚本"><a href="#修改-SConscript-构建脚本" class="headerlink" title="修改 SConscript  构建脚本"></a>修改 SConscript  构建脚本</h3><p>SConscript 脚本决定 MDK&#x2F;IAR 工程的生成以及编译过程中要添加文件。</p>
-<p>在这一步中需要修改芯片型号以及芯片启动文件的地址，战舰 V3 使用的芯片是 STM32F103ZET6，所以使用的启动文件是 <code>startup_stm32f103xe.s</code>，对应的芯片型号是 STM32F103xE。最后修改内容如下图所示：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/21-%E4%BF%AE%E6%94%B9SConscript%E6%9E%84%E5%BB%BA%E8%84%9A%E6%9C%AC.png" alt="修改SConscript构建脚本"></p>
-<h3 id="修改-MDK-工程模板"><a href="#修改-MDK-工程模板" class="headerlink" title="修改 MDK 工程模板"></a>修改 MDK 工程模板</h3><p>template 文件是生成 MDK&#x2F;IAR 工程的模板文件，通过修改该文件可以设置工程中使用的芯片型号以及下载方式。MDK4&#x2F;MDK5&#x2F;IAR 的工程模板文件，如下图所示：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/22-%E5%B7%A5%E7%A8%8B%E6%A8%A1%E6%9D%BF%E7%9B%AE%E5%BD%95.png" alt="工程模板目录"></p>
-<p>我使用的 MDK5，所以我修改的模板是 <code>template.uvprojx</code> 文件。</p>
-<ul>
-<li>战舰 V3 所使用的的芯片型号为 <code>STM32F103ZET6</code>，所以修改芯片型号如下：</li>
-</ul>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/23-MDK5%E6%A8%A1%E6%9D%BF%E5%B7%A5%E7%A8%8B%E4%BF%AE%E6%94%B9%E8%8A%AF%E7%89%87%E5%9E%8B%E5%8F%B7.png" alt="MDK5模板工程修改芯片型号"></p>
-<ul>
-<li>修改程序下载方式：</li>
-</ul>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/24-MDK5%E6%A8%A1%E6%9D%BF%E5%B7%A5%E7%A8%8B%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E4%B8%8B%E8%BD%BD%E6%96%B9%E5%BC%8F.png" alt="MDK5模板工程修改默认下载方式"></p>
-<p>修改完成后<strong>记得 <code>Ctrl+S</code>保存</strong>。</p>
-<h2 id="安装-ENV-工具"><a href="#安装-ENV-工具" class="headerlink" title="安装 ENV 工具"></a>安装 ENV 工具</h2><h3 id="Env-工具简介"><a href="#Env-工具简介" class="headerlink" title="Env 工具简介"></a>Env 工具简介</h3><p>Env 是 RT-Thread 推出的开发辅助工具，针对基于 RT-Thread 操作系统的项目工程，提供编译构建环境、图形化系统配置及软件包管理功能。</p>
-<p>其内置的 menuconfig 提供了简单易用的配置剪裁工具，可对内核、组件和软件包进行自由裁剪，使系统以搭积木的方式进行构建。</p>
-<p>Env 工具包含了 RT-Thread 源代码开发编译环境和软件包管理系统。</p>
-<h3 id="下载安装-Env-工具"><a href="#下载安装-Env-工具" class="headerlink" title="下载安装 Env 工具"></a>下载安装 Env 工具</h3><ul>
-<li><p>从 RT-Thread 官网下载 <a href="https://www.rt-thread.org/page/download.html">Env 工具</a>，将其<strong>解压到任一纯英文路径下</strong>即可使用，在 Env 目录下有一张 <code>Add_Env_To_Right-click_Menu.png</code>(添加 Env 至右键菜单.png) 的图片，按照图片指引一步步操作，就可以在任意文件夹下通过右键菜单来启动 Env 控制台，效果如下：<img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/26-menuconfig%E7%95%8C%E9%9D%A2.png" alt="任意路径右键打开Env"></p>
-</li>
-<li><p>在电脑上装好 git，软件包管理功能需要 git 的支持。git 的下载地址为<a href="https://git-scm.com/downloads%EF%BC%8C%E6%A0%B9%E6%8D%AE%E5%90%91%E5%AF%BC%E6%AD%A3%E7%A1%AE%E5%AE%89%E8%A3%85">https://git-scm.com/downloads，根据向导正确安装</a> git，并将 git 添加到系统环境变量。</p>
-</li>
-<li><p>注意在工作环境中，所有的路径都不可以有中文字符或者空格。</p>
-</li>
-</ul>
-<h2 id="重新生成-MDK-工程"><a href="#重新生成-MDK-工程" class="headerlink" title="重新生成 MDK 工程"></a>重新生成 MDK 工程</h2><h3 id="重新生成-rtconfig-h-文件"><a href="#重新生成-rtconfig-h-文件" class="headerlink" title="重新生成 rtconfig.h 文件"></a>重新生成 rtconfig.h 文件</h3><p>在 env 界面输入命令 <code>menuconfig</code> 对工程进行配置。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/25-%E4%BB%BB%E6%84%8F%E8%B7%AF%E5%BE%84%E5%8F%B3%E9%94%AE%E6%89%93%E5%BC%80Env.png" alt="menuconfig界面"></p>
-<h4 id="menuconfig-快捷键介绍"><a href="#menuconfig-快捷键介绍" class="headerlink" title="menuconfig 快捷键介绍"></a>menuconfig 快捷键介绍</h4><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/27-menuconfig%E5%BF%AB%E6%8D%B7%E9%94%AE%E4%BB%8B%E7%BB%8D.png" alt="menuconfig快捷键介绍"></p>
-<h4 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h4><p>menuconfig 有多种类型的配置项，修改方法也有所不同，常见类型如下：</p>
-<ul>
-<li>开&#x2F;关 型：使用空格键来选中或者关闭</li>
-<li>数值、字符串型：按下回车键后会出现对话框，在对话框中对配置项进行修改</li>
-</ul>
-<p>我们目前的目的仅仅是移植 BSP，所以先不进行复杂的配置，只使能 GPIO 和 UART：</p>
-<ul>
-<li>Hardware Drivers Config –&gt; On-chip Peripheral Drivers –&gt; 使能「Enable GPIO」和「Enable UART」</li>
-<li>「Enable UART」 –&gt; 「Enable UART1 RX DMA」</li>
-</ul>
-<h4 id="保存配置"><a href="#保存配置" class="headerlink" title="保存配置"></a>保存配置</h4><p>选择好配置项之后按 ESC 键退出，选择保存修改即可自动更新 rtconfig.h 文件。此时再次使用 scons 命令就会根据新的 rtconfig.h 文件重新编译工程了。</p>
-<h3 id="重新生成-MDK5-工程"><a href="#重新生成-MDK5-工程" class="headerlink" title="重新生成 MDK5 工程"></a>重新生成 MDK5 工程</h3><p>使用 env 工具输入命令 <code>scons --target=mdk5</code> 重新生成工程，如下图所示：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/28-%E9%87%8D%E6%96%B0%E7%94%9F%E6%88%90MDK5%E5%B7%A5%E7%A8%8B.png" alt="重新生成MDK5工程"></p>
-<p>重新生成工程成功：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/29-%E9%87%8D%E6%96%B0%E7%94%9F%E6%88%90MDK5%E5%B7%A5%E7%A8%8B%E6%88%90%E5%8A%9F.png" alt="重新生成MDK5工程成功"></p>
-<p> 生成新的 MDK5 工程以后，我们可以看到 <code>project.uvprojx</code> 的修改日期已经变成刚刚进行生成操作时的日期了。</p>
-<h3 id="验证-MDK5-工程"><a href="#验证-MDK5-工程" class="headerlink" title="验证 MDK5 工程"></a>验证 MDK5 工程</h3><p>双击打开 <code>project.uvprojx</code>，检查后发现在我们没有进行设置的情况下，此工程芯片型号、默认下载设置都和我们之前对模板工程的修改保持一致，说明我们之前的修改是生效了的。</p>
-<p>我们通过左边的项目框架里可以看到，相比模板工程的空空如也，新工程已经是五脏俱全了。打开 <code>Applications --&gt; main.c</code>，内容很简单，在 main 主函数内只有一个让 LED0 闪烁的程序，直接编译，没有任何错误和警告。为了方便调试和及时查看运行结果，设置程序下载结束后自动重启并运行：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/30-MDK5%E4%BF%AE%E6%94%B9%E4%B8%8B%E8%BD%BD%E5%90%8E%E9%87%8D%E5%90%AF.png" alt="MDK5修改下载后重启"></p>
-<p>连上战舰 V3 开发板，直接烧录程序，会发现 LED 并没有亮起来，检查代码后会发现，程序默认定义的 LED0 是引脚 PB.1，通过而查看战舰开发板的原理图，发现战舰开发板的 LED0 连接的是 PB.5 引脚，将引脚进行更改后编译，再烧入程序，LED0 正常闪烁。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/31-%E9%AA%8C%E8%AF%81MDK5%E5%B7%A5%E7%A8%8B.png" alt="验证MDK5工程"></p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>至此，我们的 BSP 移植就算成功了。但回顾整个移植过程，发现自己不明白的地方还太多了，特别是如何由模板工程直接构建出一个能够直接运行的工程，在没有了解其中原理之前，这个过程对我这个菜鸟而言无异于「魔法」；我开始移植的基础是 RT-Thread 内置的 STM32F1 系列通用模板，这个模板我是拿过来就用的，但这个模板是如何一步步构建起来的，我也完全没有弄清楚；CubeMX 图形化的操作方式固然对新手非常友好，但无疑也让我对底层代码的理解隔了一层「黑盒」。</p>
-<p>第一步已经迈出去了，希望通过后面的学习能够解答我上面诸多疑惑，学习不就正是这样一个发现问题，解决问题的过程。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://github.com/RT-Thread/rt-thread/blob/master/bsp/stm32/docs/STM32%E7%B3%BB%E5%88%97BSP%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B.md">RT-Thread 官方 STM32 系列 BSP 制作教程</a></p>
-]]></content>
-      <categories>
-        <category>嵌入式</category>
-      </categories>
-      <tags>
-        <tag>RT-Thread</tag>
-        <tag>STM32</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git 常用命令备忘录</title>
     <url>/post/Git-Cheat-Sheet/</url>
     <content><![CDATA[<p>一些不太常用的 Git 命令往往隔一段时间不用就忘记了，特写此篇备忘。</p>
@@ -998,97 +1036,6 @@
       </tags>
   </entry>
   <entry>
-    <title>雷蛇炼狱蝰蛇2013 更换中键微动</title>
-    <url>/post/RepairTheDeathadder2013/</url>
-    <content><![CDATA[<p>第一次自己动手修鼠标，挺好玩的。</p>
-<span id="more"></span>
-
-<h2 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h2><p>这款炼狱蝰蛇 2013 是自己四年前买的，之前一直用得好好的，但最近滚轮的按键功能突然失效了，表现为能够正常按压，但无法正常触发按键功能。在日常浏览网页时，我习惯用中键来关闭标签页以及在新窗口打开链接，现在中键突然失灵了，对我的日常使用造成了很大的不便。</p>
-<p>之前有在网上看过不少帖子都是自己修鼠标，感觉也不是很难，所以这次我也尝试一下来自己修鼠标。</p>
-<h2 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h2><p>1.电烙铁<br>2.镊子<br>3.十字螺丝刀<br>4.新中键微动<br>5.焊锡丝<br>6.小刀</p>
-<h2 id="拆解鼠标"><a href="#拆解鼠标" class="headerlink" title="拆解鼠标"></a>拆解鼠标</h2><p>通过搜索在什么值得买上面找到了这篇<a href="https://post.smzdm.com/p/568792/">维修教程</a>，虽然文中问题是鼠标出现了双击的现象，和我的问题并不相同，但同样都是通过更换微动来解决问题，而且各个步骤都比较详细，给我提供了很大的帮助。</p>
-<p>首先用刀片分别将鼠标背面左右上角的两个脚垫撬下来，两个脚垫是通过胶粘上去的，撬下来以后保存好，后面还原的时候还可以再粘回去。去掉两个脚垫后就可以看到里面的两颗螺丝了。这两颗螺丝可以直接拧下。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8E%BB%E9%99%A4%E8%84%9A%E5%9E%AB.jpg" alt="去除脚垫"></p>
-<p>需要注意的是第三颗螺丝的位置，是隐藏在贴纸的下方，位置如下图所示，直接用螺丝刀捅破贴纸即可看到。这颗螺丝拧出一定距离即可，不必全部拧出。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%9A%90%E8%97%8F%E7%9A%84%E7%AC%AC%E4%B8%89%E9%A2%97%E8%9E%BA%E4%B8%9D.jpg" alt="隐藏的第三颗螺丝"></p>
-<p>三颗螺丝处理完毕后，从下图所示处往下掰，即可打开鼠标上盖，打开时小心不要用力过猛，因为上盖上有一根灯光线和主板相连，不小心的话可能会扯断。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%8E%B0%E5%BC%80%E5%A4%96%E5%A3%B3.jpg" alt="掰开外壳"></p>
-<p>断开上盖与主板的连线后，即可移走上盖，看到鼠标主板。接下来如下图所示依次卸下主板上的三颗固定螺丝、左侧按键微动上的两颗螺丝以及滚轮旁边的小黑色螺丝后，最后再断开两根排线，即可取下主板。注意保管好螺丝，特别那颗较小的黑色螺丝。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%8B%86%E5%8D%B8%E4%B8%BB%E6%9D%BF.png" alt="拆卸主板"></p>
-<h2 id="更换微动"><a href="#更换微动" class="headerlink" title="更换微动"></a>更换微动</h2><p>观察主板可以看到滚轮横杆右侧的下方有一颗正方形微动，判断应该就是这个地方的微动损坏导致中键失灵。于是在万能的淘宝上花八毛钱+七块钱运费买了一个新的微动。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E8%80%81%E5%BE%AE%E5%8A%A8.jpg" alt="新老微动"></p>
-<p>因为没有吸锡器，可以直接用电烙铁加热主板背面的焊点，然后边加热边拔也是可以把微动给卸下来的。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8D%B8%E4%B8%8B%E5%BE%AE%E5%8A%A8.jpg" alt="卸下微动"></p>
-<p>微动只是一个开关，不区分方向，将新微动针脚插入到主板对应孔位上，然后用电烙铁和焊锡对准针脚化开焊锡即可完成更换。如果卸旧微动的时候焊孔内还残留有焊锡也不用担心，直接加热焊孔，将焊锡加热到流动状，这时新微动针脚可以轻松穿过焊孔。</p>
-<h2 id="重装鼠标"><a href="#重装鼠标" class="headerlink" title="重装鼠标"></a>重装鼠标</h2><p>按照刚刚的拆解步骤一步一步还原即可，排线全都有防呆设计，也不需要担心会接反。<br><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%87%8D%E8%A3%85%E9%BC%A0%E6%A0%87.jpg" alt="重装鼠标"></p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%BB%A1%E8%A1%80%E5%A4%8D%E6%B4%BB.jpg" alt="满血复活"></p>
-<p>最后自然是连接电脑进行测试，功能一切正常，又可以愉快地使用中键了。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在有帖子可以参考的情况下，整个更换过程还是比较简单的，最大的困难可能是大部分同学没有电烙铁，专门为此添置一个可能显得有些本末倒置，毕竟电烙铁也不便宜。</p>
-<p>自己动手，丰衣足食。人生第一次自己动手更换鼠标，成就感还是不小的。看到鼠标在自己手里满血复活，开心。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://post.smzdm.com/p/568792/">“拿什么拯救你，我的双击蛇”— 手把手教你更换Razer炼狱蝰蛇鼠标微动</a></p>
-]]></content>
-      <categories>
-        <category>小事</category>
-      </categories>
-      <tags>
-        <tag>DIY</tag>
-        <tag>外设</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo Next 主题 V7 升级 V8 记录</title>
-    <url>/post/Update-Next-From-V7-To-V8/</url>
-    <content><![CDATA[<p>Hexo 和 Next 最近都发布了大版本更新，此文记录了升级过程。</p>
-<span id="more"></span>
-
-<h2 id="升级-Hexo-版本"><a href="#升级-Hexo-版本" class="headerlink" title="升级 Hexo 版本"></a>升级 Hexo 版本</h2><p>Hexo 核心团队成员 Sukka 写的 <a href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a>详细介绍了 Hexo 5.0 的新特性，以及从 Hexo 4.x 升级到 Hexo 5.x 需要注意的地方。</p>
-<p>Hexo 5.0 版本带来了不小的性能上的提升，升级 5.0 直接修改 <code>hexo-site/package.json</code> 文件：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&quot;dependencies&quot;: &#123;</span><br><span class="line"><span class="deletion">-  &quot;hexo&quot;: &quot;^4.2.1&quot;,</span></span><br><span class="line"><span class="addition">+  &quot;hexo&quot;: &quot;^5.1.1&quot;,</span></span><br></pre></td></tr></table></figure>
-
-<p>然后再执行 <code>npm upadte</code> 命令即可。</p>
-<p>升级完 Hexo ，<code>_config.yml</code> 并不会更新，而 Hexo 5.0 是有新增和改动一些其中的配置项的，所以需要我们自己去 <a href="https://github.com/hexojs/hexo-starter/blob/master/_config.yml">GitHub</a> 上查看站点配置文件的变动情况，并手动同步这些修改到自己的站点配置文件里。</p>
-<p>主要的变动就是新增了 <code>prismjs</code> 相关配置项以及更新了 <code>updated_option</code> 配置项。</p>
-<h2 id="升级-Next-V8-0-0-版本"><a href="#升级-Next-V8-0-0-版本" class="headerlink" title="升级 Next V8.0.0 版本"></a>升级 Next V8.0.0 版本</h2><p>使用 Hexo 5.0 及以上版本，升级 Next 主题最简单的方法就是通过 <code>npm</code> 安装，进入博客根目录，执行以下命令即可安装最新版本的 Next 主题：</p>
-<figure class="highlight autoit"><table><tr><td class="code"><pre><span class="line">npm install hexo-theme-<span class="keyword">next</span></span><br></pre></td></tr></table></figure>
-<p>通过 <code>npm</code> 安装的 Next 主题默认文件夹路径为 <code>hexo-site/node_modules/hexo-theme-next</code> 。因为有一些自定义修改可能会需要我们改动主题的源文件，而因为整个 <code>node_modules/</code> 被<code>gitignore</code> 文件所忽略，将会导致我们无法用 Git 记录我们对主题源文件的修改。</p>
-<p>所以我将之前版本的 Next 主题文件夹进行改名，将 <code>hexo-site/theme/next</code> 改成了 <code>hexo-site/theme/next-V7</code>。然后将 <code>hexo-theme-next</code>  文件夹的内容复制到 <code>hexo-site/theme/next</code> 。这样就能将主题文件夹加入 Git 的管理之中了。</p>
-<p>这里切记不要直接将旧版本的 Next 主题文件夹直接删除，因为后面可能有配置以及文件需要进行迁移。</p>
-<p>更名完成后，使用 <code>hexo version</code> 查看版本号，可以看到一个硕大的 <code>Next</code> Logo 以及下方显示 <code>NexT version 8.0.0</code>，说明现在已经成功启用 Next V8 版本。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9F%A5%E7%9C%8BNext%E7%89%88%E6%9C%AC%E5%8F%B7.png" alt="查看 Next 版本号"></p>
-<h2 id="迁移配置文件"><a href="#迁移配置文件" class="headerlink" title="迁移配置文件"></a>迁移配置文件</h2><p>在之前使用 Next V7 版本的时候，我是利用 Hexo 的 Data Files 功能将主题配置放置在站点的 <code>source/_data/next.yml</code> 文件中。但这种做法在 V8 版本被官方告知已经过时，并<strong>将在一段时间后停止支持</strong>，现在推荐的做法是<a href="https://theme-next.js.org/docs/getting-started/configuration.html">使用 Alternate Theme Config 存储配置</a>，需要 Hexo 版本在 5.0 及以上。</p>
-<p>这里可以选择一步到位直接将主题配置整合到站点配置文件 <code>_config.yml</code> 中去，也可以选择依然使用独立的主题配置文件，我选择的是第二种。具体流程如下：</p>
-<h3 id="创建并配置-config-next-yml-文件"><a href="#创建并配置-config-next-yml-文件" class="headerlink" title="创建并配置 _config.next.yml 文件"></a>创建并配置 <code>_config.next.yml</code> 文件</h3><p>在博客根目录下新建 <code>_config.next.yml</code> 文件。</p>
-<p>因为 Next V8 有不少配置项发生了变更，所以我索性选择了重新配置。先将 <code>hexo-site/node_modules/hexo-theme-next/_config.yml</code> 中的内容复制到 <code>_config.next.yml</code> 中。然后用 Beyond Compare 软件对新主题配置文件 <code>_config.next.yml</code> 和旧主题配置文件 <code>source/_data/next.yml</code> 两者进行文本比较，根据自己的需求迁移整合相关配置项。</p>
-<p>修改完成后，将旧主题配置文件 <code>source/_data/next.yml</code> 改名，我是改成了 <code>next-old.yml</code>，名字随意，只要能同原来的 <code>next.yml</code> 区别开来即可。</p>
-<p>从 V7 升级到 V8 主要有下面几个变化：</p>
-<ul>
-<li>Hexo 5.0 版本移除了对于 swig 模版的支持，使用 Nunjucks 代替 swig 作为模版引擎，主题配置文件内 <code>custom_file_path</code> 支持文件的后缀也从 <code>.swig</code> 变成了 <code>.njk</code>。所以如果此前根据 swig 的语法写过自定义内容，请在更新前确认它们是与 Nunjucks 兼容的，否则会报错，且生成的页面为空白。例如， Nunjucks 只支持 <code>and</code> 运算符，需要替换掉 swig 中的 <code>&amp;&amp;</code>。</li>
-<li>Next V8 将自带的 Font Awesome 图标库由 4.7.0 版本升级为了 5.13.0 版本。此次升级并不向下兼容，所以需要修改配置文件中与 Font Awesome 相关的内容，否则图标可能无法正常显示。</li>
-<li>NexT V8 已支持一键切换 CDN 服务商，而不需要为每个插件单独设置 CDN 地址。但需要注意，如果是使用最新版的 Next，那么一定要保持 <code>internal: local</code> 的默认设置不变。</li>
-<li>如果此前配置过 Valine，需要注意将主题配置文件中的 <code>appid</code> 和 <code>appkey</code> 改为 <code>appId</code> 和 <code>appKey</code> 。否则会出现 Valine 无法正常加载的现象。</li>
-<li>由于 Velocity.js 缺乏维护，NexT V8 使用 Animate.css 代替之。两者的动画效果几乎完全一致，除了动画名称略有不同。如果在配置文件中设置了旧的名称（例如 slideDownIn），请将其移除或根据此网页选择新的动画效果：<a href="http://theme-next.js.org/animate/">http://theme-next.js.org/animate/</a></li>
-</ul>
-<p>更多详细信息，可以自行查询 Next <a href="https://github.com/next-theme/hexo-theme-next/issues/4">相关官方说明</a>以及<a href="https://theme-next.js.org/docs/">官方文档</a>。</p>
-<h3 id="迁移-Favicon-位置"><a href="#迁移-Favicon-位置" class="headerlink" title="迁移 Favicon 位置"></a>迁移 Favicon 位置</h3><p>之前我博客的 Favicon 图片啥的都是放在 <code>hexo-site/themes/next/source/images</code> 目录下面，正好趁着这次升级的机会，将图片全部移到了 <code>hexo-site/source/images</code> 下（没有这个文件夹就自己新建）。</p>
-<p>不要忘记去 <code>_config.next.yml</code> 检查下 Favicon 相关配置的文件名是否正确，默认的都带有 <code>-next</code>  后缀。</p>
-<h2 id="自定义修改迁移"><a href="#自定义修改迁移" class="headerlink" title="自定义修改迁移"></a>自定义修改迁移</h2><p>这一部分是最麻烦的，因为跨版本升级，很多源文件的位置以及名称都发生了变化，比如每篇文章结尾处的版权声明的样式文件就从 <code>post-copyright.styl</code> 变成了 <code>post-footer.styl</code>。而且模版引擎也从swig 变更成了 Nunjucks，虽然大部分内容是可以互相兼容的，但万一碰到不兼容的，排查起来就比较麻烦了。</p>
-<p>所幸我的自定义修改并不多，而且都是 Nunjucks 兼容的，所以迁移起来相对较快。在进行迁移的时候，利用类似 Beyond Compare 之类的文件比较软件可以有效提高迁移速度，推荐大家尝试。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>折腾了一天，成功从 Next V7 升级到了 V8，升级所带来肉眼可见的变化并不多，只有一些诸如赞赏按钮样式之类的小变动，其他更多都是内部的一些变动。</p>
-<p>我是喜欢自己折腾，而且及时使用新版，可以帮助发现并反馈问题，可以帮助 Next 主题更好地进行迭代。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://github.com/next-theme/hexo-theme-next">hexo-theme-next README.md</a></p>
-<p><a href="https://theme-next.js.org/docs/">Next 官方文档</a></p>
-<p><a href="https://github.com/next-theme/hexo-theme-next/issues/4">Next【必读】更新说明及常见问题 </a></p>
-<p><a href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a></p>
-]]></content>
-      <categories>
-        <category>个人博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Next</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>利用 Pqi 实现 Python 快速换源</title>
     <url>/post/change-python-pypisource/</url>
     <content><![CDATA[<p>pip 默认的软件源是国外的，下载起来速度很慢，我们可以将软件源换成国内的镜像源，大幅提高下载速度。本文介绍利用 <code>pqi</code> 这一小工具来实现简单快速地更换 pip 软件源。</p>
@@ -1110,57 +1057,6 @@
       </categories>
       <tags>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>什么是全功能 Type-C 及显示器所需带宽如何计算</title>
-    <url>/post/What-Is-Full-Featured-Type-C/</url>
-    <content><![CDATA[<p>本文主要介绍了如何计算特定分辨率和刷新率显示器所需带宽以及对全功能 Type-C 的一些简单科普。</p>
-<span id="more"></span>
-
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>最近动了换新笔记本和显示器的念头，自己想换一台 4K 显示器，在了解相关知识的时候，经常看到要注意视频输出接口带宽的提醒。其中各种概念多且杂，初接触很容易懵圈，所以我整理汇总了一些网上的资料，以作此文。</p>
-<p>文中如有不对或不妥的地方，欢迎评论留言指出错误，不甚感激。</p>
-<h2 id="4K-60Hz-显示需要多少带宽"><a href="#4K-60Hz-显示需要多少带宽" class="headerlink" title="4K@60Hz 显示需要多少带宽"></a>4K@60Hz 显示需要多少带宽</h2><p>我们这里以一块 4K、8 bit、60 Hz 的屏幕举例，这块显示屏有 3840 * 2160 个像素点，每个像素点又由红绿蓝三个子像素构成 ，每个子像素需要 8 bit 的数据，刷新率为 60 Hz，也就是每秒需要刷新 60 次，那么每秒需要传输的数据量就是 3840 * 2160 * 3 * 8 * 60 &#x3D;  11.94 Gbit，需要的带宽就是 11.94 Gbps。</p>
-<p>上述这些数据只是我们能够在显示屏上看到的内容，实际上在传输相关画面数据的时候，还需要考虑到防止画面撕裂，以及画面对齐等等需求，需要传输比实际显示画面更多的数据，所以实际传输的数据会比上面计算的更多。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/7-%E6%98%BE%E7%A4%BA%E5%99%A8%E5%AE%9E%E9%99%85%E4%BC%A0%E8%BE%93%E6%95%B0%E6%8D%AE.png" alt="显示器实际传输数据"></p>
-<p>下面这张来自 B 站 Up 主<a href="https://space.bilibili.com/14871346#/">硬件茶谈</a>的表格详细列出了市面上常见分辨率及刷新率的组合分别所需要的带宽，其中还有各种显示器接口的相容性：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/8-%E6%98%BE%E7%A4%BA%E6%8E%A5%E5%8F%A3%E7%9B%B8%E5%AE%B9%E8%A1%A8.png" alt="显示接口相容表"></p>
-<p>显示器带宽具体的计算原理可以查看 Up 主的<a href="https://b23.tv/rbYOKW">视频-【硬件科普】4K144Hz需要传输多少数据，教你如何正确的计算显示器的带宽需求？</a>，原理及计算方法都讲得非常清楚，动画特效也是一流。</p>
-<p>在此也强烈安利下 Up 主，最早是在知乎关注他的，在知乎笔记本话题下相当活跃，后期转型成 B 站 Up 主，视频质量极高，讲解概念深入浅出，动画精致流畅，看他的视频可谓一种享受。我从 Up 主的视频里学到了很多硬件相关基础知识。而且 Up 主现在还只是一名在校大学生，让人不服不行，在此就祝愿 Up 主早日发大财吧。</p>
-<h2 id="什么是全功能-Type-C"><a href="#什么是全功能-Type-C" class="headerlink" title="什么是全功能 Type-C"></a>什么是全功能 Type-C</h2><p>同时具有<strong>数据传输、充电、显示</strong>三项功能的 Type-C 就称之为全功能 Type-C。而之所有会有「全功能」和「非全功能」的区分，是因为 Type-C 只是个<strong>接口形状</strong>。Type-C 接口是能够支持 100W PD 供电、DP 显示输出、USB 数据传输等功能没错，但 <strong>Type-C 接口的功能都是可以被增减的</strong>，所以并不是所有 Type-C 接口都同时具备数据传输、充电、显示三项功能。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/2-Type-C%E4%B8%8D%E5%90%8C%E5%8A%9F%E8%83%BD.png" alt="Type-C 不同功能说明"></p>
-<p>每台电脑上面所配备的 Type-C 接口所具备的功能是不尽相同的，厂商基于成本或是其他方面的考虑，配备的 Type-C 可能只支持 USB 数据传输功能 ，不能充电、显示，也可能配备只支持 DP 显示和数据传输的 Type-C 口，不能充电。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-TypeC%E5%8A%9F%E8%83%BD%E4%B8%8D%E9%BD%90.png" alt="Type-C 现状"></p>
-<h2 id="Type-C-的「数据传输」带宽"><a href="#Type-C-的「数据传输」带宽" class="headerlink" title="Type-C 的「数据传输」带宽"></a>Type-C 的「数据传输」带宽</h2><p>Type-C 接口还有一个重要的参数就是 USB 版本，USB 版本越高，带宽也就越高，理论上带宽越高，传输速度越快。不过 USB 版本的命名经过了几次大的修改，命名规范变来变去，对普通消费者识别起来极不友好。下面两张图分别引用自<a href="https://basic-tutorials.com/usb-type-c-at-a-glance-what-the-port-can-do-what-it-cant-do-and-why-it-has-nothing-to-do-with-usb-3-0/">USB type C at a glance: What the port can do, what it can’t do and why it has nothing to do with USB 3.0</a>及<a href="https://zh.wikipedia.org/wiki/USB">维基百科-USB</a>。其中 USB3.2 Gen 2x2 的 Logo 以维基百科的为准。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/3-USB%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E.png" alt="USB 版本说明"></p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/4-USB%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91.png" alt="USB 版本及速率(维基百科)"></p>
-<p>通过这两张图，我们能够比较清楚地知道各个 USB 版本对应的传输速率及兼容接口。目前笔记本上 Type-C 接口的主流速率还是 USB3.2 Gen 1 也就是 5Gbps，理论速度约合 500 MB&#x2F;s。</p>
-<p><strong>但需要注意的是，多数情况下，「USB 几点几」这样的称呼，仅仅只是用于描述接口的「数据传输」速度，不代表这个接口其他任何能力，如能否PD充电、能否显示。</strong></p>
-<h2 id="5Gbps-的-Type-C-无法满足-4K-60Hz-输出？"><a href="#5Gbps-的-Type-C-无法满足-4K-60Hz-输出？" class="headerlink" title="5Gbps 的 Type-C 无法满足 4K@60Hz 输出？"></a>5Gbps 的 Type-C 无法满足 4K@60Hz 输出？</h2><p>这个问题也是我在没了解相关知识之前相当困惑的一个地方——当我看到心仪的笔记本只有 USB 3.2 Gen1 接口和 HDMI1.4b 的接口，而两者的带宽都远小于 4K@60Hz 所需的 12.54 Gbps 时，我当时同样以为外接 4K@60Hz 显示器是不可能实现的了。</p>
-<p>这里面的问题就在于我们<strong>混淆了 Type-C 接口的「数据带宽」和「显示带宽」</strong>，我们日常习惯说一个 Type-C 的带宽是 3.1 Gen1 或者 Gen2、5Gbps 或者10Gbps，这时候说的其实都是这个接口的 USB 数据带宽，只能代表这个接口接 U盘&#x2F;移动硬盘之类的存储进行数据传输时所能达到的最大速度。</p>
-<p>Type-C能够整合显示输出功能，主要是借助了DP Alt Mode（替代模式）功能，借助Type-C正反面诸多针脚中的几个定义为显示接口。通俗点说可以理解为单独做了个 DP 显示总线放在 Type-C 口上，所以数据带宽是 5Gbps 还是10Gbps 并<strong>不代表显示带宽也只有这么多</strong>。以目前 Type-C 的规范来看，当我们说一个 Type-C 支持显示输出时，那么这个接口<strong>至少可以支持 DP1.2 标准</strong>，也就是说拥有独立的约 21Gbps 的显示带宽，因为 DP1.2 中有 20% 的编码是用于校验的，所以真正能用来传输视频信号的带宽只有 21.60 * 0.8 &#x3D; 17.28 Gbps，但这也已经<strong>完全可以满足 4K@60Hz 的传输要求了</strong>。下图引用自<a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a>：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/5-USBC%E7%8B%AC%E7%AB%8B%E6%98%BE%E7%A4%BA%E5%B8%A6%E5%AE%BD.png" alt="Type-C 显示拥有独立的显示带宽"></p>
-<p>我们现在关于 5Gbps 的 Type-C 能否满足 4K@60Hz 画面传输的问题有了明确的答案，只要是<strong>支持显示输出的 Type-C 口，就可以支持输出 4K@60Hz</strong>。</p>
-<h2 id="5Gbps-的-Type-C-的不足之处"><a href="#5Gbps-的-Type-C-的不足之处" class="headerlink" title="5Gbps 的 Type-C 的不足之处"></a>5Gbps 的 Type-C 的不足之处</h2><p>Type-C 显示输出虽然是 DP&#x2F;HDMI 显示，但实际上还是借用了数据传输的一部分引脚。当一个支持 DP 显示输出的 Type-C ，而它的数据带宽是 USB3.1 Gen1 5Gbps 时，那么此时是无法<strong>通过一根线</strong>同时实现理应互不干扰的 4K@60Hz 和 USB3.0 传输的，下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/6-4K%E6%98%BE%E7%A4%BA%E8%BE%93%E5%87%BA%E7%9A%84%E5%87%A0%E7%A7%8D%E5%9C%BA%E6%99%AF.png" alt="4K 显示输出的几种场景"></p>
-<p>因此在一些显示器的详情界面会注明——当显示器上的 USB 设置为 3.2Gen1 时，只能输出 4K@30Hz 的画面，如果想要输出 4K@60Hz 需要将 USB 设置为 2.0 或关闭。所以如果我们使用的显示器有拓展 USB 口，而我们是使用 Type-C 直连显示器，为了保证使用体验，我们需要手动将显示器上的 USB 设置为 USB2.0，此时显示器上的 USB 更适合用来接键鼠，文件传输之类的还是直连笔记本会比较快。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/9-%E6%98%BE%E7%A4%BA%E5%99%A8%E8%AF%A6%E6%83%85%E7%95%8C%E9%9D%A2%E7%9A%84%E6%8F%90%E7%A4%BA.png" alt="显示器详情界面的提示"></p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/101486153">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（下篇） - 知乎</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a></p>
-<p><a href="https://basic-tutorials.com/usb-type-c-at-a-glance-what-the-port-can-do-what-it-cant-do-and-why-it-has-nothing-to-do-with-usb-3-0/">USB type C at a glance: What the port can do, what it can’t do and why it has nothing to do with USB 3.0</a></p>
-<p><a href="https://zh.wikipedia.org/wiki/USB">维基百科-USB</a></p>
-<p><a href="https://b23.tv/rbYOKW">视频-【硬件科普】4K144Hz需要传输多少数据，教你如何正确的计算显示器的带宽需求？</a></p>
-<p><a href="https://diy.pconline.com.cn/1374/13748807.html">DP vs HDMI 谁才是游戏玩家最佳选择</a></p>
-]]></content>
-      <categories>
-        <category>硬件</category>
-      </categories>
-      <tags>
-        <tag>硬件</tag>
-        <tag>显示器</tag>
-        <tag>USB</tag>
-        <tag>Type-C</tag>
       </tags>
   </entry>
   <entry>
@@ -1307,6 +1203,110 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo Next 主题 V7 升级 V8 记录</title>
+    <url>/post/Update-Next-From-V7-To-V8/</url>
+    <content><![CDATA[<p>Hexo 和 Next 最近都发布了大版本更新，此文记录了升级过程。</p>
+<span id="more"></span>
+
+<h2 id="升级-Hexo-版本"><a href="#升级-Hexo-版本" class="headerlink" title="升级 Hexo 版本"></a>升级 Hexo 版本</h2><p>Hexo 核心团队成员 Sukka 写的 <a href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a>详细介绍了 Hexo 5.0 的新特性，以及从 Hexo 4.x 升级到 Hexo 5.x 需要注意的地方。</p>
+<p>Hexo 5.0 版本带来了不小的性能上的提升，升级 5.0 直接修改 <code>hexo-site/package.json</code> 文件：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&quot;dependencies&quot;: &#123;</span><br><span class="line"><span class="deletion">-  &quot;hexo&quot;: &quot;^4.2.1&quot;,</span></span><br><span class="line"><span class="addition">+  &quot;hexo&quot;: &quot;^5.1.1&quot;,</span></span><br></pre></td></tr></table></figure>
+
+<p>然后再执行 <code>npm upadte</code> 命令即可。</p>
+<p>升级完 Hexo ，<code>_config.yml</code> 并不会更新，而 Hexo 5.0 是有新增和改动一些其中的配置项的，所以需要我们自己去 <a href="https://github.com/hexojs/hexo-starter/blob/master/_config.yml">GitHub</a> 上查看站点配置文件的变动情况，并手动同步这些修改到自己的站点配置文件里。</p>
+<p>主要的变动就是新增了 <code>prismjs</code> 相关配置项以及更新了 <code>updated_option</code> 配置项。</p>
+<h2 id="升级-Next-V8-0-0-版本"><a href="#升级-Next-V8-0-0-版本" class="headerlink" title="升级 Next V8.0.0 版本"></a>升级 Next V8.0.0 版本</h2><p>使用 Hexo 5.0 及以上版本，升级 Next 主题最简单的方法就是通过 <code>npm</code> 安装，进入博客根目录，执行以下命令即可安装最新版本的 Next 主题：</p>
+<figure class="highlight autoit"><table><tr><td class="code"><pre><span class="line">npm install hexo-theme-<span class="keyword">next</span></span><br></pre></td></tr></table></figure>
+<p>通过 <code>npm</code> 安装的 Next 主题默认文件夹路径为 <code>hexo-site/node_modules/hexo-theme-next</code> 。因为有一些自定义修改可能会需要我们改动主题的源文件，而因为整个 <code>node_modules/</code> 被<code>gitignore</code> 文件所忽略，将会导致我们无法用 Git 记录我们对主题源文件的修改。</p>
+<p>所以我将之前版本的 Next 主题文件夹进行改名，将 <code>hexo-site/theme/next</code> 改成了 <code>hexo-site/theme/next-V7</code>。然后将 <code>hexo-theme-next</code>  文件夹的内容复制到 <code>hexo-site/theme/next</code> 。这样就能将主题文件夹加入 Git 的管理之中了。</p>
+<p>这里切记不要直接将旧版本的 Next 主题文件夹直接删除，因为后面可能有配置以及文件需要进行迁移。</p>
+<p>更名完成后，使用 <code>hexo version</code> 查看版本号，可以看到一个硕大的 <code>Next</code> Logo 以及下方显示 <code>NexT version 8.0.0</code>，说明现在已经成功启用 Next V8 版本。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9F%A5%E7%9C%8BNext%E7%89%88%E6%9C%AC%E5%8F%B7.png" alt="查看 Next 版本号"></p>
+<h2 id="迁移配置文件"><a href="#迁移配置文件" class="headerlink" title="迁移配置文件"></a>迁移配置文件</h2><p>在之前使用 Next V7 版本的时候，我是利用 Hexo 的 Data Files 功能将主题配置放置在站点的 <code>source/_data/next.yml</code> 文件中。但这种做法在 V8 版本被官方告知已经过时，并<strong>将在一段时间后停止支持</strong>，现在推荐的做法是<a href="https://theme-next.js.org/docs/getting-started/configuration.html">使用 Alternate Theme Config 存储配置</a>，需要 Hexo 版本在 5.0 及以上。</p>
+<p>这里可以选择一步到位直接将主题配置整合到站点配置文件 <code>_config.yml</code> 中去，也可以选择依然使用独立的主题配置文件，我选择的是第二种。具体流程如下：</p>
+<h3 id="创建并配置-config-next-yml-文件"><a href="#创建并配置-config-next-yml-文件" class="headerlink" title="创建并配置 _config.next.yml 文件"></a>创建并配置 <code>_config.next.yml</code> 文件</h3><p>在博客根目录下新建 <code>_config.next.yml</code> 文件。</p>
+<p>因为 Next V8 有不少配置项发生了变更，所以我索性选择了重新配置。先将 <code>hexo-site/node_modules/hexo-theme-next/_config.yml</code> 中的内容复制到 <code>_config.next.yml</code> 中。然后用 Beyond Compare 软件对新主题配置文件 <code>_config.next.yml</code> 和旧主题配置文件 <code>source/_data/next.yml</code> 两者进行文本比较，根据自己的需求迁移整合相关配置项。</p>
+<p>修改完成后，将旧主题配置文件 <code>source/_data/next.yml</code> 改名，我是改成了 <code>next-old.yml</code>，名字随意，只要能同原来的 <code>next.yml</code> 区别开来即可。</p>
+<p>从 V7 升级到 V8 主要有下面几个变化：</p>
+<ul>
+<li>Hexo 5.0 版本移除了对于 swig 模版的支持，使用 Nunjucks 代替 swig 作为模版引擎，主题配置文件内 <code>custom_file_path</code> 支持文件的后缀也从 <code>.swig</code> 变成了 <code>.njk</code>。所以如果此前根据 swig 的语法写过自定义内容，请在更新前确认它们是与 Nunjucks 兼容的，否则会报错，且生成的页面为空白。例如， Nunjucks 只支持 <code>and</code> 运算符，需要替换掉 swig 中的 <code>&amp;&amp;</code>。</li>
+<li>Next V8 将自带的 Font Awesome 图标库由 4.7.0 版本升级为了 5.13.0 版本。此次升级并不向下兼容，所以需要修改配置文件中与 Font Awesome 相关的内容，否则图标可能无法正常显示。</li>
+<li>NexT V8 已支持一键切换 CDN 服务商，而不需要为每个插件单独设置 CDN 地址。但需要注意，如果是使用最新版的 Next，那么一定要保持 <code>internal: local</code> 的默认设置不变。</li>
+<li>如果此前配置过 Valine，需要注意将主题配置文件中的 <code>appid</code> 和 <code>appkey</code> 改为 <code>appId</code> 和 <code>appKey</code> 。否则会出现 Valine 无法正常加载的现象。</li>
+<li>由于 Velocity.js 缺乏维护，NexT V8 使用 Animate.css 代替之。两者的动画效果几乎完全一致，除了动画名称略有不同。如果在配置文件中设置了旧的名称（例如 slideDownIn），请将其移除或根据此网页选择新的动画效果：<a href="http://theme-next.js.org/animate/">http://theme-next.js.org/animate/</a></li>
+</ul>
+<p>更多详细信息，可以自行查询 Next <a href="https://github.com/next-theme/hexo-theme-next/issues/4">相关官方说明</a>以及<a href="https://theme-next.js.org/docs/">官方文档</a>。</p>
+<h3 id="迁移-Favicon-位置"><a href="#迁移-Favicon-位置" class="headerlink" title="迁移 Favicon 位置"></a>迁移 Favicon 位置</h3><p>之前我博客的 Favicon 图片啥的都是放在 <code>hexo-site/themes/next/source/images</code> 目录下面，正好趁着这次升级的机会，将图片全部移到了 <code>hexo-site/source/images</code> 下（没有这个文件夹就自己新建）。</p>
+<p>不要忘记去 <code>_config.next.yml</code> 检查下 Favicon 相关配置的文件名是否正确，默认的都带有 <code>-next</code>  后缀。</p>
+<h2 id="自定义修改迁移"><a href="#自定义修改迁移" class="headerlink" title="自定义修改迁移"></a>自定义修改迁移</h2><p>这一部分是最麻烦的，因为跨版本升级，很多源文件的位置以及名称都发生了变化，比如每篇文章结尾处的版权声明的样式文件就从 <code>post-copyright.styl</code> 变成了 <code>post-footer.styl</code>。而且模版引擎也从swig 变更成了 Nunjucks，虽然大部分内容是可以互相兼容的，但万一碰到不兼容的，排查起来就比较麻烦了。</p>
+<p>所幸我的自定义修改并不多，而且都是 Nunjucks 兼容的，所以迁移起来相对较快。在进行迁移的时候，利用类似 Beyond Compare 之类的文件比较软件可以有效提高迁移速度，推荐大家尝试。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>折腾了一天，成功从 Next V7 升级到了 V8，升级所带来肉眼可见的变化并不多，只有一些诸如赞赏按钮样式之类的小变动，其他更多都是内部的一些变动。</p>
+<p>我是喜欢自己折腾，而且及时使用新版，可以帮助发现并反馈问题，可以帮助 Next 主题更好地进行迭代。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://github.com/next-theme/hexo-theme-next">hexo-theme-next README.md</a></p>
+<p><a href="https://theme-next.js.org/docs/">Next 官方文档</a></p>
+<p><a href="https://github.com/next-theme/hexo-theme-next/issues/4">Next【必读】更新说明及常见问题 </a></p>
+<p><a href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a></p>
+]]></content>
+      <categories>
+        <category>个人博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>什么是全功能 Type-C 及显示器所需带宽如何计算</title>
+    <url>/post/What-Is-Full-Featured-Type-C/</url>
+    <content><![CDATA[<p>本文主要介绍了如何计算特定分辨率和刷新率显示器所需带宽以及对全功能 Type-C 的一些简单科普。</p>
+<span id="more"></span>
+
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>最近动了换新笔记本和显示器的念头，自己想换一台 4K 显示器，在了解相关知识的时候，经常看到要注意视频输出接口带宽的提醒。其中各种概念多且杂，初接触很容易懵圈，所以我整理汇总了一些网上的资料，以作此文。</p>
+<p>文中如有不对或不妥的地方，欢迎评论留言指出错误，不甚感激。</p>
+<h2 id="4K-60Hz-显示需要多少带宽"><a href="#4K-60Hz-显示需要多少带宽" class="headerlink" title="4K@60Hz 显示需要多少带宽"></a>4K@60Hz 显示需要多少带宽</h2><p>我们这里以一块 4K、8 bit、60 Hz 的屏幕举例，这块显示屏有 3840 * 2160 个像素点，每个像素点又由红绿蓝三个子像素构成 ，每个子像素需要 8 bit 的数据，刷新率为 60 Hz，也就是每秒需要刷新 60 次，那么每秒需要传输的数据量就是 3840 * 2160 * 3 * 8 * 60 &#x3D;  11.94 Gbit，需要的带宽就是 11.94 Gbps。</p>
+<p>上述这些数据只是我们能够在显示屏上看到的内容，实际上在传输相关画面数据的时候，还需要考虑到防止画面撕裂，以及画面对齐等等需求，需要传输比实际显示画面更多的数据，所以实际传输的数据会比上面计算的更多。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/7-%E6%98%BE%E7%A4%BA%E5%99%A8%E5%AE%9E%E9%99%85%E4%BC%A0%E8%BE%93%E6%95%B0%E6%8D%AE.png" alt="显示器实际传输数据"></p>
+<p>下面这张来自 B 站 Up 主<a href="https://space.bilibili.com/14871346#/">硬件茶谈</a>的表格详细列出了市面上常见分辨率及刷新率的组合分别所需要的带宽，其中还有各种显示器接口的相容性：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/8-%E6%98%BE%E7%A4%BA%E6%8E%A5%E5%8F%A3%E7%9B%B8%E5%AE%B9%E8%A1%A8.png" alt="显示接口相容表"></p>
+<p>显示器带宽具体的计算原理可以查看 Up 主的<a href="https://b23.tv/rbYOKW">视频-【硬件科普】4K144Hz需要传输多少数据，教你如何正确的计算显示器的带宽需求？</a>，原理及计算方法都讲得非常清楚，动画特效也是一流。</p>
+<p>在此也强烈安利下 Up 主，最早是在知乎关注他的，在知乎笔记本话题下相当活跃，后期转型成 B 站 Up 主，视频质量极高，讲解概念深入浅出，动画精致流畅，看他的视频可谓一种享受。我从 Up 主的视频里学到了很多硬件相关基础知识。而且 Up 主现在还只是一名在校大学生，让人不服不行，在此就祝愿 Up 主早日发大财吧。</p>
+<h2 id="什么是全功能-Type-C"><a href="#什么是全功能-Type-C" class="headerlink" title="什么是全功能 Type-C"></a>什么是全功能 Type-C</h2><p>同时具有<strong>数据传输、充电、显示</strong>三项功能的 Type-C 就称之为全功能 Type-C。而之所有会有「全功能」和「非全功能」的区分，是因为 Type-C 只是个<strong>接口形状</strong>。Type-C 接口是能够支持 100W PD 供电、DP 显示输出、USB 数据传输等功能没错，但 <strong>Type-C 接口的功能都是可以被增减的</strong>，所以并不是所有 Type-C 接口都同时具备数据传输、充电、显示三项功能。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/2-Type-C%E4%B8%8D%E5%90%8C%E5%8A%9F%E8%83%BD.png" alt="Type-C 不同功能说明"></p>
+<p>每台电脑上面所配备的 Type-C 接口所具备的功能是不尽相同的，厂商基于成本或是其他方面的考虑，配备的 Type-C 可能只支持 USB 数据传输功能 ，不能充电、显示，也可能配备只支持 DP 显示和数据传输的 Type-C 口，不能充电。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-TypeC%E5%8A%9F%E8%83%BD%E4%B8%8D%E9%BD%90.png" alt="Type-C 现状"></p>
+<h2 id="Type-C-的「数据传输」带宽"><a href="#Type-C-的「数据传输」带宽" class="headerlink" title="Type-C 的「数据传输」带宽"></a>Type-C 的「数据传输」带宽</h2><p>Type-C 接口还有一个重要的参数就是 USB 版本，USB 版本越高，带宽也就越高，理论上带宽越高，传输速度越快。不过 USB 版本的命名经过了几次大的修改，命名规范变来变去，对普通消费者识别起来极不友好。下面两张图分别引用自<a href="https://basic-tutorials.com/usb-type-c-at-a-glance-what-the-port-can-do-what-it-cant-do-and-why-it-has-nothing-to-do-with-usb-3-0/">USB type C at a glance: What the port can do, what it can’t do and why it has nothing to do with USB 3.0</a>及<a href="https://zh.wikipedia.org/wiki/USB">维基百科-USB</a>。其中 USB3.2 Gen 2x2 的 Logo 以维基百科的为准。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/3-USB%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E.png" alt="USB 版本说明"></p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/4-USB%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91.png" alt="USB 版本及速率(维基百科)"></p>
+<p>通过这两张图，我们能够比较清楚地知道各个 USB 版本对应的传输速率及兼容接口。目前笔记本上 Type-C 接口的主流速率还是 USB3.2 Gen 1 也就是 5Gbps，理论速度约合 500 MB&#x2F;s。</p>
+<p><strong>但需要注意的是，多数情况下，「USB 几点几」这样的称呼，仅仅只是用于描述接口的「数据传输」速度，不代表这个接口其他任何能力，如能否PD充电、能否显示。</strong></p>
+<h2 id="5Gbps-的-Type-C-无法满足-4K-60Hz-输出？"><a href="#5Gbps-的-Type-C-无法满足-4K-60Hz-输出？" class="headerlink" title="5Gbps 的 Type-C 无法满足 4K@60Hz 输出？"></a>5Gbps 的 Type-C 无法满足 4K@60Hz 输出？</h2><p>这个问题也是我在没了解相关知识之前相当困惑的一个地方——当我看到心仪的笔记本只有 USB 3.2 Gen1 接口和 HDMI1.4b 的接口，而两者的带宽都远小于 4K@60Hz 所需的 12.54 Gbps 时，我当时同样以为外接 4K@60Hz 显示器是不可能实现的了。</p>
+<p>这里面的问题就在于我们<strong>混淆了 Type-C 接口的「数据带宽」和「显示带宽」</strong>，我们日常习惯说一个 Type-C 的带宽是 3.1 Gen1 或者 Gen2、5Gbps 或者10Gbps，这时候说的其实都是这个接口的 USB 数据带宽，只能代表这个接口接 U盘&#x2F;移动硬盘之类的存储进行数据传输时所能达到的最大速度。</p>
+<p>Type-C能够整合显示输出功能，主要是借助了DP Alt Mode（替代模式）功能，借助Type-C正反面诸多针脚中的几个定义为显示接口。通俗点说可以理解为单独做了个 DP 显示总线放在 Type-C 口上，所以数据带宽是 5Gbps 还是10Gbps 并<strong>不代表显示带宽也只有这么多</strong>。以目前 Type-C 的规范来看，当我们说一个 Type-C 支持显示输出时，那么这个接口<strong>至少可以支持 DP1.2 标准</strong>，也就是说拥有独立的约 21Gbps 的显示带宽，因为 DP1.2 中有 20% 的编码是用于校验的，所以真正能用来传输视频信号的带宽只有 21.60 * 0.8 &#x3D; 17.28 Gbps，但这也已经<strong>完全可以满足 4K@60Hz 的传输要求了</strong>。下图引用自<a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a>：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/5-USBC%E7%8B%AC%E7%AB%8B%E6%98%BE%E7%A4%BA%E5%B8%A6%E5%AE%BD.png" alt="Type-C 显示拥有独立的显示带宽"></p>
+<p>我们现在关于 5Gbps 的 Type-C 能否满足 4K@60Hz 画面传输的问题有了明确的答案，只要是<strong>支持显示输出的 Type-C 口，就可以支持输出 4K@60Hz</strong>。</p>
+<h2 id="5Gbps-的-Type-C-的不足之处"><a href="#5Gbps-的-Type-C-的不足之处" class="headerlink" title="5Gbps 的 Type-C 的不足之处"></a>5Gbps 的 Type-C 的不足之处</h2><p>Type-C 显示输出虽然是 DP&#x2F;HDMI 显示，但实际上还是借用了数据传输的一部分引脚。当一个支持 DP 显示输出的 Type-C ，而它的数据带宽是 USB3.1 Gen1 5Gbps 时，那么此时是无法<strong>通过一根线</strong>同时实现理应互不干扰的 4K@60Hz 和 USB3.0 传输的，下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/6-4K%E6%98%BE%E7%A4%BA%E8%BE%93%E5%87%BA%E7%9A%84%E5%87%A0%E7%A7%8D%E5%9C%BA%E6%99%AF.png" alt="4K 显示输出的几种场景"></p>
+<p>因此在一些显示器的详情界面会注明——当显示器上的 USB 设置为 3.2Gen1 时，只能输出 4K@30Hz 的画面，如果想要输出 4K@60Hz 需要将 USB 设置为 2.0 或关闭。所以如果我们使用的显示器有拓展 USB 口，而我们是使用 Type-C 直连显示器，为了保证使用体验，我们需要手动将显示器上的 USB 设置为 USB2.0，此时显示器上的 USB 更适合用来接键鼠，文件传输之类的还是直连笔记本会比较快。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/9-%E6%98%BE%E7%A4%BA%E5%99%A8%E8%AF%A6%E6%83%85%E7%95%8C%E9%9D%A2%E7%9A%84%E6%8F%90%E7%A4%BA.png" alt="显示器详情界面的提示"></p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/101486153">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（下篇） - 知乎</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a></p>
+<p><a href="https://basic-tutorials.com/usb-type-c-at-a-glance-what-the-port-can-do-what-it-cant-do-and-why-it-has-nothing-to-do-with-usb-3-0/">USB type C at a glance: What the port can do, what it can’t do and why it has nothing to do with USB 3.0</a></p>
+<p><a href="https://zh.wikipedia.org/wiki/USB">维基百科-USB</a></p>
+<p><a href="https://b23.tv/rbYOKW">视频-【硬件科普】4K144Hz需要传输多少数据，教你如何正确的计算显示器的带宽需求？</a></p>
+<p><a href="https://diy.pconline.com.cn/1374/13748807.html">DP vs HDMI 谁才是游戏玩家最佳选择</a></p>
+]]></content>
+      <categories>
+        <category>硬件</category>
+      </categories>
+      <tags>
+        <tag>硬件</tag>
+        <tag>显示器</tag>
+        <tag>USB</tag>
+        <tag>Type-C</tag>
       </tags>
   </entry>
 </search>
