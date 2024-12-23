@@ -1,6 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>通过 Microsoft Store 购买 Win10 专业版小记</title>
+    <url>/post/Buy-WindowsPro-License/</url>
+    <content><![CDATA[<p>通过 Windows 10 自带的 Microsoft Store 购买非常方便。</p>
+<span id="more"></span>
+
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>双十一的时候自己组装了一台主机，在安装操作系统的时候直接安装的 Windows 10 专业版。之前自己的笔记本是从 Windows 8.1 升级成 Windows 10，自动就激活并绑定了数字许可证，但自己组装的主机就需要考虑操作系统购买的问题了。</p>
+<p>在不激活的情况下用了一段时间，除了不能换壁纸等个性化操作以及右下角时不时显示一个未激活水印，好像也没有多大的限制。</p>
+<p>之前我从网上简单了解到的以及微软官网上显示的，都是专业版只限企业购买，还需要电话联系销售，我看着好像还挺麻烦的样子。但实际操作下来，发现还是自己信息太闭塞，购买起来其实非常简单，直接通过自带的 Microsoft Store 应用购买即可。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%AE%98%E7%BD%91%E8%B4%AD%E4%B9%B0%E5%8F%AA%E9%99%90%E4%BC%81%E4%B8%9A.png" alt="官网显示只限企业购买"></p>
+<h2 id="购买流程"><a href="#购买流程" class="headerlink" title="购买流程"></a>购买流程</h2><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9C%AA%E6%BF%80%E6%B4%BB.png" alt="未激活界面"></p>
+<p>在 Windows10 设置的「激活」页面直接有转到 Microsoft Store 购买的选项，点击会直接打开自带的 Microsoft Store 并跳转到专业版的详情界面，价格是 1458 元。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/MicrosoftStore%E8%AF%A6%E6%83%85%E7%95%8C%E9%9D%A2.png" alt="MicrosoftStore详情界面"></p>
+<p>点击「购买」，会先通过微软账户密码确认你的身份，我开启了 Windows Hello 摄像头，直接看一眼摄像头就确认了。</p>
+<p>之前买软件的时候已经在 Microsoft Store 中绑定过支付宝的免密支付，所以我的默认支付方式就直接是支付宝。Windows 10 专业版销售商我这里显示的是「杭州网易增盈科技有限公司」，不知道怎么和网易扯上了关系。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%B4%AD%E4%B9%B0%E7%A1%AE%E8%AE%A4%E7%95%8C%E9%9D%A2.png" alt="购买确认界面"></p>
+<p>最后再点击一次「购买」，支付宝自动完成扣款，加载片刻，Windows 自动激活，显示「Windows 已使用与 Microsoft 账户关联的数字许可证激活」，至此就激活完成了。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%B7%B2%E6%BF%80%E6%B4%BB.png" alt="已激活"></p>
+<h2 id="更换硬件后如何激活"><a href="#更换硬件后如何激活" class="headerlink" title="更换硬件后如何激活"></a>更换硬件后如何激活</h2><p>根据微软官网的信息，在 Windows 10（1607版本或更高版本）中，必须将 Microsoft 帐户与设备上的Windows 10 数字许可证联系起来。通过将 Microsoft 帐户与数字许可证链接起来，以后在进行重大硬件更改，比如换主板的时候，就使用激活疑难解答程序重新激活 Windows。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%93%BE%E6%8E%A5%E5%88%B0Microsoft%E8%B4%A6%E6%88%B7.png" alt="将 Windows 10 数字许可证链接到 Microsoft 帐户"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>整个过程非常简单，购买体验挺好。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://support.microsoft.com/zh-cn/windows/%E5%9C%A8%E6%9B%B4%E6%8D%A2%E7%A1%AC%E4%BB%B6%E5%90%8E%E9%87%8D%E6%96%B0%E6%BF%80%E6%B4%BB-windows-10-2c0e962a-f04c-145b-6ead-fb3fc72b6665">在更换硬件后重新激活 Windows 10</a></p>
+]]></content>
+      <categories>
+        <category>小事</category>
+      </categories>
+      <tags>
+        <tag>正版</tag>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CODING Pages 静态网站升级腾讯云新版踩坑小记</title>
+    <url>/post/CODING-Pages-Upgrade-To-TencentCloud/</url>
+    <content><![CDATA[<p>自己的踩坑记录证明域名未备案的同学就不要升级了，新版需要付费，但升级后强制的境外 CDN 加速导致访问速度反而不如旧版快。</p>
+<span id="more"></span>
+
+<h2 id="升级背景"><a href="#升级背景" class="headerlink" title="升级背景"></a>升级背景</h2><p>之前把博客双部署到了 CODING 静态网站和 GitHub Pages，国内的访问速度快了不少。前几天登录 CODING 后台，突然发现多了一个新版升级提醒。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-%E5%90%8E%E5%8F%B0%E5%8D%87%E7%BA%A7%E6%8F%90%E9%86%92.png" alt="升级提醒"></p>
+<p>新版最大的变化就是同腾讯云进行了打通，直接把网站放到了腾讯云的对象存储 COS 上，其他 CDN 加速、SSL 证书管理也是腾讯云的功能。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%8F%98%E5%8C%96.png" alt="新版的变化及优势"></p>
+<h2 id="新版开始收费了"><a href="#新版开始收费了" class="headerlink" title="新版开始收费了"></a>新版开始收费了</h2><blockquote>
+<p>CODING Pages 依托腾讯云资源提供相关静态托管能力，CODING 平台本身不收取任何费用。该产品使用了腾讯云对象存储 COS、内容分发网络 CDN、SSL 证书产品，其中 COS 和 CDN 采用用量计费模式，SSL 证书免费，所使用到的其他相关腾讯云产品本身亦会有一定的免费额度。</p>
+</blockquote>
+<p>新版因为使用了腾讯云的相关资料，所以要<strong>开始收费</strong>了。对于收费，我是能够接受的，前提是能够提供比免费更好的服务。我的图床就是使用的腾讯云的对象存储，加载速度很快，一个月几毛钱的费用低得基本可以忽略。</p>
+<h2 id="升级流程"><a href="#升级流程" class="headerlink" title="升级流程"></a>升级流程</h2><p>新版升级界面如下：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8D%87%E7%BA%A7%E8%AE%BE%E7%BD%AE%E7%95%8C%E9%9D%A2.png" alt="新版升级设置界面"></p>
+<p>因为新版是基于腾讯云的，所以升级需要先在腾讯云进行实名认证并授予相关权限。我因为之前图床就是用的腾讯云对象存储，所以已经实名过了。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%8E%88%E6%9D%83.png" alt="腾讯云服务授权"></p>
+<p>之前 CODING Pages 旧版是部署在腾讯云新加坡节点，现在新版部署节点可选香港、北京、上海、广州四个，但未备案域名只能选香港。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%8A%82%E7%82%B9%E9%80%89%E6%8B%A9.png" alt="节点选择提醒"></p>
+<p>添加自定义域名前，需要前往腾讯云开启 CDN 功能，这一步就是我觉得<strong>新版最大的坑</strong>。</p>
+<p>下一步去域名托管商更改解析记录，解析记录值都是指向了 <code>cdn.dnsv1.com</code>，这也是为什么需要开启 CDN 功能的原因。</p>
+<p>部署的时候，「网站类型」我最开始选的是「Hexo」，结果部署失败，部署日志也不知道抽啥风，一直显示不出来，原因也不好排查。我尝试将网站类型改为「静态网站」，重新部署就成功了。</p>
+<h2 id="这-CDN-不能要"><a href="#这-CDN-不能要" class="headerlink" title="这 CDN 不能要"></a>这 CDN 不能要</h2><p>新版升级完成后，立马测了一波速，然后被结果给吓到了，从之前的一片绿油油变成了一片惨淡的黄色，访问速度下降了不止一点半点。这就很费解了，同样都是腾讯云，之前部署在新加坡节点，现在搬到香港节点了，速度不升反降是什么情况。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%BC%80%E5%90%AFCDN%E6%B5%8B%E9%80%9F%E7%BB%93%E6%9E%9C.png" alt="新版开启 CDN 测速结果"></p>
+<p>检查解析 IP，发现域名全都被解析到了德国、爱尔兰、美国，和想象中的香港地址完全不是一回事。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%BC%80%E5%90%AFCDN%E8%A7%A3%E6%9E%90IP%E7%BB%93%E6%9E%9C.png" alt="新版开启 CDN 域名解析结果"></p>
+<p>这种情况我估摸着肯定是 CDN 的锅，去腾讯云后台一检查，发现已经开启的 CDN 设置的服务区域是「中国境外」。我想当然地以为「中国境外」的含义是指只有从国外访问网站的时候才会通过 CDN 访问，国内则是直接访问香港源站，这样虽然国内享受不到 CDN 加速，国外我设置是解析到 GitHub Pages，也用不上，但想着无非就是个鸡肋而已。</p>
+<p>但一查文档，发现自己还是太单纯了：</p>
+<blockquote>
+<p>「中国境外」:全球用户访问均会调度至中国境外的加速节点进行服务。</p>
+</blockquote>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8A%A0%E9%80%9F%E5%8C%BA%E5%9F%9F%E6%96%87%E6%A1%A3%E8%A7%A3%E9%87%8A.png" alt="「中国境外」"></p>
+<p>也就是说，不管是从国内还是国外访问，都会被调度到国外的 CDN 加速节点进行接入，想不经过 CDN 直接访问香港源站都不行。而比较符合我想要的效果的「全球」则需要域名进行备案之后才能开启，未备案域名开启 CDN 的话就<strong>只能选「中国境外」</strong>。</p>
+<p>本来是用来加快访问速度的 CDN，对于使用<strong>未备案域名</strong>的博客来说，已经不仅仅是鸡肋了，反而是拖累。本来直接访问香港就能解决的事情，现在非得绕道德国、爱尔兰、美国才行，这访问速度能快起来才是怪事。</p>
+<h2 id="尝试直连香港源站"><a href="#尝试直连香港源站" class="headerlink" title="尝试直连香港源站"></a>尝试直连香港源站</h2><p>既然这是 CDN 导致的，那我把 CDN 直接给关了，直连香港源站不就行了？</p>
+<h3 id="关闭-CDN"><a href="#关闭-CDN" class="headerlink" title="关闭 CDN"></a>关闭 CDN</h3><p>进入腾讯云后台–&gt;「内容分发网络」–&gt;「域名管理」，关闭 CDN 加速。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91%E5%90%8E%E5%8F%B0%E5%85%B3%E9%97%ADCDN.png" alt="关闭 CDN"></p>
+<h3 id="更改域名解析记录"><a href="#更改域名解析记录" class="headerlink" title="更改域名解析记录"></a>更改域名解析记录</h3><p>在 DNSPod 里将国内访问解析到 CODING 提供的默认访问地址，此时再检查 DNS 解析结果发现就全部都指向了香港的 IP，达到了自己想要的效果。</p>
+<h2 id="致命的证书问题"><a href="#致命的证书问题" class="headerlink" title="致命的证书问题"></a>致命的证书问题</h2><p>设置成直接访问香港源站后，速度果不其然就上来了，比访问新加坡节点速度还要快上一点。但很快就出现了一个更加严重的问题——证书错误。</p>
+<p>新版申请的 SSL 证书是和 CDN 绑定在一起的，在腾讯云的证书管理里面只能部署到 CDN，而我把 CDN 关闭了，现在直接访问的是香港源站。源站的证书是颁给 <code>*.cdn.my.qcloud</code> 的，和我的域名不一致，这就会导致浏览器直接报警说网站不安全，这是不可接受的。我尝试解决这个问题，但无奈水平有限，最后也没能找到解决的办法。如果有知道如何解决证书问题的同学，麻烦指导我一下，不甚感激。</p>
+<p>现在情况就是如果想要实现自定义域名 HTTPS 访问，就需要打开 CDN，打开 CDN 就意味着牺牲访问速度，这还是在 CDN 和 COS 需要付费的情况下。矛盾无法调和，所以最后我只能又<strong>回退到旧版</strong>了，幸好 CODING 目前还没有关闭旧版的入口，给了我一个反悔的机会。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>花了差不多一天的时间，最后还是老老实实回到了旧版，相当于一天白折腾了。域名没有进行备案的话，在国内使用不方便的地方真的太多了。CODING 新版静态网站我觉得对于使用已备案域名的同学来说还是不错的，配置简单，CDN 加速、SSL 证书一步到位。但同样的对于这些同学来说可供选择的方案太多了，免费的也有不少，CODING 的新版并没有太大的吸引力。</p>
+<p>而对于未备案域名的同学新版则非常不友好，完全是<strong>负优化</strong>，完全没有升级的必要，谁会花钱找罪受呢。CODING 工程师说旧版后续会下线，到时候如果自定义域名的问题没有得到改善的话，可能就需要考虑迁移平台了。现在旧版还能用就先用着。</p>
+<p>我向 CODING 反馈了自定义域名的问题，希望能同旧版一样使用 Let’s Encrypt 的证书，不要强行同腾讯云的 CDN 加速绑定在一起，后续如果有进一步的反馈结果的话我会同步到博客中。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://help.coding.net/docs/pages/operating/migrate.html">官方静态网站服务升级指南</a></p>
+]]></content>
+      <categories>
+        <category>个人博客</category>
+      </categories>
+      <tags>
+        <tag>腾讯云</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo 博客 GitHub Pages + CODING 静态网站双部署</title>
+    <url>/post/Deploy-Hexoblog-To-Codingnet-And-GitHub/</url>
+    <content><![CDATA[<h2 id="为什么想要双部署"><a href="#为什么想要双部署" class="headerlink" title="为什么想要双部署"></a>为什么想要双部署</h2><p>中文博客的受众肯定是以国内为主，但部署在 Github Pages 上，服务器在国外，国内访问的速度太不稳定，如果一个页面需要将近十秒才能完全打开的话，用户体验差，页面被提前关闭的概率也会呈指数级上升。所以改善国内访问体验迫在眉睫。</p>
+<p>之前也想过直接使用 CDN 直接加速 GitHub Pages 的方式，但国内的 CDN 全部要求域名进行备案，嫌麻烦就放弃了。最后选择通过将博客同时部署到 GitHub 和 CODING 的方式来提升国内访问体验。</p>
+<p>CODING 在 19 年年底进行了一次比较大的改版，双部署的整个流程也有了不小的变化，而网络上很多教程大部分都还是基于旧版流程的。本文详细记载了将博客同时部署到 GitHub Pages 和 CODING 静态网站服务的全流程。</p>
+<span id="more"></span>
+
+<h2 id="CODING-配置"><a href="#CODING-配置" class="headerlink" title="CODING 配置"></a>CODING 配置</h2><h3 id="注册-CODING-账号"><a href="#注册-CODING-账号" class="headerlink" title="注册 CODING 账号"></a>注册 CODING 账号</h3><p>2019 年 12 月 28 日以后，CODING 统一了入口，不再区分个人版与否，具体的升级详情可以查看<a href="https://coding.net/products/upgrade">官方通知</a>。升级后的 CODING 会增加「团队&#x2F;组织」的管理概念，注册的时候必须先创建一个团队，这个和平常的注册稍有些不同，需要注意一下。<a href="https://coding.net/">点击跳转 CODING 官网</a>。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Coding%E6%B3%A8%E5%86%8C%E7%95%8C%E9%9D%A2.png" alt="CODING 注册界面"></p>
+<h3 id="创建-CODING-项目"><a href="#创建-CODING-项目" class="headerlink" title="创建 CODING 项目"></a>创建 CODING 项目</h3><p>注册成功以后，进入「项目」–&gt; 「创建项目」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.png" alt="CODING 创建项目"></p>
+<p>选择「代码托管项目」，只需填写项目名称，其他都保持空白和默认即可。注意<strong>不要勾选</strong>「公开源代码」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%88%9B%E5%BB%BA%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1%E9%A1%B9%E7%9B%AE.png" alt="创建代码托管项目"></p>
+<h3 id="CODING-配置-SSH-公钥"><a href="#CODING-配置-SSH-公钥" class="headerlink" title="CODING 配置 SSH 公钥"></a>CODING 配置 SSH 公钥</h3><p>SSH 密钥设置的路径为 「右上角个人头像」–&gt;「个人账户设置」–&gt; 「SSH 公钥」–&gt; 「新增公钥」。</p>
+<div class="note info"><p>SSH 公钥默认存放在 <code>C:\Users\用户名\.ssh</code> 目录下的 <code>id_rsa.pub</code> 文件里，用记事本打开并复制其内容即可。</p>
+</div>
+
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Coding%E6%96%B0%E5%A2%9ESSH%E5%AF%86%E9%92%A5.png" alt="CODING 新增SSH密钥"></p>
+<p>新增密钥是敏感操作，所以在新增密钥的时候，CODING 会要求验证密码才能添加，需要注意的是这里要求验证的是<strong>服务密码</strong>，而不是登录密码。如果没有事先设置服务密码的话，需要先在「个人设置」–&gt; 「服务密码」进行设置。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E6%9C%8D%E5%8A%A1%E5%AF%86%E7%A0%81.png" alt="CODING 设置服务密码"></p>
+<p>添加公钥后，打开 <code>Git Bash</code>，使用以下命令验证是否配置成功：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh -T git@e.coding.net</span><br></pre></td></tr></table></figure>
+<p>因为是第一次进行连接，所以需要输入 <code>yes</code> 来确认进行连接。配置成功，会出现如下图所示的提示：<br><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CodingSSH%E9%AA%8C%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="CODING SSH 验证成功提示"></p>
+<h2 id="部署-CODING「静态网站」"><a href="#部署-CODING「静态网站」" class="headerlink" title="部署 CODING「静态网站」"></a>部署 CODING「静态网站」</h2><h3 id="配置站点配置文件-config-yml"><a href="#配置站点配置文件-config-yml" class="headerlink" title="配置站点配置文件 _config.yml"></a>配置站点配置文件 _config.yml</h3><p>进入到 CODING 上刚才新建的项目里面，选择「代码仓库」，可以看到此时代码仓库还是空的，选择「SSH」链接方式并复制链接。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E9%A1%B9%E7%9B%AESSH%E9%93%BE%E6%8E%A5.png" alt="CODING 项目 SSH 链接"></p>
+<p>打开博客根目录下的站点配置文件 <code> _config.yml</code> ，修改其中的 <code>deploy</code> 区域，将刚复制的 SSH 链接新增进去：</p>
+<figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  - type: git</span><br><span class="line">    repo: git@github.com:ousugo/ousugo.github.io.git</span><br><span class="line">    branch: master</span><br><span class="line"><span class="addition">+ - type: git</span></span><br><span class="line"><span class="addition">+   repo: git@e.coding.net:asuradazone/asurada/asurada.git</span></span><br><span class="line"><span class="addition">+   branch: master    </span></span><br></pre></td></tr></table></figure>
+
+<h3 id="部署代码到-CODING"><a href="#部署代码到-CODING" class="headerlink" title="部署代码到 CODING"></a>部署代码到 CODING</h3><p><code> _config.yml</code> 文件修改完成后，执行 <code>hexo d</code> 命令进行部署，此时 Hexo 就会根据设置同时将博客部署到 GitHub 和 CODING 上面。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%88%90%E5%8A%9F%E9%83%A8%E7%BD%B2%E5%88%B0CODING.png" alt="成功部署到 CODING"></p>
+<p>此时再进入 CODING 上的项目，能看到刚才还是空的仓库现在已经有源代码了，说明部署是成功的。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81.png" alt="CODING 项目源码"></p>
+<h3 id="项目启用「持续部署」功能"><a href="#项目启用「持续部署」功能" class="headerlink" title="项目启用「持续部署」功能"></a>项目启用「持续部署」功能</h3><p>CODING 改版后，开启 Pages 服务的方法有了较大的变化，连名字都改了，现在已经不叫「Pages 服务」，而是改叫「静态网站」了。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Pages%E6%94%B9%E5%90%8D.png" alt="Pages 服务改名"></p>
+<p>「静态网站」是「持续部署」下面的一个子功能，而「持续部署」功能默认是没有开启的，需要我们自行启用。启用路径为项目左下角「项目设置」–&gt;「项目与成员」–&gt;「功能开关」–&gt;「持续部署」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%90%AF%E7%94%A8%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2%E5%8A%9F%E8%83%BD.png" alt="启用持续部署功能"></p>
+<p>「持续部署」功能开启后，就可以在它下面找到「静态网站」了。为了后续方便操作，还可以点击「静态网站」字样右边的按钮将其固定到项目选项顶部。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%85%A5%E5%8F%A3.png" alt="静态网站入口"></p>
+<h3 id="实名认证"><a href="#实名认证" class="headerlink" title="实名认证"></a>实名认证</h3><p>CODING 现在要求是必须先进行实名认证以后才能使用「静态网站」的服务，实名认证的入口在「右上角头像」–&gt;「团队管理」–&gt;「团队设置」–&gt;「高级设置」里面，藏得有点深。</p>
+<p>如果<strong>没有绑定手机号</strong>的话，需要先绑定手机号才能进行实名认证，反正现在基本想要使用国内的服务，实名认证基本是跑不掉的。输入姓名和身份证号码即可完成认证。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%AE%9E%E5%90%8D%E8%AE%A4%E8%AF%81.png" alt="实名认证"></p>
+<h3 id="发布静态网站"><a href="#发布静态网站" class="headerlink" title="发布静态网站"></a>发布静态网站</h3><p>实名认证完成后，点击「立即发布静态网站」，填写「网站名称」，「触发机制」默认为「自动触发」，此后每次同步代码到 <code>master</code> 分支时，网站即会自动部署。所有设置保持默认即可，然后点击「保存」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE.png" alt="静态网站设置"></p>
+<p>设置保存后，刷新页面，会看到 CODING 已经自动生成了网站的访问链接，不过现在网站还没有正式部署，还需要我们点击「立即部署」来部署网站。部署完成后就可以点击链接查看网站部署效果了，应该同部署到 GitHub Pages 是同样的效果。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99.png" alt="部署静态网站"></p>
+<h2 id="绑定自定义域名"><a href="#绑定自定义域名" class="headerlink" title="绑定自定义域名"></a>绑定自定义域名</h2><p>我的自定义域名是在 <a href="https://www.namesilo.com/">NmaeSilo</a> 买的，主要优点有：</p>
+<ol>
+<li>支持支付宝付款</li>
+<li>赠送 WHOIS 域名隐私保护</li>
+<li>第一年价格相对实惠</li>
+</ol>
+<p>如果有同学也考虑在 <a href="https://www.namesilo.com/">NmaeSilo</a> 购买域名，欢迎使用我的优惠码 <code>Asurada </code>，可以优惠一美元。</p>
+<h3 id="修改域名解析服务到-DNSPod"><a href="#修改域名解析服务到-DNSPod" class="headerlink" title="修改域名解析服务到 DNSPod"></a>修改域名解析服务到 DNSPod</h3><p>之前博客只部署在 GitHub Pages 上时，因为不需要考虑国内外解析分流，所以我直接使用的是 NameSilo 默认的域名解析服务。现在博客分别部署在 GitHub 和 CODING 上了，我希望将国外的流量解析到 GitHub，国内的流量则解析到 CODING，但 NameSilo 默认的域名解析服务并不能实现国内外流量的区分，所以需要更换域名解析服务商。</p>
+<p>我日常使用腾讯云比较多，所以选择了腾讯旗下的 <a href="dnspod.cn">DNSPod</a>，账号和腾讯云是通用的，直接微信扫码即可登录。登录到 <a href="console.dnspod.cn">DNSPod 控制台</a>，在「DNS 解析」–&gt;「我的域名」里添加想要解析的域名。因为还没有修改域名注册商那边的设置，所以现在显示的状态还是「DNS 错误」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D.png" alt="DNSPod 添加域名"></p>
+<p>登录到 <a href="https://www.namesilo.com/account_home.php">NameSilo 后台</a>，在「Account Options」中选择「<a href="https://www.namesilo.com/account_domains.php">domain manager</a>」，选中想要进行修改的域名，点击上方「Change Nameservers」图标。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/NameSilo%E4%BF%AE%E6%94%B9%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%9C%8D%E5%8A%A1.png" alt="NameSilo 修改域名解析服务"></p>
+<p>将默认的 DNS 服务器地址修改为下面的 DNSPod 提供的 DNS 服务器地址，然后提交修改。 </p>
+<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">f1g1ns1.dnspod.<span class="built_in">net</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">f1g1ns2.dnspod.<span class="built_in">net</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E4%BF%AE%E6%94%B9%E5%9F%9F%E5%90%8D%E6%9C%8D%E5%8A%A1%E5%95%86%E4%B8%BADNSPod.png" alt="修改域名服务商为 DNSPod"></p>
+<p>DNS 域名解析服务的修改后需要等待全球递归 DNS 服务器的刷新，所以需要耐心等待一会儿，大概十分钟左右。修改生效后再手动刷新 DNSPod 的状态，<strong>注意不是刷新页面</strong>，而是点击「DNS 错误」旁边的感叹号获取新状态，此时应该状态会变为「正常」。状态正常后，点击域名，进入「记录管理」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E7%8A%B6%E6%80%81%E6%AD%A3%E5%B8%B8.png" alt="DNSPod 显示状态正常"></p>
+<h3 id="DNSPod-解析记录设置"><a href="#DNSPod-解析记录设置" class="headerlink" title="DNSPod 解析记录设置"></a>DNSPod 解析记录设置</h3><p>先简单介绍一下 <code>A 记录</code> 和 <code>CNAME 记录</code> 的作用：</p>
+<blockquote>
+<p>如果需要将域名指向一个 IP 地址，就需要添加A记录；</p>
+<p>如果需要将域名指向另一个域名，再由另一个域名提供 IP 地址，就需要添加 CNAME 记录。</p>
+</blockquote>
+<p>我们一共添加五条解析记录，其中三条境外，两条境内，具体记录如下：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95.png" alt="DNSPod解析记录"></p>
+<p>第一条记录类型为 <code>A</code>，主机记录为 <code>@</code>，解析线路选择<code>默认</code>，记录值为 CODING 静态网站的 IP 地址，可以使用 <code>ping</code> 命令查询得到。比如 CODING 替我自动生成的网站访问地址为 <code>http://quj3xn.coding-pages.com/</code>，打开 <code>cmd</code>，输入 <code>ping quj3xn.coding-pages.com</code>，就可以得到 CODING 静态网站的 IP 地址，我的是<code>124.156.205.241</code>， <code>TTL</code> 的话，免费版最小只能填 600。这条解析记录的意思是将从境内访问 <code>asurada.zone</code> 的流量解析到 <code>124.156.205.241</code>。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%8E%B7%E5%8F%96IP%E5%9C%B0%E5%9D%80.png" alt="获取 IP 地址"></p>
+<p>第二条记录类型为 <code>CNAME</code>，主机记录为 <code>www</code>，解析线路选择<code>默认</code>，记录值为 CODING 自动生成的访问地址，比如我的是 <code>quj3xn.coding-pages.com</code>。这条解析记录的意思是将从境内访问 <code>www.asurada.zone</code> 的流量解析到 <code>quj3xn.coding-pages.com</code>。</p>
+<p>接下来的三条境外解析记录就很好理解了，第三和第五条记录是分别将从境外访问 <code>asurada.zone</code> 的流量解析到 <code>185.199.108.153</code> 和 <code>185.199.109.153</code>，这两个 IP 都是 GitHub Pages 的服务器 IP 地址。第四条记录则是将从境外访问 <code>ww.asurada.zone</code> 的流量解析到 <code>ousugo.github.io</code>。</p>
+<div class="note info"><p>在这一步的时候，为了方便下面开启 CODING 静态网站绑定自定义域名和开启全局 HTTPS，可以先将<strong>境外的三条解析先暂停</strong>，等完成 CODING 自定义域名的绑定并开启 HTTPS 以后再恢复解析。</p>
+</div>
+
+<h3 id="DNSPod「搜索引擎优化」"><a href="#DNSPod「搜索引擎优化」" class="headerlink" title="DNSPod「搜索引擎优化」"></a>DNSPod「搜索引擎优化」</h3><p>在「域名设置」–&gt; 「功能设置」里有一个「搜索引擎优化」功能，默认是关闭的，说是和各大搜索引擎有深度合作，开启后可以优化站点收录，具体原理咱也不知道。但这是一个免费功能，所以不开白不开。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96.png" alt="DNSPod 搜索引擎优化"></p>
+<p>根据官方文档，主流的搜索引擎都在优化范围之内，看上去还是很不错的：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96%E5%90%8D%E5%8D%95.png" alt="DNSPod 搜索引擎优化名单"></p>
+<h3 id="CODING-绑定自定义域名并开启-HTTPS"><a href="#CODING-绑定自定义域名并开启-HTTPS" class="headerlink" title="CODING 绑定自定义域名并开启 HTTPS"></a>CODING 绑定自定义域名并开启 HTTPS</h3><p>进入 CODING 项目的静态网站设置页面，向下滚动找到「自定义域名」的设置项，绑定自定义域名。如果在绑定域名时出现证书申请错误：</p>
+<blockquote>
+<p>申请错误原因是：在验证域名所有权时会定位到 GitHub Pages 的主机上导致 SSL 证书申请失败</p>
+<p>正确的做法是：先去域名 DNS 把 GitHub 的解析暂停掉，然后再重新申请 SSL 证书，大约十秒左右就能申请成功，然后开启强制 HTTPS 访问</p>
+<p>— <a href="https://www.itrhx.com/2019/09/16/A47-hexo-deployed-to-github-and-coding/#5-%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E5%B9%B6%E5%BC%80%E5%90%AF-HPPTS">绑定域名并开启 HPPTS</a></p>
+</blockquote>
+<p>建议同时绑定有 <code>www </code> 前缀和没有 <code>www</code>  前缀的域名，并根据自己的需求将其中一个设为首选域名，另一个<strong>勾选「跳转至首选」选项</strong>，这样可以避免一些第三方服务数据统计不到一起。</p>
+<p>如果两个域名的证书都没有问题的话，点击「强制 HTTPS」按钮即可启用强制 HTTPS 访问。设置完成后，不要忘记去 DNSPod 将之前暂停的 GitHub 解析重新开启。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E7%BB%91%E5%AE%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D.png" alt="CODING 绑定自定义域名"></p>
+<h2 id="成果检验"><a href="#成果检验" class="headerlink" title="成果检验"></a>成果检验</h2><p>至此，我们完成了博客在 GitHub Pages 和 CODING 静态网站服务上的双线部署。</p>
+<p>首先进行 DNS 的查询，可以看见结果正如我们所期望的，从国内访问的时候走的是 CODING 的静态网站服务，而从境外访问的时候走的则是 GitHub Pages。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNS%E8%A7%A3%E6%9E%90%E7%BB%93%E6%9E%9C.png" alt="DNS 解析结果"></p>
+<p>最后自然是喜闻乐见的速度对比，这里使用的是<a href="https://tool.chinaz.com/speedtest.aspx">站长之家的国内网站测速工具</a>。这里我们测试的域名分别是 CODING 和 GitHub <strong>自动生成的网站域名</strong>，多次测试下来，结果稍稍有些出乎我的意料，CODING 并没有如我想象的那样取得全面的、压倒性的速度优势，在部分地区反倒是 GitHub Pages 的访问速度更快。不过在多次测试中，CODING 的<strong>平均响应时间</strong>都比 GitHub 要快上三百到五百毫秒不等。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%80%9F%E5%BA%A6%E5%AF%B9%E6%AF%94.png" alt="速度对比"></p>
+<p>但如果是直接测试自定义域名 <code>asurada.zone</code> 的<strong>国内访问速度</strong>的话，分别设置域名<strong>仅解析</strong>到 CODING 和 GitHub，这时候可以看到解析到 CODING 时的<strong>国内访问速度</strong>明显比解析到 GitHub 时要快上不少。</p>
+<p>我猜测出现这种情况可能是 DNSPod 解析的功劳——当直接使用 <code>quj3xn.coding-pages.com</code> 域名进行测速时，DNS 解析的速度比较慢，进而拖累了整体的访问速度，而当使用自定义域名 <code>asurada.zone</code> 进行测速时，此时由 DNSPod 负责进行域名解析，解析速度比较快，进而加快了整体的访问速度。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E8%A7%A3%E6%9E%90%E5%88%B0CODING.png" alt="解析到 CODING 时的网站访问速度"></p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E8%A7%A3%E6%9E%90%E5%88%B0GITHUB.png" alt="解析到 GitHub 时的网站访问速度"></p>
+<p>我们更在意的自然是使用自定义域名访问时的速度，可以看到双线部署对于自定义域名的国内访问速度的提升效果是非常明显的，这次折腾也算是圆满成功，完结撒花✿✿ヽ(ﾟ▽ﾟ)ノ✿。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://help.coding.net/docs/devops/cd/static-website.html">CODING 静态网站服务官方文档</a></p>
+<p><a href="https://tding.top/archives/e09249d2.html">Hexo 博客部署到 Coding</a></p>
+<p><a href="https://www.itrhx.com/2019/09/16/A47-hexo-deployed-to-github-and-coding/">Hexo 双线部署到 Coding Pages 和 GitHub Pages 并实现全站 HTTPS</a></p>
+]]></content>
+      <categories>
+        <category>个人博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>GitHub</tag>
+        <tag>DNS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo 博客主流搜索引擎收录详细指南</title>
     <url>/post/Blog-Search-Engine-Index/</url>
     <content><![CDATA[<p>如果希望自己博客的内容被更多人看到，搜索引擎所带来的流量是不容忽视的。本文详细介绍了如何向各大主流搜索引擎主动提交自己的博客，期望达到加快收录速度的目的。</p>
@@ -159,91 +358,6 @@
       <tags>
         <tag>Hexo</tag>
         <tag>SEO</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>通过 Microsoft Store 购买 Win10 专业版小记</title>
-    <url>/post/Buy-WindowsPro-License/</url>
-    <content><![CDATA[<p>通过 Windows 10 自带的 Microsoft Store 购买非常方便。</p>
-<span id="more"></span>
-
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>双十一的时候自己组装了一台主机，在安装操作系统的时候直接安装的 Windows 10 专业版。之前自己的笔记本是从 Windows 8.1 升级成 Windows 10，自动就激活并绑定了数字许可证，但自己组装的主机就需要考虑操作系统购买的问题了。</p>
-<p>在不激活的情况下用了一段时间，除了不能换壁纸等个性化操作以及右下角时不时显示一个未激活水印，好像也没有多大的限制。</p>
-<p>之前我从网上简单了解到的以及微软官网上显示的，都是专业版只限企业购买，还需要电话联系销售，我看着好像还挺麻烦的样子。但实际操作下来，发现还是自己信息太闭塞，购买起来其实非常简单，直接通过自带的 Microsoft Store 应用购买即可。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%AE%98%E7%BD%91%E8%B4%AD%E4%B9%B0%E5%8F%AA%E9%99%90%E4%BC%81%E4%B8%9A.png" alt="官网显示只限企业购买"></p>
-<h2 id="购买流程"><a href="#购买流程" class="headerlink" title="购买流程"></a>购买流程</h2><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9C%AA%E6%BF%80%E6%B4%BB.png" alt="未激活界面"></p>
-<p>在 Windows10 设置的「激活」页面直接有转到 Microsoft Store 购买的选项，点击会直接打开自带的 Microsoft Store 并跳转到专业版的详情界面，价格是 1458 元。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/MicrosoftStore%E8%AF%A6%E6%83%85%E7%95%8C%E9%9D%A2.png" alt="MicrosoftStore详情界面"></p>
-<p>点击「购买」，会先通过微软账户密码确认你的身份，我开启了 Windows Hello 摄像头，直接看一眼摄像头就确认了。</p>
-<p>之前买软件的时候已经在 Microsoft Store 中绑定过支付宝的免密支付，所以我的默认支付方式就直接是支付宝。Windows 10 专业版销售商我这里显示的是「杭州网易增盈科技有限公司」，不知道怎么和网易扯上了关系。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%B4%AD%E4%B9%B0%E7%A1%AE%E8%AE%A4%E7%95%8C%E9%9D%A2.png" alt="购买确认界面"></p>
-<p>最后再点击一次「购买」，支付宝自动完成扣款，加载片刻，Windows 自动激活，显示「Windows 已使用与 Microsoft 账户关联的数字许可证激活」，至此就激活完成了。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%B7%B2%E6%BF%80%E6%B4%BB.png" alt="已激活"></p>
-<h2 id="更换硬件后如何激活"><a href="#更换硬件后如何激活" class="headerlink" title="更换硬件后如何激活"></a>更换硬件后如何激活</h2><p>根据微软官网的信息，在 Windows 10（1607版本或更高版本）中，必须将 Microsoft 帐户与设备上的Windows 10 数字许可证联系起来。通过将 Microsoft 帐户与数字许可证链接起来，以后在进行重大硬件更改，比如换主板的时候，就使用激活疑难解答程序重新激活 Windows。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%93%BE%E6%8E%A5%E5%88%B0Microsoft%E8%B4%A6%E6%88%B7.png" alt="将 Windows 10 数字许可证链接到 Microsoft 帐户"></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>整个过程非常简单，购买体验挺好。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://support.microsoft.com/zh-cn/windows/%E5%9C%A8%E6%9B%B4%E6%8D%A2%E7%A1%AC%E4%BB%B6%E5%90%8E%E9%87%8D%E6%96%B0%E6%BF%80%E6%B4%BB-windows-10-2c0e962a-f04c-145b-6ead-fb3fc72b6665">在更换硬件后重新激活 Windows 10</a></p>
-]]></content>
-      <categories>
-        <category>小事</category>
-      </categories>
-      <tags>
-        <tag>正版</tag>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CODING Pages 静态网站升级腾讯云新版踩坑小记</title>
-    <url>/post/CODING-Pages-Upgrade-To-TencentCloud/</url>
-    <content><![CDATA[<p>自己的踩坑记录证明域名未备案的同学就不要升级了，新版需要付费，但升级后强制的境外 CDN 加速导致访问速度反而不如旧版快。</p>
-<span id="more"></span>
-
-<h2 id="升级背景"><a href="#升级背景" class="headerlink" title="升级背景"></a>升级背景</h2><p>之前把博客双部署到了 CODING 静态网站和 GitHub Pages，国内的访问速度快了不少。前几天登录 CODING 后台，突然发现多了一个新版升级提醒。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-%E5%90%8E%E5%8F%B0%E5%8D%87%E7%BA%A7%E6%8F%90%E9%86%92.png" alt="升级提醒"></p>
-<p>新版最大的变化就是同腾讯云进行了打通，直接把网站放到了腾讯云的对象存储 COS 上，其他 CDN 加速、SSL 证书管理也是腾讯云的功能。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%8F%98%E5%8C%96.png" alt="新版的变化及优势"></p>
-<h2 id="新版开始收费了"><a href="#新版开始收费了" class="headerlink" title="新版开始收费了"></a>新版开始收费了</h2><blockquote>
-<p>CODING Pages 依托腾讯云资源提供相关静态托管能力，CODING 平台本身不收取任何费用。该产品使用了腾讯云对象存储 COS、内容分发网络 CDN、SSL 证书产品，其中 COS 和 CDN 采用用量计费模式，SSL 证书免费，所使用到的其他相关腾讯云产品本身亦会有一定的免费额度。</p>
-</blockquote>
-<p>新版因为使用了腾讯云的相关资料，所以要<strong>开始收费</strong>了。对于收费，我是能够接受的，前提是能够提供比免费更好的服务。我的图床就是使用的腾讯云的对象存储，加载速度很快，一个月几毛钱的费用低得基本可以忽略。</p>
-<h2 id="升级流程"><a href="#升级流程" class="headerlink" title="升级流程"></a>升级流程</h2><p>新版升级界面如下：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8D%87%E7%BA%A7%E8%AE%BE%E7%BD%AE%E7%95%8C%E9%9D%A2.png" alt="新版升级设置界面"></p>
-<p>因为新版是基于腾讯云的，所以升级需要先在腾讯云进行实名认证并授予相关权限。我因为之前图床就是用的腾讯云对象存储，所以已经实名过了。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%8E%88%E6%9D%83.png" alt="腾讯云服务授权"></p>
-<p>之前 CODING Pages 旧版是部署在腾讯云新加坡节点，现在新版部署节点可选香港、北京、上海、广州四个，但未备案域名只能选香港。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%8A%82%E7%82%B9%E9%80%89%E6%8B%A9.png" alt="节点选择提醒"></p>
-<p>添加自定义域名前，需要前往腾讯云开启 CDN 功能，这一步就是我觉得<strong>新版最大的坑</strong>。</p>
-<p>下一步去域名托管商更改解析记录，解析记录值都是指向了 <code>cdn.dnsv1.com</code>，这也是为什么需要开启 CDN 功能的原因。</p>
-<p>部署的时候，「网站类型」我最开始选的是「Hexo」，结果部署失败，部署日志也不知道抽啥风，一直显示不出来，原因也不好排查。我尝试将网站类型改为「静态网站」，重新部署就成功了。</p>
-<h2 id="这-CDN-不能要"><a href="#这-CDN-不能要" class="headerlink" title="这 CDN 不能要"></a>这 CDN 不能要</h2><p>新版升级完成后，立马测了一波速，然后被结果给吓到了，从之前的一片绿油油变成了一片惨淡的黄色，访问速度下降了不止一点半点。这就很费解了，同样都是腾讯云，之前部署在新加坡节点，现在搬到香港节点了，速度不升反降是什么情况。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%BC%80%E5%90%AFCDN%E6%B5%8B%E9%80%9F%E7%BB%93%E6%9E%9C.png" alt="新版开启 CDN 测速结果"></p>
-<p>检查解析 IP，发现域名全都被解析到了德国、爱尔兰、美国，和想象中的香港地址完全不是一回事。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E7%89%88%E5%BC%80%E5%90%AFCDN%E8%A7%A3%E6%9E%90IP%E7%BB%93%E6%9E%9C.png" alt="新版开启 CDN 域名解析结果"></p>
-<p>这种情况我估摸着肯定是 CDN 的锅，去腾讯云后台一检查，发现已经开启的 CDN 设置的服务区域是「中国境外」。我想当然地以为「中国境外」的含义是指只有从国外访问网站的时候才会通过 CDN 访问，国内则是直接访问香港源站，这样虽然国内享受不到 CDN 加速，国外我设置是解析到 GitHub Pages，也用不上，但想着无非就是个鸡肋而已。</p>
-<p>但一查文档，发现自己还是太单纯了：</p>
-<blockquote>
-<p>「中国境外」:全球用户访问均会调度至中国境外的加速节点进行服务。</p>
-</blockquote>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8A%A0%E9%80%9F%E5%8C%BA%E5%9F%9F%E6%96%87%E6%A1%A3%E8%A7%A3%E9%87%8A.png" alt="「中国境外」"></p>
-<p>也就是说，不管是从国内还是国外访问，都会被调度到国外的 CDN 加速节点进行接入，想不经过 CDN 直接访问香港源站都不行。而比较符合我想要的效果的「全球」则需要域名进行备案之后才能开启，未备案域名开启 CDN 的话就<strong>只能选「中国境外」</strong>。</p>
-<p>本来是用来加快访问速度的 CDN，对于使用<strong>未备案域名</strong>的博客来说，已经不仅仅是鸡肋了，反而是拖累。本来直接访问香港就能解决的事情，现在非得绕道德国、爱尔兰、美国才行，这访问速度能快起来才是怪事。</p>
-<h2 id="尝试直连香港源站"><a href="#尝试直连香港源站" class="headerlink" title="尝试直连香港源站"></a>尝试直连香港源站</h2><p>既然这是 CDN 导致的，那我把 CDN 直接给关了，直连香港源站不就行了？</p>
-<h3 id="关闭-CDN"><a href="#关闭-CDN" class="headerlink" title="关闭 CDN"></a>关闭 CDN</h3><p>进入腾讯云后台–&gt;「内容分发网络」–&gt;「域名管理」，关闭 CDN 加速。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91%E5%90%8E%E5%8F%B0%E5%85%B3%E9%97%ADCDN.png" alt="关闭 CDN"></p>
-<h3 id="更改域名解析记录"><a href="#更改域名解析记录" class="headerlink" title="更改域名解析记录"></a>更改域名解析记录</h3><p>在 DNSPod 里将国内访问解析到 CODING 提供的默认访问地址，此时再检查 DNS 解析结果发现就全部都指向了香港的 IP，达到了自己想要的效果。</p>
-<h2 id="致命的证书问题"><a href="#致命的证书问题" class="headerlink" title="致命的证书问题"></a>致命的证书问题</h2><p>设置成直接访问香港源站后，速度果不其然就上来了，比访问新加坡节点速度还要快上一点。但很快就出现了一个更加严重的问题——证书错误。</p>
-<p>新版申请的 SSL 证书是和 CDN 绑定在一起的，在腾讯云的证书管理里面只能部署到 CDN，而我把 CDN 关闭了，现在直接访问的是香港源站。源站的证书是颁给 <code>*.cdn.my.qcloud</code> 的，和我的域名不一致，这就会导致浏览器直接报警说网站不安全，这是不可接受的。我尝试解决这个问题，但无奈水平有限，最后也没能找到解决的办法。如果有知道如何解决证书问题的同学，麻烦指导我一下，不甚感激。</p>
-<p>现在情况就是如果想要实现自定义域名 HTTPS 访问，就需要打开 CDN，打开 CDN 就意味着牺牲访问速度，这还是在 CDN 和 COS 需要付费的情况下。矛盾无法调和，所以最后我只能又<strong>回退到旧版</strong>了，幸好 CODING 目前还没有关闭旧版的入口，给了我一个反悔的机会。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>花了差不多一天的时间，最后还是老老实实回到了旧版，相当于一天白折腾了。域名没有进行备案的话，在国内使用不方便的地方真的太多了。CODING 新版静态网站我觉得对于使用已备案域名的同学来说还是不错的，配置简单，CDN 加速、SSL 证书一步到位。但同样的对于这些同学来说可供选择的方案太多了，免费的也有不少，CODING 的新版并没有太大的吸引力。</p>
-<p>而对于未备案域名的同学新版则非常不友好，完全是<strong>负优化</strong>，完全没有升级的必要，谁会花钱找罪受呢。CODING 工程师说旧版后续会下线，到时候如果自定义域名的问题没有得到改善的话，可能就需要考虑迁移平台了。现在旧版还能用就先用着。</p>
-<p>我向 CODING 反馈了自定义域名的问题，希望能同旧版一样使用 Let’s Encrypt 的证书，不要强行同腾讯云的 CDN 加速绑定在一起，后续如果有进一步的反馈结果的话我会同步到博客中。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://help.coding.net/docs/pages/operating/migrate.html">官方静态网站服务升级指南</a></p>
-]]></content>
-      <categories>
-        <category>个人博客</category>
-      </categories>
-      <tags>
-        <tag>腾讯云</tag>
       </tags>
   </entry>
   <entry>
@@ -496,120 +610,6 @@
       </categories>
       <tags>
         <tag>港卡</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo 博客 GitHub Pages + CODING 静态网站双部署</title>
-    <url>/post/Deploy-Hexoblog-To-Codingnet-And-GitHub/</url>
-    <content><![CDATA[<h2 id="为什么想要双部署"><a href="#为什么想要双部署" class="headerlink" title="为什么想要双部署"></a>为什么想要双部署</h2><p>中文博客的受众肯定是以国内为主，但部署在 Github Pages 上，服务器在国外，国内访问的速度太不稳定，如果一个页面需要将近十秒才能完全打开的话，用户体验差，页面被提前关闭的概率也会呈指数级上升。所以改善国内访问体验迫在眉睫。</p>
-<p>之前也想过直接使用 CDN 直接加速 GitHub Pages 的方式，但国内的 CDN 全部要求域名进行备案，嫌麻烦就放弃了。最后选择通过将博客同时部署到 GitHub 和 CODING 的方式来提升国内访问体验。</p>
-<p>CODING 在 19 年年底进行了一次比较大的改版，双部署的整个流程也有了不小的变化，而网络上很多教程大部分都还是基于旧版流程的。本文详细记载了将博客同时部署到 GitHub Pages 和 CODING 静态网站服务的全流程。</p>
-<span id="more"></span>
-
-<h2 id="CODING-配置"><a href="#CODING-配置" class="headerlink" title="CODING 配置"></a>CODING 配置</h2><h3 id="注册-CODING-账号"><a href="#注册-CODING-账号" class="headerlink" title="注册 CODING 账号"></a>注册 CODING 账号</h3><p>2019 年 12 月 28 日以后，CODING 统一了入口，不再区分个人版与否，具体的升级详情可以查看<a href="https://coding.net/products/upgrade">官方通知</a>。升级后的 CODING 会增加「团队&#x2F;组织」的管理概念，注册的时候必须先创建一个团队，这个和平常的注册稍有些不同，需要注意一下。<a href="https://coding.net/">点击跳转 CODING 官网</a>。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Coding%E6%B3%A8%E5%86%8C%E7%95%8C%E9%9D%A2.png" alt="CODING 注册界面"></p>
-<h3 id="创建-CODING-项目"><a href="#创建-CODING-项目" class="headerlink" title="创建 CODING 项目"></a>创建 CODING 项目</h3><p>注册成功以后，进入「项目」–&gt; 「创建项目」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.png" alt="CODING 创建项目"></p>
-<p>选择「代码托管项目」，只需填写项目名称，其他都保持空白和默认即可。注意<strong>不要勾选</strong>「公开源代码」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%88%9B%E5%BB%BA%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1%E9%A1%B9%E7%9B%AE.png" alt="创建代码托管项目"></p>
-<h3 id="CODING-配置-SSH-公钥"><a href="#CODING-配置-SSH-公钥" class="headerlink" title="CODING 配置 SSH 公钥"></a>CODING 配置 SSH 公钥</h3><p>SSH 密钥设置的路径为 「右上角个人头像」–&gt;「个人账户设置」–&gt; 「SSH 公钥」–&gt; 「新增公钥」。</p>
-<div class="note info"><p>SSH 公钥默认存放在 <code>C:\Users\用户名\.ssh</code> 目录下的 <code>id_rsa.pub</code> 文件里，用记事本打开并复制其内容即可。</p>
-</div>
-
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Coding%E6%96%B0%E5%A2%9ESSH%E5%AF%86%E9%92%A5.png" alt="CODING 新增SSH密钥"></p>
-<p>新增密钥是敏感操作，所以在新增密钥的时候，CODING 会要求验证密码才能添加，需要注意的是这里要求验证的是<strong>服务密码</strong>，而不是登录密码。如果没有事先设置服务密码的话，需要先在「个人设置」–&gt; 「服务密码」进行设置。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E6%9C%8D%E5%8A%A1%E5%AF%86%E7%A0%81.png" alt="CODING 设置服务密码"></p>
-<p>添加公钥后，打开 <code>Git Bash</code>，使用以下命令验证是否配置成功：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh -T git@e.coding.net</span><br></pre></td></tr></table></figure>
-<p>因为是第一次进行连接，所以需要输入 <code>yes</code> 来确认进行连接。配置成功，会出现如下图所示的提示：<br><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CodingSSH%E9%AA%8C%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="CODING SSH 验证成功提示"></p>
-<h2 id="部署-CODING「静态网站」"><a href="#部署-CODING「静态网站」" class="headerlink" title="部署 CODING「静态网站」"></a>部署 CODING「静态网站」</h2><h3 id="配置站点配置文件-config-yml"><a href="#配置站点配置文件-config-yml" class="headerlink" title="配置站点配置文件 _config.yml"></a>配置站点配置文件 _config.yml</h3><p>进入到 CODING 上刚才新建的项目里面，选择「代码仓库」，可以看到此时代码仓库还是空的，选择「SSH」链接方式并复制链接。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E9%A1%B9%E7%9B%AESSH%E9%93%BE%E6%8E%A5.png" alt="CODING 项目 SSH 链接"></p>
-<p>打开博客根目录下的站点配置文件 <code> _config.yml</code> ，修改其中的 <code>deploy</code> 区域，将刚复制的 SSH 链接新增进去：</p>
-<figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  - type: git</span><br><span class="line">    repo: git@github.com:ousugo/ousugo.github.io.git</span><br><span class="line">    branch: master</span><br><span class="line"><span class="addition">+ - type: git</span></span><br><span class="line"><span class="addition">+   repo: git@e.coding.net:asuradazone/asurada/asurada.git</span></span><br><span class="line"><span class="addition">+   branch: master    </span></span><br></pre></td></tr></table></figure>
-
-<h3 id="部署代码到-CODING"><a href="#部署代码到-CODING" class="headerlink" title="部署代码到 CODING"></a>部署代码到 CODING</h3><p><code> _config.yml</code> 文件修改完成后，执行 <code>hexo d</code> 命令进行部署，此时 Hexo 就会根据设置同时将博客部署到 GitHub 和 CODING 上面。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%88%90%E5%8A%9F%E9%83%A8%E7%BD%B2%E5%88%B0CODING.png" alt="成功部署到 CODING"></p>
-<p>此时再进入 CODING 上的项目，能看到刚才还是空的仓库现在已经有源代码了，说明部署是成功的。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81.png" alt="CODING 项目源码"></p>
-<h3 id="项目启用「持续部署」功能"><a href="#项目启用「持续部署」功能" class="headerlink" title="项目启用「持续部署」功能"></a>项目启用「持续部署」功能</h3><p>CODING 改版后，开启 Pages 服务的方法有了较大的变化，连名字都改了，现在已经不叫「Pages 服务」，而是改叫「静态网站」了。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Pages%E6%94%B9%E5%90%8D.png" alt="Pages 服务改名"></p>
-<p>「静态网站」是「持续部署」下面的一个子功能，而「持续部署」功能默认是没有开启的，需要我们自行启用。启用路径为项目左下角「项目设置」–&gt;「项目与成员」–&gt;「功能开关」–&gt;「持续部署」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%90%AF%E7%94%A8%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2%E5%8A%9F%E8%83%BD.png" alt="启用持续部署功能"></p>
-<p>「持续部署」功能开启后，就可以在它下面找到「静态网站」了。为了后续方便操作，还可以点击「静态网站」字样右边的按钮将其固定到项目选项顶部。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%85%A5%E5%8F%A3.png" alt="静态网站入口"></p>
-<h3 id="实名认证"><a href="#实名认证" class="headerlink" title="实名认证"></a>实名认证</h3><p>CODING 现在要求是必须先进行实名认证以后才能使用「静态网站」的服务，实名认证的入口在「右上角头像」–&gt;「团队管理」–&gt;「团队设置」–&gt;「高级设置」里面，藏得有点深。</p>
-<p>如果<strong>没有绑定手机号</strong>的话，需要先绑定手机号才能进行实名认证，反正现在基本想要使用国内的服务，实名认证基本是跑不掉的。输入姓名和身份证号码即可完成认证。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%AE%9E%E5%90%8D%E8%AE%A4%E8%AF%81.png" alt="实名认证"></p>
-<h3 id="发布静态网站"><a href="#发布静态网站" class="headerlink" title="发布静态网站"></a>发布静态网站</h3><p>实名认证完成后，点击「立即发布静态网站」，填写「网站名称」，「触发机制」默认为「自动触发」，此后每次同步代码到 <code>master</code> 分支时，网站即会自动部署。所有设置保持默认即可，然后点击「保存」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE.png" alt="静态网站设置"></p>
-<p>设置保存后，刷新页面，会看到 CODING 已经自动生成了网站的访问链接，不过现在网站还没有正式部署，还需要我们点击「立即部署」来部署网站。部署完成后就可以点击链接查看网站部署效果了，应该同部署到 GitHub Pages 是同样的效果。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99.png" alt="部署静态网站"></p>
-<h2 id="绑定自定义域名"><a href="#绑定自定义域名" class="headerlink" title="绑定自定义域名"></a>绑定自定义域名</h2><p>我的自定义域名是在 <a href="https://www.namesilo.com/">NmaeSilo</a> 买的，主要优点有：</p>
-<ol>
-<li>支持支付宝付款</li>
-<li>赠送 WHOIS 域名隐私保护</li>
-<li>第一年价格相对实惠</li>
-</ol>
-<p>如果有同学也考虑在 <a href="https://www.namesilo.com/">NmaeSilo</a> 购买域名，欢迎使用我的优惠码 <code>Asurada </code>，可以优惠一美元。</p>
-<h3 id="修改域名解析服务到-DNSPod"><a href="#修改域名解析服务到-DNSPod" class="headerlink" title="修改域名解析服务到 DNSPod"></a>修改域名解析服务到 DNSPod</h3><p>之前博客只部署在 GitHub Pages 上时，因为不需要考虑国内外解析分流，所以我直接使用的是 NameSilo 默认的域名解析服务。现在博客分别部署在 GitHub 和 CODING 上了，我希望将国外的流量解析到 GitHub，国内的流量则解析到 CODING，但 NameSilo 默认的域名解析服务并不能实现国内外流量的区分，所以需要更换域名解析服务商。</p>
-<p>我日常使用腾讯云比较多，所以选择了腾讯旗下的 <a href="dnspod.cn">DNSPod</a>，账号和腾讯云是通用的，直接微信扫码即可登录。登录到 <a href="console.dnspod.cn">DNSPod 控制台</a>，在「DNS 解析」–&gt;「我的域名」里添加想要解析的域名。因为还没有修改域名注册商那边的设置，所以现在显示的状态还是「DNS 错误」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D.png" alt="DNSPod 添加域名"></p>
-<p>登录到 <a href="https://www.namesilo.com/account_home.php">NameSilo 后台</a>，在「Account Options」中选择「<a href="https://www.namesilo.com/account_domains.php">domain manager</a>」，选中想要进行修改的域名，点击上方「Change Nameservers」图标。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/NameSilo%E4%BF%AE%E6%94%B9%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%9C%8D%E5%8A%A1.png" alt="NameSilo 修改域名解析服务"></p>
-<p>将默认的 DNS 服务器地址修改为下面的 DNSPod 提供的 DNS 服务器地址，然后提交修改。 </p>
-<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">f1g1ns1.dnspod.<span class="built_in">net</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">f1g1ns2.dnspod.<span class="built_in">net</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E4%BF%AE%E6%94%B9%E5%9F%9F%E5%90%8D%E6%9C%8D%E5%8A%A1%E5%95%86%E4%B8%BADNSPod.png" alt="修改域名服务商为 DNSPod"></p>
-<p>DNS 域名解析服务的修改后需要等待全球递归 DNS 服务器的刷新，所以需要耐心等待一会儿，大概十分钟左右。修改生效后再手动刷新 DNSPod 的状态，<strong>注意不是刷新页面</strong>，而是点击「DNS 错误」旁边的感叹号获取新状态，此时应该状态会变为「正常」。状态正常后，点击域名，进入「记录管理」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E7%8A%B6%E6%80%81%E6%AD%A3%E5%B8%B8.png" alt="DNSPod 显示状态正常"></p>
-<h3 id="DNSPod-解析记录设置"><a href="#DNSPod-解析记录设置" class="headerlink" title="DNSPod 解析记录设置"></a>DNSPod 解析记录设置</h3><p>先简单介绍一下 <code>A 记录</code> 和 <code>CNAME 记录</code> 的作用：</p>
-<blockquote>
-<p>如果需要将域名指向一个 IP 地址，就需要添加A记录；</p>
-<p>如果需要将域名指向另一个域名，再由另一个域名提供 IP 地址，就需要添加 CNAME 记录。</p>
-</blockquote>
-<p>我们一共添加五条解析记录，其中三条境外，两条境内，具体记录如下：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95.png" alt="DNSPod解析记录"></p>
-<p>第一条记录类型为 <code>A</code>，主机记录为 <code>@</code>，解析线路选择<code>默认</code>，记录值为 CODING 静态网站的 IP 地址，可以使用 <code>ping</code> 命令查询得到。比如 CODING 替我自动生成的网站访问地址为 <code>http://quj3xn.coding-pages.com/</code>，打开 <code>cmd</code>，输入 <code>ping quj3xn.coding-pages.com</code>，就可以得到 CODING 静态网站的 IP 地址，我的是<code>124.156.205.241</code>， <code>TTL</code> 的话，免费版最小只能填 600。这条解析记录的意思是将从境内访问 <code>asurada.zone</code> 的流量解析到 <code>124.156.205.241</code>。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%8E%B7%E5%8F%96IP%E5%9C%B0%E5%9D%80.png" alt="获取 IP 地址"></p>
-<p>第二条记录类型为 <code>CNAME</code>，主机记录为 <code>www</code>，解析线路选择<code>默认</code>，记录值为 CODING 自动生成的访问地址，比如我的是 <code>quj3xn.coding-pages.com</code>。这条解析记录的意思是将从境内访问 <code>www.asurada.zone</code> 的流量解析到 <code>quj3xn.coding-pages.com</code>。</p>
-<p>接下来的三条境外解析记录就很好理解了，第三和第五条记录是分别将从境外访问 <code>asurada.zone</code> 的流量解析到 <code>185.199.108.153</code> 和 <code>185.199.109.153</code>，这两个 IP 都是 GitHub Pages 的服务器 IP 地址。第四条记录则是将从境外访问 <code>ww.asurada.zone</code> 的流量解析到 <code>ousugo.github.io</code>。</p>
-<div class="note info"><p>在这一步的时候，为了方便下面开启 CODING 静态网站绑定自定义域名和开启全局 HTTPS，可以先将<strong>境外的三条解析先暂停</strong>，等完成 CODING 自定义域名的绑定并开启 HTTPS 以后再恢复解析。</p>
-</div>
-
-<h3 id="DNSPod「搜索引擎优化」"><a href="#DNSPod「搜索引擎优化」" class="headerlink" title="DNSPod「搜索引擎优化」"></a>DNSPod「搜索引擎优化」</h3><p>在「域名设置」–&gt; 「功能设置」里有一个「搜索引擎优化」功能，默认是关闭的，说是和各大搜索引擎有深度合作，开启后可以优化站点收录，具体原理咱也不知道。但这是一个免费功能，所以不开白不开。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96.png" alt="DNSPod 搜索引擎优化"></p>
-<p>根据官方文档，主流的搜索引擎都在优化范围之内，看上去还是很不错的：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96%E5%90%8D%E5%8D%95.png" alt="DNSPod 搜索引擎优化名单"></p>
-<h3 id="CODING-绑定自定义域名并开启-HTTPS"><a href="#CODING-绑定自定义域名并开启-HTTPS" class="headerlink" title="CODING 绑定自定义域名并开启 HTTPS"></a>CODING 绑定自定义域名并开启 HTTPS</h3><p>进入 CODING 项目的静态网站设置页面，向下滚动找到「自定义域名」的设置项，绑定自定义域名。如果在绑定域名时出现证书申请错误：</p>
-<blockquote>
-<p>申请错误原因是：在验证域名所有权时会定位到 GitHub Pages 的主机上导致 SSL 证书申请失败</p>
-<p>正确的做法是：先去域名 DNS 把 GitHub 的解析暂停掉，然后再重新申请 SSL 证书，大约十秒左右就能申请成功，然后开启强制 HTTPS 访问</p>
-<p>— <a href="https://www.itrhx.com/2019/09/16/A47-hexo-deployed-to-github-and-coding/#5-%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E5%B9%B6%E5%BC%80%E5%90%AF-HPPTS">绑定域名并开启 HPPTS</a></p>
-</blockquote>
-<p>建议同时绑定有 <code>www </code> 前缀和没有 <code>www</code>  前缀的域名，并根据自己的需求将其中一个设为首选域名，另一个<strong>勾选「跳转至首选」选项</strong>，这样可以避免一些第三方服务数据统计不到一起。</p>
-<p>如果两个域名的证书都没有问题的话，点击「强制 HTTPS」按钮即可启用强制 HTTPS 访问。设置完成后，不要忘记去 DNSPod 将之前暂停的 GitHub 解析重新开启。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E7%BB%91%E5%AE%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D.png" alt="CODING 绑定自定义域名"></p>
-<h2 id="成果检验"><a href="#成果检验" class="headerlink" title="成果检验"></a>成果检验</h2><p>至此，我们完成了博客在 GitHub Pages 和 CODING 静态网站服务上的双线部署。</p>
-<p>首先进行 DNS 的查询，可以看见结果正如我们所期望的，从国内访问的时候走的是 CODING 的静态网站服务，而从境外访问的时候走的则是 GitHub Pages。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNS%E8%A7%A3%E6%9E%90%E7%BB%93%E6%9E%9C.png" alt="DNS 解析结果"></p>
-<p>最后自然是喜闻乐见的速度对比，这里使用的是<a href="https://tool.chinaz.com/speedtest.aspx">站长之家的国内网站测速工具</a>。这里我们测试的域名分别是 CODING 和 GitHub <strong>自动生成的网站域名</strong>，多次测试下来，结果稍稍有些出乎我的意料，CODING 并没有如我想象的那样取得全面的、压倒性的速度优势，在部分地区反倒是 GitHub Pages 的访问速度更快。不过在多次测试中，CODING 的<strong>平均响应时间</strong>都比 GitHub 要快上三百到五百毫秒不等。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%80%9F%E5%BA%A6%E5%AF%B9%E6%AF%94.png" alt="速度对比"></p>
-<p>但如果是直接测试自定义域名 <code>asurada.zone</code> 的<strong>国内访问速度</strong>的话，分别设置域名<strong>仅解析</strong>到 CODING 和 GitHub，这时候可以看到解析到 CODING 时的<strong>国内访问速度</strong>明显比解析到 GitHub 时要快上不少。</p>
-<p>我猜测出现这种情况可能是 DNSPod 解析的功劳——当直接使用 <code>quj3xn.coding-pages.com</code> 域名进行测速时，DNS 解析的速度比较慢，进而拖累了整体的访问速度，而当使用自定义域名 <code>asurada.zone</code> 进行测速时，此时由 DNSPod 负责进行域名解析，解析速度比较快，进而加快了整体的访问速度。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E8%A7%A3%E6%9E%90%E5%88%B0CODING.png" alt="解析到 CODING 时的网站访问速度"></p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E8%A7%A3%E6%9E%90%E5%88%B0GITHUB.png" alt="解析到 GitHub 时的网站访问速度"></p>
-<p>我们更在意的自然是使用自定义域名访问时的速度，可以看到双线部署对于自定义域名的国内访问速度的提升效果是非常明显的，这次折腾也算是圆满成功，完结撒花✿✿ヽ(ﾟ▽ﾟ)ノ✿。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://help.coding.net/docs/devops/cd/static-website.html">CODING 静态网站服务官方文档</a></p>
-<p><a href="https://tding.top/archives/e09249d2.html">Hexo 博客部署到 Coding</a></p>
-<p><a href="https://www.itrhx.com/2019/09/16/A47-hexo-deployed-to-github-and-coding/">Hexo 双线部署到 Coding Pages 和 GitHub Pages 并实现全站 HTTPS</a></p>
-]]></content>
-      <categories>
-        <category>个人博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>GitHub</tag>
-        <tag>DNS</tag>
       </tags>
   </entry>
   <entry>
@@ -1036,59 +1036,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo Next 主题 V7 升级 V8 记录</title>
-    <url>/post/Update-Next-From-V7-To-V8/</url>
-    <content><![CDATA[<p>Hexo 和 Next 最近都发布了大版本更新，此文记录了升级过程。</p>
-<span id="more"></span>
-
-<h2 id="升级-Hexo-版本"><a href="#升级-Hexo-版本" class="headerlink" title="升级 Hexo 版本"></a>升级 Hexo 版本</h2><p>Hexo 核心团队成员 Sukka 写的 <a href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a>详细介绍了 Hexo 5.0 的新特性，以及从 Hexo 4.x 升级到 Hexo 5.x 需要注意的地方。</p>
-<p>Hexo 5.0 版本带来了不小的性能上的提升，升级 5.0 直接修改 <code>hexo-site/package.json</code> 文件：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&quot;dependencies&quot;: &#123;</span><br><span class="line"><span class="deletion">-  &quot;hexo&quot;: &quot;^4.2.1&quot;,</span></span><br><span class="line"><span class="addition">+  &quot;hexo&quot;: &quot;^5.1.1&quot;,</span></span><br></pre></td></tr></table></figure>
-
-<p>然后再执行 <code>npm upadte</code> 命令即可。</p>
-<p>升级完 Hexo ，<code>_config.yml</code> 并不会更新，而 Hexo 5.0 是有新增和改动一些其中的配置项的，所以需要我们自己去 <a href="https://github.com/hexojs/hexo-starter/blob/master/_config.yml">GitHub</a> 上查看站点配置文件的变动情况，并手动同步这些修改到自己的站点配置文件里。</p>
-<p>主要的变动就是新增了 <code>prismjs</code> 相关配置项以及更新了 <code>updated_option</code> 配置项。</p>
-<h2 id="升级-Next-V8-0-0-版本"><a href="#升级-Next-V8-0-0-版本" class="headerlink" title="升级 Next V8.0.0 版本"></a>升级 Next V8.0.0 版本</h2><p>使用 Hexo 5.0 及以上版本，升级 Next 主题最简单的方法就是通过 <code>npm</code> 安装，进入博客根目录，执行以下命令即可安装最新版本的 Next 主题：</p>
-<figure class="highlight autoit"><table><tr><td class="code"><pre><span class="line">npm install hexo-theme-<span class="keyword">next</span></span><br></pre></td></tr></table></figure>
-<p>通过 <code>npm</code> 安装的 Next 主题默认文件夹路径为 <code>hexo-site/node_modules/hexo-theme-next</code> 。因为有一些自定义修改可能会需要我们改动主题的源文件，而因为整个 <code>node_modules/</code> 被<code>gitignore</code> 文件所忽略，将会导致我们无法用 Git 记录我们对主题源文件的修改。</p>
-<p>所以我将之前版本的 Next 主题文件夹进行改名，将 <code>hexo-site/theme/next</code> 改成了 <code>hexo-site/theme/next-V7</code>。然后将 <code>hexo-theme-next</code>  文件夹的内容复制到 <code>hexo-site/theme/next</code> 。这样就能将主题文件夹加入 Git 的管理之中了。</p>
-<p>这里切记不要直接将旧版本的 Next 主题文件夹直接删除，因为后面可能有配置以及文件需要进行迁移。</p>
-<p>更名完成后，使用 <code>hexo version</code> 查看版本号，可以看到一个硕大的 <code>Next</code> Logo 以及下方显示 <code>NexT version 8.0.0</code>，说明现在已经成功启用 Next V8 版本。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9F%A5%E7%9C%8BNext%E7%89%88%E6%9C%AC%E5%8F%B7.png" alt="查看 Next 版本号"></p>
-<h2 id="迁移配置文件"><a href="#迁移配置文件" class="headerlink" title="迁移配置文件"></a>迁移配置文件</h2><p>在之前使用 Next V7 版本的时候，我是利用 Hexo 的 Data Files 功能将主题配置放置在站点的 <code>source/_data/next.yml</code> 文件中。但这种做法在 V8 版本被官方告知已经过时，并<strong>将在一段时间后停止支持</strong>，现在推荐的做法是<a href="https://theme-next.js.org/docs/getting-started/configuration.html">使用 Alternate Theme Config 存储配置</a>，需要 Hexo 版本在 5.0 及以上。</p>
-<p>这里可以选择一步到位直接将主题配置整合到站点配置文件 <code>_config.yml</code> 中去，也可以选择依然使用独立的主题配置文件，我选择的是第二种。具体流程如下：</p>
-<h3 id="创建并配置-config-next-yml-文件"><a href="#创建并配置-config-next-yml-文件" class="headerlink" title="创建并配置 _config.next.yml 文件"></a>创建并配置 <code>_config.next.yml</code> 文件</h3><p>在博客根目录下新建 <code>_config.next.yml</code> 文件。</p>
-<p>因为 Next V8 有不少配置项发生了变更，所以我索性选择了重新配置。先将 <code>hexo-site/node_modules/hexo-theme-next/_config.yml</code> 中的内容复制到 <code>_config.next.yml</code> 中。然后用 Beyond Compare 软件对新主题配置文件 <code>_config.next.yml</code> 和旧主题配置文件 <code>source/_data/next.yml</code> 两者进行文本比较，根据自己的需求迁移整合相关配置项。</p>
-<p>修改完成后，将旧主题配置文件 <code>source/_data/next.yml</code> 改名，我是改成了 <code>next-old.yml</code>，名字随意，只要能同原来的 <code>next.yml</code> 区别开来即可。</p>
-<p>从 V7 升级到 V8 主要有下面几个变化：</p>
-<ul>
-<li>Hexo 5.0 版本移除了对于 swig 模版的支持，使用 Nunjucks 代替 swig 作为模版引擎，主题配置文件内 <code>custom_file_path</code> 支持文件的后缀也从 <code>.swig</code> 变成了 <code>.njk</code>。所以如果此前根据 swig 的语法写过自定义内容，请在更新前确认它们是与 Nunjucks 兼容的，否则会报错，且生成的页面为空白。例如， Nunjucks 只支持 <code>and</code> 运算符，需要替换掉 swig 中的 <code>&amp;&amp;</code>。</li>
-<li>Next V8 将自带的 Font Awesome 图标库由 4.7.0 版本升级为了 5.13.0 版本。此次升级并不向下兼容，所以需要修改配置文件中与 Font Awesome 相关的内容，否则图标可能无法正常显示。</li>
-<li>NexT V8 已支持一键切换 CDN 服务商，而不需要为每个插件单独设置 CDN 地址。但需要注意，如果是使用最新版的 Next，那么一定要保持 <code>internal: local</code> 的默认设置不变。</li>
-<li>如果此前配置过 Valine，需要注意将主题配置文件中的 <code>appid</code> 和 <code>appkey</code> 改为 <code>appId</code> 和 <code>appKey</code> 。否则会出现 Valine 无法正常加载的现象。</li>
-<li>由于 Velocity.js 缺乏维护，NexT V8 使用 Animate.css 代替之。两者的动画效果几乎完全一致，除了动画名称略有不同。如果在配置文件中设置了旧的名称（例如 slideDownIn），请将其移除或根据此网页选择新的动画效果：<a href="http://theme-next.js.org/animate/">http://theme-next.js.org/animate/</a></li>
-</ul>
-<p>更多详细信息，可以自行查询 Next <a href="https://github.com/next-theme/hexo-theme-next/issues/4">相关官方说明</a>以及<a href="https://theme-next.js.org/docs/">官方文档</a>。</p>
-<h3 id="迁移-Favicon-位置"><a href="#迁移-Favicon-位置" class="headerlink" title="迁移 Favicon 位置"></a>迁移 Favicon 位置</h3><p>之前我博客的 Favicon 图片啥的都是放在 <code>hexo-site/themes/next/source/images</code> 目录下面，正好趁着这次升级的机会，将图片全部移到了 <code>hexo-site/source/images</code> 下（没有这个文件夹就自己新建）。</p>
-<p>不要忘记去 <code>_config.next.yml</code> 检查下 Favicon 相关配置的文件名是否正确，默认的都带有 <code>-next</code>  后缀。</p>
-<h2 id="自定义修改迁移"><a href="#自定义修改迁移" class="headerlink" title="自定义修改迁移"></a>自定义修改迁移</h2><p>这一部分是最麻烦的，因为跨版本升级，很多源文件的位置以及名称都发生了变化，比如每篇文章结尾处的版权声明的样式文件就从 <code>post-copyright.styl</code> 变成了 <code>post-footer.styl</code>。而且模版引擎也从swig 变更成了 Nunjucks，虽然大部分内容是可以互相兼容的，但万一碰到不兼容的，排查起来就比较麻烦了。</p>
-<p>所幸我的自定义修改并不多，而且都是 Nunjucks 兼容的，所以迁移起来相对较快。在进行迁移的时候，利用类似 Beyond Compare 之类的文件比较软件可以有效提高迁移速度，推荐大家尝试。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>折腾了一天，成功从 Next V7 升级到了 V8，升级所带来肉眼可见的变化并不多，只有一些诸如赞赏按钮样式之类的小变动，其他更多都是内部的一些变动。</p>
-<p>我是喜欢自己折腾，而且及时使用新版，可以帮助发现并反馈问题，可以帮助 Next 主题更好地进行迭代。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://github.com/next-theme/hexo-theme-next">hexo-theme-next README.md</a></p>
-<p><a href="https://theme-next.js.org/docs/">Next 官方文档</a></p>
-<p><a href="https://github.com/next-theme/hexo-theme-next/issues/4">Next【必读】更新说明及常见问题 </a></p>
-<p><a href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a></p>
-]]></content>
-      <categories>
-        <category>个人博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Next</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>什么是全功能 Type-C 及显示器所需带宽如何计算</title>
     <url>/post/What-Is-Full-Featured-Type-C/</url>
     <content><![CDATA[<p>本文主要介绍了如何计算特定分辨率和刷新率显示器所需带宽以及对全功能 Type-C 的一些简单科普。</p>
@@ -1140,59 +1087,56 @@
       </tags>
   </entry>
   <entry>
-    <title>为什么 robots.txt 不应该再屏蔽 JS 和 CSS 了</title>
-    <url>/post/Why-Shouldnot-Block-JS-And-CSS-Files-In-Robotstxt-Anymore/</url>
-    <content><![CDATA[<p>根据谷歌官方的建议，robots.txt 已经不需要再屏蔽 JavaScript、CSS 文件了。</p>
+    <title>Hexo Next 主题 V7 升级 V8 记录</title>
+    <url>/post/Update-Next-From-V7-To-V8/</url>
+    <content><![CDATA[<p>Hexo 和 Next 最近都发布了大版本更新，此文记录了升级过程。</p>
 <span id="more"></span>
 
-<h2 id="屏蔽是过时的做法"><a href="#屏蔽是过时的做法" class="headerlink" title="屏蔽是过时的做法"></a>屏蔽是过时的做法</h2><p>在前期查找相关资料的时候，我注意到不少博客都建议在 <code>robots.txt</code> 中禁止搜索引擎抓取网站的 JavaScript、CSS 文件，但其中大多数文章并没有给出为什么要这样做的具体理由。</p>
-<p>但我觉得现在已经有理由相信这种做法是<strong>过时且不必要</strong> 的。谷歌在其官方的<a href="https://support.google.com/webmasters/answer/7451184">搜索引擎优化 (SEO) 新手指南</a>中的「让 Google 以用户视角查看网页」章节中明确提到：</p>
-<blockquote>
-<p>当 Googlebot 抓取某个网页时，它应<a href="https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html">以普通用户查看网页的方式来查看它</a>。为了实现最佳的呈现和索引编制效果，请始终允许 Googlebot 访问您网站所用的 JavaScript、CSS 和图片文件。如果您网站的 robots.txt 文件禁止抓取这些资源，则会直接影响到我们的算法呈现您的内容并将其编入索引的效果，进而导致您的网站排名降低。</p>
-</blockquote>
-<p>可以看到，禁止 JavaScript、CSS 文件的抓取不仅不会对 SEO 有任何正向的帮助，反而可能会起到降低网站排名的负面效果。</p>
-<p>至于更具体的理由，谷歌在 <a href="https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html">Understanding web pages better</a> （也就是上方引用的「以普通用户查看网页的方式来查看它」）中进行了进一步的解释，中心思想可以总结如下：</p>
-<ol>
-<li>时代已经变了，JavaScript、CSS 已经变成现代网页不可或缺的一部分了，它们让我们的网页变得更加丰富、更加美观，如果禁止 JS、CSS 被搜索引擎抓取，结果导致网页不能被更好地渲染，这对搜索者以及网站站长双方来说都是一种损失。</li>
-<li>为了避免这种双输的局面，我们（谷歌）为此做了很多工作，现在我们（谷歌）的抓取系统已经能够<strong>以普通用户查看网页的方式来查看它</strong>，而 JavaScript、CSS 代码是普通用户浏览网页时非常重要的组成的部分，所以不要再屏蔽 JavaScript、CSS 文件了。</li>
-</ol>
-<p>上面这些都是谷歌在 2015 年就开始提倡的做法，所以现在已经 2020 年了，我们完全可以放心地让搜索引擎抓取我们的 JavaScript、CSS 文件，这样做对 SEO 有百利而无一害。</p>
-<h2 id="我的-robots-txt"><a href="#我的-robots-txt" class="headerlink" title="我的 robots.txt"></a>我的 robots.txt</h2><p>在博客根目录下的 <code>public</code> 文件夹内新建 <code>robots.txt</code> 文件，然后 <code>hexo d</code> 部署网站即可。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 允许任何搜索引擎抓取任何页面</span><br><span class="line">User-agent: *</span><br><span class="line">Allow: /</span><br><span class="line"># 站点地图地址</span><br><span class="line">Sitemap: https://asurada.zone/sitemap.xml</span><br><span class="line">Sitemap: https://asurada.zone/baidusitemap.xml</span><br></pre></td></tr></table></figure>
+<h2 id="升级-Hexo-版本"><a href="#升级-Hexo-版本" class="headerlink" title="升级 Hexo 版本"></a>升级 Hexo 版本</h2><p>Hexo 核心团队成员 Sukka 写的 <a href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a>详细介绍了 Hexo 5.0 的新特性，以及从 Hexo 4.x 升级到 Hexo 5.x 需要注意的地方。</p>
+<p>Hexo 5.0 版本带来了不小的性能上的提升，升级 5.0 直接修改 <code>hexo-site/package.json</code> 文件：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&quot;dependencies&quot;: &#123;</span><br><span class="line"><span class="deletion">-  &quot;hexo&quot;: &quot;^4.2.1&quot;,</span></span><br><span class="line"><span class="addition">+  &quot;hexo&quot;: &quot;^5.1.1&quot;,</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://support.google.com/webmasters/answer/7451184">谷歌官方搜索引擎优化 (SEO) 新手指南</a></p>
-<p><a href="https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html">Understanding web pages better</a> </p>
-<p><a href="https://yoast.com/dont-block-css-and-js-files/">Don’t block CSS and JS files</a></p>
+<p>然后再执行 <code>npm upadte</code> 命令即可。</p>
+<p>升级完 Hexo ，<code>_config.yml</code> 并不会更新，而 Hexo 5.0 是有新增和改动一些其中的配置项的，所以需要我们自己去 <a href="https://github.com/hexojs/hexo-starter/blob/master/_config.yml">GitHub</a> 上查看站点配置文件的变动情况，并手动同步这些修改到自己的站点配置文件里。</p>
+<p>主要的变动就是新增了 <code>prismjs</code> 相关配置项以及更新了 <code>updated_option</code> 配置项。</p>
+<h2 id="升级-Next-V8-0-0-版本"><a href="#升级-Next-V8-0-0-版本" class="headerlink" title="升级 Next V8.0.0 版本"></a>升级 Next V8.0.0 版本</h2><p>使用 Hexo 5.0 及以上版本，升级 Next 主题最简单的方法就是通过 <code>npm</code> 安装，进入博客根目录，执行以下命令即可安装最新版本的 Next 主题：</p>
+<figure class="highlight autoit"><table><tr><td class="code"><pre><span class="line">npm install hexo-theme-<span class="keyword">next</span></span><br></pre></td></tr></table></figure>
+<p>通过 <code>npm</code> 安装的 Next 主题默认文件夹路径为 <code>hexo-site/node_modules/hexo-theme-next</code> 。因为有一些自定义修改可能会需要我们改动主题的源文件，而因为整个 <code>node_modules/</code> 被<code>gitignore</code> 文件所忽略，将会导致我们无法用 Git 记录我们对主题源文件的修改。</p>
+<p>所以我将之前版本的 Next 主题文件夹进行改名，将 <code>hexo-site/theme/next</code> 改成了 <code>hexo-site/theme/next-V7</code>。然后将 <code>hexo-theme-next</code>  文件夹的内容复制到 <code>hexo-site/theme/next</code> 。这样就能将主题文件夹加入 Git 的管理之中了。</p>
+<p>这里切记不要直接将旧版本的 Next 主题文件夹直接删除，因为后面可能有配置以及文件需要进行迁移。</p>
+<p>更名完成后，使用 <code>hexo version</code> 查看版本号，可以看到一个硕大的 <code>Next</code> Logo 以及下方显示 <code>NexT version 8.0.0</code>，说明现在已经成功启用 Next V8 版本。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9F%A5%E7%9C%8BNext%E7%89%88%E6%9C%AC%E5%8F%B7.png" alt="查看 Next 版本号"></p>
+<h2 id="迁移配置文件"><a href="#迁移配置文件" class="headerlink" title="迁移配置文件"></a>迁移配置文件</h2><p>在之前使用 Next V7 版本的时候，我是利用 Hexo 的 Data Files 功能将主题配置放置在站点的 <code>source/_data/next.yml</code> 文件中。但这种做法在 V8 版本被官方告知已经过时，并<strong>将在一段时间后停止支持</strong>，现在推荐的做法是<a href="https://theme-next.js.org/docs/getting-started/configuration.html">使用 Alternate Theme Config 存储配置</a>，需要 Hexo 版本在 5.0 及以上。</p>
+<p>这里可以选择一步到位直接将主题配置整合到站点配置文件 <code>_config.yml</code> 中去，也可以选择依然使用独立的主题配置文件，我选择的是第二种。具体流程如下：</p>
+<h3 id="创建并配置-config-next-yml-文件"><a href="#创建并配置-config-next-yml-文件" class="headerlink" title="创建并配置 _config.next.yml 文件"></a>创建并配置 <code>_config.next.yml</code> 文件</h3><p>在博客根目录下新建 <code>_config.next.yml</code> 文件。</p>
+<p>因为 Next V8 有不少配置项发生了变更，所以我索性选择了重新配置。先将 <code>hexo-site/node_modules/hexo-theme-next/_config.yml</code> 中的内容复制到 <code>_config.next.yml</code> 中。然后用 Beyond Compare 软件对新主题配置文件 <code>_config.next.yml</code> 和旧主题配置文件 <code>source/_data/next.yml</code> 两者进行文本比较，根据自己的需求迁移整合相关配置项。</p>
+<p>修改完成后，将旧主题配置文件 <code>source/_data/next.yml</code> 改名，我是改成了 <code>next-old.yml</code>，名字随意，只要能同原来的 <code>next.yml</code> 区别开来即可。</p>
+<p>从 V7 升级到 V8 主要有下面几个变化：</p>
+<ul>
+<li>Hexo 5.0 版本移除了对于 swig 模版的支持，使用 Nunjucks 代替 swig 作为模版引擎，主题配置文件内 <code>custom_file_path</code> 支持文件的后缀也从 <code>.swig</code> 变成了 <code>.njk</code>。所以如果此前根据 swig 的语法写过自定义内容，请在更新前确认它们是与 Nunjucks 兼容的，否则会报错，且生成的页面为空白。例如， Nunjucks 只支持 <code>and</code> 运算符，需要替换掉 swig 中的 <code>&amp;&amp;</code>。</li>
+<li>Next V8 将自带的 Font Awesome 图标库由 4.7.0 版本升级为了 5.13.0 版本。此次升级并不向下兼容，所以需要修改配置文件中与 Font Awesome 相关的内容，否则图标可能无法正常显示。</li>
+<li>NexT V8 已支持一键切换 CDN 服务商，而不需要为每个插件单独设置 CDN 地址。但需要注意，如果是使用最新版的 Next，那么一定要保持 <code>internal: local</code> 的默认设置不变。</li>
+<li>如果此前配置过 Valine，需要注意将主题配置文件中的 <code>appid</code> 和 <code>appkey</code> 改为 <code>appId</code> 和 <code>appKey</code> 。否则会出现 Valine 无法正常加载的现象。</li>
+<li>由于 Velocity.js 缺乏维护，NexT V8 使用 Animate.css 代替之。两者的动画效果几乎完全一致，除了动画名称略有不同。如果在配置文件中设置了旧的名称（例如 slideDownIn），请将其移除或根据此网页选择新的动画效果：<a href="http://theme-next.js.org/animate/">http://theme-next.js.org/animate/</a></li>
+</ul>
+<p>更多详细信息，可以自行查询 Next <a href="https://github.com/next-theme/hexo-theme-next/issues/4">相关官方说明</a>以及<a href="https://theme-next.js.org/docs/">官方文档</a>。</p>
+<h3 id="迁移-Favicon-位置"><a href="#迁移-Favicon-位置" class="headerlink" title="迁移 Favicon 位置"></a>迁移 Favicon 位置</h3><p>之前我博客的 Favicon 图片啥的都是放在 <code>hexo-site/themes/next/source/images</code> 目录下面，正好趁着这次升级的机会，将图片全部移到了 <code>hexo-site/source/images</code> 下（没有这个文件夹就自己新建）。</p>
+<p>不要忘记去 <code>_config.next.yml</code> 检查下 Favicon 相关配置的文件名是否正确，默认的都带有 <code>-next</code>  后缀。</p>
+<h2 id="自定义修改迁移"><a href="#自定义修改迁移" class="headerlink" title="自定义修改迁移"></a>自定义修改迁移</h2><p>这一部分是最麻烦的，因为跨版本升级，很多源文件的位置以及名称都发生了变化，比如每篇文章结尾处的版权声明的样式文件就从 <code>post-copyright.styl</code> 变成了 <code>post-footer.styl</code>。而且模版引擎也从swig 变更成了 Nunjucks，虽然大部分内容是可以互相兼容的，但万一碰到不兼容的，排查起来就比较麻烦了。</p>
+<p>所幸我的自定义修改并不多，而且都是 Nunjucks 兼容的，所以迁移起来相对较快。在进行迁移的时候，利用类似 Beyond Compare 之类的文件比较软件可以有效提高迁移速度，推荐大家尝试。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>折腾了一天，成功从 Next V7 升级到了 V8，升级所带来肉眼可见的变化并不多，只有一些诸如赞赏按钮样式之类的小变动，其他更多都是内部的一些变动。</p>
+<p>我是喜欢自己折腾，而且及时使用新版，可以帮助发现并反馈问题，可以帮助 Next 主题更好地进行迭代。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://github.com/next-theme/hexo-theme-next">hexo-theme-next README.md</a></p>
+<p><a href="https://theme-next.js.org/docs/">Next 官方文档</a></p>
+<p><a href="https://github.com/next-theme/hexo-theme-next/issues/4">Next【必读】更新说明及常见问题 </a></p>
+<p><a href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a></p>
 ]]></content>
       <categories>
         <category>个人博客</category>
       </categories>
       <tags>
-        <tag>SEO</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>利用 Pqi 实现 Python 快速换源</title>
-    <url>/post/change-python-pypisource/</url>
-    <content><![CDATA[<p>pip 默认的软件源是国外的，下载起来速度很慢，我们可以将软件源换成国内的镜像源，大幅提高下载速度。本文介绍利用 <code>pqi</code> 这一小工具来实现简单快速地更换 pip 软件源。</p>
-<span id="more"></span>
-<p><code>pqi</code> 是国内开发者 <a href="https://github.com/yhangf">yhf</a> 开发的 <a href="https://github.com/yhangf/PyQuickInstall">PyQuickInstall</a> 工具的简称，这款工具可以非常方便地帮助我们切换 pip 软件源，如果觉得好用的话，大家可以动动鼠标，在 Github 上面 Star 一下。</p>
-<p>临时使用清华大学开源软件镜像源安装 pqi ：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install pqi -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
-
-<p>安装完成后，直接在命令行即可使用 pqi ：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//列举所有支持的PyPi源</span><br><span class="line">pqi ls</span><br><span class="line">//改变 PyPi源</span><br><span class="line">pqi use &lt;name&gt;</span><br><span class="line">//显示当前PyPi源</span><br><span class="line">pqi show</span><br><span class="line">//移除pip源</span><br><span class="line">pqi remove &lt;name&gt;</span><br><span class="line">//添加新的pip源</span><br><span class="line">pqi add &lt;name&gt; &lt;url&gt;</span><br><span class="line">//升级到最新版 pqi</span><br><span class="line">pip install --upgrade pqi</span><br></pre></td></tr></table></figure>
-
-<p>如果决定使用上面提到过的清华大学镜像源，使用如下命令即可：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pqi use tuna</span><br></pre></td></tr></table></figure>
-
-<p>然后就可以享受飞一般的 pip下载速度了。</p>
-]]></content>
-      <categories>
-        <category>开发环境</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
       </tags>
   </entry>
   <entry>
@@ -1307,6 +1251,62 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为什么 robots.txt 不应该再屏蔽 JS 和 CSS 了</title>
+    <url>/post/Why-Shouldnot-Block-JS-And-CSS-Files-In-Robotstxt-Anymore/</url>
+    <content><![CDATA[<p>根据谷歌官方的建议，robots.txt 已经不需要再屏蔽 JavaScript、CSS 文件了。</p>
+<span id="more"></span>
+
+<h2 id="屏蔽是过时的做法"><a href="#屏蔽是过时的做法" class="headerlink" title="屏蔽是过时的做法"></a>屏蔽是过时的做法</h2><p>在前期查找相关资料的时候，我注意到不少博客都建议在 <code>robots.txt</code> 中禁止搜索引擎抓取网站的 JavaScript、CSS 文件，但其中大多数文章并没有给出为什么要这样做的具体理由。</p>
+<p>但我觉得现在已经有理由相信这种做法是<strong>过时且不必要</strong> 的。谷歌在其官方的<a href="https://support.google.com/webmasters/answer/7451184">搜索引擎优化 (SEO) 新手指南</a>中的「让 Google 以用户视角查看网页」章节中明确提到：</p>
+<blockquote>
+<p>当 Googlebot 抓取某个网页时，它应<a href="https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html">以普通用户查看网页的方式来查看它</a>。为了实现最佳的呈现和索引编制效果，请始终允许 Googlebot 访问您网站所用的 JavaScript、CSS 和图片文件。如果您网站的 robots.txt 文件禁止抓取这些资源，则会直接影响到我们的算法呈现您的内容并将其编入索引的效果，进而导致您的网站排名降低。</p>
+</blockquote>
+<p>可以看到，禁止 JavaScript、CSS 文件的抓取不仅不会对 SEO 有任何正向的帮助，反而可能会起到降低网站排名的负面效果。</p>
+<p>至于更具体的理由，谷歌在 <a href="https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html">Understanding web pages better</a> （也就是上方引用的「以普通用户查看网页的方式来查看它」）中进行了进一步的解释，中心思想可以总结如下：</p>
+<ol>
+<li>时代已经变了，JavaScript、CSS 已经变成现代网页不可或缺的一部分了，它们让我们的网页变得更加丰富、更加美观，如果禁止 JS、CSS 被搜索引擎抓取，结果导致网页不能被更好地渲染，这对搜索者以及网站站长双方来说都是一种损失。</li>
+<li>为了避免这种双输的局面，我们（谷歌）为此做了很多工作，现在我们（谷歌）的抓取系统已经能够<strong>以普通用户查看网页的方式来查看它</strong>，而 JavaScript、CSS 代码是普通用户浏览网页时非常重要的组成的部分，所以不要再屏蔽 JavaScript、CSS 文件了。</li>
+</ol>
+<p>上面这些都是谷歌在 2015 年就开始提倡的做法，所以现在已经 2020 年了，我们完全可以放心地让搜索引擎抓取我们的 JavaScript、CSS 文件，这样做对 SEO 有百利而无一害。</p>
+<h2 id="我的-robots-txt"><a href="#我的-robots-txt" class="headerlink" title="我的 robots.txt"></a>我的 robots.txt</h2><p>在博客根目录下的 <code>public</code> 文件夹内新建 <code>robots.txt</code> 文件，然后 <code>hexo d</code> 部署网站即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 允许任何搜索引擎抓取任何页面</span><br><span class="line">User-agent: *</span><br><span class="line">Allow: /</span><br><span class="line"># 站点地图地址</span><br><span class="line">Sitemap: https://asurada.zone/sitemap.xml</span><br><span class="line">Sitemap: https://asurada.zone/baidusitemap.xml</span><br></pre></td></tr></table></figure>
+
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://support.google.com/webmasters/answer/7451184">谷歌官方搜索引擎优化 (SEO) 新手指南</a></p>
+<p><a href="https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html">Understanding web pages better</a> </p>
+<p><a href="https://yoast.com/dont-block-css-and-js-files/">Don’t block CSS and JS files</a></p>
+]]></content>
+      <categories>
+        <category>个人博客</category>
+      </categories>
+      <tags>
+        <tag>SEO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>利用 Pqi 实现 Python 快速换源</title>
+    <url>/post/change-python-pypisource/</url>
+    <content><![CDATA[<p>pip 默认的软件源是国外的，下载起来速度很慢，我们可以将软件源换成国内的镜像源，大幅提高下载速度。本文介绍利用 <code>pqi</code> 这一小工具来实现简单快速地更换 pip 软件源。</p>
+<span id="more"></span>
+<p><code>pqi</code> 是国内开发者 <a href="https://github.com/yhangf">yhf</a> 开发的 <a href="https://github.com/yhangf/PyQuickInstall">PyQuickInstall</a> 工具的简称，这款工具可以非常方便地帮助我们切换 pip 软件源，如果觉得好用的话，大家可以动动鼠标，在 Github 上面 Star 一下。</p>
+<p>临时使用清华大学开源软件镜像源安装 pqi ：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install pqi -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，直接在命令行即可使用 pqi ：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//列举所有支持的PyPi源</span><br><span class="line">pqi ls</span><br><span class="line">//改变 PyPi源</span><br><span class="line">pqi use &lt;name&gt;</span><br><span class="line">//显示当前PyPi源</span><br><span class="line">pqi show</span><br><span class="line">//移除pip源</span><br><span class="line">pqi remove &lt;name&gt;</span><br><span class="line">//添加新的pip源</span><br><span class="line">pqi add &lt;name&gt; &lt;url&gt;</span><br><span class="line">//升级到最新版 pqi</span><br><span class="line">pip install --upgrade pqi</span><br></pre></td></tr></table></figure>
+
+<p>如果决定使用上面提到过的清华大学镜像源，使用如下命令即可：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pqi use tuna</span><br></pre></td></tr></table></figure>
+
+<p>然后就可以享受飞一般的 pip下载速度了。</p>
+]]></content>
+      <categories>
+        <category>开发环境</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
 </search>
