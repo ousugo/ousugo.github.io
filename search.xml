@@ -162,6 +162,37 @@
       </tags>
   </entry>
   <entry>
+    <title>通过 Microsoft Store 购买 Win10 专业版小记</title>
+    <url>/post/Buy-WindowsPro-License/</url>
+    <content><![CDATA[<p>通过 Windows 10 自带的 Microsoft Store 购买非常方便。</p>
+<span id="more"></span>
+
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>双十一的时候自己组装了一台主机，在安装操作系统的时候直接安装的 Windows 10 专业版。之前自己的笔记本是从 Windows 8.1 升级成 Windows 10，自动就激活并绑定了数字许可证，但自己组装的主机就需要考虑操作系统购买的问题了。</p>
+<p>在不激活的情况下用了一段时间，除了不能换壁纸等个性化操作以及右下角时不时显示一个未激活水印，好像也没有多大的限制。</p>
+<p>之前我从网上简单了解到的以及微软官网上显示的，都是专业版只限企业购买，还需要电话联系销售，我看着好像还挺麻烦的样子。但实际操作下来，发现还是自己信息太闭塞，购买起来其实非常简单，直接通过自带的 Microsoft Store 应用购买即可。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%AE%98%E7%BD%91%E8%B4%AD%E4%B9%B0%E5%8F%AA%E9%99%90%E4%BC%81%E4%B8%9A.png" alt="官网显示只限企业购买"></p>
+<h2 id="购买流程"><a href="#购买流程" class="headerlink" title="购买流程"></a>购买流程</h2><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9C%AA%E6%BF%80%E6%B4%BB.png" alt="未激活界面"></p>
+<p>在 Windows10 设置的「激活」页面直接有转到 Microsoft Store 购买的选项，点击会直接打开自带的 Microsoft Store 并跳转到专业版的详情界面，价格是 1458 元。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/MicrosoftStore%E8%AF%A6%E6%83%85%E7%95%8C%E9%9D%A2.png" alt="MicrosoftStore详情界面"></p>
+<p>点击「购买」，会先通过微软账户密码确认你的身份，我开启了 Windows Hello 摄像头，直接看一眼摄像头就确认了。</p>
+<p>之前买软件的时候已经在 Microsoft Store 中绑定过支付宝的免密支付，所以我的默认支付方式就直接是支付宝。Windows 10 专业版销售商我这里显示的是「杭州网易增盈科技有限公司」，不知道怎么和网易扯上了关系。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%B4%AD%E4%B9%B0%E7%A1%AE%E8%AE%A4%E7%95%8C%E9%9D%A2.png" alt="购买确认界面"></p>
+<p>最后再点击一次「购买」，支付宝自动完成扣款，加载片刻，Windows 自动激活，显示「Windows 已使用与 Microsoft 账户关联的数字许可证激活」，至此就激活完成了。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%B7%B2%E6%BF%80%E6%B4%BB.png" alt="已激活"></p>
+<h2 id="更换硬件后如何激活"><a href="#更换硬件后如何激活" class="headerlink" title="更换硬件后如何激活"></a>更换硬件后如何激活</h2><p>根据微软官网的信息，在 Windows 10（1607版本或更高版本）中，必须将 Microsoft 帐户与设备上的Windows 10 数字许可证联系起来。通过将 Microsoft 帐户与数字许可证链接起来，以后在进行重大硬件更改，比如换主板的时候，就使用激活疑难解答程序重新激活 Windows。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%93%BE%E6%8E%A5%E5%88%B0Microsoft%E8%B4%A6%E6%88%B7.png" alt="将 Windows 10 数字许可证链接到 Microsoft 帐户"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>整个过程非常简单，购买体验挺好。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://support.microsoft.com/zh-cn/windows/%E5%9C%A8%E6%9B%B4%E6%8D%A2%E7%A1%AC%E4%BB%B6%E5%90%8E%E9%87%8D%E6%96%B0%E6%BF%80%E6%B4%BB-windows-10-2c0e962a-f04c-145b-6ead-fb3fc72b6665">在更换硬件后重新激活 Windows 10</a></p>
+]]></content>
+      <categories>
+        <category>小事</category>
+      </categories>
+      <tags>
+        <tag>正版</tag>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CODING Pages 静态网站升级腾讯云新版踩坑小记</title>
     <url>/post/CODING-Pages-Upgrade-To-TencentCloud/</url>
     <content><![CDATA[<p>自己的踩坑记录证明域名未备案的同学就不要升级了，新版需要付费，但升级后强制的境外 CDN 加速导致访问速度反而不如旧版快。</p>
@@ -216,34 +247,117 @@
       </tags>
   </entry>
   <entry>
-    <title>通过 Microsoft Store 购买 Win10 专业版小记</title>
-    <url>/post/Buy-WindowsPro-License/</url>
-    <content><![CDATA[<p>通过 Windows 10 自带的 Microsoft Store 购买非常方便。</p>
+    <title>Hexo 博客 GitHub Pages + CODING 静态网站双部署</title>
+    <url>/post/Deploy-Hexoblog-To-Codingnet-And-GitHub/</url>
+    <content><![CDATA[<h2 id="为什么想要双部署"><a href="#为什么想要双部署" class="headerlink" title="为什么想要双部署"></a>为什么想要双部署</h2><p>中文博客的受众肯定是以国内为主，但部署在 Github Pages 上，服务器在国外，国内访问的速度太不稳定，如果一个页面需要将近十秒才能完全打开的话，用户体验差，页面被提前关闭的概率也会呈指数级上升。所以改善国内访问体验迫在眉睫。</p>
+<p>之前也想过直接使用 CDN 直接加速 GitHub Pages 的方式，但国内的 CDN 全部要求域名进行备案，嫌麻烦就放弃了。最后选择通过将博客同时部署到 GitHub 和 CODING 的方式来提升国内访问体验。</p>
+<p>CODING 在 19 年年底进行了一次比较大的改版，双部署的整个流程也有了不小的变化，而网络上很多教程大部分都还是基于旧版流程的。本文详细记载了将博客同时部署到 GitHub Pages 和 CODING 静态网站服务的全流程。</p>
 <span id="more"></span>
 
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>双十一的时候自己组装了一台主机，在安装操作系统的时候直接安装的 Windows 10 专业版。之前自己的笔记本是从 Windows 8.1 升级成 Windows 10，自动就激活并绑定了数字许可证，但自己组装的主机就需要考虑操作系统购买的问题了。</p>
-<p>在不激活的情况下用了一段时间，除了不能换壁纸等个性化操作以及右下角时不时显示一个未激活水印，好像也没有多大的限制。</p>
-<p>之前我从网上简单了解到的以及微软官网上显示的，都是专业版只限企业购买，还需要电话联系销售，我看着好像还挺麻烦的样子。但实际操作下来，发现还是自己信息太闭塞，购买起来其实非常简单，直接通过自带的 Microsoft Store 应用购买即可。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%AE%98%E7%BD%91%E8%B4%AD%E4%B9%B0%E5%8F%AA%E9%99%90%E4%BC%81%E4%B8%9A.png" alt="官网显示只限企业购买"></p>
-<h2 id="购买流程"><a href="#购买流程" class="headerlink" title="购买流程"></a>购买流程</h2><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9C%AA%E6%BF%80%E6%B4%BB.png" alt="未激活界面"></p>
-<p>在 Windows10 设置的「激活」页面直接有转到 Microsoft Store 购买的选项，点击会直接打开自带的 Microsoft Store 并跳转到专业版的详情界面，价格是 1458 元。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/MicrosoftStore%E8%AF%A6%E6%83%85%E7%95%8C%E9%9D%A2.png" alt="MicrosoftStore详情界面"></p>
-<p>点击「购买」，会先通过微软账户密码确认你的身份，我开启了 Windows Hello 摄像头，直接看一眼摄像头就确认了。</p>
-<p>之前买软件的时候已经在 Microsoft Store 中绑定过支付宝的免密支付，所以我的默认支付方式就直接是支付宝。Windows 10 专业版销售商我这里显示的是「杭州网易增盈科技有限公司」，不知道怎么和网易扯上了关系。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%B4%AD%E4%B9%B0%E7%A1%AE%E8%AE%A4%E7%95%8C%E9%9D%A2.png" alt="购买确认界面"></p>
-<p>最后再点击一次「购买」，支付宝自动完成扣款，加载片刻，Windows 自动激活，显示「Windows 已使用与 Microsoft 账户关联的数字许可证激活」，至此就激活完成了。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%B7%B2%E6%BF%80%E6%B4%BB.png" alt="已激活"></p>
-<h2 id="更换硬件后如何激活"><a href="#更换硬件后如何激活" class="headerlink" title="更换硬件后如何激活"></a>更换硬件后如何激活</h2><p>根据微软官网的信息，在 Windows 10（1607版本或更高版本）中，必须将 Microsoft 帐户与设备上的Windows 10 数字许可证联系起来。通过将 Microsoft 帐户与数字许可证链接起来，以后在进行重大硬件更改，比如换主板的时候，就使用激活疑难解答程序重新激活 Windows。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%93%BE%E6%8E%A5%E5%88%B0Microsoft%E8%B4%A6%E6%88%B7.png" alt="将 Windows 10 数字许可证链接到 Microsoft 帐户"></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>整个过程非常简单，购买体验挺好。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://support.microsoft.com/zh-cn/windows/%E5%9C%A8%E6%9B%B4%E6%8D%A2%E7%A1%AC%E4%BB%B6%E5%90%8E%E9%87%8D%E6%96%B0%E6%BF%80%E6%B4%BB-windows-10-2c0e962a-f04c-145b-6ead-fb3fc72b6665">在更换硬件后重新激活 Windows 10</a></p>
+<h2 id="CODING-配置"><a href="#CODING-配置" class="headerlink" title="CODING 配置"></a>CODING 配置</h2><h3 id="注册-CODING-账号"><a href="#注册-CODING-账号" class="headerlink" title="注册 CODING 账号"></a>注册 CODING 账号</h3><p>2019 年 12 月 28 日以后，CODING 统一了入口，不再区分个人版与否，具体的升级详情可以查看<a href="https://coding.net/products/upgrade">官方通知</a>。升级后的 CODING 会增加「团队&#x2F;组织」的管理概念，注册的时候必须先创建一个团队，这个和平常的注册稍有些不同，需要注意一下。<a href="https://coding.net/">点击跳转 CODING 官网</a>。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Coding%E6%B3%A8%E5%86%8C%E7%95%8C%E9%9D%A2.png" alt="CODING 注册界面"></p>
+<h3 id="创建-CODING-项目"><a href="#创建-CODING-项目" class="headerlink" title="创建 CODING 项目"></a>创建 CODING 项目</h3><p>注册成功以后，进入「项目」–&gt; 「创建项目」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.png" alt="CODING 创建项目"></p>
+<p>选择「代码托管项目」，只需填写项目名称，其他都保持空白和默认即可。注意<strong>不要勾选</strong>「公开源代码」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%88%9B%E5%BB%BA%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1%E9%A1%B9%E7%9B%AE.png" alt="创建代码托管项目"></p>
+<h3 id="CODING-配置-SSH-公钥"><a href="#CODING-配置-SSH-公钥" class="headerlink" title="CODING 配置 SSH 公钥"></a>CODING 配置 SSH 公钥</h3><p>SSH 密钥设置的路径为 「右上角个人头像」–&gt;「个人账户设置」–&gt; 「SSH 公钥」–&gt; 「新增公钥」。</p>
+<div class="note info"><p>SSH 公钥默认存放在 <code>C:\Users\用户名\.ssh</code> 目录下的 <code>id_rsa.pub</code> 文件里，用记事本打开并复制其内容即可。</p>
+</div>
+
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Coding%E6%96%B0%E5%A2%9ESSH%E5%AF%86%E9%92%A5.png" alt="CODING 新增SSH密钥"></p>
+<p>新增密钥是敏感操作，所以在新增密钥的时候，CODING 会要求验证密码才能添加，需要注意的是这里要求验证的是<strong>服务密码</strong>，而不是登录密码。如果没有事先设置服务密码的话，需要先在「个人设置」–&gt; 「服务密码」进行设置。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E6%9C%8D%E5%8A%A1%E5%AF%86%E7%A0%81.png" alt="CODING 设置服务密码"></p>
+<p>添加公钥后，打开 <code>Git Bash</code>，使用以下命令验证是否配置成功：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh -T git@e.coding.net</span><br></pre></td></tr></table></figure>
+<p>因为是第一次进行连接，所以需要输入 <code>yes</code> 来确认进行连接。配置成功，会出现如下图所示的提示：<br><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CodingSSH%E9%AA%8C%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="CODING SSH 验证成功提示"></p>
+<h2 id="部署-CODING「静态网站」"><a href="#部署-CODING「静态网站」" class="headerlink" title="部署 CODING「静态网站」"></a>部署 CODING「静态网站」</h2><h3 id="配置站点配置文件-config-yml"><a href="#配置站点配置文件-config-yml" class="headerlink" title="配置站点配置文件 _config.yml"></a>配置站点配置文件 _config.yml</h3><p>进入到 CODING 上刚才新建的项目里面，选择「代码仓库」，可以看到此时代码仓库还是空的，选择「SSH」链接方式并复制链接。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E9%A1%B9%E7%9B%AESSH%E9%93%BE%E6%8E%A5.png" alt="CODING 项目 SSH 链接"></p>
+<p>打开博客根目录下的站点配置文件 <code> _config.yml</code> ，修改其中的 <code>deploy</code> 区域，将刚复制的 SSH 链接新增进去：</p>
+<figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  - type: git</span><br><span class="line">    repo: git@github.com:ousugo/ousugo.github.io.git</span><br><span class="line">    branch: master</span><br><span class="line"><span class="addition">+ - type: git</span></span><br><span class="line"><span class="addition">+   repo: git@e.coding.net:asuradazone/asurada/asurada.git</span></span><br><span class="line"><span class="addition">+   branch: master    </span></span><br></pre></td></tr></table></figure>
+
+<h3 id="部署代码到-CODING"><a href="#部署代码到-CODING" class="headerlink" title="部署代码到 CODING"></a>部署代码到 CODING</h3><p><code> _config.yml</code> 文件修改完成后，执行 <code>hexo d</code> 命令进行部署，此时 Hexo 就会根据设置同时将博客部署到 GitHub 和 CODING 上面。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%88%90%E5%8A%9F%E9%83%A8%E7%BD%B2%E5%88%B0CODING.png" alt="成功部署到 CODING"></p>
+<p>此时再进入 CODING 上的项目，能看到刚才还是空的仓库现在已经有源代码了，说明部署是成功的。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81.png" alt="CODING 项目源码"></p>
+<h3 id="项目启用「持续部署」功能"><a href="#项目启用「持续部署」功能" class="headerlink" title="项目启用「持续部署」功能"></a>项目启用「持续部署」功能</h3><p>CODING 改版后，开启 Pages 服务的方法有了较大的变化，连名字都改了，现在已经不叫「Pages 服务」，而是改叫「静态网站」了。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Pages%E6%94%B9%E5%90%8D.png" alt="Pages 服务改名"></p>
+<p>「静态网站」是「持续部署」下面的一个子功能，而「持续部署」功能默认是没有开启的，需要我们自行启用。启用路径为项目左下角「项目设置」–&gt;「项目与成员」–&gt;「功能开关」–&gt;「持续部署」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%90%AF%E7%94%A8%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2%E5%8A%9F%E8%83%BD.png" alt="启用持续部署功能"></p>
+<p>「持续部署」功能开启后，就可以在它下面找到「静态网站」了。为了后续方便操作，还可以点击「静态网站」字样右边的按钮将其固定到项目选项顶部。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%85%A5%E5%8F%A3.png" alt="静态网站入口"></p>
+<h3 id="实名认证"><a href="#实名认证" class="headerlink" title="实名认证"></a>实名认证</h3><p>CODING 现在要求是必须先进行实名认证以后才能使用「静态网站」的服务，实名认证的入口在「右上角头像」–&gt;「团队管理」–&gt;「团队设置」–&gt;「高级设置」里面，藏得有点深。</p>
+<p>如果<strong>没有绑定手机号</strong>的话，需要先绑定手机号才能进行实名认证，反正现在基本想要使用国内的服务，实名认证基本是跑不掉的。输入姓名和身份证号码即可完成认证。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%AE%9E%E5%90%8D%E8%AE%A4%E8%AF%81.png" alt="实名认证"></p>
+<h3 id="发布静态网站"><a href="#发布静态网站" class="headerlink" title="发布静态网站"></a>发布静态网站</h3><p>实名认证完成后，点击「立即发布静态网站」，填写「网站名称」，「触发机制」默认为「自动触发」，此后每次同步代码到 <code>master</code> 分支时，网站即会自动部署。所有设置保持默认即可，然后点击「保存」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE.png" alt="静态网站设置"></p>
+<p>设置保存后，刷新页面，会看到 CODING 已经自动生成了网站的访问链接，不过现在网站还没有正式部署，还需要我们点击「立即部署」来部署网站。部署完成后就可以点击链接查看网站部署效果了，应该同部署到 GitHub Pages 是同样的效果。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99.png" alt="部署静态网站"></p>
+<h2 id="绑定自定义域名"><a href="#绑定自定义域名" class="headerlink" title="绑定自定义域名"></a>绑定自定义域名</h2><p>我的自定义域名是在 <a href="https://www.namesilo.com/">NmaeSilo</a> 买的，主要优点有：</p>
+<ol>
+<li>支持支付宝付款</li>
+<li>赠送 WHOIS 域名隐私保护</li>
+<li>第一年价格相对实惠</li>
+</ol>
+<p>如果有同学也考虑在 <a href="https://www.namesilo.com/">NmaeSilo</a> 购买域名，欢迎使用我的优惠码 <code>Asurada </code>，可以优惠一美元。</p>
+<h3 id="修改域名解析服务到-DNSPod"><a href="#修改域名解析服务到-DNSPod" class="headerlink" title="修改域名解析服务到 DNSPod"></a>修改域名解析服务到 DNSPod</h3><p>之前博客只部署在 GitHub Pages 上时，因为不需要考虑国内外解析分流，所以我直接使用的是 NameSilo 默认的域名解析服务。现在博客分别部署在 GitHub 和 CODING 上了，我希望将国外的流量解析到 GitHub，国内的流量则解析到 CODING，但 NameSilo 默认的域名解析服务并不能实现国内外流量的区分，所以需要更换域名解析服务商。</p>
+<p>我日常使用腾讯云比较多，所以选择了腾讯旗下的 <a href="dnspod.cn">DNSPod</a>，账号和腾讯云是通用的，直接微信扫码即可登录。登录到 <a href="console.dnspod.cn">DNSPod 控制台</a>，在「DNS 解析」–&gt;「我的域名」里添加想要解析的域名。因为还没有修改域名注册商那边的设置，所以现在显示的状态还是「DNS 错误」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D.png" alt="DNSPod 添加域名"></p>
+<p>登录到 <a href="https://www.namesilo.com/account_home.php">NameSilo 后台</a>，在「Account Options」中选择「<a href="https://www.namesilo.com/account_domains.php">domain manager</a>」，选中想要进行修改的域名，点击上方「Change Nameservers」图标。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/NameSilo%E4%BF%AE%E6%94%B9%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%9C%8D%E5%8A%A1.png" alt="NameSilo 修改域名解析服务"></p>
+<p>将默认的 DNS 服务器地址修改为下面的 DNSPod 提供的 DNS 服务器地址，然后提交修改。 </p>
+<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">f1g1ns1.dnspod.<span class="built_in">net</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">f1g1ns2.dnspod.<span class="built_in">net</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E4%BF%AE%E6%94%B9%E5%9F%9F%E5%90%8D%E6%9C%8D%E5%8A%A1%E5%95%86%E4%B8%BADNSPod.png" alt="修改域名服务商为 DNSPod"></p>
+<p>DNS 域名解析服务的修改后需要等待全球递归 DNS 服务器的刷新，所以需要耐心等待一会儿，大概十分钟左右。修改生效后再手动刷新 DNSPod 的状态，<strong>注意不是刷新页面</strong>，而是点击「DNS 错误」旁边的感叹号获取新状态，此时应该状态会变为「正常」。状态正常后，点击域名，进入「记录管理」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E7%8A%B6%E6%80%81%E6%AD%A3%E5%B8%B8.png" alt="DNSPod 显示状态正常"></p>
+<h3 id="DNSPod-解析记录设置"><a href="#DNSPod-解析记录设置" class="headerlink" title="DNSPod 解析记录设置"></a>DNSPod 解析记录设置</h3><p>先简单介绍一下 <code>A 记录</code> 和 <code>CNAME 记录</code> 的作用：</p>
+<blockquote>
+<p>如果需要将域名指向一个 IP 地址，就需要添加A记录；</p>
+<p>如果需要将域名指向另一个域名，再由另一个域名提供 IP 地址，就需要添加 CNAME 记录。</p>
+</blockquote>
+<p>我们一共添加五条解析记录，其中三条境外，两条境内，具体记录如下：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95.png" alt="DNSPod解析记录"></p>
+<p>第一条记录类型为 <code>A</code>，主机记录为 <code>@</code>，解析线路选择<code>默认</code>，记录值为 CODING 静态网站的 IP 地址，可以使用 <code>ping</code> 命令查询得到。比如 CODING 替我自动生成的网站访问地址为 <code>http://quj3xn.coding-pages.com/</code>，打开 <code>cmd</code>，输入 <code>ping quj3xn.coding-pages.com</code>，就可以得到 CODING 静态网站的 IP 地址，我的是<code>124.156.205.241</code>， <code>TTL</code> 的话，免费版最小只能填 600。这条解析记录的意思是将从境内访问 <code>asurada.zone</code> 的流量解析到 <code>124.156.205.241</code>。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%8E%B7%E5%8F%96IP%E5%9C%B0%E5%9D%80.png" alt="获取 IP 地址"></p>
+<p>第二条记录类型为 <code>CNAME</code>，主机记录为 <code>www</code>，解析线路选择<code>默认</code>，记录值为 CODING 自动生成的访问地址，比如我的是 <code>quj3xn.coding-pages.com</code>。这条解析记录的意思是将从境内访问 <code>www.asurada.zone</code> 的流量解析到 <code>quj3xn.coding-pages.com</code>。</p>
+<p>接下来的三条境外解析记录就很好理解了，第三和第五条记录是分别将从境外访问 <code>asurada.zone</code> 的流量解析到 <code>185.199.108.153</code> 和 <code>185.199.109.153</code>，这两个 IP 都是 GitHub Pages 的服务器 IP 地址。第四条记录则是将从境外访问 <code>ww.asurada.zone</code> 的流量解析到 <code>ousugo.github.io</code>。</p>
+<div class="note info"><p>在这一步的时候，为了方便下面开启 CODING 静态网站绑定自定义域名和开启全局 HTTPS，可以先将<strong>境外的三条解析先暂停</strong>，等完成 CODING 自定义域名的绑定并开启 HTTPS 以后再恢复解析。</p>
+</div>
+
+<h3 id="DNSPod「搜索引擎优化」"><a href="#DNSPod「搜索引擎优化」" class="headerlink" title="DNSPod「搜索引擎优化」"></a>DNSPod「搜索引擎优化」</h3><p>在「域名设置」–&gt; 「功能设置」里有一个「搜索引擎优化」功能，默认是关闭的，说是和各大搜索引擎有深度合作，开启后可以优化站点收录，具体原理咱也不知道。但这是一个免费功能，所以不开白不开。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96.png" alt="DNSPod 搜索引擎优化"></p>
+<p>根据官方文档，主流的搜索引擎都在优化范围之内，看上去还是很不错的：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96%E5%90%8D%E5%8D%95.png" alt="DNSPod 搜索引擎优化名单"></p>
+<h3 id="CODING-绑定自定义域名并开启-HTTPS"><a href="#CODING-绑定自定义域名并开启-HTTPS" class="headerlink" title="CODING 绑定自定义域名并开启 HTTPS"></a>CODING 绑定自定义域名并开启 HTTPS</h3><p>进入 CODING 项目的静态网站设置页面，向下滚动找到「自定义域名」的设置项，绑定自定义域名。如果在绑定域名时出现证书申请错误：</p>
+<blockquote>
+<p>申请错误原因是：在验证域名所有权时会定位到 GitHub Pages 的主机上导致 SSL 证书申请失败</p>
+<p>正确的做法是：先去域名 DNS 把 GitHub 的解析暂停掉，然后再重新申请 SSL 证书，大约十秒左右就能申请成功，然后开启强制 HTTPS 访问</p>
+<p>— <a href="https://www.itrhx.com/2019/09/16/A47-hexo-deployed-to-github-and-coding/#5-%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E5%B9%B6%E5%BC%80%E5%90%AF-HPPTS">绑定域名并开启 HPPTS</a></p>
+</blockquote>
+<p>建议同时绑定有 <code>www </code> 前缀和没有 <code>www</code>  前缀的域名，并根据自己的需求将其中一个设为首选域名，另一个<strong>勾选「跳转至首选」选项</strong>，这样可以避免一些第三方服务数据统计不到一起。</p>
+<p>如果两个域名的证书都没有问题的话，点击「强制 HTTPS」按钮即可启用强制 HTTPS 访问。设置完成后，不要忘记去 DNSPod 将之前暂停的 GitHub 解析重新开启。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E7%BB%91%E5%AE%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D.png" alt="CODING 绑定自定义域名"></p>
+<h2 id="成果检验"><a href="#成果检验" class="headerlink" title="成果检验"></a>成果检验</h2><p>至此，我们完成了博客在 GitHub Pages 和 CODING 静态网站服务上的双线部署。</p>
+<p>首先进行 DNS 的查询，可以看见结果正如我们所期望的，从国内访问的时候走的是 CODING 的静态网站服务，而从境外访问的时候走的则是 GitHub Pages。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNS%E8%A7%A3%E6%9E%90%E7%BB%93%E6%9E%9C.png" alt="DNS 解析结果"></p>
+<p>最后自然是喜闻乐见的速度对比，这里使用的是<a href="https://tool.chinaz.com/speedtest.aspx">站长之家的国内网站测速工具</a>。这里我们测试的域名分别是 CODING 和 GitHub <strong>自动生成的网站域名</strong>，多次测试下来，结果稍稍有些出乎我的意料，CODING 并没有如我想象的那样取得全面的、压倒性的速度优势，在部分地区反倒是 GitHub Pages 的访问速度更快。不过在多次测试中，CODING 的<strong>平均响应时间</strong>都比 GitHub 要快上三百到五百毫秒不等。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%80%9F%E5%BA%A6%E5%AF%B9%E6%AF%94.png" alt="速度对比"></p>
+<p>但如果是直接测试自定义域名 <code>asurada.zone</code> 的<strong>国内访问速度</strong>的话，分别设置域名<strong>仅解析</strong>到 CODING 和 GitHub，这时候可以看到解析到 CODING 时的<strong>国内访问速度</strong>明显比解析到 GitHub 时要快上不少。</p>
+<p>我猜测出现这种情况可能是 DNSPod 解析的功劳——当直接使用 <code>quj3xn.coding-pages.com</code> 域名进行测速时，DNS 解析的速度比较慢，进而拖累了整体的访问速度，而当使用自定义域名 <code>asurada.zone</code> 进行测速时，此时由 DNSPod 负责进行域名解析，解析速度比较快，进而加快了整体的访问速度。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E8%A7%A3%E6%9E%90%E5%88%B0CODING.png" alt="解析到 CODING 时的网站访问速度"></p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E8%A7%A3%E6%9E%90%E5%88%B0GITHUB.png" alt="解析到 GitHub 时的网站访问速度"></p>
+<p>我们更在意的自然是使用自定义域名访问时的速度，可以看到双线部署对于自定义域名的国内访问速度的提升效果是非常明显的，这次折腾也算是圆满成功，完结撒花✿✿ヽ(ﾟ▽ﾟ)ノ✿。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://help.coding.net/docs/devops/cd/static-website.html">CODING 静态网站服务官方文档</a></p>
+<p><a href="https://tding.top/archives/e09249d2.html">Hexo 博客部署到 Coding</a></p>
+<p><a href="https://www.itrhx.com/2019/09/16/A47-hexo-deployed-to-github-and-coding/">Hexo 双线部署到 Coding Pages 和 GitHub Pages 并实现全站 HTTPS</a></p>
 ]]></content>
       <categories>
-        <category>小事</category>
+        <category>个人博客</category>
       </categories>
       <tags>
-        <tag>正版</tag>
-        <tag>Windows</tag>
+        <tag>Hexo</tag>
+        <tag>GitHub</tag>
+        <tag>DNS</tag>
       </tags>
   </entry>
   <entry>
@@ -499,120 +613,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo 博客 GitHub Pages + CODING 静态网站双部署</title>
-    <url>/post/Deploy-Hexoblog-To-Codingnet-And-GitHub/</url>
-    <content><![CDATA[<h2 id="为什么想要双部署"><a href="#为什么想要双部署" class="headerlink" title="为什么想要双部署"></a>为什么想要双部署</h2><p>中文博客的受众肯定是以国内为主，但部署在 Github Pages 上，服务器在国外，国内访问的速度太不稳定，如果一个页面需要将近十秒才能完全打开的话，用户体验差，页面被提前关闭的概率也会呈指数级上升。所以改善国内访问体验迫在眉睫。</p>
-<p>之前也想过直接使用 CDN 直接加速 GitHub Pages 的方式，但国内的 CDN 全部要求域名进行备案，嫌麻烦就放弃了。最后选择通过将博客同时部署到 GitHub 和 CODING 的方式来提升国内访问体验。</p>
-<p>CODING 在 19 年年底进行了一次比较大的改版，双部署的整个流程也有了不小的变化，而网络上很多教程大部分都还是基于旧版流程的。本文详细记载了将博客同时部署到 GitHub Pages 和 CODING 静态网站服务的全流程。</p>
-<span id="more"></span>
-
-<h2 id="CODING-配置"><a href="#CODING-配置" class="headerlink" title="CODING 配置"></a>CODING 配置</h2><h3 id="注册-CODING-账号"><a href="#注册-CODING-账号" class="headerlink" title="注册 CODING 账号"></a>注册 CODING 账号</h3><p>2019 年 12 月 28 日以后，CODING 统一了入口，不再区分个人版与否，具体的升级详情可以查看<a href="https://coding.net/products/upgrade">官方通知</a>。升级后的 CODING 会增加「团队&#x2F;组织」的管理概念，注册的时候必须先创建一个团队，这个和平常的注册稍有些不同，需要注意一下。<a href="https://coding.net/">点击跳转 CODING 官网</a>。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Coding%E6%B3%A8%E5%86%8C%E7%95%8C%E9%9D%A2.png" alt="CODING 注册界面"></p>
-<h3 id="创建-CODING-项目"><a href="#创建-CODING-项目" class="headerlink" title="创建 CODING 项目"></a>创建 CODING 项目</h3><p>注册成功以后，进入「项目」–&gt; 「创建项目」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.png" alt="CODING 创建项目"></p>
-<p>选择「代码托管项目」，只需填写项目名称，其他都保持空白和默认即可。注意<strong>不要勾选</strong>「公开源代码」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%88%9B%E5%BB%BA%E4%BB%A3%E7%A0%81%E6%89%98%E7%AE%A1%E9%A1%B9%E7%9B%AE.png" alt="创建代码托管项目"></p>
-<h3 id="CODING-配置-SSH-公钥"><a href="#CODING-配置-SSH-公钥" class="headerlink" title="CODING 配置 SSH 公钥"></a>CODING 配置 SSH 公钥</h3><p>SSH 密钥设置的路径为 「右上角个人头像」–&gt;「个人账户设置」–&gt; 「SSH 公钥」–&gt; 「新增公钥」。</p>
-<div class="note info"><p>SSH 公钥默认存放在 <code>C:\Users\用户名\.ssh</code> 目录下的 <code>id_rsa.pub</code> 文件里，用记事本打开并复制其内容即可。</p>
-</div>
-
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Coding%E6%96%B0%E5%A2%9ESSH%E5%AF%86%E9%92%A5.png" alt="CODING 新增SSH密钥"></p>
-<p>新增密钥是敏感操作，所以在新增密钥的时候，CODING 会要求验证密码才能添加，需要注意的是这里要求验证的是<strong>服务密码</strong>，而不是登录密码。如果没有事先设置服务密码的话，需要先在「个人设置」–&gt; 「服务密码」进行设置。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E6%9C%8D%E5%8A%A1%E5%AF%86%E7%A0%81.png" alt="CODING 设置服务密码"></p>
-<p>添加公钥后，打开 <code>Git Bash</code>，使用以下命令验证是否配置成功：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh -T git@e.coding.net</span><br></pre></td></tr></table></figure>
-<p>因为是第一次进行连接，所以需要输入 <code>yes</code> 来确认进行连接。配置成功，会出现如下图所示的提示：<br><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CodingSSH%E9%AA%8C%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="CODING SSH 验证成功提示"></p>
-<h2 id="部署-CODING「静态网站」"><a href="#部署-CODING「静态网站」" class="headerlink" title="部署 CODING「静态网站」"></a>部署 CODING「静态网站」</h2><h3 id="配置站点配置文件-config-yml"><a href="#配置站点配置文件-config-yml" class="headerlink" title="配置站点配置文件 _config.yml"></a>配置站点配置文件 _config.yml</h3><p>进入到 CODING 上刚才新建的项目里面，选择「代码仓库」，可以看到此时代码仓库还是空的，选择「SSH」链接方式并复制链接。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E9%A1%B9%E7%9B%AESSH%E9%93%BE%E6%8E%A5.png" alt="CODING 项目 SSH 链接"></p>
-<p>打开博客根目录下的站点配置文件 <code> _config.yml</code> ，修改其中的 <code>deploy</code> 区域，将刚复制的 SSH 链接新增进去：</p>
-<figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  - type: git</span><br><span class="line">    repo: git@github.com:ousugo/ousugo.github.io.git</span><br><span class="line">    branch: master</span><br><span class="line"><span class="addition">+ - type: git</span></span><br><span class="line"><span class="addition">+   repo: git@e.coding.net:asuradazone/asurada/asurada.git</span></span><br><span class="line"><span class="addition">+   branch: master    </span></span><br></pre></td></tr></table></figure>
-
-<h3 id="部署代码到-CODING"><a href="#部署代码到-CODING" class="headerlink" title="部署代码到 CODING"></a>部署代码到 CODING</h3><p><code> _config.yml</code> 文件修改完成后，执行 <code>hexo d</code> 命令进行部署，此时 Hexo 就会根据设置同时将博客部署到 GitHub 和 CODING 上面。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%88%90%E5%8A%9F%E9%83%A8%E7%BD%B2%E5%88%B0CODING.png" alt="成功部署到 CODING"></p>
-<p>此时再进入 CODING 上的项目，能看到刚才还是空的仓库现在已经有源代码了，说明部署是成功的。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81.png" alt="CODING 项目源码"></p>
-<h3 id="项目启用「持续部署」功能"><a href="#项目启用「持续部署」功能" class="headerlink" title="项目启用「持续部署」功能"></a>项目启用「持续部署」功能</h3><p>CODING 改版后，开启 Pages 服务的方法有了较大的变化，连名字都改了，现在已经不叫「Pages 服务」，而是改叫「静态网站」了。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Pages%E6%94%B9%E5%90%8D.png" alt="Pages 服务改名"></p>
-<p>「静态网站」是「持续部署」下面的一个子功能，而「持续部署」功能默认是没有开启的，需要我们自行启用。启用路径为项目左下角「项目设置」–&gt;「项目与成员」–&gt;「功能开关」–&gt;「持续部署」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%90%AF%E7%94%A8%E6%8C%81%E7%BB%AD%E9%83%A8%E7%BD%B2%E5%8A%9F%E8%83%BD.png" alt="启用持续部署功能"></p>
-<p>「持续部署」功能开启后，就可以在它下面找到「静态网站」了。为了后续方便操作，还可以点击「静态网站」字样右边的按钮将其固定到项目选项顶部。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E5%85%A5%E5%8F%A3.png" alt="静态网站入口"></p>
-<h3 id="实名认证"><a href="#实名认证" class="headerlink" title="实名认证"></a>实名认证</h3><p>CODING 现在要求是必须先进行实名认证以后才能使用「静态网站」的服务，实名认证的入口在「右上角头像」–&gt;「团队管理」–&gt;「团队设置」–&gt;「高级设置」里面，藏得有点深。</p>
-<p>如果<strong>没有绑定手机号</strong>的话，需要先绑定手机号才能进行实名认证，反正现在基本想要使用国内的服务，实名认证基本是跑不掉的。输入姓名和身份证号码即可完成认证。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%AE%9E%E5%90%8D%E8%AE%A4%E8%AF%81.png" alt="实名认证"></p>
-<h3 id="发布静态网站"><a href="#发布静态网站" class="headerlink" title="发布静态网站"></a>发布静态网站</h3><p>实名认证完成后，点击「立即发布静态网站」，填写「网站名称」，「触发机制」默认为「自动触发」，此后每次同步代码到 <code>master</code> 分支时，网站即会自动部署。所有设置保持默认即可，然后点击「保存」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99%E8%AE%BE%E7%BD%AE.png" alt="静态网站设置"></p>
-<p>设置保存后，刷新页面，会看到 CODING 已经自动生成了网站的访问链接，不过现在网站还没有正式部署，还需要我们点击「立即部署」来部署网站。部署完成后就可以点击链接查看网站部署效果了，应该同部署到 GitHub Pages 是同样的效果。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%83%A8%E7%BD%B2%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99.png" alt="部署静态网站"></p>
-<h2 id="绑定自定义域名"><a href="#绑定自定义域名" class="headerlink" title="绑定自定义域名"></a>绑定自定义域名</h2><p>我的自定义域名是在 <a href="https://www.namesilo.com/">NmaeSilo</a> 买的，主要优点有：</p>
-<ol>
-<li>支持支付宝付款</li>
-<li>赠送 WHOIS 域名隐私保护</li>
-<li>第一年价格相对实惠</li>
-</ol>
-<p>如果有同学也考虑在 <a href="https://www.namesilo.com/">NmaeSilo</a> 购买域名，欢迎使用我的优惠码 <code>Asurada </code>，可以优惠一美元。</p>
-<h3 id="修改域名解析服务到-DNSPod"><a href="#修改域名解析服务到-DNSPod" class="headerlink" title="修改域名解析服务到 DNSPod"></a>修改域名解析服务到 DNSPod</h3><p>之前博客只部署在 GitHub Pages 上时，因为不需要考虑国内外解析分流，所以我直接使用的是 NameSilo 默认的域名解析服务。现在博客分别部署在 GitHub 和 CODING 上了，我希望将国外的流量解析到 GitHub，国内的流量则解析到 CODING，但 NameSilo 默认的域名解析服务并不能实现国内外流量的区分，所以需要更换域名解析服务商。</p>
-<p>我日常使用腾讯云比较多，所以选择了腾讯旗下的 <a href="dnspod.cn">DNSPod</a>，账号和腾讯云是通用的，直接微信扫码即可登录。登录到 <a href="console.dnspod.cn">DNSPod 控制台</a>，在「DNS 解析」–&gt;「我的域名」里添加想要解析的域名。因为还没有修改域名注册商那边的设置，所以现在显示的状态还是「DNS 错误」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D.png" alt="DNSPod 添加域名"></p>
-<p>登录到 <a href="https://www.namesilo.com/account_home.php">NameSilo 后台</a>，在「Account Options」中选择「<a href="https://www.namesilo.com/account_domains.php">domain manager</a>」，选中想要进行修改的域名，点击上方「Change Nameservers」图标。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/NameSilo%E4%BF%AE%E6%94%B9%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%9C%8D%E5%8A%A1.png" alt="NameSilo 修改域名解析服务"></p>
-<p>将默认的 DNS 服务器地址修改为下面的 DNSPod 提供的 DNS 服务器地址，然后提交修改。 </p>
-<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">f1g1ns1.dnspod.<span class="built_in">net</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight dos"><table><tr><td class="code"><pre><span class="line">f1g1ns2.dnspod.<span class="built_in">net</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E4%BF%AE%E6%94%B9%E5%9F%9F%E5%90%8D%E6%9C%8D%E5%8A%A1%E5%95%86%E4%B8%BADNSPod.png" alt="修改域名服务商为 DNSPod"></p>
-<p>DNS 域名解析服务的修改后需要等待全球递归 DNS 服务器的刷新，所以需要耐心等待一会儿，大概十分钟左右。修改生效后再手动刷新 DNSPod 的状态，<strong>注意不是刷新页面</strong>，而是点击「DNS 错误」旁边的感叹号获取新状态，此时应该状态会变为「正常」。状态正常后，点击域名，进入「记录管理」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E7%8A%B6%E6%80%81%E6%AD%A3%E5%B8%B8.png" alt="DNSPod 显示状态正常"></p>
-<h3 id="DNSPod-解析记录设置"><a href="#DNSPod-解析记录设置" class="headerlink" title="DNSPod 解析记录设置"></a>DNSPod 解析记录设置</h3><p>先简单介绍一下 <code>A 记录</code> 和 <code>CNAME 记录</code> 的作用：</p>
-<blockquote>
-<p>如果需要将域名指向一个 IP 地址，就需要添加A记录；</p>
-<p>如果需要将域名指向另一个域名，再由另一个域名提供 IP 地址，就需要添加 CNAME 记录。</p>
-</blockquote>
-<p>我们一共添加五条解析记录，其中三条境外，两条境内，具体记录如下：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95.png" alt="DNSPod解析记录"></p>
-<p>第一条记录类型为 <code>A</code>，主机记录为 <code>@</code>，解析线路选择<code>默认</code>，记录值为 CODING 静态网站的 IP 地址，可以使用 <code>ping</code> 命令查询得到。比如 CODING 替我自动生成的网站访问地址为 <code>http://quj3xn.coding-pages.com/</code>，打开 <code>cmd</code>，输入 <code>ping quj3xn.coding-pages.com</code>，就可以得到 CODING 静态网站的 IP 地址，我的是<code>124.156.205.241</code>， <code>TTL</code> 的话，免费版最小只能填 600。这条解析记录的意思是将从境内访问 <code>asurada.zone</code> 的流量解析到 <code>124.156.205.241</code>。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%8E%B7%E5%8F%96IP%E5%9C%B0%E5%9D%80.png" alt="获取 IP 地址"></p>
-<p>第二条记录类型为 <code>CNAME</code>，主机记录为 <code>www</code>，解析线路选择<code>默认</code>，记录值为 CODING 自动生成的访问地址，比如我的是 <code>quj3xn.coding-pages.com</code>。这条解析记录的意思是将从境内访问 <code>www.asurada.zone</code> 的流量解析到 <code>quj3xn.coding-pages.com</code>。</p>
-<p>接下来的三条境外解析记录就很好理解了，第三和第五条记录是分别将从境外访问 <code>asurada.zone</code> 的流量解析到 <code>185.199.108.153</code> 和 <code>185.199.109.153</code>，这两个 IP 都是 GitHub Pages 的服务器 IP 地址。第四条记录则是将从境外访问 <code>ww.asurada.zone</code> 的流量解析到 <code>ousugo.github.io</code>。</p>
-<div class="note info"><p>在这一步的时候，为了方便下面开启 CODING 静态网站绑定自定义域名和开启全局 HTTPS，可以先将<strong>境外的三条解析先暂停</strong>，等完成 CODING 自定义域名的绑定并开启 HTTPS 以后再恢复解析。</p>
-</div>
-
-<h3 id="DNSPod「搜索引擎优化」"><a href="#DNSPod「搜索引擎优化」" class="headerlink" title="DNSPod「搜索引擎优化」"></a>DNSPod「搜索引擎优化」</h3><p>在「域名设置」–&gt; 「功能设置」里有一个「搜索引擎优化」功能，默认是关闭的，说是和各大搜索引擎有深度合作，开启后可以优化站点收录，具体原理咱也不知道。但这是一个免费功能，所以不开白不开。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96.png" alt="DNSPod 搜索引擎优化"></p>
-<p>根据官方文档，主流的搜索引擎都在优化范围之内，看上去还是很不错的：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E4%BC%98%E5%8C%96%E5%90%8D%E5%8D%95.png" alt="DNSPod 搜索引擎优化名单"></p>
-<h3 id="CODING-绑定自定义域名并开启-HTTPS"><a href="#CODING-绑定自定义域名并开启-HTTPS" class="headerlink" title="CODING 绑定自定义域名并开启 HTTPS"></a>CODING 绑定自定义域名并开启 HTTPS</h3><p>进入 CODING 项目的静态网站设置页面，向下滚动找到「自定义域名」的设置项，绑定自定义域名。如果在绑定域名时出现证书申请错误：</p>
-<blockquote>
-<p>申请错误原因是：在验证域名所有权时会定位到 GitHub Pages 的主机上导致 SSL 证书申请失败</p>
-<p>正确的做法是：先去域名 DNS 把 GitHub 的解析暂停掉，然后再重新申请 SSL 证书，大约十秒左右就能申请成功，然后开启强制 HTTPS 访问</p>
-<p>— <a href="https://www.itrhx.com/2019/09/16/A47-hexo-deployed-to-github-and-coding/#5-%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E5%B9%B6%E5%BC%80%E5%90%AF-HPPTS">绑定域名并开启 HPPTS</a></p>
-</blockquote>
-<p>建议同时绑定有 <code>www </code> 前缀和没有 <code>www</code>  前缀的域名，并根据自己的需求将其中一个设为首选域名，另一个<strong>勾选「跳转至首选」选项</strong>，这样可以避免一些第三方服务数据统计不到一起。</p>
-<p>如果两个域名的证书都没有问题的话，点击「强制 HTTPS」按钮即可启用强制 HTTPS 访问。设置完成后，不要忘记去 DNSPod 将之前暂停的 GitHub 解析重新开启。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E7%BB%91%E5%AE%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D.png" alt="CODING 绑定自定义域名"></p>
-<h2 id="成果检验"><a href="#成果检验" class="headerlink" title="成果检验"></a>成果检验</h2><p>至此，我们完成了博客在 GitHub Pages 和 CODING 静态网站服务上的双线部署。</p>
-<p>首先进行 DNS 的查询，可以看见结果正如我们所期望的，从国内访问的时候走的是 CODING 的静态网站服务，而从境外访问的时候走的则是 GitHub Pages。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNS%E8%A7%A3%E6%9E%90%E7%BB%93%E6%9E%9C.png" alt="DNS 解析结果"></p>
-<p>最后自然是喜闻乐见的速度对比，这里使用的是<a href="https://tool.chinaz.com/speedtest.aspx">站长之家的国内网站测速工具</a>。这里我们测试的域名分别是 CODING 和 GitHub <strong>自动生成的网站域名</strong>，多次测试下来，结果稍稍有些出乎我的意料，CODING 并没有如我想象的那样取得全面的、压倒性的速度优势，在部分地区反倒是 GitHub Pages 的访问速度更快。不过在多次测试中，CODING 的<strong>平均响应时间</strong>都比 GitHub 要快上三百到五百毫秒不等。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%80%9F%E5%BA%A6%E5%AF%B9%E6%AF%94.png" alt="速度对比"></p>
-<p>但如果是直接测试自定义域名 <code>asurada.zone</code> 的<strong>国内访问速度</strong>的话，分别设置域名<strong>仅解析</strong>到 CODING 和 GitHub，这时候可以看到解析到 CODING 时的<strong>国内访问速度</strong>明显比解析到 GitHub 时要快上不少。</p>
-<p>我猜测出现这种情况可能是 DNSPod 解析的功劳——当直接使用 <code>quj3xn.coding-pages.com</code> 域名进行测速时，DNS 解析的速度比较慢，进而拖累了整体的访问速度，而当使用自定义域名 <code>asurada.zone</code> 进行测速时，此时由 DNSPod 负责进行域名解析，解析速度比较快，进而加快了整体的访问速度。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E8%A7%A3%E6%9E%90%E5%88%B0CODING.png" alt="解析到 CODING 时的网站访问速度"></p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E8%A7%A3%E6%9E%90%E5%88%B0GITHUB.png" alt="解析到 GitHub 时的网站访问速度"></p>
-<p>我们更在意的自然是使用自定义域名访问时的速度，可以看到双线部署对于自定义域名的国内访问速度的提升效果是非常明显的，这次折腾也算是圆满成功，完结撒花✿✿ヽ(ﾟ▽ﾟ)ノ✿。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://help.coding.net/docs/devops/cd/static-website.html">CODING 静态网站服务官方文档</a></p>
-<p><a href="https://tding.top/archives/e09249d2.html">Hexo 博客部署到 Coding</a></p>
-<p><a href="https://www.itrhx.com/2019/09/16/A47-hexo-deployed-to-github-and-coding/">Hexo 双线部署到 Coding Pages 和 GitHub Pages 并实现全站 HTTPS</a></p>
-]]></content>
-      <categories>
-        <category>个人博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>GitHub</tag>
-        <tag>DNS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git 常用命令备忘录</title>
     <url>/post/Git-Cheat-Sheet/</url>
     <content><![CDATA[<p>一些不太常用的 Git 命令往往隔一段时间不用就忘记了，特写此篇备忘。</p>
@@ -770,6 +770,44 @@
       </categories>
       <tags>
         <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>雷蛇炼狱蝰蛇2013 更换中键微动</title>
+    <url>/post/RepairTheDeathadder2013/</url>
+    <content><![CDATA[<p>第一次自己动手修鼠标，挺好玩的。</p>
+<span id="more"></span>
+
+<h2 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h2><p>这款炼狱蝰蛇 2013 是自己四年前买的，之前一直用得好好的，但最近滚轮的按键功能突然失效了，表现为能够正常按压，但无法正常触发按键功能。在日常浏览网页时，我习惯用中键来关闭标签页以及在新窗口打开链接，现在中键突然失灵了，对我的日常使用造成了很大的不便。</p>
+<p>之前有在网上看过不少帖子都是自己修鼠标，感觉也不是很难，所以这次我也尝试一下来自己修鼠标。</p>
+<h2 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h2><p>1.电烙铁<br>2.镊子<br>3.十字螺丝刀<br>4.新中键微动<br>5.焊锡丝<br>6.小刀</p>
+<h2 id="拆解鼠标"><a href="#拆解鼠标" class="headerlink" title="拆解鼠标"></a>拆解鼠标</h2><p>通过搜索在什么值得买上面找到了这篇<a href="https://post.smzdm.com/p/568792/">维修教程</a>，虽然文中问题是鼠标出现了双击的现象，和我的问题并不相同，但同样都是通过更换微动来解决问题，而且各个步骤都比较详细，给我提供了很大的帮助。</p>
+<p>首先用刀片分别将鼠标背面左右上角的两个脚垫撬下来，两个脚垫是通过胶粘上去的，撬下来以后保存好，后面还原的时候还可以再粘回去。去掉两个脚垫后就可以看到里面的两颗螺丝了。这两颗螺丝可以直接拧下。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8E%BB%E9%99%A4%E8%84%9A%E5%9E%AB.jpg" alt="去除脚垫"></p>
+<p>需要注意的是第三颗螺丝的位置，是隐藏在贴纸的下方，位置如下图所示，直接用螺丝刀捅破贴纸即可看到。这颗螺丝拧出一定距离即可，不必全部拧出。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%9A%90%E8%97%8F%E7%9A%84%E7%AC%AC%E4%B8%89%E9%A2%97%E8%9E%BA%E4%B8%9D.jpg" alt="隐藏的第三颗螺丝"></p>
+<p>三颗螺丝处理完毕后，从下图所示处往下掰，即可打开鼠标上盖，打开时小心不要用力过猛，因为上盖上有一根灯光线和主板相连，不小心的话可能会扯断。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%8E%B0%E5%BC%80%E5%A4%96%E5%A3%B3.jpg" alt="掰开外壳"></p>
+<p>断开上盖与主板的连线后，即可移走上盖，看到鼠标主板。接下来如下图所示依次卸下主板上的三颗固定螺丝、左侧按键微动上的两颗螺丝以及滚轮旁边的小黑色螺丝后，最后再断开两根排线，即可取下主板。注意保管好螺丝，特别那颗较小的黑色螺丝。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%8B%86%E5%8D%B8%E4%B8%BB%E6%9D%BF.png" alt="拆卸主板"></p>
+<h2 id="更换微动"><a href="#更换微动" class="headerlink" title="更换微动"></a>更换微动</h2><p>观察主板可以看到滚轮横杆右侧的下方有一颗正方形微动，判断应该就是这个地方的微动损坏导致中键失灵。于是在万能的淘宝上花八毛钱+七块钱运费买了一个新的微动。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E8%80%81%E5%BE%AE%E5%8A%A8.jpg" alt="新老微动"></p>
+<p>因为没有吸锡器，可以直接用电烙铁加热主板背面的焊点，然后边加热边拔也是可以把微动给卸下来的。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8D%B8%E4%B8%8B%E5%BE%AE%E5%8A%A8.jpg" alt="卸下微动"></p>
+<p>微动只是一个开关，不区分方向，将新微动针脚插入到主板对应孔位上，然后用电烙铁和焊锡对准针脚化开焊锡即可完成更换。如果卸旧微动的时候焊孔内还残留有焊锡也不用担心，直接加热焊孔，将焊锡加热到流动状，这时新微动针脚可以轻松穿过焊孔。</p>
+<h2 id="重装鼠标"><a href="#重装鼠标" class="headerlink" title="重装鼠标"></a>重装鼠标</h2><p>按照刚刚的拆解步骤一步一步还原即可，排线全都有防呆设计，也不需要担心会接反。<br><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%87%8D%E8%A3%85%E9%BC%A0%E6%A0%87.jpg" alt="重装鼠标"></p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%BB%A1%E8%A1%80%E5%A4%8D%E6%B4%BB.jpg" alt="满血复活"></p>
+<p>最后自然是连接电脑进行测试，功能一切正常，又可以愉快地使用中键了。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在有帖子可以参考的情况下，整个更换过程还是比较简单的，最大的困难可能是大部分同学没有电烙铁，专门为此添置一个可能显得有些本末倒置，毕竟电烙铁也不便宜。</p>
+<p>自己动手，丰衣足食。人生第一次自己动手更换鼠标，成就感还是不小的。看到鼠标在自己手里满血复活，开心。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://post.smzdm.com/p/568792/">“拿什么拯救你，我的双击蛇”— 手把手教你更换Razer炼狱蝰蛇鼠标微动</a></p>
+]]></content>
+      <categories>
+        <category>小事</category>
+      </categories>
+      <tags>
+        <tag>DIY</tag>
+        <tag>外设</tag>
       </tags>
   </entry>
   <entry>
@@ -998,6 +1036,57 @@
       </tags>
   </entry>
   <entry>
+    <title>什么是全功能 Type-C 及显示器所需带宽如何计算</title>
+    <url>/post/What-Is-Full-Featured-Type-C/</url>
+    <content><![CDATA[<p>本文主要介绍了如何计算特定分辨率和刷新率显示器所需带宽以及对全功能 Type-C 的一些简单科普。</p>
+<span id="more"></span>
+
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>最近动了换新笔记本和显示器的念头，自己想换一台 4K 显示器，在了解相关知识的时候，经常看到要注意视频输出接口带宽的提醒。其中各种概念多且杂，初接触很容易懵圈，所以我整理汇总了一些网上的资料，以作此文。</p>
+<p>文中如有不对或不妥的地方，欢迎评论留言指出错误，不甚感激。</p>
+<h2 id="4K-60Hz-显示需要多少带宽"><a href="#4K-60Hz-显示需要多少带宽" class="headerlink" title="4K@60Hz 显示需要多少带宽"></a>4K@60Hz 显示需要多少带宽</h2><p>我们这里以一块 4K、8 bit、60 Hz 的屏幕举例，这块显示屏有 3840 * 2160 个像素点，每个像素点又由红绿蓝三个子像素构成 ，每个子像素需要 8 bit 的数据，刷新率为 60 Hz，也就是每秒需要刷新 60 次，那么每秒需要传输的数据量就是 3840 * 2160 * 3 * 8 * 60 &#x3D;  11.94 Gbit，需要的带宽就是 11.94 Gbps。</p>
+<p>上述这些数据只是我们能够在显示屏上看到的内容，实际上在传输相关画面数据的时候，还需要考虑到防止画面撕裂，以及画面对齐等等需求，需要传输比实际显示画面更多的数据，所以实际传输的数据会比上面计算的更多。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/7-%E6%98%BE%E7%A4%BA%E5%99%A8%E5%AE%9E%E9%99%85%E4%BC%A0%E8%BE%93%E6%95%B0%E6%8D%AE.png" alt="显示器实际传输数据"></p>
+<p>下面这张来自 B 站 Up 主<a href="https://space.bilibili.com/14871346#/">硬件茶谈</a>的表格详细列出了市面上常见分辨率及刷新率的组合分别所需要的带宽，其中还有各种显示器接口的相容性：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/8-%E6%98%BE%E7%A4%BA%E6%8E%A5%E5%8F%A3%E7%9B%B8%E5%AE%B9%E8%A1%A8.png" alt="显示接口相容表"></p>
+<p>显示器带宽具体的计算原理可以查看 Up 主的<a href="https://b23.tv/rbYOKW">视频-【硬件科普】4K144Hz需要传输多少数据，教你如何正确的计算显示器的带宽需求？</a>，原理及计算方法都讲得非常清楚，动画特效也是一流。</p>
+<p>在此也强烈安利下 Up 主，最早是在知乎关注他的，在知乎笔记本话题下相当活跃，后期转型成 B 站 Up 主，视频质量极高，讲解概念深入浅出，动画精致流畅，看他的视频可谓一种享受。我从 Up 主的视频里学到了很多硬件相关基础知识。而且 Up 主现在还只是一名在校大学生，让人不服不行，在此就祝愿 Up 主早日发大财吧。</p>
+<h2 id="什么是全功能-Type-C"><a href="#什么是全功能-Type-C" class="headerlink" title="什么是全功能 Type-C"></a>什么是全功能 Type-C</h2><p>同时具有<strong>数据传输、充电、显示</strong>三项功能的 Type-C 就称之为全功能 Type-C。而之所有会有「全功能」和「非全功能」的区分，是因为 Type-C 只是个<strong>接口形状</strong>。Type-C 接口是能够支持 100W PD 供电、DP 显示输出、USB 数据传输等功能没错，但 <strong>Type-C 接口的功能都是可以被增减的</strong>，所以并不是所有 Type-C 接口都同时具备数据传输、充电、显示三项功能。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/2-Type-C%E4%B8%8D%E5%90%8C%E5%8A%9F%E8%83%BD.png" alt="Type-C 不同功能说明"></p>
+<p>每台电脑上面所配备的 Type-C 接口所具备的功能是不尽相同的，厂商基于成本或是其他方面的考虑，配备的 Type-C 可能只支持 USB 数据传输功能 ，不能充电、显示，也可能配备只支持 DP 显示和数据传输的 Type-C 口，不能充电。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-TypeC%E5%8A%9F%E8%83%BD%E4%B8%8D%E9%BD%90.png" alt="Type-C 现状"></p>
+<h2 id="Type-C-的「数据传输」带宽"><a href="#Type-C-的「数据传输」带宽" class="headerlink" title="Type-C 的「数据传输」带宽"></a>Type-C 的「数据传输」带宽</h2><p>Type-C 接口还有一个重要的参数就是 USB 版本，USB 版本越高，带宽也就越高，理论上带宽越高，传输速度越快。不过 USB 版本的命名经过了几次大的修改，命名规范变来变去，对普通消费者识别起来极不友好。下面两张图分别引用自<a href="https://basic-tutorials.com/usb-type-c-at-a-glance-what-the-port-can-do-what-it-cant-do-and-why-it-has-nothing-to-do-with-usb-3-0/">USB type C at a glance: What the port can do, what it can’t do and why it has nothing to do with USB 3.0</a>及<a href="https://zh.wikipedia.org/wiki/USB">维基百科-USB</a>。其中 USB3.2 Gen 2x2 的 Logo 以维基百科的为准。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/3-USB%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E.png" alt="USB 版本说明"></p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/4-USB%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91.png" alt="USB 版本及速率(维基百科)"></p>
+<p>通过这两张图，我们能够比较清楚地知道各个 USB 版本对应的传输速率及兼容接口。目前笔记本上 Type-C 接口的主流速率还是 USB3.2 Gen 1 也就是 5Gbps，理论速度约合 500 MB&#x2F;s。</p>
+<p><strong>但需要注意的是，多数情况下，「USB 几点几」这样的称呼，仅仅只是用于描述接口的「数据传输」速度，不代表这个接口其他任何能力，如能否PD充电、能否显示。</strong></p>
+<h2 id="5Gbps-的-Type-C-无法满足-4K-60Hz-输出？"><a href="#5Gbps-的-Type-C-无法满足-4K-60Hz-输出？" class="headerlink" title="5Gbps 的 Type-C 无法满足 4K@60Hz 输出？"></a>5Gbps 的 Type-C 无法满足 4K@60Hz 输出？</h2><p>这个问题也是我在没了解相关知识之前相当困惑的一个地方——当我看到心仪的笔记本只有 USB 3.2 Gen1 接口和 HDMI1.4b 的接口，而两者的带宽都远小于 4K@60Hz 所需的 12.54 Gbps 时，我当时同样以为外接 4K@60Hz 显示器是不可能实现的了。</p>
+<p>这里面的问题就在于我们<strong>混淆了 Type-C 接口的「数据带宽」和「显示带宽」</strong>，我们日常习惯说一个 Type-C 的带宽是 3.1 Gen1 或者 Gen2、5Gbps 或者10Gbps，这时候说的其实都是这个接口的 USB 数据带宽，只能代表这个接口接 U盘&#x2F;移动硬盘之类的存储进行数据传输时所能达到的最大速度。</p>
+<p>Type-C能够整合显示输出功能，主要是借助了DP Alt Mode（替代模式）功能，借助Type-C正反面诸多针脚中的几个定义为显示接口。通俗点说可以理解为单独做了个 DP 显示总线放在 Type-C 口上，所以数据带宽是 5Gbps 还是10Gbps 并<strong>不代表显示带宽也只有这么多</strong>。以目前 Type-C 的规范来看，当我们说一个 Type-C 支持显示输出时，那么这个接口<strong>至少可以支持 DP1.2 标准</strong>，也就是说拥有独立的约 21Gbps 的显示带宽，因为 DP1.2 中有 20% 的编码是用于校验的，所以真正能用来传输视频信号的带宽只有 21.60 * 0.8 &#x3D; 17.28 Gbps，但这也已经<strong>完全可以满足 4K@60Hz 的传输要求了</strong>。下图引用自<a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a>：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/5-USBC%E7%8B%AC%E7%AB%8B%E6%98%BE%E7%A4%BA%E5%B8%A6%E5%AE%BD.png" alt="Type-C 显示拥有独立的显示带宽"></p>
+<p>我们现在关于 5Gbps 的 Type-C 能否满足 4K@60Hz 画面传输的问题有了明确的答案，只要是<strong>支持显示输出的 Type-C 口，就可以支持输出 4K@60Hz</strong>。</p>
+<h2 id="5Gbps-的-Type-C-的不足之处"><a href="#5Gbps-的-Type-C-的不足之处" class="headerlink" title="5Gbps 的 Type-C 的不足之处"></a>5Gbps 的 Type-C 的不足之处</h2><p>Type-C 显示输出虽然是 DP&#x2F;HDMI 显示，但实际上还是借用了数据传输的一部分引脚。当一个支持 DP 显示输出的 Type-C ，而它的数据带宽是 USB3.1 Gen1 5Gbps 时，那么此时是无法<strong>通过一根线</strong>同时实现理应互不干扰的 4K@60Hz 和 USB3.0 传输的，下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/6-4K%E6%98%BE%E7%A4%BA%E8%BE%93%E5%87%BA%E7%9A%84%E5%87%A0%E7%A7%8D%E5%9C%BA%E6%99%AF.png" alt="4K 显示输出的几种场景"></p>
+<p>因此在一些显示器的详情界面会注明——当显示器上的 USB 设置为 3.2Gen1 时，只能输出 4K@30Hz 的画面，如果想要输出 4K@60Hz 需要将 USB 设置为 2.0 或关闭。所以如果我们使用的显示器有拓展 USB 口，而我们是使用 Type-C 直连显示器，为了保证使用体验，我们需要手动将显示器上的 USB 设置为 USB2.0，此时显示器上的 USB 更适合用来接键鼠，文件传输之类的还是直连笔记本会比较快。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/9-%E6%98%BE%E7%A4%BA%E5%99%A8%E8%AF%A6%E6%83%85%E7%95%8C%E9%9D%A2%E7%9A%84%E6%8F%90%E7%A4%BA.png" alt="显示器详情界面的提示"></p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/101486153">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（下篇） - 知乎</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a></p>
+<p><a href="https://basic-tutorials.com/usb-type-c-at-a-glance-what-the-port-can-do-what-it-cant-do-and-why-it-has-nothing-to-do-with-usb-3-0/">USB type C at a glance: What the port can do, what it can’t do and why it has nothing to do with USB 3.0</a></p>
+<p><a href="https://zh.wikipedia.org/wiki/USB">维基百科-USB</a></p>
+<p><a href="https://b23.tv/rbYOKW">视频-【硬件科普】4K144Hz需要传输多少数据，教你如何正确的计算显示器的带宽需求？</a></p>
+<p><a href="https://diy.pconline.com.cn/1374/13748807.html">DP vs HDMI 谁才是游戏玩家最佳选择</a></p>
+]]></content>
+      <categories>
+        <category>硬件</category>
+      </categories>
+      <tags>
+        <tag>硬件</tag>
+        <tag>显示器</tag>
+        <tag>USB</tag>
+        <tag>Type-C</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo Next 主题 V7 升级 V8 记录</title>
     <url>/post/Update-Next-From-V7-To-V8/</url>
     <content><![CDATA[<p>Hexo 和 Next 最近都发布了大版本更新，此文记录了升级过程。</p>
@@ -1048,95 +1137,6 @@
       <tags>
         <tag>Hexo</tag>
         <tag>Next</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>雷蛇炼狱蝰蛇2013 更换中键微动</title>
-    <url>/post/RepairTheDeathadder2013/</url>
-    <content><![CDATA[<p>第一次自己动手修鼠标，挺好玩的。</p>
-<span id="more"></span>
-
-<h2 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h2><p>这款炼狱蝰蛇 2013 是自己四年前买的，之前一直用得好好的，但最近滚轮的按键功能突然失效了，表现为能够正常按压，但无法正常触发按键功能。在日常浏览网页时，我习惯用中键来关闭标签页以及在新窗口打开链接，现在中键突然失灵了，对我的日常使用造成了很大的不便。</p>
-<p>之前有在网上看过不少帖子都是自己修鼠标，感觉也不是很难，所以这次我也尝试一下来自己修鼠标。</p>
-<h2 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h2><p>1.电烙铁<br>2.镊子<br>3.十字螺丝刀<br>4.新中键微动<br>5.焊锡丝<br>6.小刀</p>
-<h2 id="拆解鼠标"><a href="#拆解鼠标" class="headerlink" title="拆解鼠标"></a>拆解鼠标</h2><p>通过搜索在什么值得买上面找到了这篇<a href="https://post.smzdm.com/p/568792/">维修教程</a>，虽然文中问题是鼠标出现了双击的现象，和我的问题并不相同，但同样都是通过更换微动来解决问题，而且各个步骤都比较详细，给我提供了很大的帮助。</p>
-<p>首先用刀片分别将鼠标背面左右上角的两个脚垫撬下来，两个脚垫是通过胶粘上去的，撬下来以后保存好，后面还原的时候还可以再粘回去。去掉两个脚垫后就可以看到里面的两颗螺丝了。这两颗螺丝可以直接拧下。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8E%BB%E9%99%A4%E8%84%9A%E5%9E%AB.jpg" alt="去除脚垫"></p>
-<p>需要注意的是第三颗螺丝的位置，是隐藏在贴纸的下方，位置如下图所示，直接用螺丝刀捅破贴纸即可看到。这颗螺丝拧出一定距离即可，不必全部拧出。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%9A%90%E8%97%8F%E7%9A%84%E7%AC%AC%E4%B8%89%E9%A2%97%E8%9E%BA%E4%B8%9D.jpg" alt="隐藏的第三颗螺丝"></p>
-<p>三颗螺丝处理完毕后，从下图所示处往下掰，即可打开鼠标上盖，打开时小心不要用力过猛，因为上盖上有一根灯光线和主板相连，不小心的话可能会扯断。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%8E%B0%E5%BC%80%E5%A4%96%E5%A3%B3.jpg" alt="掰开外壳"></p>
-<p>断开上盖与主板的连线后，即可移走上盖，看到鼠标主板。接下来如下图所示依次卸下主板上的三颗固定螺丝、左侧按键微动上的两颗螺丝以及滚轮旁边的小黑色螺丝后，最后再断开两根排线，即可取下主板。注意保管好螺丝，特别那颗较小的黑色螺丝。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%8B%86%E5%8D%B8%E4%B8%BB%E6%9D%BF.png" alt="拆卸主板"></p>
-<h2 id="更换微动"><a href="#更换微动" class="headerlink" title="更换微动"></a>更换微动</h2><p>观察主板可以看到滚轮横杆右侧的下方有一颗正方形微动，判断应该就是这个地方的微动损坏导致中键失灵。于是在万能的淘宝上花八毛钱+七块钱运费买了一个新的微动。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E8%80%81%E5%BE%AE%E5%8A%A8.jpg" alt="新老微动"></p>
-<p>因为没有吸锡器，可以直接用电烙铁加热主板背面的焊点，然后边加热边拔也是可以把微动给卸下来的。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8D%B8%E4%B8%8B%E5%BE%AE%E5%8A%A8.jpg" alt="卸下微动"></p>
-<p>微动只是一个开关，不区分方向，将新微动针脚插入到主板对应孔位上，然后用电烙铁和焊锡对准针脚化开焊锡即可完成更换。如果卸旧微动的时候焊孔内还残留有焊锡也不用担心，直接加热焊孔，将焊锡加热到流动状，这时新微动针脚可以轻松穿过焊孔。</p>
-<h2 id="重装鼠标"><a href="#重装鼠标" class="headerlink" title="重装鼠标"></a>重装鼠标</h2><p>按照刚刚的拆解步骤一步一步还原即可，排线全都有防呆设计，也不需要担心会接反。<br><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%87%8D%E8%A3%85%E9%BC%A0%E6%A0%87.jpg" alt="重装鼠标"></p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%BB%A1%E8%A1%80%E5%A4%8D%E6%B4%BB.jpg" alt="满血复活"></p>
-<p>最后自然是连接电脑进行测试，功能一切正常，又可以愉快地使用中键了。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在有帖子可以参考的情况下，整个更换过程还是比较简单的，最大的困难可能是大部分同学没有电烙铁，专门为此添置一个可能显得有些本末倒置，毕竟电烙铁也不便宜。</p>
-<p>自己动手，丰衣足食。人生第一次自己动手更换鼠标，成就感还是不小的。看到鼠标在自己手里满血复活，开心。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://post.smzdm.com/p/568792/">“拿什么拯救你，我的双击蛇”— 手把手教你更换Razer炼狱蝰蛇鼠标微动</a></p>
-]]></content>
-      <categories>
-        <category>小事</category>
-      </categories>
-      <tags>
-        <tag>DIY</tag>
-        <tag>外设</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>什么是全功能 Type-C 及显示器所需带宽如何计算</title>
-    <url>/post/What-Is-Full-Featured-Type-C/</url>
-    <content><![CDATA[<p>本文主要介绍了如何计算特定分辨率和刷新率显示器所需带宽以及对全功能 Type-C 的一些简单科普。</p>
-<span id="more"></span>
-
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>最近动了换新笔记本和显示器的念头，自己想换一台 4K 显示器，在了解相关知识的时候，经常看到要注意视频输出接口带宽的提醒。其中各种概念多且杂，初接触很容易懵圈，所以我整理汇总了一些网上的资料，以作此文。</p>
-<p>文中如有不对或不妥的地方，欢迎评论留言指出错误，不甚感激。</p>
-<h2 id="4K-60Hz-显示需要多少带宽"><a href="#4K-60Hz-显示需要多少带宽" class="headerlink" title="4K@60Hz 显示需要多少带宽"></a>4K@60Hz 显示需要多少带宽</h2><p>我们这里以一块 4K、8 bit、60 Hz 的屏幕举例，这块显示屏有 3840 * 2160 个像素点，每个像素点又由红绿蓝三个子像素构成 ，每个子像素需要 8 bit 的数据，刷新率为 60 Hz，也就是每秒需要刷新 60 次，那么每秒需要传输的数据量就是 3840 * 2160 * 3 * 8 * 60 &#x3D;  11.94 Gbit，需要的带宽就是 11.94 Gbps。</p>
-<p>上述这些数据只是我们能够在显示屏上看到的内容，实际上在传输相关画面数据的时候，还需要考虑到防止画面撕裂，以及画面对齐等等需求，需要传输比实际显示画面更多的数据，所以实际传输的数据会比上面计算的更多。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/7-%E6%98%BE%E7%A4%BA%E5%99%A8%E5%AE%9E%E9%99%85%E4%BC%A0%E8%BE%93%E6%95%B0%E6%8D%AE.png" alt="显示器实际传输数据"></p>
-<p>下面这张来自 B 站 Up 主<a href="https://space.bilibili.com/14871346#/">硬件茶谈</a>的表格详细列出了市面上常见分辨率及刷新率的组合分别所需要的带宽，其中还有各种显示器接口的相容性：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/8-%E6%98%BE%E7%A4%BA%E6%8E%A5%E5%8F%A3%E7%9B%B8%E5%AE%B9%E8%A1%A8.png" alt="显示接口相容表"></p>
-<p>显示器带宽具体的计算原理可以查看 Up 主的<a href="https://b23.tv/rbYOKW">视频-【硬件科普】4K144Hz需要传输多少数据，教你如何正确的计算显示器的带宽需求？</a>，原理及计算方法都讲得非常清楚，动画特效也是一流。</p>
-<p>在此也强烈安利下 Up 主，最早是在知乎关注他的，在知乎笔记本话题下相当活跃，后期转型成 B 站 Up 主，视频质量极高，讲解概念深入浅出，动画精致流畅，看他的视频可谓一种享受。我从 Up 主的视频里学到了很多硬件相关基础知识。而且 Up 主现在还只是一名在校大学生，让人不服不行，在此就祝愿 Up 主早日发大财吧。</p>
-<h2 id="什么是全功能-Type-C"><a href="#什么是全功能-Type-C" class="headerlink" title="什么是全功能 Type-C"></a>什么是全功能 Type-C</h2><p>同时具有<strong>数据传输、充电、显示</strong>三项功能的 Type-C 就称之为全功能 Type-C。而之所有会有「全功能」和「非全功能」的区分，是因为 Type-C 只是个<strong>接口形状</strong>。Type-C 接口是能够支持 100W PD 供电、DP 显示输出、USB 数据传输等功能没错，但 <strong>Type-C 接口的功能都是可以被增减的</strong>，所以并不是所有 Type-C 接口都同时具备数据传输、充电、显示三项功能。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/2-Type-C%E4%B8%8D%E5%90%8C%E5%8A%9F%E8%83%BD.png" alt="Type-C 不同功能说明"></p>
-<p>每台电脑上面所配备的 Type-C 接口所具备的功能是不尽相同的，厂商基于成本或是其他方面的考虑，配备的 Type-C 可能只支持 USB 数据传输功能 ，不能充电、显示，也可能配备只支持 DP 显示和数据传输的 Type-C 口，不能充电。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-TypeC%E5%8A%9F%E8%83%BD%E4%B8%8D%E9%BD%90.png" alt="Type-C 现状"></p>
-<h2 id="Type-C-的「数据传输」带宽"><a href="#Type-C-的「数据传输」带宽" class="headerlink" title="Type-C 的「数据传输」带宽"></a>Type-C 的「数据传输」带宽</h2><p>Type-C 接口还有一个重要的参数就是 USB 版本，USB 版本越高，带宽也就越高，理论上带宽越高，传输速度越快。不过 USB 版本的命名经过了几次大的修改，命名规范变来变去，对普通消费者识别起来极不友好。下面两张图分别引用自<a href="https://basic-tutorials.com/usb-type-c-at-a-glance-what-the-port-can-do-what-it-cant-do-and-why-it-has-nothing-to-do-with-usb-3-0/">USB type C at a glance: What the port can do, what it can’t do and why it has nothing to do with USB 3.0</a>及<a href="https://zh.wikipedia.org/wiki/USB">维基百科-USB</a>。其中 USB3.2 Gen 2x2 的 Logo 以维基百科的为准。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/3-USB%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E.png" alt="USB 版本说明"></p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/4-USB%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91.png" alt="USB 版本及速率(维基百科)"></p>
-<p>通过这两张图，我们能够比较清楚地知道各个 USB 版本对应的传输速率及兼容接口。目前笔记本上 Type-C 接口的主流速率还是 USB3.2 Gen 1 也就是 5Gbps，理论速度约合 500 MB&#x2F;s。</p>
-<p><strong>但需要注意的是，多数情况下，「USB 几点几」这样的称呼，仅仅只是用于描述接口的「数据传输」速度，不代表这个接口其他任何能力，如能否PD充电、能否显示。</strong></p>
-<h2 id="5Gbps-的-Type-C-无法满足-4K-60Hz-输出？"><a href="#5Gbps-的-Type-C-无法满足-4K-60Hz-输出？" class="headerlink" title="5Gbps 的 Type-C 无法满足 4K@60Hz 输出？"></a>5Gbps 的 Type-C 无法满足 4K@60Hz 输出？</h2><p>这个问题也是我在没了解相关知识之前相当困惑的一个地方——当我看到心仪的笔记本只有 USB 3.2 Gen1 接口和 HDMI1.4b 的接口，而两者的带宽都远小于 4K@60Hz 所需的 12.54 Gbps 时，我当时同样以为外接 4K@60Hz 显示器是不可能实现的了。</p>
-<p>这里面的问题就在于我们<strong>混淆了 Type-C 接口的「数据带宽」和「显示带宽」</strong>，我们日常习惯说一个 Type-C 的带宽是 3.1 Gen1 或者 Gen2、5Gbps 或者10Gbps，这时候说的其实都是这个接口的 USB 数据带宽，只能代表这个接口接 U盘&#x2F;移动硬盘之类的存储进行数据传输时所能达到的最大速度。</p>
-<p>Type-C能够整合显示输出功能，主要是借助了DP Alt Mode（替代模式）功能，借助Type-C正反面诸多针脚中的几个定义为显示接口。通俗点说可以理解为单独做了个 DP 显示总线放在 Type-C 口上，所以数据带宽是 5Gbps 还是10Gbps 并<strong>不代表显示带宽也只有这么多</strong>。以目前 Type-C 的规范来看，当我们说一个 Type-C 支持显示输出时，那么这个接口<strong>至少可以支持 DP1.2 标准</strong>，也就是说拥有独立的约 21Gbps 的显示带宽，因为 DP1.2 中有 20% 的编码是用于校验的，所以真正能用来传输视频信号的带宽只有 21.60 * 0.8 &#x3D; 17.28 Gbps，但这也已经<strong>完全可以满足 4K@60Hz 的传输要求了</strong>。下图引用自<a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a>：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/5-USBC%E7%8B%AC%E7%AB%8B%E6%98%BE%E7%A4%BA%E5%B8%A6%E5%AE%BD.png" alt="Type-C 显示拥有独立的显示带宽"></p>
-<p>我们现在关于 5Gbps 的 Type-C 能否满足 4K@60Hz 画面传输的问题有了明确的答案，只要是<strong>支持显示输出的 Type-C 口，就可以支持输出 4K@60Hz</strong>。</p>
-<h2 id="5Gbps-的-Type-C-的不足之处"><a href="#5Gbps-的-Type-C-的不足之处" class="headerlink" title="5Gbps 的 Type-C 的不足之处"></a>5Gbps 的 Type-C 的不足之处</h2><p>Type-C 显示输出虽然是 DP&#x2F;HDMI 显示，但实际上还是借用了数据传输的一部分引脚。当一个支持 DP 显示输出的 Type-C ，而它的数据带宽是 USB3.1 Gen1 5Gbps 时，那么此时是无法<strong>通过一根线</strong>同时实现理应互不干扰的 4K@60Hz 和 USB3.0 传输的，下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/6-4K%E6%98%BE%E7%A4%BA%E8%BE%93%E5%87%BA%E7%9A%84%E5%87%A0%E7%A7%8D%E5%9C%BA%E6%99%AF.png" alt="4K 显示输出的几种场景"></p>
-<p>因此在一些显示器的详情界面会注明——当显示器上的 USB 设置为 3.2Gen1 时，只能输出 4K@30Hz 的画面，如果想要输出 4K@60Hz 需要将 USB 设置为 2.0 或关闭。所以如果我们使用的显示器有拓展 USB 口，而我们是使用 Type-C 直连显示器，为了保证使用体验，我们需要手动将显示器上的 USB 设置为 USB2.0，此时显示器上的 USB 更适合用来接键鼠，文件传输之类的还是直连笔记本会比较快。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/9-%E6%98%BE%E7%A4%BA%E5%99%A8%E8%AF%A6%E6%83%85%E7%95%8C%E9%9D%A2%E7%9A%84%E6%8F%90%E7%A4%BA.png" alt="显示器详情界面的提示"></p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/101486153">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（下篇） - 知乎</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a></p>
-<p><a href="https://basic-tutorials.com/usb-type-c-at-a-glance-what-the-port-can-do-what-it-cant-do-and-why-it-has-nothing-to-do-with-usb-3-0/">USB type C at a glance: What the port can do, what it can’t do and why it has nothing to do with USB 3.0</a></p>
-<p><a href="https://zh.wikipedia.org/wiki/USB">维基百科-USB</a></p>
-<p><a href="https://b23.tv/rbYOKW">视频-【硬件科普】4K144Hz需要传输多少数据，教你如何正确的计算显示器的带宽需求？</a></p>
-<p><a href="https://diy.pconline.com.cn/1374/13748807.html">DP vs HDMI 谁才是游戏玩家最佳选择</a></p>
-]]></content>
-      <categories>
-        <category>硬件</category>
-      </categories>
-      <tags>
-        <tag>硬件</tag>
-        <tag>显示器</tag>
-        <tag>USB</tag>
-        <tag>Type-C</tag>
       </tags>
   </entry>
   <entry>
