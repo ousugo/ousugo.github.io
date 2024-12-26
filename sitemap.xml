@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://asurada.zone/post/test/</loc>
-    
-    <lastmod>2024-12-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://asurada.zone/tags/index.html</loc>
     
     <lastmod>2024-12-23</lastmod>
@@ -29,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://asurada.zone/about/index.html</loc>
+    <loc>https://asurada.zone/categories/index.html</loc>
     
     <lastmod>2024-12-23</lastmod>
     
@@ -38,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://asurada.zone/categories/index.html</loc>
+    <loc>https://asurada.zone/about/index.html</loc>
     
     <lastmod>2024-12-23</lastmod>
     
@@ -187,6 +178,13 @@
   </url>
   
   <url>
+    <loc>https://asurada.zone/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/</loc>
+    <lastmod>2024-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://asurada.zone/tags/%E6%AD%A3%E7%89%88/</loc>
     <lastmod>2024-12-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -201,7 +199,7 @@
   </url>
   
   <url>
-    <loc>https://asurada.zone/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/</loc>
+    <loc>https://asurada.zone/tags/%E6%B8%AF%E5%8D%A1/</loc>
     <lastmod>2024-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -222,7 +220,7 @@
   </url>
   
   <url>
-    <loc>https://asurada.zone/tags/%E6%B8%AF%E5%8D%A1/</loc>
+    <loc>https://asurada.zone/tags/Git/</loc>
     <lastmod>2024-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -243,7 +241,7 @@
   </url>
   
   <url>
-    <loc>https://asurada.zone/tags/Git/</loc>
+    <loc>https://asurada.zone/tags/Next/</loc>
     <lastmod>2024-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -292,13 +290,6 @@
   </url>
   
   <url>
-    <loc>https://asurada.zone/tags/Next/</loc>
-    <lastmod>2024-12-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://asurada.zone/tags/Python/</loc>
     <lastmod>2024-12-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -329,14 +320,14 @@
   </url>
   
   <url>
-    <loc>https://asurada.zone/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/</loc>
+    <loc>https://asurada.zone/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</loc>
     <lastmod>2024-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://asurada.zone/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</loc>
+    <loc>https://asurada.zone/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/</loc>
     <lastmod>2024-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
