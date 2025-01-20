@@ -93,7 +93,7 @@
 <p>CODING 在 19 年年底进行了一次比较大的改版，双部署的整个流程也有了不小的变化，而网络上很多教程大部分都还是基于旧版流程的。本文详细记载了将博客同时部署到 GitHub Pages 和 CODING 静态网站服务的全流程。</p>
 <span id="more"></span>
 
-<h2 id="CODING-配置"><a href="#CODING-配置" class="headerlink" title="CODING 配置"></a>CODING 配置</h2><h3 id="注册-CODING-账号"><a href="#注册-CODING-账号" class="headerlink" title="注册 CODING 账号"></a>注册 CODING 账号</h3><p>2019 年 12 月 28 日以后，CODING 统一了入口，不再区分个人版与否，具体的升级详情可以查看<a href="https://coding.net/products/upgrade">官方通知</a>。升级后的 CODING 会增加「团队/组织」的管理概念，注册的时候必须先创建一个团队，这个和平常的注册稍有些不同，需要注意一下。<a href="https://coding.net/">点击跳转 CODING 官网</a>。</p>
+<h2 id="CODING-配置"><a href="#CODING-配置" class="headerlink" title="CODING 配置"></a>CODING 配置</h2><h3 id="注册-CODING-账号"><a href="#注册-CODING-账号" class="headerlink" title="注册 CODING 账号"></a>注册 CODING 账号</h3><p>2019 年 12 月 28 日以后，CODING 统一了入口，不再区分个人版与否，具体的升级详情可以查看<a href="https://coding.net/products/upgrade">官方通知</a>。升级后的 CODING 会增加「团队&#x2F;组织」的管理概念，注册的时候必须先创建一个团队，这个和平常的注册稍有些不同，需要注意一下。<a href="https://coding.net/">点击跳转 CODING 官网</a>。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/Coding%E6%B3%A8%E5%86%8C%E7%95%8C%E9%9D%A2.png" alt="CODING 注册界面"></p>
 <h3 id="创建-CODING-项目"><a href="#创建-CODING-项目" class="headerlink" title="创建 CODING 项目"></a>创建 CODING 项目</h3><p>注册成功以后，进入「项目」–&gt; 「创建项目」。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.png" alt="CODING 创建项目"></p>
@@ -111,10 +111,10 @@
 <p>因为是第一次进行连接，所以需要输入 <code>yes</code> 来确认进行连接。配置成功，会出现如下图所示的提示：<br><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CodingSSH%E9%AA%8C%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="CODING SSH 验证成功提示"></p>
 <h2 id="部署-CODING「静态网站」"><a href="#部署-CODING「静态网站」" class="headerlink" title="部署 CODING「静态网站」"></a>部署 CODING「静态网站」</h2><h3 id="配置站点配置文件-config-yml"><a href="#配置站点配置文件-config-yml" class="headerlink" title="配置站点配置文件 _config.yml"></a>配置站点配置文件 _config.yml</h3><p>进入到 CODING 上刚才新建的项目里面，选择「代码仓库」，可以看到此时代码仓库还是空的，选择「SSH」链接方式并复制链接。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E9%A1%B9%E7%9B%AESSH%E9%93%BE%E6%8E%A5.png" alt="CODING 项目 SSH 链接"></p>
-<p>打开博客根目录下的站点配置文件 <code>_config.yml</code> ，修改其中的 <code>deploy</code> 区域，将刚复制的 SSH 链接新增进去：</p>
+<p>打开博客根目录下的站点配置文件 <code> _config.yml</code> ，修改其中的 <code>deploy</code> 区域，将刚复制的 SSH 链接新增进去：</p>
 <figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  - type: git</span><br><span class="line">    repo: git@github.com:ousugo/ousugo.github.io.git</span><br><span class="line">    branch: master</span><br><span class="line"><span class="addition">+ - type: git</span></span><br><span class="line"><span class="addition">+   repo: git@e.coding.net:asuradazone/asurada/asurada.git</span></span><br><span class="line"><span class="addition">+   branch: master    </span></span><br></pre></td></tr></table></figure>
 
-<h3 id="部署代码到-CODING"><a href="#部署代码到-CODING" class="headerlink" title="部署代码到 CODING"></a>部署代码到 CODING</h3><p><code>_config.yml</code> 文件修改完成后，执行 <code>hexo d</code> 命令进行部署，此时 Hexo 就会根据设置同时将博客部署到 GitHub 和 CODING 上面。</p>
+<h3 id="部署代码到-CODING"><a href="#部署代码到-CODING" class="headerlink" title="部署代码到 CODING"></a>部署代码到 CODING</h3><p><code> _config.yml</code> 文件修改完成后，执行 <code>hexo d</code> 命令进行部署，此时 Hexo 就会根据设置同时将博客部署到 GitHub 和 CODING 上面。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%88%90%E5%8A%9F%E9%83%A8%E7%BD%B2%E5%88%B0CODING.png" alt="成功部署到 CODING"></p>
 <p>此时再进入 CODING 上的项目，能看到刚才还是空的仓库现在已经有源代码了，说明部署是成功的。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E9%A1%B9%E7%9B%AE%E6%BA%90%E7%A0%81.png" alt="CODING 项目源码"></p>
@@ -137,7 +137,7 @@
 <li>赠送 WHOIS 域名隐私保护</li>
 <li>第一年价格相对实惠</li>
 </ol>
-<p>如果有同学也考虑在 <a href="https://www.namesilo.com/">NmaeSilo</a> 购买域名，欢迎使用我的优惠码 <code>Asurada</code>，可以优惠一美元。</p>
+<p>如果有同学也考虑在 <a href="https://www.namesilo.com/">NmaeSilo</a> 购买域名，欢迎使用我的优惠码 <code>Asurada </code>，可以优惠一美元。</p>
 <h3 id="修改域名解析服务到-DNSPod"><a href="#修改域名解析服务到-DNSPod" class="headerlink" title="修改域名解析服务到 DNSPod"></a>修改域名解析服务到 DNSPod</h3><p>之前博客只部署在 GitHub Pages 上时，因为不需要考虑国内外解析分流，所以我直接使用的是 NameSilo 默认的域名解析服务。现在博客分别部署在 GitHub 和 CODING 上了，我希望将国外的流量解析到 GitHub，国内的流量则解析到 CODING，但 NameSilo 默认的域名解析服务并不能实现国内外流量的区分，所以需要更换域名解析服务商。</p>
 <p>我日常使用腾讯云比较多，所以选择了腾讯旗下的 <a href="dnspod.cn">DNSPod</a>，账号和腾讯云是通用的，直接微信扫码即可登录。登录到 <a href="console.dnspod.cn">DNSPod 控制台</a>，在「DNS 解析」–&gt;「我的域名」里添加想要解析的域名。因为还没有修改域名注册商那边的设置，所以现在显示的状态还是「DNS 错误」。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/DNSPod%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D.png" alt="DNSPod 添加域名"></p>
@@ -173,7 +173,7 @@
 <p>正确的做法是：先去域名 DNS 把 GitHub 的解析暂停掉，然后再重新申请 SSL 证书，大约十秒左右就能申请成功，然后开启强制 HTTPS 访问</p>
 <p>— <a href="https://www.itrhx.com/2019/09/16/A47-hexo-deployed-to-github-and-coding/#5-%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E5%B9%B6%E5%BC%80%E5%90%AF-HPPTS">绑定域名并开启 HPPTS</a></p>
 </blockquote>
-<p>建议同时绑定有 <code>www</code> 前缀和没有 <code>www</code>  前缀的域名，并根据自己的需求将其中一个设为首选域名，另一个<strong>勾选「跳转至首选」选项</strong>，这样可以避免一些第三方服务数据统计不到一起。</p>
+<p>建议同时绑定有 <code>www </code> 前缀和没有 <code>www</code>  前缀的域名，并根据自己的需求将其中一个设为首选域名，另一个<strong>勾选「跳转至首选」选项</strong>，这样可以避免一些第三方服务数据统计不到一起。</p>
 <p>如果两个域名的证书都没有问题的话，点击「强制 HTTPS」按钮即可启用强制 HTTPS 访问。设置完成后，不要忘记去 DNSPod 将之前暂停的 GitHub 解析重新开启。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/CODING%E7%BB%91%E5%AE%9A%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D.png" alt="CODING 绑定自定义域名"></p>
 <h2 id="成果检验"><a href="#成果检验" class="headerlink" title="成果检验"></a>成果检验</h2><p>至此，我们完成了博客在 GitHub Pages 和 CODING 静态网站服务上的双线部署。</p>
@@ -211,7 +211,7 @@
 <li>默认为 local，所以只有需要设置全局时需要带 –global 参数，–local 参数可以直接省略。</li>
 <li>单引号不是必须的，可以省略。一般只在输入的内容之中含有空格的时候需要使用单引号。</li>
 </ul>
-<h3 id="查看-User-信息"><a href="#查看-User-信息" class="headerlink" title="查看 User 信息"></a>查看 User 信息</h3><p>使用以下命令查看所有全局/局部配置信息：</p>
+<h3 id="查看-User-信息"><a href="#查看-User-信息" class="headerlink" title="查看 User 信息"></a>查看 User 信息</h3><p>使用以下命令查看所有全局&#x2F;局部配置信息：</p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list [--local | --global | --system]</span><br></pre></td></tr></table></figure>
 
 <p>或者使用以下命令直接查看具体设置：</p>
@@ -273,7 +273,7 @@
 <li>最后这些 commit 会同上方最近的一个选项为 pick 的 commit 合并</li>
 </ul>
 <p>会用到的 vim 快捷键：</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">dd	<span class="regexp">//</span>剪切一行，也可以用来删除一行</span><br><span class="line">dw	<span class="regexp">//</span>删除一个单词</span><br><span class="line">u	<span class="regexp">//</span>撤销</span><br><span class="line">p	<span class="regexp">//</span>粘贴</span><br></pre></td></tr></table></figure>
+<figure class="highlight less"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">dd</span>	<span class="comment">//剪切一行，也可以用来删除一行</span></span><br><span class="line"><span class="selector-tag">dw</span>	<span class="comment">//删除一个单词</span></span><br><span class="line"><span class="selector-tag">u</span>	<span class="comment">//撤销</span></span><br><span class="line"><span class="selector-tag">p</span>	<span class="comment">//粘贴</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="比较暂存区和-HEAD-所含文件的差异"><a href="#比较暂存区和-HEAD-所含文件的差异" class="headerlink" title="比较暂存区和 HEAD 所含文件的差异"></a>比较暂存区和 HEAD 所含文件的差异</h3><p>HEAD 所含文件就是最新一个 commit 内的文件内容</p>
 <figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">git diff <span class="comment">--cached</span></span><br></pre></td></tr></table></figure>
@@ -303,7 +303,7 @@
 
 <h3 id="正确删除文件的方法"><a href="#正确删除文件的方法" class="headerlink" title="正确删除文件的方法"></a>正确删除文件的方法</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">git rm <span class="tag">&lt;<span class="name">filename</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="本地与远程仓库的交互"><a href="#本地与远程仓库的交互" class="headerlink" title="本地与远程仓库的交互"></a>本地与远程仓库的交互</h2><h3 id="让-Fork-的仓库同源仓库保持更新"><a href="#让-Fork-的仓库同源仓库保持更新" class="headerlink" title="让 Fork 的仓库同源仓库保持更新"></a>让 Fork 的仓库同源仓库保持更新</h3><h4 id="添加源仓库"><a href="#添加源仓库" class="headerlink" title="添加源仓库"></a>添加源仓库</h4><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">git remote <span class="builtin-name">add</span> upstream 源仓库链接</span><br></pre></td></tr></table></figure>
+<h2 id="本地与远程仓库的交互"><a href="#本地与远程仓库的交互" class="headerlink" title="本地与远程仓库的交互"></a>本地与远程仓库的交互</h2><h3 id="让-Fork-的仓库同源仓库保持更新"><a href="#让-Fork-的仓库同源仓库保持更新" class="headerlink" title="让 Fork 的仓库同源仓库保持更新"></a>让 Fork 的仓库同源仓库保持更新</h3><h4 id="添加源仓库"><a href="#添加源仓库" class="headerlink" title="添加源仓库"></a>添加源仓库</h4><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">git remote <span class="built_in">add</span> upstream 源仓库链接</span><br></pre></td></tr></table></figure>
 
 <h4 id="同步更新"><a href="#同步更新" class="headerlink" title="同步更新"></a>同步更新</h4><ol>
 <li>如果在另一个分支上，就切换到 master 分支</li>
@@ -348,7 +348,7 @@
 <p>或者</p>
 <figure class="highlight elixir"><table><tr><td class="code"><pre><span class="line">git push origin <span class="symbol">:&lt;remote-branchname&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="从远程分支中创建并切换到本地分支"><a href="#从远程分支中创建并切换到本地分支" class="headerlink" title="从远程分支中创建并切换到本地分支"></a>从远程分支中创建并切换到本地分支</h3><figure class="highlight applescript"><table><tr><td class="code"><pre><span class="line">git checkout -b &lt;branch-<span class="built_in">name</span>&gt; &lt;remote-<span class="built_in">name</span>&gt;/&lt;branch-<span class="built_in">name</span>&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="从远程分支中创建并切换到本地分支"><a href="#从远程分支中创建并切换到本地分支" class="headerlink" title="从远程分支中创建并切换到本地分支"></a>从远程分支中创建并切换到本地分支</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">git checkout -b <span class="tag">&lt;<span class="name">branch-name</span>&gt;</span> <span class="tag">&lt;<span class="name">remote-name</span>&gt;</span>/<span class="tag">&lt;<span class="name">branch-name</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://github.com/521xueweihan/git-tips">Git的奇技淫巧</a></p>
 ]]></content>
@@ -458,33 +458,33 @@
 
 <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>最近动了换新笔记本和显示器的念头，自己想换一台 4K 显示器，在了解相关知识的时候，经常看到要注意视频输出接口带宽的提醒。其中各种概念多且杂，初接触很容易懵圈，所以我整理汇总了一些网上的资料，以作此文。</p>
 <p>文中如有不对或不妥的地方，欢迎评论留言指出错误，不甚感激。</p>
-<h2 id="4K-60Hz-显示需要多少带宽"><a href="#4K-60Hz-显示需要多少带宽" class="headerlink" title="4K@60Hz 显示需要多少带宽"></a>4K@60Hz 显示需要多少带宽</h2><p>我们这里以一块 4K、8 bit、60 Hz 的屏幕举例，这块显示屏有 3840 * 2160 个像素点，每个像素点又由红绿蓝三个子像素构成 ，每个子像素需要 8 bit 的数据，刷新率为 60 Hz，也就是每秒需要刷新 60 次，那么每秒需要传输的数据量就是 3840 * 2160 * 3 * 8 * 60 =  11.94 Gbit，需要的带宽就是 11.94 Gbps。</p>
+<h2 id="4K-60Hz-显示需要多少带宽"><a href="#4K-60Hz-显示需要多少带宽" class="headerlink" title="4K@60Hz 显示需要多少带宽"></a>4K@60Hz 显示需要多少带宽</h2><p>我们这里以一块 4K、8 bit、60 Hz 的屏幕举例，这块显示屏有 3840 * 2160 个像素点，每个像素点又由红绿蓝三个子像素构成 ，每个子像素需要 8 bit 的数据，刷新率为 60 Hz，也就是每秒需要刷新 60 次，那么每秒需要传输的数据量就是 3840 * 2160 * 3 * 8 * 60 &#x3D;  11.94 Gbit，需要的带宽就是 11.94 Gbps。</p>
 <p>上述这些数据只是我们能够在显示屏上看到的内容，实际上在传输相关画面数据的时候，还需要考虑到防止画面撕裂，以及画面对齐等等需求，需要传输比实际显示画面更多的数据，所以实际传输的数据会比上面计算的更多。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/7-%E6%98%BE%E7%A4%BA%E5%99%A8%E5%AE%9E%E9%99%85%E4%BC%A0%E8%BE%93%E6%95%B0%E6%8D%AE.png" alt="显示器实际传输数据"></p>
 <p>下面这张来自 B 站 Up 主<a href="https://space.bilibili.com/14871346#/">硬件茶谈</a>的表格详细列出了市面上常见分辨率及刷新率的组合分别所需要的带宽，其中还有各种显示器接口的相容性：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/8-%E6%98%BE%E7%A4%BA%E6%8E%A5%E5%8F%A3%E7%9B%B8%E5%AE%B9%E8%A1%A8.png" alt="显示接口相容表"></p>
 <p>显示器带宽具体的计算原理可以查看 Up 主的<a href="https://b23.tv/rbYOKW">视频-【硬件科普】4K144Hz需要传输多少数据，教你如何正确的计算显示器的带宽需求？</a>，原理及计算方法都讲得非常清楚，动画特效也是一流。</p>
 <p>在此也强烈安利下 Up 主，最早是在知乎关注他的，在知乎笔记本话题下相当活跃，后期转型成 B 站 Up 主，视频质量极高，讲解概念深入浅出，动画精致流畅，看他的视频可谓一种享受。我从 Up 主的视频里学到了很多硬件相关基础知识。而且 Up 主现在还只是一名在校大学生，让人不服不行，在此就祝愿 Up 主早日发大财吧。</p>
-<h2 id="什么是全功能-Type-C"><a href="#什么是全功能-Type-C" class="headerlink" title="什么是全功能 Type-C"></a>什么是全功能 Type-C</h2><p>同时具有<strong>数据传输、充电、显示</strong>三项功能的 Type-C 就称之为全功能 Type-C。而之所有会有「全功能」和「非全功能」的区分，是因为 Type-C 只是个<strong>接口形状</strong>。Type-C 接口是能够支持 100W PD 供电、DP 显示输出、USB 数据传输等功能没错，但 <strong>Type-C 接口的功能都是可以被增减的</strong>，所以并不是所有 Type-C 接口都同时具备数据传输、充电、显示三项功能。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C/雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
+<h2 id="什么是全功能-Type-C"><a href="#什么是全功能-Type-C" class="headerlink" title="什么是全功能 Type-C"></a>什么是全功能 Type-C</h2><p>同时具有<strong>数据传输、充电、显示</strong>三项功能的 Type-C 就称之为全功能 Type-C。而之所有会有「全功能」和「非全功能」的区分，是因为 Type-C 只是个<strong>接口形状</strong>。Type-C 接口是能够支持 100W PD 供电、DP 显示输出、USB 数据传输等功能没错，但 <strong>Type-C 接口的功能都是可以被增减的</strong>，所以并不是所有 Type-C 接口都同时具备数据传输、充电、显示三项功能。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/2-Type-C%E4%B8%8D%E5%90%8C%E5%8A%9F%E8%83%BD.png" alt="Type-C 不同功能说明"></p>
-<p>每台电脑上面所配备的 Type-C 接口所具备的功能是不尽相同的，厂商基于成本或是其他方面的考虑，配备的 Type-C 可能只支持 USB 数据传输功能 ，不能充电、显示，也可能配备只支持 DP 显示和数据传输的 Type-C 口，不能充电。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C/雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
+<p>每台电脑上面所配备的 Type-C 接口所具备的功能是不尽相同的，厂商基于成本或是其他方面的考虑，配备的 Type-C 可能只支持 USB 数据传输功能 ，不能充电、显示，也可能配备只支持 DP 显示和数据传输的 Type-C 口，不能充电。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-TypeC%E5%8A%9F%E8%83%BD%E4%B8%8D%E9%BD%90.png" alt="Type-C 现状"></p>
 <h2 id="Type-C-的「数据传输」带宽"><a href="#Type-C-的「数据传输」带宽" class="headerlink" title="Type-C 的「数据传输」带宽"></a>Type-C 的「数据传输」带宽</h2><p>Type-C 接口还有一个重要的参数就是 USB 版本，USB 版本越高，带宽也就越高，理论上带宽越高，传输速度越快。不过 USB 版本的命名经过了几次大的修改，命名规范变来变去，对普通消费者识别起来极不友好。下面两张图分别引用自<a href="https://basic-tutorials.com/usb-type-c-at-a-glance-what-the-port-can-do-what-it-cant-do-and-why-it-has-nothing-to-do-with-usb-3-0/">USB type C at a glance: What the port can do, what it can’t do and why it has nothing to do with USB 3.0</a>及<a href="https://zh.wikipedia.org/wiki/USB">维基百科-USB</a>。其中 USB3.2 Gen 2x2 的 Logo 以维基百科的为准。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/3-USB%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E.png" alt="USB 版本说明"></p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/4-USB%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91.png" alt="USB 版本及速率(维基百科)"></p>
-<p>通过这两张图，我们能够比较清楚地知道各个 USB 版本对应的传输速率及兼容接口。目前笔记本上 Type-C 接口的主流速率还是 USB3.2 Gen 1 也就是 5Gbps，理论速度约合 500 MB/s。</p>
+<p>通过这两张图，我们能够比较清楚地知道各个 USB 版本对应的传输速率及兼容接口。目前笔记本上 Type-C 接口的主流速率还是 USB3.2 Gen 1 也就是 5Gbps，理论速度约合 500 MB&#x2F;s。</p>
 <p><strong>但需要注意的是，多数情况下，「USB 几点几」这样的称呼，仅仅只是用于描述接口的「数据传输」速度，不代表这个接口其他任何能力，如能否PD充电、能否显示。</strong></p>
 <h2 id="5Gbps-的-Type-C-无法满足-4K-60Hz-输出？"><a href="#5Gbps-的-Type-C-无法满足-4K-60Hz-输出？" class="headerlink" title="5Gbps 的 Type-C 无法满足 4K@60Hz 输出？"></a>5Gbps 的 Type-C 无法满足 4K@60Hz 输出？</h2><p>这个问题也是我在没了解相关知识之前相当困惑的一个地方——当我看到心仪的笔记本只有 USB 3.2 Gen1 接口和 HDMI1.4b 的接口，而两者的带宽都远小于 4K@60Hz 所需的 12.54 Gbps 时，我当时同样以为外接 4K@60Hz 显示器是不可能实现的了。</p>
-<p>这里面的问题就在于我们<strong>混淆了 Type-C 接口的「数据带宽」和「显示带宽」</strong>，我们日常习惯说一个 Type-C 的带宽是 3.1 Gen1 或者 Gen2、5Gbps 或者10Gbps，这时候说的其实都是这个接口的 USB 数据带宽，只能代表这个接口接 U盘/移动硬盘之类的存储进行数据传输时所能达到的最大速度。</p>
-<p>Type-C能够整合显示输出功能，主要是借助了DP Alt Mode（替代模式）功能，借助Type-C正反面诸多针脚中的几个定义为显示接口。通俗点说可以理解为单独做了个 DP 显示总线放在 Type-C 口上，所以数据带宽是 5Gbps 还是10Gbps 并<strong>不代表显示带宽也只有这么多</strong>。以目前 Type-C 的规范来看，当我们说一个 Type-C 支持显示输出时，那么这个接口<strong>至少可以支持 DP1.2 标准</strong>，也就是说拥有独立的约 21Gbps 的显示带宽，因为 DP1.2 中有 20% 的编码是用于校验的，所以真正能用来传输视频信号的带宽只有 21.60 * 0.8 = 17.28 Gbps，但这也已经<strong>完全可以满足 4K@60Hz 的传输要求了</strong>。下图引用自<a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a>：</p>
+<p>这里面的问题就在于我们<strong>混淆了 Type-C 接口的「数据带宽」和「显示带宽」</strong>，我们日常习惯说一个 Type-C 的带宽是 3.1 Gen1 或者 Gen2、5Gbps 或者10Gbps，这时候说的其实都是这个接口的 USB 数据带宽，只能代表这个接口接 U盘&#x2F;移动硬盘之类的存储进行数据传输时所能达到的最大速度。</p>
+<p>Type-C能够整合显示输出功能，主要是借助了DP Alt Mode（替代模式）功能，借助Type-C正反面诸多针脚中的几个定义为显示接口。通俗点说可以理解为单独做了个 DP 显示总线放在 Type-C 口上，所以数据带宽是 5Gbps 还是10Gbps 并<strong>不代表显示带宽也只有这么多</strong>。以目前 Type-C 的规范来看，当我们说一个 Type-C 支持显示输出时，那么这个接口<strong>至少可以支持 DP1.2 标准</strong>，也就是说拥有独立的约 21Gbps 的显示带宽，因为 DP1.2 中有 20% 的编码是用于校验的，所以真正能用来传输视频信号的带宽只有 21.60 * 0.8 &#x3D; 17.28 Gbps，但这也已经<strong>完全可以满足 4K@60Hz 的传输要求了</strong>。下图引用自<a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a>：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/5-USBC%E7%8B%AC%E7%AB%8B%E6%98%BE%E7%A4%BA%E5%B8%A6%E5%AE%BD.png" alt="Type-C 显示拥有独立的显示带宽"></p>
 <p>我们现在关于 5Gbps 的 Type-C 能否满足 4K@60Hz 画面传输的问题有了明确的答案，只要是<strong>支持显示输出的 Type-C 口，就可以支持输出 4K@60Hz</strong>。</p>
-<h2 id="5Gbps-的-Type-C-的不足之处"><a href="#5Gbps-的-Type-C-的不足之处" class="headerlink" title="5Gbps 的 Type-C 的不足之处"></a>5Gbps 的 Type-C 的不足之处</h2><p>Type-C 显示输出虽然是 DP/HDMI 显示，但实际上还是借用了数据传输的一部分引脚。当一个支持 DP 显示输出的 Type-C ，而它的数据带宽是 USB3.1 Gen1 5Gbps 时，那么此时是无法<strong>通过一根线</strong>同时实现理应互不干扰的 4K@60Hz 和 USB3.0 传输的，下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C/雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
+<h2 id="5Gbps-的-Type-C-的不足之处"><a href="#5Gbps-的-Type-C-的不足之处" class="headerlink" title="5Gbps 的 Type-C 的不足之处"></a>5Gbps 的 Type-C 的不足之处</h2><p>Type-C 显示输出虽然是 DP&#x2F;HDMI 显示，但实际上还是借用了数据传输的一部分引脚。当一个支持 DP 显示输出的 Type-C ，而它的数据带宽是 USB3.1 Gen1 5Gbps 时，那么此时是无法<strong>通过一根线</strong>同时实现理应互不干扰的 4K@60Hz 和 USB3.0 传输的，下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/6-4K%E6%98%BE%E7%A4%BA%E8%BE%93%E5%87%BA%E7%9A%84%E5%87%A0%E7%A7%8D%E5%9C%BA%E6%99%AF.png" alt="4K 显示输出的几种场景"></p>
 <p>因此在一些显示器的详情界面会注明——当显示器上的 USB 设置为 3.2Gen1 时，只能输出 4K@30Hz 的画面，如果想要输出 4K@60Hz 需要将 USB 设置为 2.0 或关闭。所以如果我们使用的显示器有拓展 USB 口，而我们是使用 Type-C 直连显示器，为了保证使用体验，我们需要手动将显示器上的 USB 设置为 USB2.0，此时显示器上的 USB 更适合用来接键鼠，文件传输之类的还是直连笔记本会比较快。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/9-%E6%98%BE%E7%A4%BA%E5%99%A8%E8%AF%A6%E6%83%85%E7%95%8C%E9%9D%A2%E7%9A%84%E6%8F%90%E7%A4%BA.png" alt="显示器详情界面的提示"></p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C/雷电3接口的两万字科普（上篇） - 知乎</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/101486153">【从入门到放弃】关于Type-C/雷电3接口的两万字科普（下篇） - 知乎</a></p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/101486153">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（下篇） - 知乎</a></p>
 <p><a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a></p>
 <p><a href="https://basic-tutorials.com/usb-type-c-at-a-glance-what-the-port-can-do-what-it-cant-do-and-why-it-has-nothing-to-do-with-usb-3-0/">USB type C at a glance: What the port can do, what it can’t do and why it has nothing to do with USB 3.0</a></p>
 <p><a href="https://zh.wikipedia.org/wiki/USB">维基百科-USB</a></p>
@@ -634,8 +634,8 @@
 <figure class="highlight diff"><figcaption><span>.\_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="addition">+# RSS</span></span><br><span class="line"><span class="addition">+feed:</span></span><br><span class="line"><span class="addition">+ type: atom</span></span><br><span class="line"><span class="addition">+ path: atom.xml</span></span><br><span class="line"><span class="addition">+ limit: false</span></span><br></pre></td></tr></table></figure>
 <p>配置含义：</p>
 <ol>
-<li><code>type</code>：RSS的类型，可选 atom/rss2，默认 atom</li>
-<li><code>path</code>：Feed 路径，默认 ./atom.xml 或 ./rss2.xml</li>
+<li><code>type</code>：RSS的类型，可选 atom&#x2F;rss2，默认 atom</li>
+<li><code>path</code>：Feed 路径，默认 .&#x2F;atom.xml 或 .&#x2F;rss2.xml</li>
 <li><code>limit</code>: 展示文章的数量，使用 0 或 false 则输出所有文章</li>
 </ol>
 <h3 id="侧边栏添加-RSS-图标"><a href="#侧边栏添加-RSS-图标" class="headerlink" title="侧边栏添加 RSS 图标"></a>侧边栏添加 RSS 图标</h3><p>Next 在<a href="https://github.com/theme-next/hexo-theme-next/releases/tag/v7.6.0">V7.6.0</a>中移除了侧边栏的 RSS 图标，后续又在<a href="https://github.com/theme-next/hexo-theme-next/releases/tag/v7.7.1">V7.7.1</a>中通过「Follow_me」功能将 RSS 图标引入到了文章的结尾区域。但我觉得 RSS 在整个网站的优先级应该足够高，下面是如何将 RSS 图标重新加入侧边栏的方法。</p>
@@ -768,7 +768,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% if theme.so_site_verification %&#125;</span><br><span class="line">  &lt;meta name=&quot;360-site-verification&quot; content=&quot;&#123;&#123; theme.so_site_verification &#125;&#125;&quot;/&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 <p>上面代码是利用了 Next 主题的 <a href="https://theme-next.js.org/docs/advanced-settings.html#Injects">Inject 功能</a>，以上代码的含义为如果在 <code>_config.yml</code> 中存在 <code>so_site_verification</code>  这一设置项，则会将 <code>&lt;meta name=&quot;360-site-verification&quot; content=&quot;so_site_verification 设置项的 value&quot;/&gt;</code>插入到网站首页 HTML 代码的 <code>&lt;head&gt;&lt;/head&gt;</code> 标签中。</p>
 <p>再次修改站点配置文件 <code>_config.yml</code>，在 <code>SEO Settings</code>区域新增以下内容 ：</p>
-<figure class="highlight ldif"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 360 Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: zhanzhang.so.com/sitetool</span></span><br><span class="line"><span class="attribute">so_site_verification</span>: 此处填写之前复制的验证字符串</span><br></pre></td></tr></table></figure>
+<figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line"><span class="meta"># 360 Webmaster tools verification.</span></span><br><span class="line"><span class="meta"># See: zhanzhang.so.com/sitetool</span></span><br><span class="line"><span class="symbol">so_site_verification:</span> 此处填写之前复制的验证字符串</span><br></pre></td></tr></table></figure>
 
 <p>修改完成后，执行 <code>hexo g -d</code> 命令重新生成并部署网站，部署生效后，回到 360 站长平台，「点击验证」即可。如果网站已经开启了 HTTPS 访问，不要忘记「设置 https」。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/24-360%E7%AB%99%E9%95%BF%E5%B9%B3%E5%8F%B0%E9%AA%8C%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="360 站长平台验证成功"></p>
@@ -794,7 +794,7 @@
 <h3 id="Yandex-验证域名"><a href="#Yandex-验证域名" class="headerlink" title="Yandex 验证域名"></a>Yandex 验证域名</h3><blockquote>
 <p>此项配置基于 Hexo 5.0.2，Next 7.8.0</p>
 </blockquote>
-<p>进入 Webmaster 后台管理界面添加域名，这里<strong>需要注意的是</strong>和在其他站长平台添加网址不一样，Yandex 在添加网址时就需要写清楚<strong>带不带 <code>www</code></strong>，是使用 <code>http</code> 还是 <code>https</code>，<strong>默认是使用 <code>http</code> 的</strong>。</p>
+<p>进入 Webmaster 后台管理界面添加域名，这里<strong>需要注意的是</strong>和在其他站长平台添加网址不一样，Yandex 在添加网址时就需要写清楚<strong>带不带 <code>www</code><strong>，是使用 <code>http</code> 还是 <code>https</code>，</strong>默认是使用 <code>http</code> 的</strong>。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/7-Yandex%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9.png" alt="Yandex 添加网址注意事项"></p>
 <p>选择域名验证方式，因为 Next 主题直接内置 Yandex 的验证，所以我们选择「Meta tag」验证，复制 <code>content</code> 后双引号内的字符串。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/34-Yandex%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99.png" alt="Yandex 添加网站"></p>
@@ -895,7 +895,7 @@
 <h3 id="招行香港优点"><a href="#招行香港优点" class="headerlink" title="招行香港优点"></a>招行香港优点</h3><ol>
 <li>支持银证转账的券商较多，仅比最多的民生香港少一家玖富</li>
 <li>亲临香港办理无需任何资产证明</li>
-<li>账户管理费相对较低，只需日均资产<strong>达五千港币</strong>即仅需<strong>十港币/月</strong>。与之相比，民生香港要日均资产达一万港币才只收十港币每月，永隆则是日均资产达不到一万港币收取每月一百港币，一万港币以上免收管理费</li>
+<li>账户管理费相对较低，只需日均资产<strong>达五千港币</strong>即仅需<strong>十港币&#x2F;月</strong>。与之相比，民生香港要日均资产达一万港币才只收十港币每月，永隆则是日均资产达不到一万港币收取每月一百港币，一万港币以上免收管理费</li>
 <li>开户无需提前预约，对应的则是现场取号后可能需要排队一到两个小时</li>
 <li>万一赴港才发现资料有问题，后续新资料可以通过邮寄方式提交，无须多次亲赴香港</li>
 </ol>
@@ -965,7 +965,7 @@
 <ol start="2">
 <li>开通手机漫游功能及准备当地上网卡</li>
 </ol>
-<p>去之前通过对应内地手机运营商客服热线或是 App 开通国际漫游功能，确保抵达香港后手机能够及时接听电话及短信，以备不时之需。移动的话，打和接电话都是 0.99 元/分钟，短信发内地 0.69 元/条，收短信免费。</p>
+<p>去之前通过对应内地手机运营商客服热线或是 App 开通国际漫游功能，确保抵达香港后手机能够及时接听电话及短信，以备不时之需。移动的话，打和接电话都是 0.99 元&#x2F;分钟，短信发内地 0.69 元&#x2F;条，收短信免费。</p>
 <p><del>在香港上网的话，我是办理的微信的 WeSim 卡(非广告，人家也不可能给我广告费)，9.9 元有 500M 4G 流量，一般来说不看视频，刷刷微信、查查资料，办银行卡一天差不多够用了，不够用直接再在公众号上买一个流量包就行，非常方便。另外这个卡我实测是可以直接科学上网的，WeSim 自己的宣传页面讲得还比较含蓄，只说可以正常使用谷歌地图。相关使用指南以及更多购买信息直接微信关注「WeSim 小助手」公众号即可。当然其他淘宝上卖的当地上网卡也是可以的，淘宝上很多还可以直接打电话，我这里只是讲一下自己使用的而已。</del></p>
 <p>WeSim 已于<a href="https://mp.weixin.qq.com/s/j4Rl1MchZs4M2HLuUC1vbg">2020年6月8日停止服务</a>。</p>
 <ol start="3">
@@ -975,7 +975,7 @@
 <ol start="4">
 <li>高德地图</li>
 </ol>
-<p>高德地图在香港也是可以用的，人生地不熟，一个好用的地图是必须的，建议事先在内地就离线好香港地图，节约流量。可以提前在高德地图上搜索「招商银行(香港分行)」即可找到具体地点，然后收藏备用。这里再次提醒<strong>招商银行(香港分行)</strong>在香港<strong>有且仅有</strong>一个分行，地址是「香港中环康乐广场八号交易广场三期28楼」。另外<strong>「招商银行(香港分行)」和「招商永隆银行」不是一家银行</strong>，虽然两者名字里面都有一个「招商」，后者是招商银行 2008 年收购香港本地的「永隆银行」后于 2018 年改名的，请注意区分，不要导航导错了。</p>
+<p>高德地图在香港也是可以用的，人生地不熟，一个好用的地图是必须的，建议事先在内地就离线好香港地图，节约流量。可以提前在高德地图上搜索「招商银行(香港分行)」即可找到具体地点，然后收藏备用。这里再次提醒<strong>招商银行(香港分行)<strong>在香港</strong>有且仅有</strong>一个分行，地址是「香港中环康乐广场八号交易广场三期28楼」。另外<strong>「招商银行(香港分行)」和「招商永隆银行」不是一家银行</strong>，虽然两者名字里面都有一个「招商」，后者是招商银行 2008 年收购香港本地的「永隆银行」后于 2018 年改名的，请注意区分，不要导航导错了。</p>
 <h2 id="赴港注意事项"><a href="#赴港注意事项" class="headerlink" title="赴港注意事项"></a>赴港注意事项</h2><p>如果是第一次去香港的朋友，可能有以下几个需要注意的地方。</p>
 <h3 id="一地两检"><a href="#一地两检" class="headerlink" title="一地两检"></a>一地两检</h3><p>入境香港时，是西九龙下车后，内地先检一遍，然后香港那边再检一遍。内地检完过了闸机，有一个自助打印「入境小票」的机器，可以打印一张备用，我打印了但并没有用到。</p>
 <p>如果是首次入境香港的话，香港那边的检查是不能走自助通道，必须走人工通道的，这点需要注意一下。</p>
@@ -1029,7 +1029,7 @@
 <h5 id="实际时间"><a href="#实际时间" class="headerlink" title="实际时间"></a>实际时间</h5><p>我是当天下午一点半办理完开户，然后当<strong>天下午三点一刻</strong>就收到了卡片审核通过的短信。这个速度比我想象的要快多了，距我在柜台办完开户还不到两个小时。但我<strong>并不能确保这是正常速度</strong>，按照柜员的说法，最慢的话需要两个工作日。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%AE%A1%E6%89%B9%E9%80%9A%E8%BF%87%E7%9F%AD%E4%BF%A1%E6%88%AA%E5%9B%BE.jpg" alt="审批通过短信"></p>
 <h2 id="后续工作"><a href="#后续工作" class="headerlink" title="后续工作"></a>后续工作</h2><p>审批通过以后我们还有一些后续工作要做。</p>
-<h3 id="Ukey-绑定及验证手机号码"><a href="#Ukey-绑定及验证手机号码" class="headerlink" title="Ukey 绑定及验证手机号码"></a>Ukey 绑定及验证手机号码</h3><p>按照「”香港一卡通”使用提示」去<a href="https://hk.cmbchina.com">招行香港官网</a>下载「个人银行下载版」并安装，以后绝大部分操作都需要通过这个专业版网银进行操作，因为招行香港的<strong>手机 App 功能比较残缺</strong>。</p>
+<h3 id="Ukey-绑定及验证手机号码"><a href="#Ukey-绑定及验证手机号码" class="headerlink" title="Ukey 绑定及验证手机号码"></a>Ukey 绑定及验证手机号码</h3><p>按照「”香港一卡通”使用提示」去<a href="https://hk.cmbchina.com/">招行香港官网</a>下载「个人银行下载版」并安装，以后绝大部分操作都需要通过这个专业版网银进行操作，因为招行香港的<strong>手机 App 功能比较残缺</strong>。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%8B%9B%E5%95%86%E5%AE%98%E7%BD%91%E4%B8%8B%E8%BD%BD%E7%BD%91%E9%93%B6%E8%B7%AF%E5%BE%84%E6%8C%87%E5%BC%95%E5%9B%BE.png" alt="下载个人银行下载版"></p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%8B%9B%E8%A1%8C%E9%A6%99%E6%B8%AF%E4%B8%93%E4%B8%9A%E7%89%88%E7%BD%91%E9%93%B6%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2%E6%88%AA%E5%9B%BE.png" alt="安装专业版网银"></p>
 <p>招行香港 UKey 绑定激活时，如果 UKey 你之前已经在<strong>内地招商银行的专业版网银</strong>上激活过了，要先输 UKey 密码(内地网银专业版密码)，然后才会弹出窗口让你输 16 位授权码，这个授权码就是前面提到的「”香港一卡通”账户开户申请回单」上写的 16 位授权码，这个授权码的<strong>有效期是三十天</strong>，所以务必<strong>及时关联绑定 Ukey</strong>。</p>
@@ -1073,7 +1073,7 @@
 </ul>
 <p>我看到后都会在空闲时间尽快给您答复或无偿向您提供力所能及的帮助。也欢迎您反馈关于办理流程、要求上最新的变动给我，我会及时更新到文章里面。</p>
 <h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://hk.cmbchina.com/Personal/Detail.aspx?guid=decdd697-c873-41d5-96ba-e17bee846690">香港一卡通开户指引及业务咨询</a></p>
-<p><a href="https://hk.cmbchina.com">招行香港官网</a></p>
+<p><a href="https://hk.cmbchina.com/">招行香港官网</a></p>
 <p><a href="https://zhuanlan.zhihu.com/p/36570603">开通招行香港一卡通的详细list</a></p>
 <p><a href="http://hk.cmbc.com.cn/personal/account/mustknow/index.htm">民生香港五十万港币资产要求</a></p>
 ]]></content>
@@ -1161,7 +1161,7 @@
 <td>BSP 特定的链接脚本</td>
 </tr>
 <tr>
-<td>board.c/h</td>
+<td>board.c&#x2F;h</td>
 <td>系统时钟、GPIO 初始化函数、芯片存储器大小</td>
 </tr>
 <tr>
@@ -1173,13 +1173,13 @@
 <td>芯片启动文件、目标芯片型号</td>
 </tr>
 </tbody></table>
-<h2 id="安装-CubeMX"><a href="#安装-CubeMX" class="headerlink" title="安装 CubeMX"></a>安装 CubeMX</h2><h3 id="下载-CubeMX"><a href="#下载-CubeMX" class="headerlink" title="下载 CubeMX"></a>下载 CubeMX</h3><p>CubeMX 是基于 eclipse 的一个插件，用来对STM32产品的配置及初始化代码的生成。下载可以去 <a href="https://stmcu.com.cn">ST 中国站</a> –&gt; 设计资源 –&gt; 固件和软件 –&gt; PC 端软件 –&gt; <a href="https://stmcu.com.cn/Designresource/design_resource_detail?file_name=STM32CubeMX_STM32%E5%88%9D%E5%A7%8B%E5%8C%96%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8&lang=EN&ver=5.6.1">STM32CubeMX</a></p>
+<h2 id="安装-CubeMX"><a href="#安装-CubeMX" class="headerlink" title="安装 CubeMX"></a>安装 CubeMX</h2><h3 id="下载-CubeMX"><a href="#下载-CubeMX" class="headerlink" title="下载 CubeMX"></a>下载 CubeMX</h3><p>CubeMX 是基于 eclipse 的一个插件，用来对STM32产品的配置及初始化代码的生成。下载可以去 <a href="https://stmcu.com.cn/">ST 中国站</a> –&gt; 设计资源 –&gt; 固件和软件 –&gt; PC 端软件 –&gt; <a href="https://stmcu.com.cn/Designresource/design_resource_detail?file_name=STM32CubeMX_STM32%E5%88%9D%E5%A7%8B%E5%8C%96%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8&lang=EN&ver=5.6.1">STM32CubeMX</a></p>
 <p>我下载的版本是 2020.04.21 更新的 V5.6.1。</p>
 <p>在官网上下载要求先登陆账号，所以没有账号的同学需要先自行注册一个账号，中国站可以直接通过微信注册。</p>
 <img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/10-CubeMX下载路径图.png" alt="CubeMX下载路径图"  />
 
 <h3 id="安装-CubeMX-1"><a href="#安装-CubeMX-1" class="headerlink" title="安装 CubeMX"></a>安装 CubeMX</h3><p>前面已经说了 CubeMX 是基于 eclipse 的，所以它的运行需要依赖 Java 运行环境，后续具体的步骤可以参考<a href="https://www.strongerhuang.com/STM32Cube/STM32CubeMX/STM32CubeMX%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B02_STM32CubeMX%E5%B7%A5%E5%85%B7%E3%80%81HAL%E5%BA%93%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E.html">STM32CubeMX系列教程02_STM32CubeMX工具、HAL库下载、安装说明</a>，写得非常详细。</p>
-<h2 id="使用-CubeMX-配置工程"><a href="#使用-CubeMX-配置工程" class="headerlink" title="使用 CubeMX 配置工程"></a>使用 CubeMX 配置工程</h2><p>模板文件内已经有 CubeMX 工程了，位于<code>stm32f1-my-diy\board\CubeMX_Config</code>下，双击打开 <code>CubeMX_Config.ioc</code>工程。</p>
+<h2 id="使用-CubeMX-配置工程"><a href="#使用-CubeMX-配置工程" class="headerlink" title="使用 CubeMX 配置工程"></a>使用 CubeMX 配置工程</h2><p>模板文件内已经有 CubeMX 工程了，位于<code>stm32f1-my-diy\board\CubeMX_Config</code>下，双击打开 <code>CubeMX_Config.ioc </code>工程。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/6-%E5%8F%8C%E5%87%BB%E6%89%93%E5%BC%80CubeMX%E5%B7%A5%E7%A8%8B.png" alt="双击打开CubeMX工程"></p>
 <h3 id="配置芯片"><a href="#配置芯片" class="headerlink" title="配置芯片"></a>配置芯片</h3><p>我使用的是正点原子战舰 V3 的开发板，使用的 CPU 是 STM32F103ZET6，CubeMX 模板工程使用的并不是这个芯片，所以我需要重新配置芯片为「STM32F103ZETx」。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/11-CubeMX%E9%80%89%E6%8B%A9%E8%8A%AF%E7%89%87.png" alt="CubeMX选择芯片"></p>
@@ -1192,7 +1192,7 @@
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/13-CubeMX%E9%85%8D%E7%BD%AEUSART1.png" alt="CubeMXUSART1引脚图"></p>
 <h3 id="设置调试方式"><a href="#设置调试方式" class="headerlink" title="设置调试方式"></a>设置调试方式</h3><p>System Core –&gt; SYS –&gt; Debug:Serial Wire，将调试配置 SWD 模式，这种模式一个最大的优点就是占用的 IO 口较少，我们从右侧的芯片图可以看到 SWD 模式只使用了两个 IO 口 PA13 和 PA14。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/15-CubeMX%E9%85%8D%E7%BD%AE%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F.png" alt="CubeMX配置调试模式"></p>
-<h3 id="时钟配置"><a href="#时钟配置" class="headerlink" title="时钟配置"></a>时钟配置</h3><p>HSE 是高速外部时钟，可接石英/陶瓷谐振器，或者接外部时钟源，频率范围为 4MHz~16MHz。战舰 V3 开发板接的是 8M 的晶振。</p>
+<h3 id="时钟配置"><a href="#时钟配置" class="headerlink" title="时钟配置"></a>时钟配置</h3><p>HSE 是高速外部时钟，可接石英&#x2F;陶瓷谐振器，或者接外部时钟源，频率范围为 4MHz~16MHz。战舰 V3 开发板接的是 8M 的晶振。</p>
 <p>LSE 是低速外部时钟，接频率为 32.768kHz 的石英晶体。 这个主要是 RTC 的时钟源。</p>
 <p>根据正点原子《STMF1  开发指南》，这一步进行的时钟配置为：</p>
 <ul>
@@ -1203,13 +1203,13 @@
 </ul>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/16-CubeMX%E9%85%8D%E7%BD%AE%E6%97%B6%E9%92%9F.png" alt="CubeMX配置时钟"></p>
 <p>最后总结一下配置过后关键时钟频率值：</p>
-<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">SYSCLK</span>(系统时钟) 			   =<span class="number">72</span>MHz</span><br><span class="line"><span class="attribute">PLL</span> 主时钟 					=<span class="number">72</span>MHz</span><br><span class="line"><span class="attribute">AHB</span> 总线时钟（HCLK=SYSCLK/<span class="number">1</span>）   =<span class="number">72</span>MHz</span><br><span class="line"><span class="attribute">APB1</span> 总线时钟（PCLK<span class="number">1</span>=HCLK/<span class="number">2</span>）   =<span class="number">36</span>MHz</span><br><span class="line"><span class="attribute">APB2</span> 总线时钟（PCLK<span class="number">2</span>=HCLK/<span class="number">1</span>）   =<span class="number">72</span>MHz</span><br></pre></td></tr></table></figure>
+<figure class="highlight abnf"><table><tr><td class="code"><pre><span class="line">SYSCLK(系统时钟) 			   <span class="operator">=</span><span class="number">72</span>MHz</span><br><span class="line">PLL 主时钟 					<span class="operator">=</span><span class="number">72</span>MHz</span><br><span class="line">AHB 总线时钟（HCLK<span class="operator">=</span>SYSCLK/<span class="number">1</span>）   <span class="operator">=</span><span class="number">72</span>MHz</span><br><span class="line">APB1 总线时钟（PCLK1<span class="operator">=</span>HCLK/<span class="number">2</span>）   <span class="operator">=</span><span class="number">36</span>MHz</span><br><span class="line">APB2 总线时钟（PCLK2<span class="operator">=</span>HCLK/<span class="number">1</span>）   <span class="operator">=</span><span class="number">72</span>MHz</span><br></pre></td></tr></table></figure>
 
 <h3 id="生成-CubeMX-项目"><a href="#生成-CubeMX-项目" class="headerlink" title="生成 CubeMX 项目"></a>生成 CubeMX 项目</h3><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/17-CubeMX%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81.png" alt="CubeMX生成代码"></p>
 <p>最后生成的时候，因为我们复制过来的模板工程里面本来就有 CubeMX 项目，选择直接覆盖即可。</p>
-<h3 id="拷贝时钟初始化函数"><a href="#拷贝时钟初始化函数" class="headerlink" title="拷贝时钟初始化函数"></a>拷贝时钟初始化函数</h3><p>在 <code>board/board.c</code> 文件中存放了函数 <code>SystemClock_Config()</code>，该函数负责初始化系统时钟。当使用 CubeMX 工具对系统时钟重新配置的时候，需要更新这个函数。</p>
+<h3 id="拷贝时钟初始化函数"><a href="#拷贝时钟初始化函数" class="headerlink" title="拷贝时钟初始化函数"></a>拷贝时钟初始化函数</h3><p>在 <code>board/board.c</code> 文件中存放了函数 <code>SystemClock_Config() </code>，该函数负责初始化系统时钟。当使用 CubeMX 工具对系统时钟重新配置的时候，需要更新这个函数。</p>
 <p>该函数由 CubeMX 工具生成，默认存放在<code>board/CubeMX_Config/Src/main.c</code> 文件中。但是该文件并没有被包含到我们的工程中，因此需要将这个函数从 main.c 中拷贝到 <code>board/board.c</code> 文件中。该函数内容如下：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief System Clock Configuration</span></span><br><span class="line"><span class="comment">  * @retval None</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SystemClock_Config</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  RCC_OscInitTypeDef RCC_OscInitStruct = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">  RCC_ClkInitTypeDef RCC_ClkInitStruct = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/** Initializes the CPU, AHB and APB busses clocks </span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;	<span class="comment">//时钟源为 HSE</span></span><br><span class="line">  RCC_OscInitStruct.HSEState = RCC_HSE_ON;						<span class="comment">//打开 HSE</span></span><br><span class="line">  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;		<span class="comment">//HSE 预分频</span></span><br><span class="line">  RCC_OscInitStruct.HSIState = RCC_HSI_ON;						<span class="comment">//打开 HSI</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;					<span class="comment">//打开 PLL</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;			<span class="comment">//PLL 时钟源选择 HSE</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;					<span class="comment">//设置 PLL 倍频系数</span></span><br><span class="line">  <span class="keyword">if</span> (HAL_RCC_OscConfig(&amp;RCC_OscInitStruct) != HAL_OK)</span><br><span class="line">  &#123;</span><br><span class="line">    Error_Handler();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/** Initializes the CPU, AHB and APB busses clocks </span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK</span><br><span class="line">                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;</span><br><span class="line">  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;		<span class="comment">//设置系统时钟时钟源为 PLL</span></span><br><span class="line">  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;	<span class="comment">//AHB 分频系数为1</span></span><br><span class="line">  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;		<span class="comment">//APB1 分频系数为2</span></span><br><span class="line">  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;		<span class="comment">//APB2 分频系数为1</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (HAL_RCC_ClockConfig(&amp;RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)</span><br><span class="line">  &#123;</span><br><span class="line">    Error_Handler();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief System Clock Configuration</span></span><br><span class="line"><span class="comment">  * @retval None</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">SystemClock_Config</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">  RCC_OscInitTypeDef RCC_OscInitStruct = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">  RCC_ClkInitTypeDef RCC_ClkInitStruct = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/** Initializes the CPU, AHB and APB busses clocks </span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;	<span class="comment">//时钟源为 HSE</span></span><br><span class="line">  RCC_OscInitStruct.HSEState = RCC_HSE_ON;						<span class="comment">//打开 HSE</span></span><br><span class="line">  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;		<span class="comment">//HSE 预分频</span></span><br><span class="line">  RCC_OscInitStruct.HSIState = RCC_HSI_ON;						<span class="comment">//打开 HSI</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;					<span class="comment">//打开 PLL</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;			<span class="comment">//PLL 时钟源选择 HSE</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;					<span class="comment">//设置 PLL 倍频系数</span></span><br><span class="line">  <span class="keyword">if</span> (HAL_RCC_OscConfig(&amp;RCC_OscInitStruct) != HAL_OK)</span><br><span class="line">  &#123;</span><br><span class="line">    Error_Handler();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/** Initializes the CPU, AHB and APB busses clocks </span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK</span><br><span class="line">                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;</span><br><span class="line">  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;		<span class="comment">//设置系统时钟时钟源为 PLL</span></span><br><span class="line">  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;	<span class="comment">//AHB 分频系数为1</span></span><br><span class="line">  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;		<span class="comment">//APB1 分频系数为2</span></span><br><span class="line">  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;		<span class="comment">//APB2 分频系数为1</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (HAL_RCC_ClockConfig(&amp;RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)</span><br><span class="line">  &#123;</span><br><span class="line">    Error_Handler();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="修改-board-h"><a href="#修改-board-h" class="headerlink" title="修改 board.h"></a>修改 board.h</h3><p>在 board.h 文件中配置了 FLASH 和 RAM 的相关参数，这个文件中需要修改的是 STM32_FLASH_SIZE 和 STM32_SRAM_SIZE 这两个宏控制的参数。</p>
 <p>战舰 V3 所使用的 STM32F103ZET6 芯片的 FLASH 大小为 512K，RAM 的大小为 64K，因此对该文件作出如下的修改：</p>
@@ -1247,10 +1247,10 @@
 <p>其中 MDK 使用的链接脚本是 link.sct ，其他两个链接脚本的文件分别为 IAR 使用的 link.icf 和 GCC 编译器使用的 link.lds。我使用的是 MDK，所以修改 link.sct 文件。</p>
 <p>战舰 V3 使用的芯片为 STM32F103ZE，FLASH 为 512K，因此修改 LR_IROM1 和 ER_IROM1 的参数为 0x00080000（512 * 1024）。RAM 的大小为 64K， 因此修改 RW_IRAM1 的参数为 0x00010000（64 * 1024）。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/20-%E4%BF%AE%E6%94%B9%E9%93%BE%E6%8E%A5%E8%84%9A%E6%9C%AC.png" alt="修改链接脚本"></p>
-<h3 id="修改-SConscript-构建脚本"><a href="#修改-SConscript-构建脚本" class="headerlink" title="修改 SConscript  构建脚本"></a>修改 SConscript  构建脚本</h3><p>SConscript 脚本决定 MDK/IAR 工程的生成以及编译过程中要添加文件。</p>
+<h3 id="修改-SConscript-构建脚本"><a href="#修改-SConscript-构建脚本" class="headerlink" title="修改 SConscript  构建脚本"></a>修改 SConscript  构建脚本</h3><p>SConscript 脚本决定 MDK&#x2F;IAR 工程的生成以及编译过程中要添加文件。</p>
 <p>在这一步中需要修改芯片型号以及芯片启动文件的地址，战舰 V3 使用的芯片是 STM32F103ZET6，所以使用的启动文件是 <code>startup_stm32f103xe.s</code>，对应的芯片型号是 STM32F103xE。最后修改内容如下图所示：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/21-%E4%BF%AE%E6%94%B9SConscript%E6%9E%84%E5%BB%BA%E8%84%9A%E6%9C%AC.png" alt="修改SConscript构建脚本"></p>
-<h3 id="修改-MDK-工程模板"><a href="#修改-MDK-工程模板" class="headerlink" title="修改 MDK 工程模板"></a>修改 MDK 工程模板</h3><p>template 文件是生成 MDK/IAR 工程的模板文件，通过修改该文件可以设置工程中使用的芯片型号以及下载方式。MDK4/MDK5/IAR 的工程模板文件，如下图所示：</p>
+<h3 id="修改-MDK-工程模板"><a href="#修改-MDK-工程模板" class="headerlink" title="修改 MDK 工程模板"></a>修改 MDK 工程模板</h3><p>template 文件是生成 MDK&#x2F;IAR 工程的模板文件，通过修改该文件可以设置工程中使用的芯片型号以及下载方式。MDK4&#x2F;MDK5&#x2F;IAR 的工程模板文件，如下图所示：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/22-%E5%B7%A5%E7%A8%8B%E6%A8%A1%E6%9D%BF%E7%9B%AE%E5%BD%95.png" alt="工程模板目录"></p>
 <p>我使用的 MDK5，所以我修改的模板是 <code>template.uvprojx</code> 文件。</p>
 <ul>
@@ -1268,7 +1268,7 @@
 <h3 id="下载安装-Env-工具"><a href="#下载安装-Env-工具" class="headerlink" title="下载安装 Env 工具"></a>下载安装 Env 工具</h3><ul>
 <li><p>从 RT-Thread 官网下载 <a href="https://www.rt-thread.org/page/download.html">Env 工具</a>，将其<strong>解压到任一纯英文路径下</strong>即可使用，在 Env 目录下有一张 <code>Add_Env_To_Right-click_Menu.png</code>(添加 Env 至右键菜单.png) 的图片，按照图片指引一步步操作，就可以在任意文件夹下通过右键菜单来启动 Env 控制台，效果如下：<img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/26-menuconfig%E7%95%8C%E9%9D%A2.png" alt="任意路径右键打开Env"></p>
 </li>
-<li><p>在电脑上装好 git，软件包管理功能需要 git 的支持。git 的下载地址为<a href="https://git-scm.com/downloads，根据向导正确安装">https://git-scm.com/downloads，根据向导正确安装</a> git，并将 git 添加到系统环境变量。</p>
+<li><p>在电脑上装好 git，软件包管理功能需要 git 的支持。git 的下载地址为<a href="https://git-scm.com/downloads%EF%BC%8C%E6%A0%B9%E6%8D%AE%E5%90%91%E5%AF%BC%E6%AD%A3%E7%A1%AE%E5%AE%89%E8%A3%85">https://git-scm.com/downloads，根据向导正确安装</a> git，并将 git 添加到系统环境变量。</p>
 </li>
 <li><p>注意在工作环境中，所有的路径都不可以有中文字符或者空格。</p>
 </li>
@@ -1278,7 +1278,7 @@
 <h4 id="menuconfig-快捷键介绍"><a href="#menuconfig-快捷键介绍" class="headerlink" title="menuconfig 快捷键介绍"></a>menuconfig 快捷键介绍</h4><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/27-menuconfig%E5%BF%AB%E6%8D%B7%E9%94%AE%E4%BB%8B%E7%BB%8D.png" alt="menuconfig快捷键介绍"></p>
 <h4 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h4><p>menuconfig 有多种类型的配置项，修改方法也有所不同，常见类型如下：</p>
 <ul>
-<li>开/关 型：使用空格键来选中或者关闭</li>
+<li>开&#x2F;关 型：使用空格键来选中或者关闭</li>
 <li>数值、字符串型：按下回车键后会出现对话框，在对话框中对配置项进行修改</li>
 </ul>
 <p>我们目前的目的仅仅是移植 BSP，所以先不进行复杂的配置，只使能 GPIO 和 UART：</p>
@@ -1308,5 +1308,10 @@
         <tag>RT-Thread</tag>
         <tag>STM32</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Where-Command-Difference-Between-Cmd-And-Powershell</title>
+    <url>/post/Where-Command-Difference-Between-Cmd-And-Powershell/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>

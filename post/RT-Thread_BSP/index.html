@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
-
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -19,12 +18,13 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"asurada.zone","root":"/","images":"/images","scheme":"Muse","version":"8.6.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="前言最近在准备六月份的 RT-Thread 的 RECA（RT-Thread开发者能力认证），官方组织了一个学习营，第一周的任务是：  基于 rt-thread4.0.2，能根据BSP制作教程及群里分享的视频《2.RTThread移植》，让自己的板子在RT-Thread上运行起来，了解BSP的制作。  本文并没有将 BSP 移植背后的原理全部弄清楚，只是想着先迈出第一步，不求甚解，先把整个流程给跑">
+<script class="next-config" data-name="main" type="application/json">{"hostname":"asurada.zone","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.22.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="前言最近在准备六月份的 RT-Thread 的 RECA（RT-Thread开发者能力认证），官方组织了一个学习营，第一周的任务是：  基于 rt-thread4.0.2，能根据BSP制作教程及群里分享的视频《2.RTThread移植》，让自己的板子在RT-Thread上运行起来，了解BSP的制作。  本文并没有将 BSP 移植背后的原理全部弄清楚，只是想着先迈出第一步，不求甚解，先把整个流程给跑">
 <meta property="og:type" content="article">
 <meta property="og:title" content="RT-Thread RECA学习营（一）——正点原子战舰 V3  RT-Thread BSP 移植">
 <meta property="og:url" content="https://asurada.zone/post/RT-Thread_BSP/index.html">
@@ -33,7 +33,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-RTThread%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95.png">
 <meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/5-BSP%E6%A8%A1%E6%9D%BF%E7%9B%AE%E5%BD%95.png">
-<meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/10-CubeMX下载路径图.png">
+<meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/10-CubeMX%E4%B8%8B%E8%BD%BD%E8%B7%AF%E5%BE%84%E5%9B%BE.png">
 <meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/6-%E5%8F%8C%E5%87%BB%E6%89%93%E5%BC%80CubeMX%E5%B7%A5%E7%A8%8B.png">
 <meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/11-CubeMX%E9%80%89%E6%8B%A9%E8%8A%AF%E7%89%87.png">
 <meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/12-CubeMX%E5%90%AF%E7%94%A8%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%92%9F.png">
@@ -58,7 +58,7 @@
 <meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/30-MDK5%E4%BF%AE%E6%94%B9%E4%B8%8B%E8%BD%BD%E5%90%8E%E9%87%8D%E5%90%AF.png">
 <meta property="og:image" content="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/31-%E9%AA%8C%E8%AF%81MDK5%E5%B7%A5%E7%A8%8B.png">
 <meta property="article:published_time" content="2020-05-06T03:11:12.000Z">
-<meta property="article:modified_time" content="2020-11-27T10:56:48.163Z">
+<meta property="article:modified_time" content="2020-05-06T03:11:12.000Z">
 <meta property="article:author" content="Asurada">
 <meta property="article:tag" content="RT-Thread">
 <meta property="article:tag" content="STM32">
@@ -69,16 +69,29 @@
 <link rel="canonical" href="https://asurada.zone/post/RT-Thread_BSP/">
 
 
-
 <script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://asurada.zone/post/RT-Thread_BSP/","path":"post/RT-Thread_BSP/","title":"RT-Thread RECA学习营（一）——正点原子战舰 V3  RT-Thread BSP 移植"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>RT-Thread RECA学习营（一）——正点原子战舰 V3  RT-Thread BSP 移植 | Asurada's Zone</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-14ZV467ZF2"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-14ZV467ZF2","only_pageview":false,"measure_protocol_api_secret":null}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
 
 
 
-  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "79b221dbf13b4720a61e24cae7d37a7f"}'></script>
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{&quot;token&quot;: &quot;79b221dbf13b4720a61e24cae7d37a7f&quot;}'></script>
+
+  <script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "dfjcm6xycf");
+</script>
+
+
+
 
   <meta name="360-site-verification" content="68099c4ac6f6f63bfe250dd357c1d4e1"/>
 
@@ -92,8 +105,8 @@
   <div class="headband"></div>
 
   <main class="main">
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏" role="button">
         <span class="toggle-line"></span>
@@ -106,14 +119,14 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Asurada's Zone</h1>
+      <p class="site-title">Asurada's Zone</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">风物长宜放眼量</p>
   </div>
 
   <div class="site-nav-right">
-    <div class="toggle popup-trigger">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
         <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
@@ -122,12 +135,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu">
-        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
-        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
-        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
-        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -138,37 +146,31 @@
 
 
   <div class="search-pop-overlay">
-    <div class="popup search-popup"><div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80"
-           placeholder="搜索..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close" role="button">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div class="search-result-container no-result">
-  <div class="search-result-icon">
-    <i class="fa fa-spinner fa-pulse fa-5x"></i>
-  </div>
-</div>
-
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
     </div>
   </div>
 
-</div>
+</header>
         
   
-  <div class="toggle sidebar-toggle" role="button">
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-  </div>
-
   <aside class="sidebar">
 
     <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
@@ -189,72 +191,56 @@
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
-          <div class="site-overview">
-            <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="Asurada"
       src="https://avatars2.githubusercontent.com/u/43401755?s=460&v=4">
   <p class="site-author-name" itemprop="name">Asurada</p>
   <div class="site-description" itemprop="description">一个嵌入式工程师的简单分享</div>
 </div>
-<div class="site-state-wrap site-overview-item animated">
+<div class="site-state-wrap animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">13</span>
+        <a href="/archives/">
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
+          <a href="/categories/">
         <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
+          <a href="/tags/">
         <span class="site-state-item-count">19</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
-  <div class="links-of-author site-overview-item animated">
+  <div class="links-of-author animated">
       <span class="links-of-author-item">
-        <a href="https://github.com/ousugo" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;ousugo" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <a href="https://github.com/ousugo" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;ousugo" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://asurada.zone/atom.xml" title="RSS → https:&#x2F;&#x2F;asurada.zone&#x2F;atom.xml"><i class="fas fa-rss fa-fw"></i>RSS</a>
+        <a href="https://asurada.zone/atom.xml" title="RSS → https:&#x2F;&#x2F;asurada.zone&#x2F;atom.xml" rel="noopener me"><i class="fas fa-rss fa-fw"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/Asurada_Channel" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;Asurada_Channel" rel="noopener me" target="_blank"><i class="fab fa-telegram fa-fw"></i>Telegram</a>
       </span>
   </div>
-  <div class="cc-license site-overview-item animated" itemprop="license">
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
   </div>
 
-
-
-          </div>
         </div>
       </div>
     </div>
-  </aside>
-  <div class="sidebar-dimmer"></div>
-
-
-    </header>
 
     
-  <div class="back-to-top" role="button" aria-label="返回顶部">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
+  </aside>
 
-  <a href="https://github.com/ousugo" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
 
-<noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
-
+    </div>
 
     <div class="main-inner post posts-expand">
 
@@ -272,11 +258,16 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://avatars2.githubusercontent.com/u/43401755?s=460&v=4">
       <meta itemprop="name" content="Asurada">
-      <meta itemprop="description" content="一个嵌入式工程师的简单分享">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Asurada's Zone">
+      <meta itemprop="description" content="一个嵌入式工程师的简单分享">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="RT-Thread RECA学习营（一）——正点原子战舰 V3  RT-Thread BSP 移植 | Asurada's Zone">
+      <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -293,13 +284,6 @@
 
       <time title="创建时间：2020-05-06 11:11:12" itemprop="dateCreated datePublished" datetime="2020-05-06T11:11:12+08:00">2020-05-06</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-11-27 18:56:48" itemprop="dateModified" datetime="2020-11-27T18:56:48+08:00">2020-11-27</time>
-      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -318,8 +302,7 @@
       <span class="post-meta-item-text">阅读次数：</span>
       <span class="leancloud-visitors-count"></span>
     </span>
-      </div>
-      <div class="post-meta">
+    <span class="post-meta-break"></span>
     <span class="post-meta-item" title="本文字数">
       <span class="post-meta-item-icon">
         <i class="far fa-file-word"></i>
@@ -342,8 +325,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近在准备六月份的 RT-Thread 的 <a target="_blank" rel="noopener" href="https://www.rt-thread.org/page/rac.html">RECA</a>（RT-Thread开发者能力认证），官方组织了一个学习营，第一周的任务是：</p>
+    <div class="post-body" itemprop="articleBody"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近在准备六月份的 RT-Thread 的 <a target="_blank" rel="noopener" href="https://www.rt-thread.org/page/rac.html">RECA</a>（RT-Thread开发者能力认证），官方组织了一个学习营，第一周的任务是：</p>
 <blockquote>
 <p>基于 rt-thread4.0.2，能根据BSP制作教程及群里分享的视频《2.RTThread移植》，让自己的板子在RT-Thread上运行起来，了解BSP的制作。</p>
 </blockquote>
@@ -417,7 +399,7 @@
 <td>BSP 特定的链接脚本</td>
 </tr>
 <tr>
-<td>board.c/h</td>
+<td>board.c&#x2F;h</td>
 <td>系统时钟、GPIO 初始化函数、芯片存储器大小</td>
 </tr>
 <tr>
@@ -429,13 +411,13 @@
 <td>芯片启动文件、目标芯片型号</td>
 </tr>
 </tbody></table>
-<h2 id="安装-CubeMX"><a href="#安装-CubeMX" class="headerlink" title="安装 CubeMX"></a>安装 CubeMX</h2><h3 id="下载-CubeMX"><a href="#下载-CubeMX" class="headerlink" title="下载 CubeMX"></a>下载 CubeMX</h3><p>CubeMX 是基于 eclipse 的一个插件，用来对STM32产品的配置及初始化代码的生成。下载可以去 <a target="_blank" rel="noopener" href="https://stmcu.com.cn">ST 中国站</a> –&gt; 设计资源 –&gt; 固件和软件 –&gt; PC 端软件 –&gt; <a target="_blank" rel="noopener" href="https://stmcu.com.cn/Designresource/design_resource_detail?file_name=STM32CubeMX_STM32%E5%88%9D%E5%A7%8B%E5%8C%96%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8&lang=EN&ver=5.6.1">STM32CubeMX</a></p>
+<h2 id="安装-CubeMX"><a href="#安装-CubeMX" class="headerlink" title="安装 CubeMX"></a>安装 CubeMX</h2><h3 id="下载-CubeMX"><a href="#下载-CubeMX" class="headerlink" title="下载 CubeMX"></a>下载 CubeMX</h3><p>CubeMX 是基于 eclipse 的一个插件，用来对STM32产品的配置及初始化代码的生成。下载可以去 <a target="_blank" rel="noopener" href="https://stmcu.com.cn/">ST 中国站</a> –&gt; 设计资源 –&gt; 固件和软件 –&gt; PC 端软件 –&gt; <a target="_blank" rel="noopener" href="https://stmcu.com.cn/Designresource/design_resource_detail?file_name=STM32CubeMX_STM32%E5%88%9D%E5%A7%8B%E5%8C%96%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8&lang=EN&ver=5.6.1">STM32CubeMX</a></p>
 <p>我下载的版本是 2020.04.21 更新的 V5.6.1。</p>
 <p>在官网上下载要求先登陆账号，所以没有账号的同学需要先自行注册一个账号，中国站可以直接通过微信注册。</p>
 <img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/10-CubeMX下载路径图.png" alt="CubeMX下载路径图"  />
 
 <h3 id="安装-CubeMX-1"><a href="#安装-CubeMX-1" class="headerlink" title="安装 CubeMX"></a>安装 CubeMX</h3><p>前面已经说了 CubeMX 是基于 eclipse 的，所以它的运行需要依赖 Java 运行环境，后续具体的步骤可以参考<a target="_blank" rel="noopener" href="https://www.strongerhuang.com/STM32Cube/STM32CubeMX/STM32CubeMX%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B02_STM32CubeMX%E5%B7%A5%E5%85%B7%E3%80%81HAL%E5%BA%93%E4%B8%8B%E8%BD%BD%E3%80%81%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E.html">STM32CubeMX系列教程02_STM32CubeMX工具、HAL库下载、安装说明</a>，写得非常详细。</p>
-<h2 id="使用-CubeMX-配置工程"><a href="#使用-CubeMX-配置工程" class="headerlink" title="使用 CubeMX 配置工程"></a>使用 CubeMX 配置工程</h2><p>模板文件内已经有 CubeMX 工程了，位于<code>stm32f1-my-diy\board\CubeMX_Config</code>下，双击打开 <code>CubeMX_Config.ioc</code>工程。</p>
+<h2 id="使用-CubeMX-配置工程"><a href="#使用-CubeMX-配置工程" class="headerlink" title="使用 CubeMX 配置工程"></a>使用 CubeMX 配置工程</h2><p>模板文件内已经有 CubeMX 工程了，位于<code>stm32f1-my-diy\board\CubeMX_Config</code>下，双击打开 <code>CubeMX_Config.ioc </code>工程。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/6-%E5%8F%8C%E5%87%BB%E6%89%93%E5%BC%80CubeMX%E5%B7%A5%E7%A8%8B.png" alt="双击打开CubeMX工程"></p>
 <h3 id="配置芯片"><a href="#配置芯片" class="headerlink" title="配置芯片"></a>配置芯片</h3><p>我使用的是正点原子战舰 V3 的开发板，使用的 CPU 是 STM32F103ZET6，CubeMX 模板工程使用的并不是这个芯片，所以我需要重新配置芯片为「STM32F103ZETx」。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/11-CubeMX%E9%80%89%E6%8B%A9%E8%8A%AF%E7%89%87.png" alt="CubeMX选择芯片"></p>
@@ -448,7 +430,7 @@
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/13-CubeMX%E9%85%8D%E7%BD%AEUSART1.png" alt="CubeMXUSART1引脚图"></p>
 <h3 id="设置调试方式"><a href="#设置调试方式" class="headerlink" title="设置调试方式"></a>设置调试方式</h3><p>System Core –&gt; SYS –&gt; Debug:Serial Wire，将调试配置 SWD 模式，这种模式一个最大的优点就是占用的 IO 口较少，我们从右侧的芯片图可以看到 SWD 模式只使用了两个 IO 口 PA13 和 PA14。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/15-CubeMX%E9%85%8D%E7%BD%AE%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F.png" alt="CubeMX配置调试模式"></p>
-<h3 id="时钟配置"><a href="#时钟配置" class="headerlink" title="时钟配置"></a>时钟配置</h3><p>HSE 是高速外部时钟，可接石英/陶瓷谐振器，或者接外部时钟源，频率范围为 4MHz~16MHz。战舰 V3 开发板接的是 8M 的晶振。</p>
+<h3 id="时钟配置"><a href="#时钟配置" class="headerlink" title="时钟配置"></a>时钟配置</h3><p>HSE 是高速外部时钟，可接石英&#x2F;陶瓷谐振器，或者接外部时钟源，频率范围为 4MHz~16MHz。战舰 V3 开发板接的是 8M 的晶振。</p>
 <p>LSE 是低速外部时钟，接频率为 32.768kHz 的石英晶体。 这个主要是 RTC 的时钟源。</p>
 <p>根据正点原子《STMF1  开发指南》，这一步进行的时钟配置为：</p>
 <ul>
@@ -459,13 +441,13 @@
 </ul>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/16-CubeMX%E9%85%8D%E7%BD%AE%E6%97%B6%E9%92%9F.png" alt="CubeMX配置时钟"></p>
 <p>最后总结一下配置过后关键时钟频率值：</p>
-<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">SYSCLK</span>(系统时钟) 			   =<span class="number">72</span>MHz</span><br><span class="line"><span class="attribute">PLL</span> 主时钟 					=<span class="number">72</span>MHz</span><br><span class="line"><span class="attribute">AHB</span> 总线时钟（HCLK=SYSCLK/<span class="number">1</span>）   =<span class="number">72</span>MHz</span><br><span class="line"><span class="attribute">APB1</span> 总线时钟（PCLK<span class="number">1</span>=HCLK/<span class="number">2</span>）   =<span class="number">36</span>MHz</span><br><span class="line"><span class="attribute">APB2</span> 总线时钟（PCLK<span class="number">2</span>=HCLK/<span class="number">1</span>）   =<span class="number">72</span>MHz</span><br></pre></td></tr></table></figure>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SYSCLK(系统时钟) 			   <span class="operator">=</span><span class="number">72</span>MHz</span><br><span class="line">PLL 主时钟 					<span class="operator">=</span><span class="number">72</span>MHz</span><br><span class="line">AHB 总线时钟（HCLK<span class="operator">=</span>SYSCLK/<span class="number">1</span>）   <span class="operator">=</span><span class="number">72</span>MHz</span><br><span class="line">APB1 总线时钟（PCLK1<span class="operator">=</span>HCLK/<span class="number">2</span>）   <span class="operator">=</span><span class="number">36</span>MHz</span><br><span class="line">APB2 总线时钟（PCLK2<span class="operator">=</span>HCLK/<span class="number">1</span>）   <span class="operator">=</span><span class="number">72</span>MHz</span><br></pre></td></tr></table></figure>
 
 <h3 id="生成-CubeMX-项目"><a href="#生成-CubeMX-项目" class="headerlink" title="生成 CubeMX 项目"></a>生成 CubeMX 项目</h3><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/17-CubeMX%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81.png" alt="CubeMX生成代码"></p>
 <p>最后生成的时候，因为我们复制过来的模板工程里面本来就有 CubeMX 项目，选择直接覆盖即可。</p>
-<h3 id="拷贝时钟初始化函数"><a href="#拷贝时钟初始化函数" class="headerlink" title="拷贝时钟初始化函数"></a>拷贝时钟初始化函数</h3><p>在 <code>board/board.c</code> 文件中存放了函数 <code>SystemClock_Config()</code>，该函数负责初始化系统时钟。当使用 CubeMX 工具对系统时钟重新配置的时候，需要更新这个函数。</p>
+<h3 id="拷贝时钟初始化函数"><a href="#拷贝时钟初始化函数" class="headerlink" title="拷贝时钟初始化函数"></a>拷贝时钟初始化函数</h3><p>在 <code>board/board.c</code> 文件中存放了函数 <code>SystemClock_Config() </code>，该函数负责初始化系统时钟。当使用 CubeMX 工具对系统时钟重新配置的时候，需要更新这个函数。</p>
 <p>该函数由 CubeMX 工具生成，默认存放在<code>board/CubeMX_Config/Src/main.c</code> 文件中。但是该文件并没有被包含到我们的工程中，因此需要将这个函数从 main.c 中拷贝到 <code>board/board.c</code> 文件中。该函数内容如下：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief System Clock Configuration</span></span><br><span class="line"><span class="comment">  * @retval None</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SystemClock_Config</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  RCC_OscInitTypeDef RCC_OscInitStruct = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">  RCC_ClkInitTypeDef RCC_ClkInitStruct = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/** Initializes the CPU, AHB and APB busses clocks </span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;	<span class="comment">//时钟源为 HSE</span></span><br><span class="line">  RCC_OscInitStruct.HSEState = RCC_HSE_ON;						<span class="comment">//打开 HSE</span></span><br><span class="line">  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;		<span class="comment">//HSE 预分频</span></span><br><span class="line">  RCC_OscInitStruct.HSIState = RCC_HSI_ON;						<span class="comment">//打开 HSI</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;					<span class="comment">//打开 PLL</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;			<span class="comment">//PLL 时钟源选择 HSE</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;					<span class="comment">//设置 PLL 倍频系数</span></span><br><span class="line">  <span class="keyword">if</span> (HAL_RCC_OscConfig(&amp;RCC_OscInitStruct) != HAL_OK)</span><br><span class="line">  &#123;</span><br><span class="line">    Error_Handler();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/** Initializes the CPU, AHB and APB busses clocks </span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK</span><br><span class="line">                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;</span><br><span class="line">  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;		<span class="comment">//设置系统时钟时钟源为 PLL</span></span><br><span class="line">  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;	<span class="comment">//AHB 分频系数为1</span></span><br><span class="line">  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;		<span class="comment">//APB1 分频系数为2</span></span><br><span class="line">  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;		<span class="comment">//APB2 分频系数为1</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (HAL_RCC_ClockConfig(&amp;RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)</span><br><span class="line">  &#123;</span><br><span class="line">    Error_Handler();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * @brief System Clock Configuration</span></span><br><span class="line"><span class="comment">  * @retval None</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">SystemClock_Config</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">  RCC_OscInitTypeDef RCC_OscInitStruct = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">  RCC_ClkInitTypeDef RCC_ClkInitStruct = &#123;<span class="number">0</span>&#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">/** Initializes the CPU, AHB and APB busses clocks </span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;	<span class="comment">//时钟源为 HSE</span></span><br><span class="line">  RCC_OscInitStruct.HSEState = RCC_HSE_ON;						<span class="comment">//打开 HSE</span></span><br><span class="line">  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;		<span class="comment">//HSE 预分频</span></span><br><span class="line">  RCC_OscInitStruct.HSIState = RCC_HSI_ON;						<span class="comment">//打开 HSI</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;					<span class="comment">//打开 PLL</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;			<span class="comment">//PLL 时钟源选择 HSE</span></span><br><span class="line">  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;					<span class="comment">//设置 PLL 倍频系数</span></span><br><span class="line">  <span class="keyword">if</span> (HAL_RCC_OscConfig(&amp;RCC_OscInitStruct) != HAL_OK)</span><br><span class="line">  &#123;</span><br><span class="line">    Error_Handler();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">/** Initializes the CPU, AHB and APB busses clocks </span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK</span><br><span class="line">                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;</span><br><span class="line">  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;		<span class="comment">//设置系统时钟时钟源为 PLL</span></span><br><span class="line">  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;	<span class="comment">//AHB 分频系数为1</span></span><br><span class="line">  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;		<span class="comment">//APB1 分频系数为2</span></span><br><span class="line">  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;		<span class="comment">//APB2 分频系数为1</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (HAL_RCC_ClockConfig(&amp;RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)</span><br><span class="line">  &#123;</span><br><span class="line">    Error_Handler();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="修改-board-h"><a href="#修改-board-h" class="headerlink" title="修改 board.h"></a>修改 board.h</h3><p>在 board.h 文件中配置了 FLASH 和 RAM 的相关参数，这个文件中需要修改的是 STM32_FLASH_SIZE 和 STM32_SRAM_SIZE 这两个宏控制的参数。</p>
 <p>战舰 V3 所使用的 STM32F103ZET6 芯片的 FLASH 大小为 512K，RAM 的大小为 64K，因此对该文件作出如下的修改：</p>
@@ -503,10 +485,10 @@
 <p>其中 MDK 使用的链接脚本是 link.sct ，其他两个链接脚本的文件分别为 IAR 使用的 link.icf 和 GCC 编译器使用的 link.lds。我使用的是 MDK，所以修改 link.sct 文件。</p>
 <p>战舰 V3 使用的芯片为 STM32F103ZE，FLASH 为 512K，因此修改 LR_IROM1 和 ER_IROM1 的参数为 0x00080000（512 * 1024）。RAM 的大小为 64K， 因此修改 RW_IRAM1 的参数为 0x00010000（64 * 1024）。</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/20-%E4%BF%AE%E6%94%B9%E9%93%BE%E6%8E%A5%E8%84%9A%E6%9C%AC.png" alt="修改链接脚本"></p>
-<h3 id="修改-SConscript-构建脚本"><a href="#修改-SConscript-构建脚本" class="headerlink" title="修改 SConscript  构建脚本"></a>修改 SConscript  构建脚本</h3><p>SConscript 脚本决定 MDK/IAR 工程的生成以及编译过程中要添加文件。</p>
+<h3 id="修改-SConscript-构建脚本"><a href="#修改-SConscript-构建脚本" class="headerlink" title="修改 SConscript  构建脚本"></a>修改 SConscript  构建脚本</h3><p>SConscript 脚本决定 MDK&#x2F;IAR 工程的生成以及编译过程中要添加文件。</p>
 <p>在这一步中需要修改芯片型号以及芯片启动文件的地址，战舰 V3 使用的芯片是 STM32F103ZET6，所以使用的启动文件是 <code>startup_stm32f103xe.s</code>，对应的芯片型号是 STM32F103xE。最后修改内容如下图所示：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/21-%E4%BF%AE%E6%94%B9SConscript%E6%9E%84%E5%BB%BA%E8%84%9A%E6%9C%AC.png" alt="修改SConscript构建脚本"></p>
-<h3 id="修改-MDK-工程模板"><a href="#修改-MDK-工程模板" class="headerlink" title="修改 MDK 工程模板"></a>修改 MDK 工程模板</h3><p>template 文件是生成 MDK/IAR 工程的模板文件，通过修改该文件可以设置工程中使用的芯片型号以及下载方式。MDK4/MDK5/IAR 的工程模板文件，如下图所示：</p>
+<h3 id="修改-MDK-工程模板"><a href="#修改-MDK-工程模板" class="headerlink" title="修改 MDK 工程模板"></a>修改 MDK 工程模板</h3><p>template 文件是生成 MDK&#x2F;IAR 工程的模板文件，通过修改该文件可以设置工程中使用的芯片型号以及下载方式。MDK4&#x2F;MDK5&#x2F;IAR 的工程模板文件，如下图所示：</p>
 <p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/22-%E5%B7%A5%E7%A8%8B%E6%A8%A1%E6%9D%BF%E7%9B%AE%E5%BD%95.png" alt="工程模板目录"></p>
 <p>我使用的 MDK5，所以我修改的模板是 <code>template.uvprojx</code> 文件。</p>
 <ul>
@@ -524,7 +506,7 @@
 <h3 id="下载安装-Env-工具"><a href="#下载安装-Env-工具" class="headerlink" title="下载安装 Env 工具"></a>下载安装 Env 工具</h3><ul>
 <li><p>从 RT-Thread 官网下载 <a target="_blank" rel="noopener" href="https://www.rt-thread.org/page/download.html">Env 工具</a>，将其<strong>解压到任一纯英文路径下</strong>即可使用，在 Env 目录下有一张 <code>Add_Env_To_Right-click_Menu.png</code>(添加 Env 至右键菜单.png) 的图片，按照图片指引一步步操作，就可以在任意文件夹下通过右键菜单来启动 Env 控制台，效果如下：<img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/26-menuconfig%E7%95%8C%E9%9D%A2.png" alt="任意路径右键打开Env"></p>
 </li>
-<li><p>在电脑上装好 git，软件包管理功能需要 git 的支持。git 的下载地址为<a target="_blank" rel="noopener" href="https://git-scm.com/downloads，根据向导正确安装">https://git-scm.com/downloads，根据向导正确安装</a> git，并将 git 添加到系统环境变量。</p>
+<li><p>在电脑上装好 git，软件包管理功能需要 git 的支持。git 的下载地址为<a target="_blank" rel="noopener" href="https://git-scm.com/downloads%EF%BC%8C%E6%A0%B9%E6%8D%AE%E5%90%91%E5%AF%BC%E6%AD%A3%E7%A1%AE%E5%AE%89%E8%A3%85">https://git-scm.com/downloads，根据向导正确安装</a> git，并将 git 添加到系统环境变量。</p>
 </li>
 <li><p>注意在工作环境中，所有的路径都不可以有中文字符或者空格。</p>
 </li>
@@ -534,7 +516,7 @@
 <h4 id="menuconfig-快捷键介绍"><a href="#menuconfig-快捷键介绍" class="headerlink" title="menuconfig 快捷键介绍"></a>menuconfig 快捷键介绍</h4><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/27-menuconfig%E5%BF%AB%E6%8D%B7%E9%94%AE%E4%BB%8B%E7%BB%8D.png" alt="menuconfig快捷键介绍"></p>
 <h4 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h4><p>menuconfig 有多种类型的配置项，修改方法也有所不同，常见类型如下：</p>
 <ul>
-<li>开/关 型：使用空格键来选中或者关闭</li>
+<li>开&#x2F;关 型：使用空格键来选中或者关闭</li>
 <li>数值、字符串型：按下回车键后会出现对话框，在对话框中对配置项进行修改</li>
 </ul>
 <p>我们目前的目的仅仅是移植 BSP，所以先不进行复杂的配置，只使能 GPIO 和 UART：</p>
@@ -571,7 +553,7 @@
     </div>
 </div>
           <div class="reward-container">
-  <div></div>
+  <div>请我一杯咖啡吧！</div>
   <button>
     赞赏
   </button>
@@ -590,10 +572,10 @@
 
           
 
-<!-- JS�� clipboard �����������ݵ�ճ����-->
+<!-- JS库 clipboard 用来拷贝内容到粘贴板-->
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
 
-<!-- JS�� sweetalert ������ʾ��ʾ��Ϣ-->
+<!-- JS库 sweetalert 用来显示提示信息-->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert@2.1.2/dist/sweetalert.min.js"></script>
 
 <div class="post-copyright">
@@ -608,7 +590,7 @@
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
       <a href="https://asurada.zone/post/RT-Thread_BSP/" title="RT-Thread RECA学习营（一）——正点原子战舰 V3  RT-Thread BSP 移植">https://asurada.zone/post/RT-Thread_BSP/</a>
-    <span class="copy-path" title="������� Markdown ��������"
+    <span class="copy-path" title="点击复制 Markdown 引用链接"
       ><i
         style="cursor: pointer"
         class="fas fa-copy"
@@ -618,7 +600,7 @@
     ></span>
   </li>
   <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
   </li>
 </ul>
 
@@ -647,23 +629,35 @@
   <div class="social-list">
 
       <div class="social-item">
-        <a target="_blank" class="social-link" href="/images/wechat_channel.png">
-          <span class="icon">
-            <i class="fab fa-weixin"></i>
-          </span>
+          <a target="_blank" class="social-link" href="https://t.me/Asurada_Channel">
+            <span class="icon">
+              <i class="fab fa-telegram"></i>
+            </span>
 
-          <span class="label">WeChat</span>
-        </a>
+            <span class="label">Telegram</span>
+          </a>
       </div>
 
       <div class="social-item">
-        <a target="_blank" class="social-link" href="/atom.xml">
-          <span class="icon">
-            <i class="fa fa-rss"></i>
+          <span class="social-link">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">WeChat</span>
           </span>
 
-          <span class="label">RSS</span>
-        </a>
+          <img class="social-item-img" src="/images/wechat_channel.png">
+      </div>
+
+      <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
       </div>
   </div>
 </div>
@@ -678,7 +672,7 @@
           <div class="post-nav">
             <div class="post-nav-item">
                 <a href="/post/hexo-blog-settings/" rel="prev" title="Hexo 博客修改记录">
-                  <i class="fa fa-chevron-left"></i> Hexo 博客修改记录
+                  <i class="fa fa-angle-left"></i> Hexo 博客修改记录
                 </a>
             </div>
             <div class="post-nav-item">
@@ -694,7 +688,7 @@
 
 
     
-  <div class="comments" id="disqus_thread">
+  <div class="comments disqusjs-container">
     <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
   </div>
   
@@ -704,15 +698,14 @@
   <footer class="footer">
     <div class="footer-inner">
 
-
-<div class="copyright">
-  &copy; 2020 – 
-  <span itemprop="copyrightYear">2021</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Asurada</span>
-</div>
+  <div class="copyright">
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Asurada</span>
+  </div>
 <div class="wordcount">
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
@@ -752,14 +745,37 @@
   </footer>
 
   
-  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/ousugo" class="github-corner" title="在 GitHub 上关注我" aria-label="在 GitHub 上关注我" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
 
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
 <script src="/js/third-party/search/local-search.js"></script>
 
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
 
 
 
@@ -767,13 +783,13 @@
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
-  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"4vfEy99japeGiK3jxqcgHcu8-gzGzoHsz","app_key":"yYFGTuwlmpBBiYpFGCtpz15K","server_url":"https://4vfey99j.lc-cn-n1-shared.com","security":true}</script>
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"4vfEy99japeGiK3jxqcgHcu8-gzGzoHsz","app_key":"yYFGTuwlmpBBiYpFGCtpz15K","server_url":null,"security":false}</script>
   <script src="/js/third-party/statistics/lean-analytics.js"></script>
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqusjs.css" integrity="sha256-GxdCIOyfxQ1OBfS99qAIJDoGK1ADuBsxhMTqXG82fAY=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/disqusjs/3.0.2/styles/disqusjs.css" integrity="sha256-71XarXwNr1Td27HmZI9zjY+rMzRdush6/glo6VFXp7o=" crossorigin="anonymous">
 
-<script class="next-config" data-name="disqusjs" type="application/json">{"enable":true,"api":"https://disqus.skk.moe/disqus/","apikey":"DbeRjZ9TqROzDs1OJ4lf28EXNb9CM0dbyrq1jtrK8AznU5hQdEVAyTXPr5kh4XcH","shortname":"asuradazone","js":{"url":"https://cdn.jsdelivr.net/npm/disqusjs@1.3.0/dist/disqus.js","integrity":"sha256-LVaMHPQ2zLqOc5rXSAfr4d1PIkEGNLyyUTDNPZmTtUw="}}</script>
+<script class="next-config" data-name="disqusjs" type="application/json">{"enable":true,"api":"https://disqus.skk.moe/disqus/","apikey":"DbeRjZ9TqROzDs1OJ4lf28EXNb9CM0dbyrq1jtrK8AznU5hQdEVAyTXPr5kh4XcH","shortname":"asuradazone","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/disqusjs/3.0.2/disqusjs.es2015.umd.min.js","integrity":"sha256-okP99ZQKVpIy7+NogAMpGlIQzJa9XKXhIJcFgdju5bU="}}</script>
 <script src="/js/third-party/comments/disqusjs.js"></script>
 
 </body>
