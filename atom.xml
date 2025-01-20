@@ -6,7 +6,7 @@
   <link href="https://asurada.zone/atom.xml" rel="self"/>
   
   <link href="https://asurada.zone/"/>
-  <updated>2025-01-19T08:54:48.269Z</updated>
+  <updated>2025-01-20T09:26:57.589Z</updated>
   <id>https://asurada.zone/</id>
   
   <author>
@@ -17,15 +17,25 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Where-Command-Difference-Between-Cmd-And-Powershell</title>
+    <title>CMD 和 PowerShell 中 where 命令的区别</title>
     <link href="https://asurada.zone/post/Where-Command-Difference-Between-Cmd-And-Powershell/"/>
     <id>https://asurada.zone/post/Where-Command-Difference-Between-Cmd-And-Powershell/</id>
     <published>2025-01-19T08:54:48.000Z</published>
-    <updated>2025-01-19T08:54:48.269Z</updated>
+    <updated>2025-01-20T09:26:57.589Z</updated>
+    
+    <content type="html"><![CDATA[<p>事情的起因是我想解决在 Windows Terminal 中使用 <code>code .</code> 命令打开的不是 VSCode 而是 Cursor 的问题。</p><span id="more"></span><h2 id="where-命令的介绍"><a href="#where-命令的介绍" class="headerlink" title="where 命令的介绍"></a>where 命令的介绍</h2><p>在 Windows 命令提示符（CMD）中，<code>where</code> 命令用于查找与指定名称匹配的可执行文件的位置，它可以帮助你确定某个程序或文件在系统中的具体路径。我的使用场景是用它来查找 <code>code</code> 命令对应的可执行文件的路径。</p><h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>在 CMD 中执行 <code>where code</code> 命令，结果符合预期，结果如下：</p><p><img src="https://pub-40b650f1eea44087adc96bf9abf9c38d.r2.dev/1-CMD%E4%B8%AD%E6%89%A7%E8%A1%8C%E7%BB%93%E6%9E%9C.png" alt="CMD 中执行结果"></p><p>但在我常用的 PowerShell 中执行的结果则是没有任何输出：</p><p><img src="https://pub-40b650f1eea44087adc96bf9abf9c38d.r2.dev/2-PS%E4%B8%AD%E6%89%A7%E8%A1%8C%E7%BB%93%E6%9E%9C.png" alt="PowerShell 中执行结果"></p><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>这是因为在 PowerShell 中 <code>where</code> 表示的不再是 <code>where.exe</code>，而是 <code>Where-Object</code> cmdlet 的别名。而 <code>Where-Object</code> 的作用是根据属性值从集合中选择对象，和 Linux 中的 <code>grep</code> 命令作用类似，通常是结合管道一起使用的。现在直接执行 <code>where code</code> 命令，因为管道的上游没有任何输入，自然也不会输出任何内容。</p><p><img src="https://pub-40b650f1eea44087adc96bf9abf9c38d.r2.dev/4-where%E5%91%BD%E4%BB%A4%E5%9C%A8PS%E4%B8%AD%E7%9A%84%E7%BB%93%E6%9E%9C.png" alt="where 命令在 PowerShell 中的结果"></p><p>在 PowerShell 中使用 <code>where</code> 命令的正确姿势应该是使用 <code>where.exe</code> ：</p><p><img src="https://pub-40b650f1eea44087adc96bf9abf9c38d.r2.dev/3-%E5%9C%A8PS%E4%B8%AD%E5%BA%94%E8%AF%A5%E4%BD%BF%E7%94%A8whereexe.png" alt="在 PowerShell 中使用 where.exe"></p><p>或者直接在 PowerShell 中使用 <code>Get-Command</code> 命令：</p><p><img src="https://pub-40b650f1eea44087adc96bf9abf9c38d.r2.dev/6-Get-Command%E5%9C%A8PS%E4%B8%AD.png" alt="Get-Command 命令效果"></p><p>但显然 <code>Get-Command</code> 命令的输出显示方式远不如 <code>where</code> 命令直观。</p><h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/where">where</a></p><p><a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-7.4">Where-Object</a></p><p><a href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/get-command?view=powershell-7.4">Get-Command</a></p><p><a href="https://stackoverflow.com/questions/16775686/why-doesnt-the-where-command-display-any-output-when-running-in-powershell">Why doesn’t the ‘where’ command display any output when running in PowerShell?</a></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;事情的起因是我想解决在 Windows Terminal 中使用 &lt;code&gt;code .&lt;/code&gt; 命令打开的不是 VSCode 而是 Cursor 的问题。&lt;/p&gt;</summary>
     
     
     
     
+    <category term="Windows" scheme="https://asurada.zone/tags/Windows/"/>
+    
+    <category term="PowerShell" scheme="https://asurada.zone/tags/PowerShell/"/>
+    
+    <category term="CMD" scheme="https://asurada.zone/tags/CMD/"/>
     
   </entry>
   

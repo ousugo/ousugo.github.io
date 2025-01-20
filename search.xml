@@ -1,34 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>通过 Microsoft Store 购买 Win10 专业版小记</title>
-    <url>/post/Buy-WindowsPro-License/</url>
-    <content><![CDATA[<p>通过 Windows 10 自带的 Microsoft Store 购买非常方便。</p>
+    <title>Hexo 博客主流搜索引擎收录详细指南</title>
+    <url>/post/Blog-Search-Engine-Index/</url>
+    <content><![CDATA[<p>如果希望自己博客的内容被更多人看到，搜索引擎所带来的流量是不容忽视的。本文详细介绍了如何向各大主流搜索引擎主动提交自己的博客，期望达到加快收录速度的目的。</p>
 <span id="more"></span>
 
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>双十一的时候自己组装了一台主机，在安装操作系统的时候直接安装的 Windows 10 专业版。之前自己的笔记本是从 Windows 8.1 升级成 Windows 10，自动就激活并绑定了数字许可证，但自己组装的主机就需要考虑操作系统购买的问题了。</p>
-<p>在不激活的情况下用了一段时间，除了不能换壁纸等个性化操作以及右下角时不时显示一个未激活水印，好像也没有多大的限制。</p>
-<p>之前我从网上简单了解到的以及微软官网上显示的，都是专业版只限企业购买，还需要电话联系销售，我看着好像还挺麻烦的样子。但实际操作下来，发现还是自己信息太闭塞，购买起来其实非常简单，直接通过自带的 Microsoft Store 应用购买即可。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%AE%98%E7%BD%91%E8%B4%AD%E4%B9%B0%E5%8F%AA%E9%99%90%E4%BC%81%E4%B8%9A.png" alt="官网显示只限企业购买"></p>
-<h2 id="购买流程"><a href="#购买流程" class="headerlink" title="购买流程"></a>购买流程</h2><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9C%AA%E6%BF%80%E6%B4%BB.png" alt="未激活界面"></p>
-<p>在 Windows10 设置的「激活」页面直接有转到 Microsoft Store 购买的选项，点击会直接打开自带的 Microsoft Store 并跳转到专业版的详情界面，价格是 1458 元。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/MicrosoftStore%E8%AF%A6%E6%83%85%E7%95%8C%E9%9D%A2.png" alt="MicrosoftStore详情界面"></p>
-<p>点击「购买」，会先通过微软账户密码确认你的身份，我开启了 Windows Hello 摄像头，直接看一眼摄像头就确认了。</p>
-<p>之前买软件的时候已经在 Microsoft Store 中绑定过支付宝的免密支付，所以我的默认支付方式就直接是支付宝。Windows 10 专业版销售商我这里显示的是「杭州网易增盈科技有限公司」，不知道怎么和网易扯上了关系。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%B4%AD%E4%B9%B0%E7%A1%AE%E8%AE%A4%E7%95%8C%E9%9D%A2.png" alt="购买确认界面"></p>
-<p>最后再点击一次「购买」，支付宝自动完成扣款，加载片刻，Windows 自动激活，显示「Windows 已使用与 Microsoft 账户关联的数字许可证激活」，至此就激活完成了。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%B7%B2%E6%BF%80%E6%B4%BB.png" alt="已激活"></p>
-<h2 id="更换硬件后如何激活"><a href="#更换硬件后如何激活" class="headerlink" title="更换硬件后如何激活"></a>更换硬件后如何激活</h2><p>根据微软官网的信息，在 Windows 10（1607版本或更高版本）中，必须将 Microsoft 帐户与设备上的Windows 10 数字许可证联系起来。通过将 Microsoft 帐户与数字许可证链接起来，以后在进行重大硬件更改，比如换主板的时候，就使用激活疑难解答程序重新激活 Windows。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%93%BE%E6%8E%A5%E5%88%B0Microsoft%E8%B4%A6%E6%88%B7.png" alt="将 Windows 10 数字许可证链接到 Microsoft 帐户"></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>整个过程非常简单，购买体验挺好。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://support.microsoft.com/zh-cn/windows/%E5%9C%A8%E6%9B%B4%E6%8D%A2%E7%A1%AC%E4%BB%B6%E5%90%8E%E9%87%8D%E6%96%B0%E6%BF%80%E6%B4%BB-windows-10-2c0e962a-f04c-145b-6ead-fb3fc72b6665">在更换硬件后重新激活 Windows 10</a></p>
+<h2 id="生成站点地图"><a href="#生成站点地图" class="headerlink" title="生成站点地图"></a>生成站点地图</h2><blockquote>
+<p>什么是站点地图？</p>
+<p>站点地图是一种文件，您可以在其中提供与您网站中的网页、视频或其他文件有关的信息，还可以说明这些内容之间的关系。Google 等搜索引擎会读取此文件，以便更加智能地抓取您的网站。站点地图会告诉 Google 您认为网站中的哪些网页和文件比较重要，还会提供与这些文件有关的重要信息：以网页为例，这些信息包括网页上次更新的时间、网页更改的频率，以及网页是否有其他语言版本。</p>
+<p><em><a href="https://support.google.com/webmasters/answer/156184?hl=zh-Hans&ref_topic=4581190">谷歌帮助-了解站点地图</a></em></p>
+</blockquote>
+<p>安装  <a href="https://github.com/hexojs/hexo-generator-sitemap">hexo-generator-sitemap</a> 插件：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+
+<p>安装插件以后，执行 <code>hexo  g</code> 命令，即可在 <code>public</code> 文件夹下找到新生成的 <code>sitemap.xml</code> 文件。</p>
+<h2 id="让百度收录站点"><a href="#让百度收录站点" class="headerlink" title="让百度收录站点"></a>让百度收录站点</h2><h3 id="百度验证域名"><a href="#百度验证域名" class="headerlink" title="百度验证域名"></a>百度验证域名</h3><p>刚建站的时候，百度是没有收录我们的网站的，这时在搜索框输入 <code>site:&lt;域名&gt;</code>  ，结果应该是下面这样的，点击「提交网址」来提交我们的站点。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-%E7%99%BE%E5%BA%A6%E6%9C%AA%E6%94%B6%E5%BD%95.png" alt="百度未收录"></p>
+<p>点击后会进入「<a href="https://ziyuan.baidu.com/site">百度搜索资源平台</a>」，用自己的百度账号进行登录。登录后「站点管理」–&gt; 「添加站点」–&gt; 「添加网站」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/7-%E7%99%BE%E5%BA%A6%E6%B7%BB%E5%8A%A0%E7%AB%99%E7%82%B9%E8%B7%AF%E5%BE%84.png" alt="百度添加网站"></p>
+<p>百度添加网站是需要进行实名认证的，这一点需要注意。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/8-%E7%99%BE%E5%BA%A6%E9%9C%80%E8%A6%81%E5%AE%9E%E5%90%8D.png" alt="百度实名"></p>
+<p>填完个人信息后，提交站点网址，选择站点属性，最后一步验证网站。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/9-%E7%99%BE%E5%BA%A6%E8%AE%BE%E7%BD%AE%E7%AB%99%E7%82%B9%E5%B1%9E%E6%80%A7.png" alt="选择站点属性"></p>
+<p>验证方式选择第二种「HTML标签验证」，复制下图 <code>content</code> 里的字符串。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/10-%E7%99%BE%E5%BA%A6%E9%80%89%E6%8B%A9%E9%AA%8C%E8%AF%81%E6%96%B9%E5%BC%8F.png" alt="选择验证方式"></p>
+<blockquote>
+<p>此项配置基于 Hexo 4.2，Next 7.8.0</p>
+</blockquote>
+<p>打开主题配置数据文件 <code>next.yml</code> ，搜索 <code>baidu_site_verification</code>，将上述字符串填至后方。</p>
+<figure class="highlight yaml"><figcaption><span>.\source\_data\next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Baidu Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: https://ziyuan.baidu.com/site</span></span><br><span class="line"><span class="attr">baidu_site_verification:</span> <span class="string">hpYpGBuDQF</span></span><br></pre></td></tr></table></figure>
+
+<p>执行 <code>hexo g -d</code> 重新生成并部署站点，部署完成后，检查网站源码，能看到在<code>&lt;head&gt;</code> 里面已经自动包含了用于验证身份的 meta 标签：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/11-%E7%99%BE%E5%BA%A6%E9%AA%8C%E8%AF%81meta%E6%A0%87%E7%AD%BE.png" alt="百度验证 meta 标签"></p>
+<p>回到百度站长管理平台点击「完成验证」按钮，完成验证。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/12-%E7%99%BE%E5%BA%A6%E9%AA%8C%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="百度验证成功"></p>
+<p>当我验证完成的时候，百度通知我说 HTTPS 认证失败，当时<strong>我没有进行任何处理</strong>，二个小时后我手动在「搜索展现」–&gt; 「HTTPS 认证」申请认证，几分钟后就直接显示「认证通过」了，所以认证失败了不要慌，可能等待一会就自然好了。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/13-%E7%99%BE%E5%BA%A6Https%E8%AE%A4%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="百度Https认证成功"></p>
+<h3 id="百度提交链接"><a href="#百度提交链接" class="headerlink" title="百度提交链接"></a>百度提交链接</h3><p>百度提交链接有下面三种方式。</p>
+<h4 id="主动提交"><a href="#主动提交" class="headerlink" title="主动提交"></a>主动提交</h4><p>安装  <a href="https://github.com/huiwang/hexo-baidu-url-submit">hexo-baidu-url-submit</a> 插件：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-baidu-url-submit --save</span><br></pre></td></tr></table></figure>
+
+<p>获取百度主动推送<code>准入密钥</code>并复制：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/14-%E7%99%BE%E5%BA%A6%E4%B8%BB%E5%8A%A8%E6%8E%A8%E9%80%81%E5%87%86%E5%85%A5%E5%AF%86%E9%92%A5.png" alt="百度主动推送准入密钥"></p>
+<p>在站点配置文件 <code>_config.yml</code> 中<strong>新增</strong>以下代码：</p>
+<figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="addition">+ # 百度主动推送</span></span><br><span class="line"><span class="addition">+ baidu_url_submit:</span></span><br><span class="line"><span class="addition">+ 	count: 5 # 提交最新的五个链接</span></span><br><span class="line"><span class="addition">+ 	host: https://asurada.zone # 在百度站长平台中注册的域名</span></span><br><span class="line"><span class="addition">+  	token: xxxxx  # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span></span><br><span class="line"><span class="addition">+  	path: baidu_urls.txt  # 文本文档的地址， 新链接会保存在此文本文档里</span></span><br></pre></td></tr></table></figure>
+
+<p>然后在站点配置文件 <code>_config.yml</code> 中修改部署策略：</p>
+<figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">  # Deployment</span><br><span class="line">  ## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line"><span class="deletion">- deploy:</span></span><br><span class="line"><span class="deletion">- 	type: git</span></span><br><span class="line"><span class="deletion">-   repo: git@github.com:ousugo/ousugo.github.io.git</span></span><br><span class="line"><span class="deletion">-	branch: master</span></span><br><span class="line"><span class="addition">+ deploy:</span></span><br><span class="line"><span class="addition">+ - type: git</span></span><br><span class="line"><span class="addition">+   repo: git@github.com:ousugo/ousugo.github.io.git</span></span><br><span class="line"><span class="addition">+	branch: master</span></span><br><span class="line"><span class="addition">+ - type: baidu_url_submitter # 百度</span></span><br></pre></td></tr></table></figure>
+<p>此后每次执行 <code>hexo d</code> 部署博客的时候将会自动在 <code>./public</code> 目录下生成 <code>baidu_urls.txt</code> 文件，里面的内容就是自己设置的最新的 n 条文章链接。然后自动推送文件内容到百度，加快链接被百度收录的速度。</p>
+<p>在这里的时候我踩了一个坑，在部署的时候一直提示错误：<code>&#123;&quot;error&quot;:401,&quot;message&quot;:&quot;site sid is empty&quot;&#125;</code> ，后面经过排查发现是在配置主动推送时，<code>host</code> 后面的网址没有加协议头，加上之后就不报错了。</p>
+<figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">  count: 5 # 提交最新的五个链接</span><br><span class="line"><span class="deletion">- host: asurada.zone # 在百度站长平台中注册的域名</span></span><br><span class="line"><span class="addition">+ host: https://asurada.zone # 在百度站长平台中注册的域名	</span></span><br><span class="line">  token: xxxxx  # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span><br><span class="line">  path: baidu_urls.txt  # 文本文档的地址， 新链接会保存在此文本文档里</span><br></pre></td></tr></table></figure>
+
+<h4 id="自动推送（弃用）"><a href="#自动推送（弃用）" class="headerlink" title="自动推送（弃用）"></a><del>自动推送</del>（弃用）</h4><div class="note info"><p>百度站长平台现在已经取消了「自动推送」的功能入口，所以不建议再开启此功能，详见<a href="https://51.ruyo.net/16280.html">百度 JS代码推送功能已停止使用，删除推送代码吧</a>。</p>
+</div>
+
+<blockquote>
+<p>此项配置基于 Hexo 4.2，Next 7.8.0</p>
+</blockquote>
+<p>Next 主题中已经内置了一键开启百度自动推送的选项：</p>
+<figure class="highlight yaml"><figcaption><span>.\source\_data\next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO</span></span><br><span class="line"><span class="attr">baidu_push:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>开启后将会自动在页面中添加如下脚本用于百度推送：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/18-%E7%99%BE%E5%BA%A6JS%E6%8E%A8%E9%80%81%E8%84%9A%E6%9C%AC%E4%BB%A3%E7%A0%81.png" alt="推送脚本代码"></p>
+<p>之后每次访问站点页面都会通过以上脚本将当前页面的 URL 推送到百度。 </p>
+<h4 id="sitemap"><a href="#sitemap" class="headerlink" title="sitemap"></a>sitemap</h4><div class="note info"><p>博客如果是部署在 GitHub Pages 上，baidusitemap 是无法被成功抓取的，因为 GitHub 禁止了百度爬虫，最常见的解决办法是将博客双线部署到 Coding Pages 和 GitHub Pages，因为百度爬虫可以爬取到 Coding 上的内容，从而实现百度收录。实现双线部署可以参考我的这篇 <a href="https://asurada.zone/post/Deploy-Hexoblog-To-Codingnet-And-GitHub/">Hexo 博客 GitHub Pages + CODING 静态网站双部署</a> 博客。</p>
+</div>
+
+<p>安装 <a href="https://github.com/coneycode/hexo-generator-baidu-sitemap">hexo-generator-baidu-sitemap</a> 插件：</p>
+<figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line">npm <span class="keyword">install </span>hexo-generator-<span class="keyword">baidu-sitemap </span>--save</span><br></pre></td></tr></table></figure>
+
+<p>插件安装成功后，执行 <code>hexo g -d</code> 部署网站，然后访问 <code>网站自定义域名/baidusitemap.xml</code> 检查百度网站地图是否正常。比如我的是 <code>asurada.zone/baidusitemap.xml</code> 。</p>
+<p>然后来到百度站长平台的 <a href="https://ziyuan.baidu.com/linksubmit/">sitemap 提交页面</a>，提交 sitemap 地址即可，注意需要自己添加 <code>https://</code> 协议头，不然默认是 <code>http://</code>，会导致抓取失败。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/20-%E7%99%BE%E5%BA%A6%E6%8F%90%E4%BA%A4sitemap.png" alt="百度提交 sitemap"></p>
+<p>初次提交要等几分钟，如果成功的话状态会显示为正常，并显示成功提取 URL 的数量。如果以后博客有新的文章或其他页面，可以点击<strong>手动更新文件</strong>，对 sitemap 进行更新。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/21-%E7%99%BE%E5%BA%A6sitemap%E6%8A%93%E5%8F%96%E6%AD%A3%E5%B8%B8.png" alt="百度 sitemap 抓取正常"></p>
+<p>百度的收录速度是比较慢的，一两周都是很正常的。</p>
+<h2 id="让谷歌收录站点"><a href="#让谷歌收录站点" class="headerlink" title="让谷歌收录站点"></a>让谷歌收录站点</h2><h3 id="GSC-验证域名"><a href="#GSC-验证域名" class="headerlink" title="GSC 验证域名"></a>GSC 验证域名</h3><p>登陆 <a href="https://search.google.com/u/1/search-console/welcome">Google Search Console</a> （后面简称 GSC)，可以看到有两种资源类型，因为目前我博客的域名是没有任何前缀的裸域名，所以我选择「网域验证」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/2-GoogleSearchConsole%E6%AC%A2%E8%BF%8E%E9%A1%B5.png" alt="Google Search Console 欢迎页"></p>
+<p>要进行「网域验证」的话，只有「通过 DNS 记录来验证域名所有权」这一种办法。复制这一步中出现的 TXT 记录值，然后进到域名解析服务商的管理界面，比如我的是 DNSPod。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/4-DNS%E9%AA%8C%E8%AF%81%E5%9F%9F%E5%90%8D%E6%89%80%E6%9C%89%E6%9D%83.png" alt="DNS 验证域名所有权"></p>
+<p>在「记录管理」里面新增一条 <code>TXT</code> 类型的解析记录，主机记录留空或者填 <code>@</code>，记录值就是刚刚复制的那一串记录值，其他保持默认即可。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/32-DNSPod%E6%96%B0%E5%A2%9E%E8%B0%B7%E6%AD%8C%E5%9F%9F%E5%90%8D%E9%AA%8C%E8%AF%81%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95.png" alt="DNSPod 新增谷歌域名验证解析记录"></p>
+<p>稍等片刻，等待 DNS 解析生效，然后回到 GSC 点击「验证」按钮，即可完成验证。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/3-Google%E7%BD%91%E5%9F%9F%E9%AA%8C%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="GSC 网域验证成功"></p>
+<h3 id="提交站点地图"><a href="#提交站点地图" class="headerlink" title="提交站点地图"></a>提交站点地图</h3><p>验证域名所有权之后，进入 GSC 后台管理界面，输入 sitemap 地址并点击提交即可。谷歌的收录是比较快速的，两天左右就能够在谷歌通过 <code>site:博客网址</code> 的方式检索到收录结果了。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/33-GSC%E6%8F%90%E4%BA%A4%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE.png" alt="GSC 提交站点地图"></p>
+<h2 id="让-360-搜索收录网站"><a href="#让-360-搜索收录网站" class="headerlink" title="让 360 搜索收录网站"></a>让 360 搜索收录网站</h2><h3 id="注册-360-站长平台"><a href="#注册-360-站长平台" class="headerlink" title="注册 360 站长平台"></a>注册 360 站长平台</h3><p>注册并登录<a href="zhanzhang.so.com/">360 站长平台</a>，添加网站。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/22-360%E7%AB%99%E9%95%BF%E5%B9%B3%E5%8F%B0%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99.png" alt="360 站长平台添加网站"></p>
+<p>添加网站后需要进行验证，选择「代码验证」，复制 <code>content</code> 后的字符串，后面会用到。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/23-360%E7%BD%91%E7%AB%99%E4%BB%A3%E7%A0%81%E9%AA%8C%E8%AF%81.png" alt="代码验证"></p>
+<h3 id="360-验证域名"><a href="#360-验证域名" class="headerlink" title="360 验证域名"></a>360 验证域名</h3><p>修改站点配置文件 <code>_config.yml</code> ：</p>
+<figure class="highlight diff"><figcaption><span>.\_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"># Define custom file paths.</span><br><span class="line"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span><br><span class="line">custom_file_path:</span><br><span class="line"><span class="deletion">- #head: source/_data/head.swig</span></span><br><span class="line"><span class="addition">+ head: source/_data/head.swig</span></span><br><span class="line">  #header: source/_data/header.swig</span><br></pre></td></tr></table></figure>
+
+<p>然后在 <code>博客根目录\source\_data</code> 下新建 <code>head.swig</code> 文件，然后打开并新增以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% if theme.so_site_verification %&#125;</span><br><span class="line">  &lt;meta name=&quot;360-site-verification&quot; content=&quot;&#123;&#123; theme.so_site_verification &#125;&#125;&quot;/&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<p>上面代码是利用了 Next 主题的 <a href="https://theme-next.js.org/docs/advanced-settings.html#Injects">Inject 功能</a>，以上代码的含义为如果在 <code>_config.yml</code> 中存在 <code>so_site_verification</code>  这一设置项，则会将 <code>&lt;meta name=&quot;360-site-verification&quot; content=&quot;so_site_verification 设置项的 value&quot;/&gt;</code>插入到网站首页 HTML 代码的 <code>&lt;head&gt;&lt;/head&gt;</code> 标签中。</p>
+<p>再次修改站点配置文件 <code>_config.yml</code>，在 <code>SEO Settings</code>区域新增以下内容 ：</p>
+<figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line"><span class="meta"># 360 Webmaster tools verification.</span></span><br><span class="line"><span class="meta"># See: zhanzhang.so.com/sitetool</span></span><br><span class="line"><span class="symbol">so_site_verification:</span> 此处填写之前复制的验证字符串</span><br></pre></td></tr></table></figure>
+
+<p>修改完成后，执行 <code>hexo g -d</code> 命令重新生成并部署网站，部署生效后，回到 360 站长平台，「点击验证」即可。如果网站已经开启了 HTTPS 访问，不要忘记「设置 https」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/24-360%E7%AB%99%E9%95%BF%E5%B9%B3%E5%8F%B0%E9%AA%8C%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="360 站长平台验证成功"></p>
+<h3 id="提交-sitemap"><a href="#提交-sitemap" class="headerlink" title="提交 sitemap"></a>提交 sitemap</h3><p>360 站长平台体验很一般，连 HTTPS 都没上，然后在进行 sitemap 提交的时候，第一天页面就一直报「连接超时」，完全无法提交。第二天终于不报错了，可以正常提交了，页面也显示成功提交，但添加完以后 sitemap 列表却一直是空的，让人很困惑，不知道这到底是添加成功了但还没爬取呢还是压根就没添加上。终于第三天一切顺利，成功添加并显示了。</p>
+<p>我一开始提交的是<strong>只有裸域名</strong>的 sitemap 地址，但是几天后发现无法抓取到任何链接，于是我尝试在域名前加上 <code>www</code>，没想到还真有效果，很快就把全部链接都给抓取到了。具体的原因目前我也没有弄清楚。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/6-360%E6%8F%90%E4%BA%A4sitemap.png" alt="360 站长平台提交sitemap"></p>
+<h2 id="让搜狗收录网站"><a href="#让搜狗收录网站" class="headerlink" title="让搜狗收录网站"></a>让搜狗收录网站</h2><h3 id="注册搜狗站长平台"><a href="#注册搜狗站长平台" class="headerlink" title="注册搜狗站长平台"></a>注册搜狗站长平台</h3><p>注册并登录<a href="http://zhanzhang.sogou.com/">搜狗站长平台</a>，我在这里很想吐槽，这都 2020 年了，360 和搜狗的站长平台居然<strong>都还没上 HTTPS</strong>，我一度怀疑自己是不是进了伪造网站。这样给我的感觉就是完全没有用心在做搜索。</p>
+<p>搜狗的添加网站也和别家不一样，很奇葩地单独设置在「用户中心」里，体验上很割裂。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/27-%E6%90%9C%E7%8B%97%E7%AB%99%E9%95%BF%E5%B9%B3%E5%8F%B0%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99.png" alt="搜狗站长平台添加网站"></p>
+<h3 id="搜狗验证域名"><a href="#搜狗验证域名" class="headerlink" title="搜狗验证域名"></a>搜狗验证域名</h3><p>填加网站后同样需要验证，这次我们图省事，直接选择「文件验证」，点击「下载验证文件」，将 <code>sogousiteverification.txt</code> 下载到 <code>博客根目录\public</code> 文件夹里面，然后直接执行 <code>hexo d</code> 命令部署网站，部署生效后，回到搜狗站长平台「完成验证」。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/28-%E6%90%9C%E7%8B%97%E5%9F%9F%E5%90%8D%E6%96%87%E4%BB%B6%E9%AA%8C%E8%AF%81.png" alt="搜狗域名文件验证"></p>
+<h3 id="提交链接"><a href="#提交链接" class="headerlink" title="提交链接"></a>提交链接</h3><p>搜狗站长平台居然不支持 sitemap 提交，说是采取邀请制，这波操作反正我是看不懂。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/30-%E6%90%9C%E7%8B%97%E4%B8%8D%E6%94%AF%E6%8C%81sitemap.png" alt="搜狗不支持 sitemap"></p>
+<p>那只能退而求其次，手动提交链接了，得亏是我现在文章还比较少。不过倒可以等文章更多一些，试着申请一下开通 sitemap 提交权限。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/31-%E6%90%9C%E7%8B%97%E6%8F%90%E4%BA%A4%E9%93%BE%E6%8E%A5.png" alt="搜狗提交链接"></p>
+<h2 id="让-Bing-搜索收录网站"><a href="#让-Bing-搜索收录网站" class="headerlink" title="让 Bing 搜索收录网站"></a>让 Bing 搜索收录网站</h2><p>Bing 我之前并没有申请过收录，但是在使用 <code>site:asurada.zone</code> 检查收录情况时，居然惊喜地发现已经收录了我的博客，虽然仅仅只有一条链接。</p>
+<h3 id="直接从-Google-Search-Console-导入网站"><a href="#直接从-Google-Search-Console-导入网站" class="headerlink" title="直接从 Google Search Console 导入网站"></a>直接从 Google Search Console 导入网站</h3><p>打开<a href="https://www.bing.com/webmaster">Bing Webmaster</a>，使用绑定了 Google Search Console（后面简称 GSC） 的谷歌账号登录，这样后面就可以很方便地直接从 GSC 直接导入网站，而不需要再单独验证网站。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/25-BingWebmasterGSC%E7%9B%B4%E6%8E%A5%E5%AF%BC%E5%85%A5.png" alt=" GSC 直接导入"></p>
+<h3 id="提交网站地图"><a href="#提交网站地图" class="headerlink" title="提交网站地图"></a>提交网站地图</h3><p>按理说应该可以直接从 GSC 获取网站地图，但我的并没有获取到，不管了，手动提交也很简单。Bing 处理 sitemap 的时间大概在一天左右。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/26-Bing%E6%8F%90%E4%BA%A4%E7%BD%91%E7%AB%99%E5%9C%B0%E5%9B%BE.png" alt="Bing 提交网站地图"></p>
+<h2 id="让-Yandex-搜索收录网站"><a href="#让-Yandex-搜索收录网站" class="headerlink" title="让 Yandex 搜索收录网站"></a>让 Yandex 搜索收录网站</h2><h3 id="注册-Yandex-Webmaster"><a href="#注册-Yandex-Webmaster" class="headerlink" title="注册 Yandex Webmaster"></a>注册 Yandex Webmaster</h3><p>注册并登录<a href="webmaster.yandex.com">Yandex Webmaster</a>，这里<strong>有一个坑需要注意</strong>，Yandex 目前是可以直连的，但是在注册账号的时候，你会发现在最后一步输入验证码的时候，不管你怎么填总会提示验证码错误。而且 Yandex 的验证码是很奇葩的两张图片，让我弄不清楚是该输其中一张图片的内容还是怎么着，折腾了半天。最后在网上查到的解决方法是<strong>不要直连，而是通过科学上网</strong>进行注册，这时再输验证码就不会报错了，无语，验证码是两张图片的内容都要输入。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/35-YandexWebmaster.png" alt="Yandex Webmaster"></p>
+<h3 id="Yandex-验证域名"><a href="#Yandex-验证域名" class="headerlink" title="Yandex 验证域名"></a>Yandex 验证域名</h3><blockquote>
+<p>此项配置基于 Hexo 5.0.2，Next 7.8.0</p>
+</blockquote>
+<p>进入 Webmaster 后台管理界面添加域名，这里<strong>需要注意的是</strong>和在其他站长平台添加网址不一样，Yandex 在添加网址时就需要写清楚<strong>带不带 <code>www</code><strong>，是使用 <code>http</code> 还是 <code>https</code>，</strong>默认是使用 <code>http</code> 的</strong>。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/7-Yandex%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9.png" alt="Yandex 添加网址注意事项"></p>
+<p>选择域名验证方式，因为 Next 主题直接内置 Yandex 的验证，所以我们选择「Meta tag」验证，复制 <code>content</code> 后双引号内的字符串。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/34-Yandex%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99.png" alt="Yandex 添加网站"></p>
+<p>打开 Next 主题配置文件 <code>next.yml</code>，搜索关键字 ”Yandex”，找到<code>yandex_site_verification</code>，填入刚刚复制的字符串。</p>
+<figure class="highlight diff"><figcaption><span>博客根目录\source\_data\next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"># Yandex Webmaster tools verification.</span><br><span class="line"># See: https://webmaster.yandex.ru</span><br><span class="line"><span class="deletion">- yandex_site_verification:</span></span><br><span class="line"><span class="addition">+ yandex_site_verification: 4aca0e5ccd3fbc2f</span></span><br></pre></td></tr></table></figure>
+<p>修改完成后，执行 <code>hexo g -d</code> 命令重新生成并部署网站，部署生效后，回到 Yandex Webmaster，点击 “Check” 即可。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/36-Yandex%E5%AE%8C%E6%88%90%E9%AA%8C%E8%AF%81.png" alt="Yandex 完成验证"></p>
+<h3 id="提交-sitemap-1"><a href="#提交-sitemap-1" class="headerlink" title="提交 sitemap"></a>提交 sitemap</h3><p>验证完成后，在左侧菜单「Indexing」–&gt; 「Sitemap files」中提交 sitemap ，然后等待两天时间即可完成 sitemap 的收录和牵引。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/9-YandexSitemap%E6%94%B6%E5%BD%95%E6%88%90%E5%8A%9F.png" alt="Yandex Sitemap 收录成功"></p>
+<p>之后就可以在左侧菜单「Indexing」–&gt; 「Searchable pages」中查看网站的哪些页面已经被 Yandex 搜索引擎所收录。</p>
+<h2 id="让头条搜索收录网站"><a href="#让头条搜索收录网站" class="headerlink" title="让头条搜索收录网站"></a>让头条搜索收录网站</h2><h3 id="注册头条站长平台"><a href="#注册头条站长平台" class="headerlink" title="注册头条站长平台"></a>注册头条站长平台</h3><p>注册并登录<a href="zhanzhang.toutiao.com">头条搜索站长平台</a>，添加网站。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-%E5%A4%B4%E6%9D%A1%E7%AB%99%E9%95%BF%E5%B9%B3%E5%8F%B0.png" alt="头条站长平台"></p>
+<h3 id="头条验证网站"><a href="#头条验证网站" class="headerlink" title="头条验证网站"></a>头条验证网站</h3><p>头条现在的验证方式非常单一，只能通过「文件校验」的方式来验证。直接下载验证文件并将其移动到博客根目录下的 <code>public</code> 文件夹里面。然后执行 <code>hexo d</code> 命令部署网站，部署生效后，回到站长平台完成验证。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/2-%E5%A4%B4%E6%9D%A1%E7%BD%91%E7%AB%99%E9%AA%8C%E8%AF%81.png" alt="头条网站文件验证"></p>
+<h3 id="提交-sitemap-2"><a href="#提交-sitemap-2" class="headerlink" title="提交 sitemap"></a>提交 sitemap</h3><p>验证完毕后，提交 sitemap。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/3-%E5%A4%B4%E6%9D%A1%E6%8F%90%E4%BA%A4sitemap.png" alt="头条提交 sitemap"></p>
+<p>提交完成后，即可在页面下方查看 sitemap 的更新情况：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/8-%E5%A4%B4%E6%9D%A1sitemap%E6%94%B6%E5%BD%95%E6%83%85%E5%86%B5.png" alt="头条 sitemap 收录情况"></p>
+<h2 id="让神马搜索收录网站"><a href="#让神马搜索收录网站" class="headerlink" title="让神马搜索收录网站"></a>让神马搜索收录网站</h2><h3 id="注册神马站长平台"><a href="#注册神马站长平台" class="headerlink" title="注册神马站长平台"></a>注册神马站长平台</h3><p>注册并登录<a href="zhanzhang.sm.cn">神马搜索站长平台</a>，添加网站。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/4-%E7%A5%9E%E9%A9%AC%E7%AB%99%E9%95%BF%E5%B9%B3%E5%8F%B0.png" alt="神马站长平台"></p>
+<h3 id="验证网站"><a href="#验证网站" class="headerlink" title="验证网站"></a>验证网站</h3><p>直接下载验证文件 <code>shenma-site-verification.txt</code> 并将其移动到博客根目录下的 <code>public</code> 文件夹里面。然后执行 <code>hexo d</code> 命令部署网站，部署生效后，回到站长平台完成验证。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/5-%E7%A5%9E%E9%A9%AC%E7%BD%91%E7%AB%99%E6%96%87%E4%BB%B6%E9%AA%8C%E8%AF%81.png" alt="神马网站文件验证"></p>
+<h3 id="放弃神马收录"><a href="#放弃神马收录" class="headerlink" title="放弃神马收录"></a>放弃神马收录</h3><p>神马在验证网站时，不管是文件验证还是代码验证，我多次尝试都以失败告终，使用体验极差，遂弃之。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>各大搜索引擎的收录步骤都是大同小异的，没啥太大的难度，一步步来就可以了。</p>
+<p>整体体验下来，感觉搜狗、神马压根就没想把自己的搜索给做起来了，体验一塌糊涂。360 体验稍好一点，不过作为国内搜索的老二，站长平台连个 HTTPS 都不上，属实说不过去。相较于国内参差不齐的体验，国外主流搜索引擎的站长平台的各种体验都要好上不少，人家强是有道理的。</p>
+<p>最后想说的，也是对自己的勉励，那就是「<strong>内容才是第一要素</strong>」。SEO 技巧是为内容服务的，收录只是第一步，收录以后还需要持续更新博客，写有价值、有内容的文章，这样才能吸引他人点击和浏览，乃至分享引用，这样可以增加网站曝光以及提高搜索引擎权重，从而得到更好的搜索引擎排名，让更多的人看到，实现正向循环。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://tding.top/archives/4ea54752.html">Hexo-NexT 博客提交搜索引擎收录</a></p>
+<p><a href="https://www.itrhx.com/2019/09/17/A48-submit-search-engine-inclusion/">Hexo 博客提交百度、谷歌搜索引擎收录</a></p>
 ]]></content>
       <categories>
-        <category>小事</category>
+        <category>个人博客</category>
       </categories>
       <tags>
-        <tag>正版</tag>
-        <tag>Windows</tag>
+        <tag>Hexo</tag>
+        <tag>SEO</tag>
       </tags>
   </entry>
   <entry>
@@ -197,639 +327,6 @@
         <tag>Hexo</tag>
         <tag>GitHub</tag>
         <tag>DNS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git 常用命令备忘录</title>
-    <url>/post/Git-Cheat-Sheet/</url>
-    <content><![CDATA[<p>一些不太常用的 Git 命令往往隔一段时间不用就忘记了，特写此篇备忘。</p>
-<span id="more"></span>
-
-<h2 id="配置-User-信息"><a href="#配置-User-信息" class="headerlink" title="配置 User 信息"></a>配置 User 信息</h2><h3 id="添加-User-信息"><a href="#添加-User-信息" class="headerlink" title="添加 User 信息"></a>添加 User 信息</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config [--global | --local] user.name &#x27;your_name&#x27;</span><br><span class="line">git config [--global | --local] user.email &#x27;your_email&#x27;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>默认为 local，所以只有需要设置全局时需要带 –global 参数，–local 参数可以直接省略。</li>
-<li>单引号不是必须的，可以省略。一般只在输入的内容之中含有空格的时候需要使用单引号。</li>
-</ul>
-<h3 id="查看-User-信息"><a href="#查看-User-信息" class="headerlink" title="查看 User 信息"></a>查看 User 信息</h3><p>使用以下命令查看所有全局&#x2F;局部配置信息：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list [--local | --global | --system]</span><br></pre></td></tr></table></figure>
-
-<p>或者使用以下命令直接查看具体设置：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config [--global | --local] user.name</span><br><span class="line">git config [--global | --local] user.email</span><br></pre></td></tr></table></figure>
-
-<h3 id="global-与-local-优先级以及配置文件所在位置"><a href="#global-与-local-优先级以及配置文件所在位置" class="headerlink" title="global 与 local 优先级以及配置文件所在位置"></a>global 与 local 优先级以及配置文件所在位置</h3><p>local &gt; global</p>
-<p>local 配置位于当前仓库的 .git 文件夹下的 config 文件中。</p>
-<p>global 配置位于当前用户 home 目录下的 .gitconfig 文件中。</p>
-<h2 id="独自使用-Git-常见使用场景"><a href="#独自使用-Git-常见使用场景" class="headerlink" title="独自使用 Git 常见使用场景"></a>独自使用 Git 常见使用场景</h2><h3 id="git-log-常用参数"><a href="#git-log-常用参数" class="headerlink" title="git log 常用参数"></a>git log 常用参数</h3><ul>
-<li>git log –all 查看所有分支的历史</li>
-<li>git log –graph 图形化查看 log 历史</li>
-<li>git log –oneline 查看单行的简洁历史</li>
-<li>git log -n 查看最近 n 条历史</li>
-</ul>
-<h3 id="删除不需要的分支"><a href="#删除不需要的分支" class="headerlink" title="删除不需要的分支"></a>删除不需要的分支</h3><p>普通删除(如果当前分支没有被合并，不能直接删除)：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git branch -d 分支名</span><br></pre></td></tr></table></figure>
-
-<p>强制删除：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git branch -D 分支名</span><br></pre></td></tr></table></figure>
-
-<h3 id="修改最近一次的-commit-内容"><a href="#修改最近一次的-commit-内容" class="headerlink" title="修改最近一次的 commit 内容"></a>修改最近一次的 commit 内容</h3><p>命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git commit --amend</span><br></pre></td></tr></table></figure>
-
-<h3 id="修改最近一次-commit-的作者"><a href="#修改最近一次-commit-的作者" class="headerlink" title="修改最近一次 commit 的作者"></a>修改最近一次 commit 的作者</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git commit --amend --author=&quot;AuthorName &lt;email@address.com&gt;&quot; --no-edit</span><br></pre></td></tr></table></figure>
-
-<p>其中 <code>no-edit</code> 的作用是表明此次修改仅修改作者，而不需要对 <code>commit message</code> 进行改动，所以不需要启动编辑器。</p>
-<h3 id="修改老旧-commit-的-message"><a href="#修改老旧-commit-的-message" class="headerlink" title="修改老旧 commit 的 message"></a>修改老旧 commit 的 message</h3><ol>
-<li><p>进入交互式变基策略修改：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i 想要修改的提交节点的父节点的 HASH 值</span><br></pre></td></tr></table></figure>
-
-<p>如果想要修改第一次提交，也就是最早的那次提交，没有父节点的提交，使用命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i --root</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改策略：</p>
-<p>在 vi 模式下将想要修改的 commit 前面的选项由 pick 变更为 r 或者 reword，这一选项的含义为此 commit 的内容不变，只修改其 commit message。</p>
-</li>
-<li><p>修改 commit message</p>
-</li>
-</ol>
-<p>注意事项：某个 commit 修改后，它本身以及它后面所有 commit 的 hash 值都会发生变化，这是因为message 也是 commit 的属性，是确定 commit 的 hash 值的一个因子。其次，second_commit 有个 parent 的属性，parent 的内容发生了变化，因此，second_commit 的 hash 也变了。</p>
-<p>如果最早的提交也即 root commit 发生了变化，那么会产生一个新的 root commit，即出现了两个祖宗 commit。</p>
-<h3 id="把连续的多个-commit-整理成一个"><a href="#把连续的多个-commit-整理成一个" class="headerlink" title="把连续的多个 commit 整理成一个"></a>把连续的多个 commit 整理成一个</h3><ol>
-<li><p>进入交互式变基策略修改：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i 想要修改的提交节点的父节点的 HASH 值</span><br></pre></td></tr></table></figure>
-
-<p>如果想要修改第一次提交，也就是最早的那次提交，没有父节点的提交，使用命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i --root</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改策略：</p>
-<p>将准备被合并的 commit 前面的选项由 pick 改为 s 或者 squash，这一选项的含义为继续使用这一 commit，但是将其合并到前面(比它老)的那一个 commit 里面去，想要合并哪几个就将这几个前面的选项都改成 s。</p>
-</li>
-<li><p>修改 commit message</p>
-</li>
-</ol>
-<h3 id="把间隔的多个-commit-整理成一个"><a href="#把间隔的多个-commit-整理成一个" class="headerlink" title="把间隔的多个 commit 整理成一个"></a>把间隔的多个 commit 整理成一个</h3><p>原理和方法同“把连续的多个 commit 整理成一个”是一样的，只是 rebase 策略的不一样：</p>
-<ul>
-<li>将想要整理的 commit 通过剪切，按照自己想要的顺序移动到一起，排在上面的是越老的</li>
-<li>将想要整理的 commit 前面的选项变更为 s</li>
-<li>最后这些 commit 会同上方最近的一个选项为 pick 的 commit 合并</li>
-</ul>
-<p>会用到的 vim 快捷键：</p>
-<figure class="highlight less"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">dd</span>	<span class="comment">//剪切一行，也可以用来删除一行</span></span><br><span class="line"><span class="selector-tag">dw</span>	<span class="comment">//删除一个单词</span></span><br><span class="line"><span class="selector-tag">u</span>	<span class="comment">//撤销</span></span><br><span class="line"><span class="selector-tag">p</span>	<span class="comment">//粘贴</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="比较暂存区和-HEAD-所含文件的差异"><a href="#比较暂存区和-HEAD-所含文件的差异" class="headerlink" title="比较暂存区和 HEAD 所含文件的差异"></a>比较暂存区和 HEAD 所含文件的差异</h3><p>HEAD 所含文件就是最新一个 commit 内的文件内容</p>
-<figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">git diff <span class="comment">--cached</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="比较工作区和暂存区所含文件的差异"><a href="#比较工作区和暂存区所含文件的差异" class="headerlink" title="比较工作区和暂存区所含文件的差异"></a>比较工作区和暂存区所含文件的差异</h3> <figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git diff</span></span><br></pre></td></tr></table></figure>
-
-<p>后面可以接“– 单个或多个文件名”来查看特定文件的差异</p>
-<h3 id="比较工作区和-HEAD-所含文件的差异"><a href="#比较工作区和-HEAD-所含文件的差异" class="headerlink" title="比较工作区和 HEAD 所含文件的差异"></a>比较工作区和 HEAD 所含文件的差异</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git diff HEAD</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="让暂存区恢复成和-HEAD-一样"><a href="#让暂存区恢复成和-HEAD-一样" class="headerlink" title="让暂存区恢复成和 HEAD 一样"></a>让暂存区恢复成和 HEAD 一样</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git reset HEAD</span></span><br></pre></td></tr></table></figure>
-
-<p>git reset 默认的参数为 –mixed</p>
-<h3 id="让工作区的文件恢复为和暂存区一样"><a href="#让工作区的文件恢复为和暂存区一样" class="headerlink" title="让工作区的文件恢复为和暂存区一样"></a>让工作区的文件恢复为和暂存区一样</h3><figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">git checkout <span class="comment">-- 文件名</span></span><br></pre></td></tr></table></figure>
-
-<p>Git 2.23 版本以后使用 <code>git restore</code>命令来代替<code>git checkout</code>功能</p>
-<h3 id="取消暂存区部分文件的更改"><a href="#取消暂存区部分文件的更改" class="headerlink" title="取消暂存区部分文件的更改"></a>取消暂存区部分文件的更改</h3><p>将暂存区部分文件取消暂存的意思是所做的改动继续保留在工作目录，暂存区部分的内容同 HEAD 保持一致。</p>
-<figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">reset</span> HEAD <span class="comment">--文件名</span></span><br></pre></td></tr></table></figure>
-
-<p>Git 新版本使用：</p>
-<figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">restore</span> --staged &lt;<span class="keyword">file</span>&gt;</span><br></pre></td></tr></table></figure>
-
-<p>两条命令作用是一样的。</p>
-<h3 id="消除最近的几次提交"><a href="#消除最近的几次提交" class="headerlink" title="消除最近的几次提交"></a>消除最近的几次提交</h3><figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">reset</span> <span class="comment">--hard &lt;hash&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>将工作区和暂存区的内容都恢复到 hash 值所对应的那个 commit 的状态。</p>
-<h3 id="看不同提交的指定文件的差异"><a href="#看不同提交的指定文件的差异" class="headerlink" title="看不同提交的指定文件的差异"></a>看不同提交的指定文件的差异</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">git diff <span class="selector-attr">[from_commit]</span> <span class="selector-attr">[to_commit]</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="正确删除文件的方法"><a href="#正确删除文件的方法" class="headerlink" title="正确删除文件的方法"></a>正确删除文件的方法</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">git rm <span class="tag">&lt;<span class="name">filename</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="本地与远程仓库的交互"><a href="#本地与远程仓库的交互" class="headerlink" title="本地与远程仓库的交互"></a>本地与远程仓库的交互</h2><h3 id="让-Fork-的仓库同源仓库保持更新"><a href="#让-Fork-的仓库同源仓库保持更新" class="headerlink" title="让 Fork 的仓库同源仓库保持更新"></a>让 Fork 的仓库同源仓库保持更新</h3><h4 id="添加源仓库"><a href="#添加源仓库" class="headerlink" title="添加源仓库"></a>添加源仓库</h4><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">git remote <span class="built_in">add</span> upstream 源仓库链接</span><br></pre></td></tr></table></figure>
-
-<h4 id="同步更新"><a href="#同步更新" class="headerlink" title="同步更新"></a>同步更新</h4><ol>
-<li>如果在另一个分支上，就切换到 master 分支</li>
-</ol>
-<figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">git checkout <span class="literal">master</span></span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>从源仓库抓取最新更改后，合并到本地 master 分支</li>
-</ol>
-<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git pull upstream</span></span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>将本地 master 分支推送到自己 Fork 的远程仓库  origin</li>
-</ol>
-<figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="进阶版"><a href="#进阶版" class="headerlink" title="进阶版"></a>进阶版</h4><ol>
-<li>将 master 分支的上游仓库设置为源仓库</li>
-</ol>
-<figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">git branch --<span class="attr">set-upstream-to=</span>upstream/<span class="keyword">master</span> <span class="title">master</span></span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>将 push 命令推送的默认仓库设置为自己 Forked 的仓库 origin</li>
-</ol>
-<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">config</span> <span class="comment">--local remote.pushDefault origin</span></span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>搞定之后，工作流程为更加简单：</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git pull	//默认从源仓库拉取最新的更新</span><br><span class="line">git push	//将拉取的更新推送到 Forked 的仓库</span><br></pre></td></tr></table></figure>
-
-<h3 id="推送一个新的分支到远程仓库"><a href="#推送一个新的分支到远程仓库" class="headerlink" title="推送一个新的分支到远程仓库"></a>推送一个新的分支到远程仓库</h3><p>-u 是 –set-upstream 的简写，该标记会为之后轻松地推送与拉取配置分支</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git push -u remote_name new_branch_name</span><br></pre></td></tr></table></figure>
-
-<h3 id="清理本地无效的远程追踪分支"><a href="#清理本地无效的远程追踪分支" class="headerlink" title="清理本地无效的远程追踪分支"></a>清理本地无效的远程追踪分支</h3><p>利用选项 –prune</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">git remote update -<span class="selector-tag">p</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="远程删除了分支本地也想删除"><a href="#远程删除了分支本地也想删除" class="headerlink" title="远程删除了分支本地也想删除"></a>远程删除了分支本地也想删除</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git remote prune origin</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h3><figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span> --<span class="built_in">delete</span> &lt;remote-branchname&gt;</span><br></pre></td></tr></table></figure>
-
-<p>或者</p>
-<figure class="highlight elixir"><table><tr><td class="code"><pre><span class="line">git push origin <span class="symbol">:&lt;remote-branchname&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="从远程分支中创建并切换到本地分支"><a href="#从远程分支中创建并切换到本地分支" class="headerlink" title="从远程分支中创建并切换到本地分支"></a>从远程分支中创建并切换到本地分支</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">git checkout -b <span class="tag">&lt;<span class="name">branch-name</span>&gt;</span> <span class="tag">&lt;<span class="name">remote-name</span>&gt;</span>/<span class="tag">&lt;<span class="name">branch-name</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://github.com/521xueweihan/git-tips">Git的奇技淫巧</a></p>
-]]></content>
-      <categories>
-        <category>开发环境</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>雷蛇炼狱蝰蛇2013 更换中键微动</title>
-    <url>/post/RepairTheDeathadder2013/</url>
-    <content><![CDATA[<p>第一次自己动手修鼠标，挺好玩的。</p>
-<span id="more"></span>
-
-<h2 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h2><p>这款炼狱蝰蛇 2013 是自己四年前买的，之前一直用得好好的，但最近滚轮的按键功能突然失效了，表现为能够正常按压，但无法正常触发按键功能。在日常浏览网页时，我习惯用中键来关闭标签页以及在新窗口打开链接，现在中键突然失灵了，对我的日常使用造成了很大的不便。</p>
-<p>之前有在网上看过不少帖子都是自己修鼠标，感觉也不是很难，所以这次我也尝试一下来自己修鼠标。</p>
-<h2 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h2><p>1.电烙铁<br>2.镊子<br>3.十字螺丝刀<br>4.新中键微动<br>5.焊锡丝<br>6.小刀</p>
-<h2 id="拆解鼠标"><a href="#拆解鼠标" class="headerlink" title="拆解鼠标"></a>拆解鼠标</h2><p>通过搜索在什么值得买上面找到了这篇<a href="https://post.smzdm.com/p/568792/">维修教程</a>，虽然文中问题是鼠标出现了双击的现象，和我的问题并不相同，但同样都是通过更换微动来解决问题，而且各个步骤都比较详细，给我提供了很大的帮助。</p>
-<p>首先用刀片分别将鼠标背面左右上角的两个脚垫撬下来，两个脚垫是通过胶粘上去的，撬下来以后保存好，后面还原的时候还可以再粘回去。去掉两个脚垫后就可以看到里面的两颗螺丝了。这两颗螺丝可以直接拧下。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8E%BB%E9%99%A4%E8%84%9A%E5%9E%AB.jpg" alt="去除脚垫"></p>
-<p>需要注意的是第三颗螺丝的位置，是隐藏在贴纸的下方，位置如下图所示，直接用螺丝刀捅破贴纸即可看到。这颗螺丝拧出一定距离即可，不必全部拧出。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%9A%90%E8%97%8F%E7%9A%84%E7%AC%AC%E4%B8%89%E9%A2%97%E8%9E%BA%E4%B8%9D.jpg" alt="隐藏的第三颗螺丝"></p>
-<p>三颗螺丝处理完毕后，从下图所示处往下掰，即可打开鼠标上盖，打开时小心不要用力过猛，因为上盖上有一根灯光线和主板相连，不小心的话可能会扯断。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%8E%B0%E5%BC%80%E5%A4%96%E5%A3%B3.jpg" alt="掰开外壳"></p>
-<p>断开上盖与主板的连线后，即可移走上盖，看到鼠标主板。接下来如下图所示依次卸下主板上的三颗固定螺丝、左侧按键微动上的两颗螺丝以及滚轮旁边的小黑色螺丝后，最后再断开两根排线，即可取下主板。注意保管好螺丝，特别那颗较小的黑色螺丝。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%8B%86%E5%8D%B8%E4%B8%BB%E6%9D%BF.png" alt="拆卸主板"></p>
-<h2 id="更换微动"><a href="#更换微动" class="headerlink" title="更换微动"></a>更换微动</h2><p>观察主板可以看到滚轮横杆右侧的下方有一颗正方形微动，判断应该就是这个地方的微动损坏导致中键失灵。于是在万能的淘宝上花八毛钱+七块钱运费买了一个新的微动。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E8%80%81%E5%BE%AE%E5%8A%A8.jpg" alt="新老微动"></p>
-<p>因为没有吸锡器，可以直接用电烙铁加热主板背面的焊点，然后边加热边拔也是可以把微动给卸下来的。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8D%B8%E4%B8%8B%E5%BE%AE%E5%8A%A8.jpg" alt="卸下微动"></p>
-<p>微动只是一个开关，不区分方向，将新微动针脚插入到主板对应孔位上，然后用电烙铁和焊锡对准针脚化开焊锡即可完成更换。如果卸旧微动的时候焊孔内还残留有焊锡也不用担心，直接加热焊孔，将焊锡加热到流动状，这时新微动针脚可以轻松穿过焊孔。</p>
-<h2 id="重装鼠标"><a href="#重装鼠标" class="headerlink" title="重装鼠标"></a>重装鼠标</h2><p>按照刚刚的拆解步骤一步一步还原即可，排线全都有防呆设计，也不需要担心会接反。<br><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%87%8D%E8%A3%85%E9%BC%A0%E6%A0%87.jpg" alt="重装鼠标"></p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%BB%A1%E8%A1%80%E5%A4%8D%E6%B4%BB.jpg" alt="满血复活"></p>
-<p>最后自然是连接电脑进行测试，功能一切正常，又可以愉快地使用中键了。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在有帖子可以参考的情况下，整个更换过程还是比较简单的，最大的困难可能是大部分同学没有电烙铁，专门为此添置一个可能显得有些本末倒置，毕竟电烙铁也不便宜。</p>
-<p>自己动手，丰衣足食。人生第一次自己动手更换鼠标，成就感还是不小的。看到鼠标在自己手里满血复活，开心。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://post.smzdm.com/p/568792/">“拿什么拯救你，我的双击蛇”— 手把手教你更换Razer炼狱蝰蛇鼠标微动</a></p>
-]]></content>
-      <categories>
-        <category>小事</category>
-      </categories>
-      <tags>
-        <tag>DIY</tag>
-        <tag>外设</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo Next 主题 V7 升级 V8 记录</title>
-    <url>/post/Update-Next-From-V7-To-V8/</url>
-    <content><![CDATA[<p>Hexo 和 Next 最近都发布了大版本更新，此文记录了升级过程。</p>
-<span id="more"></span>
-
-<h2 id="升级-Hexo-版本"><a href="#升级-Hexo-版本" class="headerlink" title="升级 Hexo 版本"></a>升级 Hexo 版本</h2><p>Hexo 核心团队成员 Sukka 写的 <a href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a>详细介绍了 Hexo 5.0 的新特性，以及从 Hexo 4.x 升级到 Hexo 5.x 需要注意的地方。</p>
-<p>Hexo 5.0 版本带来了不小的性能上的提升，升级 5.0 直接修改 <code>hexo-site/package.json</code> 文件：</p>
-<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&quot;dependencies&quot;: &#123;</span><br><span class="line"><span class="deletion">-  &quot;hexo&quot;: &quot;^4.2.1&quot;,</span></span><br><span class="line"><span class="addition">+  &quot;hexo&quot;: &quot;^5.1.1&quot;,</span></span><br></pre></td></tr></table></figure>
-
-<p>然后再执行 <code>npm upadte</code> 命令即可。</p>
-<p>升级完 Hexo ，<code>_config.yml</code> 并不会更新，而 Hexo 5.0 是有新增和改动一些其中的配置项的，所以需要我们自己去 <a href="https://github.com/hexojs/hexo-starter/blob/master/_config.yml">GitHub</a> 上查看站点配置文件的变动情况，并手动同步这些修改到自己的站点配置文件里。</p>
-<p>主要的变动就是新增了 <code>prismjs</code> 相关配置项以及更新了 <code>updated_option</code> 配置项。</p>
-<h2 id="升级-Next-V8-0-0-版本"><a href="#升级-Next-V8-0-0-版本" class="headerlink" title="升级 Next V8.0.0 版本"></a>升级 Next V8.0.0 版本</h2><p>使用 Hexo 5.0 及以上版本，升级 Next 主题最简单的方法就是通过 <code>npm</code> 安装，进入博客根目录，执行以下命令即可安装最新版本的 Next 主题：</p>
-<figure class="highlight autoit"><table><tr><td class="code"><pre><span class="line">npm install hexo-theme-<span class="keyword">next</span></span><br></pre></td></tr></table></figure>
-<p>通过 <code>npm</code> 安装的 Next 主题默认文件夹路径为 <code>hexo-site/node_modules/hexo-theme-next</code> 。因为有一些自定义修改可能会需要我们改动主题的源文件，而因为整个 <code>node_modules/</code> 被<code>gitignore</code> 文件所忽略，将会导致我们无法用 Git 记录我们对主题源文件的修改。</p>
-<p>所以我将之前版本的 Next 主题文件夹进行改名，将 <code>hexo-site/theme/next</code> 改成了 <code>hexo-site/theme/next-V7</code>。然后将 <code>hexo-theme-next</code>  文件夹的内容复制到 <code>hexo-site/theme/next</code> 。这样就能将主题文件夹加入 Git 的管理之中了。</p>
-<p>这里切记不要直接将旧版本的 Next 主题文件夹直接删除，因为后面可能有配置以及文件需要进行迁移。</p>
-<p>更名完成后，使用 <code>hexo version</code> 查看版本号，可以看到一个硕大的 <code>Next</code> Logo 以及下方显示 <code>NexT version 8.0.0</code>，说明现在已经成功启用 Next V8 版本。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9F%A5%E7%9C%8BNext%E7%89%88%E6%9C%AC%E5%8F%B7.png" alt="查看 Next 版本号"></p>
-<h2 id="迁移配置文件"><a href="#迁移配置文件" class="headerlink" title="迁移配置文件"></a>迁移配置文件</h2><p>在之前使用 Next V7 版本的时候，我是利用 Hexo 的 Data Files 功能将主题配置放置在站点的 <code>source/_data/next.yml</code> 文件中。但这种做法在 V8 版本被官方告知已经过时，并<strong>将在一段时间后停止支持</strong>，现在推荐的做法是<a href="https://theme-next.js.org/docs/getting-started/configuration.html">使用 Alternate Theme Config 存储配置</a>，需要 Hexo 版本在 5.0 及以上。</p>
-<p>这里可以选择一步到位直接将主题配置整合到站点配置文件 <code>_config.yml</code> 中去，也可以选择依然使用独立的主题配置文件，我选择的是第二种。具体流程如下：</p>
-<h3 id="创建并配置-config-next-yml-文件"><a href="#创建并配置-config-next-yml-文件" class="headerlink" title="创建并配置 _config.next.yml 文件"></a>创建并配置 <code>_config.next.yml</code> 文件</h3><p>在博客根目录下新建 <code>_config.next.yml</code> 文件。</p>
-<p>因为 Next V8 有不少配置项发生了变更，所以我索性选择了重新配置。先将 <code>hexo-site/node_modules/hexo-theme-next/_config.yml</code> 中的内容复制到 <code>_config.next.yml</code> 中。然后用 Beyond Compare 软件对新主题配置文件 <code>_config.next.yml</code> 和旧主题配置文件 <code>source/_data/next.yml</code> 两者进行文本比较，根据自己的需求迁移整合相关配置项。</p>
-<p>修改完成后，将旧主题配置文件 <code>source/_data/next.yml</code> 改名，我是改成了 <code>next-old.yml</code>，名字随意，只要能同原来的 <code>next.yml</code> 区别开来即可。</p>
-<p>从 V7 升级到 V8 主要有下面几个变化：</p>
-<ul>
-<li>Hexo 5.0 版本移除了对于 swig 模版的支持，使用 Nunjucks 代替 swig 作为模版引擎，主题配置文件内 <code>custom_file_path</code> 支持文件的后缀也从 <code>.swig</code> 变成了 <code>.njk</code>。所以如果此前根据 swig 的语法写过自定义内容，请在更新前确认它们是与 Nunjucks 兼容的，否则会报错，且生成的页面为空白。例如， Nunjucks 只支持 <code>and</code> 运算符，需要替换掉 swig 中的 <code>&amp;&amp;</code>。</li>
-<li>Next V8 将自带的 Font Awesome 图标库由 4.7.0 版本升级为了 5.13.0 版本。此次升级并不向下兼容，所以需要修改配置文件中与 Font Awesome 相关的内容，否则图标可能无法正常显示。</li>
-<li>NexT V8 已支持一键切换 CDN 服务商，而不需要为每个插件单独设置 CDN 地址。但需要注意，如果是使用最新版的 Next，那么一定要保持 <code>internal: local</code> 的默认设置不变。</li>
-<li>如果此前配置过 Valine，需要注意将主题配置文件中的 <code>appid</code> 和 <code>appkey</code> 改为 <code>appId</code> 和 <code>appKey</code> 。否则会出现 Valine 无法正常加载的现象。</li>
-<li>由于 Velocity.js 缺乏维护，NexT V8 使用 Animate.css 代替之。两者的动画效果几乎完全一致，除了动画名称略有不同。如果在配置文件中设置了旧的名称（例如 slideDownIn），请将其移除或根据此网页选择新的动画效果：<a href="http://theme-next.js.org/animate/">http://theme-next.js.org/animate/</a></li>
-</ul>
-<p>更多详细信息，可以自行查询 Next <a href="https://github.com/next-theme/hexo-theme-next/issues/4">相关官方说明</a>以及<a href="https://theme-next.js.org/docs/">官方文档</a>。</p>
-<h3 id="迁移-Favicon-位置"><a href="#迁移-Favicon-位置" class="headerlink" title="迁移 Favicon 位置"></a>迁移 Favicon 位置</h3><p>之前我博客的 Favicon 图片啥的都是放在 <code>hexo-site/themes/next/source/images</code> 目录下面，正好趁着这次升级的机会，将图片全部移到了 <code>hexo-site/source/images</code> 下（没有这个文件夹就自己新建）。</p>
-<p>不要忘记去 <code>_config.next.yml</code> 检查下 Favicon 相关配置的文件名是否正确，默认的都带有 <code>-next</code>  后缀。</p>
-<h2 id="自定义修改迁移"><a href="#自定义修改迁移" class="headerlink" title="自定义修改迁移"></a>自定义修改迁移</h2><p>这一部分是最麻烦的，因为跨版本升级，很多源文件的位置以及名称都发生了变化，比如每篇文章结尾处的版权声明的样式文件就从 <code>post-copyright.styl</code> 变成了 <code>post-footer.styl</code>。而且模版引擎也从swig 变更成了 Nunjucks，虽然大部分内容是可以互相兼容的，但万一碰到不兼容的，排查起来就比较麻烦了。</p>
-<p>所幸我的自定义修改并不多，而且都是 Nunjucks 兼容的，所以迁移起来相对较快。在进行迁移的时候，利用类似 Beyond Compare 之类的文件比较软件可以有效提高迁移速度，推荐大家尝试。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>折腾了一天，成功从 Next V7 升级到了 V8，升级所带来肉眼可见的变化并不多，只有一些诸如赞赏按钮样式之类的小变动，其他更多都是内部的一些变动。</p>
-<p>我是喜欢自己折腾，而且及时使用新版，可以帮助发现并反馈问题，可以帮助 Next 主题更好地进行迭代。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://github.com/next-theme/hexo-theme-next">hexo-theme-next README.md</a></p>
-<p><a href="https://theme-next.js.org/docs/">Next 官方文档</a></p>
-<p><a href="https://github.com/next-theme/hexo-theme-next/issues/4">Next【必读】更新说明及常见问题 </a></p>
-<p><a href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a></p>
-]]></content>
-      <categories>
-        <category>个人博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Next</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>什么是全功能 Type-C 及显示器所需带宽如何计算</title>
-    <url>/post/What-Is-Full-Featured-Type-C/</url>
-    <content><![CDATA[<p>本文主要介绍了如何计算特定分辨率和刷新率显示器所需带宽以及对全功能 Type-C 的一些简单科普。</p>
-<span id="more"></span>
-
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>最近动了换新笔记本和显示器的念头，自己想换一台 4K 显示器，在了解相关知识的时候，经常看到要注意视频输出接口带宽的提醒。其中各种概念多且杂，初接触很容易懵圈，所以我整理汇总了一些网上的资料，以作此文。</p>
-<p>文中如有不对或不妥的地方，欢迎评论留言指出错误，不甚感激。</p>
-<h2 id="4K-60Hz-显示需要多少带宽"><a href="#4K-60Hz-显示需要多少带宽" class="headerlink" title="4K@60Hz 显示需要多少带宽"></a>4K@60Hz 显示需要多少带宽</h2><p>我们这里以一块 4K、8 bit、60 Hz 的屏幕举例，这块显示屏有 3840 * 2160 个像素点，每个像素点又由红绿蓝三个子像素构成 ，每个子像素需要 8 bit 的数据，刷新率为 60 Hz，也就是每秒需要刷新 60 次，那么每秒需要传输的数据量就是 3840 * 2160 * 3 * 8 * 60 &#x3D;  11.94 Gbit，需要的带宽就是 11.94 Gbps。</p>
-<p>上述这些数据只是我们能够在显示屏上看到的内容，实际上在传输相关画面数据的时候，还需要考虑到防止画面撕裂，以及画面对齐等等需求，需要传输比实际显示画面更多的数据，所以实际传输的数据会比上面计算的更多。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/7-%E6%98%BE%E7%A4%BA%E5%99%A8%E5%AE%9E%E9%99%85%E4%BC%A0%E8%BE%93%E6%95%B0%E6%8D%AE.png" alt="显示器实际传输数据"></p>
-<p>下面这张来自 B 站 Up 主<a href="https://space.bilibili.com/14871346#/">硬件茶谈</a>的表格详细列出了市面上常见分辨率及刷新率的组合分别所需要的带宽，其中还有各种显示器接口的相容性：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/8-%E6%98%BE%E7%A4%BA%E6%8E%A5%E5%8F%A3%E7%9B%B8%E5%AE%B9%E8%A1%A8.png" alt="显示接口相容表"></p>
-<p>显示器带宽具体的计算原理可以查看 Up 主的<a href="https://b23.tv/rbYOKW">视频-【硬件科普】4K144Hz需要传输多少数据，教你如何正确的计算显示器的带宽需求？</a>，原理及计算方法都讲得非常清楚，动画特效也是一流。</p>
-<p>在此也强烈安利下 Up 主，最早是在知乎关注他的，在知乎笔记本话题下相当活跃，后期转型成 B 站 Up 主，视频质量极高，讲解概念深入浅出，动画精致流畅，看他的视频可谓一种享受。我从 Up 主的视频里学到了很多硬件相关基础知识。而且 Up 主现在还只是一名在校大学生，让人不服不行，在此就祝愿 Up 主早日发大财吧。</p>
-<h2 id="什么是全功能-Type-C"><a href="#什么是全功能-Type-C" class="headerlink" title="什么是全功能 Type-C"></a>什么是全功能 Type-C</h2><p>同时具有<strong>数据传输、充电、显示</strong>三项功能的 Type-C 就称之为全功能 Type-C。而之所有会有「全功能」和「非全功能」的区分，是因为 Type-C 只是个<strong>接口形状</strong>。Type-C 接口是能够支持 100W PD 供电、DP 显示输出、USB 数据传输等功能没错，但 <strong>Type-C 接口的功能都是可以被增减的</strong>，所以并不是所有 Type-C 接口都同时具备数据传输、充电、显示三项功能。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/2-Type-C%E4%B8%8D%E5%90%8C%E5%8A%9F%E8%83%BD.png" alt="Type-C 不同功能说明"></p>
-<p>每台电脑上面所配备的 Type-C 接口所具备的功能是不尽相同的，厂商基于成本或是其他方面的考虑，配备的 Type-C 可能只支持 USB 数据传输功能 ，不能充电、显示，也可能配备只支持 DP 显示和数据传输的 Type-C 口，不能充电。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-TypeC%E5%8A%9F%E8%83%BD%E4%B8%8D%E9%BD%90.png" alt="Type-C 现状"></p>
-<h2 id="Type-C-的「数据传输」带宽"><a href="#Type-C-的「数据传输」带宽" class="headerlink" title="Type-C 的「数据传输」带宽"></a>Type-C 的「数据传输」带宽</h2><p>Type-C 接口还有一个重要的参数就是 USB 版本，USB 版本越高，带宽也就越高，理论上带宽越高，传输速度越快。不过 USB 版本的命名经过了几次大的修改，命名规范变来变去，对普通消费者识别起来极不友好。下面两张图分别引用自<a href="https://basic-tutorials.com/usb-type-c-at-a-glance-what-the-port-can-do-what-it-cant-do-and-why-it-has-nothing-to-do-with-usb-3-0/">USB type C at a glance: What the port can do, what it can’t do and why it has nothing to do with USB 3.0</a>及<a href="https://zh.wikipedia.org/wiki/USB">维基百科-USB</a>。其中 USB3.2 Gen 2x2 的 Logo 以维基百科的为准。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/3-USB%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E.png" alt="USB 版本说明"></p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/4-USB%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91.png" alt="USB 版本及速率(维基百科)"></p>
-<p>通过这两张图，我们能够比较清楚地知道各个 USB 版本对应的传输速率及兼容接口。目前笔记本上 Type-C 接口的主流速率还是 USB3.2 Gen 1 也就是 5Gbps，理论速度约合 500 MB&#x2F;s。</p>
-<p><strong>但需要注意的是，多数情况下，「USB 几点几」这样的称呼，仅仅只是用于描述接口的「数据传输」速度，不代表这个接口其他任何能力，如能否PD充电、能否显示。</strong></p>
-<h2 id="5Gbps-的-Type-C-无法满足-4K-60Hz-输出？"><a href="#5Gbps-的-Type-C-无法满足-4K-60Hz-输出？" class="headerlink" title="5Gbps 的 Type-C 无法满足 4K@60Hz 输出？"></a>5Gbps 的 Type-C 无法满足 4K@60Hz 输出？</h2><p>这个问题也是我在没了解相关知识之前相当困惑的一个地方——当我看到心仪的笔记本只有 USB 3.2 Gen1 接口和 HDMI1.4b 的接口，而两者的带宽都远小于 4K@60Hz 所需的 12.54 Gbps 时，我当时同样以为外接 4K@60Hz 显示器是不可能实现的了。</p>
-<p>这里面的问题就在于我们<strong>混淆了 Type-C 接口的「数据带宽」和「显示带宽」</strong>，我们日常习惯说一个 Type-C 的带宽是 3.1 Gen1 或者 Gen2、5Gbps 或者10Gbps，这时候说的其实都是这个接口的 USB 数据带宽，只能代表这个接口接 U盘&#x2F;移动硬盘之类的存储进行数据传输时所能达到的最大速度。</p>
-<p>Type-C能够整合显示输出功能，主要是借助了DP Alt Mode（替代模式）功能，借助Type-C正反面诸多针脚中的几个定义为显示接口。通俗点说可以理解为单独做了个 DP 显示总线放在 Type-C 口上，所以数据带宽是 5Gbps 还是10Gbps 并<strong>不代表显示带宽也只有这么多</strong>。以目前 Type-C 的规范来看，当我们说一个 Type-C 支持显示输出时，那么这个接口<strong>至少可以支持 DP1.2 标准</strong>，也就是说拥有独立的约 21Gbps 的显示带宽，因为 DP1.2 中有 20% 的编码是用于校验的，所以真正能用来传输视频信号的带宽只有 21.60 * 0.8 &#x3D; 17.28 Gbps，但这也已经<strong>完全可以满足 4K@60Hz 的传输要求了</strong>。下图引用自<a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a>：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/5-USBC%E7%8B%AC%E7%AB%8B%E6%98%BE%E7%A4%BA%E5%B8%A6%E5%AE%BD.png" alt="Type-C 显示拥有独立的显示带宽"></p>
-<p>我们现在关于 5Gbps 的 Type-C 能否满足 4K@60Hz 画面传输的问题有了明确的答案，只要是<strong>支持显示输出的 Type-C 口，就可以支持输出 4K@60Hz</strong>。</p>
-<h2 id="5Gbps-的-Type-C-的不足之处"><a href="#5Gbps-的-Type-C-的不足之处" class="headerlink" title="5Gbps 的 Type-C 的不足之处"></a>5Gbps 的 Type-C 的不足之处</h2><p>Type-C 显示输出虽然是 DP&#x2F;HDMI 显示，但实际上还是借用了数据传输的一部分引脚。当一个支持 DP 显示输出的 Type-C ，而它的数据带宽是 USB3.1 Gen1 5Gbps 时，那么此时是无法<strong>通过一根线</strong>同时实现理应互不干扰的 4K@60Hz 和 USB3.0 传输的，下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/6-4K%E6%98%BE%E7%A4%BA%E8%BE%93%E5%87%BA%E7%9A%84%E5%87%A0%E7%A7%8D%E5%9C%BA%E6%99%AF.png" alt="4K 显示输出的几种场景"></p>
-<p>因此在一些显示器的详情界面会注明——当显示器上的 USB 设置为 3.2Gen1 时，只能输出 4K@30Hz 的画面，如果想要输出 4K@60Hz 需要将 USB 设置为 2.0 或关闭。所以如果我们使用的显示器有拓展 USB 口，而我们是使用 Type-C 直连显示器，为了保证使用体验，我们需要手动将显示器上的 USB 设置为 USB2.0，此时显示器上的 USB 更适合用来接键鼠，文件传输之类的还是直连笔记本会比较快。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/9-%E6%98%BE%E7%A4%BA%E5%99%A8%E8%AF%A6%E6%83%85%E7%95%8C%E9%9D%A2%E7%9A%84%E6%8F%90%E7%A4%BA.png" alt="显示器详情界面的提示"></p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/101486153">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（下篇） - 知乎</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a></p>
-<p><a href="https://basic-tutorials.com/usb-type-c-at-a-glance-what-the-port-can-do-what-it-cant-do-and-why-it-has-nothing-to-do-with-usb-3-0/">USB type C at a glance: What the port can do, what it can’t do and why it has nothing to do with USB 3.0</a></p>
-<p><a href="https://zh.wikipedia.org/wiki/USB">维基百科-USB</a></p>
-<p><a href="https://b23.tv/rbYOKW">视频-【硬件科普】4K144Hz需要传输多少数据，教你如何正确的计算显示器的带宽需求？</a></p>
-<p><a href="https://diy.pconline.com.cn/1374/13748807.html">DP vs HDMI 谁才是游戏玩家最佳选择</a></p>
-]]></content>
-      <categories>
-        <category>硬件</category>
-      </categories>
-      <tags>
-        <tag>硬件</tag>
-        <tag>显示器</tag>
-        <tag>USB</tag>
-        <tag>Type-C</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>为什么 robots.txt 不应该再屏蔽 JS 和 CSS 了</title>
-    <url>/post/Why-Shouldnot-Block-JS-And-CSS-Files-In-Robotstxt-Anymore/</url>
-    <content><![CDATA[<p>根据谷歌官方的建议，robots.txt 已经不需要再屏蔽 JavaScript、CSS 文件了。</p>
-<span id="more"></span>
-
-<h2 id="屏蔽是过时的做法"><a href="#屏蔽是过时的做法" class="headerlink" title="屏蔽是过时的做法"></a>屏蔽是过时的做法</h2><p>在前期查找相关资料的时候，我注意到不少博客都建议在 <code>robots.txt</code> 中禁止搜索引擎抓取网站的 JavaScript、CSS 文件，但其中大多数文章并没有给出为什么要这样做的具体理由。</p>
-<p>但我觉得现在已经有理由相信这种做法是<strong>过时且不必要</strong> 的。谷歌在其官方的<a href="https://support.google.com/webmasters/answer/7451184">搜索引擎优化 (SEO) 新手指南</a>中的「让 Google 以用户视角查看网页」章节中明确提到：</p>
-<blockquote>
-<p>当 Googlebot 抓取某个网页时，它应<a href="https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html">以普通用户查看网页的方式来查看它</a>。为了实现最佳的呈现和索引编制效果，请始终允许 Googlebot 访问您网站所用的 JavaScript、CSS 和图片文件。如果您网站的 robots.txt 文件禁止抓取这些资源，则会直接影响到我们的算法呈现您的内容并将其编入索引的效果，进而导致您的网站排名降低。</p>
-</blockquote>
-<p>可以看到，禁止 JavaScript、CSS 文件的抓取不仅不会对 SEO 有任何正向的帮助，反而可能会起到降低网站排名的负面效果。</p>
-<p>至于更具体的理由，谷歌在 <a href="https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html">Understanding web pages better</a> （也就是上方引用的「以普通用户查看网页的方式来查看它」）中进行了进一步的解释，中心思想可以总结如下：</p>
-<ol>
-<li>时代已经变了，JavaScript、CSS 已经变成现代网页不可或缺的一部分了，它们让我们的网页变得更加丰富、更加美观，如果禁止 JS、CSS 被搜索引擎抓取，结果导致网页不能被更好地渲染，这对搜索者以及网站站长双方来说都是一种损失。</li>
-<li>为了避免这种双输的局面，我们（谷歌）为此做了很多工作，现在我们（谷歌）的抓取系统已经能够<strong>以普通用户查看网页的方式来查看它</strong>，而 JavaScript、CSS 代码是普通用户浏览网页时非常重要的组成的部分，所以不要再屏蔽 JavaScript、CSS 文件了。</li>
-</ol>
-<p>上面这些都是谷歌在 2015 年就开始提倡的做法，所以现在已经 2020 年了，我们完全可以放心地让搜索引擎抓取我们的 JavaScript、CSS 文件，这样做对 SEO 有百利而无一害。</p>
-<h2 id="我的-robots-txt"><a href="#我的-robots-txt" class="headerlink" title="我的 robots.txt"></a>我的 robots.txt</h2><p>在博客根目录下的 <code>public</code> 文件夹内新建 <code>robots.txt</code> 文件，然后 <code>hexo d</code> 部署网站即可。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 允许任何搜索引擎抓取任何页面</span><br><span class="line">User-agent: *</span><br><span class="line">Allow: /</span><br><span class="line"># 站点地图地址</span><br><span class="line">Sitemap: https://asurada.zone/sitemap.xml</span><br><span class="line">Sitemap: https://asurada.zone/baidusitemap.xml</span><br></pre></td></tr></table></figure>
-
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://support.google.com/webmasters/answer/7451184">谷歌官方搜索引擎优化 (SEO) 新手指南</a></p>
-<p><a href="https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html">Understanding web pages better</a> </p>
-<p><a href="https://yoast.com/dont-block-css-and-js-files/">Don’t block CSS and JS files</a></p>
-]]></content>
-      <categories>
-        <category>个人博客</category>
-      </categories>
-      <tags>
-        <tag>SEO</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>利用 Pqi 实现 Python 快速换源</title>
-    <url>/post/change-python-pypisource/</url>
-    <content><![CDATA[<p>pip 默认的软件源是国外的，下载起来速度很慢，我们可以将软件源换成国内的镜像源，大幅提高下载速度。本文介绍利用 <code>pqi</code> 这一小工具来实现简单快速地更换 pip 软件源。</p>
-<span id="more"></span>
-<p><code>pqi</code> 是国内开发者 <a href="https://github.com/yhangf">yhf</a> 开发的 <a href="https://github.com/yhangf/PyQuickInstall">PyQuickInstall</a> 工具的简称，这款工具可以非常方便地帮助我们切换 pip 软件源，如果觉得好用的话，大家可以动动鼠标，在 Github 上面 Star 一下。</p>
-<p>临时使用清华大学开源软件镜像源安装 pqi ：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install pqi -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
-
-<p>安装完成后，直接在命令行即可使用 pqi ：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//列举所有支持的PyPi源</span><br><span class="line">pqi ls</span><br><span class="line">//改变 PyPi源</span><br><span class="line">pqi use &lt;name&gt;</span><br><span class="line">//显示当前PyPi源</span><br><span class="line">pqi show</span><br><span class="line">//移除pip源</span><br><span class="line">pqi remove &lt;name&gt;</span><br><span class="line">//添加新的pip源</span><br><span class="line">pqi add &lt;name&gt; &lt;url&gt;</span><br><span class="line">//升级到最新版 pqi</span><br><span class="line">pip install --upgrade pqi</span><br></pre></td></tr></table></figure>
-
-<p>如果决定使用上面提到过的清华大学镜像源，使用如下命令即可：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pqi use tuna</span><br></pre></td></tr></table></figure>
-
-<p>然后就可以享受飞一般的 pip下载速度了。</p>
-]]></content>
-      <categories>
-        <category>开发环境</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo 博客修改记录</title>
-    <url>/post/hexo-blog-settings/</url>
-    <content><![CDATA[<p>记录自己博客所做的修改，供他人参考以及自己备忘。</p>
-<span id="more"></span>
-
-<h2 id="提交搜索引擎收录"><a href="#提交搜索引擎收录" class="headerlink" title="提交搜索引擎收录"></a>提交搜索引擎收录</h2><p>博客搭建好了，如果希望自己博客的内容被更多人看到，搜索引擎所带来的流量是不容忽视的。为了让搜索引擎更快地收录我们的网站，我们可以主动到搜索引擎的站长平台提交我们的网站。</p>
-<p>因为搜索引擎收录的内容比较多，所以专门单独写了一篇文章，具体内容请跳转 <a href="https://asurada.zone/post/Blog-Search-Engine-Index/">Hexo 博客主流搜索引擎收录详细指南</a>查看。</p>
-<h2 id="站内搜索"><a href="#站内搜索" class="headerlink" title="站内搜索"></a>站内搜索</h2><blockquote>
-<p>此项配置基于 Hexo 5.1.1，Next 8.0.0，hexo-generator-searchdb V1.3.2</p>
-</blockquote>
-<p>该功能由 <a href="https://github.com/theme-next/hexo-generator-searchdb">hexo-generator-searchdb</a> 提供，效果如下图：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/37-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2%E6%95%88%E6%9E%9C%E5%9B%BE.png" alt="站内搜索"></p>
-<p>在根目录下执行以下命令安装插件：</p>
-<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">$ npm <span class="keyword">install</span> hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
-
-<p>在<strong>主题配置</strong>文件中修改相关字段：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true</span><br><span class="line">  trigger: auto # 每次输入改变都重新搜索</span><br><span class="line">  top_n_per_article: 3 # 每篇文章显示的搜索结果数量</span><br><span class="line">  unescape: false</span><br></pre></td></tr></table></figure>
-
-<p>在<strong>站点配置</strong>文件中<strong>添加</strong>以下字段：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml # 后缀可选 .xml 和 .json</span><br><span class="line">  field: post # 指定搜索范围，可选 post | page | all</span><br><span class="line">  content: true # 是否牵引文章的全部内容，false 则只牵引文章标题</span><br><span class="line">  format: html # 指定页面内容形式，可选 html | raw (Markdown) | striptags </span><br></pre></td></tr></table></figure>
-
-<p>配置完成后，执行 <code>hexo g</code> 命令会在 <code>public</code> 文件夹下自动生成 <code>search.xml</code> 文件。</p>
-<h2 id="文末版权声明修改"><a href="#文末版权声明修改" class="headerlink" title="文末版权声明修改"></a>文末版权声明修改</h2><h3 id="版权声明添加标题"><a href="#版权声明添加标题" class="headerlink" title="版权声明添加标题"></a>版权声明添加标题</h3><blockquote>
-<p>此项配置基于 Hexo 4.2，Next 7.8.0</p>
-</blockquote>
-<p>Next 主题自带的版权声明默认只有作者、链接、版权声明三项，为方便他人转载，我觉得有必要加入文章标题的显示。</p>
-<div class="note info"><p>Next 8.0 以上版本改为在 <code>post-copyright.njk</code> 中修改。</p>
-</div>
-
-<p>首先修改 <code>.\themes\next\layout\_partials\post\post-copyright.swig</code> 文件，在 <code>&lt;ul&gt; &lt;/ul&gt;</code> 标签内根据自己的需求在相应位置<strong>新增</strong>以下代码：</p>
-<figure class="highlight html"><figcaption><span>.\themes\next\layout\_partials\post\post-copyright.swig</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;post-copyright-title&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">strong</span>&gt;</span>&#123;&#123; __(&#x27;post.copyright.title&#x27;) + __(&#x27;symbol.colon&#x27;) &#125;&#125; <span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line">    &#123;&#123; post.title &#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>由于 <code>post.copyright.title</code> 是我们自己新增的，这一字段 Next 默认是没有对应的中文翻译的，所以我们需要通过修改 <code>.\themes\next\languages\zh-CN.yml</code> 文件来添加翻译，打开文件，搜索 <code>copyright</code> ，在下面新增 <code>title: 本文标题</code> 。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/5-zhCN%E5%A2%9E%E5%8A%A0%E7%BF%BB%E8%AF%91.png" alt="zh-CN.yml 增加对应翻译"></p>
-<p>执行 <code>hexo g</code> 重新生成博客，<code>hexo s</code> 本地调试查看效果：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/6-%E6%9C%AC%E6%96%87%E6%A0%87%E9%A2%98%E6%95%88%E6%9E%9C%E5%9B%BE.png" alt="本文标题效果图"></p>
-<p>效果正是我想要的，确认无误后 <code>hexo d</code> 部署。</p>
-<h3 id="「本文链接」添加快速复制按钮"><a href="#「本文链接」添加快速复制按钮" class="headerlink" title="「本文链接」添加快速复制按钮"></a>「本文链接」添加快速复制按钮</h3><blockquote>
-<p>此项配置基于 Hexo 4.2，Next 7.8.0，本小节主要参考 <a href="http://yearito.cn/posts/hexo-advanced-settings.html">yearito’s Blog | Hexo搭建个人博客系列：进阶设置篇</a></p>
-</blockquote>
-<div class="note info"><p>Next 8.0 以上版本改为在 <code>post-copyright.njk</code> 中修改。</p>
-<p>Next V8 将自带的 Font Awesome 图标库由 4.7.0 版本升级为了 5.13.0 版本。此次升级并不向下兼容，所以需要修改配置文件中与 Font Awesome 相关的内容，否则图标可能无法正常显示。</p>
-</div>
-
-<p>修改 <code>.\themes\next\layout\_partials\post\post-copyright.swig</code> 文件，改动如下：</p>
-<figure class="highlight diff"><figcaption><span>.\themes\next\layout\_partials\post\post-copyright.swig</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;%- set ccIcon = &#x27;&lt;i class=&quot;fa fa-fw fa-creative-commons&quot;&gt;&lt;/i&gt;&#x27; %&#125;</span><br><span class="line">&#123;%- set ccText = theme.creative_commons.license | upper %&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="addition">+&lt;!-- JS库 clipboard 用来拷贝内容到粘贴板--&gt;</span></span><br><span class="line"><span class="addition">+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js&quot;&gt;&lt;/script&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="addition">+&lt;!-- JS库 sweetalert 用来显示提示信息--&gt;</span></span><br><span class="line"><span class="addition">+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/sweetalert@2.1.2/dist/sweetalert.min.js&quot;&gt;&lt;/script&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;div&gt;</span><br><span class="line">&lt;ul class=&quot;post-copyright&quot;&gt;</span><br><span class="line"></span><br><span class="line">  &lt;!-- 本文标题 --&gt;</span><br><span class="line">  &lt;li class=&quot;post-copyright-title&quot;&gt;</span><br><span class="line">    &lt;strong&gt;&#123;&#123; __(&#x27;post.copyright.title&#x27;) + __(&#x27;symbol.colon&#x27;) &#125;&#125; &lt;/strong&gt;</span><br><span class="line">    &#123;&#123; post.title &#125;&#125;</span><br><span class="line">  &lt;/li&gt;</span><br><span class="line"></span><br><span class="line">  &lt;!-- 本文作者 --&gt;</span><br><span class="line">  &lt;li class=&quot;post-copyright-author&quot;&gt;</span><br><span class="line">    &lt;strong&gt;&#123;&#123; __(&#x27;post.copyright.author&#x27;) + __(&#x27;symbol.colon&#x27;) &#125;&#125; &lt;/strong&gt;</span><br><span class="line">    &#123;&#123;- page.author or author &#125;&#125;</span><br><span class="line">  &lt;/li&gt;</span><br><span class="line"></span><br><span class="line">  &lt;!-- 引用链接 --&gt;</span><br><span class="line">  &lt;li class=&quot;post-copyright-link&quot;&gt;</span><br><span class="line">    &lt;strong&gt;&#123;&#123; __(&#x27;post.copyright.link&#x27;) + __(&#x27;symbol.colon&#x27;) &#125;&#125;&lt;/strong&gt;</span><br><span class="line">    &#123;&#123; next_url(page.permalink, page.permalink, &#123;title: page.title&#125;) &#125;&#125;</span><br><span class="line"><span class="addition">+    &lt;span class=&quot;copy-path&quot; title=&quot;点击复制 Markdown 引用链接&quot;</span></span><br><span class="line"><span class="addition">+      &gt;&lt;i</span></span><br><span class="line"><span class="addition">+        style=&quot;cursor: pointer&quot;</span></span><br><span class="line"><span class="addition">+        class=&quot;fa fa-clipboard&quot;</span></span><br><span class="line"><span class="addition">+        data-clipboard-text=&quot;[&#123;&#123; post.author | default(author) &#125;&#125;&#x27;s Blog | &#123;&#123; post.title &#125;&#125;](&#123;&#123; post.permalink &#125;&#125;)&quot;</span></span><br><span class="line"><span class="addition">+        aria-label=&quot;&#123;&#123; __(&#x27;post.copyright.copy_success&#x27;) &#125;&#125;&quot;</span></span><br><span class="line"><span class="addition">+      &gt;&lt;/i</span></span><br><span class="line"><span class="addition">+    &gt;&lt;/span&gt;</span></span><br><span class="line"><span class="addition">+  &lt;/li&gt;</span></span><br><span class="line">    </span><br><span class="line">  &lt;!-- 版权声明 --&gt;</span><br><span class="line">  &lt;li class=&quot;post-copyright-license&quot;&gt;</span><br><span class="line">    &lt;strong&gt;&#123;&#123; __(&#x27;post.copyright.license_title&#x27;) + __(&#x27;symbol.colon&#x27;) &#125;&#125; &lt;/strong&gt;</span><br><span class="line">    &#123;&#123;- __(&#x27;post.copyright.license_content&#x27;, next_url(ccURL, ccIcon + ccText)) &#125;&#125;</span><br><span class="line">  &lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line"><span class="addition">+ &lt;script&gt;</span></span><br><span class="line"><span class="addition">+   var clipboard = new ClipboardJS(&quot;.fa-clipboard&quot;);</span></span><br><span class="line"><span class="addition">+  clipboard.on(&quot;success&quot;, function(target) &#123;</span></span><br><span class="line"><span class="addition">+    var message = document.createElement(&quot;div&quot;);</span></span><br><span class="line"><span class="addition">+    message.innerHTML =</span></span><br><span class="line"><span class="addition">+      &#x27;&lt;i class=&quot;fa fa-check-circle message-icon&quot;&gt;&lt;/i&gt;&lt;span class=&quot;message-content&quot;&gt;&#x27; +</span></span><br><span class="line"><span class="addition">+      target.trigger.getAttribute(&quot;aria-label&quot;) +</span></span><br><span class="line"><span class="addition">+      &quot;&lt;/span&gt;&quot;;</span></span><br><span class="line"><span class="addition">+    swal(&#123;</span></span><br><span class="line"><span class="addition">+      content: message,</span></span><br><span class="line"><span class="addition">+      className: &quot;copy-success-message&quot;,</span></span><br><span class="line"><span class="addition">+      timer: 1000,</span></span><br><span class="line"><span class="addition">+      button: false</span></span><br><span class="line"><span class="addition">+    &#125;);</span></span><br><span class="line"><span class="addition">+  &#125;);</span></span><br><span class="line"><span class="addition">+ &lt;/script&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<div class="note info"><p>Next 8.0 以上版本改为在 <code>post-footer.styl</code> 中修改。</p>
-</div>
-
-<p>在版权样式文件 <code>.themes\next\source\css\_common\components\post\post-copyright.styl</code> 中<strong>新增</strong>如下样式：</p>
-<figure class="highlight css"><figcaption><span>.themes\next\source\css\_common\components\post\post-copyright.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.swal-overlay</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: transparent;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.copy-success-message</span> &#123;</span><br><span class="line">  <span class="attribute">box-shadow</span>: <span class="number">0px</span> <span class="number">4px</span> <span class="number">12px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.15</span>);</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">4px</span>;</span><br><span class="line">  <span class="attribute">width</span>: auto;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">16</span>x <span class="number">0px</span>;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.copy-success-message</span> <span class="selector-class">.swal-content</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="meta">!important</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span> <span class="number">16px</span>;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">1em</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.copy-success-message</span> <span class="selector-class">.message-icon</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#52c41a</span>;</span><br><span class="line">  <span class="attribute">margin-right</span>: <span class="number">8px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.copy-success-message</span> <span class="selector-class">.message-content</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>然后补全版权信息文案字段：</p>
-<figure class="highlight diff"><figcaption><span>.\themes\next\languages\zh-CN.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">post:</span><br><span class="line">  copyright:</span><br><span class="line"><span class="addition">+   copy_success: 复制成功</span></span><br></pre></td></tr></table></figure>
-
-<p>之后点击「本文链接」后的图标便可以快捷复制 Markdown 格式的引用链接，并将弹出复制成功的提示语。</p>
-<blockquote>
-<p>该功能主要借助 <a href="https://clipboardjs.com/">clipboard</a> 和 <a href="https://sweetalert.js.org/">sweetalert</a> 两个 js 库来实现，并参考 <a href="https://ant.design/components/message/">antDesign | message 组件</a> 重写了弹框样式。</p>
-</blockquote>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/17-%E6%9C%AC%E6%96%87%E9%93%BE%E6%8E%A5%E5%BF%AB%E9%80%9F%E5%A4%8D%E5%88%B6%E6%95%88%E6%9E%9C.png" alt="链接快速复制效果"></p>
-<h2 id="修改文章-URL-地址"><a href="#修改文章-URL-地址" class="headerlink" title="修改文章 URL 地址"></a>修改文章 URL 地址</h2><blockquote>
-<p>此项配置基于 Hexo 4.2，Next 7.8.0</p>
-</blockquote>
-<p>Hexo 默认的文章 URL 地址为 <code>https://yoursite.com/:year/:month/:day/:title/</code>，层级较多，我自己看着碍眼，据说对 SEO 也不利。打开站点配置文件 <code>_config.yml</code> ，找到  <code>permalink</code>，将其改成自己想要的格式，我的很简单，全部的文章都是 <code>post</code>。</p>
-<figure class="highlight yml"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## If your site is put in a subdirectory, set url as &#x27;http://yoursite.com/child&#x27; and root as &#x27;/child/&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://asurada.zone</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br><span class="line"><span class="string">-permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="string">+permalink:</span> <span class="string">post/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="生成-RSS-并在侧边栏添加-RSS-按钮"><a href="#生成-RSS-并在侧边栏添加-RSS-按钮" class="headerlink" title="生成 RSS 并在侧边栏添加 RSS 按钮"></a>生成 RSS 并在侧边栏添加 RSS 按钮</h2><blockquote>
-<p>此项配置基于 Hexo 5.0，Next 7.8.0</p>
-</blockquote>
-<h3 id="安装-hexo-generator-feed-插件"><a href="#安装-hexo-generator-feed-插件" class="headerlink" title="安装 hexo-generator-feed 插件"></a>安装 hexo-generator-feed 插件</h3><p>在 Hexo 根目录执行命令，安装 <a href="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed</a> 插件：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
-<p>安装结束时后，此时重新 <code>hexo g</code> 便会直接在 <code>Public</code> 文件夹下自动生成  <code>atom.xml</code>文件。默认使用 atom 格式、输出全文、日期倒序排列，如果预设符合自己的要求，可以直接跳过下一步。</p>
-<h3 id="配置站点配置文件"><a href="#配置站点配置文件" class="headerlink" title="配置站点配置文件"></a>配置站点配置文件</h3><p>在站点配置文件 <code>_config.yml</code>添加相关配置：</p>
-<figure class="highlight diff"><figcaption><span>.\_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="addition">+# RSS</span></span><br><span class="line"><span class="addition">+feed:</span></span><br><span class="line"><span class="addition">+ type: atom</span></span><br><span class="line"><span class="addition">+ path: atom.xml</span></span><br><span class="line"><span class="addition">+ limit: false</span></span><br></pre></td></tr></table></figure>
-<p>配置含义：</p>
-<ol>
-<li><code>type</code>：RSS的类型，可选 atom&#x2F;rss2，默认 atom</li>
-<li><code>path</code>：Feed 路径，默认 .&#x2F;atom.xml 或 .&#x2F;rss2.xml</li>
-<li><code>limit</code>: 展示文章的数量，使用 0 或 false 则输出所有文章</li>
-</ol>
-<h3 id="侧边栏添加-RSS-图标"><a href="#侧边栏添加-RSS-图标" class="headerlink" title="侧边栏添加 RSS 图标"></a>侧边栏添加 RSS 图标</h3><p>Next 在<a href="https://github.com/theme-next/hexo-theme-next/releases/tag/v7.6.0">V7.6.0</a>中移除了侧边栏的 RSS 图标，后续又在<a href="https://github.com/theme-next/hexo-theme-next/releases/tag/v7.7.1">V7.7.1</a>中通过「Follow_me」功能将 RSS 图标引入到了文章的结尾区域。但我觉得 RSS 在整个网站的优先级应该足够高，下面是如何将 RSS 图标重新加入侧边栏的方法。</p>
-<p>原理其实很简单，就是利用 Next 主题自带的 Social Links 功能，将 RSS 也变成一个 Social Link。修改主题配置文件 <code>.\source\_data\next.yml</code> 如下：</p>
-<figure class="highlight diff"><figcaption><span>.\source\_data\next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">social:</span><br><span class="line">  GitHub: https://github.com/ousugo || github</span><br><span class="line"><span class="addition">+ RSS: https://asurada.zone/atom.xml || rss</span></span><br><span class="line">  #E-Mail: mailto:yourname@gmail.com || envelope</span><br></pre></td></tr></table></figure>
-<p>“Soical Links” 的格式为 <code>Key: permalink || icon</code>，其中 <code>Key</code> 为图标旁边显示的名称，<code>permalink</code> 为目标地址，这里指 RSS Feed 的地址，<code>icon</code> 为将要显示的图标在 <a href="https://fontawesome.com/">Font Awesome</a> 中的名字。</p>
-<p>最终效果如下：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/19-%E4%BE%A7%E8%BE%B9%E6%A0%8FRSS%E5%9B%BE%E6%A0%87%E6%95%88%E6%9E%9C.png" alt="侧边栏RSS图标效果"></p>
-<h2 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h2><h3 id="文末添加结束标记"><a href="#文末添加结束标记" class="headerlink" title="文末添加结束标记"></a>文末添加结束标记</h3><blockquote>
-<p>此项配置基于 Hexo 4.2，Next 7.8.0</p>
-</blockquote>
-<p>感觉文章结束以后，紧接着就是打赏按钮，显得较为突兀，所以在文末添加结束标记，效果如下：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/15-%E6%96%87%E6%9C%AB%E7%BB%93%E6%9D%9F%E6%A0%87%E8%AE%B0.png" alt="文末结束标记"></p>
-<p>修改主题配置文件 <code>.\source\_data\next.yml</code>，取消 <code>postBodyEnd</code> 前的注释，启用 <code>post-metabody-end.swig</code> 这一自定义文件：</p>
-<figure class="highlight yaml"><figcaption><span>.\source\_data\next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.swig</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.swig</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.swig</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.swig</span></span><br><span class="line"><span class="bullet">-</span> <span class="comment">#postBodyEnd: source/_data/post-metabody-end.swig</span></span><br><span class="line"><span class="string">+</span> <span class="attr">postBodyEnd:</span> <span class="string">source/_data/post-metabody-end.swig</span></span><br></pre></td></tr></table></figure>
-
-<p>我们可以打开 <code>.\themes\next\layout\_macro\post.swig</code> 文件，搜索 <code>next_inject</code>，定位到 <code>next_inject(&#39;postBodyEnd&#39;)</code>：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/16-post_swig%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE.png" alt="post.swig 插入位置"></p>
-<p>这一段代码的含义就是当上面的 <code>postBodyEnd</code> 被取消注释时，<code>post-metabody-end.swig</code> 文件就会被插入到这里（望文生义，如理解有误请指出）。</p>
-<p>在 <code>.\source\_data</code> 文件下新建 <code>post-metabody-end.swig</code> 文件，添加如下代码：</p>
-<figure class="highlight html"><figcaption><span>.\source\_data\post-metabody-end.swig</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center;color:#bfbfbf;font-size:16px;&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">span</span>&gt;</span>-------- 本文结束 <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa fa-paw&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>		<span class="comment">&lt;!-- 这里的图标可以自己去 fontawesome.com 找，然后自定义 --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">span</span>&gt;</span> 感谢阅读 --------<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><code>hexo s -g</code> 预览效果没问题，就可以 <code>hexo d</code> 部署到博客了。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="http://yearito.cn/posts/hexo-deploy-to-VPS.html">yearito’s Blog | Hexo搭建个人博客系列：部署上线篇</a></p>
-<p><a href="https://tding.top/archives/4ea54752.html">小丁的个人博客 | Hexo-NexT 博客提交搜索引擎收录</a></p>
-<p><a href="http://yearito.cn/posts/hexo-theme-beautify.html">yearito’s Blog | Hexo搭建个人博客系列：主题美化篇</a></p>
-<p><a href="http://yearito.cn/posts/hexo-advanced-settings.html">yearito’s Blog | Hexo搭建个人博客系列：进阶设置篇</a></p>
-]]></content>
-      <categories>
-        <category>个人博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo 博客主流搜索引擎收录详细指南</title>
-    <url>/post/Blog-Search-Engine-Index/</url>
-    <content><![CDATA[<p>如果希望自己博客的内容被更多人看到，搜索引擎所带来的流量是不容忽视的。本文详细介绍了如何向各大主流搜索引擎主动提交自己的博客，期望达到加快收录速度的目的。</p>
-<span id="more"></span>
-
-<h2 id="生成站点地图"><a href="#生成站点地图" class="headerlink" title="生成站点地图"></a>生成站点地图</h2><blockquote>
-<p>什么是站点地图？</p>
-<p>站点地图是一种文件，您可以在其中提供与您网站中的网页、视频或其他文件有关的信息，还可以说明这些内容之间的关系。Google 等搜索引擎会读取此文件，以便更加智能地抓取您的网站。站点地图会告诉 Google 您认为网站中的哪些网页和文件比较重要，还会提供与这些文件有关的重要信息：以网页为例，这些信息包括网页上次更新的时间、网页更改的频率，以及网页是否有其他语言版本。</p>
-<p><em><a href="https://support.google.com/webmasters/answer/156184?hl=zh-Hans&ref_topic=4581190">谷歌帮助-了解站点地图</a></em></p>
-</blockquote>
-<p>安装  <a href="https://github.com/hexojs/hexo-generator-sitemap">hexo-generator-sitemap</a> 插件：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
-
-<p>安装插件以后，执行 <code>hexo  g</code> 命令，即可在 <code>public</code> 文件夹下找到新生成的 <code>sitemap.xml</code> 文件。</p>
-<h2 id="让百度收录站点"><a href="#让百度收录站点" class="headerlink" title="让百度收录站点"></a>让百度收录站点</h2><h3 id="百度验证域名"><a href="#百度验证域名" class="headerlink" title="百度验证域名"></a>百度验证域名</h3><p>刚建站的时候，百度是没有收录我们的网站的，这时在搜索框输入 <code>site:&lt;域名&gt;</code>  ，结果应该是下面这样的，点击「提交网址」来提交我们的站点。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-%E7%99%BE%E5%BA%A6%E6%9C%AA%E6%94%B6%E5%BD%95.png" alt="百度未收录"></p>
-<p>点击后会进入「<a href="https://ziyuan.baidu.com/site">百度搜索资源平台</a>」，用自己的百度账号进行登录。登录后「站点管理」–&gt; 「添加站点」–&gt; 「添加网站」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/7-%E7%99%BE%E5%BA%A6%E6%B7%BB%E5%8A%A0%E7%AB%99%E7%82%B9%E8%B7%AF%E5%BE%84.png" alt="百度添加网站"></p>
-<p>百度添加网站是需要进行实名认证的，这一点需要注意。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/8-%E7%99%BE%E5%BA%A6%E9%9C%80%E8%A6%81%E5%AE%9E%E5%90%8D.png" alt="百度实名"></p>
-<p>填完个人信息后，提交站点网址，选择站点属性，最后一步验证网站。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/9-%E7%99%BE%E5%BA%A6%E8%AE%BE%E7%BD%AE%E7%AB%99%E7%82%B9%E5%B1%9E%E6%80%A7.png" alt="选择站点属性"></p>
-<p>验证方式选择第二种「HTML标签验证」，复制下图 <code>content</code> 里的字符串。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/10-%E7%99%BE%E5%BA%A6%E9%80%89%E6%8B%A9%E9%AA%8C%E8%AF%81%E6%96%B9%E5%BC%8F.png" alt="选择验证方式"></p>
-<blockquote>
-<p>此项配置基于 Hexo 4.2，Next 7.8.0</p>
-</blockquote>
-<p>打开主题配置数据文件 <code>next.yml</code> ，搜索 <code>baidu_site_verification</code>，将上述字符串填至后方。</p>
-<figure class="highlight yaml"><figcaption><span>.\source\_data\next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Baidu Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: https://ziyuan.baidu.com/site</span></span><br><span class="line"><span class="attr">baidu_site_verification:</span> <span class="string">hpYpGBuDQF</span></span><br></pre></td></tr></table></figure>
-
-<p>执行 <code>hexo g -d</code> 重新生成并部署站点，部署完成后，检查网站源码，能看到在<code>&lt;head&gt;</code> 里面已经自动包含了用于验证身份的 meta 标签：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/11-%E7%99%BE%E5%BA%A6%E9%AA%8C%E8%AF%81meta%E6%A0%87%E7%AD%BE.png" alt="百度验证 meta 标签"></p>
-<p>回到百度站长管理平台点击「完成验证」按钮，完成验证。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/12-%E7%99%BE%E5%BA%A6%E9%AA%8C%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="百度验证成功"></p>
-<p>当我验证完成的时候，百度通知我说 HTTPS 认证失败，当时<strong>我没有进行任何处理</strong>，二个小时后我手动在「搜索展现」–&gt; 「HTTPS 认证」申请认证，几分钟后就直接显示「认证通过」了，所以认证失败了不要慌，可能等待一会就自然好了。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/13-%E7%99%BE%E5%BA%A6Https%E8%AE%A4%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="百度Https认证成功"></p>
-<h3 id="百度提交链接"><a href="#百度提交链接" class="headerlink" title="百度提交链接"></a>百度提交链接</h3><p>百度提交链接有下面三种方式。</p>
-<h4 id="主动提交"><a href="#主动提交" class="headerlink" title="主动提交"></a>主动提交</h4><p>安装  <a href="https://github.com/huiwang/hexo-baidu-url-submit">hexo-baidu-url-submit</a> 插件：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-baidu-url-submit --save</span><br></pre></td></tr></table></figure>
-
-<p>获取百度主动推送<code>准入密钥</code>并复制：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/14-%E7%99%BE%E5%BA%A6%E4%B8%BB%E5%8A%A8%E6%8E%A8%E9%80%81%E5%87%86%E5%85%A5%E5%AF%86%E9%92%A5.png" alt="百度主动推送准入密钥"></p>
-<p>在站点配置文件 <code>_config.yml</code> 中<strong>新增</strong>以下代码：</p>
-<figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="addition">+ # 百度主动推送</span></span><br><span class="line"><span class="addition">+ baidu_url_submit:</span></span><br><span class="line"><span class="addition">+ 	count: 5 # 提交最新的五个链接</span></span><br><span class="line"><span class="addition">+ 	host: https://asurada.zone # 在百度站长平台中注册的域名</span></span><br><span class="line"><span class="addition">+  	token: xxxxx  # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span></span><br><span class="line"><span class="addition">+  	path: baidu_urls.txt  # 文本文档的地址， 新链接会保存在此文本文档里</span></span><br></pre></td></tr></table></figure>
-
-<p>然后在站点配置文件 <code>_config.yml</code> 中修改部署策略：</p>
-<figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">  # Deployment</span><br><span class="line">  ## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line"><span class="deletion">- deploy:</span></span><br><span class="line"><span class="deletion">- 	type: git</span></span><br><span class="line"><span class="deletion">-   repo: git@github.com:ousugo/ousugo.github.io.git</span></span><br><span class="line"><span class="deletion">-	branch: master</span></span><br><span class="line"><span class="addition">+ deploy:</span></span><br><span class="line"><span class="addition">+ - type: git</span></span><br><span class="line"><span class="addition">+   repo: git@github.com:ousugo/ousugo.github.io.git</span></span><br><span class="line"><span class="addition">+	branch: master</span></span><br><span class="line"><span class="addition">+ - type: baidu_url_submitter # 百度</span></span><br></pre></td></tr></table></figure>
-<p>此后每次执行 <code>hexo d</code> 部署博客的时候将会自动在 <code>./public</code> 目录下生成 <code>baidu_urls.txt</code> 文件，里面的内容就是自己设置的最新的 n 条文章链接。然后自动推送文件内容到百度，加快链接被百度收录的速度。</p>
-<p>在这里的时候我踩了一个坑，在部署的时候一直提示错误：<code>&#123;&quot;error&quot;:401,&quot;message&quot;:&quot;site sid is empty&quot;&#125;</code> ，后面经过排查发现是在配置主动推送时，<code>host</code> 后面的网址没有加协议头，加上之后就不报错了。</p>
-<figure class="highlight diff"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">  count: 5 # 提交最新的五个链接</span><br><span class="line"><span class="deletion">- host: asurada.zone # 在百度站长平台中注册的域名</span></span><br><span class="line"><span class="addition">+ host: https://asurada.zone # 在百度站长平台中注册的域名	</span></span><br><span class="line">  token: xxxxx  # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!</span><br><span class="line">  path: baidu_urls.txt  # 文本文档的地址， 新链接会保存在此文本文档里</span><br></pre></td></tr></table></figure>
-
-<h4 id="自动推送（弃用）"><a href="#自动推送（弃用）" class="headerlink" title="自动推送（弃用）"></a><del>自动推送</del>（弃用）</h4><div class="note info"><p>百度站长平台现在已经取消了「自动推送」的功能入口，所以不建议再开启此功能，详见<a href="https://51.ruyo.net/16280.html">百度 JS代码推送功能已停止使用，删除推送代码吧</a>。</p>
-</div>
-
-<blockquote>
-<p>此项配置基于 Hexo 4.2，Next 7.8.0</p>
-</blockquote>
-<p>Next 主题中已经内置了一键开启百度自动推送的选项：</p>
-<figure class="highlight yaml"><figcaption><span>.\source\_data\next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO</span></span><br><span class="line"><span class="attr">baidu_push:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<p>开启后将会自动在页面中添加如下脚本用于百度推送：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/18-%E7%99%BE%E5%BA%A6JS%E6%8E%A8%E9%80%81%E8%84%9A%E6%9C%AC%E4%BB%A3%E7%A0%81.png" alt="推送脚本代码"></p>
-<p>之后每次访问站点页面都会通过以上脚本将当前页面的 URL 推送到百度。 </p>
-<h4 id="sitemap"><a href="#sitemap" class="headerlink" title="sitemap"></a>sitemap</h4><div class="note info"><p>博客如果是部署在 GitHub Pages 上，baidusitemap 是无法被成功抓取的，因为 GitHub 禁止了百度爬虫，最常见的解决办法是将博客双线部署到 Coding Pages 和 GitHub Pages，因为百度爬虫可以爬取到 Coding 上的内容，从而实现百度收录。实现双线部署可以参考我的这篇 <a href="https://asurada.zone/post/Deploy-Hexoblog-To-Codingnet-And-GitHub/">Hexo 博客 GitHub Pages + CODING 静态网站双部署</a> 博客。</p>
-</div>
-
-<p>安装 <a href="https://github.com/coneycode/hexo-generator-baidu-sitemap">hexo-generator-baidu-sitemap</a> 插件：</p>
-<figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line">npm <span class="keyword">install </span>hexo-generator-<span class="keyword">baidu-sitemap </span>--save</span><br></pre></td></tr></table></figure>
-
-<p>插件安装成功后，执行 <code>hexo g -d</code> 部署网站，然后访问 <code>网站自定义域名/baidusitemap.xml</code> 检查百度网站地图是否正常。比如我的是 <code>asurada.zone/baidusitemap.xml</code> 。</p>
-<p>然后来到百度站长平台的 <a href="https://ziyuan.baidu.com/linksubmit/">sitemap 提交页面</a>，提交 sitemap 地址即可，注意需要自己添加 <code>https://</code> 协议头，不然默认是 <code>http://</code>，会导致抓取失败。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/20-%E7%99%BE%E5%BA%A6%E6%8F%90%E4%BA%A4sitemap.png" alt="百度提交 sitemap"></p>
-<p>初次提交要等几分钟，如果成功的话状态会显示为正常，并显示成功提取 URL 的数量。如果以后博客有新的文章或其他页面，可以点击<strong>手动更新文件</strong>，对 sitemap 进行更新。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/21-%E7%99%BE%E5%BA%A6sitemap%E6%8A%93%E5%8F%96%E6%AD%A3%E5%B8%B8.png" alt="百度 sitemap 抓取正常"></p>
-<p>百度的收录速度是比较慢的，一两周都是很正常的。</p>
-<h2 id="让谷歌收录站点"><a href="#让谷歌收录站点" class="headerlink" title="让谷歌收录站点"></a>让谷歌收录站点</h2><h3 id="GSC-验证域名"><a href="#GSC-验证域名" class="headerlink" title="GSC 验证域名"></a>GSC 验证域名</h3><p>登陆 <a href="https://search.google.com/u/1/search-console/welcome">Google Search Console</a> （后面简称 GSC)，可以看到有两种资源类型，因为目前我博客的域名是没有任何前缀的裸域名，所以我选择「网域验证」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/2-GoogleSearchConsole%E6%AC%A2%E8%BF%8E%E9%A1%B5.png" alt="Google Search Console 欢迎页"></p>
-<p>要进行「网域验证」的话，只有「通过 DNS 记录来验证域名所有权」这一种办法。复制这一步中出现的 TXT 记录值，然后进到域名解析服务商的管理界面，比如我的是 DNSPod。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/4-DNS%E9%AA%8C%E8%AF%81%E5%9F%9F%E5%90%8D%E6%89%80%E6%9C%89%E6%9D%83.png" alt="DNS 验证域名所有权"></p>
-<p>在「记录管理」里面新增一条 <code>TXT</code> 类型的解析记录，主机记录留空或者填 <code>@</code>，记录值就是刚刚复制的那一串记录值，其他保持默认即可。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/32-DNSPod%E6%96%B0%E5%A2%9E%E8%B0%B7%E6%AD%8C%E5%9F%9F%E5%90%8D%E9%AA%8C%E8%AF%81%E8%A7%A3%E6%9E%90%E8%AE%B0%E5%BD%95.png" alt="DNSPod 新增谷歌域名验证解析记录"></p>
-<p>稍等片刻，等待 DNS 解析生效，然后回到 GSC 点击「验证」按钮，即可完成验证。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/3-Google%E7%BD%91%E5%9F%9F%E9%AA%8C%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="GSC 网域验证成功"></p>
-<h3 id="提交站点地图"><a href="#提交站点地图" class="headerlink" title="提交站点地图"></a>提交站点地图</h3><p>验证域名所有权之后，进入 GSC 后台管理界面，输入 sitemap 地址并点击提交即可。谷歌的收录是比较快速的，两天左右就能够在谷歌通过 <code>site:博客网址</code> 的方式检索到收录结果了。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/33-GSC%E6%8F%90%E4%BA%A4%E7%AB%99%E7%82%B9%E5%9C%B0%E5%9B%BE.png" alt="GSC 提交站点地图"></p>
-<h2 id="让-360-搜索收录网站"><a href="#让-360-搜索收录网站" class="headerlink" title="让 360 搜索收录网站"></a>让 360 搜索收录网站</h2><h3 id="注册-360-站长平台"><a href="#注册-360-站长平台" class="headerlink" title="注册 360 站长平台"></a>注册 360 站长平台</h3><p>注册并登录<a href="zhanzhang.so.com/">360 站长平台</a>，添加网站。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/22-360%E7%AB%99%E9%95%BF%E5%B9%B3%E5%8F%B0%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99.png" alt="360 站长平台添加网站"></p>
-<p>添加网站后需要进行验证，选择「代码验证」，复制 <code>content</code> 后的字符串，后面会用到。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/23-360%E7%BD%91%E7%AB%99%E4%BB%A3%E7%A0%81%E9%AA%8C%E8%AF%81.png" alt="代码验证"></p>
-<h3 id="360-验证域名"><a href="#360-验证域名" class="headerlink" title="360 验证域名"></a>360 验证域名</h3><p>修改站点配置文件 <code>_config.yml</code> ：</p>
-<figure class="highlight diff"><figcaption><span>.\_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"># Define custom file paths.</span><br><span class="line"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span><br><span class="line">custom_file_path:</span><br><span class="line"><span class="deletion">- #head: source/_data/head.swig</span></span><br><span class="line"><span class="addition">+ head: source/_data/head.swig</span></span><br><span class="line">  #header: source/_data/header.swig</span><br></pre></td></tr></table></figure>
-
-<p>然后在 <code>博客根目录\source\_data</code> 下新建 <code>head.swig</code> 文件，然后打开并新增以下内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% if theme.so_site_verification %&#125;</span><br><span class="line">  &lt;meta name=&quot;360-site-verification&quot; content=&quot;&#123;&#123; theme.so_site_verification &#125;&#125;&quot;/&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
-<p>上面代码是利用了 Next 主题的 <a href="https://theme-next.js.org/docs/advanced-settings.html#Injects">Inject 功能</a>，以上代码的含义为如果在 <code>_config.yml</code> 中存在 <code>so_site_verification</code>  这一设置项，则会将 <code>&lt;meta name=&quot;360-site-verification&quot; content=&quot;so_site_verification 设置项的 value&quot;/&gt;</code>插入到网站首页 HTML 代码的 <code>&lt;head&gt;&lt;/head&gt;</code> 标签中。</p>
-<p>再次修改站点配置文件 <code>_config.yml</code>，在 <code>SEO Settings</code>区域新增以下内容 ：</p>
-<figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line"><span class="meta"># 360 Webmaster tools verification.</span></span><br><span class="line"><span class="meta"># See: zhanzhang.so.com/sitetool</span></span><br><span class="line"><span class="symbol">so_site_verification:</span> 此处填写之前复制的验证字符串</span><br></pre></td></tr></table></figure>
-
-<p>修改完成后，执行 <code>hexo g -d</code> 命令重新生成并部署网站，部署生效后，回到 360 站长平台，「点击验证」即可。如果网站已经开启了 HTTPS 访问，不要忘记「设置 https」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/24-360%E7%AB%99%E9%95%BF%E5%B9%B3%E5%8F%B0%E9%AA%8C%E8%AF%81%E6%88%90%E5%8A%9F.png" alt="360 站长平台验证成功"></p>
-<h3 id="提交-sitemap"><a href="#提交-sitemap" class="headerlink" title="提交 sitemap"></a>提交 sitemap</h3><p>360 站长平台体验很一般，连 HTTPS 都没上，然后在进行 sitemap 提交的时候，第一天页面就一直报「连接超时」，完全无法提交。第二天终于不报错了，可以正常提交了，页面也显示成功提交，但添加完以后 sitemap 列表却一直是空的，让人很困惑，不知道这到底是添加成功了但还没爬取呢还是压根就没添加上。终于第三天一切顺利，成功添加并显示了。</p>
-<p>我一开始提交的是<strong>只有裸域名</strong>的 sitemap 地址，但是几天后发现无法抓取到任何链接，于是我尝试在域名前加上 <code>www</code>，没想到还真有效果，很快就把全部链接都给抓取到了。具体的原因目前我也没有弄清楚。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/6-360%E6%8F%90%E4%BA%A4sitemap.png" alt="360 站长平台提交sitemap"></p>
-<h2 id="让搜狗收录网站"><a href="#让搜狗收录网站" class="headerlink" title="让搜狗收录网站"></a>让搜狗收录网站</h2><h3 id="注册搜狗站长平台"><a href="#注册搜狗站长平台" class="headerlink" title="注册搜狗站长平台"></a>注册搜狗站长平台</h3><p>注册并登录<a href="http://zhanzhang.sogou.com/">搜狗站长平台</a>，我在这里很想吐槽，这都 2020 年了，360 和搜狗的站长平台居然<strong>都还没上 HTTPS</strong>，我一度怀疑自己是不是进了伪造网站。这样给我的感觉就是完全没有用心在做搜索。</p>
-<p>搜狗的添加网站也和别家不一样，很奇葩地单独设置在「用户中心」里，体验上很割裂。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/27-%E6%90%9C%E7%8B%97%E7%AB%99%E9%95%BF%E5%B9%B3%E5%8F%B0%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99.png" alt="搜狗站长平台添加网站"></p>
-<h3 id="搜狗验证域名"><a href="#搜狗验证域名" class="headerlink" title="搜狗验证域名"></a>搜狗验证域名</h3><p>填加网站后同样需要验证，这次我们图省事，直接选择「文件验证」，点击「下载验证文件」，将 <code>sogousiteverification.txt</code> 下载到 <code>博客根目录\public</code> 文件夹里面，然后直接执行 <code>hexo d</code> 命令部署网站，部署生效后，回到搜狗站长平台「完成验证」。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/28-%E6%90%9C%E7%8B%97%E5%9F%9F%E5%90%8D%E6%96%87%E4%BB%B6%E9%AA%8C%E8%AF%81.png" alt="搜狗域名文件验证"></p>
-<h3 id="提交链接"><a href="#提交链接" class="headerlink" title="提交链接"></a>提交链接</h3><p>搜狗站长平台居然不支持 sitemap 提交，说是采取邀请制，这波操作反正我是看不懂。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/30-%E6%90%9C%E7%8B%97%E4%B8%8D%E6%94%AF%E6%8C%81sitemap.png" alt="搜狗不支持 sitemap"></p>
-<p>那只能退而求其次，手动提交链接了，得亏是我现在文章还比较少。不过倒可以等文章更多一些，试着申请一下开通 sitemap 提交权限。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/31-%E6%90%9C%E7%8B%97%E6%8F%90%E4%BA%A4%E9%93%BE%E6%8E%A5.png" alt="搜狗提交链接"></p>
-<h2 id="让-Bing-搜索收录网站"><a href="#让-Bing-搜索收录网站" class="headerlink" title="让 Bing 搜索收录网站"></a>让 Bing 搜索收录网站</h2><p>Bing 我之前并没有申请过收录，但是在使用 <code>site:asurada.zone</code> 检查收录情况时，居然惊喜地发现已经收录了我的博客，虽然仅仅只有一条链接。</p>
-<h3 id="直接从-Google-Search-Console-导入网站"><a href="#直接从-Google-Search-Console-导入网站" class="headerlink" title="直接从 Google Search Console 导入网站"></a>直接从 Google Search Console 导入网站</h3><p>打开<a href="https://www.bing.com/webmaster">Bing Webmaster</a>，使用绑定了 Google Search Console（后面简称 GSC） 的谷歌账号登录，这样后面就可以很方便地直接从 GSC 直接导入网站，而不需要再单独验证网站。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/25-BingWebmasterGSC%E7%9B%B4%E6%8E%A5%E5%AF%BC%E5%85%A5.png" alt=" GSC 直接导入"></p>
-<h3 id="提交网站地图"><a href="#提交网站地图" class="headerlink" title="提交网站地图"></a>提交网站地图</h3><p>按理说应该可以直接从 GSC 获取网站地图，但我的并没有获取到，不管了，手动提交也很简单。Bing 处理 sitemap 的时间大概在一天左右。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/26-Bing%E6%8F%90%E4%BA%A4%E7%BD%91%E7%AB%99%E5%9C%B0%E5%9B%BE.png" alt="Bing 提交网站地图"></p>
-<h2 id="让-Yandex-搜索收录网站"><a href="#让-Yandex-搜索收录网站" class="headerlink" title="让 Yandex 搜索收录网站"></a>让 Yandex 搜索收录网站</h2><h3 id="注册-Yandex-Webmaster"><a href="#注册-Yandex-Webmaster" class="headerlink" title="注册 Yandex Webmaster"></a>注册 Yandex Webmaster</h3><p>注册并登录<a href="webmaster.yandex.com">Yandex Webmaster</a>，这里<strong>有一个坑需要注意</strong>，Yandex 目前是可以直连的，但是在注册账号的时候，你会发现在最后一步输入验证码的时候，不管你怎么填总会提示验证码错误。而且 Yandex 的验证码是很奇葩的两张图片，让我弄不清楚是该输其中一张图片的内容还是怎么着，折腾了半天。最后在网上查到的解决方法是<strong>不要直连，而是通过科学上网</strong>进行注册，这时再输验证码就不会报错了，无语，验证码是两张图片的内容都要输入。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/35-YandexWebmaster.png" alt="Yandex Webmaster"></p>
-<h3 id="Yandex-验证域名"><a href="#Yandex-验证域名" class="headerlink" title="Yandex 验证域名"></a>Yandex 验证域名</h3><blockquote>
-<p>此项配置基于 Hexo 5.0.2，Next 7.8.0</p>
-</blockquote>
-<p>进入 Webmaster 后台管理界面添加域名，这里<strong>需要注意的是</strong>和在其他站长平台添加网址不一样，Yandex 在添加网址时就需要写清楚<strong>带不带 <code>www</code><strong>，是使用 <code>http</code> 还是 <code>https</code>，</strong>默认是使用 <code>http</code> 的</strong>。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/7-Yandex%E6%B7%BB%E5%8A%A0%E5%9F%9F%E5%90%8D%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9.png" alt="Yandex 添加网址注意事项"></p>
-<p>选择域名验证方式，因为 Next 主题直接内置 Yandex 的验证，所以我们选择「Meta tag」验证，复制 <code>content</code> 后双引号内的字符串。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/34-Yandex%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99.png" alt="Yandex 添加网站"></p>
-<p>打开 Next 主题配置文件 <code>next.yml</code>，搜索关键字 ”Yandex”，找到<code>yandex_site_verification</code>，填入刚刚复制的字符串。</p>
-<figure class="highlight diff"><figcaption><span>博客根目录\source\_data\next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"># Yandex Webmaster tools verification.</span><br><span class="line"># See: https://webmaster.yandex.ru</span><br><span class="line"><span class="deletion">- yandex_site_verification:</span></span><br><span class="line"><span class="addition">+ yandex_site_verification: 4aca0e5ccd3fbc2f</span></span><br></pre></td></tr></table></figure>
-<p>修改完成后，执行 <code>hexo g -d</code> 命令重新生成并部署网站，部署生效后，回到 Yandex Webmaster，点击 “Check” 即可。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/36-Yandex%E5%AE%8C%E6%88%90%E9%AA%8C%E8%AF%81.png" alt="Yandex 完成验证"></p>
-<h3 id="提交-sitemap-1"><a href="#提交-sitemap-1" class="headerlink" title="提交 sitemap"></a>提交 sitemap</h3><p>验证完成后，在左侧菜单「Indexing」–&gt; 「Sitemap files」中提交 sitemap ，然后等待两天时间即可完成 sitemap 的收录和牵引。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/9-YandexSitemap%E6%94%B6%E5%BD%95%E6%88%90%E5%8A%9F.png" alt="Yandex Sitemap 收录成功"></p>
-<p>之后就可以在左侧菜单「Indexing」–&gt; 「Searchable pages」中查看网站的哪些页面已经被 Yandex 搜索引擎所收录。</p>
-<h2 id="让头条搜索收录网站"><a href="#让头条搜索收录网站" class="headerlink" title="让头条搜索收录网站"></a>让头条搜索收录网站</h2><h3 id="注册头条站长平台"><a href="#注册头条站长平台" class="headerlink" title="注册头条站长平台"></a>注册头条站长平台</h3><p>注册并登录<a href="zhanzhang.toutiao.com">头条搜索站长平台</a>，添加网站。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-%E5%A4%B4%E6%9D%A1%E7%AB%99%E9%95%BF%E5%B9%B3%E5%8F%B0.png" alt="头条站长平台"></p>
-<h3 id="头条验证网站"><a href="#头条验证网站" class="headerlink" title="头条验证网站"></a>头条验证网站</h3><p>头条现在的验证方式非常单一，只能通过「文件校验」的方式来验证。直接下载验证文件并将其移动到博客根目录下的 <code>public</code> 文件夹里面。然后执行 <code>hexo d</code> 命令部署网站，部署生效后，回到站长平台完成验证。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/2-%E5%A4%B4%E6%9D%A1%E7%BD%91%E7%AB%99%E9%AA%8C%E8%AF%81.png" alt="头条网站文件验证"></p>
-<h3 id="提交-sitemap-2"><a href="#提交-sitemap-2" class="headerlink" title="提交 sitemap"></a>提交 sitemap</h3><p>验证完毕后，提交 sitemap。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/3-%E5%A4%B4%E6%9D%A1%E6%8F%90%E4%BA%A4sitemap.png" alt="头条提交 sitemap"></p>
-<p>提交完成后，即可在页面下方查看 sitemap 的更新情况：</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/8-%E5%A4%B4%E6%9D%A1sitemap%E6%94%B6%E5%BD%95%E6%83%85%E5%86%B5.png" alt="头条 sitemap 收录情况"></p>
-<h2 id="让神马搜索收录网站"><a href="#让神马搜索收录网站" class="headerlink" title="让神马搜索收录网站"></a>让神马搜索收录网站</h2><h3 id="注册神马站长平台"><a href="#注册神马站长平台" class="headerlink" title="注册神马站长平台"></a>注册神马站长平台</h3><p>注册并登录<a href="zhanzhang.sm.cn">神马搜索站长平台</a>，添加网站。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/4-%E7%A5%9E%E9%A9%AC%E7%AB%99%E9%95%BF%E5%B9%B3%E5%8F%B0.png" alt="神马站长平台"></p>
-<h3 id="验证网站"><a href="#验证网站" class="headerlink" title="验证网站"></a>验证网站</h3><p>直接下载验证文件 <code>shenma-site-verification.txt</code> 并将其移动到博客根目录下的 <code>public</code> 文件夹里面。然后执行 <code>hexo d</code> 命令部署网站，部署生效后，回到站长平台完成验证。</p>
-<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/5-%E7%A5%9E%E9%A9%AC%E7%BD%91%E7%AB%99%E6%96%87%E4%BB%B6%E9%AA%8C%E8%AF%81.png" alt="神马网站文件验证"></p>
-<h3 id="放弃神马收录"><a href="#放弃神马收录" class="headerlink" title="放弃神马收录"></a>放弃神马收录</h3><p>神马在验证网站时，不管是文件验证还是代码验证，我多次尝试都以失败告终，使用体验极差，遂弃之。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>各大搜索引擎的收录步骤都是大同小异的，没啥太大的难度，一步步来就可以了。</p>
-<p>整体体验下来，感觉搜狗、神马压根就没想把自己的搜索给做起来了，体验一塌糊涂。360 体验稍好一点，不过作为国内搜索的老二，站长平台连个 HTTPS 都不上，属实说不过去。相较于国内参差不齐的体验，国外主流搜索引擎的站长平台的各种体验都要好上不少，人家强是有道理的。</p>
-<p>最后想说的，也是对自己的勉励，那就是「<strong>内容才是第一要素</strong>」。SEO 技巧是为内容服务的，收录只是第一步，收录以后还需要持续更新博客，写有价值、有内容的文章，这样才能吸引他人点击和浏览，乃至分享引用，这样可以增加网站曝光以及提高搜索引擎权重，从而得到更好的搜索引擎排名，让更多的人看到，实现正向循环。</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://tding.top/archives/4ea54752.html">Hexo-NexT 博客提交搜索引擎收录</a></p>
-<p><a href="https://www.itrhx.com/2019/09/17/A48-submit-search-engine-inclusion/">Hexo 博客提交百度、谷歌搜索引擎收录</a></p>
-]]></content>
-      <categories>
-        <category>个人博客</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>SEO</tag>
       </tags>
   </entry>
   <entry>
@@ -1085,6 +582,166 @@
       </tags>
   </entry>
   <entry>
+    <title>Git 常用命令备忘录</title>
+    <url>/post/Git-Cheat-Sheet/</url>
+    <content><![CDATA[<p>一些不太常用的 Git 命令往往隔一段时间不用就忘记了，特写此篇备忘。</p>
+<span id="more"></span>
+
+<h2 id="配置-User-信息"><a href="#配置-User-信息" class="headerlink" title="配置 User 信息"></a>配置 User 信息</h2><h3 id="添加-User-信息"><a href="#添加-User-信息" class="headerlink" title="添加 User 信息"></a>添加 User 信息</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config [--global | --local] user.name &#x27;your_name&#x27;</span><br><span class="line">git config [--global | --local] user.email &#x27;your_email&#x27;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>默认为 local，所以只有需要设置全局时需要带 –global 参数，–local 参数可以直接省略。</li>
+<li>单引号不是必须的，可以省略。一般只在输入的内容之中含有空格的时候需要使用单引号。</li>
+</ul>
+<h3 id="查看-User-信息"><a href="#查看-User-信息" class="headerlink" title="查看 User 信息"></a>查看 User 信息</h3><p>使用以下命令查看所有全局&#x2F;局部配置信息：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --list [--local | --global | --system]</span><br></pre></td></tr></table></figure>
+
+<p>或者使用以下命令直接查看具体设置：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config [--global | --local] user.name</span><br><span class="line">git config [--global | --local] user.email</span><br></pre></td></tr></table></figure>
+
+<h3 id="global-与-local-优先级以及配置文件所在位置"><a href="#global-与-local-优先级以及配置文件所在位置" class="headerlink" title="global 与 local 优先级以及配置文件所在位置"></a>global 与 local 优先级以及配置文件所在位置</h3><p>local &gt; global</p>
+<p>local 配置位于当前仓库的 .git 文件夹下的 config 文件中。</p>
+<p>global 配置位于当前用户 home 目录下的 .gitconfig 文件中。</p>
+<h2 id="独自使用-Git-常见使用场景"><a href="#独自使用-Git-常见使用场景" class="headerlink" title="独自使用 Git 常见使用场景"></a>独自使用 Git 常见使用场景</h2><h3 id="git-log-常用参数"><a href="#git-log-常用参数" class="headerlink" title="git log 常用参数"></a>git log 常用参数</h3><ul>
+<li>git log –all 查看所有分支的历史</li>
+<li>git log –graph 图形化查看 log 历史</li>
+<li>git log –oneline 查看单行的简洁历史</li>
+<li>git log -n 查看最近 n 条历史</li>
+</ul>
+<h3 id="删除不需要的分支"><a href="#删除不需要的分支" class="headerlink" title="删除不需要的分支"></a>删除不需要的分支</h3><p>普通删除(如果当前分支没有被合并，不能直接删除)：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git branch -d 分支名</span><br></pre></td></tr></table></figure>
+
+<p>强制删除：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git branch -D 分支名</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改最近一次的-commit-内容"><a href="#修改最近一次的-commit-内容" class="headerlink" title="修改最近一次的 commit 内容"></a>修改最近一次的 commit 内容</h3><p>命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git commit --amend</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改最近一次-commit-的作者"><a href="#修改最近一次-commit-的作者" class="headerlink" title="修改最近一次 commit 的作者"></a>修改最近一次 commit 的作者</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git commit --amend --author=&quot;AuthorName &lt;email@address.com&gt;&quot; --no-edit</span><br></pre></td></tr></table></figure>
+
+<p>其中 <code>no-edit</code> 的作用是表明此次修改仅修改作者，而不需要对 <code>commit message</code> 进行改动，所以不需要启动编辑器。</p>
+<h3 id="修改老旧-commit-的-message"><a href="#修改老旧-commit-的-message" class="headerlink" title="修改老旧 commit 的 message"></a>修改老旧 commit 的 message</h3><ol>
+<li><p>进入交互式变基策略修改：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i 想要修改的提交节点的父节点的 HASH 值</span><br></pre></td></tr></table></figure>
+
+<p>如果想要修改第一次提交，也就是最早的那次提交，没有父节点的提交，使用命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i --root</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改策略：</p>
+<p>在 vi 模式下将想要修改的 commit 前面的选项由 pick 变更为 r 或者 reword，这一选项的含义为此 commit 的内容不变，只修改其 commit message。</p>
+</li>
+<li><p>修改 commit message</p>
+</li>
+</ol>
+<p>注意事项：某个 commit 修改后，它本身以及它后面所有 commit 的 hash 值都会发生变化，这是因为message 也是 commit 的属性，是确定 commit 的 hash 值的一个因子。其次，second_commit 有个 parent 的属性，parent 的内容发生了变化，因此，second_commit 的 hash 也变了。</p>
+<p>如果最早的提交也即 root commit 发生了变化，那么会产生一个新的 root commit，即出现了两个祖宗 commit。</p>
+<h3 id="把连续的多个-commit-整理成一个"><a href="#把连续的多个-commit-整理成一个" class="headerlink" title="把连续的多个 commit 整理成一个"></a>把连续的多个 commit 整理成一个</h3><ol>
+<li><p>进入交互式变基策略修改：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i 想要修改的提交节点的父节点的 HASH 值</span><br></pre></td></tr></table></figure>
+
+<p>如果想要修改第一次提交，也就是最早的那次提交，没有父节点的提交，使用命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git rebase -i --root</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改策略：</p>
+<p>将准备被合并的 commit 前面的选项由 pick 改为 s 或者 squash，这一选项的含义为继续使用这一 commit，但是将其合并到前面(比它老)的那一个 commit 里面去，想要合并哪几个就将这几个前面的选项都改成 s。</p>
+</li>
+<li><p>修改 commit message</p>
+</li>
+</ol>
+<h3 id="把间隔的多个-commit-整理成一个"><a href="#把间隔的多个-commit-整理成一个" class="headerlink" title="把间隔的多个 commit 整理成一个"></a>把间隔的多个 commit 整理成一个</h3><p>原理和方法同“把连续的多个 commit 整理成一个”是一样的，只是 rebase 策略的不一样：</p>
+<ul>
+<li>将想要整理的 commit 通过剪切，按照自己想要的顺序移动到一起，排在上面的是越老的</li>
+<li>将想要整理的 commit 前面的选项变更为 s</li>
+<li>最后这些 commit 会同上方最近的一个选项为 pick 的 commit 合并</li>
+</ul>
+<p>会用到的 vim 快捷键：</p>
+<figure class="highlight less"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">dd</span>	<span class="comment">//剪切一行，也可以用来删除一行</span></span><br><span class="line"><span class="selector-tag">dw</span>	<span class="comment">//删除一个单词</span></span><br><span class="line"><span class="selector-tag">u</span>	<span class="comment">//撤销</span></span><br><span class="line"><span class="selector-tag">p</span>	<span class="comment">//粘贴</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="比较暂存区和-HEAD-所含文件的差异"><a href="#比较暂存区和-HEAD-所含文件的差异" class="headerlink" title="比较暂存区和 HEAD 所含文件的差异"></a>比较暂存区和 HEAD 所含文件的差异</h3><p>HEAD 所含文件就是最新一个 commit 内的文件内容</p>
+<figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">git diff <span class="comment">--cached</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="比较工作区和暂存区所含文件的差异"><a href="#比较工作区和暂存区所含文件的差异" class="headerlink" title="比较工作区和暂存区所含文件的差异"></a>比较工作区和暂存区所含文件的差异</h3> <figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git diff</span></span><br></pre></td></tr></table></figure>
+
+<p>后面可以接“– 单个或多个文件名”来查看特定文件的差异</p>
+<h3 id="比较工作区和-HEAD-所含文件的差异"><a href="#比较工作区和-HEAD-所含文件的差异" class="headerlink" title="比较工作区和 HEAD 所含文件的差异"></a>比较工作区和 HEAD 所含文件的差异</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git diff HEAD</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="让暂存区恢复成和-HEAD-一样"><a href="#让暂存区恢复成和-HEAD-一样" class="headerlink" title="让暂存区恢复成和 HEAD 一样"></a>让暂存区恢复成和 HEAD 一样</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git reset HEAD</span></span><br></pre></td></tr></table></figure>
+
+<p>git reset 默认的参数为 –mixed</p>
+<h3 id="让工作区的文件恢复为和暂存区一样"><a href="#让工作区的文件恢复为和暂存区一样" class="headerlink" title="让工作区的文件恢复为和暂存区一样"></a>让工作区的文件恢复为和暂存区一样</h3><figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">git checkout <span class="comment">-- 文件名</span></span><br></pre></td></tr></table></figure>
+
+<p>Git 2.23 版本以后使用 <code>git restore</code>命令来代替<code>git checkout</code>功能</p>
+<h3 id="取消暂存区部分文件的更改"><a href="#取消暂存区部分文件的更改" class="headerlink" title="取消暂存区部分文件的更改"></a>取消暂存区部分文件的更改</h3><p>将暂存区部分文件取消暂存的意思是所做的改动继续保留在工作目录，暂存区部分的内容同 HEAD 保持一致。</p>
+<figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">reset</span> HEAD <span class="comment">--文件名</span></span><br></pre></td></tr></table></figure>
+
+<p>Git 新版本使用：</p>
+<figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">restore</span> --staged &lt;<span class="keyword">file</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<p>两条命令作用是一样的。</p>
+<h3 id="消除最近的几次提交"><a href="#消除最近的几次提交" class="headerlink" title="消除最近的几次提交"></a>消除最近的几次提交</h3><figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">reset</span> <span class="comment">--hard &lt;hash&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>将工作区和暂存区的内容都恢复到 hash 值所对应的那个 commit 的状态。</p>
+<h3 id="看不同提交的指定文件的差异"><a href="#看不同提交的指定文件的差异" class="headerlink" title="看不同提交的指定文件的差异"></a>看不同提交的指定文件的差异</h3><figure class="highlight css"><table><tr><td class="code"><pre><span class="line">git diff <span class="selector-attr">[from_commit]</span> <span class="selector-attr">[to_commit]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="正确删除文件的方法"><a href="#正确删除文件的方法" class="headerlink" title="正确删除文件的方法"></a>正确删除文件的方法</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">git rm <span class="tag">&lt;<span class="name">filename</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="本地与远程仓库的交互"><a href="#本地与远程仓库的交互" class="headerlink" title="本地与远程仓库的交互"></a>本地与远程仓库的交互</h2><h3 id="让-Fork-的仓库同源仓库保持更新"><a href="#让-Fork-的仓库同源仓库保持更新" class="headerlink" title="让 Fork 的仓库同源仓库保持更新"></a>让 Fork 的仓库同源仓库保持更新</h3><h4 id="添加源仓库"><a href="#添加源仓库" class="headerlink" title="添加源仓库"></a>添加源仓库</h4><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">git remote <span class="built_in">add</span> upstream 源仓库链接</span><br></pre></td></tr></table></figure>
+
+<h4 id="同步更新"><a href="#同步更新" class="headerlink" title="同步更新"></a>同步更新</h4><ol>
+<li>如果在另一个分支上，就切换到 master 分支</li>
+</ol>
+<figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">git checkout <span class="literal">master</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>从源仓库抓取最新更改后，合并到本地 master 分支</li>
+</ol>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git pull upstream</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>将本地 master 分支推送到自己 Fork 的远程仓库  origin</li>
+</ol>
+<figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="进阶版"><a href="#进阶版" class="headerlink" title="进阶版"></a>进阶版</h4><ol>
+<li>将 master 分支的上游仓库设置为源仓库</li>
+</ol>
+<figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">git branch --<span class="attr">set-upstream-to=</span>upstream/<span class="keyword">master</span> <span class="title">master</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>将 push 命令推送的默认仓库设置为自己 Forked 的仓库 origin</li>
+</ol>
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">config</span> <span class="comment">--local remote.pushDefault origin</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>搞定之后，工作流程为更加简单：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git pull	//默认从源仓库拉取最新的更新</span><br><span class="line">git push	//将拉取的更新推送到 Forked 的仓库</span><br></pre></td></tr></table></figure>
+
+<h3 id="推送一个新的分支到远程仓库"><a href="#推送一个新的分支到远程仓库" class="headerlink" title="推送一个新的分支到远程仓库"></a>推送一个新的分支到远程仓库</h3><p>-u 是 –set-upstream 的简写，该标记会为之后轻松地推送与拉取配置分支</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git push -u remote_name new_branch_name</span><br></pre></td></tr></table></figure>
+
+<h3 id="清理本地无效的远程追踪分支"><a href="#清理本地无效的远程追踪分支" class="headerlink" title="清理本地无效的远程追踪分支"></a>清理本地无效的远程追踪分支</h3><p>利用选项 –prune</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">git remote update -<span class="selector-tag">p</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="远程删除了分支本地也想删除"><a href="#远程删除了分支本地也想删除" class="headerlink" title="远程删除了分支本地也想删除"></a>远程删除了分支本地也想删除</h3><figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">git remote prune origin</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h3><figure class="highlight maxima"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">push</span> <span class="built_in">origin</span> --<span class="built_in">delete</span> &lt;remote-branchname&gt;</span><br></pre></td></tr></table></figure>
+
+<p>或者</p>
+<figure class="highlight elixir"><table><tr><td class="code"><pre><span class="line">git push origin <span class="symbol">:&lt;remote-branchname&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="从远程分支中创建并切换到本地分支"><a href="#从远程分支中创建并切换到本地分支" class="headerlink" title="从远程分支中创建并切换到本地分支"></a>从远程分支中创建并切换到本地分支</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">git checkout -b <span class="tag">&lt;<span class="name">branch-name</span>&gt;</span> <span class="tag">&lt;<span class="name">remote-name</span>&gt;</span>/<span class="tag">&lt;<span class="name">branch-name</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://github.com/521xueweihan/git-tips">Git的奇技淫巧</a></p>
+]]></content>
+      <categories>
+        <category>开发环境</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>RT-Thread RECA学习营（一）——正点原子战舰 V3  RT-Thread BSP 移植</title>
     <url>/post/RT-Thread_BSP/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近在准备六月份的 RT-Thread 的 <a href="https://www.rt-thread.org/page/rac.html">RECA</a>（RT-Thread开发者能力认证），官方组织了一个学习营，第一周的任务是：</p>
@@ -1310,8 +967,375 @@
       </tags>
   </entry>
   <entry>
-    <title>Where-Command-Difference-Between-Cmd-And-Powershell</title>
+    <title>Hexo Next 主题 V7 升级 V8 记录</title>
+    <url>/post/Update-Next-From-V7-To-V8/</url>
+    <content><![CDATA[<p>Hexo 和 Next 最近都发布了大版本更新，此文记录了升级过程。</p>
+<span id="more"></span>
+
+<h2 id="升级-Hexo-版本"><a href="#升级-Hexo-版本" class="headerlink" title="升级 Hexo 版本"></a>升级 Hexo 版本</h2><p>Hexo 核心团队成员 Sukka 写的 <a href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a>详细介绍了 Hexo 5.0 的新特性，以及从 Hexo 4.x 升级到 Hexo 5.x 需要注意的地方。</p>
+<p>Hexo 5.0 版本带来了不小的性能上的提升，升级 5.0 直接修改 <code>hexo-site/package.json</code> 文件：</p>
+<figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">&quot;dependencies&quot;: &#123;</span><br><span class="line"><span class="deletion">-  &quot;hexo&quot;: &quot;^4.2.1&quot;,</span></span><br><span class="line"><span class="addition">+  &quot;hexo&quot;: &quot;^5.1.1&quot;,</span></span><br></pre></td></tr></table></figure>
+
+<p>然后再执行 <code>npm upadte</code> 命令即可。</p>
+<p>升级完 Hexo ，<code>_config.yml</code> 并不会更新，而 Hexo 5.0 是有新增和改动一些其中的配置项的，所以需要我们自己去 <a href="https://github.com/hexojs/hexo-starter/blob/master/_config.yml">GitHub</a> 上查看站点配置文件的变动情况，并手动同步这些修改到自己的站点配置文件里。</p>
+<p>主要的变动就是新增了 <code>prismjs</code> 相关配置项以及更新了 <code>updated_option</code> 配置项。</p>
+<h2 id="升级-Next-V8-0-0-版本"><a href="#升级-Next-V8-0-0-版本" class="headerlink" title="升级 Next V8.0.0 版本"></a>升级 Next V8.0.0 版本</h2><p>使用 Hexo 5.0 及以上版本，升级 Next 主题最简单的方法就是通过 <code>npm</code> 安装，进入博客根目录，执行以下命令即可安装最新版本的 Next 主题：</p>
+<figure class="highlight autoit"><table><tr><td class="code"><pre><span class="line">npm install hexo-theme-<span class="keyword">next</span></span><br></pre></td></tr></table></figure>
+<p>通过 <code>npm</code> 安装的 Next 主题默认文件夹路径为 <code>hexo-site/node_modules/hexo-theme-next</code> 。因为有一些自定义修改可能会需要我们改动主题的源文件，而因为整个 <code>node_modules/</code> 被<code>gitignore</code> 文件所忽略，将会导致我们无法用 Git 记录我们对主题源文件的修改。</p>
+<p>所以我将之前版本的 Next 主题文件夹进行改名，将 <code>hexo-site/theme/next</code> 改成了 <code>hexo-site/theme/next-V7</code>。然后将 <code>hexo-theme-next</code>  文件夹的内容复制到 <code>hexo-site/theme/next</code> 。这样就能将主题文件夹加入 Git 的管理之中了。</p>
+<p>这里切记不要直接将旧版本的 Next 主题文件夹直接删除，因为后面可能有配置以及文件需要进行迁移。</p>
+<p>更名完成后，使用 <code>hexo version</code> 查看版本号，可以看到一个硕大的 <code>Next</code> Logo 以及下方显示 <code>NexT version 8.0.0</code>，说明现在已经成功启用 Next V8 版本。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9F%A5%E7%9C%8BNext%E7%89%88%E6%9C%AC%E5%8F%B7.png" alt="查看 Next 版本号"></p>
+<h2 id="迁移配置文件"><a href="#迁移配置文件" class="headerlink" title="迁移配置文件"></a>迁移配置文件</h2><p>在之前使用 Next V7 版本的时候，我是利用 Hexo 的 Data Files 功能将主题配置放置在站点的 <code>source/_data/next.yml</code> 文件中。但这种做法在 V8 版本被官方告知已经过时，并<strong>将在一段时间后停止支持</strong>，现在推荐的做法是<a href="https://theme-next.js.org/docs/getting-started/configuration.html">使用 Alternate Theme Config 存储配置</a>，需要 Hexo 版本在 5.0 及以上。</p>
+<p>这里可以选择一步到位直接将主题配置整合到站点配置文件 <code>_config.yml</code> 中去，也可以选择依然使用独立的主题配置文件，我选择的是第二种。具体流程如下：</p>
+<h3 id="创建并配置-config-next-yml-文件"><a href="#创建并配置-config-next-yml-文件" class="headerlink" title="创建并配置 _config.next.yml 文件"></a>创建并配置 <code>_config.next.yml</code> 文件</h3><p>在博客根目录下新建 <code>_config.next.yml</code> 文件。</p>
+<p>因为 Next V8 有不少配置项发生了变更，所以我索性选择了重新配置。先将 <code>hexo-site/node_modules/hexo-theme-next/_config.yml</code> 中的内容复制到 <code>_config.next.yml</code> 中。然后用 Beyond Compare 软件对新主题配置文件 <code>_config.next.yml</code> 和旧主题配置文件 <code>source/_data/next.yml</code> 两者进行文本比较，根据自己的需求迁移整合相关配置项。</p>
+<p>修改完成后，将旧主题配置文件 <code>source/_data/next.yml</code> 改名，我是改成了 <code>next-old.yml</code>，名字随意，只要能同原来的 <code>next.yml</code> 区别开来即可。</p>
+<p>从 V7 升级到 V8 主要有下面几个变化：</p>
+<ul>
+<li>Hexo 5.0 版本移除了对于 swig 模版的支持，使用 Nunjucks 代替 swig 作为模版引擎，主题配置文件内 <code>custom_file_path</code> 支持文件的后缀也从 <code>.swig</code> 变成了 <code>.njk</code>。所以如果此前根据 swig 的语法写过自定义内容，请在更新前确认它们是与 Nunjucks 兼容的，否则会报错，且生成的页面为空白。例如， Nunjucks 只支持 <code>and</code> 运算符，需要替换掉 swig 中的 <code>&amp;&amp;</code>。</li>
+<li>Next V8 将自带的 Font Awesome 图标库由 4.7.0 版本升级为了 5.13.0 版本。此次升级并不向下兼容，所以需要修改配置文件中与 Font Awesome 相关的内容，否则图标可能无法正常显示。</li>
+<li>NexT V8 已支持一键切换 CDN 服务商，而不需要为每个插件单独设置 CDN 地址。但需要注意，如果是使用最新版的 Next，那么一定要保持 <code>internal: local</code> 的默认设置不变。</li>
+<li>如果此前配置过 Valine，需要注意将主题配置文件中的 <code>appid</code> 和 <code>appkey</code> 改为 <code>appId</code> 和 <code>appKey</code> 。否则会出现 Valine 无法正常加载的现象。</li>
+<li>由于 Velocity.js 缺乏维护，NexT V8 使用 Animate.css 代替之。两者的动画效果几乎完全一致，除了动画名称略有不同。如果在配置文件中设置了旧的名称（例如 slideDownIn），请将其移除或根据此网页选择新的动画效果：<a href="http://theme-next.js.org/animate/">http://theme-next.js.org/animate/</a></li>
+</ul>
+<p>更多详细信息，可以自行查询 Next <a href="https://github.com/next-theme/hexo-theme-next/issues/4">相关官方说明</a>以及<a href="https://theme-next.js.org/docs/">官方文档</a>。</p>
+<h3 id="迁移-Favicon-位置"><a href="#迁移-Favicon-位置" class="headerlink" title="迁移 Favicon 位置"></a>迁移 Favicon 位置</h3><p>之前我博客的 Favicon 图片啥的都是放在 <code>hexo-site/themes/next/source/images</code> 目录下面，正好趁着这次升级的机会，将图片全部移到了 <code>hexo-site/source/images</code> 下（没有这个文件夹就自己新建）。</p>
+<p>不要忘记去 <code>_config.next.yml</code> 检查下 Favicon 相关配置的文件名是否正确，默认的都带有 <code>-next</code>  后缀。</p>
+<h2 id="自定义修改迁移"><a href="#自定义修改迁移" class="headerlink" title="自定义修改迁移"></a>自定义修改迁移</h2><p>这一部分是最麻烦的，因为跨版本升级，很多源文件的位置以及名称都发生了变化，比如每篇文章结尾处的版权声明的样式文件就从 <code>post-copyright.styl</code> 变成了 <code>post-footer.styl</code>。而且模版引擎也从swig 变更成了 Nunjucks，虽然大部分内容是可以互相兼容的，但万一碰到不兼容的，排查起来就比较麻烦了。</p>
+<p>所幸我的自定义修改并不多，而且都是 Nunjucks 兼容的，所以迁移起来相对较快。在进行迁移的时候，利用类似 Beyond Compare 之类的文件比较软件可以有效提高迁移速度，推荐大家尝试。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>折腾了一天，成功从 Next V7 升级到了 V8，升级所带来肉眼可见的变化并不多，只有一些诸如赞赏按钮样式之类的小变动，其他更多都是内部的一些变动。</p>
+<p>我是喜欢自己折腾，而且及时使用新版，可以帮助发现并反馈问题，可以帮助 Next 主题更好地进行迭代。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://github.com/next-theme/hexo-theme-next">hexo-theme-next README.md</a></p>
+<p><a href="https://theme-next.js.org/docs/">Next 官方文档</a></p>
+<p><a href="https://github.com/next-theme/hexo-theme-next/issues/4">Next【必读】更新说明及常见问题 </a></p>
+<p><a href="https://blog.skk.moe/post/hexo-5/">Hexo 5.0.0 正式发布</a></p>
+]]></content>
+      <categories>
+        <category>个人博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>雷蛇炼狱蝰蛇2013 更换中键微动</title>
+    <url>/post/RepairTheDeathadder2013/</url>
+    <content><![CDATA[<p>第一次自己动手修鼠标，挺好玩的。</p>
+<span id="more"></span>
+
+<h2 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h2><p>这款炼狱蝰蛇 2013 是自己四年前买的，之前一直用得好好的，但最近滚轮的按键功能突然失效了，表现为能够正常按压，但无法正常触发按键功能。在日常浏览网页时，我习惯用中键来关闭标签页以及在新窗口打开链接，现在中键突然失灵了，对我的日常使用造成了很大的不便。</p>
+<p>之前有在网上看过不少帖子都是自己修鼠标，感觉也不是很难，所以这次我也尝试一下来自己修鼠标。</p>
+<h2 id="所需工具"><a href="#所需工具" class="headerlink" title="所需工具"></a>所需工具</h2><p>1.电烙铁<br>2.镊子<br>3.十字螺丝刀<br>4.新中键微动<br>5.焊锡丝<br>6.小刀</p>
+<h2 id="拆解鼠标"><a href="#拆解鼠标" class="headerlink" title="拆解鼠标"></a>拆解鼠标</h2><p>通过搜索在什么值得买上面找到了这篇<a href="https://post.smzdm.com/p/568792/">维修教程</a>，虽然文中问题是鼠标出现了双击的现象，和我的问题并不相同，但同样都是通过更换微动来解决问题，而且各个步骤都比较详细，给我提供了很大的帮助。</p>
+<p>首先用刀片分别将鼠标背面左右上角的两个脚垫撬下来，两个脚垫是通过胶粘上去的，撬下来以后保存好，后面还原的时候还可以再粘回去。去掉两个脚垫后就可以看到里面的两颗螺丝了。这两颗螺丝可以直接拧下。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8E%BB%E9%99%A4%E8%84%9A%E5%9E%AB.jpg" alt="去除脚垫"></p>
+<p>需要注意的是第三颗螺丝的位置，是隐藏在贴纸的下方，位置如下图所示，直接用螺丝刀捅破贴纸即可看到。这颗螺丝拧出一定距离即可，不必全部拧出。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%9A%90%E8%97%8F%E7%9A%84%E7%AC%AC%E4%B8%89%E9%A2%97%E8%9E%BA%E4%B8%9D.jpg" alt="隐藏的第三颗螺丝"></p>
+<p>三颗螺丝处理完毕后，从下图所示处往下掰，即可打开鼠标上盖，打开时小心不要用力过猛，因为上盖上有一根灯光线和主板相连，不小心的话可能会扯断。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%8E%B0%E5%BC%80%E5%A4%96%E5%A3%B3.jpg" alt="掰开外壳"></p>
+<p>断开上盖与主板的连线后，即可移走上盖，看到鼠标主板。接下来如下图所示依次卸下主板上的三颗固定螺丝、左侧按键微动上的两颗螺丝以及滚轮旁边的小黑色螺丝后，最后再断开两根排线，即可取下主板。注意保管好螺丝，特别那颗较小的黑色螺丝。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%8B%86%E5%8D%B8%E4%B8%BB%E6%9D%BF.png" alt="拆卸主板"></p>
+<h2 id="更换微动"><a href="#更换微动" class="headerlink" title="更换微动"></a>更换微动</h2><p>观察主板可以看到滚轮横杆右侧的下方有一颗正方形微动，判断应该就是这个地方的微动损坏导致中键失灵。于是在万能的淘宝上花八毛钱+七块钱运费买了一个新的微动。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%96%B0%E8%80%81%E5%BE%AE%E5%8A%A8.jpg" alt="新老微动"></p>
+<p>因为没有吸锡器，可以直接用电烙铁加热主板背面的焊点，然后边加热边拔也是可以把微动给卸下来的。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%8D%B8%E4%B8%8B%E5%BE%AE%E5%8A%A8.jpg" alt="卸下微动"></p>
+<p>微动只是一个开关，不区分方向，将新微动针脚插入到主板对应孔位上，然后用电烙铁和焊锡对准针脚化开焊锡即可完成更换。如果卸旧微动的时候焊孔内还残留有焊锡也不用担心，直接加热焊孔，将焊锡加热到流动状，这时新微动针脚可以轻松穿过焊孔。</p>
+<h2 id="重装鼠标"><a href="#重装鼠标" class="headerlink" title="重装鼠标"></a>重装鼠标</h2><p>按照刚刚的拆解步骤一步一步还原即可，排线全都有防呆设计，也不需要担心会接反。<br><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%87%8D%E8%A3%85%E9%BC%A0%E6%A0%87.jpg" alt="重装鼠标"></p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%BB%A1%E8%A1%80%E5%A4%8D%E6%B4%BB.jpg" alt="满血复活"></p>
+<p>最后自然是连接电脑进行测试，功能一切正常，又可以愉快地使用中键了。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>在有帖子可以参考的情况下，整个更换过程还是比较简单的，最大的困难可能是大部分同学没有电烙铁，专门为此添置一个可能显得有些本末倒置，毕竟电烙铁也不便宜。</p>
+<p>自己动手，丰衣足食。人生第一次自己动手更换鼠标，成就感还是不小的。看到鼠标在自己手里满血复活，开心。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://post.smzdm.com/p/568792/">“拿什么拯救你，我的双击蛇”— 手把手教你更换Razer炼狱蝰蛇鼠标微动</a></p>
+]]></content>
+      <categories>
+        <category>小事</category>
+      </categories>
+      <tags>
+        <tag>DIY</tag>
+        <tag>外设</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>通过 Microsoft Store 购买 Win10 专业版小记</title>
+    <url>/post/Buy-WindowsPro-License/</url>
+    <content><![CDATA[<p>通过 Windows 10 自带的 Microsoft Store 购买非常方便。</p>
+<span id="more"></span>
+
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>双十一的时候自己组装了一台主机，在安装操作系统的时候直接安装的 Windows 10 专业版。之前自己的笔记本是从 Windows 8.1 升级成 Windows 10，自动就激活并绑定了数字许可证，但自己组装的主机就需要考虑操作系统购买的问题了。</p>
+<p>在不激活的情况下用了一段时间，除了不能换壁纸等个性化操作以及右下角时不时显示一个未激活水印，好像也没有多大的限制。</p>
+<p>之前我从网上简单了解到的以及微软官网上显示的，都是专业版只限企业购买，还需要电话联系销售，我看着好像还挺麻烦的样子。但实际操作下来，发现还是自己信息太闭塞，购买起来其实非常简单，直接通过自带的 Microsoft Store 应用购买即可。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%AE%98%E7%BD%91%E8%B4%AD%E4%B9%B0%E5%8F%AA%E9%99%90%E4%BC%81%E4%B8%9A.png" alt="官网显示只限企业购买"></p>
+<h2 id="购买流程"><a href="#购买流程" class="headerlink" title="购买流程"></a>购买流程</h2><p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E6%9C%AA%E6%BF%80%E6%B4%BB.png" alt="未激活界面"></p>
+<p>在 Windows10 设置的「激活」页面直接有转到 Microsoft Store 购买的选项，点击会直接打开自带的 Microsoft Store 并跳转到专业版的详情界面，价格是 1458 元。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/MicrosoftStore%E8%AF%A6%E6%83%85%E7%95%8C%E9%9D%A2.png" alt="MicrosoftStore详情界面"></p>
+<p>点击「购买」，会先通过微软账户密码确认你的身份，我开启了 Windows Hello 摄像头，直接看一眼摄像头就确认了。</p>
+<p>之前买软件的时候已经在 Microsoft Store 中绑定过支付宝的免密支付，所以我的默认支付方式就直接是支付宝。Windows 10 专业版销售商我这里显示的是「杭州网易增盈科技有限公司」，不知道怎么和网易扯上了关系。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E8%B4%AD%E4%B9%B0%E7%A1%AE%E8%AE%A4%E7%95%8C%E9%9D%A2.png" alt="购买确认界面"></p>
+<p>最后再点击一次「购买」，支付宝自动完成扣款，加载片刻，Windows 自动激活，显示「Windows 已使用与 Microsoft 账户关联的数字许可证激活」，至此就激活完成了。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E5%B7%B2%E6%BF%80%E6%B4%BB.png" alt="已激活"></p>
+<h2 id="更换硬件后如何激活"><a href="#更换硬件后如何激活" class="headerlink" title="更换硬件后如何激活"></a>更换硬件后如何激活</h2><p>根据微软官网的信息，在 Windows 10（1607版本或更高版本）中，必须将 Microsoft 帐户与设备上的Windows 10 数字许可证联系起来。通过将 Microsoft 帐户与数字许可证链接起来，以后在进行重大硬件更改，比如换主板的时候，就使用激活疑难解答程序重新激活 Windows。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/%E9%93%BE%E6%8E%A5%E5%88%B0Microsoft%E8%B4%A6%E6%88%B7.png" alt="将 Windows 10 数字许可证链接到 Microsoft 帐户"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>整个过程非常简单，购买体验挺好。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://support.microsoft.com/zh-cn/windows/%E5%9C%A8%E6%9B%B4%E6%8D%A2%E7%A1%AC%E4%BB%B6%E5%90%8E%E9%87%8D%E6%96%B0%E6%BF%80%E6%B4%BB-windows-10-2c0e962a-f04c-145b-6ead-fb3fc72b6665">在更换硬件后重新激活 Windows 10</a></p>
+]]></content>
+      <categories>
+        <category>小事</category>
+      </categories>
+      <tags>
+        <tag>正版</tag>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>什么是全功能 Type-C 及显示器所需带宽如何计算</title>
+    <url>/post/What-Is-Full-Featured-Type-C/</url>
+    <content><![CDATA[<p>本文主要介绍了如何计算特定分辨率和刷新率显示器所需带宽以及对全功能 Type-C 的一些简单科普。</p>
+<span id="more"></span>
+
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>最近动了换新笔记本和显示器的念头，自己想换一台 4K 显示器，在了解相关知识的时候，经常看到要注意视频输出接口带宽的提醒。其中各种概念多且杂，初接触很容易懵圈，所以我整理汇总了一些网上的资料，以作此文。</p>
+<p>文中如有不对或不妥的地方，欢迎评论留言指出错误，不甚感激。</p>
+<h2 id="4K-60Hz-显示需要多少带宽"><a href="#4K-60Hz-显示需要多少带宽" class="headerlink" title="4K@60Hz 显示需要多少带宽"></a>4K@60Hz 显示需要多少带宽</h2><p>我们这里以一块 4K、8 bit、60 Hz 的屏幕举例，这块显示屏有 3840 * 2160 个像素点，每个像素点又由红绿蓝三个子像素构成 ，每个子像素需要 8 bit 的数据，刷新率为 60 Hz，也就是每秒需要刷新 60 次，那么每秒需要传输的数据量就是 3840 * 2160 * 3 * 8 * 60 &#x3D;  11.94 Gbit，需要的带宽就是 11.94 Gbps。</p>
+<p>上述这些数据只是我们能够在显示屏上看到的内容，实际上在传输相关画面数据的时候，还需要考虑到防止画面撕裂，以及画面对齐等等需求，需要传输比实际显示画面更多的数据，所以实际传输的数据会比上面计算的更多。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/7-%E6%98%BE%E7%A4%BA%E5%99%A8%E5%AE%9E%E9%99%85%E4%BC%A0%E8%BE%93%E6%95%B0%E6%8D%AE.png" alt="显示器实际传输数据"></p>
+<p>下面这张来自 B 站 Up 主<a href="https://space.bilibili.com/14871346#/">硬件茶谈</a>的表格详细列出了市面上常见分辨率及刷新率的组合分别所需要的带宽，其中还有各种显示器接口的相容性：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/8-%E6%98%BE%E7%A4%BA%E6%8E%A5%E5%8F%A3%E7%9B%B8%E5%AE%B9%E8%A1%A8.png" alt="显示接口相容表"></p>
+<p>显示器带宽具体的计算原理可以查看 Up 主的<a href="https://b23.tv/rbYOKW">视频-【硬件科普】4K144Hz需要传输多少数据，教你如何正确的计算显示器的带宽需求？</a>，原理及计算方法都讲得非常清楚，动画特效也是一流。</p>
+<p>在此也强烈安利下 Up 主，最早是在知乎关注他的，在知乎笔记本话题下相当活跃，后期转型成 B 站 Up 主，视频质量极高，讲解概念深入浅出，动画精致流畅，看他的视频可谓一种享受。我从 Up 主的视频里学到了很多硬件相关基础知识。而且 Up 主现在还只是一名在校大学生，让人不服不行，在此就祝愿 Up 主早日发大财吧。</p>
+<h2 id="什么是全功能-Type-C"><a href="#什么是全功能-Type-C" class="headerlink" title="什么是全功能 Type-C"></a>什么是全功能 Type-C</h2><p>同时具有<strong>数据传输、充电、显示</strong>三项功能的 Type-C 就称之为全功能 Type-C。而之所有会有「全功能」和「非全功能」的区分，是因为 Type-C 只是个<strong>接口形状</strong>。Type-C 接口是能够支持 100W PD 供电、DP 显示输出、USB 数据传输等功能没错，但 <strong>Type-C 接口的功能都是可以被增减的</strong>，所以并不是所有 Type-C 接口都同时具备数据传输、充电、显示三项功能。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/2-Type-C%E4%B8%8D%E5%90%8C%E5%8A%9F%E8%83%BD.png" alt="Type-C 不同功能说明"></p>
+<p>每台电脑上面所配备的 Type-C 接口所具备的功能是不尽相同的，厂商基于成本或是其他方面的考虑，配备的 Type-C 可能只支持 USB 数据传输功能 ，不能充电、显示，也可能配备只支持 DP 显示和数据传输的 Type-C 口，不能充电。下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/1-TypeC%E5%8A%9F%E8%83%BD%E4%B8%8D%E9%BD%90.png" alt="Type-C 现状"></p>
+<h2 id="Type-C-的「数据传输」带宽"><a href="#Type-C-的「数据传输」带宽" class="headerlink" title="Type-C 的「数据传输」带宽"></a>Type-C 的「数据传输」带宽</h2><p>Type-C 接口还有一个重要的参数就是 USB 版本，USB 版本越高，带宽也就越高，理论上带宽越高，传输速度越快。不过 USB 版本的命名经过了几次大的修改，命名规范变来变去，对普通消费者识别起来极不友好。下面两张图分别引用自<a href="https://basic-tutorials.com/usb-type-c-at-a-glance-what-the-port-can-do-what-it-cant-do-and-why-it-has-nothing-to-do-with-usb-3-0/">USB type C at a glance: What the port can do, what it can’t do and why it has nothing to do with USB 3.0</a>及<a href="https://zh.wikipedia.org/wiki/USB">维基百科-USB</a>。其中 USB3.2 Gen 2x2 的 Logo 以维基百科的为准。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/3-USB%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E.png" alt="USB 版本说明"></p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/4-USB%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91.png" alt="USB 版本及速率(维基百科)"></p>
+<p>通过这两张图，我们能够比较清楚地知道各个 USB 版本对应的传输速率及兼容接口。目前笔记本上 Type-C 接口的主流速率还是 USB3.2 Gen 1 也就是 5Gbps，理论速度约合 500 MB&#x2F;s。</p>
+<p><strong>但需要注意的是，多数情况下，「USB 几点几」这样的称呼，仅仅只是用于描述接口的「数据传输」速度，不代表这个接口其他任何能力，如能否PD充电、能否显示。</strong></p>
+<h2 id="5Gbps-的-Type-C-无法满足-4K-60Hz-输出？"><a href="#5Gbps-的-Type-C-无法满足-4K-60Hz-输出？" class="headerlink" title="5Gbps 的 Type-C 无法满足 4K@60Hz 输出？"></a>5Gbps 的 Type-C 无法满足 4K@60Hz 输出？</h2><p>这个问题也是我在没了解相关知识之前相当困惑的一个地方——当我看到心仪的笔记本只有 USB 3.2 Gen1 接口和 HDMI1.4b 的接口，而两者的带宽都远小于 4K@60Hz 所需的 12.54 Gbps 时，我当时同样以为外接 4K@60Hz 显示器是不可能实现的了。</p>
+<p>这里面的问题就在于我们<strong>混淆了 Type-C 接口的「数据带宽」和「显示带宽」</strong>，我们日常习惯说一个 Type-C 的带宽是 3.1 Gen1 或者 Gen2、5Gbps 或者10Gbps，这时候说的其实都是这个接口的 USB 数据带宽，只能代表这个接口接 U盘&#x2F;移动硬盘之类的存储进行数据传输时所能达到的最大速度。</p>
+<p>Type-C能够整合显示输出功能，主要是借助了DP Alt Mode（替代模式）功能，借助Type-C正反面诸多针脚中的几个定义为显示接口。通俗点说可以理解为单独做了个 DP 显示总线放在 Type-C 口上，所以数据带宽是 5Gbps 还是10Gbps 并<strong>不代表显示带宽也只有这么多</strong>。以目前 Type-C 的规范来看，当我们说一个 Type-C 支持显示输出时，那么这个接口<strong>至少可以支持 DP1.2 标准</strong>，也就是说拥有独立的约 21Gbps 的显示带宽，因为 DP1.2 中有 20% 的编码是用于校验的，所以真正能用来传输视频信号的带宽只有 21.60 * 0.8 &#x3D; 17.28 Gbps，但这也已经<strong>完全可以满足 4K@60Hz 的传输要求了</strong>。下图引用自<a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a>：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/5-USBC%E7%8B%AC%E7%AB%8B%E6%98%BE%E7%A4%BA%E5%B8%A6%E5%AE%BD.png" alt="Type-C 显示拥有独立的显示带宽"></p>
+<p>我们现在关于 5Gbps 的 Type-C 能否满足 4K@60Hz 画面传输的问题有了明确的答案，只要是<strong>支持显示输出的 Type-C 口，就可以支持输出 4K@60Hz</strong>。</p>
+<h2 id="5Gbps-的-Type-C-的不足之处"><a href="#5Gbps-的-Type-C-的不足之处" class="headerlink" title="5Gbps 的 Type-C 的不足之处"></a>5Gbps 的 Type-C 的不足之处</h2><p>Type-C 显示输出虽然是 DP&#x2F;HDMI 显示，但实际上还是借用了数据传输的一部分引脚。当一个支持 DP 显示输出的 Type-C ，而它的数据带宽是 USB3.1 Gen1 5Gbps 时，那么此时是无法<strong>通过一根线</strong>同时实现理应互不干扰的 4K@60Hz 和 USB3.0 传输的，下图引用自<a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a> ：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/6-4K%E6%98%BE%E7%A4%BA%E8%BE%93%E5%87%BA%E7%9A%84%E5%87%A0%E7%A7%8D%E5%9C%BA%E6%99%AF.png" alt="4K 显示输出的几种场景"></p>
+<p>因此在一些显示器的详情界面会注明——当显示器上的 USB 设置为 3.2Gen1 时，只能输出 4K@30Hz 的画面，如果想要输出 4K@60Hz 需要将 USB 设置为 2.0 或关闭。所以如果我们使用的显示器有拓展 USB 口，而我们是使用 Type-C 直连显示器，为了保证使用体验，我们需要手动将显示器上的 USB 设置为 USB2.0，此时显示器上的 USB 更适合用来接键鼠，文件传输之类的还是直连笔记本会比较快。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/9-%E6%98%BE%E7%A4%BA%E5%99%A8%E8%AF%A6%E6%83%85%E7%95%8C%E9%9D%A2%E7%9A%84%E6%8F%90%E7%A4%BA.png" alt="显示器详情界面的提示"></p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://zhuanlan.zhihu.com/p/101434503">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（上篇） - 知乎</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/101486153">【从入门到放弃】关于Type-C&#x2F;雷电3接口的两万字科普（下篇） - 知乎</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/98911511">【拯救者科普】笔记本外接显示器需要注意什么？ - 知乎</a></p>
+<p><a href="https://basic-tutorials.com/usb-type-c-at-a-glance-what-the-port-can-do-what-it-cant-do-and-why-it-has-nothing-to-do-with-usb-3-0/">USB type C at a glance: What the port can do, what it can’t do and why it has nothing to do with USB 3.0</a></p>
+<p><a href="https://zh.wikipedia.org/wiki/USB">维基百科-USB</a></p>
+<p><a href="https://b23.tv/rbYOKW">视频-【硬件科普】4K144Hz需要传输多少数据，教你如何正确的计算显示器的带宽需求？</a></p>
+<p><a href="https://diy.pconline.com.cn/1374/13748807.html">DP vs HDMI 谁才是游戏玩家最佳选择</a></p>
+]]></content>
+      <categories>
+        <category>硬件</category>
+      </categories>
+      <tags>
+        <tag>硬件</tag>
+        <tag>显示器</tag>
+        <tag>USB</tag>
+        <tag>Type-C</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CMD 和 PowerShell 中 where 命令的区别</title>
     <url>/post/Where-Command-Difference-Between-Cmd-And-Powershell/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>事情的起因是我想解决在 Windows Terminal 中使用 <code>code .</code> 命令打开的不是 VSCode 而是 Cursor 的问题。</p>
+<span id="more"></span>
+
+<h2 id="where-命令的介绍"><a href="#where-命令的介绍" class="headerlink" title="where 命令的介绍"></a>where 命令的介绍</h2><p>在 Windows 命令提示符（CMD）中，<code>where</code> 命令用于查找与指定名称匹配的可执行文件的位置，它可以帮助你确定某个程序或文件在系统中的具体路径。我的使用场景是用它来查找 <code>code</code> 命令对应的可执行文件的路径。</p>
+<h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>在 CMD 中执行 <code>where code</code> 命令，结果符合预期，结果如下：</p>
+<p><img src="https://pub-40b650f1eea44087adc96bf9abf9c38d.r2.dev/1-CMD%E4%B8%AD%E6%89%A7%E8%A1%8C%E7%BB%93%E6%9E%9C.png" alt="CMD 中执行结果"></p>
+<p>但在我常用的 PowerShell 中执行的结果则是没有任何输出：</p>
+<p><img src="https://pub-40b650f1eea44087adc96bf9abf9c38d.r2.dev/2-PS%E4%B8%AD%E6%89%A7%E8%A1%8C%E7%BB%93%E6%9E%9C.png" alt="PowerShell 中执行结果"></p>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>这是因为在 PowerShell 中 <code>where</code> 表示的不再是 <code>where.exe</code>，而是 <code>Where-Object</code> cmdlet 的别名。而 <code>Where-Object</code> 的作用是根据属性值从集合中选择对象，和 Linux 中的 <code>grep</code> 命令作用类似，通常是结合管道一起使用的。现在直接执行 <code>where code</code> 命令，因为管道的上游没有任何输入，自然也不会输出任何内容。</p>
+<p><img src="https://pub-40b650f1eea44087adc96bf9abf9c38d.r2.dev/4-where%E5%91%BD%E4%BB%A4%E5%9C%A8PS%E4%B8%AD%E7%9A%84%E7%BB%93%E6%9E%9C.png" alt="where 命令在 PowerShell 中的结果"></p>
+<p>在 PowerShell 中使用 <code>where</code> 命令的正确姿势应该是使用 <code>where.exe</code> ：</p>
+<p><img src="https://pub-40b650f1eea44087adc96bf9abf9c38d.r2.dev/3-%E5%9C%A8PS%E4%B8%AD%E5%BA%94%E8%AF%A5%E4%BD%BF%E7%94%A8whereexe.png" alt="在 PowerShell 中使用 where.exe"></p>
+<p>或者直接在 PowerShell 中使用 <code>Get-Command</code> 命令：</p>
+<p><img src="https://pub-40b650f1eea44087adc96bf9abf9c38d.r2.dev/6-Get-Command%E5%9C%A8PS%E4%B8%AD.png" alt="Get-Command 命令效果"></p>
+<p>但显然 <code>Get-Command</code> 命令的输出显示方式远不如 <code>where</code> 命令直观。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/where">where</a></p>
+<p><a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-7.4">Where-Object</a></p>
+<p><a href="https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/get-command?view=powershell-7.4">Get-Command</a></p>
+<p><a href="https://stackoverflow.com/questions/16775686/why-doesnt-the-where-command-display-any-output-when-running-in-powershell">Why doesn’t the ‘where’ command display any output when running in PowerShell?</a></p>
+]]></content>
+      <tags>
+        <tag>Windows</tag>
+        <tag>PowerShell</tag>
+        <tag>CMD</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>为什么 robots.txt 不应该再屏蔽 JS 和 CSS 了</title>
+    <url>/post/Why-Shouldnot-Block-JS-And-CSS-Files-In-Robotstxt-Anymore/</url>
+    <content><![CDATA[<p>根据谷歌官方的建议，robots.txt 已经不需要再屏蔽 JavaScript、CSS 文件了。</p>
+<span id="more"></span>
+
+<h2 id="屏蔽是过时的做法"><a href="#屏蔽是过时的做法" class="headerlink" title="屏蔽是过时的做法"></a>屏蔽是过时的做法</h2><p>在前期查找相关资料的时候，我注意到不少博客都建议在 <code>robots.txt</code> 中禁止搜索引擎抓取网站的 JavaScript、CSS 文件，但其中大多数文章并没有给出为什么要这样做的具体理由。</p>
+<p>但我觉得现在已经有理由相信这种做法是<strong>过时且不必要</strong> 的。谷歌在其官方的<a href="https://support.google.com/webmasters/answer/7451184">搜索引擎优化 (SEO) 新手指南</a>中的「让 Google 以用户视角查看网页」章节中明确提到：</p>
+<blockquote>
+<p>当 Googlebot 抓取某个网页时，它应<a href="https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html">以普通用户查看网页的方式来查看它</a>。为了实现最佳的呈现和索引编制效果，请始终允许 Googlebot 访问您网站所用的 JavaScript、CSS 和图片文件。如果您网站的 robots.txt 文件禁止抓取这些资源，则会直接影响到我们的算法呈现您的内容并将其编入索引的效果，进而导致您的网站排名降低。</p>
+</blockquote>
+<p>可以看到，禁止 JavaScript、CSS 文件的抓取不仅不会对 SEO 有任何正向的帮助，反而可能会起到降低网站排名的负面效果。</p>
+<p>至于更具体的理由，谷歌在 <a href="https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html">Understanding web pages better</a> （也就是上方引用的「以普通用户查看网页的方式来查看它」）中进行了进一步的解释，中心思想可以总结如下：</p>
+<ol>
+<li>时代已经变了，JavaScript、CSS 已经变成现代网页不可或缺的一部分了，它们让我们的网页变得更加丰富、更加美观，如果禁止 JS、CSS 被搜索引擎抓取，结果导致网页不能被更好地渲染，这对搜索者以及网站站长双方来说都是一种损失。</li>
+<li>为了避免这种双输的局面，我们（谷歌）为此做了很多工作，现在我们（谷歌）的抓取系统已经能够<strong>以普通用户查看网页的方式来查看它</strong>，而 JavaScript、CSS 代码是普通用户浏览网页时非常重要的组成的部分，所以不要再屏蔽 JavaScript、CSS 文件了。</li>
+</ol>
+<p>上面这些都是谷歌在 2015 年就开始提倡的做法，所以现在已经 2020 年了，我们完全可以放心地让搜索引擎抓取我们的 JavaScript、CSS 文件，这样做对 SEO 有百利而无一害。</p>
+<h2 id="我的-robots-txt"><a href="#我的-robots-txt" class="headerlink" title="我的 robots.txt"></a>我的 robots.txt</h2><p>在博客根目录下的 <code>public</code> 文件夹内新建 <code>robots.txt</code> 文件，然后 <code>hexo d</code> 部署网站即可。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 允许任何搜索引擎抓取任何页面</span><br><span class="line">User-agent: *</span><br><span class="line">Allow: /</span><br><span class="line"># 站点地图地址</span><br><span class="line">Sitemap: https://asurada.zone/sitemap.xml</span><br><span class="line">Sitemap: https://asurada.zone/baidusitemap.xml</span><br></pre></td></tr></table></figure>
+
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://support.google.com/webmasters/answer/7451184">谷歌官方搜索引擎优化 (SEO) 新手指南</a></p>
+<p><a href="https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html">Understanding web pages better</a> </p>
+<p><a href="https://yoast.com/dont-block-css-and-js-files/">Don’t block CSS and JS files</a></p>
+]]></content>
+      <categories>
+        <category>个人博客</category>
+      </categories>
+      <tags>
+        <tag>SEO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>利用 Pqi 实现 Python 快速换源</title>
+    <url>/post/change-python-pypisource/</url>
+    <content><![CDATA[<p>pip 默认的软件源是国外的，下载起来速度很慢，我们可以将软件源换成国内的镜像源，大幅提高下载速度。本文介绍利用 <code>pqi</code> 这一小工具来实现简单快速地更换 pip 软件源。</p>
+<span id="more"></span>
+<p><code>pqi</code> 是国内开发者 <a href="https://github.com/yhangf">yhf</a> 开发的 <a href="https://github.com/yhangf/PyQuickInstall">PyQuickInstall</a> 工具的简称，这款工具可以非常方便地帮助我们切换 pip 软件源，如果觉得好用的话，大家可以动动鼠标，在 Github 上面 Star 一下。</p>
+<p>临时使用清华大学开源软件镜像源安装 pqi ：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install pqi -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，直接在命令行即可使用 pqi ：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//列举所有支持的PyPi源</span><br><span class="line">pqi ls</span><br><span class="line">//改变 PyPi源</span><br><span class="line">pqi use &lt;name&gt;</span><br><span class="line">//显示当前PyPi源</span><br><span class="line">pqi show</span><br><span class="line">//移除pip源</span><br><span class="line">pqi remove &lt;name&gt;</span><br><span class="line">//添加新的pip源</span><br><span class="line">pqi add &lt;name&gt; &lt;url&gt;</span><br><span class="line">//升级到最新版 pqi</span><br><span class="line">pip install --upgrade pqi</span><br></pre></td></tr></table></figure>
+
+<p>如果决定使用上面提到过的清华大学镜像源，使用如下命令即可：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pqi use tuna</span><br></pre></td></tr></table></figure>
+
+<p>然后就可以享受飞一般的 pip下载速度了。</p>
+]]></content>
+      <categories>
+        <category>开发环境</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo 博客修改记录</title>
+    <url>/post/hexo-blog-settings/</url>
+    <content><![CDATA[<p>记录自己博客所做的修改，供他人参考以及自己备忘。</p>
+<span id="more"></span>
+
+<h2 id="提交搜索引擎收录"><a href="#提交搜索引擎收录" class="headerlink" title="提交搜索引擎收录"></a>提交搜索引擎收录</h2><p>博客搭建好了，如果希望自己博客的内容被更多人看到，搜索引擎所带来的流量是不容忽视的。为了让搜索引擎更快地收录我们的网站，我们可以主动到搜索引擎的站长平台提交我们的网站。</p>
+<p>因为搜索引擎收录的内容比较多，所以专门单独写了一篇文章，具体内容请跳转 <a href="https://asurada.zone/post/Blog-Search-Engine-Index/">Hexo 博客主流搜索引擎收录详细指南</a>查看。</p>
+<h2 id="站内搜索"><a href="#站内搜索" class="headerlink" title="站内搜索"></a>站内搜索</h2><blockquote>
+<p>此项配置基于 Hexo 5.1.1，Next 8.0.0，hexo-generator-searchdb V1.3.2</p>
+</blockquote>
+<p>该功能由 <a href="https://github.com/theme-next/hexo-generator-searchdb">hexo-generator-searchdb</a> 提供，效果如下图：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/37-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2%E6%95%88%E6%9E%9C%E5%9B%BE.png" alt="站内搜索"></p>
+<p>在根目录下执行以下命令安装插件：</p>
+<figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">$ npm <span class="keyword">install</span> hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
+
+<p>在<strong>主题配置</strong>文件中修改相关字段：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true</span><br><span class="line">  trigger: auto # 每次输入改变都重新搜索</span><br><span class="line">  top_n_per_article: 3 # 每篇文章显示的搜索结果数量</span><br><span class="line">  unescape: false</span><br></pre></td></tr></table></figure>
+
+<p>在<strong>站点配置</strong>文件中<strong>添加</strong>以下字段：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml # 后缀可选 .xml 和 .json</span><br><span class="line">  field: post # 指定搜索范围，可选 post | page | all</span><br><span class="line">  content: true # 是否牵引文章的全部内容，false 则只牵引文章标题</span><br><span class="line">  format: html # 指定页面内容形式，可选 html | raw (Markdown) | striptags </span><br></pre></td></tr></table></figure>
+
+<p>配置完成后，执行 <code>hexo g</code> 命令会在 <code>public</code> 文件夹下自动生成 <code>search.xml</code> 文件。</p>
+<h2 id="文末版权声明修改"><a href="#文末版权声明修改" class="headerlink" title="文末版权声明修改"></a>文末版权声明修改</h2><h3 id="版权声明添加标题"><a href="#版权声明添加标题" class="headerlink" title="版权声明添加标题"></a>版权声明添加标题</h3><blockquote>
+<p>此项配置基于 Hexo 4.2，Next 7.8.0</p>
+</blockquote>
+<p>Next 主题自带的版权声明默认只有作者、链接、版权声明三项，为方便他人转载，我觉得有必要加入文章标题的显示。</p>
+<div class="note info"><p>Next 8.0 以上版本改为在 <code>post-copyright.njk</code> 中修改。</p>
+</div>
+
+<p>首先修改 <code>.\themes\next\layout\_partials\post\post-copyright.swig</code> 文件，在 <code>&lt;ul&gt; &lt;/ul&gt;</code> 标签内根据自己的需求在相应位置<strong>新增</strong>以下代码：</p>
+<figure class="highlight html"><figcaption><span>.\themes\next\layout\_partials\post\post-copyright.swig</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;post-copyright-title&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">strong</span>&gt;</span>&#123;&#123; __(&#x27;post.copyright.title&#x27;) + __(&#x27;symbol.colon&#x27;) &#125;&#125; <span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line">    &#123;&#123; post.title &#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>由于 <code>post.copyright.title</code> 是我们自己新增的，这一字段 Next 默认是没有对应的中文翻译的，所以我们需要通过修改 <code>.\themes\next\languages\zh-CN.yml</code> 文件来添加翻译，打开文件，搜索 <code>copyright</code> ，在下面新增 <code>title: 本文标题</code> 。</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/5-zhCN%E5%A2%9E%E5%8A%A0%E7%BF%BB%E8%AF%91.png" alt="zh-CN.yml 增加对应翻译"></p>
+<p>执行 <code>hexo g</code> 重新生成博客，<code>hexo s</code> 本地调试查看效果：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/6-%E6%9C%AC%E6%96%87%E6%A0%87%E9%A2%98%E6%95%88%E6%9E%9C%E5%9B%BE.png" alt="本文标题效果图"></p>
+<p>效果正是我想要的，确认无误后 <code>hexo d</code> 部署。</p>
+<h3 id="「本文链接」添加快速复制按钮"><a href="#「本文链接」添加快速复制按钮" class="headerlink" title="「本文链接」添加快速复制按钮"></a>「本文链接」添加快速复制按钮</h3><blockquote>
+<p>此项配置基于 Hexo 4.2，Next 7.8.0，本小节主要参考 <a href="http://yearito.cn/posts/hexo-advanced-settings.html">yearito’s Blog | Hexo搭建个人博客系列：进阶设置篇</a></p>
+</blockquote>
+<div class="note info"><p>Next 8.0 以上版本改为在 <code>post-copyright.njk</code> 中修改。</p>
+<p>Next V8 将自带的 Font Awesome 图标库由 4.7.0 版本升级为了 5.13.0 版本。此次升级并不向下兼容，所以需要修改配置文件中与 Font Awesome 相关的内容，否则图标可能无法正常显示。</p>
+</div>
+
+<p>修改 <code>.\themes\next\layout\_partials\post\post-copyright.swig</code> 文件，改动如下：</p>
+<figure class="highlight diff"><figcaption><span>.\themes\next\layout\_partials\post\post-copyright.swig</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;%- set ccIcon = &#x27;&lt;i class=&quot;fa fa-fw fa-creative-commons&quot;&gt;&lt;/i&gt;&#x27; %&#125;</span><br><span class="line">&#123;%- set ccText = theme.creative_commons.license | upper %&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="addition">+&lt;!-- JS库 clipboard 用来拷贝内容到粘贴板--&gt;</span></span><br><span class="line"><span class="addition">+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js&quot;&gt;&lt;/script&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="addition">+&lt;!-- JS库 sweetalert 用来显示提示信息--&gt;</span></span><br><span class="line"><span class="addition">+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/sweetalert@2.1.2/dist/sweetalert.min.js&quot;&gt;&lt;/script&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;div&gt;</span><br><span class="line">&lt;ul class=&quot;post-copyright&quot;&gt;</span><br><span class="line"></span><br><span class="line">  &lt;!-- 本文标题 --&gt;</span><br><span class="line">  &lt;li class=&quot;post-copyright-title&quot;&gt;</span><br><span class="line">    &lt;strong&gt;&#123;&#123; __(&#x27;post.copyright.title&#x27;) + __(&#x27;symbol.colon&#x27;) &#125;&#125; &lt;/strong&gt;</span><br><span class="line">    &#123;&#123; post.title &#125;&#125;</span><br><span class="line">  &lt;/li&gt;</span><br><span class="line"></span><br><span class="line">  &lt;!-- 本文作者 --&gt;</span><br><span class="line">  &lt;li class=&quot;post-copyright-author&quot;&gt;</span><br><span class="line">    &lt;strong&gt;&#123;&#123; __(&#x27;post.copyright.author&#x27;) + __(&#x27;symbol.colon&#x27;) &#125;&#125; &lt;/strong&gt;</span><br><span class="line">    &#123;&#123;- page.author or author &#125;&#125;</span><br><span class="line">  &lt;/li&gt;</span><br><span class="line"></span><br><span class="line">  &lt;!-- 引用链接 --&gt;</span><br><span class="line">  &lt;li class=&quot;post-copyright-link&quot;&gt;</span><br><span class="line">    &lt;strong&gt;&#123;&#123; __(&#x27;post.copyright.link&#x27;) + __(&#x27;symbol.colon&#x27;) &#125;&#125;&lt;/strong&gt;</span><br><span class="line">    &#123;&#123; next_url(page.permalink, page.permalink, &#123;title: page.title&#125;) &#125;&#125;</span><br><span class="line"><span class="addition">+    &lt;span class=&quot;copy-path&quot; title=&quot;点击复制 Markdown 引用链接&quot;</span></span><br><span class="line"><span class="addition">+      &gt;&lt;i</span></span><br><span class="line"><span class="addition">+        style=&quot;cursor: pointer&quot;</span></span><br><span class="line"><span class="addition">+        class=&quot;fa fa-clipboard&quot;</span></span><br><span class="line"><span class="addition">+        data-clipboard-text=&quot;[&#123;&#123; post.author | default(author) &#125;&#125;&#x27;s Blog | &#123;&#123; post.title &#125;&#125;](&#123;&#123; post.permalink &#125;&#125;)&quot;</span></span><br><span class="line"><span class="addition">+        aria-label=&quot;&#123;&#123; __(&#x27;post.copyright.copy_success&#x27;) &#125;&#125;&quot;</span></span><br><span class="line"><span class="addition">+      &gt;&lt;/i</span></span><br><span class="line"><span class="addition">+    &gt;&lt;/span&gt;</span></span><br><span class="line"><span class="addition">+  &lt;/li&gt;</span></span><br><span class="line">    </span><br><span class="line">  &lt;!-- 版权声明 --&gt;</span><br><span class="line">  &lt;li class=&quot;post-copyright-license&quot;&gt;</span><br><span class="line">    &lt;strong&gt;&#123;&#123; __(&#x27;post.copyright.license_title&#x27;) + __(&#x27;symbol.colon&#x27;) &#125;&#125; &lt;/strong&gt;</span><br><span class="line">    &#123;&#123;- __(&#x27;post.copyright.license_content&#x27;, next_url(ccURL, ccIcon + ccText)) &#125;&#125;</span><br><span class="line">  &lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line"><span class="addition">+ &lt;script&gt;</span></span><br><span class="line"><span class="addition">+   var clipboard = new ClipboardJS(&quot;.fa-clipboard&quot;);</span></span><br><span class="line"><span class="addition">+  clipboard.on(&quot;success&quot;, function(target) &#123;</span></span><br><span class="line"><span class="addition">+    var message = document.createElement(&quot;div&quot;);</span></span><br><span class="line"><span class="addition">+    message.innerHTML =</span></span><br><span class="line"><span class="addition">+      &#x27;&lt;i class=&quot;fa fa-check-circle message-icon&quot;&gt;&lt;/i&gt;&lt;span class=&quot;message-content&quot;&gt;&#x27; +</span></span><br><span class="line"><span class="addition">+      target.trigger.getAttribute(&quot;aria-label&quot;) +</span></span><br><span class="line"><span class="addition">+      &quot;&lt;/span&gt;&quot;;</span></span><br><span class="line"><span class="addition">+    swal(&#123;</span></span><br><span class="line"><span class="addition">+      content: message,</span></span><br><span class="line"><span class="addition">+      className: &quot;copy-success-message&quot;,</span></span><br><span class="line"><span class="addition">+      timer: 1000,</span></span><br><span class="line"><span class="addition">+      button: false</span></span><br><span class="line"><span class="addition">+    &#125;);</span></span><br><span class="line"><span class="addition">+  &#125;);</span></span><br><span class="line"><span class="addition">+ &lt;/script&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<div class="note info"><p>Next 8.0 以上版本改为在 <code>post-footer.styl</code> 中修改。</p>
+</div>
+
+<p>在版权样式文件 <code>.themes\next\source\css\_common\components\post\post-copyright.styl</code> 中<strong>新增</strong>如下样式：</p>
+<figure class="highlight css"><figcaption><span>.themes\next\source\css\_common\components\post\post-copyright.styl</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.swal-overlay</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: transparent;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.copy-success-message</span> &#123;</span><br><span class="line">  <span class="attribute">box-shadow</span>: <span class="number">0px</span> <span class="number">4px</span> <span class="number">12px</span> <span class="built_in">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.15</span>);</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">4px</span>;</span><br><span class="line">  <span class="attribute">width</span>: auto;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">16</span>x <span class="number">0px</span>;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.copy-success-message</span> <span class="selector-class">.swal-content</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0px</span> <span class="number">0px</span> <span class="meta">!important</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span> <span class="number">16px</span>;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">1em</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.copy-success-message</span> <span class="selector-class">.message-icon</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#52c41a</span>;</span><br><span class="line">  <span class="attribute">margin-right</span>: <span class="number">8px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.copy-success-message</span> <span class="selector-class">.message-content</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后补全版权信息文案字段：</p>
+<figure class="highlight diff"><figcaption><span>.\themes\next\languages\zh-CN.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">post:</span><br><span class="line">  copyright:</span><br><span class="line"><span class="addition">+   copy_success: 复制成功</span></span><br></pre></td></tr></table></figure>
+
+<p>之后点击「本文链接」后的图标便可以快捷复制 Markdown 格式的引用链接，并将弹出复制成功的提示语。</p>
+<blockquote>
+<p>该功能主要借助 <a href="https://clipboardjs.com/">clipboard</a> 和 <a href="https://sweetalert.js.org/">sweetalert</a> 两个 js 库来实现，并参考 <a href="https://ant.design/components/message/">antDesign | message 组件</a> 重写了弹框样式。</p>
+</blockquote>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/17-%E6%9C%AC%E6%96%87%E9%93%BE%E6%8E%A5%E5%BF%AB%E9%80%9F%E5%A4%8D%E5%88%B6%E6%95%88%E6%9E%9C.png" alt="链接快速复制效果"></p>
+<h2 id="修改文章-URL-地址"><a href="#修改文章-URL-地址" class="headerlink" title="修改文章 URL 地址"></a>修改文章 URL 地址</h2><blockquote>
+<p>此项配置基于 Hexo 4.2，Next 7.8.0</p>
+</blockquote>
+<p>Hexo 默认的文章 URL 地址为 <code>https://yoursite.com/:year/:month/:day/:title/</code>，层级较多，我自己看着碍眼，据说对 SEO 也不利。打开站点配置文件 <code>_config.yml</code> ，找到  <code>permalink</code>，将其改成自己想要的格式，我的很简单，全部的文章都是 <code>post</code>。</p>
+<figure class="highlight yml"><figcaption><span>./_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## If your site is put in a subdirectory, set url as &#x27;http://yoursite.com/child&#x27; and root as &#x27;/child/&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://asurada.zone</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br><span class="line"><span class="string">-permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="string">+permalink:</span> <span class="string">post/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="生成-RSS-并在侧边栏添加-RSS-按钮"><a href="#生成-RSS-并在侧边栏添加-RSS-按钮" class="headerlink" title="生成 RSS 并在侧边栏添加 RSS 按钮"></a>生成 RSS 并在侧边栏添加 RSS 按钮</h2><blockquote>
+<p>此项配置基于 Hexo 5.0，Next 7.8.0</p>
+</blockquote>
+<h3 id="安装-hexo-generator-feed-插件"><a href="#安装-hexo-generator-feed-插件" class="headerlink" title="安装 hexo-generator-feed 插件"></a>安装 hexo-generator-feed 插件</h3><p>在 Hexo 根目录执行命令，安装 <a href="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed</a> 插件：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+<p>安装结束时后，此时重新 <code>hexo g</code> 便会直接在 <code>Public</code> 文件夹下自动生成  <code>atom.xml</code>文件。默认使用 atom 格式、输出全文、日期倒序排列，如果预设符合自己的要求，可以直接跳过下一步。</p>
+<h3 id="配置站点配置文件"><a href="#配置站点配置文件" class="headerlink" title="配置站点配置文件"></a>配置站点配置文件</h3><p>在站点配置文件 <code>_config.yml</code>添加相关配置：</p>
+<figure class="highlight diff"><figcaption><span>.\_config.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="addition">+# RSS</span></span><br><span class="line"><span class="addition">+feed:</span></span><br><span class="line"><span class="addition">+ type: atom</span></span><br><span class="line"><span class="addition">+ path: atom.xml</span></span><br><span class="line"><span class="addition">+ limit: false</span></span><br></pre></td></tr></table></figure>
+<p>配置含义：</p>
+<ol>
+<li><code>type</code>：RSS的类型，可选 atom&#x2F;rss2，默认 atom</li>
+<li><code>path</code>：Feed 路径，默认 .&#x2F;atom.xml 或 .&#x2F;rss2.xml</li>
+<li><code>limit</code>: 展示文章的数量，使用 0 或 false 则输出所有文章</li>
+</ol>
+<h3 id="侧边栏添加-RSS-图标"><a href="#侧边栏添加-RSS-图标" class="headerlink" title="侧边栏添加 RSS 图标"></a>侧边栏添加 RSS 图标</h3><p>Next 在<a href="https://github.com/theme-next/hexo-theme-next/releases/tag/v7.6.0">V7.6.0</a>中移除了侧边栏的 RSS 图标，后续又在<a href="https://github.com/theme-next/hexo-theme-next/releases/tag/v7.7.1">V7.7.1</a>中通过「Follow_me」功能将 RSS 图标引入到了文章的结尾区域。但我觉得 RSS 在整个网站的优先级应该足够高，下面是如何将 RSS 图标重新加入侧边栏的方法。</p>
+<p>原理其实很简单，就是利用 Next 主题自带的 Social Links 功能，将 RSS 也变成一个 Social Link。修改主题配置文件 <code>.\source\_data\next.yml</code> 如下：</p>
+<figure class="highlight diff"><figcaption><span>.\source\_data\next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line">social:</span><br><span class="line">  GitHub: https://github.com/ousugo || github</span><br><span class="line"><span class="addition">+ RSS: https://asurada.zone/atom.xml || rss</span></span><br><span class="line">  #E-Mail: mailto:yourname@gmail.com || envelope</span><br></pre></td></tr></table></figure>
+<p>“Soical Links” 的格式为 <code>Key: permalink || icon</code>，其中 <code>Key</code> 为图标旁边显示的名称，<code>permalink</code> 为目标地址，这里指 RSS Feed 的地址，<code>icon</code> 为将要显示的图标在 <a href="https://fontawesome.com/">Font Awesome</a> 中的名字。</p>
+<p>最终效果如下：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/19-%E4%BE%A7%E8%BE%B9%E6%A0%8FRSS%E5%9B%BE%E6%A0%87%E6%95%88%E6%9E%9C.png" alt="侧边栏RSS图标效果"></p>
+<h2 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h2><h3 id="文末添加结束标记"><a href="#文末添加结束标记" class="headerlink" title="文末添加结束标记"></a>文末添加结束标记</h3><blockquote>
+<p>此项配置基于 Hexo 4.2，Next 7.8.0</p>
+</blockquote>
+<p>感觉文章结束以后，紧接着就是打赏按钮，显得较为突兀，所以在文末添加结束标记，效果如下：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/15-%E6%96%87%E6%9C%AB%E7%BB%93%E6%9D%9F%E6%A0%87%E8%AE%B0.png" alt="文末结束标记"></p>
+<p>修改主题配置文件 <code>.\source\_data\next.yml</code>，取消 <code>postBodyEnd</code> 前的注释，启用 <code>post-metabody-end.swig</code> 这一自定义文件：</p>
+<figure class="highlight yaml"><figcaption><span>.\source\_data\next.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.swig</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.swig</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.swig</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.swig</span></span><br><span class="line"><span class="bullet">-</span> <span class="comment">#postBodyEnd: source/_data/post-metabody-end.swig</span></span><br><span class="line"><span class="string">+</span> <span class="attr">postBodyEnd:</span> <span class="string">source/_data/post-metabody-end.swig</span></span><br></pre></td></tr></table></figure>
+
+<p>我们可以打开 <code>.\themes\next\layout\_macro\post.swig</code> 文件，搜索 <code>next_inject</code>，定位到 <code>next_inject(&#39;postBodyEnd&#39;)</code>：</p>
+<p><img src="https://blogimage-1256221427.cos.ap-guangzhou.myqcloud.com/16-post_swig%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE.png" alt="post.swig 插入位置"></p>
+<p>这一段代码的含义就是当上面的 <code>postBodyEnd</code> 被取消注释时，<code>post-metabody-end.swig</code> 文件就会被插入到这里（望文生义，如理解有误请指出）。</p>
+<p>在 <code>.\source\_data</code> 文件下新建 <code>post-metabody-end.swig</code> 文件，添加如下代码：</p>
+<figure class="highlight html"><figcaption><span>.\source\_data\post-metabody-end.swig</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;text-align:center;color:#bfbfbf;font-size:16px;&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">span</span>&gt;</span>-------- 本文结束 <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa fa-paw&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>		<span class="comment">&lt;!-- 这里的图标可以自己去 fontawesome.com 找，然后自定义 --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">span</span>&gt;</span> 感谢阅读 --------<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>hexo s -g</code> 预览效果没问题，就可以 <code>hexo d</code> 部署到博客了。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="http://yearito.cn/posts/hexo-deploy-to-VPS.html">yearito’s Blog | Hexo搭建个人博客系列：部署上线篇</a></p>
+<p><a href="https://tding.top/archives/4ea54752.html">小丁的个人博客 | Hexo-NexT 博客提交搜索引擎收录</a></p>
+<p><a href="http://yearito.cn/posts/hexo-theme-beautify.html">yearito’s Blog | Hexo搭建个人博客系列：主题美化篇</a></p>
+<p><a href="http://yearito.cn/posts/hexo-advanced-settings.html">yearito’s Blog | Hexo搭建个人博客系列：进阶设置篇</a></p>
+]]></content>
+      <categories>
+        <category>个人博客</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
   </entry>
 </search>
