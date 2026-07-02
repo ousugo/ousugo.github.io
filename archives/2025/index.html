@@ -83,11 +83,9 @@
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
-  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"4vfEy99japeGiK3jxqcgHcu8-gzGzoHsz","app_key":"yYFGTuwlmpBBiYpFGCtpz15K","security":false}</script>
-  <script src="/js/third-party/statistics/lean-analytics.js" defer></script>
 
 
-
+<link rel="dns-prefetch" href="https://waline.asurada.zone/">
   <meta name="360-site-verification" content="68099c4ac6f6f63bfe250dd357c1d4e1"/>
 
   <noscript>
@@ -349,10 +347,17 @@
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/disqusjs/3.1.0/styles/disqusjs.css" integrity="sha256-E4RzceSomICFY1PT/yDQrN8DsLSwdScDEiQAevHabp0=" crossorigin="anonymous">
-
-<script class="next-config" data-name="disqusjs" type="application/json">{"enable":true,"api":"https://disqus.skk.moe/disqus/","apikey":"DbeRjZ9TqROzDs1OJ4lf28EXNb9CM0dbyrq1jtrK8AznU5hQdEVAyTXPr5kh4XcH","shortname":"asuradazone","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/disqusjs/3.1.0/disqusjs.es2015.umd.min.js","integrity":"sha256-gdbBT62HLzqWTnXQED3WQL/ItFCuWsA5gd6dM/wgdiE="}}</script>
-<script src="/js/third-party/comments/disqusjs.js" defer></script>
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-CN","enable":true,"serverURL":"https://waline.asurada.zone/","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":false,"pageview":true,"el":"#waline","comment":true,"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","path":"/archives/2025/"}</script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => 
+    Waline.init(Object.assign({}, CONFIG.waline,{ el: document.querySelector(CONFIG.waline.el) }))
+  );
+});
+</script>
 
 </body>
 </html>

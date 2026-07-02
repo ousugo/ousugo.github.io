@@ -83,11 +83,9 @@
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
-  <script class="next-config" data-name="leancloud_visitors" type="application/json">{"enable":true,"app_id":"4vfEy99japeGiK3jxqcgHcu8-gzGzoHsz","app_key":"yYFGTuwlmpBBiYpFGCtpz15K","security":false}</script>
-  <script src="/js/third-party/statistics/lean-analytics.js" defer></script>
 
 
-
+<link rel="dns-prefetch" href="https://waline.asurada.zone/">
   <meta name="360-site-verification" content="68099c4ac6f6f63bfe250dd357c1d4e1"/>
 
   <noscript>
@@ -288,13 +286,16 @@
     </span>
 
   
-    <span id="/post/RepairTheDeathadder2013/" class="post-meta-item leancloud_visitors" data-flag-title="雷蛇炼狱蝰蛇2013 更换中键微动" title="阅读次数">
+  
+  
+    <span class="post-meta-item" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
       <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
+      <span class="waline-pageview-count" data-path="/post/RepairTheDeathadder2013/"></span>
     </span>
+  
     <span class="post-meta-break"></span>
     <span class="post-meta-item" title="本文字数">
       <span class="post-meta-item-icon">
@@ -395,13 +396,16 @@
     </span>
 
   
-    <span id="/post/change-python-pypisource/" class="post-meta-item leancloud_visitors" data-flag-title="利用 Pqi 实现 Python 快速换源" title="阅读次数">
+  
+  
+    <span class="post-meta-item" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
       <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
+      <span class="waline-pageview-count" data-path="/post/change-python-pypisource/"></span>
     </span>
+  
     <span class="post-meta-break"></span>
     <span class="post-meta-item" title="本文字数">
       <span class="post-meta-item-icon">
@@ -502,13 +506,16 @@
     </span>
 
   
-    <span id="/post/hexo-blog-settings/" class="post-meta-item leancloud_visitors" data-flag-title="Hexo 博客修改记录" title="阅读次数">
+  
+  
+    <span class="post-meta-item" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
       <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
+      <span class="waline-pageview-count" data-path="/post/hexo-blog-settings/"></span>
     </span>
+  
     <span class="post-meta-break"></span>
     <span class="post-meta-item" title="本文字数">
       <span class="post-meta-item-icon">
@@ -609,13 +616,16 @@
     </span>
 
   
-    <span id="/post/RT-Thread_BSP/" class="post-meta-item leancloud_visitors" data-flag-title="RT-Thread RECA学习营（一）——正点原子战舰 V3  RT-Thread BSP 移植" title="阅读次数">
+  
+  
+    <span class="post-meta-item" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
       <span class="post-meta-item-text">阅读次数：</span>
-      <span class="leancloud-visitors-count"></span>
+      <span class="waline-pageview-count" data-path="/post/RT-Thread_BSP/"></span>
     </span>
+  
     <span class="post-meta-break"></span>
     <span class="post-meta-item" title="本文字数">
       <span class="post-meta-item-icon">
@@ -743,10 +753,17 @@
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/disqusjs/3.1.0/styles/disqusjs.css" integrity="sha256-E4RzceSomICFY1PT/yDQrN8DsLSwdScDEiQAevHabp0=" crossorigin="anonymous">
-
-<script class="next-config" data-name="disqusjs" type="application/json">{"enable":true,"api":"https://disqus.skk.moe/disqus/","apikey":"DbeRjZ9TqROzDs1OJ4lf28EXNb9CM0dbyrq1jtrK8AznU5hQdEVAyTXPr5kh4XcH","shortname":"asuradazone","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/disqusjs/3.1.0/disqusjs.es2015.umd.min.js","integrity":"sha256-gdbBT62HLzqWTnXQED3WQL/ItFCuWsA5gd6dM/wgdiE="}}</script>
-<script src="/js/third-party/comments/disqusjs.js" defer></script>
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-CN","enable":true,"serverURL":"https://waline.asurada.zone/","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":false,"pageview":true,"el":"#waline","comment":true,"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","path":"/page/2/"}</script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => 
+    Waline.init(Object.assign({}, CONFIG.waline,{ el: document.querySelector(CONFIG.waline.el) }))
+  );
+});
+</script>
 
 </body>
 </html>

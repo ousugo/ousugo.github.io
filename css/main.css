@@ -1462,7 +1462,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #856c58;
+  background: #95cb13;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2718,48 +2718,6 @@ ul.breadcrumb li:last-child {
   .tag-cloud-10 {
     border-bottom-color: #eee;
     color: #eee;
-  }
-}
-html #dsqjs {
-  color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  html #dsqjs {
-    color-scheme: dark;
-  }
-  html #dsqjs a {
-    color: var(--link-color);
-  }
-  html #dsqjs a:focus,
-  html #dsqjs a:hover {
-    color: var(--link-hover-color);
-  }
-  html #dsqjs .dsqjs-nav,
-  html #dsqjs footer {
-    border-color: var(--card-bg-color);
-  }
-  html #dsqjs .dsqjs-load-more,
-  html #dsqjs .dsqjs-load-more:hover,
-  html #dsqjs .dsqjs-nav-tab,
-  html #dsqjs .dsqjs-no-comment,
-  html #dsqjs .dsqjs-post-content {
-    color: var(--text-color);
-  }
-  html #dsqjs .dsqjs-order-label {
-    background-color: #3e4b5e;
-  }
-  html #dsqjs .dsqjs-order-radio:checked+.dsqjs-order-label {
-    background-color: var(--content-bg-color);
-  }
-  html #dsqjs .dsqjs-tab-active>span:after {
-    background-color: #2e9fff !important;
-  }
-  html #dsqjs .dsqjs-footer,
-  html #dsqjs .dsqjs-meta {
-    color: var(--text-color);
-  }
-  html #dsqjs .dsqjs-post-body blockquote {
-    border-color: var(--content-bg-color);
   }
 }
 .search-active {
