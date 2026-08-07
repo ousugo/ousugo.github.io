@@ -1,0 +1,22 @@
+# Asurada's Zone
+
+> 一个嵌入式工程师的简单分享
+
+This file lists Markdown versions of every page for AI/LLM consumption.
+
+## Posts
+
+- [CMD 和 PowerShell 中 where 命令的区别](https://asurada.zone/post/Where-Command-Difference-Between-Cmd-And-Powershell/index.md): 事情的起因是我想解决在 Windows Terminal 中使用 code . 命令打开的不是 VSCode 而是 Cursor 的问题。
+- [什么是全功能 Type-C 及显示器所需带宽如何计算](https://asurada.zone/post/What-Is-Full-Featured-Type-C/index.md): 本文主要介绍了如何计算特定分辨率和刷新率显示器所需带宽以及对全功能 Type-C 的一些简单科普。
+- [通过 Microsoft Store 购买 Win10 专业版小记](https://asurada.zone/post/Buy-WindowsPro-License/index.md): 通过 Windows 10 自带的 Microsoft Store 购买非常方便。
+- [CODING Pages 静态网站升级腾讯云新版踩坑小记](https://asurada.zone/post/CODING-Pages-Upgrade-To-TencentCloud/index.md): 自己的踩坑记录证明域名未备案的同学就不要升级了，新版需要付费，但升级后强制的境外 CDN 加速导致访问速度反而不如旧版快。
+- [Hexo Next 主题 V7 升级 V8 记录](https://asurada.zone/post/Update-Next-From-V7-To-V8/index.md): Hexo 和 Next 最近都发布了大版本更新，此文记录了升级过程。
+- [为什么 robots.txt 不应该再屏蔽 JS 和 CSS 了](https://asurada.zone/post/Why-Shouldnot-Block-JS-And-CSS-Files-In-Robotstxt-Anymore/index.md): 根据谷歌官方的建议，robots.txt 已经不需要再屏蔽 JavaScript、CSS 文件了。
+- [Git 常用命令备忘录](https://asurada.zone/post/Git-Cheat-Sheet/index.md): 一些不太常用的 Git 命令往往隔一段时间不用就忘记了，特写此篇备忘。
+- [Hexo 博客主流搜索引擎收录详细指南](https://asurada.zone/post/Blog-Search-Engine-Index/index.md): 如果希望自己博客的内容被更多人看到，搜索引擎所带来的流量是不容忽视的。本文详细介绍了如何向各大主流搜索引擎主动提交自己的博客，期望达到加快收录速度的目的。
+- [Hexo 博客 GitHub Pages + CODING 静态网站双部署](https://asurada.zone/post/Deploy-Hexoblog-To-Codingnet-And-GitHub/index.md): 为什么想要双部署 中文博客的受众肯定是以国内为主，但部署在 Github Pages 上，服务器在国外，国内访问的速度太不稳定，如果一个页面需要将近十秒才能完全打开的话，用户体验差，页面被提前关闭的概率也会呈指数级上升。所以改善国内访问体验…
+- [招行香港赴港开户全方位指南](https://asurada.zone/post/Creat-CMBCHK-Account/index.md): 声明 文章内容信息的时效性只能保证到我自己办理结束的 19 年 12 月份，最新的要求以及相关消息还是以招商银行官网、官方客服、官方公众号的通知为准。 本文只是分享一点个人的经验，希望能够帮到有需要办理招行香港银行卡的朋友。
+- [雷蛇炼狱蝰蛇2013 更换中键微动](https://asurada.zone/post/RepairTheDeathadder2013/index.md): 第一次自己动手修鼠标，挺好玩的。
+- [利用 Pqi 实现 Python 快速换源](https://asurada.zone/post/change-python-pypisource/index.md): pip 默认的软件源是国外的，下载起来速度很慢，我们可以将软件源换成国内的镜像源，大幅提高下载速度。本文介绍利用 pqi 这一小工具来实现简单快速地更换 pip 软件源。
+- [Hexo 博客修改记录](https://asurada.zone/post/hexo-blog-settings/index.md): 记录自己博客所做的修改，供他人参考以及自己备忘。
+- [RT-Thread RECA学习营（一）——正点原子战舰 V3  RT-Thread BSP 移植](https://asurada.zone/post/RT-Thread_BSP/index.md): 前言 最近在准备六月份的 RT-Thread 的 RECA （RT-Thread开发者能力认证），官方组织了一个学习营，第一周的任务是： 基于 rt-thread4.0.2，能根据BSP制作教程及群里分享的视频《2.RTThread移植》，…

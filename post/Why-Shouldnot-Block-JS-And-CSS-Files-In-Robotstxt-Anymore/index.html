@@ -24,12 +24,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"asurada.zone","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.29.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":3,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="根据谷歌官方的建议，robots.txt 已经不需要再屏蔽 JavaScript、CSS 文件了。">
+    <meta name="description" content="说明在 robots.txt 中屏蔽 JavaScript 和 CSS 已属过时做法，结合 Google 官方建议解释其对页面渲染、索引和排名的负面影响，并给出 Hexo 博客配置示例。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="为什么 robots.txt 不应该再屏蔽 JS 和 CSS 了">
 <meta property="og:url" content="https://asurada.zone/post/Why-Shouldnot-Block-JS-And-CSS-Files-In-Robotstxt-Anymore/index.html">
 <meta property="og:site_name" content="Asurada&#39;s Zone">
-<meta property="og:description" content="根据谷歌官方的建议，robots.txt 已经不需要再屏蔽 JavaScript、CSS 文件了。">
+<meta property="og:description" content="说明在 robots.txt 中屏蔽 JavaScript 和 CSS 已属过时做法，结合 Google 官方建议解释其对页面渲染、索引和排名的负面影响，并给出 Hexo 博客配置示例。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-08-31T12:32:51.000Z">
 <meta property="article:modified_time" content="2020-08-31T12:32:51.000Z">
@@ -93,7 +93,7 @@
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
 <link rel="alternate" href="/atom.xml" title="Asurada's Zone" type="application/atom+xml">
-</head>
+<link rel="alternate" type="text/markdown" href="https://asurada.zone/post/Why-Shouldnot-Block-JS-And-CSS-Files-In-Robotstxt-Anymore/index.md"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -261,7 +261,7 @@
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
       <meta itemprop="name" content="为什么 robots.txt 不应该再屏蔽 JS 和 CSS 了 | Asurada's Zone">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="说明在 robots.txt 中屏蔽 JavaScript 和 CSS 已属过时做法，结合 Google 官方建议解释其对页面渲染、索引和排名的负面影响，并给出 Hexo 博客配置示例。">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -328,6 +328,7 @@
     </span>
 </div>
 
+            <div class="post-description">说明在 robots.txt 中屏蔽 JavaScript 和 CSS 已属过时做法，结合 Google 官方建议解释其对页面渲染、索引和排名的负面影响，并给出 Hexo 博客配置示例。</div>
         </div>
       </header>
 

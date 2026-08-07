@@ -1,0 +1,36 @@
+# Default policy: allow discovery and real-time AI use, but not model training.
+User-agent: *
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+# OpenAI: allow search and user-requested retrieval; block training.
+User-agent: OAI-SearchBot
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+User-agent: ChatGPT-User
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+User-agent: GPTBot
+Disallow: /
+
+# Anthropic: allow search and user-requested retrieval; block training.
+User-agent: Claude-SearchBot
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+User-agent: Claude-User
+Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+User-agent: ClaudeBot
+Disallow: /
+
+# Google-Extended combines model training and Gemini grounding.
+# Blocking it enforces the no-training policy without affecting Google Search.
+User-agent: Google-Extended
+Disallow: /
+
+Sitemap: https://asurada.zone/sitemap.xml
+Sitemap: https://asurada.zone/baidusitemap.xml
