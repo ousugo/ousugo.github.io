@@ -2,24 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://asurada.zone/post/Where-Command-Difference-Between-Cmd-And-Powershell/</loc>
-    
-    <lastmod>2026-08-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://asurada.zone/tags/index.html</loc>
-    
-    <lastmod>2026-08-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://asurada.zone/images/manifest.json</loc>
     
     <lastmod>2026-08-06</lastmod>
@@ -29,18 +11,9 @@
   </url>
   
   <url>
-    <loc>https://asurada.zone/about/index.html</loc>
+    <loc>https://asurada.zone/post/Where-Command-Difference-Between-Cmd-And-Powershell/</loc>
     
-    <lastmod>2026-08-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://asurada.zone/categories/index.html</loc>
-    
-    <lastmod>2026-08-06</lastmod>
+    <lastmod>2025-01-19</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -158,6 +131,33 @@
     <loc>https://asurada.zone/post/RT-Thread_BSP/</loc>
     
     <lastmod>2020-05-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://asurada.zone/about/index.html</loc>
+    
+    <lastmod>2020-01-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://asurada.zone/tags/index.html</loc>
+    
+    <lastmod>2020-01-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://asurada.zone/categories/index.html</loc>
+    
+    <lastmod>2020-01-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

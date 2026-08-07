@@ -2,7 +2,7 @@
 title: "CMD 和 PowerShell 中 where 命令的区别"
 source: https://asurada.zone/post/Where-Command-Difference-Between-Cmd-And-Powershell/
 date: 2025-01-19
-updated: 2026-08-07
+updated: 2025-01-19
 tags: [Windows, PowerShell, CMD]
 ---
 
