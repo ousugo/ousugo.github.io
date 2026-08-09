@@ -102,6 +102,28 @@
 <link rel="dns-prefetch" href="https://waline.asurada.zone/">
   <meta name="360-site-verification" content="68099c4ac6f6f63bfe250dd357c1d4e1"/>
 
+
+
+
+<script type="module">
+import { pageviewCount } from 'https://unpkg.com/@waline/client@3.15.2/dist/pageview.js';
+
+let abortPageviewRead;
+
+document.addEventListener('page:loaded', () => {
+  abortPageviewRead?.();
+  abortPageviewRead = undefined;
+
+  if (!document.querySelector('.waline-pageview-count')) return;
+
+  abortPageviewRead = pageviewCount({
+    serverURL: 'https://waline.asurada.zone/',
+    update: false
+  });
+});
+</script>
+
+
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
